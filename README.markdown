@@ -1,4 +1,4 @@
-Igor: A Data-Modelling and Rules System
+Iggy: A Data-Modelling and Rules System
 =======================================
 
 (Really for building Dungeons and Dragons 4e characters)
