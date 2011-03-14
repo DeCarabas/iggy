@@ -1,4 +1,5 @@
 *.suo
 *.csproj.user
 bin
+obj
 play

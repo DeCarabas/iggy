@@ -400,7 +400,7 @@
                 writer.WriteLine();
 
                 writer.Indent--;
-                writer.WriteLine("}");
+                writer.WriteLine("} else return 0;");
 
                 writer.Indent--;
             }
@@ -432,7 +432,7 @@
                 writer.WriteLine();
                 
                 writer.Indent--;
-                writer.WriteLine("}");
+                writer.WriteLine("} else return 0;");
 
                 writer.Indent--;
             }

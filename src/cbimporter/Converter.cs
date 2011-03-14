@@ -31,52 +31,6 @@
             }
         }
 
-        string CompileCategoryExpression(string category)
-        {
-            // Take input as a category expression and output an expression in Igor.
-            // The output expression should yield a record of valid choices.
-            //
-            // Category language:
-            //
-            //  category = orgroup ("," orgroup)*
-            //  orgroup = optnot ("|" optnot)*
-            //  optnot = root | "!" root
-            //  root = "$$CLASS" | "$$MULTICLASS" | "$$LEVEL" | "$$NOT_CLASS" 
-            //         "$$HYBRID" | "$$CLASS_OR_MULTICLASS" | identifier | number
-            //
-            // "," mean AND. "|" means OR. "!" means NOT. 
-            // The built-ins have meaning that I'm trying to interpret.
-            //
-
-            StringBuilder result = new StringBuilder();
-            string[] orGroups = category.Split(',');
-            for (int i = 0; i < orGroups.Length; i++)
-            {
-                if (i > 0) { result.Append(" && "); }
-
-                string[] optNots = orGroups[i].Split('|');
-                if (optNots.Length > 1) { result.Append("("); }
-
-                for (int j = 0; j < optNots.Length; j++)
-                {
-                    if (j > 0) { result.Append(" || "); }
-
-                    string root = optNots[j];
-                    if (root[0] == '!')
-                    {
-                        result.Append("!");
-                        root = root.Substring(1);
-                    }
-
-                    throw new NotImplementedException();
-                }
-
-                if (optNots.Length > 1) { result.Append(")"); }
-            }
-
-            return result.ToString();
-        }
-
         string CompileRootSource(string choiceName)
         {
             throw new NotImplementedException();
@@ -95,12 +49,18 @@
             int max = index.Elements.Count;
             int pos = 0;
 
-            foreach (RuleElement element in index.Elements)
+            converter.WriteGlobalPrefix();
+            foreach (IGrouping<Identifier, RuleElement> ebt in index.Elements.GroupBy(e => e.Type.ToString()))
             {
-                if (progress != null) { progress.SetProgress(pos++, max); }
-                converter.WriteGenericRulesElement(element);
-                writer.WriteLine();
+                converter.WriteTypePrefix(ebt.Key);
+                foreach (RuleElement element in ebt.OrderBy(e => e.Name.ToString()))
+                {
+                    if (progress != null) { progress.SetProgress(pos++, max); }
+                    converter.WriteGenericRulesElement(element);
+                }
+                converter.WriteTypeSuffix(ebt.Key);
             }
+            converter.WriteGlobalSuffix();
 
             converter.WriteWarnings();
         }
@@ -110,7 +70,13 @@
             var stringWriter = new StringWriter();
             var converter = new Converter(index, stringWriter);
 
+            converter.WriteGlobalPrefix();
+            converter.WriteTypePrefix(element.Type);
+            
             converter.WriteGenericRulesElement(element);
+            
+            converter.WriteTypeSuffix(element.Type);
+            converter.WriteGlobalSuffix();
 
             return stringWriter.ToString();
         }
@@ -123,6 +89,16 @@
                 builder.Append(node.ToString(SaveOptions.DisableFormatting));
             }
             return builder.ToString().Trim();
+        }
+
+        static string QuoteIdentifier(Identifier id)
+        {
+            return QuoteIdentifier(id.ToString());
+        }
+
+        static string QuoteIdentifier(string text)
+        {
+            return text.Replace(' ', '_').Replace("(", "").Replace(")", "");
         }
 
         static string QuoteString(Identifier id)
@@ -145,9 +121,8 @@
 
         public void WriteGenericRulesElement(RuleElement element)
         {
-            // This predicate isn't right; we need to have a good predicate generator.
-            writer.WriteLine(@"typeHolder = (types[""{0}""] = types[""{0}""] || {{}});", QuoteString(element.Type));
-            writer.WriteLine(@"e = typeHolder[""{0}""] = new RulesElement({{", QuoteString(element.Name));
+            // This predicate isn't right; we need to have a good predicate generator.            
+            writer.WriteLine(@"te = {0}[""{1}""] = new RulesElement({{", QuoteIdentifier(element.Type), QuoteString(element.Name));
             writer.Indent += 1;
 
             writer.WriteLine(@"name: ""{0}"",", QuoteString(element.Name));
@@ -197,8 +172,38 @@
 
             writer.Indent -= 1;
             writer.WriteLine("});");
+            writer.WriteLine("byID[te.id] = te;");
+            writer.WriteLine();
         }
-    
+
+        public void WriteGlobalPrefix()
+        {
+            this.writer.WriteLine("(function(global, undefined) {");
+            this.writer.Indent++;
+
+            this.writer.WriteLine("var elements = global.elements || (global.elements = {});");
+            this.writer.WriteLine("var types = elements.types || (elements.types = {});");
+            this.writer.WriteLine("var byID = elements.id || (elements.id = {});");
+            this.writer.WriteLine("var te;");
+            this.writer.WriteLine();
+        }
+
+        public void WriteGlobalSuffix()
+        {
+            this.writer.Indent--;
+            this.writer.WriteLine("})(this);");
+        }
+
+        public void WriteTypePrefix(Identifier type)
+        {
+            this.writer.WriteLine("var {0} = types['{1}'] || (types['{1}'] = {{}});", QuoteIdentifier(type), type);
+        }
+
+        public void WriteTypeSuffix(Identifier type)
+        {
+            this.writer.WriteLine();
+        }
+
         public void WriteWarnings()
         {
             foreach (string warning in this.warnings)
