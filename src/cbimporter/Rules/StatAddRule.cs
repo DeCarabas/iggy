@@ -122,7 +122,7 @@
 
         public override void WriteJS(IndentedTextWriter writer)
         {
-            writer.Write("model.statadd('{0}', function() {{ ", this.Stat);
+            writer.Write("model.statadd(\"{0}\", function() {{ ", Converter.QuoteString(this.Stat));
             WriteJSFunctionBody(writer);
             writer.WriteLine(" });");
         }
@@ -168,7 +168,7 @@
 
             public override void WriteJS(IndentedTextWriter writer)
             {
-                writer.WriteLine("model.statadd('{0}', {1});", Stat, this.value/2);
+                writer.WriteLine("model.statadd(\"{0}\", {1});", Converter.QuoteString(Stat), this.value/2);
             }
 
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
@@ -221,9 +221,9 @@
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
             {
                 writer.Write(
-                    "return {0}model.stat('{1}');", 
+                    "return {0}model.stat(\"{1}\");", 
                     this.negative ? "-" : "",
-                    this.sourceStat);
+                    Converter.QuoteString(this.sourceStat));
             }
         }
 
@@ -272,9 +272,9 @@
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
             {
                 writer.Write(
-                    "return {0}abilitymod(model.stat('{1}'));",
+                    "return {0}abilitymod(model.stat(\"{1}\"));",
                     this.negative ? "-" : "",
-                    this.sourceStat);
+                    Converter.QuoteString(this.sourceStat));
             }
         }
 

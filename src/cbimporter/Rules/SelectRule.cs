@@ -311,7 +311,7 @@
 
             public override void WriteJS(IndentedTextWriter writer)
             {
-                writer.Write("element.hasCategory('{0}')", this.id);
+                writer.Write("element.hasCategory(\"{0}\")", Converter.QuoteString(this.id));
             }
         }
 
@@ -413,7 +413,7 @@
 
             public override void WriteJS(IndentedTextWriter writer)
             {
-                writer.Write("!element.hasCategory('{0}')", this.id);
+                writer.Write("!element.hasCategory(\"{0}\")", Converter.QuoteString(this.id));
             }
         }
 
@@ -469,7 +469,7 @@
             public override void WriteJS(IndentedTextWriter writer)
             {
                 // TODO: Whaaaaa?
-                writer.Write("element.hasCategory(model.class.id)");
+                writer.Write("element.hasCategory(model['class'].id)");
             }
         }
 
@@ -514,7 +514,7 @@
 
             public override void WriteJS(IndentedTextWriter writer)
             {
-                throw new NotImplementedException();
+                writer.Write("true /* NYI: Filter: $$LEVEL */");
             }
         }
 
@@ -532,7 +532,7 @@
 
             public override void WriteJS(IndentedTextWriter writer)
             {
-                throw new NotImplementedException();
+                writer.Write("true /* NYI: Filter: $$MULTICLASS */");
             }
         }
 
@@ -550,7 +550,8 @@
 
             public override void WriteJS(IndentedTextWriter writer)
             {
-                throw new NotImplementedException();
+                //throw new NotImplementedException();
+                writer.Write("true /* NYI: Filter: $$HYBRID */");
             }
         }
 
@@ -568,7 +569,7 @@
 
             public override void WriteJS(IndentedTextWriter writer)
             {
-                throw new NotImplementedException();
+                writer.Write("true /* NYI: Filter: $$NOT_CLASS */");
             }
         }
     }

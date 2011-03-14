@@ -55,7 +55,7 @@
                 Title = "Loading file",
                 TaskFunction = (p) => Task.Factory.StartNew(() =>
                     {
-                        string newPath = Path.ChangeExtension(this.currentDocument.Name, ".igor");
+                        string newPath = Path.ChangeExtension(this.currentDocument.Name, ".js");
                         using (FileStream stream = File.Open(newPath, FileMode.Create))
                         {
                             using (var writer = new StreamWriter(stream))

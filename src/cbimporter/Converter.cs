@@ -50,7 +50,7 @@
             int pos = 0;
 
             converter.WriteGlobalPrefix();
-            foreach (IGrouping<Identifier, RuleElement> ebt in index.Elements.GroupBy(e => e.Type.ToString()))
+            foreach (IGrouping<string, RuleElement> ebt in index.Elements.GroupBy(e => e.Type.ToString()))
             {
                 converter.WriteTypePrefix(ebt.Key);
                 foreach (RuleElement element in ebt.OrderBy(e => e.Name.ToString()))
@@ -58,7 +58,7 @@
                     if (progress != null) { progress.SetProgress(pos++, max); }
                     converter.WriteGenericRulesElement(element);
                 }
-                converter.WriteTypeSuffix(ebt.Key);
+                converter.WriteTypeSuffix();
             }
             converter.WriteGlobalSuffix();
 
@@ -75,7 +75,7 @@
             
             converter.WriteGenericRulesElement(element);
             
-            converter.WriteTypeSuffix(element.Type);
+            converter.WriteTypeSuffix();
             converter.WriteGlobalSuffix();
 
             return stringWriter.ToString();
@@ -101,12 +101,12 @@
             return text.Replace(' ', '_').Replace("(", "").Replace(")", "");
         }
 
-        static string QuoteString(Identifier id)
+        public static string QuoteString(Identifier id)
         {
             return QuoteString(id.ToString());
         }
 
-        static string QuoteString(string text)
+        public static string QuoteString(string text)
         {
             return text
                 .Replace("\"", "\\\"")
@@ -136,7 +136,7 @@
                 for(int i = 0; i < categories.Length; i++)
                 {
                     if (i != 0) { writer.Write(", "); }
-                    writer.Write("'{0}'", categories[i]);
+                    writer.Write("\"{0}\"", QuoteString(categories[i]));
                 }
                 writer.WriteLine("],");
             }
@@ -197,10 +197,15 @@
 
         public void WriteTypePrefix(Identifier type)
         {
+            WriteTypePrefix(type.ToString());
+        }
+
+        public void WriteTypePrefix(string type)
+        {
             this.writer.WriteLine("var {0} = types['{1}'] || (types['{1}'] = {{}});", QuoteIdentifier(type), type);
         }
 
-        public void WriteTypeSuffix(Identifier type)
+        public void WriteTypeSuffix()
         {
             this.writer.WriteLine();
         }

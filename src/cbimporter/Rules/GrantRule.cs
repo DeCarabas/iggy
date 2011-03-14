@@ -53,7 +53,14 @@
 
         public override void WriteJS(IndentedTextWriter writer)
         {
-            writer.WriteLine("model.grant(elements.id['{0}']);", this.element.Id);
+            if (this.element != null)
+            {
+                writer.WriteLine("model.grant(elements.id[\"{0}\"]);", Converter.QuoteString(this.element.Id));
+            }
+            else
+            {
+                writer.WriteLine("// NYI: [Dilettante]");
+            }
         }
     }
 }

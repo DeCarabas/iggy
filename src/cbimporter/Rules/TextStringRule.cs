@@ -1,11 +1,7 @@
 ﻿namespace cbimporter.Rules
 {
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Linq;
+    using System.CodeDom.Compiler;
     using System.Xml.Linq;
-    using System;
-    using System.Diagnostics;
     using cbimporter.Model;
 
     public class TextStringRule : Rule
@@ -36,6 +32,11 @@
         public override void Revoke(Character character)
         {
             character.TextStrings.Remove(this.name);
+        }
+
+        public override void WriteJS(IndentedTextWriter writer)
+        {
+            writer.WriteLine("model.statadd(\"{0}\", \"{1}\");", Converter.QuoteString(name), Converter.QuoteString(value));
         }
     }
 }
