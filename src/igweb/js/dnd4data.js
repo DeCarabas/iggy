@@ -1,3 +1,4 @@
+"use strict";
 (function(global, undefined) {
   var elements = global.elements || (global.elements = {});
   var types = elements.types || (elements.types = {});

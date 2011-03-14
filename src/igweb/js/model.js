@@ -2,7 +2,7 @@
 // This contains the implementation of the rules engine.
 //
 
-// Stats
+"use strict";
 (function(global, undefined) {
 
   var Stat = function () { };

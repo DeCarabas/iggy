@@ -3,6 +3,7 @@
 // functions, and extensions that are specific to 4e. The actual data
 // is in dnd4data.js.
 //
+"use strict";
 (function(global, undefined) {
 
    // Global functions, for more interesting rules?

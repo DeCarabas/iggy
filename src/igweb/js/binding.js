@@ -1,5 +1,6 @@
 // This is the engine that powers binding from the model to the UI.
 
+"use strict";
 (function (global, undefined) {
    
     var updateStats = function(model) {

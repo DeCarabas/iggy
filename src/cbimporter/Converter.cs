@@ -178,6 +178,7 @@
 
         public void WriteGlobalPrefix()
         {
+            this.writer.WriteLine("\"use strict\";");
             this.writer.WriteLine("(function(global, undefined) {");
             this.writer.Indent++;
 
