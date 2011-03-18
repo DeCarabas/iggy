@@ -45,58 +45,16 @@
       the same file for ease of reload; when we want to finish it all
       up we'll put it into a separate file to keep everything nice and
       clean. Maybe.</p>
-      <div id="raceDetailBlock">
-        <h2>Select Race</h2>
-        <dl>
-          <dt>Dragonborn</dt>
-          <dd>Proud, honorable warriors, born from the blood of an ancient dragon god.</dd>
-          <dt>Dwarf</dt>
-          <dd>Stout warriors, master artisans, lords of the mountain peaks.</dd>
-        </dl>
-      </div>
-        <hr>
-        <div id="abilityScoreBlock">
-            <h2>Ability Scores</h2>
-            <table class="abilityScores">
-                <tr><th>Score</th><th>Ability</th><th>Ability Mod</th><th>Mod + 1/2 Lvl</th></tr>
-                <tr>
-                    <td x-score="STR" />
-                    <td>STR<br /><small>Strength</small></td>
-                    <td x-score="STR:MOD" />
-                    <td x-score="STR:MODHALFLEV" />
-                </tr>
-                <tr>
-                    <td x-score="CON" />
-                    <td>CON<br /><small>Constitution</small></td>
-                    <td x-score="CON:MOD" />
-                    <td x-score="CON:MODHALFLEV" />
-                </tr>
-                <tr>
-                    <td x-score="DEX" />
-                    <td>DEX<br /><small>Dexterity</small></td>
-                    <td x-score="DEX:MOD" />
-                    <td x-score="DEX:MODHALFLEV" />
-                </tr>
-                <tr>
-                    <td x-score="INT" />
-                    <td>INT<br /><small>Intelligence</small></td>
-                    <td x-score="INT:MOD" />
-                    <td x-score="INT:MODHALFLEV" />
-                </tr>
-                <tr>
-                    <td x-score="WIS" />
-                    <td>WIS<br /><small>Wisdom</small></td>
-                    <td x-score="WIS:MOD" />
-                    <td x-score="WIS:MODHALFLEV" />
-                </tr>
-                <tr>
-                    <td x-score="CHA" />
-                    <td>CHA<br /><small>Charisma</small></td>
-                    <td x-score="CHA:MOD" />
-                    <td x-score="CHA:MODHALFLEV" />
-                </tr>
-            </table>
+      <div id="classDetailBlock">
+        <h2>Select Class</h2>
+        <div id="classDetail" class="twoPaneRight detailPane">
+          
         </div>
+        <div class="twoPaneLeft">
+          <ul id="classList">
+          </ul>
+        </div>
+      </div>
     </div>
      
     <footer>
@@ -108,7 +66,7 @@
   <!-- Javascript at the bottom for fast page loading -->
  
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script> -->
   <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
    
    
@@ -119,7 +77,11 @@
   -->
   <script src="js/model.js"></script>
   <script src="js/binding.js"></script>
-  <script src="js/dnd40.js"></script>
+  <script src="js/dnd4model.js"></script>
+  <script src="js/dnd4data.js"></script>
+  <script src="js/ui.js"></script>
+
+  
   <!-- end concatenated and minified scripts -->
    
    

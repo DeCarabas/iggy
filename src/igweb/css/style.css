@@ -224,25 +224,39 @@ button {  width: auto; overflow: visible; }
     Author: 
  */
 
+.primary-1 { background-color: #8B4523 }
+.primary-2 { background-color: #814428 }
+.primary-3 { background-color: #7C3A1B }
+.primary-4 { background-color: #EDA886 }
+.primary-5 { background-color: #EDD0C2 }
+
+.complement-1 { background-color: #175D45 }
+.complement-2 { background-color: #1B5641 }
+.complement-3 { background-color: #12533C }
+.complement-4 { background-color: #82E6C3 }
+.complement-5 { background-color: #BCE6D7 }
+
 h2 
 {
-    background-color: #444;
+    background-color: #8B4523;
     color: White;
     text-align: center;
 }
 
-#abilityScoreBlock
+ul { list-style: none }
+.list-alternate { background-color: #EDD0C2; }
+.list-hover { background-color: #EDA886; }
+
+div.twoPaneLeft
 {
-    margin: 10px;    
+    width: 50%;
 }
 
-
-.abilityScores 
+div.twoPaneRight
 {
-    text-align: center;
+    width: 50%;
+    float: right;
 }
-
-
 
 
 
