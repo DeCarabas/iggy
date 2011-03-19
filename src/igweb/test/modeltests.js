@@ -139,13 +139,19 @@ module("Model Tests: Choice Tests", {
     var T1 = types["T1"] || (types["T1"] = {});
     e = T1["Dwarf"] = new RulesElement({ 
         name: "Dwarf",
-        categories: ['a', 'b']
+        categories: ['a', 'b'],
+        rules: function(model) {
+          model.statadd('X', 10);
+        }
     });
     byID[e.id] = e;
 
     e = T1["Dragonborn"] = new RulesElement({ 
         name: "Dragonborn",
-        categories: ['b', 'c']
+        categories: ['b', 'c'],
+        rules: function(model) {
+          model.statadd('X', 20);
+        }
     });
     byID[e.id] = e;
 
@@ -160,6 +166,7 @@ module("Model Tests: Choice Tests", {
     delete global.elements.types["T1"];
   }
 });
+
 test('Basic choices', function() {
 
   var element = new RulesElement({
@@ -184,6 +191,41 @@ test('Basic choices', function() {
   equals(options.length, 1, "Number of valid elements (second)");
   equals(options[0].name, "Dragonborn", "(2) Element name");
 
+  var choice = choices[0];
+  equals(model.stat('X'), 0, "X before choosing");
+  choice.choice = elements.types["T1"]["Dwarf"];
+  equals(model.stat('X'), 10, "X after choosing Dwarf");
+  choice.choice = elements.types["T1"]["Dragonborn"];
+  equals(model.stat('X'), 20, "X after choosing Dragonborn");
+  choice.choice = null;
+  equals(model.stat('X'), 0, "X after choosing nothing");
+
+});
+
+test('Removing a choice ungrants the selection', function() {
+
+  var element = new RulesElement({
+    rules: function(model) {
+      model.select("T1", 1);
+    }
+  });
+
+  var model = new Model();
+  model.grant(element);
+
+  var choices = model.getChoices("T1");
+  equals(choices.length, 1, "Number of choices for T1");
+  var choice = choices[0];
+  var options = choice.getValidElements();
+  equals(options.length, 2, "Number of valid elements");
+
+  equals(model.stat('X'), 0, "X before choosing");
+  choice.choice = options[0];
+  equals(model.stat('X'), 10, "X after choosing Dwarf");
+
+
+  model.remove(element);
+  equals(model.stat('X'), 0, "X after removing initial element");
 });
 
 })(this);

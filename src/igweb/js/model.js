@@ -92,6 +92,15 @@
       return r;
     }
   };
+  Object.defineProperty(Choice.prototype, "choice", {
+    get: function() { return this._choice; },
+    set: function(value) {
+      if (this._choice) { this.model.remove(this._choice); }
+      this._choice = value;
+      if (this._choice) { this.model.grant(this._choice); }
+    }
+  });
+
 
   var Model = function() {
     this._granted = {};
@@ -156,7 +165,10 @@
       ec[nc.id] = nc;
 
       if (this._trackingInfo) { 
-        this._trackingInfo.undo.push(function () { delete ec[nc.id]; });
+        this._trackingInfo.undo.push(function () { 
+            nc.choice = null;
+            delete ec[nc.id]; 
+        });
       }
     },
     stat: function (statName) {
