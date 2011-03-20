@@ -7,9 +7,13 @@
    model.grant(global.elements.types["Level"]["1"]);
 
    function defaultTemplate(element) {
-     return '<h3>'+element.name+'<h3>' +
-            '<p class=flavor>'+element.flavor+'</p>'+
-            '<div class=traits />';
+     if (element.compendiumUrl) {
+       return '<iframe src="'+element.compendiumUrl+'" width="100%" height="100%" />';
+     } else {
+       return '<h3>'+element.name+'<h3>' +
+              '<p class=flavor>'+element.flavor+'</p>'+
+              '<div class=traits />';       
+     }
    }
 
    function initChoice(listSelector, type, detailSelector, templateFunc) {
@@ -30,11 +34,23 @@
 
        list.append(ehe);
        ok = !ok;
-     });       
+     });
+
+     $(detailSelector).css('height', $(listSelector).css('height'));
    }
 
-   function initRaceList() { initChoice("#raceList", "Race", "#raceDetail"); }
-   function initClassList() { initChoice("#classList", "Class", "#classDetail"); }
+   function initRaceList() { 
+     initChoice(
+       "#raceList", 
+       "Race", 
+       "#raceDetail"); 
+   }
+   function initClassList() { 
+       initChoice(
+         "#classList", 
+         "Class", 
+         "#classDetail");
+   }
 
    initClassList();
    initRaceList();

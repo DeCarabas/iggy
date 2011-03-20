@@ -129,6 +129,12 @@
             writer.WriteLine(@"type: ""{0}"",", QuoteString(element.Type));
             writer.WriteLine(@"id: ""{0}"",", QuoteString(element.Id));
 
+            string compendiumUrl = GetCompendiumUrl(element);
+            if (compendiumUrl != null)
+            {
+                writer.WriteLine(@"compendiumUrl: ""{0}"",", QuoteString(compendiumUrl));
+            }
+
             if (element.Categories.Count > 0)
             {
                 writer.Write(@"categories: [");
@@ -174,6 +180,57 @@
             writer.WriteLine("});");
             writer.WriteLine("byID[te.id] = te;");
             writer.WriteLine();
+        }
+
+        string GetCompendiumUrl(RuleElement element)
+        {
+            if (element.Type == Identifier.Race)
+            {
+                return GetCompendiumUrl(element, "race", "ID_FMP_RACE_");
+            }
+            else if (element.Type == Identifier.Class)
+            {
+                return GetCompendiumUrl(element, "class", "ID_FMP_CLASS_");
+            }
+            else if (element.Type == Identifier.Deity)
+            {
+                return GetCompendiumUrl(element, "deity", "ID_FMP_DEITY_");
+            }
+            else if (element.Type == Identifier.EpicDestiny)
+            {
+                return GetCompendiumUrl(element, "item", "ID_FMP_EPIC_DESTINY_");
+            }
+            else if (element.Type == Identifier.ParagonPath)
+            {
+                return GetCompendiumUrl(element, "item", "ID_FMP_PARAGON_PATH_");
+            }
+            else if (element.Type == Identifier.Ritual)
+            {
+                return GetCompendiumUrl(element, "item", "ID_FMP_RITUAL_");
+            }
+            else if (element.Type == Identifier.Feat)
+            {
+                return GetCompendiumUrl(element, "item", "ID_FMP_FEAT_");
+            }
+            else if (element.Type == Identifier.Skill)
+            {
+                return GetCompendiumUrl(element, "item", "ID_FMP_SKILL_");
+            }
+            else if (element.Type == Identifier.Power)
+            {
+                return GetCompendiumUrl(element, "item", "ID_FMP_POWER_");
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        string GetCompendiumUrl(RuleElement element, string type, string idPrefix)
+        {
+            return 
+                "http://www.wizards.com/dndinsider/compendium/" + 
+                type + ".aspx?id=" + element.Id.ToString().Substring(idPrefix.Length);
         }
 
         public void WriteGlobalPrefix()

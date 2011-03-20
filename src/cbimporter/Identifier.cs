@@ -21,8 +21,10 @@
         public static readonly Identifier ClassFeature = Identifier.Get("class feature");
         public static readonly Identifier Companion = Identifier.Get("Companion");
         public static readonly Identifier CountsAsClass = Identifier.Get("CountsAsClass");
+        public static readonly Identifier Deity = Identifier.Get("Deity");
         public static readonly Identifier DualShield = Identifier.Get("DUAL-SHIELD");
         public static readonly Identifier DualWielding = Identifier.Get("DUAL-WIELDING");
+        public static readonly Identifier EpicDestiny = Identifier.Get("Epic Destiny");
         public static readonly Identifier Feat = Identifier.Get("Feat");
         public static readonly Identifier Feet = Identifier.Get("Feet");
         public static readonly Identifier Good = Identifier.Get("Good");
@@ -38,12 +40,15 @@
         public static readonly Identifier One = Identifier.Get("1");
         public static readonly Identifier OnlyWeapon = Identifier.Get("only-weapon");
         public static readonly Identifier OffHand = Identifier.Get("OffHand");
+        public static readonly Identifier ParagonPath = Identifier.Get("Paragon Path");
         public static readonly Identifier Power = Identifier.Get("Power");
         public static readonly Identifier PowerSource = Identifier.Get("Power Source");
         public static readonly Identifier Proficiency = Identifier.Get("Proficiency");
         public static readonly Identifier Race = Identifier.Get("Race");
         public static readonly Identifier RingOne = Identifier.Get("RingOne");
         public static readonly Identifier RingTwo = Identifier.Get("RingTwo");
+        public static readonly Identifier Ritual = Identifier.Get("Ritual");
+        public static readonly Identifier Skill = Identifier.Get("Skill");
         public static readonly Identifier SkillTraining = Identifier.Get("Skill Training");
         public static readonly Identifier Slot = Identifier.Get("SLOT");
         public static readonly Identifier Versatile = Identifier.Get("Versatile");
