@@ -16,9 +16,17 @@
      }
    }
 
-   function initChoice(listSelector, type, detailSelector, templateFunc) {
-     templateFunc = templateFunc || defaultTemplate;
+   function initChoice(options) {
+     var listSelector = options.listSelector;
+     var type = options.type;
+     var detailSelector = options.detailSelector;
+     var templateFunc = options.templateFunc || defaultTemplate;
+
      var list = $(listSelector);
+     list.empty();
+
+     $(detailSelector).empty();
+
      var choice = model.getChoices(type)[0];
      var ok = false;
      choice.getValidElements().forEach(function(element) {
@@ -30,6 +38,8 @@
        ehe.click(function() {
          $(detailSelector).html(templateFunc(element));
          choice.choice = element; // TODO: Make this less live?
+
+         if (options.onChanged) { options.onChanged(); }
        });
 
        list.append(ehe);
@@ -39,22 +49,38 @@
      $(detailSelector).css('height', $(listSelector).css('height'));
    }
 
-   function initRaceList() { 
-     initChoice(
-       "#raceList", 
-       "Race", 
-       "#raceDetail"); 
+   function initRaceList() {
+     initChoice({
+       listSelector: "#raceList", 
+       type: "Race", 
+       detailSelector: "#raceDetail"
+     });
    }
-   function initClassList() { 
-       initChoice(
-         "#classList", 
-         "Class", 
-         "#classDetail");
+
+   function initClassList() {
+     initChoice({
+       listSelector: "#classList", 
+       type: "Class",
+       detailSelector: "#classDetail",
+       onChanged: function() {
+         var classFeatureUI = $('#classFeatureDetailBlock');
+         if (model.getChoices('class feature').length) {
+           classFeatureUI.show();
+           initChoice({
+             listSelector: "#classFeatureList",
+             type: "class feature",
+             detailSelector: "#classFeatureDetail"
+           });
+         } else {
+           classFeatureUI.hide();
+         }
+       }
+     });
    }
 
    initClassList();
    initRaceList();
-
+   $('.initialHidden').hide();
 })(this);
 
 

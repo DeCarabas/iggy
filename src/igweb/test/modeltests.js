@@ -128,6 +128,30 @@ test('Dependent statadd', function() {
   equals(model.stat('y'), 0, "y after remove");
 });
 
+test('Transitive grants', function() {
+       
+  var elementOne = new RulesElement({
+    rules: function(model) {
+      model.grant(elementTwo);
+    }
+  });
+
+  var elementTwo = new RulesElement({
+    rules: function(model) {
+      model.statadd('y', 7);
+    }
+  });
+       
+  var model = new Model();
+       
+  equals(model.stat('y'), 0, "y before anything");
+  model.grant(elementOne);
+  equals(model.stat('y'), 7, "y after grant");
+  model.remove(elementOne);
+  equals(model.stat('y'), 0, "y after remove");
+});
+
+
 module("Model Tests: Choice Tests", {
   setup: function() {
     var e;
@@ -161,9 +185,30 @@ module("Model Tests: Choice Tests", {
       prereqs: function(model) { return false; }
     });
     byID[e.id] = e;
+
+    var T2 = types["T2"] || (types["T2"] = {});
+    e = T2["A"] = new RulesElement({
+      name: "foo",
+      rules: function(model) {
+          model.select('T3', 1);
+        }
+    });
+    byID[e.id] = e;
+
+    var T3 = types["T3"] || (types["T3"] = {});
+    e = T3["A"] = new RulesElement({
+        name: "bar",
+        rules: function(model) {
+          model.statadd('X', 10);
+        }
+    });
+    byID[e.id] = e;
+
   },
   teardown: function() {
     delete global.elements.types["T1"];
+    delete global.elements.types["T2"];
+    delete global.elements.types["T3"];
   }
 });
 
@@ -223,9 +268,57 @@ test('Removing a choice ungrants the selection', function() {
   choice.choice = options[0];
   equals(model.stat('X'), 10, "X after choosing Dwarf");
 
-
   model.remove(element);
   equals(model.stat('X'), 0, "X after removing initial element");
+  equals(model.getChoices("T1").length, 0, "Number of choices for T1 after removing");
 });
+
+test('Transitive grant/ungrant with choices', function() {
+
+  var element = new RulesElement({
+    rules: function(model) {
+      model.select("T2", 1);
+    }
+  });
+
+  var model = new Model();
+  equals(model.getChoices("T2").length, 0, "Number of T2 choices before grant");
+  equals(model.getChoices("T3").length, 0, "Number of T3 choices before grant");
+  equals(model.stat('X'), 0, "X before grant");
+
+  model.grant(element);
+
+  var choices1 = model.getChoices("T2");
+  equals(choices1.length, 1, "Number of choices for T2");
+  var choice1 = choices1[0];
+  var options = choice1.getValidElements();
+  equals(options.length, 1, "Number of valid elements for T2");
+
+  equals(model.getChoices("T3").length, 0, "Number of T3 choices after initial grant");
+  equals(model.stat('X'), 0, "X after initial grant");
+
+  equals(options[0].name, "foo", "Name of T2 option");
+  choice1.choice = options[0];
+
+  var choices2 = model.getChoices("T3");
+  equals(choices2.length, 1, "Number of choices for T3 after T2 choice");
+  var choice2 = choices2[0];
+  options = choice2.getValidElements();
+  equals(options.length, 1, "Number of valid elements for T3");
+       
+  equals(model.stat('X'), 0, "X before choosing T3");
+
+  equals(options[0].name, "bar", "Name of T3 option");
+  choice2.choice = options[0];
+
+  equals(model.stat('X'), 10, "X after choosing T3");
+
+  model.remove(element);
+
+  equals(model.getChoices("T2").length, 0, "Number of T2 choices after remove");
+  equals(model.getChoices("T3").length, 0, "Number of T3 choices after remove");
+  equals(model.stat('X'), 0, "X after remove");
+});
+
 
 })(this);

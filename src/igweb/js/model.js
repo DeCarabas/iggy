@@ -5,6 +5,8 @@
 "use strict";
 (function(global, undefined) {
 
+  function log(message) { console.log(message); }
+
   var Stat = function () { };
   Stat.prototype = {
     addModifier: function (value, kind) {
@@ -75,6 +77,7 @@
     this.number = number;
     this.model = model;
     this.id = Choice._uniqueId || (Choice._uniqueId = 0);
+    this._choice = null;
     Choice._uniqueId++;
   };
   Choice.prototype = {
@@ -126,21 +129,24 @@
       var oldTrackingInfo;
       var ti = this._granted[element.id];
       if (!ti) {
+        log("Granting [" + element.type + "]:[" + element.name + "]");
         oldTrackingInfo = this._trackingInfo;
         ti = this._trackingInfo = { refs: 1, undo: [] };
+        this._granted[element.id] = this._trackingInfo;
 
         if (element.rules) { element.rules(this); }
 
-        this._granted[element.id] = this._trackingInfo;
         this._trackingInfo = oldTrackingInfo;
       } else {
         ti.refs++;
+        log("[" + element.type + "]:[" + element.name + "] refs: " + ti.refs);
       }
 
       if (this._trackingInfo) {
+        var that = this;
         this._trackingInfo.undo.push(function() {
-          ti.refs--; 
-          if (!ti.refs) { this.remove(element); }
+          log("Undoing grant [" + element.type + "]:[" + element.name + "]");
+          that.remove(element);
         });
       }
     },
@@ -152,7 +158,9 @@
     remove: function(element) {
       var tracking = this._granted[element.id];
       if (tracking) {
+        log("Removing [" + element.type + "]:[" + element.name + "]");
         tracking.refs--;
+        log("[" + element.type + "]:[" + element.name + "] refs: " + tracking.refs);
         if (tracking.refs == 0) {
           tracking.undo.forEach(function (ti) { ti(); });
           delete this._granted[element.id];
@@ -164,10 +172,13 @@
       var ec = this._choices[type] || (this._choices[type] = {});
       ec[nc.id] = nc;
 
+      log("Selecting ("+type+","+number+") as " + nc.id);
+
       if (this._trackingInfo) { 
         this._trackingInfo.undo.push(function () { 
+            log("Undoing selection " + nc.id +" ("+type+","+number+")");
             nc.choice = null;
-            delete ec[nc.id]; 
+            delete ec[nc.id];
         });
       }
     },
