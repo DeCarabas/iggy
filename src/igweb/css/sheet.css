@@ -1,0 +1,42 @@
+/* Sheet specific styles */
+
+.header
+{
+    background-color: #444;
+    color: White;
+}
+
+.header h1
+{
+    font-size: 36px;
+}
+
+.header h2
+{
+    margin: 0;
+}
+
+.header input
+{
+    width: 100%;
+}
+
+.page h3 
+{
+    background-color: #444;
+    color: White;
+    text-align: center;
+    font-size: 18px;
+}
+
+.page
+{
+    font-size: 10px;
+}
+
+.page input
+{
+    border-width: 0px 0px 1px 0px;    
+    border-style: solid;
+    width: 100%;
+}

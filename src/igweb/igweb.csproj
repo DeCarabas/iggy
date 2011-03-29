@@ -72,8 +72,24 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\960.css" />
+    <Content Include="css\960_24_col.css" />
     <Content Include="css\handheld.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\rtl_960.css" />
+    <Content Include="css\rtl_960_24_col.css" />
+    <Content Include="css\rtl_text.css" />
+    <Content Include="css\sheet.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\text.css" />
+    <Content Include="css\uncompressed\960.css" />
+    <Content Include="css\uncompressed\960_24_col.css" />
+    <Content Include="css\uncompressed\demo.css" />
+    <Content Include="css\uncompressed\reset.css" />
+    <Content Include="css\uncompressed\rtl_960.css" />
+    <Content Include="css\uncompressed\rtl_960_24_col.css" />
+    <Content Include="css\uncompressed\rtl_text.css" />
+    <Content Include="css\uncompressed\text.css" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="js\binding.js" />
@@ -91,6 +107,7 @@
     <Content Include="js\profiling\yahoo-profiling.min.js" />
     <Content Include="js\script.js" />
     <Content Include="js\signals.js" />
+    <Content Include="sheet.html" />
     <Content Include="test\dnd4tests.js" />
     <Content Include="test\index.html" />
     <Content Include="test\modeltests.js" />
