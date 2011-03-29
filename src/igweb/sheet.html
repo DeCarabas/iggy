@@ -113,8 +113,23 @@
         </div>
         <div class="clear"></div>
     
-        <div class="grid_4">
+        <div class="grid_4 statTable initiative">
           <h3>Initiative</h3>
+          <table>
+            <tr><th>Score</th><th></th><th>Dex</th><th>1/2 Level</th><th></th><th>Misc</th></tr>
+            <tr>
+                <td><input name="initiative" /></td>
+                <td class="statName">Initiative</td>
+                <td><input name="dexbonus" /></td>
+                <td><input name="halflevel" /></td>
+                <td></td>
+                <td><input name="initiativeMisc" /></td>
+            </tr>
+          </table>
+          <div>
+            <h4>Conditional Modifiers</h4>
+            <p id="conditionalModifiers"></p>
+          </div>
           <h3>Ability Scores</h3>
           <h3>Hit Points</h3>
           <h3>Skills</h3>

@@ -21,17 +21,24 @@
     width: 100%;
 }
 
+.page
+{
+    font-size: 10px;
+}
+
 .page h3 
 {
     background-color: #444;
     color: White;
     text-align: center;
     font-size: 18px;
+    margin-bottom: 1px;
 }
 
-.page
+
+.page table
 {
-    font-size: 10px;
+    margin-bottom: 1px;
 }
 
 .page input
@@ -39,4 +46,37 @@
     border-width: 0px 0px 1px 0px;    
     border-style: solid;
     width: 100%;
+}
+
+.page h4
+{
+    font-size: 9px;
+}
+
+.statTable input
+{
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    margin: 1px;
+    width: 75%;
+}
+
+.statTable tr > th
+{
+    padding: 1px;
+    font-size: 9px;
+}
+
+.statTable tr > td
+{
+    background-color: #444;
+    color: White;
+    padding: 1px;
+}
+
+td.statName
+{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
 }
