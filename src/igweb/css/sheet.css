@@ -23,7 +23,7 @@
 
 .page
 {
-    font-size: 10px;
+    font-size: 10px;        
 }
 
 .page h3 
@@ -33,12 +33,16 @@
     text-align: center;
     font-size: 18px;
     margin-bottom: 1px;
+    margin-top: 10px;
 }
 
 
 .page table
 {
     margin-bottom: 1px;
+    line-height: normal;
+    vertical-align: middle;
+    width: 100%;
 }
 
 .page input
@@ -57,14 +61,16 @@
 {
     border-width: 1px 1px 1px 1px;
     border-style: solid;
-    margin: 1px;
-    width: 75%;
+    margin: 1px 1px 1px 10px;
+    width: 45px;
+    text-align: center;   
 }
 
 .statTable tr > th
 {
     padding: 1px;
     font-size: 9px;
+    text-align: center;
 }
 
 .statTable tr > td
@@ -74,9 +80,26 @@
     padding: 1px;
 }
 
+.statTable small
+{
+    font-size: 8px;
+    line-height: 8px;
+}
+
 td.statName
 {
     font-size: 16px;
     text-align: center;
     font-weight: bold;
+}
+
+.abilName
+{
+    width: 90px;
+    text-align: center;
+}
+
+tr.abilSpacer
+{
+    height: 10px;
 }

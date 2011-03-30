@@ -113,9 +113,9 @@
         </div>
         <div class="clear"></div>
     
-        <div class="grid_4 statTable initiative">
+        <div class="grid_4 statTable">
           <h3>Initiative</h3>
-          <table>
+          <table class="initiative">
             <tr><th>Score</th><th></th><th>Dex</th><th>1/2 Level</th><th></th><th>Misc</th></tr>
             <tr>
                 <td><input name="initiative" /></td>
@@ -131,6 +131,47 @@
             <p id="conditionalModifiers"></p>
           </div>
           <h3>Ability Scores</h3>
+          <table class="abilityScoreTable">
+            <tr><th>Score</th><th class="abilName">Ability</th><th>Abil Mod</th><th>Mod + 1/2 Lvl</th></tr>
+            <tr>
+                <td><input name="str" /></td>
+                <td class="statName abilName">STR</td>
+                <td><input name="strMod" /></td>
+                <td><input name="strModHalfLevel" /></td>
+            </tr>
+            <tr>
+                <td><input name="con" /></td>
+                <td class="statName abilName">CON</td>
+                <td><input name="conMod" /></td>
+                <td><input name="conModHalfLevel" /></td>
+            </tr>
+            <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
+            <tr>
+                <td><input name="dex" /></td>
+                <td class="statName abilName">DEX</td>
+                <td><input name="dexMod" /></td>
+                <td><input name="dexModHalfLevel" /></td>
+            </tr>
+            <tr>
+                <td><input name="int" /></td>
+                <td class="statName abilName">INT</td>
+                <td><input name="intMod" /></td>
+                <td><input name="intModHalfLevel" /></td>
+            </tr>
+            <tr><th></th><th></th><th></th><th></th></tr>
+            <tr>
+                <td><input name="wis" /></td>
+                <td class="statName abilName">WIS</td>
+                <td><input name="wisMod" /></td>
+                <td><input name="wisModHalfLevel" /></td>
+            </tr>
+            <tr>
+                <td><input name="cha" /></td>
+                <td class="statName abilName">CHA</td>
+                <td><input name="chaMod" /></td>
+                <td><input name="chaModHalfLevel" /></td>
+            </tr>
+          </table>
           <h3>Hit Points</h3>
           <h3>Skills</h3>
         </div>
