@@ -113,9 +113,9 @@
         </div>
         <div class="clear"></div>
     
-        <div class="grid_4 statTable">
+        <div class="grid_4">
           <h3>Initiative</h3>
-          <table class="initiative">
+          <table class="statTable initiative">
             <tr><th>Score</th><th></th><th>Dex</th><th>1/2 Level</th><th></th><th>Misc</th></tr>
             <tr>
                 <td><input name="initiative" /></td>
@@ -131,7 +131,7 @@
             <p id="conditionalModifiers"></p>
           </div>
           <h3>Ability Scores</h3>
-          <table class="abilityScoreTable">
+          <table class="statTable abilityScoreTable">
             <tr><th>Score</th><th class="abilName">Ability</th><th>Abil Mod</th><th>Mod + 1/2 Lvl</th></tr>
             <tr>
                 <td><input name="str" /></td>
@@ -158,7 +158,7 @@
                 <td><input name="intMod" /></td>
                 <td><input name="intModHalfLevel" /></td>
             </tr>
-            <tr><th></th><th></th><th></th><th></th></tr>
+            <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
             <tr>
                 <td><input name="wis" /></td>
                 <td class="statName abilName">WIS</td>
@@ -173,6 +173,12 @@
             </tr>
           </table>
           <h3>Hit Points</h3>
+          <table class="hitPoints">
+            <tr><th>MAX HP</th><th></th><th colspan="2"><b>HEALING SURGES</b></th></tr>
+            <tr><td rowspan="3"><input class="maxHP" name="maxHP" /></td><th>Bloodied</th><th>Surge Value</th><th>Surges/Day</th></tr>
+            <tr><td><input name="bloodied" /></td><td><input name="surgeValue" /></td><td><input name="surgesPerDay" /></td></tr>
+            <tr><th>1/2 HP</th><th>1/4 HP</th><th></th></tr>
+          </table>
           <h3>Skills</h3>
         </div>
         <div class="grid_4">

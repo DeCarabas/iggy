@@ -37,7 +37,7 @@
 }
 
 
-.page table
+.statTable
 {
     margin-bottom: 1px;
     line-height: normal;
@@ -102,4 +102,30 @@ td.statName
 tr.abilSpacer
 {
     height: 10px;
+}
+
+.hitPoints
+{
+    width: 100%;
+}
+
+.hitPoints th
+{
+    text-align: center;   
+}
+
+.hitPoints input
+{
+    width: 45px;
+    height: 100%;
+    margin-left: 12px;
+    border: 1px;
+    border-style: solid;
+    text-align: center;
+}
+
+.maxHP
+{
+    width: 50px;
+    font-size: 18px;
 }
