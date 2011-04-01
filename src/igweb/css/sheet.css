@@ -309,7 +309,7 @@ tr.abilSpacer
     clear: both;
 }
 
-/* Multi-line text */
+/* Multi-line text: race class features, languages */
 
 .mutiLineText
 {
@@ -332,4 +332,36 @@ tr.abilSpacer
 .languagesKnown
 {
     height: 40px;
+}
+
+/* movement */
+
+.movementBonus input
+{
+    width: 30px;
+    margin: 0px;
+}
+
+/* senses */
+
+.passiveText
+{
+    font-size: 12px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+/* attack workspace */
+
+.attackBonus input
+{
+    width: 18px;
+}
+
+/* feats */
+
+.feats
+{
+    height: 320px;
+    border-width: 1px;
 }

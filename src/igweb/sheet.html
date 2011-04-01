@@ -469,13 +469,118 @@
           <h3>Languages Known</h3>
           <textarea name="languagesKnown" class="mutiLineText languagesKnown"></textarea>
         </div>
+
         <div class="grid_4">
           <h3>Movement</h3>
+          <table class="statTable movement">
+            <tr><th>Score</th><th></th><th>Base</th><th>Armor</th><th>Item</th><th>Misc</th></tr>
+            <tr>
+                <td><input name="speed" /></td>
+                <td class="statName">Speed</td>
+                <td class="movementBonus"><input name="baseSpeed" /></td>
+                <td class="movementBonus"><input name="speedArmor" /></td>
+                <td class="movementBonus"><input name="speedItem" /></td>
+                <td class="movementBonus"><input name="speedMisc" /></td>
+            </tr>
+          </table>
+          <div class="specialMovement">
+            <h4 class="conditionalHeader">Special Movement</h4>
+            <input name="specialMovement" />
+          </div>
           <h3>Senses</h3>
+            <table class="statTable senses">
+            <tr><th>Score</th><th>Passive Sense</th><th>Base</th><th></th><th>Skill Bonus</th></tr>
+            <tr>
+                <td><input name="passiveInsight" /></td>
+                <td class="passiveText">Passive Insight</td>
+                <td class="passiveText">10</td>
+                <td class="passiveText">+</td>
+                <td class="passiveBonus"><input name="insightSkillBonus" /></td>
+            </tr>
+            <tr>
+                <td><input name="passivePerception" /></td>
+                <td class="passiveText">Passive Perception</td>
+                <td class="passiveText">10</td>
+                <td class="passiveText">+</td>
+                <td class="passiveBonus"><input name="perceptionSkillBonus" /></td>
+            </tr>
+          </table>
+          <div class="specialSenses">
+            <h4 class="conditionalHeader">Special Senses</h4>
+            <input name="specialSenses" />
+          </div>
           <h3>Attack Workspace</h3>
+          <div class="attackAbility">
+            <h4 class="conditionalHeader">Ability</h4>
+            <input name="attackNameOne" />
+          </div>
+          <table class="statTable attackOne">
+            <tr><th>Total</th><th></th><th>1/2 Lvl</th><th>Abil</th><th>Class</th><th>Prof</th><th>Feat</th><th>Enh</th><th>Misc</th></tr>
+            <tr>
+                <td><input name="attackBonusOne" /></td>
+                <td></td>
+                <td class="attackBonus"><input name="halfLevel" /></td>
+                <td class="attackBonus"><input name="attackAbilityBonusOne" /></td>
+                <td class="attackBonus"><input name="attackClassBonusOne" /></td>
+                <td class="attackBonus"><input name="attackProfBonusOne" /></td>
+                <td class="attackBonus"><input name="attackFeatBonusOne" /></td>
+                <td class="attackBonus"><input name="attackEnhancementBonusOne" /></td>
+                <td class="attackBonus"><input name="attackMiscBonusOne" /></td>
+            </tr>
+          </table>
+          <div class="attackAbility">
+            <h4 class="conditionalHeader">Ability</h4>
+            <input name="attackNameTwo" />
+          </div>
+          <table class="statTable attackTwo">
+            <tr><th>Total</th><th></th><th>1/2 Lvl</th><th>Abil</th><th>Class</th><th>Prof</th><th>Feat</th><th>Enh</th><th>Misc</th></tr>
+            <tr>
+                <td><input name="attackBonusTwo" /></td>
+                <td></td>
+                <td class="attackBonus"><input name="halfLevel" /></td>
+                <td class="attackBonus"><input name="attackAbilityBonusTwo" /></td>
+                <td class="attackBonus"><input name="attackClassBonusTwo" /></td>
+                <td class="attackBonus"><input name="attackProfBonusTwo" /></td>
+                <td class="attackBonus"><input name="attackFeatBonusTwo" /></td>
+                <td class="attackBonus"><input name="attackEnhancementBonusTwo" /></td>
+                <td class="attackBonus"><input name="attackMiscBonusTwo" /></td>
+            </tr>
+          </table>
           <h3>Damage Workspace</h3>
-          <h3>Basic Attacks</h3>
+          <div class="damageAbility">
+            <h4 class="conditionalHeader">Ability</h4>
+            <input name="damageNameOne" />
+          </div>
+          <table class="statTable damageOne">
+            <tr><th>Total</th><th></th><th>Abil</th><th>Feat</th><th>Enh</th><th>Misc</th><th>Misc</th></tr>
+            <tr>
+                <td><input name="damageBonusOne" /></td>
+                <td></td>
+                <td class="attackBonus"><input name="damageAbilityBonusOne" /></td>
+                <td class="attackBonus"><input name="damageFeatBonusOne" /></td>
+                <td class="attackBonus"><input name="damageEnhancementBonusOne" /></td>
+                <td class="attackBonus"><input name="damageMiscBonusOneOne" /></td>
+                <td class="attackBonus"><input name="damageMiscBonusTwoOne" /></td>
+            </tr>
+          </table>
+          <div class="damageAbility">
+            <h4 class="conditionalHeader">Ability</h4>
+            <input name="damageNameTwo" />
+          </div>
+          <table class="statTable damageTwo">
+            <tr><th>Total</th><th></th><th>Abil</th><th>Feat</th><th>Enh</th><th>Misc</th><th>Misc</th></tr>
+            <tr>
+                <td><input name="damageBonusTwo" /></td>
+                <td></td>
+                <td class="attackBonus"><input name="damageAbilityBonusTwo" /></td>
+                <td class="attackBonus"><input name="damageFeatBonusTwo" /></td>
+                <td class="attackBonus"><input name="damageEnhancementBonusTwo" /></td>
+                <td class="attackBonus"><input name="damageMiscBonusOneTwo" /></td>
+                <td class="attackBonus"><input name="damageMiscBonusTwoTwo" /></td>
+            </tr>
+          </table>
           <h3>Feats</h3>
+          <textarea name="feats" class="mutiLineText feats"></textarea>          
         </div>
     </div>
   </div>
