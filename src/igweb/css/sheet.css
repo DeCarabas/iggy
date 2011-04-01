@@ -265,3 +265,46 @@ tr.abilSpacer
     margin: 0px;
     padding: 0px;
 }
+
+/* Action Points */
+
+.actionPointsDiv
+{
+    width: 60%;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-top: 15px;
+    background: #444;
+    color: White;
+}
+
+.actionPointsDiv input
+{
+    margin-left: 5px;
+    width: 40px;
+    border-width: 1px;
+    text-align: center;
+}
+
+.actionPointsHelp
+{
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+
+.actionPointsHelpTable
+{
+    width: 100%;
+    font-size: 8px;
+}
+
+.actionPointsHelpTable th { text-align: center; }
+.actionPointsHelpTable td { text-align: center; }
+
+.actionPointsAdditional
+{
+    clear: both;
+}
