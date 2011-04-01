@@ -15,6 +15,8 @@ that is specific to 4e. That's in src\igweb\js\model.js. I'll then
 layer on top of it extensions and specific data to support Dungeons
 and Dragons characters, and then build UI specific to D&D.
 
+There's a character-sheet looking UI in src\igweb\sheet.html.
+
 It is not a goal to build UI for the general-purpose model engine, so
 don't worry about it.
 
