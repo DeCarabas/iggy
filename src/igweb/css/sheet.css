@@ -308,3 +308,28 @@ tr.abilSpacer
 {
     clear: both;
 }
+
+/* Multi-line text */
+
+.mutiLineText
+{
+    width: 295px;
+    resize: none;
+    border-style: none;
+    font-family: Calibri, Sans-Serif;
+}
+
+.raceFeatures
+{
+    height: 75px;
+}
+
+.classFeatures
+{
+    height: 150px;
+}
+
+.languagesKnown
+{
+    height: 40px;
+}
