@@ -133,39 +133,42 @@
           <h3>Ability Scores</h3>
           <table class="statTable abilityScoreTable">
             <tr><th>Score</th><th class="abilName">Ability</th><th>Abil Mod</th><th>Mod + 1/2 Lvl</th></tr>
-            <tr>
+            <tr class="abilityScore">
                 <td><input name="str" /></td>
                 <td class="statName abilName">STR</td>
                 <td><input name="strMod" /></td>
                 <td><input name="strModHalfLevel" /></td>
             </tr>
-            <tr>
+            <tr class="abilMid"><th></th></tr>
+            <tr class="abilityScore">
                 <td><input name="con" /></td>
                 <td class="statName abilName">CON</td>
                 <td><input name="conMod" /></td>
                 <td><input name="conModHalfLevel" /></td>
             </tr>
             <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
-            <tr>
+            <tr class="abilityScore">
                 <td><input name="dex" /></td>
                 <td class="statName abilName">DEX</td>
                 <td><input name="dexMod" /></td>
                 <td><input name="dexModHalfLevel" /></td>
             </tr>
-            <tr>
+            <tr class="abilMid"><th></th></tr>
+            <tr class="abilityScore">
                 <td><input name="int" /></td>
                 <td class="statName abilName">INT</td>
                 <td><input name="intMod" /></td>
                 <td><input name="intModHalfLevel" /></td>
             </tr>
             <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
-            <tr>
+            <tr class="abilityScore">
                 <td><input name="wis" /></td>
                 <td class="statName abilName">WIS</td>
                 <td><input name="wisMod" /></td>
                 <td><input name="wisModHalfLevel" /></td>
             </tr>
-            <tr>
+            <tr class="abilMid"><th></th></tr>
+            <tr class="abilityScore">
                 <td><input name="cha" /></td>
                 <td class="statName abilName">CHA</td>
                 <td><input name="chaMod" /></td>
@@ -339,6 +342,110 @@
         </div>
         <div class="grid_4">
           <h3>Defenses</h3>
+          <table class="defense acDefense">
+            <tr><th>Score</th></tr>
+            <tr>
+                <td rowspan="2" class="defenseScore"><input name="armorClass" /></td>
+                <th class="defenseBonus">Defense</th>
+                <th class="defenseBonus">Base</th>
+                <th class="defenseBonus">Armor</th>
+                <th class="defenseBonus">Class</th>
+                <th class="defenseBonus">Feat</th>
+                <th class="defenseBonus">Enh</th>
+                <th class="defenseBonus">Misc</th>
+            </tr>
+            <tr class="defenseDetail">
+                <td class="defenseName">AC</td>
+                <td class="defenseBonus"><input name="tenHalfLevel" /></td>
+                <td class="defenseBonus"><input name="armorBonus" /></td>
+                <td class="defenseBonus"><input name="classArmorClassBonus" /></td>
+                <td class="defenseBonus"><input name="featArmorClassBonus" /></td>
+                <td class="defenseBonus"><input name="enhancementArmorClassBonus" /></td>
+                <td class="defenseBonus"><input name="miscArmorClassBonus" /></td>
+            </tr>
+          </table>
+          <div>
+            <h4 class="conditionalHeader">Conditional Modifiers</h4>
+            <input name="acConditionalModifiers" />
+          </div>
+          <table class="defense fortDefense">
+            <tr><th>Score</th></tr>
+            <tr>
+                <td rowspan="2" class="defenseScore"><input name="fortitude" /></td>
+                <th class="defenseBonus">Defense</th>
+                <th class="defenseBonus">Base</th>
+                <th class="defenseBonus">Abil</th>
+                <th class="defenseBonus">Class</th>
+                <th class="defenseBonus">Feat</th>
+                <th class="defenseBonus">Enh</th>
+                <th class="defenseBonus">Misc</th>
+            </tr>
+            <tr class="defenseDetail">
+                <td class="defenseName">FORT</td>
+                <td class="defenseBonus"><input name="tenHalfLevel" /></td>
+                <td class="defenseBonus"><input name="fortAbilityBonus" /></td>
+                <td class="defenseBonus"><input name="classFortBonus" /></td>
+                <td class="defenseBonus"><input name="featFortBonus" /></td>
+                <td class="defenseBonus"><input name="enhancementFortBonus" /></td>
+                <td class="defenseBonus"><input name="miscFortBonus" /></td>
+            </tr>
+          </table>
+          <div>
+            <h4 class="conditionalHeader">Conditional Modifiers</h4>
+            <input name="fortConditionalModifiers" />
+          </div>
+          <table class="defense refDefense">
+            <tr><th>Score</th></tr>
+            <tr>
+                <td rowspan="2" class="defenseScore"><input name="reflex" /></td>
+                <th class="defenseBonus">Defense</th>
+                <th class="defenseBonus">Base</th>
+                <th class="defenseBonus">Abil</th>
+                <th class="defenseBonus">Class</th>
+                <th class="defenseBonus">Feat</th>
+                <th class="defenseBonus">Enh</th>
+                <th class="defenseBonus">Misc</th>
+            </tr>
+            <tr class="defenseDetail">
+                <td class="defenseName">REF</td>
+                <td class="defenseBonus"><input name="tenHalfLevel" /></td>
+                <td class="defenseBonus"><input name="refAbilityBonus" /></td>
+                <td class="defenseBonus"><input name="classRefBonus" /></td>
+                <td class="defenseBonus"><input name="featRefBonus" /></td>
+                <td class="defenseBonus"><input name="enhancementRefBonus" /></td>
+                <td class="defenseBonus"><input name="miscRefBonus" /></td>
+            </tr>
+          </table>
+          <div>
+            <h4 class="conditionalHeader">Conditional Modifiers</h4>
+            <input name="refConditionalModifiers" />
+          </div>
+          <table class="defense willDefense">
+            <tr><th>Score</th></tr>
+            <tr>
+                <td rowspan="2" class="defenseScore"><input name="will" /></td>
+                <th class="defenseBonus">Defense</th>
+                <th class="defenseBonus">Base</th>
+                <th class="defenseBonus">Abil</th>
+                <th class="defenseBonus">Class</th>
+                <th class="defenseBonus">Feat</th>
+                <th class="defenseBonus">Enh</th>
+                <th class="defenseBonus">Misc</th>
+            </tr>
+            <tr class="defenseDetail">
+                <td class="defenseName">WILL</td>
+                <td class="defenseBonus"><input name="tenHalfLevel" /></td>
+                <td class="defenseBonus"><input name="willAbilityBonus" /></td>
+                <td class="defenseBonus"><input name="classWillBonus" /></td>
+                <td class="defenseBonus"><input name="featWillBonus" /></td>
+                <td class="defenseBonus"><input name="enhancementWillBonus" /></td>
+                <td class="defenseBonus"><input name="miscWillBonus" /></td>
+            </tr>
+          </table>
+          <div>
+            <h4 class="conditionalHeader">Conditional Modifiers</h4>
+            <input name="willConditionalModifiers" />
+          </div>
           <h3>Action Points</h3>
           <h3>Race Features</h3>
           <h3>Class/Path/Destiny Features</h3>

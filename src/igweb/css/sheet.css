@@ -88,6 +88,11 @@
 
 /* Ability Scores */
 
+.abilMid
+{
+    height: 5px;
+}
+
 td.statName
 {
     font-size: 16px;
@@ -103,7 +108,7 @@ td.statName
 
 tr.abilSpacer
 {
-    height: 10px;
+    height: 50px;
 }
 
 /* HP */
@@ -194,4 +199,69 @@ tr.abilSpacer
 {
     background-color: transparent;
     border-style: none;
+}
+
+/* Defenses */
+
+.defense
+{
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.defense th
+{
+    text-align: center;
+}
+
+.defense input
+{
+    text-align: center;
+}
+
+.defenseDetail
+{
+    background-color: #444;
+    color: White;
+}
+
+.defenseDetail td
+{
+    vertical-align: middle;
+}
+
+.defenseName
+{
+    font-size: 24px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 65px;
+}
+
+.defenseBonus
+{
+    width: 29px;
+}
+
+.defenseBonus input
+{
+    width: 25px;
+    border-style: none;
+    vertical-align: middle;
+}
+
+.defenseScore input
+{
+    height: 100%;
+    width: 40px;
+    border-width: 1px;
+    font-size: 24px;
+}
+
+.conditionalHeader
+{
+    margin: 0px;
+    padding: 0px;
 }
