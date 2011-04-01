@@ -86,6 +86,8 @@
     line-height: 8px;
 }
 
+/* Ability Scores */
+
 td.statName
 {
     font-size: 16px;
@@ -103,6 +105,8 @@ tr.abilSpacer
 {
     height: 10px;
 }
+
+/* HP */
 
 .hitPoints
 {
@@ -128,4 +132,66 @@ tr.abilSpacer
 {
     width: 50px;
     font-size: 18px;
+}
+
+/* SKILLS */
+
+.skills input
+{
+    text-align: center;
+}
+
+.skills th
+{
+    text-align: center;
+    font-size: 6px;
+}
+
+.oddSkill
+{
+    background-color: #EEE;
+}
+
+.skillBonus input
+{
+    border-width: 1px;
+    width: 30px;
+}
+
+.skillName
+{
+    vertical-align: middle;
+    padding-right: 10px;
+    padding-left: 2px;
+}
+
+.skillAbility
+{
+    vertical-align: middle;    
+}
+
+.skillAbilityMod input
+{
+    border-width: 1px;
+    width: 25px;
+    margin-left: 5px;
+}
+
+.skillTrained input
+{
+    border-width: 1px;
+    width: 25px;
+    margin-left: 5px;
+}
+
+.skillArmorPenalty input
+{
+    background-color: transparent;
+    border-style: none;
+}
+
+.skillMisc input
+{
+    background-color: transparent;
+    border-style: none;
 }
