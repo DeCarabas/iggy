@@ -1,13 +1,8 @@
 ﻿namespace cbimporter.Rules.Loader.CharacterBuilder
 {
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Linq;
-    using System.Xml.Linq;
     using System;
-    using System.Diagnostics;
-    using cbimporter.Model;
-    using System.Text;
+    using System.Collections.Generic;
+    using System.Linq;
 
     // Cribbed from reflector; the code was originally written in MC++ (hah!) and so of course this code is very different.
     //
@@ -1490,17 +1485,17 @@
             return null;
         }
 
-        static bool MeleeDilettante(Character character)
+        static bool MeleeDilettante(/*Character character*/)
         {
             throw new NotImplementedException();
         }
 
-        static bool ImplementDilettante(Character character)
+        static bool ImplementDilettante(/*Character character*/)
         {
             throw new NotImplementedException();
         }
 
-        static bool CountsAsClassDilettante(Character character)
+        static bool CountsAsClassDilettante(/*Character character*/)
         {
             throw new NotImplementedException();
         }
@@ -1618,19 +1613,14 @@
 
         class PredicatePrereq : Prereq
         {
-            readonly Func<Character, bool> checkFunc;
+            readonly Func<bool> checkFunc;
 
-            public PredicatePrereq(Func<Character, bool> checkFunc)
+            public PredicatePrereq(Func<bool> checkFunc)
             {
                 this.checkFunc = checkFunc;
             }
 
             public override void Bind(RuleIndex index)
-            {
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
             {
                 throw new NotImplementedException();
             }
@@ -1652,11 +1642,6 @@
                 // Apply predicate to rules of type.
                 throw new NotImplementedException();
             }
-
-            public override bool Check(Character character)
-            {
-                throw new NotImplementedException();
-            }
         }
 
         class MoreThanOneClassPrereq : Prereq
@@ -1672,19 +1657,6 @@
 
                 // TODO: ADVANCED BINDING: Pull in all associated elements. 
                 this.elements = elements.ToArray();
-            }
-
-            public override bool Check(Character character)
-            {
-                for (int i = 0; i < this.elements.Length; i++)
-                {
-                    if (this.elements[i] != null && character.Grants.Contains(this.elements[i]))
-                    {
-                        return true;
-                    }
-                }
-
-                return false;
             }
         }
 
@@ -1703,11 +1675,6 @@
                     //
 
                 }
-            }
-
-            public override bool Check(Character character)
-            {
-                throw new NotImplementedException();
             }
         }
 
@@ -1730,11 +1697,6 @@
                     // know that the type field contains "feat", so WTF?
                 }
             }
-
-            public override bool Check(Character character)
-            {
-                throw new NotImplementedException();
-            }
         }
 
 
@@ -1744,11 +1706,6 @@
             {
                 // Unknown what this does.
                 // Useful strings: "Eldritch Pact", "CountsAsPact"
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
-            {
                 throw new NotImplementedException();
             }
         }
@@ -1789,11 +1746,6 @@
 
                 throw new NotImplementedException();
             }
-
-            public override bool Check(Character character)
-            {
-                throw new NotImplementedException();
-            }
         }
 
         class AnyClassSpecificPrereq : Prereq
@@ -1831,11 +1783,6 @@
                 //        goto Label_0031;
                 //    }
                 //    return previous;
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
-            {
                 throw new NotImplementedException();
             }
         }
@@ -1893,11 +1840,6 @@
                 //return previous;
                 throw new NotImplementedException();
             }
-
-            public override bool Check(Character character)
-            {
-                throw new NotImplementedException();
-            }
         }
 
         class AnyClassNoPsiPrereq : Prereq
@@ -1917,11 +1859,6 @@
                 //    }
                 //}
                 //return previous;
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
-            {
                 throw new NotImplementedException();
             }
         }
@@ -1963,11 +1900,6 @@
                 //     }
                 // }
                 // return previous;
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
-            {
                 throw new NotImplementedException();
             }
         }

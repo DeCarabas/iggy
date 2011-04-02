@@ -1,12 +1,8 @@
 ﻿namespace cbimporter.Rules
 {
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Linq;
-    using System.Xml.Linq;
     using System;
-    using System.Diagnostics;
-    using cbimporter.Model;
+    using System.Collections.Generic;
+    using System.Linq;
 
     // TODO: Automatically Handle Special Things:
     //       CountsAsClass
@@ -20,7 +16,6 @@
     public abstract class Prereq 
     {
         public abstract void Bind(RuleIndex index);
-        public abstract bool Check(Character character);
 
         public static Prereq And(Prereq left, Prereq right)
         {
@@ -97,11 +92,6 @@
         sealed class FalsePrereq : Prereq
         {
             public override void Bind(RuleIndex index) { }
-
-            public override bool Check(Character character)
-            {
-                return false;
-            }
         }
 
         sealed class AndPrereq : Prereq
@@ -120,11 +110,6 @@
                 this.left.Bind(index);
                 this.right.Bind(index);
             }
-
-            public override bool Check(Character character)
-            {
-                return this.left.Check(character) && this.right.Check(character);
-            }
         }
 
         sealed class AnyBoundElementPrereq : Prereq
@@ -137,15 +122,6 @@
             }
 
             public override void Bind(RuleIndex index) { }
-
-            public override bool Check(Character character)
-            {
-                for (int i = 0; i < this.elements.Length; i++)
-                {
-                    if (character.Grants.Contains(this.elements[i])) { return true; }
-                }
-                return false;
-            }
         }
 
         sealed class AnyNOfPrereq : Prereq
@@ -166,16 +142,6 @@
                     this.prereqs[i].Bind(index);
                 }
             }
-
-            public override bool Check(Character character)
-            {
-                int required = this.count;
-                for (int i = 0; i < prereqs.Length && required > 0; i++)
-                {
-                    if (this.prereqs[i].Check(character)) { required--; }
-                }
-                return (required == 0);
-            }
         }
 
         sealed class UnboundElementIdPrereq : Prereq
@@ -188,11 +154,6 @@
             }
 
             public override void Bind(RuleIndex index)
-            {
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
             {
                 throw new NotImplementedException();
             }
@@ -215,16 +176,6 @@
                     this.boundElements = index.GetElementsByName(this.name).ToArray();
                 }
             }
-
-            public override bool Check(Character character)
-            {
-                for (int i = 0; i < this.boundElements.Length; i++)
-                {
-                    if (character.Grants.Contains(this.boundElements[i])) { return true; }
-                }
-
- 	            return false;
-            }
         }
 
         sealed class UnboundElementNameTypePrereq : Prereq
@@ -246,11 +197,6 @@
                     this.boundElement = index.GetElement(this.type, this.elementName);
                 }
             }
-
-            public override bool Check(Character character)
-            {
-                return character.Grants.Contains(this.boundElement);
-            }
         }
 
         sealed class BoundElementPrereq : Prereq
@@ -265,11 +211,6 @@
             public override void Bind(RuleIndex index)
             {
             }
-
-            public override bool Check(Character character)
-            {
-                return character.Grants.Contains(this.element);
-            }
         }
 
         sealed class LevelPrereq : Prereq
@@ -282,11 +223,6 @@
             }
 
             public override void Bind(RuleIndex index)
-            {
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
             {
                 throw new NotImplementedException();
             }
@@ -304,11 +240,6 @@
             }
 
             public override void Bind(RuleIndex index)
-            {
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
             {
                 throw new NotImplementedException();
             }
@@ -333,11 +264,6 @@
             {
                 throw new NotImplementedException();
             }
-
-            public override bool Check(Character character)
-            {
-                throw new NotImplementedException();
-            }
         }
 
         sealed class NotPrereq : Prereq
@@ -353,11 +279,6 @@
             {
                 this.prereq.Bind(index);
             }
-
-            public override bool Check(Character character)
-            {
-                return !this.prereq.Check(character);
-            }
         }
 
         sealed class StatPrereq : Prereq
@@ -372,11 +293,6 @@
             }
 
             public override void Bind(RuleIndex index)
-            {
-                throw new NotImplementedException();
-            }
-
-            public override bool Check(Character character)
             {
                 throw new NotImplementedException();
             }

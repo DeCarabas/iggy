@@ -2,118 +2,14 @@
 {
     using System;
     using System.CodeDom.Compiler;
-    using System.ComponentModel;
-    using cbimporter.Model;
 
-
-    public class WearingExpression : INotifyPropertyChanged
+    public class WearingExpression
     {
-        Character character;
         readonly Identifier[] parts;
 
         WearingExpression(Identifier[] parts)
         {
             this.parts = parts;
-        }
-
-        public bool Value
-        {
-            get
-            {
-                if (this.parts.Length == 1)
-                {
-                    Item[] equipment = character.Inventory.EquippedItems;
-                    for (int i = 0; i < equipment.Length; i++)
-                    {
-                        if (equipment[i].MatchesCategory(this.parts[0])) { return true; }
-                    }
-                }
-                else if (this.parts.Length > 1)
-                {
-                    if (this.parts[0] == Identifier.DualWielding)
-                    {
-                        // Cases: DUAL-WIELDING:
-                        //        
-                        //        DUAL-WIELDING:rapier-blade
-                        Identifier mainCat = this.parts[1];
-                        Identifier offHandCat = this.parts.Length == 2 ? this.parts[1] : this.parts[2];
-
-                        Item item = character.Inventory.MainHand;
-                        if (item == null || !item.MatchesCategory(Identifier.Weapon)) { return false; }
-                        if (mainCat.Length > 0 && !item.MatchesCategory(mainCat)) { return false; }
-
-                        item = character.Inventory.OffHand;
-                        if (item == null || !item.MatchesCategory(Identifier.Weapon)) { return false; }
-                        if (offHandCat.Length > 0 && !item.MatchesCategory(offHandCat)) { return false; }
-
-                        return true;
-                    }
-                    else if (parts[0] == Identifier.DualShield)
-                    {
-                        // e.g., "DUAL-SHIELD:"
-                        throw new NotImplementedException();
-                    }
-                    else if (parts[0] == Identifier.Implement)
-                    {
-                        // e.g., "implement:staff"
-                        throw new NotImplementedException();
-                    }
-                    else if (parts[0] == Identifier.Versatile)
-                    {
-                        // like a bastard sword, in both hands.
-                        throw new NotImplementedException();
-                    }
-                    else if (parts[0] == Identifier.Slot)
-                    {
-                        Item item = character.Inventory.GetEquippedItem(parts[1]);
-                        return (item != null);
-                    }
-                    else if (parts[0] == Identifier.OnlyWeapon)
-                    {
-                        Item item = character.Inventory.GetEquippedItem(Identifier.OffHand);
-                        if (item != null) { return false; }
-
-                        item = character.Inventory.GetEquippedItem(Identifier.MainHand);
-                        if (item == null) { return false; }
-                        return item.MatchesCategory(this.parts[1]);
-                    }
-                    else
-                    {
-                        Item[] equipment = character.Inventory.EquippedItems;
-                        for (int i = 0; i < equipment.Length; i++)
-                        {
-                            if (equipment[i] == null) { continue; }
-                            if (equipment[i].Mundane != null && equipment[i].Mundane.Type == this.parts[0])
-                            {
-                                bool matches = true;
-                                for (int j = 1; j < this.parts.Length; i++)
-                                {
-                                    if (this.parts[j].Length > 0 &&
-                                        this.parts[j] != Identifier.Asterisk &&
-                                        !equipment[i].MatchesCategory(this.parts[j]))
-                                    {
-                                        matches = false;
-                                        break;
-                                    }
-                                }
-
-                                if (matches) { return true; }
-                            }
-                        }
-
-                        return false;
-                    }
-                }
-
-                return false;
-            }
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void Bind(Character character)
-        {
-            this.character = character;
-            this.character.Inventory.PropertyChanged += InventoryPropertyChanged;
         }
 
         public void WriteJS(IndentedTextWriter writer)
@@ -198,12 +94,6 @@
             }
         }
 
-        void InventoryPropertyChanged(object sender, PropertyChangedEventArgs args)
-        {
-            // TODO: Better granularity
-            Notify("Value");
-        }
-
         public static WearingExpression New(string expression)
         {
             Identifier[] parsed;
@@ -238,17 +128,6 @@
             }
 
             return new WearingExpression(parsed);
-        }
-
-        protected void Notify(string property)
-        {
-            if (PropertyChanged != null) { PropertyChanged(this, new PropertyChangedEventArgs(property)); }
-        }
-
-        public void Unbind(Character character)
-        {
-            this.character.Inventory.PropertyChanged -= InventoryPropertyChanged;
-            this.character = null;
         }
     }
 }

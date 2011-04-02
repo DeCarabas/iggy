@@ -2,7 +2,6 @@
 {
     using System.CodeDom.Compiler;
     using System.Xml.Linq;
-    using cbimporter.Model;
 
     public sealed class GrantRule : Rule
     {
@@ -28,20 +27,10 @@
                 element.Attribute(XNames.Type).Value);
         }
 
-        public override void Apply(Character character)
-        {
-            character.Grant(this.element);
-        }
-
         public override void Bind(RuleIndex index)
         {
             // TODO: What if binding fails? (Only happens for [Dilettante], I think...)
             index.TryGetElement(this.name, out this.element);
-        }
-
-        public override void Revoke(Character character)
-        {
-            character.Revoke(this.element);
         }
 
         public override string ToString()

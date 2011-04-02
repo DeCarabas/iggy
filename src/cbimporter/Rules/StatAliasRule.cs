@@ -2,7 +2,6 @@
 {
     using System.CodeDom.Compiler;
     using System.Xml.Linq;
-    using cbimporter.Model;
 
     public class StatAliasRule : Rule
     {
@@ -22,16 +21,6 @@
                 ruleElement,
                 element.Attribute(XNames.Name).Value, 
                 element.Attribute(XNames.Alias).Value);
-        }
-
-        public override void Apply(Character character)
-        {
-            character.Alias(this.name, this.alias);
-        }
-
-        public override void Revoke(Character character)
-        {
-            /// TODO: Errrr... maybe?
         }
 
         public override void WriteJS(IndentedTextWriter writer)

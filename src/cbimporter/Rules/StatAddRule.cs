@@ -2,9 +2,7 @@
 {
     using System;
     using System.CodeDom.Compiler;
-    using System.ComponentModel;
     using System.Xml.Linq;
-    using cbimporter.Model;
 
     // We want to allocate as little as possible, in general. So here are some stats about the core:
     //
@@ -15,17 +13,11 @@
     //
     // NOTE: Value is * 2 to account for Half-Points. (If the modifier has a half-point, then it is odd.)
     //
-    public abstract class StatAddRule : Rule, INotifyPropertyChanged
+    public abstract class StatAddRule : Rule
     {
         protected StatAddRule(RuleElement element) : base(element) { }
 
-        public abstract bool Applies { get; }
-        public abstract string Condition { get; }
-        protected abstract string Stat { get; }
-        public abstract Identifier Type { get; }
-        public abstract int Value { get; } 
-
-        public event PropertyChangedEventHandler PropertyChanged;
+        public abstract string Stat { get; }
 
         public static StatAddRule New(RuleElement ruleElement, XElement element)
         {
@@ -99,27 +91,6 @@
             return rule;
         }
 
-        public sealed override void Apply(Character character)
-        {
-            character.GetStat(Stat).AddModifier(this);
-            BindCharacter(character);
-        }
-
-        protected abstract void BindCharacter(Character character);
-
-        protected void Notify(string property)
-        {
-            if (PropertyChanged != null) { PropertyChanged(this, new PropertyChangedEventArgs(property)); }
-        }
-
-        public sealed override void Revoke(Character character)
-        {
-            UnbindCharacter(character);
-            character.GetStat(Stat).RemoveModifier(this);
-        }
-
-        protected abstract void UnbindCharacter(Character character);
-
         public override void WriteJS(IndentedTextWriter writer)
         {
             writer.Write("model.statadd(\"{0}\", function() {{ ", Converter.QuoteString(this.Stat));
@@ -131,7 +102,7 @@
 
         abstract class BaseStatAdd : StatAddRule
         {
-            readonly string stat;
+            protected readonly string stat;
             readonly Identifier type;
 
             protected BaseStatAdd(RuleElement element, string stat, Identifier type)
@@ -141,13 +112,7 @@
                 this.type = type;
             }
 
-            public override bool Applies { get { return true; } }
-            public override string Condition { get { return null; } }
-            protected override string Stat { get { return this.stat; } }
-            public override Identifier Type { get { return this.type; } }
-
-            protected override void BindCharacter(Character character) { }
-            protected override void UnbindCharacter(Character character) { }
+            public override string Stat { get { return this.stat; } }
         }
 
         class ConstantStatAdd : BaseStatAdd
@@ -160,15 +125,9 @@
                 this.value = value;
             }
 
-            public override int Value
-            {
-                // For constants, value is pre-multipled (and has the half-point if necessary)
-                get { return this.value; }
-            }
-
             public override void WriteJS(IndentedTextWriter writer)
             {
-                writer.WriteLine("model.statadd(\"{0}\", {1});", Converter.QuoteString(Stat), this.value/2);
+                writer.WriteLine("model.statadd(\"{0}\", {1});", Converter.QuoteString(stat), this.value/2);
             }
 
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
@@ -179,7 +138,6 @@
 
         class StatStatAdd : BaseStatAdd
         {
-            Stat boundStat;
             readonly bool negative;
             readonly string sourceStat;
 
@@ -188,34 +146,6 @@
             {
                 this.sourceStat = sourceStat;
                 this.negative = negative;
-            }
-
-            public override int Value
-            {
-                get
-                {
-                    int value = this.boundStat.Value;
-                    if (negative) { value = -value; }
-
-                    return value * 2;
-                }
-            }
-
-            protected override void BindCharacter(Character character)
-            {
-                this.boundStat = character.GetStat(this.sourceStat);
-                this.boundStat.PropertyChanged += OnBoundStatPropertyChanged;
-            }
-
-            void OnBoundStatPropertyChanged(object sender, PropertyChangedEventArgs args)
-            {
-                if (args.PropertyName == "Value") { Notify("Value"); }
-            }
-
-            protected override void UnbindCharacter(Character character)
-            {
-                this.boundStat.PropertyChanged -= OnBoundStatPropertyChanged;
-                this.boundStat = null;
             }
 
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
@@ -229,7 +159,6 @@
 
         class AbilityModStatAdd : BaseStatAdd
         {
-            Stat boundStat;
             readonly bool negative;
             readonly string sourceStat;
 
@@ -238,35 +167,6 @@
             {
                 this.sourceStat = sourceStat;
                 this.negative = negative;
-            }
-
-            public override int Value
-            {
-                get
-                {
-                    int value = this.boundStat.Value;
-                    value = (int)Math.Floor((value - 10.0) / 2.0);
-                    if (negative) { value = -value; }
-
-                    return value * 2;
-                }
-            }
-
-            protected override void BindCharacter(Character character)
-            {
-                this.boundStat = character.GetStat(this.sourceStat);
-                this.boundStat.PropertyChanged += OnBoundStatPropertyChanged;
-            }            
-
-            void OnBoundStatPropertyChanged(object sender, PropertyChangedEventArgs args)
-            {
-                if (args.PropertyName == "Value") { Notify("Value"); }
-            }
-
-            protected override void UnbindCharacter(Character character)
-            {
-                this.boundStat.PropertyChanged -= OnBoundStatPropertyChanged;
-                this.boundStat = null;
             }
 
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
@@ -286,49 +186,9 @@
                 : base(element)
             {
                 this.baseRule = rule;
-                this.baseRule.PropertyChanged += BaseRulePropertyChanged;
             }
 
-            public override bool Applies
-            {
-                get { return this.baseRule.Applies; }
-            }
-
-            public override string Condition
-            {
-                get { return this.baseRule.Condition; }
-            }
-
-            protected override string Stat
-            {
-                get { return this.baseRule.Stat; }
-            }
-
-            public override Identifier Type
-            {
-                get { return this.baseRule.Type; }
-            }
-
-            public override int Value
-            {
-                get { return this.baseRule.Value; }
-            }
-
-            void BaseRulePropertyChanged(object sender, PropertyChangedEventArgs args)
-            {
-                // TODO: Filter appropriately.
-                Notify(args.PropertyName);
-            }
-
-            protected override void BindCharacter(Character character)
-            {
-                this.baseRule.BindCharacter(character);
-            }
-
-            protected override void UnbindCharacter(Character character)
-            {
-                this.baseRule.UnbindCharacter(character);
-            }
+            public override string Stat { get { return this.baseRule.Stat; } }
         }
 
         class ConditionalStatAdd : DelegatingStatAdd
@@ -341,11 +201,6 @@
                 this.condition = condition;
             }
             
-            public override string Condition
-            {
-                get { return this.condition; }
-            }
-
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
             {
                 writer.Write("/* {0} */ ", this.condition);
@@ -361,30 +216,7 @@
                 : base(element, rule)
             {
                 this.predicate = predicate;
-                this.predicate.PropertyChanged += PredicateValueChanged;
             }
-
-            public override bool Applies
-            {
-                get { return this.predicate.Value && base.Applies; }
-            }
-
-            protected override void BindCharacter(Character character)
-            {
-                this.predicate.Bind(character);
-                base.BindCharacter(character);
-            }
-
-            void PredicateValueChanged(object sender, PropertyChangedEventArgs args)
-            {
-                if (args.PropertyName == "Value") { Notify("Applies"); }
-            }
-
-            protected override void UnbindCharacter(Character character)
-            {
-                this.predicate.Unbind(character);
-                base.UnbindCharacter(character);
-            }          
 
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
             {
@@ -411,11 +243,6 @@
             public NotWearingStatAdd(RuleElement element, WearingExpression predicate, StatAddRule rule)
                 : base(element, predicate, rule)
             {
-            }
-
-            public override bool Applies
-            {
-                get { return !base.Applies; }
             }
 
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)

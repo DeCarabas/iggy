@@ -1,12 +1,9 @@
 ﻿namespace cbimporter.Rules
 {
+    using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
     using System.Linq;
     using System.Xml.Linq;
-    using System;
-    using System.Diagnostics;
-    using cbimporter.Model;
 
     public class RuleElement
     {
@@ -142,11 +139,6 @@
         public Identifier Type { get { return this.type; } }
         public XElement Xml { get { return this.xml; } }
 
-        public void Apply(Character character)
-        {
-            foreach (Rule rule in this.rules) { rule.Apply(character); }
-        }
-
         public void BindCategories(RuleIndex index)
         {
             this.boundCategories.Add(this.name);
@@ -169,21 +161,6 @@
         public void BindRules(RuleIndex index)
         {
             for (int i = 0; i < rules.Count; i++) { rules[i].Bind(index); }
-        }
-
-        public bool Grants(RuleElement element)
-        {
-            if (element == this) { return true; }
-            foreach (GrantRule grantRule in this.rules.OfType<GrantRule>())
-            {
-                if (grantRule.Target.Grants(element)) { return true; }
-            }
-            return false;
-        }
-
-        public void Revoke(Character character)
-        {
-            foreach (Rule rule in this.rules) { rule.Revoke(character); }
         }
 
         public override string ToString()

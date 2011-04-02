@@ -56,12 +56,6 @@
     </Compile>
     <Compile Include="Identifier.cs" />
     <Compile Include="Internal\EmptyArray.cs" />
-    <Compile Include="Model\AbilityScores.cs" />
-    <Compile Include="Model\Character.cs" />
-    <Compile Include="Model\Choice.cs" />
-    <Compile Include="Model\Inventory.cs" />
-    <Compile Include="Model\Item.cs" />
-    <Compile Include="Model\Stat.cs" />
     <Compile Include="ProgressDialog.cs">
       <SubType>Form</SubType>
     </Compile>

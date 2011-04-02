@@ -3,11 +3,8 @@
     using System;
     using System.CodeDom.Compiler;
     using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Linq;
     using System.Text;
     using System.Xml.Linq;
-    using cbimporter.Model;
 
     public class SelectRule : Rule
     {
@@ -41,15 +38,6 @@
 
         public Identifier Type { get { return this.type; } }
         
-        public override void Apply(Character character)
-        {
-            if (this.filter != null) { this.filter.Bind(character); }
-            for (int i = 0; i < this.number; i++)
-            {
-                character.Choices.Add(new Choice(this, character));
-            }
-        }
-
         public override void Bind(RuleIndex index)
         {
             this.index = index;
@@ -145,16 +133,6 @@
             }
         }
 
-        public override void Revoke(Character character)
-        {
-            Choice toRemove = character.Choices.SingleOrDefault(c => c.Rule == this);
-            if (toRemove != null)
-            {
-                character.Choices.Remove(toRemove);
-                this.filter.Unbind(character);
-            }
-        }
-
         public override string ToString()
         {
             var builder = new StringBuilder();
@@ -190,7 +168,6 @@
 
         class AndFilter : ItemFilter
         {
-            EventHandler filterChanged;
             readonly ItemFilter[] filters;
 
             public AndFilter(ItemFilter[] filters)
@@ -203,54 +180,6 @@
                 get { return this.filters; }
             }
 
-            public override event EventHandler FilterChanged
-            {
-                add
-                {
-                    if (this.filterChanged == null)
-                    {
-                        for (int i = 0; i < this.filters.Length; i++)
-                        {
-                            this.filters[i].FilterChanged += OnSubFilterChanged;
-                        }
-                    }
-                    this.filterChanged += value;
-                }
-                remove
-                {
-                    this.filterChanged -= value;
-                    if (this.filterChanged == null)
-                    {
-                        for (int i = 0; i < this.filters.Length; i++)
-                        {
-                            this.filters[i].FilterChanged -= OnSubFilterChanged;
-                        }
-                    }
-                }
-            }
-
-            public override void Bind(Character character)
-            {
-                for (int i = 0; i < this.filters.Length; i++) 
-                { 
-                    this.filters[i].Bind(character); 
-                }
-            }
-
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                for (int i = 0; i < filters.Length; i++)
-                {
-                    elements = this.filters[i].Filter(elements);
-                }
-                return elements;
-            }
-
-            void OnSubFilterChanged(object sender, EventArgs args)
-            {
-                if (this.filterChanged != null) { this.filterChanged(this, EventArgs.Empty); }
-            }
-
             public override string ToString()
             {
                 var builder = new StringBuilder();
@@ -261,14 +190,6 @@
                 }
 
                 return builder.ToString();
-            }
-
-            public override void Unbind(Character character)
-            {
-                for (int i = 0; i < this.filters.Length; i++)
-                {
-                    this.filters[i].Unbind(character);
-                }
             }
 
             public override void WriteJS(IndentedTextWriter writer)
@@ -299,11 +220,6 @@
                 this.id = id;
             }
 
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                return elements.Where(r => r.Categories.Contains(this.id));
-            }
-
             public override string ToString()
             {
                 return this.id.ToString();
@@ -317,7 +233,6 @@
 
         class OrFilter : ItemFilter
         {
-            EventHandler filterChanged;
             readonly ItemFilter left;
             readonly ItemFilter right;
 
@@ -332,54 +247,9 @@
                 get { return new ItemFilter[] { this.left, this.right }; }
             }
 
-            public override event EventHandler FilterChanged
-            {
-                add 
-                {
-                    if (this.filterChanged == null)
-                    {
-                        this.left.FilterChanged += OnSubFilterChanged;
-                        this.right.FilterChanged += OnSubFilterChanged;
-                    }
-                    this.filterChanged += value;
-                }
-                
-                remove 
-                {
-                    this.filterChanged -= value;
-                    if (this.filterChanged == null)
-                    {
-                        this.left.FilterChanged -= OnSubFilterChanged;
-                        this.right.FilterChanged -= OnSubFilterChanged;
-                    }
-                }
-            }
-
-            public override void Bind(Character character)
-            {
-                this.left.Bind(character);
-                this.right.Bind(character);
-            }
-
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                return this.left.Filter(elements).Union(this.right.Filter(elements));
-            }
-
-            void OnSubFilterChanged(object sender, EventArgs args)
-            {
-                if (this.filterChanged != null) { this.filterChanged(sender, args); }
-            }
-
             public override string ToString()
             {
                 return this.left.ToString() + " | " + this.right.ToString();
-            }
-
-            public override void Unbind(Character character)
-            {
-                this.left.Unbind(character);
-                this.right.Unbind(character);
             }
 
             public override void WriteJS(IndentedTextWriter writer)
@@ -401,11 +271,6 @@
                 this.id = id;
             }
 
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                return elements.Where(r => !r.Categories.Contains(this.id));
-            }
-
             public override string ToString()
             {
                 return "!" + this.id.ToString();
@@ -419,51 +284,13 @@
 
         abstract class RuleElementFilter : ItemFilter
         {
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                RuleElement re = GetRuleElement();
-                if (re == null) { return Enumerable.Empty<RuleElement>(); }
-
-                return elements.Where(e => e.Categories.Contains(re.Id));
-            }
-
-            protected abstract RuleElement GetRuleElement();
         }
 
         class ClassElementFilter : RuleElementFilter
         {
-            Character character;
-
-            public override event EventHandler FilterChanged;
-
-            public override void Bind(Character character)
-            {
-                this.character = character;
-                this.character.PropertyChanged += OnCharacterPropertyChanged;
-            }
-
-            protected override RuleElement GetRuleElement()
-            {
-                return this.character.Class;
-            }
-
-            void OnCharacterPropertyChanged(object sender, PropertyChangedEventArgs args)
-            {
-                if (args.PropertyName == "Class")
-                {
-                    if (FilterChanged != null) { FilterChanged(this, EventArgs.Empty); }
-                }
-            }
-
             public override string ToString()
             {
                 return "$$CLASS";
-            }
-
-            public override void Unbind(Character character)
-            {
-                this.character.PropertyChanged -= OnCharacterPropertyChanged;
-                this.character = null;
             }
 
             public override void WriteJS(IndentedTextWriter writer)
@@ -475,41 +302,9 @@
 
         class LevelFilter : ItemFilter
         {
-            Character character;
-            Identifier levelId;
-
-            public override event EventHandler FilterChanged;
-
-            public override void Bind(Character character)
-            {
-                this.character = character;
-                this.levelId = Identifier.Get(this.character.Level.ToString());
-                this.character.PropertyChanged += OnCharacterPropertyChanged;
-            }
-
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                return elements.Where(re => re.Categories.Contains(this.levelId));
-            }
-
-            public override void Unbind(Character character)
-            {
-                this.character.PropertyChanged -= OnCharacterPropertyChanged;
-                this.character = null;
-            }
-
             public override string ToString()
             {
                 return "$$LEVEL";
-            }
-
-            void OnCharacterPropertyChanged(object sender, PropertyChangedEventArgs args)
-            {
-                if (args.PropertyName == "Level")
-                {
-                    this.levelId = Identifier.Get(character.Level.ToString());
-                    if (FilterChanged != null) { FilterChanged(this, EventArgs.Empty); }        
-                }
             }
 
             public override void WriteJS(IndentedTextWriter writer)
@@ -520,11 +315,6 @@
 
         class MulticlassFilter : ItemFilter
         {
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                throw new NotImplementedException();
-            }
-
             public override string ToString()
             {
                 return "$$MULTICLASS";
@@ -538,11 +328,6 @@
 
         class HybridFilter : ItemFilter
         {
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                throw new NotImplementedException();
-            }
-
             public override string ToString()
             {
                 return "$$HYBRID";
@@ -557,11 +342,6 @@
 
         class NotClassFilter : ItemFilter
         {
-            public override IEnumerable<RuleElement> Filter(IEnumerable<RuleElement> elements)
-            {
-                throw new NotImplementedException();
-            }
-
             public override string ToString()
             {
                 return "$$NOT_CLASS";
