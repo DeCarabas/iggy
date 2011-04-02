@@ -45,11 +45,11 @@
     width: 100%;
 }
 
-.page input
+input
 {
-    border-width: 0px 0px 1px 0px;    
-    border-style: solid;
     width: 100%;
+    border-style: solid;
+    border-width: 0px; /* No border by default */
 }
 
 .page h4
@@ -84,6 +84,18 @@
 {
     font-size: 8px;
     line-height: 8px;
+}
+
+/* Top bits */
+
+.writeHere
+{
+    border-width: 0px 0px 1px 0px;
+}
+
+.importantBox
+{
+    border-width: 1px;
 }
 
 /* Ability Scores */
