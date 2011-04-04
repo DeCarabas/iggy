@@ -1,9 +1,12 @@
 ﻿namespace cbimporter.Rules
 {
     using System;
+    using System.CodeDom.Compiler;
     using System.Collections.Generic;
     using System.Linq;
     using System.Xml.Linq;
+    using System.Text;
+    using System.IO;
 
     public class RuleElement
     {
@@ -20,6 +23,7 @@
         readonly string source;
         readonly Dictionary<string, string> specifics = new Dictionary<string, string>();
         readonly Identifier type;
+        string url;
         readonly XElement xml;
 
         public RuleElement(XElement element)
@@ -129,6 +133,57 @@
         }
 
         public HashSet<Identifier> Categories { get { return this.boundCategories; } }
+        public string CompendiumUrl 
+        {
+            get
+            {
+                if (this.url == null)
+                {
+                    if (Type == Identifier.Race)
+                    {
+                        this.url = GetCompendiumUrl(Id, "race", "ID_FMP_RACE_");
+                    }
+                    else if (Type == Identifier.Class)
+                    {
+                        this.url = GetCompendiumUrl(Id, "class", "ID_FMP_CLASS_");
+                    }
+                    else if (Type == Identifier.Deity)
+                    {
+                        this.url = GetCompendiumUrl(Id, "deity", "ID_FMP_DEITY_");
+                    }
+                    else if (Type == Identifier.EpicDestiny)
+                    {
+                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_EPIC_DESTINY_");
+                    }
+                    else if (Type == Identifier.ParagonPath)
+                    {
+                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_PARAGON_PATH_");
+                    }
+                    else if (Type == Identifier.Ritual)
+                    {
+                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_RITUAL_");
+                    }
+                    else if (Type == Identifier.Feat)
+                    {
+                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_FEAT_");
+                    }
+                    else if (Type == Identifier.Skill)
+                    {
+                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_SKILL_");
+                    }
+                    else if (Type == Identifier.Power)
+                    {
+                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_POWER_");
+                    }
+                    else
+                    {
+                        this.url = null;
+                    }
+                }
+
+                return this.url;
+            }
+        }
         public string Description { get { return this.description; } }
         public string Flavor { get { return this.flavor; } }
         public Identifier FullName { get { return this.fullname; } }
@@ -163,9 +218,74 @@
             for (int i = 0; i < rules.Count; i++) { rules[i].Bind(index); }
         }
 
+        static string GetCompendiumUrl(Identifier id, string type, string idPrefix)
+        {
+            return
+                "http://www.wizards.com/dndinsider/compendium/" +
+                type + ".aspx?id=" + id.ToString().Substring(idPrefix.Length);
+        }
+
         public override string ToString()
         {
             return this.name.ToString() + " (" + this.type.ToString() + ")";
+        }
+
+        public void WriteJS(TextWriter textWriter)
+        {
+            WriteJS(new IndentedTextWriter(textWriter, "  "));
+        }
+
+        public void WriteJS(IndentedTextWriter textWriter)
+        {
+            using (ObjectWriter writer = new ObjectWriter(textWriter))
+            {
+                writer.Write("name", this.name);
+                writer.Write("type", this.type);
+                writer.Write("id", this.id);
+
+                string url = CompendiumUrl;
+                if (url != null) { writer.Write("compendiumUrl", url); }
+
+                if (Categories.Count > 0)
+                {
+                    writer.WritePrefix("categories", "[");
+
+                    Identifier[] categories = Categories.ToArray();
+                    for (int i = 0; i < categories.Length; i++)
+                    {
+                        if (i != 0) { textWriter.Write(", "); }
+                        textWriter.Write("\"{0}\"", Converter.QuoteString(categories[i]));
+                    }
+                    textWriter.Write("]");
+                }
+
+                //if (Specifics.Count > 0)
+                //{
+                //    writer.WritePrefix("specifics", "");
+                //    using (ObjectWriter specificsWriter = new ObjectWriter(textWriter))
+                //    {
+                //        foreach (KeyValuePair<string, string> kvp in Specifics)
+                //        {
+                //            specificsWriter.Write("\"" + Converter.QuoteString(kvp.Key) + "\"", kvp.Value);
+                //        }
+                //    }
+                //}
+
+                if (Rules.Count > 0)
+                {
+                    writer.WritePrefix("rules", "function(model) {");
+                    textWriter.Indent++;
+                    textWriter.WriteLine();
+
+                    foreach (Rule rule in Rules)
+                    {
+                        rule.WriteJS(textWriter);
+                    }
+
+                    textWriter.Indent -= 1;
+                    textWriter.WriteLine("}");
+                }
+            }
         }
     }
 }

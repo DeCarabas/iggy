@@ -52,7 +52,7 @@
         {
             var progress = new ProgressDialog
             {
-                Title = "Loading file",
+                Title = "Converting file",
                 TaskFunction = (p) => Task.Factory.StartNew(() =>
                     {
                         string newPath = Path.ChangeExtension(this.currentDocument.Name, ".js");
@@ -62,7 +62,7 @@
                             {
                                 Converter.Convert(this.currentDocument, writer, p);
                             }
-                        }                    
+                        }
                     })
             };
             progress.ShowDialog();

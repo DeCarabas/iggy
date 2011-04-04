@@ -154,10 +154,10 @@
                 writer.Write(", ");
                 using (ObjectWriter ow = new ObjectWriter(writer))
                 {
-                    if (this.optional) { ow.Write("optional", this.optional ? "true" : "false"); }
+                    if (this.optional) { ow.Write("optional", this.optional); }
                     if (this.filter != null)
                     {
-                        ow.Write("filter", "function(model, element) { return ");
+                        ow.WritePrefix("filter", "function(model, element) { return ");
                         this.filter.WriteJS(writer);
                         writer.Write("; }");
                     }

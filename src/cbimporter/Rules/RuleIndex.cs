@@ -3,6 +3,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Xml.Linq;
+    using System.IO;
 
     public sealed class RuleIndex
     {        
@@ -120,6 +121,20 @@
             // TODO: Accelerate?
             element = this.elementsByName[name].SingleOrDefault(e => e.Type == type);
             return element != null;
+        }
+    
+        public void WriteJS(string rootDirectory, ProgressDialog progress)
+        {
+            progress.Description = "Converting elements...";
+            RuleElement[] elements = this.elements.Values.ToArray();
+            for (int i = 0; i < elements.Length; i++)
+            {
+                progress.SetProgress(i, elements.Length);
+                using (var writer = File.CreateText(Path.Combine(rootDirectory, elements[i].Id.ToString())))
+                {
+                    elements[i].WriteJS(writer);
+                }                
+            }
         }
     }
 }

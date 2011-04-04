@@ -68,27 +68,8 @@
         public static string ConvertElement(RuleIndex index, RuleElement element)
         {
             var stringWriter = new StringWriter();
-            var converter = new Converter(index, stringWriter);
-
-            converter.WriteGlobalPrefix();
-            converter.WriteTypePrefix(element.Type);
-            
-            converter.WriteGenericRulesElement(element);
-            
-            converter.WriteTypeSuffix();
-            converter.WriteGlobalSuffix();
-
+            element.WriteJS(new IndentedTextWriter(stringWriter, "  "));
             return stringWriter.ToString();
-        }
-
-        static string GetText(IEnumerable<XNode> nodes)
-        {
-            var builder = new StringBuilder();
-            foreach (var node in nodes)
-            {
-                builder.Append(node.ToString(SaveOptions.DisableFormatting));
-            }
-            return builder.ToString().Trim();
         }
 
         static string QuoteIdentifier(Identifier id)
@@ -121,63 +102,11 @@
 
         public void WriteGenericRulesElement(RuleElement element)
         {
-            // This predicate isn't right; we need to have a good predicate generator.            
-            writer.WriteLine(@"te = {0}[""{1}""] = new RulesElement({{", QuoteIdentifier(element.Type), QuoteString(element.Name));
-            writer.Indent += 1;
+            writer.WriteLine(@"te = {0}[""{1}""] = new RulesElement(", QuoteIdentifier(element.Type), QuoteString(element.Name));
 
-            writer.WriteLine(@"name: ""{0}"",", QuoteString(element.Name));
-            writer.WriteLine(@"type: ""{0}"",", QuoteString(element.Type));
-            writer.WriteLine(@"id: ""{0}"",", QuoteString(element.Id));
+            element.WriteJS(this.writer);
 
-            string compendiumUrl = GetCompendiumUrl(element);
-            if (compendiumUrl != null)
-            {
-                writer.WriteLine(@"compendiumUrl: ""{0}"",", QuoteString(compendiumUrl));
-            }
-
-            if (element.Categories.Count > 0)
-            {
-                writer.Write(@"categories: [");
-                Identifier[] categories = element.Categories.ToArray();
-                for(int i = 0; i < categories.Length; i++)
-                {
-                    if (i != 0) { writer.Write(", "); }
-                    writer.Write("\"{0}\"", QuoteString(categories[i]));
-                }
-                writer.WriteLine("],");
-            }
-
-            if (element.Flavor != null)
-            {
-                writer.WriteLine(@"flavor: ""{0}"",", QuoteString(element.Flavor));
-            }
-
-            writer.WriteLine(@"specifics: {");
-            writer.Indent += 1;
-            
-            bool writeComma = false;
-            foreach (KeyValuePair<string, string> kvp in element.Specifics)
-            {
-                if (writeComma) { writer.WriteLine(","); }
-                writer.Write(@"""{0}"": ""{1}""", QuoteString(kvp.Key), QuoteString(kvp.Value));
-                writeComma = true;
-            }
-            writer.WriteLine();
-
-            writer.Indent -= 1;
-            writer.WriteLine("},");
-
-            writer.WriteLine("rules: function(model) {");
-            writer.Indent += 1;
-            foreach (Rule rule in element.Rules)
-            {
-                rule.WriteJS(this.writer);
-            }
-            writer.Indent -= 1;
-            writer.WriteLine("}");
-
-            writer.Indent -= 1;
-            writer.WriteLine("});");
+            writer.WriteLine(");");
             writer.WriteLine("byID[te.id] = te;");
             writer.WriteLine();
         }

@@ -32,7 +32,38 @@
             }
         }
 
+        public void Write(string key, string value)
+        {
+            WriteCore(key, "\"" + Converter.QuoteString(value) + "\"");
+        }
+
+        public void Write(string key, Identifier value)
+        {
+            WriteCore(key, "\"" + Converter.QuoteString(value) + "\"");
+        }
+
+        public void Write(string key, bool value)
+        {
+            WriteCore(key, value ? "true" : "false");
+        }
+
+        public void Write(string key, int value)
+        {
+            WriteCore(key, value.ToString());
+        }
+
         public void Write(string key, string valueFormat, params object[] args)
+        {
+            string value = (args.Length > 0) ? string.Format(valueFormat, args) : valueFormat;
+            WriteCore(key, value);
+        }
+
+        public void WritePrefix(string key, string prefix)
+        {
+            WriteCore(key, prefix);
+        }
+
+        void WriteCore(string key, string value)
         {
             if (!writtenAny)
             {
@@ -45,7 +76,6 @@
                 writer.WriteLine(",");
             }
 
-            string value = (args.Length > 0) ? string.Format(valueFormat, args) : valueFormat;
             writer.Write("{0}: {1}", key, value);
         }
     }
