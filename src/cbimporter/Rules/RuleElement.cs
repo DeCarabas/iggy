@@ -283,7 +283,7 @@
                     }
 
                     textWriter.Indent -= 1;
-                    textWriter.WriteLine("}");
+                    textWriter.Write("}");
                 }
             }
         }

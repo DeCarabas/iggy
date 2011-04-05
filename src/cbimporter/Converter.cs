@@ -102,7 +102,7 @@
 
         public void WriteGenericRulesElement(RuleElement element)
         {
-            writer.WriteLine(@"te = {0}[""{1}""] = new RulesElement(", QuoteIdentifier(element.Type), QuoteString(element.Name));
+            writer.Write(@"te = {0}[""{1}""] = new RulesElement(", QuoteIdentifier(element.Type), QuoteString(element.Name));
 
             element.WriteJS(this.writer);
 
