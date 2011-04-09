@@ -43,72 +43,72 @@
         </div>
         <div class="grid_4">
           <h2>Character Sheet</h2>
-          <input data-stat="playerName" placeholder="Player Name" />
+          <input data-boundText="playerName" placeholder="Player Name" />
         </div>
         <div class="clear"></div>
     </div>
 
     <div class="page">
         <div class="grid_4">
-          <input data-stat="name" class="writeHere" />
+          <input data-boundText="name" class="writeHere" />
           Character Name
         </div>
         <div class="grid_1">
-          <input data-stat="Level" class="importantBox" readonly="true" />
+          <input data-boundStat="Level" class="importantBox" readonly="true" />
           Level
         </div>
         <div class="grid_2">
-          <input data-stat="class" class="writeHere" />
+          <input data-boundGrant="Class" class="writeHere" readonly="true" />
           Class
         </div>
         <div class="grid_2">
-          <input data-stat="paragonPath" class="writeHere" />
+          <input data-boundGrant="Paragon Path" class="writeHere" readonly="true" />
           Paragon Path
         </div>
         <div class="grid_2">
-          <input name="epicDestiny" class="writeHere" />
+          <input data-boundGrant="Epic Destiny" class="writeHere" readonly="true" />
           Epic Destiny
         </div>
         <div class="grid_1">
-          <input name="totalXP" class="importantBox" />
+          <input data-boundStat="XP Needed" class="importantBox" readonly="true" />
           Total XP
         </div>
         <div class="clear"></div>
 
         <div class="grid_2">
-          <input name="race" class="writeHere" />
+          <input data-boundGrant="Race" class="writeHere" readonly="true" />
           Race
         </div>
         <div class="grid_1">
-          <input name="size" class="writeHere" />
+          <input data-boundStat="Size" class="writeHere" readonly="true" />
           Size
         </div>
         <div class="grid_1">
-          <input name="age" class="writeHere" />
+          <input data-boundText="Age" class="writeHere" />
           Age
         </div>
         <div class="grid_1">
-          <input name="gender" class="writeHere" />
+          <input data-boundText="Gender" class="writeHere" />
           Gender
         </div>
         <div class="grid_1">
-          <input name="height" class="writeHere" />
+          <input data-boundText="Height" class="writeHere" />
           Height
         </div>
         <div class="grid_1">
-          <input name="weight" class="writeHere" />
+          <input data-boundText="Weight" class="writeHere" />
           Weight
         </div>
         <div class="grid_1">
-          <input name="alignment" class="writeHere" />
+          <input data-boundGrant="alignment" class="writeHere" readonly="true" />
           Alignment
         </div>
         <div class="grid_1">
-          <input name="deity" class="writeHere" />
+          <input data-boundGrant="Deity" class="writeHere" readonly="true" />
           Deity
         </div>
         <div class="grid_3">
-          <input name="company" class="writeHere" />
+          <input data-boundText="company" class="writeHere" />
           Adventuring Company or other Affiliation
         </div>
         <div class="clear"></div>
@@ -118,12 +118,12 @@
           <table class="statTable initiative">
             <tr><th>Score</th><th></th><th>Dex</th><th>1/2 Level</th><th></th><th>Misc</th></tr>
             <tr>
-                <td><input name="initiative" /></td>
+                <td><input data-boundStat="Initiative" /></td>
                 <td class="statName">Initiative</td>
-                <td><input name="dexbonus" /></td>
-                <td><input name="halflevel" /></td>
+                <td><input data-boundStat="Dexterity modifier" /></td>
+                <td><input data-boundStat="HALF-LEVEL" /></td>
                 <td></td>
-                <td><input name="initiativeMisc" /></td>
+                <td><input data-boundStat="Initiative Misc" /></td>
             </tr>
           </table>
           <div>
@@ -134,212 +134,213 @@
           <table class="statTable abilityScoreTable">
             <tr><th>Score</th><th class="abilName">Ability</th><th>Abil Mod</th><th>Mod + 1/2 Lvl</th></tr>
             <tr class="abilityScore">
-                <td><input name="str" /></td>
+                <td><input data-boundStat="Strength" /></td>
                 <td class="statName abilName">STR</td>
-                <td><input name="strMod" /></td>
+                <td><input data-boundStat="Strength modifier" /></td>
                 <td><input name="strModHalfLevel" /></td>
             </tr>
             <tr class="abilMid"><th></th></tr>
             <tr class="abilityScore">
-                <td><input name="con" /></td>
+                <td><input data-boundStat="Consitution" /></td>
                 <td class="statName abilName">CON</td>
-                <td><input name="conMod" /></td>
+                <td><input data-boundStat="Constitution modifier" /></td>
                 <td><input name="conModHalfLevel" /></td>
             </tr>
             <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
             <tr class="abilityScore">
-                <td><input name="dex" /></td>
+                <td><input data-boundStat="Dexterity" /></td>
                 <td class="statName abilName">DEX</td>
-                <td><input name="dexMod" /></td>
+                <td><input data-boundStat="Dexterity modifier" /></td>
                 <td><input name="dexModHalfLevel" /></td>
             </tr>
             <tr class="abilMid"><th></th></tr>
             <tr class="abilityScore">
-                <td><input name="int" /></td>
+                <td><input data-boundStat="Intelligence" /></td>
                 <td class="statName abilName">INT</td>
-                <td><input name="intMod" /></td>
+                <td><input data-boundStat="Intelligence modifier" /></td>
                 <td><input name="intModHalfLevel" /></td>
             </tr>
             <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
             <tr class="abilityScore">
-                <td><input name="wis" /></td>
+                <td><input data-boundStat="Wisdom" /></td>
                 <td class="statName abilName">WIS</td>
-                <td><input name="wisMod" /></td>
+                <td><input data-boundStat="Wisdom modifier" /></td>
                 <td><input name="wisModHalfLevel" /></td>
             </tr>
             <tr class="abilMid"><th></th></tr>
             <tr class="abilityScore">
-                <td><input name="cha" /></td>
+                <td><input data-boundStat="Charisma" /></td>
                 <td class="statName abilName">CHA</td>
-                <td><input name="chaMod" /></td>
+                <td><input data-boundStat="Charisma modifier" /></td>
                 <td><input name="chaModHalfLevel" /></td>
             </tr>
           </table>
           <h3>Hit Points</h3>
           <table class="hitPoints">
             <tr><th>MAX HP</th><th></th><th colspan="2"><b>HEALING SURGES</b></th></tr>
-            <tr><td rowspan="3"><input class="maxHP" name="maxHP" /></td><th>Bloodied</th><th>Surge Value</th><th>Surges/Day</th></tr>
-            <tr><td><input name="bloodied" /></td><td><input name="surgeValue" /></td><td><input name="surgesPerDay" /></td></tr>
+            <tr><td rowspan="3"><input class="maxHP" data-boundStat="Hit Points" /></td><th>Bloodied</th><th>Surge Value</th><th>Surges/Day</th></tr>
+            <tr><td><input name="bloodied" /></td><td><input name="surgeValue" /></td><td><input data-boundStat="Healing Surges" /></td></tr>
             <tr><th>1/2 HP</th><th>1/4 HP</th><th></th></tr>
           </table>
           <h3>Skills</h3>
           <table class="skills">
             <tr><th>BONUS</th><th>SKILL NAME</th><th></th><th>ABIL MOD + 1/2 LVL</th><th>TRND (+5)</th><th>ARMOR PENALTY</th><th>MISC</th></tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='acrobaticsBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='Acrobatics'/></td>
                 <td class='skillName'>Acrobatics</td>
                 <td class='skillAbility'>DEX</td>
                 <td class='skillAbilityMod'><input name='dexModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='acrobaticsTrained' /></td>
-                <td class='skillArmorPenalty'><input name='acrobaticsArmorPenalty' /></td>
-                <td class='skillMisc'><input name='acrobaticsMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='Acrobatics Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='Acrobatics Misc' /></td>
             </tr>
             <tr class='evenSkill'>
-                <td class='skillBonus'><input name='arcanaBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='arcana'/></td>
                 <td class='skillName'>Arcana</td>
                 <td class='skillAbility'>INT</td>
                 <td class='skillAbilityMod'><input name='intModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='arcanaTrained' /></td>
-                <td class='skillArmorPenalty'><input name='arcanaArmorPenalty' /></td>
-                <td class='skillMisc'><input name='arcanaMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='arcana Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='arcana Misc' /></td>
             </tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='athleticsBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='athletics'/></td>
                 <td class='skillName'>Athletics</td>
                 <td class='skillAbility'>STR</td>
                 <td class='skillAbilityMod'><input name='strModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='athleticsTrained' /></td>
-                <td class='skillArmorPenalty'><input name='athleticsArmorPenalty' /></td>
-                <td class='skillMisc'><input name='athleticsMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='athletics Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='athletics Misc' /></td>
             </tr>
             <tr class='evenSkill'>
-                <td class='skillBonus'><input name='bluffBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='bluff'/></td>
                 <td class='skillName'>Bluff</td>
                 <td class='skillAbility'>CHA</td>
                 <td class='skillAbilityMod'><input name='chaModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='bluffTrained' /></td>
-                <td class='skillArmorPenalty'><input name='bluffArmorPenalty' /></td>
-                <td class='skillMisc'><input name='bluffMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='bluff Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='bluff Misc' /></td>
             </tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='diplomacyBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='diplomacy'/></td>
                 <td class='skillName'>Diplomacy</td>
                 <td class='skillAbility'>CHA</td>
                 <td class='skillAbilityMod'><input name='chaModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='diplomacyTrained' /></td>
-                <td class='skillArmorPenalty'><input name='diplomacyArmorPenalty' /></td>
-                <td class='skillMisc'><input name='diplomacyMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='diplomacy Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='diplomacy Misc' /></td>
             </tr>
             <tr class='evenSkill'>
-                <td class='skillBonus'><input name='dungeoneeringBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='dungeoneering'/></td>
                 <td class='skillName'>Dungeoneering</td>
                 <td class='skillAbility'>WIS</td>
                 <td class='skillAbilityMod'><input name='wisModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='dungeoneeringTrained' /></td>
-                <td class='skillArmorPenalty'><input name='dungeoneeringArmorPenalty' /></td>
-                <td class='skillMisc'><input name='dungeoneeringMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='dungeoneering Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='dungeoneering Misc' /></td>
             </tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='enduranceBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='endurance'/></td>
                 <td class='skillName'>Endurance</td>
                 <td class='skillAbility'>CON</td>
                 <td class='skillAbilityMod'><input name='conModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='enduranceTrained' /></td>
-                <td class='skillArmorPenalty'><input name='enduranceArmorPenalty' /></td>
-                <td class='skillMisc'><input name='enduranceMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='endurance Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='endurance Misc' /></td>
             </tr>
             <tr class='evenSkill'>
-                <td class='skillBonus'><input name='healBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='heal'/></td>
                 <td class='skillName'>Heal</td>
                 <td class='skillAbility'>WIS</td>
                 <td class='skillAbilityMod'><input name='wisModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='healTrained' /></td>
-                <td class='skillArmorPenalty'><input name='healArmorPenalty' /></td>
-                <td class='skillMisc'><input name='healMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='heal Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='heal Misc' /></td>
             </tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='historyBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='history'/></td>
                 <td class='skillName'>History</td>
                 <td class='skillAbility'>INT</td>
                 <td class='skillAbilityMod'><input name='intModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='historyTrained' /></td>
-                <td class='skillArmorPenalty'><input name='historyArmorPenalty' /></td>
-                <td class='skillMisc'><input name='historyMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='history Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='history Misc' /></td>
             </tr>
             <tr class='evenSkill'>
-                <td class='skillBonus'><input name='insightBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='insight'/></td>
                 <td class='skillName'>Insight</td>
                 <td class='skillAbility'>WIS</td>
                 <td class='skillAbilityMod'><input name='wisModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='insightTrained' /></td>
-                <td class='skillArmorPenalty'><input name='insightArmorPenalty' /></td>
-                <td class='skillMisc'><input name='insightMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='insight Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='insight Misc' /></td>
             </tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='intimidateBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='intimidate'/></td>
                 <td class='skillName'>Intimidate</td>
                 <td class='skillAbility'>CHA</td>
                 <td class='skillAbilityMod'><input name='chaModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='intimidateTrained' /></td>
-                <td class='skillArmorPenalty'><input name='intimidateArmorPenalty' /></td>
-                <td class='skillMisc'><input name='intimidateMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='intimidate Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='intimidate Misc' /></td>
             </tr>
             <tr class='evenSkill'>
-                <td class='skillBonus'><input name='natureBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='nature'/></td>
                 <td class='skillName'>Nature</td>
                 <td class='skillAbility'>WIS</td>
                 <td class='skillAbilityMod'><input name='wisModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='natureTrained' /></td>
-                <td class='skillArmorPenalty'><input name='natureArmorPenalty' /></td>
-                <td class='skillMisc'><input name='natureMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='nature Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='nature Misc' /></td>
             </tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='perceptionBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='perception'/></td>
                 <td class='skillName'>Perception</td>
                 <td class='skillAbility'>WIS</td>
                 <td class='skillAbilityMod'><input name='wisModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='perceptionTrained' /></td>
-                <td class='skillArmorPenalty'><input name='perceptionArmorPenalty' /></td>
-                <td class='skillMisc'><input name='perceptionMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='perception Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='perception Misc' /></td>
             </tr>
             <tr class='evenSkill'>
-                <td class='skillBonus'><input name='religionBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='religion'/></td>
                 <td class='skillName'>Religion</td>
                 <td class='skillAbility'>INT</td>
                 <td class='skillAbilityMod'><input name='intModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='religionTrained' /></td>
-                <td class='skillArmorPenalty'><input name='religionArmorPenalty' /></td>
-                <td class='skillMisc'><input name='religionMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='religion Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='religion Misc' /></td>
             </tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='stealthBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='stealth'/></td>
                 <td class='skillName'>Stealth</td>
                 <td class='skillAbility'>DEX</td>
                 <td class='skillAbilityMod'><input name='dexModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='stealthTrained' /></td>
-                <td class='skillArmorPenalty'><input name='stealthArmorPenalty' /></td>
-                <td class='skillMisc'><input name='stealthMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='stealth Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='stealth Misc' /></td>
             </tr>
             <tr class='evenSkill'>
-                <td class='skillBonus'><input name='streetwiseBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='streetwise'/></td>
                 <td class='skillName'>Streetwise</td>
                 <td class='skillAbility'>CHA</td>
                 <td class='skillAbilityMod'><input name='chaModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='streetwiseTrained' /></td>
-                <td class='skillArmorPenalty'><input name='streetwiseArmorPenalty' /></td>
-                <td class='skillMisc'><input name='streetwiseMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='streetwise Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='streetwise Misc' /></td>
             </tr>
             <tr class='oddSkill'>
-                <td class='skillBonus'><input name='thieveryBonus'/></td>
+                <td class='skillBonus'><input data-boundStat='thievery'/></td>
                 <td class='skillName'>Thievery</td>
                 <td class='skillAbility'>DEX</td>
                 <td class='skillAbilityMod'><input name='dexModPlusHalfLevel' /></td>
-                <td class='skillTrained'><input name='thieveryTrained' /></td>
-                <td class='skillArmorPenalty'><input name='thieveryArmorPenalty' /></td>
-                <td class='skillMisc'><input name='thieveryMisc' /></td>
+                <td class='skillTrained'><input data-boundStat='thievery Trained' /></td>
+                <td class='skillArmorPenalty'><input data-boundStat='Armor Penalty' /></td>
+                <td class='skillMisc'><input data-boundStat='thievery Misc' /></td>
             </tr>
           </table>
         </div>
+        
         <div class="grid_4">
           <h3>Defenses</h3>
           <table class="defense acDefense">

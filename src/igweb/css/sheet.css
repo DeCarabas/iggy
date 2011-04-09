@@ -1,5 +1,9 @@
 /* Sheet specific styles */
 
+input[type="number"] {
+    -webkit-appearance: textfield;
+}
+
 .header
 {
     background-color: #444;

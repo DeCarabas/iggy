@@ -113,6 +113,8 @@
   };
   Model.prototype = {
     alias: function (stat, alias) {
+      stat = stat.toLowerCase();
+      alias = alias.toLowerCase();
       this._stats[alias] = this._stats[stat] || (this._stats[stat] = new Stat());
     },
     getChoices: function(type) {
@@ -122,6 +124,17 @@
       Object.keys(tcs).forEach(function(c) { cs.push(tcs[c]); });
 
       return cs;
+    },
+    getGrantByType: function(type) {
+      if (!global.elements.id) return null;
+
+      var grants = Object.keys(this._granted);
+      for(var i = 0; i < grants.length; i++) {
+        var elem = global.elements.id[grants[i]];
+        if (elem && elem.type === type) return elem;
+      }
+
+      return null;
     },
     grant: function (element) {
       if (!element) { return; }
@@ -156,6 +169,7 @@
         (!catTwo || item.matchesCategory(catTwo));
     },
     override: function(stat, value) {
+      stat = stat.toLowerCase();
       var s = this._stats[stat] || (this._stats[stat] = new Stat());
       if (typeof value === "string") {
         s.textValue = value;
@@ -191,10 +205,12 @@
       }
     },
     stat: function (statName) {
+      statName = statName.toLowerCase();
       var s = this._stats[statName];
       return s ? s.getValue() : 0;
     },
     statadd: function(stat, value) {
+      stat = stat.toLowerCase();
       var s = this._stats[stat] || (this._stats[stat] = new Stat());
 
       var undo;

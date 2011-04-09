@@ -1,4 +1,6 @@
 
+// TODO: getGrantByType, override, stats are case insensitive
+
 // These are for QUnit: http://docs.jquery.com/QUnit
 (function(global, undefined) {
 
