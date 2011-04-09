@@ -43,26 +43,26 @@
         </div>
         <div class="grid_4">
           <h2>Character Sheet</h2>
-          <input name="playerName" placeholder="Player Name" />
+          <input data-stat="playerName" placeholder="Player Name" />
         </div>
         <div class="clear"></div>
     </div>
 
     <div class="page">
         <div class="grid_4">
-          <input name="characterName" class="writeHere" />
+          <input data-stat="name" class="writeHere" />
           Character Name
         </div>
         <div class="grid_1">
-          <input name="level" class="importantBox" />
+          <input data-stat="Level" class="importantBox" readonly="true" />
           Level
         </div>
         <div class="grid_2">
-          <input name="class" class="writeHere" />
+          <input data-stat="class" class="writeHere" />
           Class
         </div>
         <div class="grid_2">
-          <input name="paragonPath" class="writeHere" />
+          <input data-stat="paragonPath" class="writeHere" />
           Paragon Path
         </div>
         <div class="grid_2">
@@ -599,13 +599,11 @@
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
   -->
-  <!--
+
   <script src="js/model.js"></script>
-  <script src="js/binding.js"></script>
   <script src="js/dnd4model.js"></script>
   <script src="js/dnd4data.js"></script>
-  <script src="js/ui.js"></script>
-  -->
+  <script src="js/sheetui.js"></script>
   
   <!-- end concatenated and minified scripts -->
    

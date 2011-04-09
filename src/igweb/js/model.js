@@ -155,6 +155,14 @@
         item.matchesCategory(catOne) && 
         (!catTwo || item.matchesCategory(catTwo));
     },
+    override: function(stat, value) {
+      var s = this._stats[stat] || (this._stats[stat] = new Stat());
+      if (typeof value === "string") {
+        s.textValue = value;
+      } else {
+        s.baseValue = value; // TODO: Not right, but gets me started.        
+      }
+    },
     remove: function(element) {
       var tracking = this._granted[element.id];
       if (tracking) {
