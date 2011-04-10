@@ -88,7 +88,7 @@
           Age
         </div>
         <div class="grid_1">
-          <input data-boundText="Gender" class="writeHere" />
+          <input data-boundGrant="Gender" class="writeHere" readonly="true" />
           Gender
         </div>
         <div class="grid_1">
@@ -118,12 +118,12 @@
           <table class="statTable initiative">
             <tr><th>Score</th><th></th><th>Dex</th><th>1/2 Level</th><th></th><th>Misc</th></tr>
             <tr>
-                <td><input data-boundStat="Initiative" /></td>
+                <td><input data-boundStat="Initiative" readonly="true" /></td>
                 <td class="statName">Initiative</td>
-                <td><input data-boundStat="Dexterity modifier" /></td>
-                <td><input data-boundStat="HALF-LEVEL" /></td>
+                <td><input data-boundStat="Dexterity modifier" readonly="true" /></td>
+                <td><input data-boundStat="HALF-LEVEL" readonly="true" /></td>
                 <td></td>
-                <td><input data-boundStat="Initiative Misc" /></td>
+                <td><input data-boundStat="Initiative Misc" readonly="true" /></td>
             </tr>
           </table>
           <div>
@@ -134,14 +134,14 @@
           <table class="statTable abilityScoreTable">
             <tr><th>Score</th><th class="abilName">Ability</th><th>Abil Mod</th><th>Mod + 1/2 Lvl</th></tr>
             <tr class="abilityScore">
-                <td><input data-boundStat="Strength" /></td>
+                <td><input data-boundStat="Strength" readonly="true" /></td>
                 <td class="statName abilName">STR</td>
-                <td><input data-boundStat="Strength modifier" /></td>
-                <td><input data-special="strHalfLevel" /></td>
+                <td><input data-boundStat="Strength modifier" readonly="true" /></td>
+                <td><input data-special="strHalfLevel" readonly="true" /></td>
             </tr>
             <tr class="abilMid"><th></th></tr>
             <tr class="abilityScore">
-                <td><input data-boundStat="Constitution" /></td>
+                <td><input data-boundStat="Constitution" readonly="true" /></td>
                 <td class="statName abilName">CON</td>
                 <td><input data-boundStat="Constitution modifier" /></td>
                 <td><input data-special="conHalfLevel" /></td>
@@ -476,11 +476,11 @@
           <table class="statTable movement">
             <tr><th>Score</th><th></th><th>Base</th><th>Armor</th><th>Item</th><th>Misc</th></tr>
             <tr>
-                <td><input name="speed" /></td>
+                <td><input data-boundStat="Speed" /></td>
                 <td class="statName">Speed</td>
                 <td class="movementBonus"><input name="baseSpeed" /></td>
-                <td class="movementBonus"><input name="speedArmor" /></td>
-                <td class="movementBonus"><input name="speedItem" /></td>
+                <td class="movementBonus"><input data-boundStat="Speed" data-statMod="Armor" /></td>
+                <td class="movementBonus"><input data-boundStat="Speed" data-statMod="Item" /></td>
                 <td class="movementBonus"><input name="speedMisc" /></td>
             </tr>
           </table>
@@ -496,14 +496,14 @@
                 <td class="passiveText">Passive Insight</td>
                 <td class="passiveText">10</td>
                 <td class="passiveText">+</td>
-                <td class="passiveBonus"><input name="insightSkillBonus" /></td>
+                <td class="passiveBonus"><input data-boundStat="insight" /></td>
             </tr>
             <tr>
                 <td><input name="passivePerception" /></td>
                 <td class="passiveText">Passive Perception</td>
                 <td class="passiveText">10</td>
                 <td class="passiveText">+</td>
-                <td class="passiveBonus"><input name="perceptionSkillBonus" /></td>
+                <td class="passiveBonus"><input data-boundStat="perception" /></td>
             </tr>
           </table>
           <div class="specialSenses">
@@ -581,7 +581,7 @@
             </tr>
           </table>
           <h3>Feats</h3>
-          <textarea name="feats" class="mutiLineText feats"></textarea>          
+          <textarea data-boundGrant="Feat" class="mutiLineText feats"></textarea>          
         </div>
     </div>
   </div>

@@ -34,7 +34,7 @@
      },
      surgeValue: function() {
        return Math.floor(model.stat("Hit Points") / 4);
-     },
+     }
    };
 
    function updateFields() {
@@ -94,6 +94,10 @@
          model.override(elem.attr("data-boundStat"), elem.val());
          updateFields();
        });
+     });
+
+     $("[data-boundStat],[data-special],[data-boundGrant]").each(function() {
+       this.readOnly = true;
      });
    };
 
