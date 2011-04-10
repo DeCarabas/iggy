@@ -1,5 +1,5 @@
 
-// TODO: getGrantByType, override, stats are case insensitive
+// TODO: getGrantByType, override, stats are case insensitive, rawStatObject, Stat.getModifier
 
 // These are for QUnit: http://docs.jquery.com/QUnit
 (function(global, undefined) {

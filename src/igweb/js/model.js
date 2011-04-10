@@ -24,6 +24,23 @@
         delete this.modifiers[mod];
       }
     },
+    getModifier: function(kind) {
+      if (!this.modifiers) { return 0; }
+
+      var mods = this.modifiers;
+      var value = 0;
+      Object.keys(mods).forEach(function(key) {
+        var mod = mods[key];
+        if (mod.kind === kind) {
+          var modValue = (typeof mod.value === "function") ? mod.value() : mod.value;
+          if (Math.abs(modValue) > Math.abs(value)) {
+            value = modValue;            
+          }
+        }
+      });
+
+      return value;
+    },
     getValue: function () {
       if (this.textValue) {
         return this.textValue;
@@ -177,6 +194,10 @@
         s.baseValue = value; // TODO: Not right, but gets me started.        
       }
     },
+    rawStatObject: function(stat) {
+      stat = stat.toLowerCase();
+      return this._stats[stat];
+    },
     remove: function(element) {
       var tracking = this._granted[element.id];
       if (tracking) {
@@ -209,7 +230,7 @@
       var s = this._stats[statName];
       return s ? s.getValue() : 0;
     },
-    statadd: function(stat, value) {
+    statadd: function(stat, value, kind) {
       stat = stat.toLowerCase();
       var s = this._stats[stat] || (this._stats[stat] = new Stat());
 
@@ -218,7 +239,7 @@
         s.textValue = value;
         undo = function () { delete s.textValue; };
       } else {
-        var mod = s.addModifier(value);
+        var mod = s.addModifier(value, kind);
         undo = function () { s.removeModifier(mod); };
       }
 
