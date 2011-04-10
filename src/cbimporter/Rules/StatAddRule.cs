@@ -12,12 +12,15 @@
     // We use this to make decisions about where to put storage.
     //
     // NOTE: Value is * 2 to account for Half-Points. (If the modifier has a half-point, then it is odd.)
+    //       This decision dates back from before we were running in JS; we should probably revisit this
+    //       decision now.
     //
     public abstract class StatAddRule : Rule
     {
         protected StatAddRule(RuleElement element) : base(element) { }
 
         public abstract string Stat { get; }
+        public abstract Identifier Type { get; }
 
         public static StatAddRule New(RuleElement ruleElement, XElement element)
         {
@@ -93,9 +96,18 @@
 
         public override void WriteJS(IndentedTextWriter writer)
         {
-            writer.Write("model.statadd(\"{0}\", function() {{ ", Converter.QuoteString(this.Stat));
-            WriteJSFunctionBody(writer);
-            writer.WriteLine(" });");
+            if (Type == null)
+            {
+                writer.Write("model.statadd(\"{0}\", function() {{ ", Converter.QuoteString(this.Stat));
+                WriteJSFunctionBody(writer);
+                writer.WriteLine(" });");
+            }
+            else
+            {
+                writer.Write("model.statadd(\"{0}\", function() {{ ", Converter.QuoteString(this.Stat));
+                WriteJSFunctionBody(writer);
+                writer.WriteLine(" }}, \"{0}\");", Converter.QuoteString(this.Type));
+            }
         }
 
         protected abstract void WriteJSFunctionBody(IndentedTextWriter writer);
@@ -113,6 +125,8 @@
             }
 
             public override string Stat { get { return this.stat; } }
+
+            public override Identifier Type { get { return this.type; } }
         }
 
         class ConstantStatAdd : BaseStatAdd
@@ -127,7 +141,18 @@
 
             public override void WriteJS(IndentedTextWriter writer)
             {
-                writer.WriteLine("model.statadd(\"{0}\", {1});", Converter.QuoteString(stat), this.value/2);
+                if (this.Type != null)
+                {
+                    writer.WriteLine(
+                        "model.statadd(\"{0}\", {1}, \"{2}\");", 
+                        Converter.QuoteString(stat), 
+                        this.value / 2,
+                        Converter.QuoteString(this.Type));
+                }
+                else
+                {
+                    writer.WriteLine("model.statadd(\"{0}\", {1});", Converter.QuoteString(stat), this.value / 2);
+                }
             }
 
             protected override void WriteJSFunctionBody(IndentedTextWriter writer)
@@ -189,6 +214,7 @@
             }
 
             public override string Stat { get { return this.baseRule.Stat; } }
+            public override Identifier Type { get { return this.baseRule.Type; } }
         }
 
         class ConditionalStatAdd : DelegatingStatAdd

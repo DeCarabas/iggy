@@ -242,6 +242,7 @@
                 writer.Write("name", this.name);
                 writer.Write("type", this.type);
                 writer.Write("id", this.id);
+                if (this.source != null) { writer.Write("source", this.source); }
 
                 string url = CompendiumUrl;
                 if (url != null) { writer.Write("compendiumUrl", url); }
@@ -258,18 +259,6 @@
                     }
                     textWriter.Write("]");
                 }
-
-                //if (Specifics.Count > 0)
-                //{
-                //    writer.WritePrefix("specifics", "");
-                //    using (ObjectWriter specificsWriter = new ObjectWriter(textWriter))
-                //    {
-                //        foreach (KeyValuePair<string, string> kvp in Specifics)
-                //        {
-                //            specificsWriter.Write("\"" + Converter.QuoteString(kvp.Key) + "\"", kvp.Value);
-                //        }
-                //    }
-                //}
 
                 if (Rules.Count > 0)
                 {
