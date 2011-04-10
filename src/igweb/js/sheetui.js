@@ -3,8 +3,9 @@
 //
 (function(global, undefined) {
 
+   var showZero = true; // For debugging
+
    var model = new Model();
-   model.grant(global.elements.types["Level"]["1"]);
 
    var special = {
      strHalfLevel: function() { 
@@ -29,10 +30,10 @@
        return 10 + model.stat("HALF-LEVEL");
      },
      bloodiedHP: function() {
-       return model.stat("Hit Points") / 2;
+       return Math.floor(model.stat("Hit Points") / 2);
      },
      surgeValue: function() {
-       return model.stat("Hit Points") / 4;
+       return Math.floor(model.stat("Hit Points") / 4);
      },
    };
 
@@ -48,7 +49,11 @@
          value = model.stat(elem.attr("data-boundStat"));         
        }
 
-       elem.val(value);
+       if (value !== 0 || showZero) {
+         elem.val(value);
+       } else {
+         elem.val("");
+       }
      });
 
      $("[data-special]").each(function() {
@@ -58,17 +63,23 @@
 
      $("[data-boundText]").each(function() {
        var elem = $(this);
-       elem.val(model.stat(elem.attr("data-boundStat")) || "");
+       elem.val(model.stat(elem.attr("data-boundText")) || "");
      });
 
      $("[data-boundGrant]").each(function() {
        var elem = $(this);
-       var grant = model.getGrantByType(elem.attr("data-boundGrant"));
-       if (grant) {
-         elem.val(grant.name);
-       } else {
-         elem.val("");
-       }
+       var grants = model.getGrantsByType(elem.attr("data-boundGrant"));
+
+       var result = "";
+       grants.forEach(function (grant) {
+         if (result.length === 0) {
+           result = grant.name;
+         } else {
+           result = result + ", " + grant.name;
+         }
+       });
+
+       elem.val(result);
      });
    }
 
@@ -87,8 +98,16 @@
    };
 
    /* Haxors for now: initial setup to test binding */
-   model.characterName = "Sarrat";
-   model.playerName = "John Doty";
+   model.grant(global.elements.types["Level"]["1"]);
+   model.grant(global.elements.types["Race"]["Elf"]);
+   model.grant(global.elements.types["Class"]["Ranger"]);
+
+   model.rawStatObject("dex").baseValue = 18;
+   model.rawStatObject("str").baseValue = 13;
+   model.rawStatObject("wis").baseValue = 13;
+   model.rawStatObject("con").baseValue = 10;
+   model.rawStatObject("int").baseValue = 10;
+   model.rawStatObject("cha").baseValue = 8;
 
    bindFields();
    updateFields();

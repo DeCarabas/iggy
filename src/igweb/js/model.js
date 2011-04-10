@@ -142,16 +142,17 @@
 
       return cs;
     },
-    getGrantByType: function(type) {
+    getGrantsByType: function(type) {
       if (!global.elements.id) return null;
 
+      var result = [];
       var grants = Object.keys(this._granted);
       for(var i = 0; i < grants.length; i++) {
         var elem = global.elements.id[grants[i]];
-        if (elem && elem.type === type) return elem;
+        if (elem && elem.type === type) { result.push(elem); }
       }
 
-      return null;
+      return result;
     },
     grant: function (element) {
       if (!element) { return; }

@@ -127,8 +127,8 @@
             </tr>
           </table>
           <div>
-            <h4>Conditional Modifiers</h4>
-            <p id="conditionalModifiers"></p>
+            <h4 class="conditionalHeader">Conditional Modifiers</h4>
+            <input name="initiativeConditionalModifiers" />
           </div>
           <h3>Ability Scores</h3>
           <table class="statTable abilityScoreTable">
@@ -141,7 +141,7 @@
             </tr>
             <tr class="abilMid"><th></th></tr>
             <tr class="abilityScore">
-                <td><input data-boundStat="Consitution" /></td>
+                <td><input data-boundStat="Constitution" /></td>
                 <td class="statName abilName">CON</td>
                 <td><input data-boundStat="Constitution modifier" /></td>
                 <td><input data-special="conHalfLevel" /></td>
@@ -359,7 +359,7 @@
                 <td class="defenseName">AC</td>
                 <td class="defenseBonus"><input data-special="tenHalfLevel" /></td>
                 <td class="defenseBonus"><input data-boundStat="AC" data-statMod="Armor" /></td>
-                <td class="defenseBonus"><input name="classArmorClassBonus" /></td>
+                <td class="defenseBonus"><input data-boundStat="Armor Class Class Bonus" /></td>
                 <td class="defenseBonus"><input data-boundStat="AC" data-statMod="Feat" /></td>
                 <td class="defenseBonus"><input data-boundStat="AC" data-statMod="Enhancement" /></td>
                 <td class="defenseBonus"><input name="miscArmorClassBonus" /></td>
@@ -398,7 +398,7 @@
           <table class="defense refDefense">
             <tr><th>Score</th></tr>
             <tr>
-                <td rowspan="2" class="defenseScore"><input name="reflex" /></td>
+                <td rowspan="2" class="defenseScore"><input data-boundStat="Reflex Defense" /></td>
                 <th class="defenseBonus">Defense</th>
                 <th class="defenseBonus">Base</th>
                 <th class="defenseBonus">Abil</th>
@@ -410,10 +410,10 @@
             <tr class="defenseDetail">
                 <td class="defenseName">REF</td>
                 <td class="defenseBonus"><input data-special="tenHalfLevel" /></td>
-                <td class="defenseBonus"><input name="refAbilityBonus" /></td>
-                <td class="defenseBonus"><input name="classRefBonus" /></td>
-                <td class="defenseBonus"><input name="featRefBonus" /></td>
-                <td class="defenseBonus"><input name="enhancementRefBonus" /></td>
+                <td class="defenseBonus"><input data-boundStat="Reflex Defense" data-statMod="Ability" /></td>
+                <td class="defenseBonus"><input data-boundStat="Reflex Defense Class Bonus" /></td>
+                <td class="defenseBonus"><input data-boundStat="Reflex Defense" data-statMod="Feat" /></td>
+                <td class="defenseBonus"><input data-boundStat="Reflex Defense" data-statMod="Enhancement" /></td>
                 <td class="defenseBonus"><input name="miscRefBonus" /></td>
             </tr>
           </table>
@@ -424,7 +424,7 @@
           <table class="defense willDefense">
             <tr><th>Score</th></tr>
             <tr>
-                <td rowspan="2" class="defenseScore"><input name="will" /></td>
+                <td rowspan="2" class="defenseScore"><input data-boundStat="Will Defense" /></td>
                 <th class="defenseBonus">Defense</th>
                 <th class="defenseBonus">Base</th>
                 <th class="defenseBonus">Abil</th>
@@ -436,10 +436,10 @@
             <tr class="defenseDetail">
                 <td class="defenseName">WILL</td>
                 <td class="defenseBonus"><input data-special="tenHalfLevel" /></td>
-                <td class="defenseBonus"><input name="willAbilityBonus" /></td>
-                <td class="defenseBonus"><input name="classWillBonus" /></td>
-                <td class="defenseBonus"><input name="featWillBonus" /></td>
-                <td class="defenseBonus"><input name="enhancementWillBonus" /></td>
+                <td class="defenseBonus"><input data-boundStat="Will Defense" data-statMod="Ability" /></td>
+                <td class="defenseBonus"><input data-boundStat="Will Defense Class Bonus" /></td>
+                <td class="defenseBonus"><input data-boundStat="Will Defense" data-statMod="Feat" /></td>
+                <td class="defenseBonus"><input data-boundStat="Will Defense" data-statMod="Enhancement" /></td>
                 <td class="defenseBonus"><input name="miscWillBonus" /></td>
             </tr>
           </table>
@@ -449,7 +449,7 @@
           </div>
           <h3>Action Points</h3>
           <div class="actionPointsDiv">
-            <input name="actionPoints" /> Action Points
+            <input data-boundStat="_BaseActionPoints" /> Action Points
           </div>
           <div class="actionPointsHelp">
             <table class="actionPointsHelpTable">
@@ -464,11 +464,11 @@
             <input name="actionPointsAdditionalEffects" />
           </div>
           <h3>Race Features</h3>
-          <textarea name="raceFeatures" class="mutiLineText raceFeatures"></textarea>
+          <textarea data-boundGrant="Racial Trait" class="mutiLineText raceFeatures"></textarea>
           <h3>Class/Path/Destiny Features</h3>
-          <textarea name="classFeatures" class="mutiLineText classFeatures"></textarea>
+          <textarea data-boundGrant="class feature" class="mutiLineText classFeatures"></textarea>
           <h3>Languages Known</h3>
-          <textarea name="languagesKnown" class="mutiLineText languagesKnown"></textarea>
+          <textarea data-boundGrant="Language" class="mutiLineText languagesKnown"></textarea>
         </div>
 
         <div class="grid_4">
