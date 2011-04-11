@@ -34,6 +34,12 @@
      },
      surgeValue: function() {
        return Math.floor(model.stat("Hit Points") / 4);
+     },
+     passiveInsight: function() {
+       return model.stat("Insight") + 10;
+     },
+     passivePerception: function() {
+       return model.stat("Perception") + 10;
      }
    };
 
