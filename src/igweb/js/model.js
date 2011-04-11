@@ -33,7 +33,7 @@
         var mod = mods[key];
         if (mod.kind === kind) {
           var modValue = (typeof mod.value === "function") ? mod.value() : mod.value;
-          if (Math.abs(modValue) > Math.abs(value)) {
+          if (modValue > value) {
             value = modValue;            
           }
         }
@@ -53,7 +53,7 @@
         var modifier = mods[key];
         var value = (typeof modifier.value === "function") ? modifier.value() : modifier.value;
         if (modifier.kind) {
-          if ((!resultDictionary[modifier.kind]) || Math.abs(value) > Math.abs(resultDictionary[modifier.kind])) {
+          if ((!resultDictionary[modifier.kind]) || value > resultDictionary[modifier.kind]) {
             resultDictionary[modifier.kind] = value;
           }
         } else {
