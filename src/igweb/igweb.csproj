@@ -106,6 +106,7 @@
     <Content Include="js\profiling\yahoo-profiling.css" />
     <Content Include="js\profiling\yahoo-profiling.min.js" />
     <Content Include="js\script.js" />
+    <Content Include="js\sheetui.js" />
     <Content Include="js\signals.js" />
     <Content Include="sheet.html" />
     <Content Include="test\dnd4tests.js" />

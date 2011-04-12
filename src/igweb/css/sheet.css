@@ -1,5 +1,9 @@
 /* Sheet specific styles */
 
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; } 
+
 input[type="number"] {
     -webkit-appearance: textfield;
 }
@@ -380,4 +384,24 @@ tr.abilSpacer
 {
     height: 320px;
     border-width: 1px;
+}
+
+/****************************************************************
+ * Selection UI
+ ****************************************************************/
+.popover
+{
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.chooseUI h1
+{
+    margin-bottom: 3px;
+}
+
+.chooseUI p
+{
+    font-size: 14px;
 }
