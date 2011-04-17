@@ -100,6 +100,7 @@
 
       var choiceType = elem.attr("data-boundChoice");
       var choices = model.getChoices(choiceType);
+
       if (choices.length > 0) {
         var choice = choices[0];
 
@@ -109,14 +110,24 @@
           row.attr("id", detailTarget + ":0:" + re.id);
           row.text(re.name);
 
-          row.mouseenter(function () { row.addClass('rowHover'); });
+          row.mouseenter(function () {
+            if (!row.hasClass('selectedRow')) { row.addClass('rowHover'); }
+          });
           row.mouseleave(function () { row.removeClass('rowHover'); });
           row.click(function () {
             detailTargetElem.html('<iframe src="' + re.compendiumUrl + '" width="100%" height="100%" />');
             choice.choice = re; // TODO: Make this less live?
 
+            row.addClass('selectedRow');
+            row.removeClass('rowHover');
+
             updateFields();
           });
+
+          if (choice.choice === re) {
+            row.addClass('selectedRow');
+            detailTargetElem.html('<iframe src="' + re.compendiumUrl + '" width="100%" height="100%" />');
+          }
 
           elem.append(row);
         });
@@ -142,8 +153,6 @@
     });
   };
 
-
-
   function showUI(name) {
     if (selectedUI) { selectedUI.hide(); }
     var elem = $("#" + name);
@@ -152,10 +161,12 @@
     selectedUI = elem;
   };
 
+
   /* Haxors for now: initial setup to test binding */
   model.grant(global.elements.types["Level"]["1"]);
   //model.grant(global.elements.types["Race"]["Elf"]);
   //model.grant(global.elements.types["Class"]["Ranger"]);
+  model.getChoices("Class")[0].choice = global.elements.types["Class"]["Ranger"];
 
   model.rawStatObject("dex").baseValue = 18;
   model.rawStatObject("str").baseValue = 13;

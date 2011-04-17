@@ -465,6 +465,11 @@ tr.abilSpacer
     padding: 1px 0px 1px 15px;
 }
 
+.selectedRow
+{
+    background-color: #BBB;
+}
+
 .rowHover
 {
     background-color: #CCC;    
