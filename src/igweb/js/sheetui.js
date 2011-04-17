@@ -3,12 +3,90 @@
 //
 (function (global, undefined) {
 
-  var showZero = true; // For debugging
-
-  var topOfPage = $("#sheetHeader").height();
+  var showZero = true; // For debugging.
+  var topOfPage = $("#sheetHeader").height(); // For magical alignment.
 
   var model = new Model();
+
+  var uiElements = {};
   var selectedUI;
+
+  function ChoiceUI(model, element) {
+    this._model = model;
+    this._rootElement = $(element);
+
+    this._listTarget = $(global.window.document.getElementById(this._rootElement.attr("data-listTarget")));
+    this._detailName = this._rootElement.attr("data-detailTarget");
+    this._detailTarget = $(global.window.document.getElementById(this._detailName));
+
+    this._choiceType = this._rootElement.attr("data-boundChoice");
+
+    this._rootElement.hide();
+    this.visible = false;
+  };
+  ChoiceUI.prototype = {
+    hide: function () {
+      this._rootElement.hide();
+      this.visible = false;
+    },
+    show: function () {
+      if (!this.visible) {
+        if (selectedUI && selectedUI.hide) { selectedUI.hide(); }
+        this._rootElement.show();
+        this._rootElement.offset({ top: topOfPage, left: 0 });
+        selectedUI = this;
+
+        this.visible = true;
+        this.update();
+        updateFields();
+      }
+    },
+    update: function () {
+      var that = this;
+
+      this._listTarget.empty();
+      var choices = this._model.getChoices(this._choiceType);
+      if (choices.length > 0) {
+        var choice = choices[0];
+
+        choice.getValidElements().forEach(function (re, i) {
+          var row = $("<div class='choiceRow'></div>");
+          row.addClass((i % 2 == 0) ? "evenRow" : "oddRow");
+          row.text(re.name);
+
+          row.mouseenter(function () {
+            if (!row.hasClass('selectedRow')) { row.addClass('rowHover'); }
+          });
+          row.mouseleave(function () { row.removeClass('rowHover'); });
+          row.click(function () {
+            that._detailTarget.html('<iframe src="' + re.compendiumUrl + '" width="100%" height="100%" />');
+            choice.choice = re; // TODO: Make this less live?
+
+            that._listTarget.find(".selectedRow").removeClass('selectedRow');
+
+            row.addClass('selectedRow');
+            row.removeClass('rowHover');
+
+            updateFields();
+          });
+
+          if (choice.choice === re) {
+            row.addClass('selectedRow');
+            that._detailTarget.html('<iframe src="' + re.compendiumUrl + '" width="100%" height="100%" />');
+          }
+
+          that._listTarget.append(row);
+        });
+      }
+    }
+  };
+
+  function setupUI() {
+    var uis = $(".chooseUI");
+    uis.each(function () {
+      uiElements[this.id] = new ChoiceUI(model, this);
+    });
+  }
 
   var special = {
     strHalfLevel: function () {
@@ -90,49 +168,6 @@
 
       elem.val(result);
     });
-
-    $("[data-boundChoice]:visible").each(function () {
-      var elem = $(this);
-      elem.empty();
-
-      var detailTarget = elem.attr("data-detailTarget");
-      var detailTargetElem = $("#" + detailTarget);
-
-      var choiceType = elem.attr("data-boundChoice");
-      var choices = model.getChoices(choiceType);
-
-      if (choices.length > 0) {
-        var choice = choices[0];
-
-        choice.getValidElements().forEach(function (re, i) {
-          var row = $("<div class='choiceRow'></div>");
-          row.addClass((i % 2 == 0) ? "evenRow" : "oddRow");
-          row.attr("id", detailTarget + ":0:" + re.id);
-          row.text(re.name);
-
-          row.mouseenter(function () {
-            if (!row.hasClass('selectedRow')) { row.addClass('rowHover'); }
-          });
-          row.mouseleave(function () { row.removeClass('rowHover'); });
-          row.click(function () {
-            detailTargetElem.html('<iframe src="' + re.compendiumUrl + '" width="100%" height="100%" />');
-            choice.choice = re; // TODO: Make this less live?
-
-            row.addClass('selectedRow');
-            row.removeClass('rowHover');
-
-            updateFields();
-          });
-
-          if (choice.choice === re) {
-            row.addClass('selectedRow');
-            detailTargetElem.html('<iframe src="' + re.compendiumUrl + '" width="100%" height="100%" />');
-          }
-
-          elem.append(row);
-        });
-      }
-    });
   }
 
   function bindFields() {
@@ -153,15 +188,6 @@
     });
   };
 
-  function showUI(name) {
-    if (selectedUI) { selectedUI.hide(); }
-    var elem = $("#" + name);
-    elem.show();
-    elem.offset({ top: topOfPage, left: 0 });
-    selectedUI = elem;
-  };
-
-
   /* Haxors for now: initial setup to test binding */
   model.grant(global.elements.types["Level"]["1"]);
   //model.grant(global.elements.types["Race"]["Elf"]);
@@ -176,11 +202,9 @@
   model.rawStatObject("cha").baseValue = 8;
 
   bindFields();
-  $(".chooseUI").hide();
+  setupUI();
 
-  showUI("chooseClass");
-
-  updateFields();
+  uiElements["chooseClass"].show();
 })(this);
 
 
