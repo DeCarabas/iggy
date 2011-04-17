@@ -172,10 +172,8 @@ tr.abilSpacer
     font-size: 6px;
 }
 
-.oddSkill
-{
-    background-color: #EEE;
-}
+.oddRow { background-color: #EEE; }
+.evenRow { background-color: White; }
 
 .skillBonus input
 {
@@ -389,11 +387,31 @@ tr.abilSpacer
 /****************************************************************
  * Selection UI
  ****************************************************************/
+.hidden { display: none; visibility: hidden; } 
+
+
 .popover
 {
     border-width: 1px;
     border-style: solid;
     padding: 10px;
+}
+
+.chooseUI
+{
+    background-color: white;
+}
+
+.chooseUIWrapper
+{
+    background-color: #DDD;
+    border: 1px solid #444;
+}
+
+.chooseUIWrapper hr
+{
+    border: 1px solid #DDD;
+    margin: 2px;
 }
 
 .chooseUI h1
@@ -404,4 +422,65 @@ tr.abilSpacer
 .chooseUI p
 {
     font-size: 14px;
+}
+
+.elementList
+{
+    font-size: 14px;
+    border: 1px solid #444;
+    overflow: auto;
+}
+
+.choicePanel
+{
+    height: 650px;
+}
+
+.detailPanel_10
+{
+    border: 1px solid #444; 
+    background-color: White; 
+    width: 638px;
+}
+
+.detailPanel_11
+{
+    border: 1px solid #444; 
+    background-color: White; 
+}
+
+
+.whatPanel
+{
+    padding: 10px;
+}
+
+.whatButton
+{
+    margin-top: 10px;
+}
+
+.choiceRow
+{
+    padding: 1px 0px 1px 15px;
+}
+
+.rowHover
+{
+    background-color: #CCC;    
+}
+
+.uiButton
+{    
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #444;
+    cursor: default;
+    background-color: White;
+}
+
+.uiButton:hover
+{
+    background-color: #CCC;
 }
