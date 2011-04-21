@@ -589,8 +589,14 @@
     </div>
   </div>
 
-  <div id="chooseClass" class="chooseUI" data-boundChoice="Class" data-detailTarget="classDetail" data-listTarget="classList">
-    <div class="container_16" >
+  <div id="chooseClass" 
+       class="chooseUI wizardFirst" 
+       data-boundChoice="Class" 
+       data-detailTarget="classDetail" 
+       data-listTarget="classList"
+       data-nextChoice="chooseRace"
+  >
+    <div class="container_16">
         <div class="chooseUIWrapper">
             <div class="grid_12">
                 <h1>Choose a class</h1>
@@ -624,12 +630,16 @@
                 <a class="uiButton" data-command="nextStep">Next step</a>
             </div>            
             <hr />
-        </div>        
-    </div>
+        </div>      
+    </div>  
   </div>
 
-  <div id="chooseRace" class="chooseUI" data-boundChoice="Race" data-listTarget="raceList" data-detailTarget="raceDetail">
-    <div class="container_16" >
+  <div id="chooseRace" 
+       class="chooseUI" 
+       data-boundChoice="Race" 
+       data-listTarget="raceList" 
+       data-detailTarget="raceDetail">
+    <div class="container_16">
         <div class="chooseUIWrapper">
             <div class="grid_12">
                 <h1>Choose a race</h1>
@@ -637,13 +647,13 @@
             <div class="grid_3 whatButton">
                 <a><i>What's a race?</i></a>
             </div>
-            <div class="clear"></div>
-            <div class="grid_5">
+            <hr />
+            <div class="grid_4">
                 <div class="elementList  choicePanel" id="raceList">
                     <!-- Templating? -->
                 </div>
             </div>
-            <div class="grid_10 choicePanel detailPanel_10" id="raceDetail">
+            <div class="grid_11 choicePanel detailPanel_11" id="raceDetail">
                 <div class="whatPanel">
                     <h2>About Races</h2>
                     <p>A variety of cultures and societies populate the world of the 
@@ -659,15 +669,20 @@
                     building your character's story.</p>
                 </div>
             </div>
-            <div class="clear clearfix"></div>
+            <hr />
             <div class="grid_2 prefix_13 suffix_1">
                 <a class="uiButton" data-command="nextStep">Next step</a>
             </div>
-            <div class="clear clearfix"></div>
+            <hr />
         </div>
     </div>
   </div>
-  
+
+  <div id="chooseAbilityScores">
+    
+  </div>
+ 
+
   <!-- Javascript at the bottom for fast page loading -->
  
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->

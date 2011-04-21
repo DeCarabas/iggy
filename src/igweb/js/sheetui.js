@@ -9,6 +9,7 @@
   var model = new Model();
 
   var uiElements = {};
+  var wizardFirst;
   var selectedUI;
 
   function ChoiceUI(model, element) {
@@ -21,13 +22,32 @@
 
     this._choiceType = this._rootElement.attr("data-boundChoice");
 
+    var that = this;
+    this._rootElement.find("[data-command=nextStep]").click(wizardNext);
+
+    if (this._rootElement.hasClass("wizardFirst")) { wizardFirst = this; }
+
     this._rootElement.hide();
     this.visible = false;
   };
   ChoiceUI.prototype = {
+    getNext: function () {
+      var nextChoice = this._rootElement.attr("data-nextChoice");
+      return nextChoice ? uiElements[nextChoice] : null;
+    },
     hide: function () {
-      this._rootElement.hide();
-      this.visible = false;
+      if (this.visible) {
+        this._rootElement.hide();
+        this.visible = false;
+        selectedUI = null;
+      }
+    },
+    shouldSkip: function () {
+      var choices = this._model.getChoices(this._choiceType);
+      for (var i = 0; i < choices.length; i++) {
+        if (!choices[i].choice) { return false; }
+      }
+      return true;
     },
     show: function () {
       if (!this.visible) {
@@ -80,6 +100,23 @@
       }
     }
   };
+
+  function wizardNext() {
+    if (!selectedUI) {
+      wizardFirst.show();
+      if (!wizardFirst.shouldSkip()) { return; }
+    }
+
+    var nextChoice = selectedUI.getNext();
+    while (nextChoice && nextChoice.shouldSkip()) {
+      nextChoice = nextChoice.nextChoice();
+    }
+    if (nextChoice) {
+      nextChoice.show();
+    } else {
+      selectedUI.hide();
+    }
+  }
 
   function setupUI() {
     var uis = $(".chooseUI");
@@ -192,7 +229,7 @@
   model.grant(global.elements.types["Level"]["1"]);
   //model.grant(global.elements.types["Race"]["Elf"]);
   //model.grant(global.elements.types["Class"]["Ranger"]);
-  model.getChoices("Class")[0].choice = global.elements.types["Class"]["Ranger"];
+  //model.getChoices("Class")[0].choice = global.elements.types["Class"]["Ranger"];
 
   model.rawStatObject("dex").baseValue = 18;
   model.rawStatObject("str").baseValue = 13;
@@ -204,7 +241,8 @@
   bindFields();
   setupUI();
 
-  uiElements["chooseClass"].show();
+  wizardNext();
+
 })(this);
 
 
