@@ -53,7 +53,7 @@
         var modifier = mods[key];
         var value = (typeof modifier.value === "function") ? modifier.value() : modifier.value;
         if (modifier.kind) {
-          if ((!resultDictionary[modifier.kind]) || value > resultDictionary[modifier.kind]) {
+          if ((!resultDictionary[modifier.kind]) || Math.abs(value) > Math.abs(resultDictionary[modifier.kind])) {
             resultDictionary[modifier.kind] = value;
           }
         } else {
