@@ -33,14 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(PROCESSOR_ARCHITECTURE)'=='x86' ">
+  <ItemGroup>
     <Reference Include="ApplicationUpdate.Client">
-      <HintPath>c:\Program Files\Wizards of the Coast\Adventure Tools\ApplicationUpdate.Client.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup Condition=" '$(PROCESSOR_ARCHITECTURE)'=='x64' ">
-    <Reference Include="ApplicationUpdate.Client">
-      <HintPath>c:\Program Files (x86)\Wizards of the Coast\Adventure Tools\ApplicationUpdate.Client.dll</HintPath>
+      <HintPath>$(ProgramFiles)\Wizards of the Coast\Adventure Tools\ApplicationUpdate.Client.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
