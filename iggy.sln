@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cbimporter", "src\cbimporter\cbimporter.csproj", "{31EABAA2-0A89-495F-B279-BF0CE2796C32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dndi", "src\dndi\dndi.csproj", "{DACB39FD-8326-4776-AE72-0B41A82AD3C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31EABAA2-0A89-495F-B279-BF0CE2796C32}.Debug|x86.ActiveCfg = Debug|x86
+		{31EABAA2-0A89-495F-B279-BF0CE2796C32}.Debug|x86.Build.0 = Debug|x86
+		{31EABAA2-0A89-495F-B279-BF0CE2796C32}.Release|x86.ActiveCfg = Release|x86
+		{31EABAA2-0A89-495F-B279-BF0CE2796C32}.Release|x86.Build.0 = Release|x86
+		{DACB39FD-8326-4776-AE72-0B41A82AD3C6}.Debug|x86.ActiveCfg = Debug|x86
+		{DACB39FD-8326-4776-AE72-0B41A82AD3C6}.Debug|x86.Build.0 = Debug|x86
+		{DACB39FD-8326-4776-AE72-0B41A82AD3C6}.Release|x86.ActiveCfg = Release|x86
+		{DACB39FD-8326-4776-AE72-0B41A82AD3C6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
