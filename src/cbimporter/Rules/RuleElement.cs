@@ -190,6 +190,7 @@
         public Identifier Id { get { return this.id; } }
         public Identifier Name { get { return this.name; } }
         public IList<Rule> Rules { get { return this.rules; } }
+        public string Source { get { return this.source; } }
         public IDictionary<string, string> Specifics { get { return this.specifics; } }
         public Identifier Type { get { return this.type; } }
         public XElement Xml { get { return this.xml; } }

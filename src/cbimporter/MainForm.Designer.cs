@@ -43,6 +43,8 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goTodefinitionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.convertToFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -157,7 +159,9 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
+            this.toolStripSeparator1,
             this.convertToolStripMenuItem,
+            this.convertToFilesToolStripMenuItem,
             this.toolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -167,26 +171,26 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.openToolStripMenuItem.Text = "&Open...";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OnOpen);
             // 
             // convertToolStripMenuItem
             // 
             this.convertToolStripMenuItem.Name = "convertToolStripMenuItem";
-            this.convertToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
-            this.convertToolStripMenuItem.Text = "Convert...";
-            this.convertToolStripMenuItem.Click += new System.EventHandler(this.OnConvert);
+            this.convertToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.convertToolStripMenuItem.Text = "Convert to Single...";
+            this.convertToolStripMenuItem.Click += new System.EventHandler(this.OnConvertToSingle);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(122, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(171, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.OnExit);
             // 
@@ -204,6 +208,18 @@
             this.goTodefinitionToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.goTodefinitionToolStripMenuItem.Text = "Go to &definition";
             this.goTodefinitionToolStripMenuItem.Click += new System.EventHandler(this.OnGotoDef);
+            // 
+            // convertToFilesToolStripMenuItem
+            // 
+            this.convertToFilesToolStripMenuItem.Name = "convertToFilesToolStripMenuItem";
+            this.convertToFilesToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.convertToFilesToolStripMenuItem.Text = "Convert to Files...";
+            this.convertToFilesToolStripMenuItem.Click += new System.EventHandler(this.OnConvertToFiles);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(171, 6);
             // 
             // MainForm
             // 
@@ -248,6 +264,8 @@
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem goTodefinitionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem convertToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem convertToFilesToolStripMenuItem;
     }
 }
 

@@ -12,8 +12,7 @@
 
     class Converter
     {
-        readonly HashSet<XName> seenRuleAttributes = new HashSet<XName>
-            { "requires", "type", "non-zero", "zero", "name", "value" };
+        readonly HashSet<XName> seenRuleAttributes = new HashSet<XName> { "requires", "type", "non-zero", "zero", "name", "value" };
 
         readonly HashSet<XName> seenRuleElements = new HashSet<XName>();
 
@@ -31,17 +30,47 @@
             }
         }
 
-        string CompileRootSource(string choiceName)
+        public static string ConvertElement(RuleIndex index, RuleElement element)
         {
-            throw new NotImplementedException();
+            var stringWriter = new StringWriter();
+            element.WriteJS(new IndentedTextWriter(stringWriter, "  "));
+            return stringWriter.ToString();
         }
 
-        public static void Convert(RuleIndex index, TextWriter writer)
+        public static void ConvertToFiles(RuleIndex index, string outputPath, ProgressDialog progress)
         {
-            Convert(index, writer, null);
+            if (progress != null) { progress.SetDescription("Converting elements..."); }
+            int max = index.Elements.Count;
+            int pos = 0;
+
+            foreach (IGrouping<string, RuleElement> source in index.Elements.GroupBy(r => GetRealSource(r.Source)))
+            {
+                string sourcePath = Path.Combine(outputPath, GetSafePathSegment(source.Key));
+                if (!Directory.Exists(sourcePath)) { Directory.CreateDirectory(sourcePath); }
+
+                foreach (IGrouping<string, RuleElement> type in source.GroupBy(r => r.Type.ToString()))
+                {
+                    string outFile = Path.Combine(sourcePath, type.Key + ".js");
+                    using (TextWriter writer = File.CreateText(outFile))
+                    {
+                        var converter = new Converter(index, writer);
+                        converter.WriteGlobalPrefix();
+                        converter.WriteTypePrefix(type.Key);
+                        foreach (RuleElement element in type.OrderBy(e => e.Name.ToString()))
+                        {
+                            if (progress != null) { progress.SetProgress(pos++, max); }
+                            converter.WriteGenericRulesElement(element);
+                        }
+                        converter.WriteTypeSuffix();
+                        converter.WriteGlobalSuffix();
+
+                        converter.WriteWarnings();
+                    }
+                }
+            }
         }
 
-        public static void Convert(RuleIndex index, TextWriter writer, ProgressDialog progress)
+        public static void ConvertToSingleFile(RuleIndex index, TextWriter writer, ProgressDialog progress)
         {
             var converter = new Converter(index, writer);
 
@@ -63,52 +92,6 @@
             converter.WriteGlobalSuffix();
 
             converter.WriteWarnings();
-        }
-
-        public static string ConvertElement(RuleIndex index, RuleElement element)
-        {
-            var stringWriter = new StringWriter();
-            element.WriteJS(new IndentedTextWriter(stringWriter, "  "));
-            return stringWriter.ToString();
-        }
-
-        static string QuoteIdentifier(Identifier id)
-        {
-            return QuoteIdentifier(id.ToString());
-        }
-
-        static string QuoteIdentifier(string text)
-        {
-            return text.Replace(' ', '_').Replace("(", "").Replace(")", "");
-        }
-
-        public static string QuoteString(Identifier id)
-        {
-            return QuoteString(id.ToString());
-        }
-
-        public static string QuoteString(string text)
-        {
-            return text
-                .Replace("\"", "\\\"")
-                .Replace("\n", "\\n")
-                .Replace("\r", "\\r");
-        }
-
-        void Warn(string message, params object[] args)
-        {
-            this.warnings.Add(string.Format(message, args));
-        }
-
-        public void WriteGenericRulesElement(RuleElement element)
-        {
-            writer.Write(@"te = {0}[""{1}""] = new RulesElement(", QuoteIdentifier(element.Type), QuoteString(element.Name));
-
-            element.WriteJS(this.writer);
-
-            writer.WriteLine(");");
-            writer.WriteLine("byID[te.id] = te;");
-            writer.WriteLine();
         }
 
         string GetCompendiumUrl(RuleElement element)
@@ -157,9 +140,63 @@
 
         string GetCompendiumUrl(RuleElement element, string type, string idPrefix)
         {
-            return 
-                "http://www.wizards.com/dndinsider/compendium/" + 
+            return
+                "http://www.wizards.com/dndinsider/compendium/" +
                 type + ".aspx?id=" + element.Id.ToString().Substring(idPrefix.Length);
+        }
+
+        static string GetSafePathSegment(string name)
+        {
+            char[] chars = Path.GetInvalidFileNameChars();
+            for (int i = 0; i < chars.Length; i++) { name = name.Replace(chars[i], '_'); }
+            return name;
+        }
+
+        static string GetRealSource(string source)
+        {
+            if (string.IsNullOrEmpty(source)) { source = "core"; }
+            if (source.IndexOf(",") >= 0) { source = source.Split(',')[0]; }
+
+            return source.ToLowerInvariant();
+        }
+
+        static string QuoteIdentifier(Identifier id)
+        {
+            return QuoteIdentifier(id.ToString());
+        }
+
+        static string QuoteIdentifier(string text)
+        {
+            return text.Replace(' ', '_').Replace("(", "").Replace(")", "");
+        }
+
+        public static string QuoteString(Identifier id)
+        {
+            return QuoteString(id.ToString());
+        }
+
+        public static string QuoteString(string text)
+        {
+            return text
+                .Replace("\"", "\\\"")
+                .Replace("\n", "\\n")
+                .Replace("\r", "\\r");
+        }
+
+        void Warn(string message, params object[] args)
+        {
+            this.warnings.Add(string.Format(message, args));
+        }
+
+        public void WriteGenericRulesElement(RuleElement element)
+        {
+            writer.Write(@"te = {0}[""{1}""] = new RulesElement(", QuoteIdentifier(element.Type), QuoteString(element.Name));
+
+            element.WriteJS(this.writer);
+
+            writer.WriteLine(");");
+            writer.WriteLine("byID[te.id] = te;");
+            writer.WriteLine();
         }
 
         public void WriteGlobalPrefix()

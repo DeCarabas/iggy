@@ -48,7 +48,7 @@
             }
         }
 
-        void OnConvert(object sender, EventArgs e)
+        void OnConvertToSingle(object sender, EventArgs e)
         {
             var progress = new ProgressDialog
             {
@@ -60,10 +60,24 @@
                         {
                             using (var writer = new StreamWriter(stream))
                             {
-                                Converter.Convert(this.currentDocument, writer, p);
+                                Converter.ConvertToSingleFile(this.currentDocument, writer, p);
                             }
                         }
                     })
+            };
+            progress.ShowDialog();
+        }
+
+        void OnConvertToFiles(object sender, EventArgs e)
+        {
+            var progress = new ProgressDialog
+            {
+                Title = "Converting file",
+                TaskFunction = (p) => Task.Factory.StartNew(() =>
+                {
+                    string newPath = Path.ChangeExtension(this.currentDocument.Name, ".out");
+                    Converter.ConvertToFiles(this.currentDocument, newPath, p);
+                })
             };
             progress.ShowDialog();
         }
