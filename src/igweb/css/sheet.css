@@ -387,8 +387,6 @@ tr.abilSpacer
 /****************************************************************
  * Selection UI
  ****************************************************************/
-.hidden { display: none; visibility: hidden; } 
-
 
 .popover
 {
@@ -400,6 +398,7 @@ tr.abilSpacer
 .chooseUI
 {
     background-color: white;
+    display: none;  /* Start life hidden because. */
 }
 
 .chooseUIWrapper
