@@ -24,7 +24,7 @@
         delete this.modifiers[mod];
       }
     },
-    getModifier: function(kind) {
+    getModifier: function (kind) {
       if (!this.modifiers) { return 0; }
 
       var mods = this.modifiers;
@@ -34,7 +34,7 @@
         if (mod.kind === kind) {
           var modValue = (typeof mod.value === "function") ? mod.value() : mod.value;
           if (modValue > value) {
-            value = modValue;            
+            value = modValue;
           }
         }
       });
@@ -72,7 +72,7 @@
     var that = this;
     Object.keys(options || {}).forEach(function (key) { that[key] = options[key]; });
     if (!this.id) {
-      this.id = RulesElement._uniqueId || (RulesElement._uniqueId = 0);
+      this.id = RulesElement._uniqueId || (RulesElement._uniqueId = 1);
       RulesElement._uniqueId++;
     }
     if (this.categories) {
@@ -93,7 +93,7 @@
     this.type = type;
     this.number = number;
     this.model = model;
-    this.id = Choice._uniqueId || (Choice._uniqueId = 0);
+    this.id = Choice._uniqueId || (Choice._uniqueId = 1);
     this._choice = null;
     Choice._uniqueId++;
   };
