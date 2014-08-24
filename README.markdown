@@ -30,9 +30,18 @@ standard DnD 4e character sheet mocked up and bound to a character model that
 has been granted some dummy stuff. The code for the ui, including the dummy
 grants, are in js\sheetui.js.
 
-And that's where we are at the moment.
+You can put the whole thing together with grunt, in the usual way:
+
+    npm install
+    grunt
+
+
+Other Code
+----------
 
 Other stuff lives in src\cbimporter and src\dndi; they both do lifting and
 exploration of the rules that were in the old 4e character builder (not the
 silverlight web one, the standalone desktop one). That stuff can be built by
 loading iggy.sln.
+
+And that's where we are at the moment.

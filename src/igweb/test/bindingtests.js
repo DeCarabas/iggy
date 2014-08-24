@@ -16,12 +16,12 @@ test('Basic tests', function () {
   var model = new Model();
 
   updateStats(model);
-  equals($("#test-x").text(), "0", "Before grant, x value");
-  equals($("#test-y").text(), "0", "Before grant, y value");
+  equal($("#test-x").text(), "0", "Before grant, x value");
+  equal($("#test-y").text(), "0", "Before grant, y value");
 
   model.grant(element);
   updateStats(model);
 
-  equals($("#test-x").text(), "6", "After grant, x value");
-  equals($("#test-y").text(), "8", "After grant, y value");
+  equal($("#test-x").text(), "6", "After grant, x value");
+  equal($("#test-y").text(), "8", "After grant, y value");
 });
