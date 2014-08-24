@@ -2,10 +2,10 @@
 // This contains the implementation of the rules engine.
 //
 
-"use strict";
 (function(global, undefined) {
+  "use strict";
 
-  log = global.testLog || function log(message) { console.log(message); };
+  var log = global.testLog || function log(message) { console.log(message); };
 
   var Stat = function () { };
   Stat.prototype = {
@@ -205,7 +205,7 @@
         log("Removing [" + element.type + "]:[" + element.name + "]");
         tracking.refs--;
         log("[" + element.type + "]:[" + element.name + "] refs: " + tracking.refs);
-        if (tracking.refs == 0) {
+        if (tracking.refs === 0) {
           tracking.undo.forEach(function (ti) { ti(); });
           delete this._granted[element.id];
         }

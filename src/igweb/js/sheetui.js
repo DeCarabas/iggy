@@ -2,6 +2,7 @@
 // Character builder UI
 //
 (function (global, undefined) {
+  "use strict";
 
   var showZero = true; // For debugging.
   var topOfPage = $("#sheetHeader").height(); // For magical alignment.
@@ -29,7 +30,7 @@
 
     this._rootElement.hide();
     this.visible = false;
-  };
+  }
   ChoiceUI.prototype = {
     getNext: function () {
       var nextChoice = this._rootElement.attr("data-nextChoice");
@@ -71,7 +72,7 @@
 
         choice.getValidElements().forEach(function (re, i) {
           var row = $("<div class='choiceRow'></div>");
-          row.addClass((i % 2 == 0) ? "evenRow" : "oddRow");
+          row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
           row.text(re.name);
 
           row.mouseenter(function () {
@@ -223,7 +224,7 @@
     $("[data-boundStat],[data-special],[data-boundGrant]").each(function () {
       this.readOnly = true;
     });
-  };
+  }
 
   /* Haxors for now: initial setup to test binding */
   model.grant(global.elements.types["Level"]["1"]);
