@@ -3,9 +3,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     concat: {
-      options: {
-        sourceMap: true
-      },
       dnd4: {
         src: ['src/igweb/js/dnd4/**/*.js'],
         dest: 'bin/igweb/js/dnd4data.js'
