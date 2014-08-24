@@ -5,7 +5,7 @@
 "use strict";
 (function(global, undefined) {
 
-  function log(message) { console.log(message); }
+  log = global.testLog || function log(message) { console.log(message); };
 
   var Stat = function () { };
   Stat.prototype = {
