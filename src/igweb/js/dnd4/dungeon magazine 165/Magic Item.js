@@ -1,0 +1,33 @@
+(function(global, undefined) {
+  "use strict";
+  
+  var elements = global.elements || (global.elements = {});
+  var types = elements.types || (elements.types = {});
+  var byID = elements.id || (elements.id = {});
+  var te;
+  
+  var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
+  te = Magic_Item["Elemental Prism (paragon tier)"] = new RulesElement({
+    name: "Elemental Prism (paragon tier)",
+    type: "Magic Item",
+    id: "ID_FMP_MAGIC_ITEM_5037",
+    source: "Dungeon Magazine 165",
+    categories: ["Elemental Prism (paragon tier)", "ID_FMP_MAGIC_ITEM_5037"]
+  });
+  byID[te.id] = te;
+  
+  te = Magic_Item["Seed of Winter"] = new RulesElement({
+    name: "Seed of Winter",
+    type: "Magic Item",
+    id: "ID_FMP_MAGIC_ITEM_5038",
+    source: "Dungeon Magazine 165",
+    categories: ["Seed of Winter", "ID_FMP_MAGIC_ITEM_5038"],
+    rules: function(model) {
+      model.statadd("Endurance Misc", 2, "item");
+      model.statadd("Intimidate Misc", 2, "item");
+    }
+  });
+  byID[te.id] = te;
+  
+  
+})(this);

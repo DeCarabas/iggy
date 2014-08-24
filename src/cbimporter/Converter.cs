@@ -201,9 +201,10 @@
 
         public void WriteGlobalPrefix()
         {
-            this.writer.WriteLine("\"use strict\";");
             this.writer.WriteLine("(function(global, undefined) {");
             this.writer.Indent++;
+            this.writer.WriteLine("\"use strict\";");
+            this.writer.WriteLine();
 
             this.writer.WriteLine("var elements = global.elements || (global.elements = {});");
             this.writer.WriteLine("var types = elements.types || (elements.types = {});");
