@@ -9,18 +9,24 @@ module.exports = function(grunt) {
 
     clean: {
       build: {
-        src: ['<%= bindir %>']
+        src: ['bin/igweb']
       }
     },
 
     concat: {
       dnd4: {
-        src: ['src/igweb/js/dnd4/**/*.js'],
-        dest: '<%= bindir %>/js/dnd4data.js'
+        src: ['bin/igweb/js/dnd4/**/*.js'],
+        dest: 'bin/igweb/js/dnd4data.js'
       },
     },
 
-    
+    copy: {
+      web: {
+        files: [
+          {expand: true, cwd: 'src/igweb', src: ['**'], dest: 'bin/igweb'}
+        ]
+      },
+    },
 
     jshint: {
       options: {
@@ -30,23 +36,23 @@ module.exports = function(grunt) {
       libs: [
         'src/igweb/js/*.js',
       ],
-      rules: [
+      dnd4: [
         'src/igweb/js/dnd4/**/*.js',
       ]
     },
 
     qunit: {
-      files: ['src/igweb/test/**/*.html']
+      files: ['bin/igweb/test/**/*.html']
     },
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-qunit');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('build', ['jshint:libs', 'concat:dnd4']);
+  grunt.registerTask('build', ['jshint:libs', 'copy', 'concat:dnd4']);
   grunt.registerTask('test',  ['qunit']);  
 
   grunt.registerTask('default', ['build', 'test']);
