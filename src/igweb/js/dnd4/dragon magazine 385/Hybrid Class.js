@@ -1,20 +1,21 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Hybrid_Class = types['Hybrid Class'] || (types['Hybrid Class'] = {});
-  te = Hybrid_Class["Hybrid Assassin"] = new RulesElement({
+  te = Hybrid_Class["Hybrid Assassin"] = new engine.RulesElement({
     name: "Hybrid Assassin",
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_641",
     source: "Dragon Magazine 385",
     categories: ["Hybrid Assassin", "ID_FMP_HYBRID_CLASS_641"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_GRANTS_HYBRID_ASSASSIN"]);
+      model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_ASSASSIN"]);
       model.select('Power', 1, {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
@@ -34,4 +35,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

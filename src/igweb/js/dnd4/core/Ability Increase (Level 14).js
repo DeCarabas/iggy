@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ability_Increase_Level_14 = types['Ability Increase (Level 14)'] || (types['Ability Increase (Level 14)'] = {});
-  te = Ability_Increase_Level_14["Charisma"] = new RulesElement({
+  te = Ability_Increase_Level_14["Charisma"] = new engine.RulesElement({
     name: "Charisma",
     type: "Ability Increase (Level 14)",
     id: "ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_CHARISMA",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Increase_Level_14["Constitution"] = new RulesElement({
+  te = Ability_Increase_Level_14["Constitution"] = new engine.RulesElement({
     name: "Constitution",
     type: "Ability Increase (Level 14)",
     id: "ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_CONSTITUTION",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Increase_Level_14["Dexterity"] = new RulesElement({
+  te = Ability_Increase_Level_14["Dexterity"] = new engine.RulesElement({
     name: "Dexterity",
     type: "Ability Increase (Level 14)",
     id: "ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_DEXTERITY",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Increase_Level_14["Intelligence"] = new RulesElement({
+  te = Ability_Increase_Level_14["Intelligence"] = new engine.RulesElement({
     name: "Intelligence",
     type: "Ability Increase (Level 14)",
     id: "ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_INTELLIGENCE",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Increase_Level_14["Strength"] = new RulesElement({
+  te = Ability_Increase_Level_14["Strength"] = new engine.RulesElement({
     name: "Strength",
     type: "Ability Increase (Level 14)",
     id: "ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_STRENGTH",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Increase_Level_14["Wisdom"] = new RulesElement({
+  te = Ability_Increase_Level_14["Wisdom"] = new engine.RulesElement({
     name: "Wisdom",
     type: "Ability Increase (Level 14)",
     id: "ID_INTERNAL_ABILITY_INCREASE_(LEVEL_14)_WISDOM",
@@ -80,4 +81,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

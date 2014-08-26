@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Ashen Compact"] = new RulesElement({
+  te = Power["Ashen Compact"] = new engine.RulesElement({
     name: "Ashen Compact",
     type: "Power",
     id: "ID_FMP_POWER_6025",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Blessed Shot"] = new RulesElement({
+  te = Power["Blessed Shot"] = new engine.RulesElement({
     name: "Blessed Shot",
     type: "Power",
     id: "ID_FMP_POWER_6021",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Blood Oath Fulfilled"] = new RulesElement({
+  te = Power["Blood Oath Fulfilled"] = new engine.RulesElement({
     name: "Blood Oath Fulfilled",
     type: "Power",
     id: "ID_FMP_POWER_6020",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Coordinated Devastation"] = new RulesElement({
+  te = Power["Coordinated Devastation"] = new engine.RulesElement({
     name: "Coordinated Devastation",
     type: "Power",
     id: "ID_FMP_POWER_6185",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Demon-Fueled Vengeance"] = new RulesElement({
+  te = Power["Demon-Fueled Vengeance"] = new engine.RulesElement({
     name: "Demon-Fueled Vengeance",
     type: "Power",
     id: "ID_FMP_POWER_6026",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Dispensed Justice"] = new RulesElement({
+  te = Power["Dispensed Justice"] = new engine.RulesElement({
     name: "Dispensed Justice",
     type: "Power",
     id: "ID_FMP_POWER_6018",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Divine Veil"] = new RulesElement({
+  te = Power["Divine Veil"] = new engine.RulesElement({
     name: "Divine Veil",
     type: "Power",
     id: "ID_FMP_POWER_6022",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Focused Assault"] = new RulesElement({
+  te = Power["Focused Assault"] = new engine.RulesElement({
     name: "Focused Assault",
     type: "Power",
     id: "ID_FMP_POWER_6184",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Hellfire Blade"] = new RulesElement({
+  te = Power["Hellfire Blade"] = new engine.RulesElement({
     name: "Hellfire Blade",
     type: "Power",
     id: "ID_FMP_POWER_6024",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Holy Barrage"] = new RulesElement({
+  te = Power["Holy Barrage"] = new engine.RulesElement({
     name: "Holy Barrage",
     type: "Power",
     id: "ID_FMP_POWER_6023",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Lawbreaker's Doom"] = new RulesElement({
+  te = Power["Lawbreaker's Doom"] = new engine.RulesElement({
     name: "Lawbreaker's Doom",
     type: "Power",
     id: "ID_FMP_POWER_6017",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Red Death"] = new RulesElement({
+  te = Power["Red Death"] = new engine.RulesElement({
     name: "Red Death",
     type: "Power",
     id: "ID_FMP_POWER_6019",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Toss and Close"] = new RulesElement({
+  te = Power["Toss and Close"] = new engine.RulesElement({
     name: "Toss and Close",
     type: "Power",
     id: "ID_FMP_POWER_6027",
@@ -138,4 +139,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

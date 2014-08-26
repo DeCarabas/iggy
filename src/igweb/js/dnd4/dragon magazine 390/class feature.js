@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Academy Prodigy (Arcana)"] = new RulesElement({
+  te = class_feature["Academy Prodigy (Arcana)"] = new engine.RulesElement({
     name: "Academy Prodigy (Arcana)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ACADEMY_PRODIGY_(ARCANA)",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Academy Prodigy (Diplomacy)"] = new RulesElement({
+  te = class_feature["Academy Prodigy (Diplomacy)"] = new engine.RulesElement({
     name: "Academy Prodigy (Diplomacy)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ACADEMY_PRODIGY_(DIPLOMACY)",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Academy Prodigy (Dungeoneering)"] = new RulesElement({
+  te = class_feature["Academy Prodigy (Dungeoneering)"] = new engine.RulesElement({
     name: "Academy Prodigy (Dungeoneering)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ACADEMY_PRODIGY_(DUNGEONEERING)",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Academy Prodigy (Heal)"] = new RulesElement({
+  te = class_feature["Academy Prodigy (Heal)"] = new engine.RulesElement({
     name: "Academy Prodigy (Heal)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ACADEMY_PRODIGY_(HEAL)",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Academy Prodigy (History)"] = new RulesElement({
+  te = class_feature["Academy Prodigy (History)"] = new engine.RulesElement({
     name: "Academy Prodigy (History)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ACADEMY_PRODIGY_(HISTORY)",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Academy Prodigy (Perception)"] = new RulesElement({
+  te = class_feature["Academy Prodigy (Perception)"] = new engine.RulesElement({
     name: "Academy Prodigy (Perception)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ACADEMY_PRODIGY_(PERCEPTION)",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Academy Prodigy (Thievery)"] = new RulesElement({
+  te = class_feature["Academy Prodigy (Thievery)"] = new engine.RulesElement({
     name: "Academy Prodigy (Thievery)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ACADEMY_PRODIGY_(THIEVERY)",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Adaptable Witchery"] = new RulesElement({
+  te = class_feature["Adaptable Witchery"] = new engine.RulesElement({
     name: "Adaptable Witchery",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3172",
@@ -100,7 +101,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Arcane Presence"] = new RulesElement({
+  te = class_feature["Arcane Presence"] = new engine.RulesElement({
     name: "Arcane Presence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3174",
@@ -109,7 +110,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Attack with Care"] = new RulesElement({
+  te = class_feature["Attack with Care"] = new engine.RulesElement({
     name: "Attack with Care",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3002",
@@ -118,7 +119,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Awakened Wrath"] = new RulesElement({
+  te = class_feature["Awakened Wrath"] = new engine.RulesElement({
     name: "Awakened Wrath",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3169",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Bewitching Action"] = new RulesElement({
+  te = class_feature["Bewitching Action"] = new engine.RulesElement({
     name: "Bewitching Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3173",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Champion's Presence"] = new RulesElement({
+  te = class_feature["Champion's Presence"] = new engine.RulesElement({
     name: "Champion's Presence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3163",
@@ -148,7 +149,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Comrade's Help"] = new RulesElement({
+  te = class_feature["Comrade's Help"] = new engine.RulesElement({
     name: "Comrade's Help",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3160",
@@ -157,7 +158,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Defensive Word"] = new RulesElement({
+  te = class_feature["Defensive Word"] = new engine.RulesElement({
     name: "Defensive Word",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3164",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Disappearing Action"] = new RulesElement({
+  te = class_feature["Disappearing Action"] = new engine.RulesElement({
     name: "Disappearing Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3000",
@@ -181,7 +182,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Fight For Your Freedom"] = new RulesElement({
+  te = class_feature["Fight For Your Freedom"] = new engine.RulesElement({
     name: "Fight For Your Freedom",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3159",
@@ -193,7 +194,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Freedom Requires Vigilance"] = new RulesElement({
+  te = class_feature["Freedom Requires Vigilance"] = new engine.RulesElement({
     name: "Freedom Requires Vigilance",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3161",
@@ -208,7 +209,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Inciting Action"] = new RulesElement({
+  te = class_feature["Inciting Action"] = new engine.RulesElement({
     name: "Inciting Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3170",
@@ -220,7 +221,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Infectious Rage"] = new RulesElement({
+  te = class_feature["Infectious Rage"] = new engine.RulesElement({
     name: "Infectious Rage",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3171",
@@ -229,7 +230,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Inspired Revival"] = new RulesElement({
+  te = class_feature["Inspired Revival"] = new engine.RulesElement({
     name: "Inspired Revival",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3168",
@@ -238,7 +239,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sacrificial Action (Sainted General)"] = new RulesElement({
+  te = class_feature["Sacrificial Action (Sainted General)"] = new engine.RulesElement({
     name: "Sacrificial Action (Sainted General)",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3167",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sainted Challenge"] = new RulesElement({
+  te = class_feature["Sainted Challenge"] = new engine.RulesElement({
     name: "Sainted Challenge",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3166",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Veteran Action"] = new RulesElement({
+  te = class_feature["Veteran Action"] = new engine.RulesElement({
     name: "Veteran Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3165",
@@ -271,7 +272,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Violent Emergence"] = new RulesElement({
+  te = class_feature["Violent Emergence"] = new engine.RulesElement({
     name: "Violent Emergence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_3001",
@@ -281,4 +282,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

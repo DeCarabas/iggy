@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Gear = types['Gear'] || (types['Gear'] = {});
-  te = Gear["Blowgun Needles"] = new RulesElement({
+  te = Gear["Blowgun Needles"] = new engine.RulesElement({
     name: "Blowgun Needles",
     type: "Gear",
     id: "ID_FMP_GEAR_100",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Gear["Camouflaged Clothing"] = new RulesElement({
+  te = Gear["Camouflaged Clothing"] = new engine.RulesElement({
     name: "Camouflaged Clothing",
     type: "Gear",
     id: "ID_FMP_GEAR_95",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Gear["Crowbar"] = new RulesElement({
+  te = Gear["Crowbar"] = new engine.RulesElement({
     name: "Crowbar",
     type: "Gear",
     id: "ID_FMP_GEAR_96",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Gear["Disguise Kit"] = new RulesElement({
+  te = Gear["Disguise Kit"] = new engine.RulesElement({
     name: "Disguise Kit",
     type: "Gear",
     id: "ID_FMP_GEAR_97",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Gear["Footpads"] = new RulesElement({
+  te = Gear["Footpads"] = new engine.RulesElement({
     name: "Footpads",
     type: "Gear",
     id: "ID_FMP_GEAR_98",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Gear["Glass Cutter"] = new RulesElement({
+  te = Gear["Glass Cutter"] = new engine.RulesElement({
     name: "Glass Cutter",
     type: "Gear",
     id: "ID_FMP_GEAR_99",
@@ -62,4 +63,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

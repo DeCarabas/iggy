@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Beacon for the Pack"] = new RulesElement({
+  te = class_feature["Beacon for the Pack"] = new engine.RulesElement({
     name: "Beacon for the Pack",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_799",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Empathic Bond"] = new RulesElement({
+  te = class_feature["Empathic Bond"] = new engine.RulesElement({
     name: "Empathic Bond",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_796",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Healing Action"] = new RulesElement({
+  te = class_feature["Healing Action"] = new engine.RulesElement({
     name: "Healing Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_794",
@@ -40,7 +41,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Maldeen's Hunt"] = new RulesElement({
+  te = class_feature["Maldeen's Hunt"] = new engine.RulesElement({
     name: "Maldeen's Hunt",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_797",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Pack Master's Action"] = new RulesElement({
+  te = class_feature["Pack Master's Action"] = new engine.RulesElement({
     name: "Pack Master's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_798",
@@ -64,7 +65,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Social Savant"] = new RulesElement({
+  te = class_feature["Social Savant"] = new engine.RulesElement({
     name: "Social Savant",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_795",
@@ -85,4 +86,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

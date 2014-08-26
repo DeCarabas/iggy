@@ -10,6 +10,14 @@
     using System;
     using cbimporter.Rules;
 
+    /// <summary>
+    /// The Converter class converts rules to JavaScript.
+    /// </summary>
+    /// <remarks>
+    /// The converter emits AMD modules for each rules element. You can require a rules package and it will return
+    /// an object that contains the following:
+    /// { elements: ..., types: ..., id: ... }
+    /// </remarks>
     class Converter
     {
         readonly HashSet<XName> seenRuleAttributes = new HashSet<XName> { "requires", "type", "non-zero", "zero", "name", "value" };
@@ -43,14 +51,20 @@
             int max = index.Elements.Count;
             int pos = 0;
 
+            var sourceModules = new List<string>();
             foreach (IGrouping<string, RuleElement> source in index.Elements.GroupBy(r => GetRealSource(r.Source)))
             {
-                string sourcePath = Path.Combine(outputPath, GetSafePathSegment(source.Key));
+                string sourceSegment = GetSafePathSegment(source.Key);
+                string sourcePath = Path.Combine(outputPath, sourceSegment);
                 if (!Directory.Exists(sourcePath)) { Directory.CreateDirectory(sourcePath); }
 
+                var modules = new List<string>();
                 foreach (IGrouping<string, RuleElement> type in source.GroupBy(r => r.Type.ToString()))
                 {
-                    string outFile = Path.Combine(sourcePath, type.Key + ".js");
+                    string moduleName = type.Key;
+                    modules.Add(moduleName);
+                    
+                    string outFile = Path.Combine(sourcePath, moduleName + ".js");
                     using (TextWriter writer = File.CreateText(outFile))
                     {
                         var converter = new Converter(index, writer);
@@ -67,6 +81,23 @@
                         converter.WriteWarnings();
                     }
                 }
+
+                string indexModule = Path.Combine(sourceSegment, "all");
+                sourceModules.Add(indexModule);
+
+                string indexFile = Path.Combine(outputPath, indexModule + ".js");
+                using(TextWriter writer = File.CreateText(indexFile))
+                {
+                    var converter = new Converter(index, writer);
+                    converter.WriteIndexFile(modules);
+                }
+            }
+
+            string masterIndex = Path.Combine(outputPath, "all.js");
+            using(TextWriter writer = File.CreateText(masterIndex))
+            {
+                var converter = new Converter(index, writer);
+                converter.WriteIndexFile(sourceModules);
             }
         }
 
@@ -149,6 +180,7 @@
         {
             char[] chars = Path.GetInvalidFileNameChars();
             for (int i = 0; i < chars.Length; i++) { name = name.Replace(chars[i], '_'); }
+            name = name.Replace("'", "");
             return name;
         }
 
@@ -190,7 +222,7 @@
 
         public void WriteGenericRulesElement(RuleElement element)
         {
-            writer.Write(@"te = {0}[""{1}""] = new RulesElement(", QuoteIdentifier(element.Type), QuoteString(element.Name));
+            writer.Write(@"te = {0}[""{1}""] = new engine.RulesElement(", QuoteIdentifier(element.Type), QuoteString(element.Name));
 
             element.WriteJS(this.writer);
 
@@ -201,22 +233,92 @@
 
         public void WriteGlobalPrefix()
         {
-            this.writer.WriteLine("(function(global, undefined) {");
+            this.writer.WriteLine("define(['engine', 'dnd4model'], function(engine, dnd4model) {");
             this.writer.Indent++;
             this.writer.WriteLine("\"use strict\";");
             this.writer.WriteLine();
 
-            this.writer.WriteLine("var elements = global.elements || (global.elements = {});");
-            this.writer.WriteLine("var types = elements.types || (elements.types = {});");
-            this.writer.WriteLine("var byID = elements.id || (elements.id = {});");
+            this.writer.WriteLine("var abilitymod = dnd4model.abilitymod;");
+            this.writer.WriteLine();
+
+            this.writer.WriteLine("var types = {};");
+            this.writer.WriteLine("var byID = {};");
             this.writer.WriteLine("var te;");
             this.writer.WriteLine();
         }
 
         public void WriteGlobalSuffix()
         {
+            this.writer.WriteLine("return {");
+            this.writer.Indent++;
+            this.writer.WriteLine("types: types,");
+            this.writer.WriteLine("id: byID");
             this.writer.Indent--;
-            this.writer.WriteLine("})(this);");
+            this.writer.WriteLine("};");
+            this.writer.Indent--;
+            this.writer.WriteLine("});");
+        }
+
+        public void WriteIndexFile(IList<string> modules)
+        {
+            int indent = this.writer.Indent;
+            try
+            {
+                var newMods = new List<string>(modules);
+                newMods.Sort(StringComparer.OrdinalIgnoreCase);
+
+                this.writer.WriteLine("define(");
+                this.writer.Indent++;
+                this.writer.WriteLine("[");
+                this.writer.Indent++;
+                for (int i = 0; i < newMods.Count; i++)
+                {
+                    if (i != 0) { writer.WriteLine(","); }
+                    writer.Write("'./{0}'", newMods[i].Replace('\\', '/'));
+                }
+                writer.WriteLine();
+                writer.Indent--;
+                writer.WriteLine("],function() {");
+                writer.Indent++;
+                writer.WriteLine("var mergedTypes = {};");
+                writer.WriteLine("var mergedIds = {};");
+                writer.WriteLine();
+                writer.WriteLine("var modules = Array.prototype.slice.call(arguments);");
+                writer.WriteLine("modules.forEach(function(mod) {");
+                writer.Indent++;
+                writer.WriteLine("var type, name, id, mt, ot;");
+                writer.WriteLine("for(type in mod.types) {");
+                writer.Indent++;
+                writer.WriteLine("mt = mergedTypes[type] || (mergedTypes[type] = {});");
+                writer.WriteLine("ot = mod.types[type];");
+                writer.WriteLine("for(name in ot) {");
+                writer.Indent++;
+                writer.WriteLine("mt[name] = ot[name];");
+                writer.Indent--;
+                writer.WriteLine("}");
+                writer.Indent--;
+                writer.WriteLine("}");
+                writer.WriteLine("for(id in mod.id) {");
+                writer.Indent++;
+                writer.WriteLine("mergedIds[id] = mod.id[id];");
+                writer.Indent--;
+                writer.WriteLine("}");
+                writer.Indent--;
+                writer.WriteLine("});");
+                writer.WriteLine();
+                writer.WriteLine("return {");
+                writer.Indent++;
+                writer.WriteLine("types: mergedTypes,");
+                writer.WriteLine("id: mergedIds");
+                writer.Indent--;
+                writer.WriteLine("};");
+                writer.Indent--;
+                writer.WriteLine("});");  
+            }
+            finally
+            {
+                this.writer.Indent = indent;
+            }
         }
 
         public void WriteTypePrefix(Identifier type)

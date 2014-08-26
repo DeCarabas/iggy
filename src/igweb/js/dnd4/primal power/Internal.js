@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Internal = types['Internal'] || (types['Internal'] = {});
-  te = Internal["AllAsThrown"] = new RulesElement({
+  te = Internal["AllAsThrown"] = new engine.RulesElement({
     name: "AllAsThrown",
     type: "Internal",
     id: "ID_INTERNAL_INTERNAL_ALLASTHROWN",
@@ -146,60 +147,60 @@
   });
   byID[te.id] = te;
   
-  te = Internal["Racial Encounter Powers"] = new RulesElement({
+  te = Internal["Racial Encounter Powers"] = new engine.RulesElement({
     name: "Racial Encounter Powers",
     type: "Internal",
     id: "ID_INTERNAL_INTERNAL_RACIAL_ENCOUNTER_POWERS",
     source: "Primal Power",
     categories: ["Racial Encounter Powers", "ID_INTERNAL_INTERNAL_RACIAL_ENCOUNTER_POWERS"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_27"]);
-      model.grant(elements.id["ID_FMP_POWER_377"]);
-      model.grant(elements.id["ID_FMP_POWER_1448"]);
-      model.grant(elements.id["ID_FMP_POWER_1449"]);
-      model.grant(elements.id["ID_FMP_POWER_1450"]);
-      model.grant(elements.id["ID_FMP_POWER_1452"]);
-      model.grant(elements.id["ID_FMP_POWER_1628"]);
-      model.grant(elements.id["ID_FMP_POWER_1766"]);
-      model.grant(elements.id["ID_FMP_POWER_1767"]);
-      model.grant(elements.id["ID_FMP_POWER_1769"]);
-      model.grant(elements.id["ID_FMP_POWER_1770"]);
-      model.grant(elements.id["ID_FMP_POWER_1828"]);
-      model.grant(elements.id["ID_FMP_POWER_1831"]);
-      model.grant(elements.id["ID_FMP_POWER_2324"]);
-      model.grant(elements.id["ID_FMP_POWER_2473"]);
-      model.grant(elements.id["ID_FMP_POWER_2474"]);
-      model.grant(elements.id["ID_FMP_POWER_2475"]);
-      model.grant(elements.id["ID_FMP_POWER_2476"]);
-      model.grant(elements.id["ID_FMP_POWER_2478"]);
-      model.grant(elements.id["ID_FMP_POWER_2480"]);
-      model.grant(elements.id["ID_FMP_POWER_2481"]);
-      model.grant(elements.id["ID_FMP_POWER_2482"]);
-      model.grant(elements.id["ID_FMP_POWER_2483"]);
-      model.grant(elements.id["ID_FMP_POWER_2484"]);
-      model.grant(elements.id["ID_FMP_POWER_2485"]);
-      model.grant(elements.id["ID_FMP_POWER_5599"]);
-      model.grant(elements.id["ID_FMP_POWER_6186"]);
-      model.grant(elements.id["ID_FMP_POWER_6188"]);
-      model.grant(elements.id["ID_FMP_POWER_6189"]);
-      model.grant(elements.id["ID_FMP_POWER_7441"]);
-      model.grant(elements.id["ID_FMP_POWER_7442"]);
-      model.grant(elements.id["ID_FMP_POWER_7443"]);
-      model.grant(elements.id["ID_FMP_POWER_7546"]);
-      model.grant(elements.id["ID_FMP_POWER_7548"]);
-      model.grant(elements.id["ID_FMP_POWER_8278"]);
-      model.grant(elements.id["ID_FMP_POWER_10043"]);
-      model.grant(elements.id["ID_FMP_POWER_10044"]);
-      model.grant(elements.id["ID_FMP_POWER_10045"]);
-      model.grant(elements.id["ID_FMP_POWER_10046"]);
-      model.grant(elements.id["ID_FMP_POWER_11052"]);
-      model.grant(elements.id["ID_FMP_POWER_12577"]);
-      model.grant(elements.id["ID_FMP_POWER_13211"]);
+      model.grant(model.elements.id["ID_FMP_POWER_27"]);
+      model.grant(model.elements.id["ID_FMP_POWER_377"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1448"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1449"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1450"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1452"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1628"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1766"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1767"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1769"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1770"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1828"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1831"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2324"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2473"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2474"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2475"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2476"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2478"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2480"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2481"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2482"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2483"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2484"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2485"]);
+      model.grant(model.elements.id["ID_FMP_POWER_5599"]);
+      model.grant(model.elements.id["ID_FMP_POWER_6186"]);
+      model.grant(model.elements.id["ID_FMP_POWER_6188"]);
+      model.grant(model.elements.id["ID_FMP_POWER_6189"]);
+      model.grant(model.elements.id["ID_FMP_POWER_7441"]);
+      model.grant(model.elements.id["ID_FMP_POWER_7442"]);
+      model.grant(model.elements.id["ID_FMP_POWER_7443"]);
+      model.grant(model.elements.id["ID_FMP_POWER_7546"]);
+      model.grant(model.elements.id["ID_FMP_POWER_7548"]);
+      model.grant(model.elements.id["ID_FMP_POWER_8278"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10043"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10044"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10045"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10046"]);
+      model.grant(model.elements.id["ID_FMP_POWER_11052"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12577"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13211"]);
     }
   });
   byID[te.id] = te;
   
-  te = Internal["SimpleMilitaryAsThrown"] = new RulesElement({
+  te = Internal["SimpleMilitaryAsThrown"] = new engine.RulesElement({
     name: "SimpleMilitaryAsThrown",
     type: "Internal",
     id: "ID_INTERNAL_INTERNAL_SIMPLEMILITARYASTHROWN",
@@ -415,4 +416,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

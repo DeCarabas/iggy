@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Proficiency = types['Proficiency'] || (types['Proficiency'] = {});
-  te = Proficiency["Armor Proficiency (Chainmail)"] = new RulesElement({
+  te = Proficiency["Armor Proficiency (Chainmail)"] = new engine.RulesElement({
     name: "Armor Proficiency (Chainmail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Armor Proficiency (Cloth)"] = new RulesElement({
+  te = Proficiency["Armor Proficiency (Cloth)"] = new engine.RulesElement({
     name: "Armor Proficiency (Cloth)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Armor Proficiency (Hide)"] = new RulesElement({
+  te = Proficiency["Armor Proficiency (Hide)"] = new engine.RulesElement({
     name: "Armor Proficiency (Hide)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Armor Proficiency (Leather)"] = new RulesElement({
+  te = Proficiency["Armor Proficiency (Leather)"] = new engine.RulesElement({
     name: "Armor Proficiency (Leather)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Armor Proficiency (Plate)"] = new RulesElement({
+  te = Proficiency["Armor Proficiency (Plate)"] = new engine.RulesElement({
     name: "Armor Proficiency (Plate)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Armor Proficiency (Scale)"] = new RulesElement({
+  te = Proficiency["Armor Proficiency (Scale)"] = new engine.RulesElement({
     name: "Armor Proficiency (Scale)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Choose Nothing"] = new RulesElement({
+  te = Proficiency["Choose Nothing"] = new engine.RulesElement({
     name: "Choose Nothing",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_CHOOSE_NOTHING",
@@ -70,28 +71,28 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Axe group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Axe group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Axe group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(AXE_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Axe group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(AXE_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HANDAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(EXECUTION_AXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_AXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(URGROSH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HANDAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(EXECUTION_AXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_AXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(URGROSH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Bastard sword)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Bastard sword)"] = new engine.RulesElement({
     name: "Implement Proficiency (Bastard sword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BASTARD_SWORD)",
@@ -100,7 +101,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Battleaxe)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Battleaxe)"] = new engine.RulesElement({
     name: "Implement Proficiency (Battleaxe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEAXE)",
@@ -109,7 +110,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Battlefist)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Battlefist)"] = new engine.RulesElement({
     name: "Implement Proficiency (Battlefist)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEFIST)",
@@ -118,7 +119,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Blowgun)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Blowgun)"] = new engine.RulesElement({
     name: "Implement Proficiency (Blowgun)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BLOWGUN)",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Boar Tusk)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Boar Tusk)"] = new engine.RulesElement({
     name: "Implement Proficiency (Boar Tusk)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOAR_TUSK)",
@@ -136,7 +137,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Bola)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Bola)"] = new engine.RulesElement({
     name: "Implement Proficiency (Bola)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOLA)",
@@ -145,21 +146,21 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Bow group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Bow group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Bow group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOW_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Bow group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOW_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORTBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORTBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATBOW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Broadsword)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Broadsword)"] = new engine.RulesElement({
     name: "Implement Proficiency (Broadsword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BROADSWORD)",
@@ -168,7 +169,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Claw Fighter Claw)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Claw Fighter Claw)"] = new engine.RulesElement({
     name: "Implement Proficiency (Claw Fighter Claw)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLAW_FIGHTER_CLAW)",
@@ -177,7 +178,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Climbing Claw)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Climbing Claw)"] = new engine.RulesElement({
     name: "Implement Proficiency (Climbing Claw)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLIMBING_CLAW)",
@@ -186,7 +187,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Club)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Club)"] = new engine.RulesElement({
     name: "Implement Proficiency (Club)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLUB)",
@@ -195,7 +196,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Craghammer)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Craghammer)"] = new engine.RulesElement({
     name: "Implement Proficiency (Craghammer)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CRAGHAMMER)",
@@ -204,22 +205,22 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Crossbow group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Crossbow group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Crossbow group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CROSSBOW_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Crossbow group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CROSSBOW_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAND_CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(REPEATING_CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUPERIOR_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAND_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(REPEATING_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUPERIOR_CROSSBOW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Crossbow)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Crossbow)"] = new engine.RulesElement({
     name: "Implement Proficiency (Crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CROSSBOW)",
@@ -228,7 +229,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Cutting Wheel)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Cutting Wheel)"] = new engine.RulesElement({
     name: "Implement Proficiency (Cutting Wheel)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CUTTING_WHEEL)",
@@ -237,7 +238,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Dagger)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Dagger)"] = new engine.RulesElement({
     name: "Implement Proficiency (Dagger)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)",
@@ -246,7 +247,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Double axe)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Double axe)"] = new engine.RulesElement({
     name: "Implement Proficiency (Double axe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_AXE)",
@@ -255,7 +256,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Double flail)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Double flail)"] = new engine.RulesElement({
     name: "Implement Proficiency (Double flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_FLAIL)",
@@ -264,7 +265,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Double Scimitar)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Double Scimitar)"] = new engine.RulesElement({
     name: "Implement Proficiency (Double Scimitar)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SCIMITAR)",
@@ -273,7 +274,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Double sword)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Double sword)"] = new engine.RulesElement({
     name: "Implement Proficiency (Double sword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SWORD)",
@@ -282,7 +283,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Dragontooth Shield (heroic tier))"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Dragontooth Shield (heroic tier))"] = new engine.RulesElement({
     name: "Implement Proficiency (Dragontooth Shield (heroic tier))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))",
@@ -291,7 +292,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Drow Long Knife)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Drow Long Knife)"] = new engine.RulesElement({
     name: "Implement Proficiency (Drow Long Knife)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DROW_LONG_KNIFE)",
@@ -300,7 +301,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Execution axe)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Execution axe)"] = new engine.RulesElement({
     name: "Implement Proficiency (Execution axe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(EXECUTION_AXE)",
@@ -309,7 +310,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Falchion)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Falchion)"] = new engine.RulesElement({
     name: "Implement Proficiency (Falchion)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FALCHION)",
@@ -318,7 +319,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Feral Armor Claw)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Feral Armor Claw)"] = new engine.RulesElement({
     name: "Implement Proficiency (Feral Armor Claw)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FERAL_ARMOR_CLAW)",
@@ -327,7 +328,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Fighting Shield (heroic tier))"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Fighting Shield (heroic tier))"] = new engine.RulesElement({
     name: "Implement Proficiency (Fighting Shield (heroic tier))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))",
@@ -336,27 +337,27 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Flail group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Flail group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Flail group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Flail group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WHIP)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_CHAIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCOURGE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIPLE-HEADED_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(NET)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOLA)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WHIP)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_CHAIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCOURGE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIPLE-HEADED_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(NET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOLA)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Flail)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Flail)"] = new engine.RulesElement({
     name: "Implement Proficiency (Flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL)",
@@ -365,7 +366,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Fullblade)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Fullblade)"] = new engine.RulesElement({
     name: "Implement Proficiency (Fullblade)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FULLBLADE)",
@@ -374,7 +375,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Garrote)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Garrote)"] = new engine.RulesElement({
     name: "Implement Proficiency (Garrote)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GARROTE)",
@@ -383,7 +384,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Glaive)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Glaive)"] = new engine.RulesElement({
     name: "Implement Proficiency (Glaive)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)",
@@ -392,7 +393,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Greataxe)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Greataxe)"] = new engine.RulesElement({
     name: "Implement Proficiency (Greataxe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATAXE)",
@@ -401,7 +402,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Greatbow)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Greatbow)"] = new engine.RulesElement({
     name: "Implement Proficiency (Greatbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATBOW)",
@@ -410,7 +411,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Greatclub)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Greatclub)"] = new engine.RulesElement({
     name: "Implement Proficiency (Greatclub)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATCLUB)",
@@ -419,7 +420,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Greatspear)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Greatspear)"] = new engine.RulesElement({
     name: "Implement Proficiency (Greatspear)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)",
@@ -428,7 +429,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Greatsword)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Greatsword)"] = new engine.RulesElement({
     name: "Implement Proficiency (Greatsword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSWORD)",
@@ -437,7 +438,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Halberd)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Halberd)"] = new engine.RulesElement({
     name: "Implement Proficiency (Halberd)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)",
@@ -446,23 +447,23 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Hammer group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Hammer group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Hammer group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAMMER_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Hammer group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAMMER_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(THROWING_HAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MAUL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CRAGHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORDENKRAD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(THROWING_HAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MAUL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CRAGHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORDENKRAD)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Hand Crossbow)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Hand Crossbow)"] = new engine.RulesElement({
     name: "Implement Proficiency (Hand Crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAND_CROSSBOW)",
@@ -471,7 +472,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Handaxe)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Handaxe)"] = new engine.RulesElement({
     name: "Implement Proficiency (Handaxe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HANDAXE)",
@@ -480,35 +481,35 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Heavy Blade group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Heavy Blade group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Heavy Blade group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_BLADE_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Heavy Blade group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_BLADE_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCYTHE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BASTARD_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FALCHION)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BROADSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FULLBLADE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DROW_LONG_KNIFE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_TANGAT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ZULAAT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCYTHE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BASTARD_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FALCHION)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BROADSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FULLBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DROW_LONG_KNIFE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_TANGAT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ZULAAT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Heavy flail)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Heavy flail)"] = new engine.RulesElement({
     name: "Implement Proficiency (Heavy flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_FLAIL)",
@@ -517,7 +518,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Heavy war pick)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Heavy war pick)"] = new engine.RulesElement({
     name: "Implement Proficiency (Heavy war pick)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_WAR_PICK)",
@@ -526,7 +527,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Holy Symbol)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Holy Symbol)"] = new engine.RulesElement({
     name: "Implement Proficiency (Holy Symbol)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)",
@@ -535,7 +536,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Instrument)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Instrument)"] = new engine.RulesElement({
     name: "Implement Proficiency (Instrument)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(INSTRUMENT)",
@@ -544,7 +545,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Javelin)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Javelin)"] = new engine.RulesElement({
     name: "Implement Proficiency (Javelin)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(JAVELIN)",
@@ -553,7 +554,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Katar)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Katar)"] = new engine.RulesElement({
     name: "Implement Proficiency (Katar)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KATAR)",
@@ -562,7 +563,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Khopesh)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Khopesh)"] = new engine.RulesElement({
     name: "Implement Proficiency (Khopesh)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)",
@@ -571,7 +572,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Ki Focuses)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Ki Focuses)"] = new engine.RulesElement({
     name: "Implement Proficiency (Ki Focuses)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KI_FOCUSES)",
@@ -580,7 +581,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Kukri)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Kukri)"] = new engine.RulesElement({
     name: "Implement Proficiency (Kukri)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KUKRI)",
@@ -589,35 +590,35 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Light Blade group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Light Blade group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Light Blade group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_BLADE_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Light Blade group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_BLADE_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SICKLE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORT_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KATAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RAPIER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHURIKEN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KUKRI)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PARRYING_DAGGER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_SHIELD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CUTTING_WHEEL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_BOOMERANG)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(XEN'DRIK_BOOMERANG)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHADOWBLADE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLIMBING_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SICKLE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORT_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KATAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RAPIER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHURIKEN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KUKRI)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PARRYING_DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_SHIELD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CUTTING_WHEEL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_BOOMERANG)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(XEN'DRIK_BOOMERANG)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHADOWBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLIMBING_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Light war pick)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Light war pick)"] = new engine.RulesElement({
     name: "Implement Proficiency (Light war pick)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_WAR_PICK)",
@@ -626,7 +627,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Longbow)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Longbow)"] = new engine.RulesElement({
     name: "Implement Proficiency (Longbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGBOW)",
@@ -635,7 +636,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Longspear)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Longspear)"] = new engine.RulesElement({
     name: "Implement Proficiency (Longspear)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)",
@@ -644,7 +645,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Longsword)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Longsword)"] = new engine.RulesElement({
     name: "Implement Proficiency (Longsword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSWORD)",
@@ -653,23 +654,23 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Mace group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Mace group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Mace group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Mace group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATCLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORNINGSTAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEFIST)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATCLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORNINGSTAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEFIST)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Mace)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Mace)"] = new engine.RulesElement({
     name: "Implement Proficiency (Mace)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE)",
@@ -678,7 +679,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Maul)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Maul)"] = new engine.RulesElement({
     name: "Implement Proficiency (Maul)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MAUL)",
@@ -687,7 +688,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Monk Unarmed Strike)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Monk Unarmed Strike)"] = new engine.RulesElement({
     name: "Implement Proficiency (Monk Unarmed Strike)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MONK_UNARMED_STRIKE)",
@@ -696,7 +697,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Mordenkrad)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Mordenkrad)"] = new engine.RulesElement({
     name: "Implement Proficiency (Mordenkrad)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORDENKRAD)",
@@ -705,7 +706,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Morningstar)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Morningstar)"] = new engine.RulesElement({
     name: "Implement Proficiency (Morningstar)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORNINGSTAR)",
@@ -714,7 +715,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Net)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Net)"] = new engine.RulesElement({
     name: "Implement Proficiency (Net)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(NET)",
@@ -723,7 +724,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Orb)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Orb)"] = new engine.RulesElement({
     name: "Implement Proficiency (Orb)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ORB)",
@@ -732,7 +733,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Parrying dagger)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Parrying dagger)"] = new engine.RulesElement({
     name: "Implement Proficiency (Parrying dagger)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PARRYING_DAGGER)",
@@ -741,136 +742,136 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Pick group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Pick group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Pick group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PICK_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Pick group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PICK_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Polearm group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Polearm group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Polearm group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(POLEARM_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Polearm group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(POLEARM_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Proficient Weapons)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Proficient Weapons)"] = new engine.RulesElement({
     name: "Implement Proficiency (Proficient Weapons)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PROFICIENT_WEAPONS)",
     source: "Core",
     categories: ["Implement Proficiency (Proficient Weapons)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PROFICIENT_WEAPONS)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(JAVELIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SICKLE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATCLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORNINGSTAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCYTHE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HANDAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(THROWING_HAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORT_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MAUL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KATAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RAPIER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BASTARD_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WHIP)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_CHAIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAND_CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SLING)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORTBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHURIKEN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FALCHION)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_GAUNTLET)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BROADSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCOURGE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIDENT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CRAGHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KUKRI)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PARRYING_DAGGER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_SHIELD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRATNYR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIPLE-HEADED_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(EXECUTION_AXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FULLBLADE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORDENKRAD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_AXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(URGROSH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(REPEATING_CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUPERIOR_CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(NET)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOLA)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BLOWGUN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GARROTE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CUTTING_WHEEL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DROW_LONG_KNIFE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_TANGAT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ZULAAT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_BOOMERANG)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(XEN'DRIK_BOOMERANG)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MONK_UNARMED_STRIKE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEFIST)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHADOWBLADE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLIMBING_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOAR_TUSK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(JAVELIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SICKLE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATCLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORNINGSTAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCYTHE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HANDAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(THROWING_HAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORT_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MAUL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KATAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RAPIER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BASTARD_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WHIP)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_CHAIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAND_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SLING)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORTBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHURIKEN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FALCHION)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_GAUNTLET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BROADSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCOURGE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIDENT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CRAGHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KUKRI)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PARRYING_DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_SHIELD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRATNYR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIPLE-HEADED_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(EXECUTION_AXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FULLBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORDENKRAD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_AXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(URGROSH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(REPEATING_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUPERIOR_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(NET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOLA)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BLOWGUN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GARROTE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CUTTING_WHEEL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DROW_LONG_KNIFE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_TANGAT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ZULAAT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_BOOMERANG)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(XEN'DRIK_BOOMERANG)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MONK_UNARMED_STRIKE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEFIST)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHADOWBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLIMBING_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOAR_TUSK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Quarterstaff)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Quarterstaff)"] = new engine.RulesElement({
     name: "Implement Proficiency (Quarterstaff)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(QUARTERSTAFF)",
@@ -879,7 +880,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Rapier)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Rapier)"] = new engine.RulesElement({
     name: "Implement Proficiency (Rapier)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RAPIER)",
@@ -888,7 +889,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Repeating crossbow)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Repeating crossbow)"] = new engine.RulesElement({
     name: "Implement Proficiency (Repeating crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(REPEATING_CROSSBOW)",
@@ -897,7 +898,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Rod of Seven Parts (Weapon))"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Rod of Seven Parts (Weapon))"] = new engine.RulesElement({
     name: "Implement Proficiency (Rod of Seven Parts (Weapon))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))",
@@ -906,7 +907,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Rod)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Rod)"] = new engine.RulesElement({
     name: "Implement Proficiency (Rod)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)",
@@ -915,7 +916,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Scimitar)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Scimitar)"] = new engine.RulesElement({
     name: "Implement Proficiency (Scimitar)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCIMITAR)",
@@ -924,7 +925,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Scourge)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Scourge)"] = new engine.RulesElement({
     name: "Implement Proficiency (Scourge)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCOURGE)",
@@ -933,7 +934,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Scythe)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Scythe)"] = new engine.RulesElement({
     name: "Implement Proficiency (Scythe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCYTHE)",
@@ -942,7 +943,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Shadowblade)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Shadowblade)"] = new engine.RulesElement({
     name: "Implement Proficiency (Shadowblade)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHADOWBLADE)",
@@ -951,7 +952,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Short sword)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Short sword)"] = new engine.RulesElement({
     name: "Implement Proficiency (Short sword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORT_SWORD)",
@@ -960,7 +961,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Shortbow)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Shortbow)"] = new engine.RulesElement({
     name: "Implement Proficiency (Shortbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORTBOW)",
@@ -969,7 +970,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Shuriken)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Shuriken)"] = new engine.RulesElement({
     name: "Implement Proficiency (Shuriken)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHURIKEN)",
@@ -978,7 +979,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Sickle)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Sickle)"] = new engine.RulesElement({
     name: "Implement Proficiency (Sickle)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SICKLE)",
@@ -987,19 +988,19 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Sling group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Sling group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Sling group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SLING_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Sling group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SLING_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SLING)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SLING)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Sling)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Sling)"] = new engine.RulesElement({
     name: "Implement Proficiency (Sling)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SLING)",
@@ -1008,7 +1009,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Soul Shield (paragon tier))"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Soul Shield (paragon tier))"] = new engine.RulesElement({
     name: "Implement Proficiency (Soul Shield (paragon tier))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))",
@@ -1017,24 +1018,24 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Spear group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Spear group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Spear group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Spear group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(JAVELIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIDENT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRATNYR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(JAVELIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIDENT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRATNYR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Spear)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Spear)"] = new engine.RulesElement({
     name: "Implement Proficiency (Spear)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR)",
@@ -1043,7 +1044,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Spiked chain)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Spiked chain)"] = new engine.RulesElement({
     name: "Implement Proficiency (Spiked chain)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_CHAIN)",
@@ -1052,7 +1053,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Spiked gauntlet)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Spiked gauntlet)"] = new engine.RulesElement({
     name: "Implement Proficiency (Spiked gauntlet)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_GAUNTLET)",
@@ -1061,7 +1062,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Spiked shield)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Spiked shield)"] = new engine.RulesElement({
     name: "Implement Proficiency (Spiked shield)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_SHIELD)",
@@ -1070,19 +1071,19 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Staff group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Staff group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Staff group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Staff group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(QUARTERSTAFF)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(QUARTERSTAFF)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Staff)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Staff)"] = new engine.RulesElement({
     name: "Implement Proficiency (Staff)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)",
@@ -1091,7 +1092,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Sun Shield (paragon tier))"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Sun Shield (paragon tier))"] = new engine.RulesElement({
     name: "Implement Proficiency (Sun Shield (paragon tier))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))",
@@ -1100,7 +1101,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Superior crossbow)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Superior crossbow)"] = new engine.RulesElement({
     name: "Implement Proficiency (Superior crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUPERIOR_CROSSBOW)",
@@ -1109,7 +1110,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Talenta Boomerang)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Talenta Boomerang)"] = new engine.RulesElement({
     name: "Implement Proficiency (Talenta Boomerang)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_BOOMERANG)",
@@ -1118,7 +1119,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Talenta Sharrash)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Talenta Sharrash)"] = new engine.RulesElement({
     name: "Implement Proficiency (Talenta Sharrash)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)",
@@ -1127,7 +1128,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Talenta Tangat)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Talenta Tangat)"] = new engine.RulesElement({
     name: "Implement Proficiency (Talenta Tangat)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_TANGAT)",
@@ -1136,7 +1137,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Throwing hammer)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Throwing hammer)"] = new engine.RulesElement({
     name: "Implement Proficiency (Throwing hammer)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(THROWING_HAMMER)",
@@ -1145,7 +1146,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Tome)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Tome)"] = new engine.RulesElement({
     name: "Implement Proficiency (Tome)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TOME)",
@@ -1154,7 +1155,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Totem)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Totem)"] = new engine.RulesElement({
     name: "Implement Proficiency (Totem)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TOTEM)",
@@ -1163,7 +1164,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Tratnyr)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Tratnyr)"] = new engine.RulesElement({
     name: "Implement Proficiency (Tratnyr)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRATNYR)",
@@ -1172,7 +1173,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Trident)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Trident)"] = new engine.RulesElement({
     name: "Implement Proficiency (Trident)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIDENT)",
@@ -1181,7 +1182,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Triple-headed flail)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Triple-headed flail)"] = new engine.RulesElement({
     name: "Implement Proficiency (Triple-headed flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIPLE-HEADED_FLAIL)",
@@ -1190,22 +1191,22 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Unarmed group)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Unarmed group)"] = new engine.RulesElement({
     name: "Implement Proficiency (Unarmed group)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(UNARMED_GROUP)",
     source: "Core",
     categories: ["Implement Proficiency (Unarmed group)", "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(UNARMED_GROUP)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_GAUNTLET)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MONK_UNARMED_STRIKE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOAR_TUSK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_GAUNTLET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MONK_UNARMED_STRIKE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOAR_TUSK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Urgrosh)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Urgrosh)"] = new engine.RulesElement({
     name: "Implement Proficiency (Urgrosh)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(URGROSH)",
@@ -1214,7 +1215,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Wand)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Wand)"] = new engine.RulesElement({
     name: "Implement Proficiency (Wand)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)",
@@ -1223,7 +1224,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (War Pick)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (War Pick)"] = new engine.RulesElement({
     name: "Implement Proficiency (War Pick)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAR_PICK)",
@@ -1232,7 +1233,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Waraxe)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Waraxe)"] = new engine.RulesElement({
     name: "Implement Proficiency (Waraxe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARAXE)",
@@ -1241,7 +1242,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Warhammer)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Warhammer)"] = new engine.RulesElement({
     name: "Implement Proficiency (Warhammer)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARHAMMER)",
@@ -1250,7 +1251,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Whip)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Whip)"] = new engine.RulesElement({
     name: "Implement Proficiency (Whip)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WHIP)",
@@ -1259,7 +1260,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Xen'drik Boomerang)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Xen'drik Boomerang)"] = new engine.RulesElement({
     name: "Implement Proficiency (Xen'drik Boomerang)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(XEN'DRIK_BOOMERANG)",
@@ -1268,7 +1269,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Implement Proficiency (Zulaat)"] = new RulesElement({
+  te = Proficiency["Implement Proficiency (Zulaat)"] = new engine.RulesElement({
     name: "Implement Proficiency (Zulaat)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ZULAAT)",
@@ -1277,69 +1278,69 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Axe"] = new RulesElement({
+  te = Proficiency["Military Axe"] = new engine.RulesElement({
     name: "Military Axe",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_AXE",
     source: "Core",
     categories: ["Military Axe", "ID_INTERNAL_PROFICIENCY_MILITARY_AXE"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Hammer"] = new RulesElement({
+  te = Proficiency["Military Hammer"] = new engine.RulesElement({
     name: "Military Hammer",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_HAMMER",
     source: "Core",
     categories: ["Military Hammer", "ID_INTERNAL_PROFICIENCY_MILITARY_HAMMER"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Heavy Blade"] = new RulesElement({
+  te = Proficiency["Military Heavy Blade"] = new engine.RulesElement({
     name: "Military Heavy Blade",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_HEAVY_BLADE",
     source: "Core",
     categories: ["Military Heavy Blade", "ID_INTERNAL_PROFICIENCY_MILITARY_HEAVY_BLADE"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Light Blade"] = new RulesElement({
+  te = Proficiency["Military Light Blade"] = new engine.RulesElement({
     name: "Military Light Blade",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_LIGHT_BLADE",
     source: "Core",
     categories: ["Military Light Blade", "ID_INTERNAL_PROFICIENCY_MILITARY_LIGHT_BLADE"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Mace"] = new RulesElement({
+  te = Proficiency["Military Mace"] = new engine.RulesElement({
     name: "Military Mace",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_MACE",
@@ -1348,98 +1349,98 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Melee"] = new RulesElement({
+  te = Proficiency["Military Melee"] = new engine.RulesElement({
     name: "Military Melee",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_MELEE",
     source: "Core",
     categories: ["Military Melee", "ID_INTERNAL_PROFICIENCY_MILITARY_MELEE"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Pick"] = new RulesElement({
+  te = Proficiency["Military Pick"] = new engine.RulesElement({
     name: "Military Pick",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_PICK",
     source: "Core",
     categories: ["Military Pick", "ID_INTERNAL_PROFICIENCY_MILITARY_PICK"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Ranged"] = new RulesElement({
+  te = Proficiency["Military Ranged"] = new engine.RulesElement({
     name: "Military Ranged",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_RANGED",
     source: "Core",
     categories: ["Military Ranged", "ID_INTERNAL_PROFICIENCY_MILITARY_RANGED"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Military Spear"] = new RulesElement({
+  te = Proficiency["Military Spear"] = new engine.RulesElement({
     name: "Military Spear",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_MILITARY_SPEAR",
     source: "Core",
     categories: ["Military Spear", "ID_INTERNAL_PROFICIENCY_MILITARY_SPEAR"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["One-Handed Military Heavy Blade"] = new RulesElement({
+  te = Proficiency["One-Handed Military Heavy Blade"] = new engine.RulesElement({
     name: "One-Handed Military Heavy Blade",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_ONE-HANDED_MILITARY_HEAVY_BLADE",
     source: "Core",
     categories: ["One-Handed Military Heavy Blade", "ID_INTERNAL_PROFICIENCY_ONE-HANDED_MILITARY_HEAVY_BLADE"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Shield Proficiency (Heavy)"] = new RulesElement({
+  te = Proficiency["Shield Proficiency (Heavy)"] = new engine.RulesElement({
     name: "Shield Proficiency (Heavy)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)",
@@ -1448,7 +1449,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Shield Proficiency (Light)"] = new RulesElement({
+  te = Proficiency["Shield Proficiency (Light)"] = new engine.RulesElement({
     name: "Shield Proficiency (Light)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)",
@@ -1457,374 +1458,374 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Simple Heavy Blade"] = new RulesElement({
+  te = Proficiency["Simple Heavy Blade"] = new engine.RulesElement({
     name: "Simple Heavy Blade",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_SIMPLE_HEAVY_BLADE",
     source: "Core",
     categories: ["Simple Heavy Blade", "ID_INTERNAL_PROFICIENCY_SIMPLE_HEAVY_BLADE"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Simple Melee"] = new RulesElement({
+  te = Proficiency["Simple Melee"] = new engine.RulesElement({
     name: "Simple Melee",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE",
     source: "Core",
     categories: ["Simple Melee", "ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Simple One-Handed Melee"] = new RulesElement({
+  te = Proficiency["Simple One-Handed Melee"] = new engine.RulesElement({
     name: "Simple One-Handed Melee",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_SIMPLE_ONE-HANDED_MELEE",
     source: "Core",
     categories: ["Simple One-Handed Melee", "ID_INTERNAL_PROFICIENCY_SIMPLE_ONE-HANDED_MELEE"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Simple Ranged"] = new RulesElement({
+  te = Proficiency["Simple Ranged"] = new engine.RulesElement({
     name: "Simple Ranged",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED",
     source: "Core",
     categories: ["Simple Ranged", "ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Simple Spear"] = new RulesElement({
+  te = Proficiency["Simple Spear"] = new engine.RulesElement({
     name: "Simple Spear",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_SIMPLE_SPEAR",
     source: "Core",
     categories: ["Simple Spear", "ID_INTERNAL_PROFICIENCY_SIMPLE_SPEAR"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Axe)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Axe)"] = new engine.RulesElement({
     name: "Weapon Group (Axe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(AXE)",
     source: "Core",
     categories: ["Weapon Group (Axe)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(AXE)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(EXECUTION_AXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_AXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(URGROSH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(EXECUTION_AXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_AXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(URGROSH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Blowgun)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Blowgun)"] = new engine.RulesElement({
     name: "Weapon Group (Blowgun)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(BLOWGUN)",
     source: "Core",
     categories: ["Weapon Group (Blowgun)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(BLOWGUN)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BLOWGUN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BLOWGUN)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Bow)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Bow)"] = new engine.RulesElement({
     name: "Weapon Group (Bow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(BOW)",
     source: "Core",
     categories: ["Weapon Group (Bow)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(BOW)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATBOW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Crossbow)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Crossbow)"] = new engine.RulesElement({
     name: "Weapon Group (Crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW)",
     source: "Core",
     categories: ["Weapon Group (Crossbow)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(CROSSBOW)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Flail)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Flail)"] = new engine.RulesElement({
     name: "Weapon Group (Flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FLAIL)",
     source: "Core",
     categories: ["Weapon Group (Flail)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FLAIL)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_CHAIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NET)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOLA)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_CHAIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOLA)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Garrote)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Garrote)"] = new engine.RulesElement({
     name: "Weapon Group (Garrote)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(GARROTE)",
     source: "Core",
     categories: ["Weapon Group (Garrote)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(GARROTE)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GARROTE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GARROTE)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Hammer)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Hammer)"] = new engine.RulesElement({
     name: "Weapon Group (Hammer)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HAMMER)",
     source: "Core",
     categories: ["Weapon Group (Hammer)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HAMMER)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CRAGHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORDENKRAD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CRAGHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORDENKRAD)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Heavy Blade)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Heavy Blade)"] = new engine.RulesElement({
     name: "Weapon Group (Heavy Blade)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HEAVY_BLADE)",
     source: "Core",
     categories: ["Weapon Group (Heavy Blade)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HEAVY_BLADE)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FULLBLADE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_TANGAT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ZULAAT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FULLBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_TANGAT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ZULAAT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Light Blade)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Light Blade)"] = new engine.RulesElement({
     name: "Weapon Group (Light Blade)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)",
     source: "Core",
     categories: ["Weapon Group (Light Blade)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KATAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHURIKEN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KUKRI)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PARRYING_DAGGER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_SHIELD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SWORD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CUTTING_WHEEL)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KATAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHURIKEN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KUKRI)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PARRYING_DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_SHIELD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CUTTING_WHEEL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Mace)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Mace)"] = new engine.RulesElement({
     name: "Weapon Group (Mace)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(MACE)",
     source: "Core",
     categories: ["Weapon Group (Mace)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(MACE)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEFIST)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEFIST)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Pick)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Pick)"] = new engine.RulesElement({
     name: "Weapon Group (Pick)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(PICK)",
     source: "Core",
     categories: ["Weapon Group (Pick)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(PICK)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Polearm)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Polearm)"] = new engine.RulesElement({
     name: "Weapon Group (Polearm)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(POLEARM)",
     source: "Core",
     categories: ["Weapon Group (Polearm)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(POLEARM)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Sling)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Sling)"] = new engine.RulesElement({
     name: "Weapon Group (Sling)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SLING)",
     source: "Core",
     categories: ["Weapon Group (Sling)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SLING)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Spear)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Spear)"] = new engine.RulesElement({
     name: "Weapon Group (Spear)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SPEAR)",
     source: "Core",
     categories: ["Weapon Group (Spear)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SPEAR)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRATNYR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRATNYR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSPEAR)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Staff)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Staff)"] = new engine.RulesElement({
     name: "Weapon Group (Staff)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(STAFF)",
     source: "Core",
     categories: ["Weapon Group (Staff)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(STAFF)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Group (Unarmed)"] = new RulesElement({
+  te = Proficiency["Weapon Group (Unarmed)"] = new engine.RulesElement({
     name: "Weapon Group (Unarmed)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(UNARMED)",
     source: "Core",
     categories: ["Weapon Group (Unarmed)", "ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(UNARMED)"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MONK_UNARMED_STRIKE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MONK_UNARMED_STRIKE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))"]);
     }
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Bastard sword)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Bastard sword)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Bastard sword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)",
@@ -1833,7 +1834,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Battleaxe)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Battleaxe)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Battleaxe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)",
@@ -1842,7 +1843,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Battlefist)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Battlefist)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Battlefist)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEFIST)",
@@ -1851,7 +1852,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Blowgun)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Blowgun)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Blowgun)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BLOWGUN)",
@@ -1860,7 +1861,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Boar Tusk)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Boar Tusk)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Boar Tusk)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)",
@@ -1869,7 +1870,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Bola)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Bola)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Bola)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOLA)",
@@ -1878,7 +1879,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Broadsword)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Broadsword)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Broadsword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)",
@@ -1887,7 +1888,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Claw Fighter Claw)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Claw Fighter Claw)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Claw Fighter Claw)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)",
@@ -1896,7 +1897,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Climbing Claw)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Climbing Claw)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Climbing Claw)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)",
@@ -1905,7 +1906,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Club)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Club)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Club)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)",
@@ -1914,7 +1915,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Craghammer)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Craghammer)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Craghammer)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CRAGHAMMER)",
@@ -1923,7 +1924,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Crossbow)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Crossbow)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)",
@@ -1932,7 +1933,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Cutting Wheel)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Cutting Wheel)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Cutting Wheel)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CUTTING_WHEEL)",
@@ -1941,7 +1942,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Dagger)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Dagger)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Dagger)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)",
@@ -1950,7 +1951,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Double axe)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Double axe)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Double axe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_AXE)",
@@ -1959,7 +1960,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Double flail)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Double flail)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Double flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)",
@@ -1968,7 +1969,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Double Scimitar)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Double Scimitar)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Double Scimitar)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)",
@@ -1977,7 +1978,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Double sword)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Double sword)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Double sword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SWORD)",
@@ -1986,7 +1987,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Dragontooth Shield (heroic tier))"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Dragontooth Shield (heroic tier))"] = new engine.RulesElement({
     name: "Weapon Proficiency (Dragontooth Shield (heroic tier))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))",
@@ -1995,7 +1996,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Drow Long Knife)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Drow Long Knife)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Drow Long Knife)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)",
@@ -2004,7 +2005,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Execution axe)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Execution axe)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Execution axe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(EXECUTION_AXE)",
@@ -2013,7 +2014,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Falchion)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Falchion)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Falchion)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)",
@@ -2022,7 +2023,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Feral Armor Claw)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Feral Armor Claw)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Feral Armor Claw)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)",
@@ -2031,7 +2032,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Fighting Shield (heroic tier))"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Fighting Shield (heroic tier))"] = new engine.RulesElement({
     name: "Weapon Proficiency (Fighting Shield (heroic tier))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))",
@@ -2040,7 +2041,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Flail)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Flail)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)",
@@ -2049,7 +2050,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Fullblade)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Fullblade)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Fullblade)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FULLBLADE)",
@@ -2058,7 +2059,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Garrote)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Garrote)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Garrote)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GARROTE)",
@@ -2067,7 +2068,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Glaive)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Glaive)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Glaive)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)",
@@ -2076,7 +2077,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Greataxe)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Greataxe)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Greataxe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)",
@@ -2085,7 +2086,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Greatbow)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Greatbow)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Greatbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATBOW)",
@@ -2094,7 +2095,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Greatclub)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Greatclub)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Greatclub)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)",
@@ -2103,7 +2104,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Greatspear)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Greatspear)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Greatspear)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSPEAR)",
@@ -2112,7 +2113,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Greatsword)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Greatsword)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Greatsword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)",
@@ -2121,7 +2122,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Halberd)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Halberd)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Halberd)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)",
@@ -2130,7 +2131,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Hand Crossbow)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Hand Crossbow)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Hand Crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)",
@@ -2139,7 +2140,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Handaxe)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Handaxe)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Handaxe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)",
@@ -2148,7 +2149,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Heavy flail)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Heavy flail)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Heavy flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)",
@@ -2157,7 +2158,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Heavy war pick)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Heavy war pick)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Heavy war pick)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)",
@@ -2166,7 +2167,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Javelin)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Javelin)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Javelin)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)",
@@ -2175,7 +2176,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Katar)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Katar)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Katar)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KATAR)",
@@ -2184,7 +2185,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Khopesh)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Khopesh)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Khopesh)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)",
@@ -2193,7 +2194,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Kukri)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Kukri)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Kukri)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KUKRI)",
@@ -2202,7 +2203,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Light war pick)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Light war pick)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Light war pick)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)",
@@ -2211,7 +2212,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Longbow)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Longbow)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Longbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)",
@@ -2220,7 +2221,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Longspear)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Longspear)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Longspear)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)",
@@ -2229,7 +2230,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Longsword)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Longsword)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Longsword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)",
@@ -2238,7 +2239,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Mace)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Mace)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Mace)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)",
@@ -2247,7 +2248,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Maul)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Maul)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Maul)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)",
@@ -2256,7 +2257,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Monk Unarmed Strike)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Monk Unarmed Strike)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Monk Unarmed Strike)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MONK_UNARMED_STRIKE)",
@@ -2265,7 +2266,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Mordenkrad)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Mordenkrad)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Mordenkrad)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORDENKRAD)",
@@ -2274,7 +2275,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Morningstar)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Morningstar)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Morningstar)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)",
@@ -2283,7 +2284,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Net)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Net)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Net)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NET)",
@@ -2292,7 +2293,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Parrying dagger)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Parrying dagger)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Parrying dagger)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PARRYING_DAGGER)",
@@ -2301,7 +2302,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Quarterstaff)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Quarterstaff)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Quarterstaff)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)",
@@ -2310,7 +2311,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Rapier)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Rapier)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Rapier)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)",
@@ -2319,7 +2320,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Repeating crossbow)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Repeating crossbow)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Repeating crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)",
@@ -2328,7 +2329,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Rod of Seven Parts (Weapon))"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Rod of Seven Parts (Weapon))"] = new engine.RulesElement({
     name: "Weapon Proficiency (Rod of Seven Parts (Weapon))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))",
@@ -2337,7 +2338,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Scimitar)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Scimitar)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Scimitar)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)",
@@ -2346,7 +2347,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Scourge)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Scourge)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Scourge)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)",
@@ -2355,7 +2356,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Scythe)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Scythe)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Scythe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)",
@@ -2364,7 +2365,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Shadowblade)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Shadowblade)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Shadowblade)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)",
@@ -2373,7 +2374,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Short sword)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Short sword)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Short sword)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)",
@@ -2382,7 +2383,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Shortbow)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Shortbow)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Shortbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)",
@@ -2391,7 +2392,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Shuriken)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Shuriken)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Shuriken)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHURIKEN)",
@@ -2400,7 +2401,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Sickle)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Sickle)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Sickle)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)",
@@ -2409,7 +2410,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Sling)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Sling)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Sling)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)",
@@ -2418,7 +2419,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Soul Shield (paragon tier))"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Soul Shield (paragon tier))"] = new engine.RulesElement({
     name: "Weapon Proficiency (Soul Shield (paragon tier))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))",
@@ -2427,7 +2428,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Spear)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Spear)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Spear)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)",
@@ -2436,7 +2437,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Spiked chain)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Spiked chain)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Spiked chain)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_CHAIN)",
@@ -2445,7 +2446,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Spiked gauntlet)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Spiked gauntlet)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Spiked gauntlet)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)",
@@ -2454,7 +2455,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Spiked shield)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Spiked shield)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Spiked shield)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_SHIELD)",
@@ -2463,7 +2464,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Sun Shield (paragon tier))"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Sun Shield (paragon tier))"] = new engine.RulesElement({
     name: "Weapon Proficiency (Sun Shield (paragon tier))",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))",
@@ -2472,7 +2473,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Superior crossbow)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Superior crossbow)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Superior crossbow)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)",
@@ -2481,7 +2482,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Talenta Boomerang)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Talenta Boomerang)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Talenta Boomerang)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)",
@@ -2490,7 +2491,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Talenta Sharrash)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Talenta Sharrash)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Talenta Sharrash)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)",
@@ -2499,7 +2500,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Talenta Tangat)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Talenta Tangat)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Talenta Tangat)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_TANGAT)",
@@ -2508,7 +2509,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Throwing hammer)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Throwing hammer)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Throwing hammer)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)",
@@ -2517,7 +2518,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Tratnyr)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Tratnyr)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Tratnyr)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRATNYR)",
@@ -2526,7 +2527,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Trident)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Trident)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Trident)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)",
@@ -2535,7 +2536,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Triple-headed flail)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Triple-headed flail)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Triple-headed flail)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)",
@@ -2544,7 +2545,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Urgrosh)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Urgrosh)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Urgrosh)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(URGROSH)",
@@ -2553,7 +2554,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (War Pick)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (War Pick)"] = new engine.RulesElement({
     name: "Weapon Proficiency (War Pick)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)",
@@ -2562,7 +2563,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Waraxe)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Waraxe)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Waraxe)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARAXE)",
@@ -2571,7 +2572,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Warhammer)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Warhammer)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Warhammer)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)",
@@ -2580,7 +2581,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Whip)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Whip)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Whip)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)",
@@ -2589,7 +2590,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Xen'drik Boomerang)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Xen'drik Boomerang)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Xen'drik Boomerang)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)",
@@ -2598,7 +2599,7 @@
   });
   byID[te.id] = te;
   
-  te = Proficiency["Weapon Proficiency (Zulaat)"] = new RulesElement({
+  te = Proficiency["Weapon Proficiency (Zulaat)"] = new engine.RulesElement({
     name: "Weapon Proficiency (Zulaat)",
     type: "Proficiency",
     id: "ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ZULAAT)",
@@ -2608,4 +2609,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

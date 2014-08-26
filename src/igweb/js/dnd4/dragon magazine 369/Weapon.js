@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Weapon = types['Weapon'] || (types['Weapon'] = {});
-  te = Weapon["Feral Armor Claw"] = new RulesElement({
+  te = Weapon["Feral Armor Claw"] = new engine.RulesElement({
     name: "Feral Armor Claw",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_FERAL_ARMOR_CLAW",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Feral Armor Claw (Large)"] = new RulesElement({
+  te = Weapon["Feral Armor Claw (Large)"] = new engine.RulesElement({
     name: "Feral Armor Claw (Large)",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_LARGE_FERAL_ARMOR_CLAW",
@@ -26,4 +27,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

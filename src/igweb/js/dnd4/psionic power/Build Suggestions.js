@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Build_Suggestions = types['Build Suggestions'] || (types['Build Suggestions'] = {});
-  te = Build_Suggestions["Harrier Battlemind"] = new RulesElement({
+  te = Build_Suggestions["Harrier Battlemind"] = new engine.RulesElement({
     name: "Harrier Battlemind",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_HARRIER_BATTLEMIND",
@@ -30,7 +31,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Impetuous Ardent"] = new RulesElement({
+  te = Build_Suggestions["Impetuous Ardent"] = new engine.RulesElement({
     name: "Impetuous Ardent",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_IMPETUOUS_ARDENT",
@@ -53,7 +54,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Iron Soul Monk"] = new RulesElement({
+  te = Build_Suggestions["Iron Soul Monk"] = new engine.RulesElement({
     name: "Iron Soul Monk",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_IRON_SOUL_MONK",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Shaper Psion"] = new RulesElement({
+  te = Build_Suggestions["Shaper Psion"] = new engine.RulesElement({
     name: "Shaper Psion",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_SHAPER_PSION",
@@ -100,4 +101,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

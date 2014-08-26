@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Corpse Gate"] = new RulesElement({
+  te = Ritual["Corpse Gate"] = new engine.RulesElement({
     name: "Corpse Gate",
     type: "Ritual",
     id: "ID_FMP_RITUAL_180",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Corpse Light"] = new RulesElement({
+  te = Ritual["Corpse Light"] = new engine.RulesElement({
     name: "Corpse Light",
     type: "Ritual",
     id: "ID_FMP_RITUAL_182",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Gravesight"] = new RulesElement({
+  te = Ritual["Gravesight"] = new engine.RulesElement({
     name: "Gravesight",
     type: "Ritual",
     id: "ID_FMP_RITUAL_181",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Last Sight Vision"] = new RulesElement({
+  te = Ritual["Last Sight Vision"] = new engine.RulesElement({
     name: "Last Sight Vision",
     type: "Ritual",
     id: "ID_FMP_RITUAL_183",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Skull Watch"] = new RulesElement({
+  te = Ritual["Skull Watch"] = new engine.RulesElement({
     name: "Skull Watch",
     type: "Ritual",
     id: "ID_FMP_RITUAL_184",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Undead Servitor"] = new RulesElement({
+  te = Ritual["Undead Servitor"] = new engine.RulesElement({
     name: "Undead Servitor",
     type: "Ritual",
     id: "ID_FMP_RITUAL_185",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Undead Ward"] = new RulesElement({
+  te = Ritual["Undead Ward"] = new engine.RulesElement({
     name: "Undead Ward",
     type: "Ritual",
     id: "ID_FMP_RITUAL_186",
@@ -78,4 +79,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

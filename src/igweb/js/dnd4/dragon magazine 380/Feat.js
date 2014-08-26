@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Acid Splash"] = new RulesElement({
+  te = Feat["Acid Splash"] = new engine.RulesElement({
     name: "Acid Splash",
     type: "Feat",
     id: "ID_FMP_FEAT_1998",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Advantageous Eye"] = new RulesElement({
+  te = Feat["Advantageous Eye"] = new engine.RulesElement({
     name: "Advantageous Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2024",
@@ -25,13 +26,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2024",
     categories: ["Advantageous Eye", "ID_FMP_FEAT_2024", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Angry Grandfather"] = new RulesElement({
+  te = Feat["Angry Grandfather"] = new engine.RulesElement({
     name: "Angry Grandfather",
     type: "Feat",
     id: "ID_FMP_FEAT_1993",
@@ -41,7 +42,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Armor of Winter"] = new RulesElement({
+  te = Feat["Armor of Winter"] = new engine.RulesElement({
     name: "Armor of Winter",
     type: "Feat",
     id: "ID_FMP_FEAT_2003",
@@ -54,7 +55,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Bitter Challenge"] = new RulesElement({
+  te = Feat["Bitter Challenge"] = new engine.RulesElement({
     name: "Bitter Challenge",
     type: "Feat",
     id: "ID_FMP_FEAT_2004",
@@ -64,7 +65,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Bitter Cold"] = new RulesElement({
+  te = Feat["Bitter Cold"] = new engine.RulesElement({
     name: "Bitter Cold",
     type: "Feat",
     id: "ID_FMP_FEAT_1994",
@@ -74,7 +75,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Black Mantle"] = new RulesElement({
+  te = Feat["Black Mantle"] = new engine.RulesElement({
     name: "Black Mantle",
     type: "Feat",
     id: "ID_FMP_FEAT_2016",
@@ -84,7 +85,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Black Vistani Cat"] = new RulesElement({
+  te = Feat["Black Vistani Cat"] = new engine.RulesElement({
     name: "Black Vistani Cat",
     type: "Feat",
     id: "ID_FMP_FEAT_2025",
@@ -93,13 +94,13 @@
     categories: ["Black Vistani Cat", "ID_FMP_FEAT_2025", "ID_INTERNAL_CATEGORY_FAMILIAR", "Familiar", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Blood Cousin's Tribe"] = new RulesElement({
+  te = Feat["Blood Cousin's Tribe"] = new engine.RulesElement({
     name: "Blood Cousin's Tribe",
     type: "Feat",
     id: "ID_FMP_FEAT_1991",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Chilling Oath"] = new RulesElement({
+  te = Feat["Chilling Oath"] = new engine.RulesElement({
     name: "Chilling Oath",
     type: "Feat",
     id: "ID_FMP_FEAT_2017",
@@ -122,7 +123,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Cosmic Eye"] = new RulesElement({
+  te = Feat["Cosmic Eye"] = new engine.RulesElement({
     name: "Cosmic Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2026",
@@ -131,13 +132,13 @@
     categories: ["Cosmic Eye", "ID_FMP_FEAT_2026", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Covenant Eye"] = new RulesElement({
+  te = Feat["Covenant Eye"] = new engine.RulesElement({
     name: "Covenant Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2027",
@@ -145,13 +146,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2027",
     categories: ["Covenant Eye", "ID_FMP_FEAT_2027", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Covenant of the Raven Queen"] = new RulesElement({
+  te = Feat["Covenant of the Raven Queen"] = new engine.RulesElement({
     name: "Covenant of the Raven Queen",
     type: "Feat",
     id: "ID_FMP_FEAT_2018",
@@ -161,7 +162,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Dark Mantle"] = new RulesElement({
+  te = Feat["Dark Mantle"] = new engine.RulesElement({
     name: "Dark Mantle",
     type: "Feat",
     id: "ID_FMP_FEAT_2005",
@@ -171,7 +172,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Dreadful Doom"] = new RulesElement({
+  te = Feat["Dreadful Doom"] = new engine.RulesElement({
     name: "Dreadful Doom",
     type: "Feat",
     id: "ID_FMP_FEAT_2006",
@@ -181,7 +182,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Echo of Letherna"] = new RulesElement({
+  te = Feat["Echo of Letherna"] = new engine.RulesElement({
     name: "Echo of Letherna",
     type: "Feat",
     id: "ID_FMP_FEAT_2021",
@@ -191,7 +192,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Empty Mind"] = new RulesElement({
+  te = Feat["Empty Mind"] = new engine.RulesElement({
     name: "Empty Mind",
     type: "Feat",
     id: "ID_FMP_FEAT_1986",
@@ -201,7 +202,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Energy Recovery"] = new RulesElement({
+  te = Feat["Energy Recovery"] = new engine.RulesElement({
     name: "Energy Recovery",
     type: "Feat",
     id: "ID_FMP_FEAT_1999",
@@ -211,7 +212,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Enmity's Eye"] = new RulesElement({
+  te = Feat["Enmity's Eye"] = new engine.RulesElement({
     name: "Enmity's Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2028",
@@ -219,13 +220,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2028",
     categories: ["Enmity's Eye", "ID_FMP_FEAT_2028", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Eye of Paranoia"] = new RulesElement({
+  te = Feat["Eye of Paranoia"] = new engine.RulesElement({
     name: "Eye of Paranoia",
     type: "Feat",
     id: "ID_FMP_FEAT_2029",
@@ -233,13 +234,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2029",
     categories: ["Eye of Paranoia", "ID_FMP_FEAT_2029", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Eye Wand"] = new RulesElement({
+  te = Feat["Eye Wand"] = new engine.RulesElement({
     name: "Eye Wand",
     type: "Feat",
     id: "ID_FMP_FEAT_2030",
@@ -247,13 +248,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2030",
     categories: ["Eye Wand", "ID_FMP_FEAT_2030", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Eyes of Dying Light"] = new RulesElement({
+  te = Feat["Eyes of Dying Light"] = new engine.RulesElement({
     name: "Eyes of Dying Light",
     type: "Feat",
     id: "ID_FMP_FEAT_1988",
@@ -261,12 +262,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1988",
     categories: ["Eyes of Dying Light", "ID_FMP_FEAT_1988"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_VISION_DARKVISION"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_DARKVISION"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Far Spell"] = new RulesElement({
+  te = Feat["Far Spell"] = new engine.RulesElement({
     name: "Far Spell",
     type: "Feat",
     id: "ID_FMP_FEAT_1995",
@@ -276,7 +277,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Fate's Warning"] = new RulesElement({
+  te = Feat["Fate's Warning"] = new engine.RulesElement({
     name: "Fate's Warning",
     type: "Feat",
     id: "ID_FMP_FEAT_2007",
@@ -286,7 +287,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Fell Vistani Hound"] = new RulesElement({
+  te = Feat["Fell Vistani Hound"] = new engine.RulesElement({
     name: "Fell Vistani Hound",
     type: "Feat",
     id: "ID_FMP_FEAT_2031",
@@ -294,13 +295,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2031",
     categories: ["Fell Vistani Hound", "ID_FMP_FEAT_2031", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Foul Torrent"] = new RulesElement({
+  te = Feat["Foul Torrent"] = new engine.RulesElement({
     name: "Foul Torrent",
     type: "Feat",
     id: "ID_FMP_FEAT_1990",
@@ -310,7 +311,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Grave Fortune"] = new RulesElement({
+  te = Feat["Grave Fortune"] = new engine.RulesElement({
     name: "Grave Fortune",
     type: "Feat",
     id: "ID_FMP_FEAT_2008",
@@ -320,7 +321,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Harvester of Sorrows"] = new RulesElement({
+  te = Feat["Harvester of Sorrows"] = new engine.RulesElement({
     name: "Harvester of Sorrows",
     type: "Feat",
     id: "ID_FMP_FEAT_2022",
@@ -330,7 +331,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Illusionary Stealth"] = new RulesElement({
+  te = Feat["Illusionary Stealth"] = new engine.RulesElement({
     name: "Illusionary Stealth",
     type: "Feat",
     id: "ID_FMP_FEAT_1996",
@@ -340,7 +341,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Immolate the Masses"] = new RulesElement({
+  te = Feat["Immolate the Masses"] = new engine.RulesElement({
     name: "Immolate the Masses",
     type: "Feat",
     id: "ID_FMP_FEAT_1997",
@@ -350,7 +351,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Lightning Transport"] = new RulesElement({
+  te = Feat["Lightning Transport"] = new engine.RulesElement({
     name: "Lightning Transport",
     type: "Feat",
     id: "ID_FMP_FEAT_2000",
@@ -360,7 +361,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Maledictor's Eye"] = new RulesElement({
+  te = Feat["Maledictor's Eye"] = new engine.RulesElement({
     name: "Maledictor's Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2032",
@@ -368,13 +369,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2032",
     categories: ["Maledictor's Eye", "ID_FMP_FEAT_2032", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Mark of the Evil Eye"] = new RulesElement({
+  te = Feat["Mark of the Evil Eye"] = new engine.RulesElement({
     name: "Mark of the Evil Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2046",
@@ -382,13 +383,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2046",
     categories: ["Mark of the Evil Eye", "ID_FMP_FEAT_2046", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Memory of Death"] = new RulesElement({
+  te = Feat["Memory of Death"] = new engine.RulesElement({
     name: "Memory of Death",
     type: "Feat",
     id: "ID_FMP_FEAT_2009",
@@ -398,7 +399,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Nature's Vindictive Eye"] = new RulesElement({
+  te = Feat["Nature's Vindictive Eye"] = new engine.RulesElement({
     name: "Nature's Vindictive Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2033",
@@ -406,13 +407,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2033",
     categories: ["Nature's Vindictive Eye", "ID_FMP_FEAT_2033", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Orb of the Eye"] = new RulesElement({
+  te = Feat["Orb of the Eye"] = new engine.RulesElement({
     name: "Orb of the Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2034",
@@ -420,13 +421,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2034",
     categories: ["Orb of the Eye", "ID_FMP_FEAT_2034", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Persistent Eye"] = new RulesElement({
+  te = Feat["Persistent Eye"] = new engine.RulesElement({
     name: "Persistent Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2048",
@@ -434,13 +435,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2048",
     categories: ["Persistent Eye", "ID_FMP_FEAT_2048", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Pervasive Gloom"] = new RulesElement({
+  te = Feat["Pervasive Gloom"] = new engine.RulesElement({
     name: "Pervasive Gloom",
     type: "Feat",
     id: "ID_FMP_FEAT_2010",
@@ -448,12 +449,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2010",
     categories: ["Pervasive Gloom", "ID_FMP_FEAT_2010"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_10108"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10108"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Phantasmal Destruction"] = new RulesElement({
+  te = Feat["Phantasmal Destruction"] = new engine.RulesElement({
     name: "Phantasmal Destruction",
     type: "Feat",
     id: "ID_FMP_FEAT_2001",
@@ -463,7 +464,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Prophetic Preparation"] = new RulesElement({
+  te = Feat["Prophetic Preparation"] = new engine.RulesElement({
     name: "Prophetic Preparation",
     type: "Feat",
     id: "ID_FMP_FEAT_2047",
@@ -471,13 +472,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2047",
     categories: ["Prophetic Preparation", "ID_FMP_FEAT_2047", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Raven Queen's Outrage"] = new RulesElement({
+  te = Feat["Raven Queen's Outrage"] = new engine.RulesElement({
     name: "Raven Queen's Outrage",
     type: "Feat",
     id: "ID_FMP_FEAT_2019",
@@ -487,7 +488,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Raven Queen's Scorn"] = new RulesElement({
+  te = Feat["Raven Queen's Scorn"] = new engine.RulesElement({
     name: "Raven Queen's Scorn",
     type: "Feat",
     id: "ID_FMP_FEAT_2020",
@@ -497,7 +498,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Reaping Vengeance"] = new RulesElement({
+  te = Feat["Reaping Vengeance"] = new engine.RulesElement({
     name: "Reaping Vengeance",
     type: "Feat",
     id: "ID_FMP_FEAT_2011",
@@ -507,7 +508,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Restless Dead"] = new RulesElement({
+  te = Feat["Restless Dead"] = new engine.RulesElement({
     name: "Restless Dead",
     type: "Feat",
     id: "ID_FMP_FEAT_2012",
@@ -517,7 +518,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Revenant's Challenge"] = new RulesElement({
+  te = Feat["Revenant's Challenge"] = new engine.RulesElement({
     name: "Revenant's Challenge",
     type: "Feat",
     id: "ID_FMP_FEAT_2013",
@@ -527,7 +528,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Sense of the Corrupted"] = new RulesElement({
+  te = Feat["Sense of the Corrupted"] = new engine.RulesElement({
     name: "Sense of the Corrupted",
     type: "Feat",
     id: "ID_FMP_FEAT_1989",
@@ -541,7 +542,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shadow Legacy"] = new RulesElement({
+  te = Feat["Shadow Legacy"] = new engine.RulesElement({
     name: "Shadow Legacy",
     type: "Feat",
     id: "ID_FMP_FEAT_2014",
@@ -549,12 +550,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2014",
     categories: ["Shadow Legacy", "ID_FMP_FEAT_2014"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_10109"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10109"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Shadowfell Guidance"] = new RulesElement({
+  te = Feat["Shadowfell Guidance"] = new engine.RulesElement({
     name: "Shadowfell Guidance",
     type: "Feat",
     id: "ID_FMP_FEAT_2015",
@@ -564,7 +565,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Sympathetic Transference"] = new RulesElement({
+  te = Feat["Sympathetic Transference"] = new engine.RulesElement({
     name: "Sympathetic Transference",
     type: "Feat",
     id: "ID_FMP_FEAT_2002",
@@ -574,7 +575,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Vestige of Vistan"] = new RulesElement({
+  te = Feat["Vestige of Vistan"] = new engine.RulesElement({
     name: "Vestige of Vistan",
     type: "Feat",
     id: "ID_FMP_FEAT_2035",
@@ -582,13 +583,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2035",
     categories: ["Vestige of Vistan", "ID_FMP_FEAT_2035", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Fencer"] = new RulesElement({
+  te = Feat["Vistani Fencer"] = new engine.RulesElement({
     name: "Vistani Fencer",
     type: "Feat",
     id: "ID_FMP_FEAT_2037",
@@ -596,13 +597,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2037",
     categories: ["Vistani Fencer", "ID_FMP_FEAT_2037", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Foresight"] = new RulesElement({
+  te = Feat["Vistani Foresight"] = new engine.RulesElement({
     name: "Vistani Foresight",
     type: "Feat",
     id: "ID_FMP_FEAT_2049",
@@ -613,13 +614,13 @@
       model.statadd("Initiative Misc", 2);
       model.statadd("_BaseActionPoints", function() { return model.stat("Vistani Foresight:+1"); });
       model.statadd("Action Point", "Vistani Foresight:You gain an additional action point after an extended rest");
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Guardian"] = new RulesElement({
+  te = Feat["Vistani Guardian"] = new engine.RulesElement({
     name: "Vistani Guardian",
     type: "Feat",
     id: "ID_FMP_FEAT_2038",
@@ -627,13 +628,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2038",
     categories: ["Vistani Guardian", "ID_FMP_FEAT_2038", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Healer"] = new RulesElement({
+  te = Feat["Vistani Healer"] = new engine.RulesElement({
     name: "Vistani Healer",
     type: "Feat",
     id: "ID_FMP_FEAT_2039",
@@ -641,13 +642,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2039",
     categories: ["Vistani Healer", "ID_FMP_FEAT_2039", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Heritage"] = new RulesElement({
+  te = Feat["Vistani Heritage"] = new engine.RulesElement({
     name: "Vistani Heritage",
     type: "Feat",
     id: "ID_FMP_FEAT_2023",
@@ -655,16 +656,16 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2023",
     categories: ["Vistani Heritage", "ID_FMP_FEAT_2023", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_10111"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10111"]);
       model.statadd("Diplomacy Misc", function() { /* against other Vistani */ return 2; });
       model.statadd("FREEBEE:", 1);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Jongleur"] = new RulesElement({
+  te = Feat["Vistani Jongleur"] = new engine.RulesElement({
     name: "Vistani Jongleur",
     type: "Feat",
     id: "ID_FMP_FEAT_2040",
@@ -672,13 +673,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2040",
     categories: ["Vistani Jongleur", "ID_FMP_FEAT_2040", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Knife Fighting"] = new RulesElement({
+  te = Feat["Vistani Knife Fighting"] = new engine.RulesElement({
     name: "Vistani Knife Fighting",
     type: "Feat",
     id: "ID_FMP_FEAT_2041",
@@ -686,13 +687,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2041",
     categories: ["Vistani Knife Fighting", "ID_FMP_FEAT_2041", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Pathfinding"] = new RulesElement({
+  te = Feat["Vistani Pathfinding"] = new engine.RulesElement({
     name: "Vistani Pathfinding",
     type: "Feat",
     id: "ID_FMP_FEAT_2042",
@@ -700,13 +701,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2042",
     categories: ["Vistani Pathfinding", "ID_FMP_FEAT_2042", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Seer"] = new RulesElement({
+  te = Feat["Vistani Seer"] = new engine.RulesElement({
     name: "Vistani Seer",
     type: "Feat",
     id: "ID_FMP_FEAT_2043",
@@ -714,13 +715,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2043",
     categories: ["Vistani Seer", "ID_FMP_FEAT_2043", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Vistani Thief"] = new RulesElement({
+  te = Feat["Vistani Thief"] = new engine.RulesElement({
     name: "Vistani Thief",
     type: "Feat",
     id: "ID_FMP_FEAT_2044",
@@ -728,13 +729,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2044",
     categories: ["Vistani Thief", "ID_FMP_FEAT_2044", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Warlock's Eye"] = new RulesElement({
+  te = Feat["Warlock's Eye"] = new engine.RulesElement({
     name: "Warlock's Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2036",
@@ -742,13 +743,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2036",
     categories: ["Warlock's Eye", "ID_FMP_FEAT_2036", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Whisper's Advice"] = new RulesElement({
+  te = Feat["Whisper's Advice"] = new engine.RulesElement({
     name: "Whisper's Advice",
     type: "Feat",
     id: "ID_FMP_FEAT_1992",
@@ -762,7 +763,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Wild Magic Eye"] = new RulesElement({
+  te = Feat["Wild Magic Eye"] = new engine.RulesElement({
     name: "Wild Magic Eye",
     type: "Feat",
     id: "ID_FMP_FEAT_2045",
@@ -771,11 +772,15 @@
     categories: ["Wild Magic Eye", "ID_FMP_FEAT_2045", "ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE", "Vistani Bloodline"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_10111:damage", function() { return model.stat("Chaos Power"); });
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_VISTANI_BLOODLINE"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

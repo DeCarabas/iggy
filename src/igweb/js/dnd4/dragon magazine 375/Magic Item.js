@@ -1,25 +1,26 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Graefling +2"] = new RulesElement({
+  te = Magic_Item["Graefling +2"] = new engine.RulesElement({
     name: "Graefling +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5380",
     source: "Dragon Magazine 375",
     categories: ["Graefling +2", "ID_FMP_MAGIC_ITEM_5380"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_VISION_DARKVISION"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_DARKVISION"]);
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Tome +1"] = new RulesElement({
+  te = Magic_Item["Wailing Tome +1"] = new engine.RulesElement({
     name: "Wailing Tome +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5040",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Tome +2"] = new RulesElement({
+  te = Magic_Item["Wailing Tome +2"] = new engine.RulesElement({
     name: "Wailing Tome +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5041",
@@ -49,7 +50,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Tome +3"] = new RulesElement({
+  te = Magic_Item["Wailing Tome +3"] = new engine.RulesElement({
     name: "Wailing Tome +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5042",
@@ -64,7 +65,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Tome +4"] = new RulesElement({
+  te = Magic_Item["Wailing Tome +4"] = new engine.RulesElement({
     name: "Wailing Tome +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5043",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Tome +5"] = new RulesElement({
+  te = Magic_Item["Wailing Tome +5"] = new engine.RulesElement({
     name: "Wailing Tome +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5044",
@@ -94,7 +95,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Tome +6"] = new RulesElement({
+  te = Magic_Item["Wailing Tome +6"] = new engine.RulesElement({
     name: "Wailing Tome +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5045",
@@ -109,7 +110,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wayfinder Epic Badge"] = new RulesElement({
+  te = Magic_Item["Wayfinder Epic Badge"] = new engine.RulesElement({
     name: "Wayfinder Epic Badge",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5385",
@@ -122,7 +123,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wayfinder Heroic Badge"] = new RulesElement({
+  te = Magic_Item["Wayfinder Heroic Badge"] = new engine.RulesElement({
     name: "Wayfinder Heroic Badge",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5039",
@@ -131,7 +132,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wayfinder Paragon Badge"] = new RulesElement({
+  te = Magic_Item["Wayfinder Paragon Badge"] = new engine.RulesElement({
     name: "Wayfinder Paragon Badge",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5384",
@@ -141,4 +142,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

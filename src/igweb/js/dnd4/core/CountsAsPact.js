@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var CountsAsPact = types['CountsAsPact'] || (types['CountsAsPact'] = {});
-  te = CountsAsPact["Dark Pact"] = new RulesElement({
+  te = CountsAsPact["Dark Pact"] = new engine.RulesElement({
     name: "Dark Pact",
     type: "CountsAsPact",
     id: "ID_INTERNAL_COUNTSASPACT_DARK_PACT",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsPact["Fey Pact"] = new RulesElement({
+  te = CountsAsPact["Fey Pact"] = new engine.RulesElement({
     name: "Fey Pact",
     type: "CountsAsPact",
     id: "ID_INTERNAL_COUNTSASPACT_FEY_PACT",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsPact["Infernal Pact"] = new RulesElement({
+  te = CountsAsPact["Infernal Pact"] = new engine.RulesElement({
     name: "Infernal Pact",
     type: "CountsAsPact",
     id: "ID_INTERNAL_COUNTSASPACT_INFERNAL_PACT",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsPact["Star Pact"] = new RulesElement({
+  te = CountsAsPact["Star Pact"] = new engine.RulesElement({
     name: "Star Pact",
     type: "CountsAsPact",
     id: "ID_INTERNAL_COUNTSASPACT_STAR_PACT",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsPact["Vestige Pact"] = new RulesElement({
+  te = CountsAsPact["Vestige Pact"] = new engine.RulesElement({
     name: "Vestige Pact",
     type: "CountsAsPact",
     id: "ID_INTERNAL_COUNTSASPACT_VESTIGE_PACT",
@@ -53,4 +54,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

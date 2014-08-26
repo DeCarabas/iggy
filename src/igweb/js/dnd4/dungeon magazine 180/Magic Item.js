@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Awe of the Dragon's Altar (epic tier)"] = new RulesElement({
+  te = Magic_Item["Awe of the Dragon's Altar (epic tier)"] = new engine.RulesElement({
     name: "Awe of the Dragon's Altar (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9281",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Awe of the Dragon's Altar (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Awe of the Dragon's Altar (heroic tier)"] = new engine.RulesElement({
     name: "Awe of the Dragon's Altar (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9277",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Awe of the Dragon's Altar (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Awe of the Dragon's Altar (paragon tier)"] = new engine.RulesElement({
     name: "Awe of the Dragon's Altar (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9279",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Deadstone Weapon +1"] = new RulesElement({
+  te = Magic_Item["Deadstone Weapon +1"] = new engine.RulesElement({
     name: "Deadstone Weapon +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9271",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Deadstone Weapon +2"] = new RulesElement({
+  te = Magic_Item["Deadstone Weapon +2"] = new engine.RulesElement({
     name: "Deadstone Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9272",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Plague of the Dragon's Altar (epic tier)"] = new RulesElement({
+  te = Magic_Item["Plague of the Dragon's Altar (epic tier)"] = new engine.RulesElement({
     name: "Plague of the Dragon's Altar (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9287",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Plague of the Dragon's Altar (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Plague of the Dragon's Altar (heroic tier)"] = new engine.RulesElement({
     name: "Plague of the Dragon's Altar (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9283",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Plague of the Dragon's Altar (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Plague of the Dragon's Altar (paragon tier)"] = new engine.RulesElement({
     name: "Plague of the Dragon's Altar (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9285",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Scar of the Dragon's Altar (epic tier)"] = new RulesElement({
+  te = Magic_Item["Scar of the Dragon's Altar (epic tier)"] = new engine.RulesElement({
     name: "Scar of the Dragon's Altar (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9293",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Scar of the Dragon's Altar (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Scar of the Dragon's Altar (heroic tier)"] = new engine.RulesElement({
     name: "Scar of the Dragon's Altar (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9289",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Scar of the Dragon's Altar (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Scar of the Dragon's Altar (paragon tier)"] = new engine.RulesElement({
     name: "Scar of the Dragon's Altar (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9291",
@@ -116,4 +117,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

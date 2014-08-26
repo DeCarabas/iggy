@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Familiar = types['Familiar'] || (types['Familiar'] = {});
-  te = Familiar["Oso de la Fez, Former Show Bear"] = new RulesElement({
+  te = Familiar["Oso de la Fez, Former Show Bear"] = new engine.RulesElement({
     name: "Oso de la Fez, Former Show Bear",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_55",
@@ -20,4 +21,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

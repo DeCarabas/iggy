@@ -17,7 +17,7 @@ requirejs.config({
 });
 
 requirejs(
-  ['./sheetui', './engine', './dnd4data'],
+  ['./sheetui', './engine', './dnd4/all'],
   function(sheetui, engine, elements) {
 
     // Kick it all off.

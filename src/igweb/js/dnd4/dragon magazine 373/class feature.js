@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Blight Action"] = new RulesElement({
+  te = class_feature["Blight Action"] = new engine.RulesElement({
     name: "Blight Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1502",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Blightborn"] = new RulesElement({
+  te = class_feature["Blightborn"] = new engine.RulesElement({
     name: "Blightborn",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1504",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Blighted Wild Shape"] = new RulesElement({
+  te = class_feature["Blighted Wild Shape"] = new engine.RulesElement({
     name: "Blighted Wild Shape",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1503",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Choking Grab Dexterity"] = new RulesElement({
+  te = class_feature["Choking Grab Dexterity"] = new engine.RulesElement({
     name: "Choking Grab Dexterity",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_CHOKING_GRAB_DEXTERITY",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Choking Grab Strength"] = new RulesElement({
+  te = class_feature["Choking Grab Strength"] = new engine.RulesElement({
     name: "Choking Grab Strength",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_CHOKING_GRAB_STRENGTH",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Insidious Curse"] = new RulesElement({
+  te = class_feature["Insidious Curse"] = new engine.RulesElement({
     name: "Insidious Curse",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1506",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Nightmarish Action"] = new RulesElement({
+  te = class_feature["Nightmarish Action"] = new engine.RulesElement({
     name: "Nightmarish Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1505",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Shaking Displays"] = new RulesElement({
+  te = class_feature["Shaking Displays"] = new engine.RulesElement({
     name: "Shaking Displays",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1507",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Strangler's Hold Dexterity"] = new RulesElement({
+  te = class_feature["Strangler's Hold Dexterity"] = new engine.RulesElement({
     name: "Strangler's Hold Dexterity",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_STRANGLER'S_HOLD_DEXTERITY",
@@ -100,7 +101,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Strangler's Hold Strength"] = new RulesElement({
+  te = class_feature["Strangler's Hold Strength"] = new engine.RulesElement({
     name: "Strangler's Hold Strength",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_STRANGLER'S_HOLD_STRENGTH",
@@ -110,4 +111,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

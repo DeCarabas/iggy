@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Comrades' Succor"] = new RulesElement({
+  te = Ritual["Comrades' Succor"] = new engine.RulesElement({
     name: "Comrades' Succor",
     type: "Ritual",
     id: "ID_FMP_RITUAL_297",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Ghost Walk"] = new RulesElement({
+  te = Ritual["Ghost Walk"] = new engine.RulesElement({
     name: "Ghost Walk",
     type: "Ritual",
     id: "ID_FMP_RITUAL_298",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Hunter's Blessing"] = new RulesElement({
+  te = Ritual["Hunter's Blessing"] = new engine.RulesElement({
     name: "Hunter's Blessing",
     type: "Ritual",
     id: "ID_FMP_RITUAL_299",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Hunter's Curse"] = new RulesElement({
+  te = Ritual["Hunter's Curse"] = new engine.RulesElement({
     name: "Hunter's Curse",
     type: "Ritual",
     id: "ID_FMP_RITUAL_300",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Spirit Fetch"] = new RulesElement({
+  te = Ritual["Spirit Fetch"] = new engine.RulesElement({
     name: "Spirit Fetch",
     type: "Ritual",
     id: "ID_FMP_RITUAL_301",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Vistani Passkey"] = new RulesElement({
+  te = Ritual["Vistani Passkey"] = new engine.RulesElement({
     name: "Vistani Passkey",
     type: "Ritual",
     id: "ID_FMP_RITUAL_302",
@@ -68,4 +69,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -57,7 +57,7 @@ define(['jquery'],function($) {
 
         this.visible = true;
         this.update();
-        updateFields();
+        updateFields(this._model);
       }
     },
     update: function () {
@@ -86,7 +86,7 @@ define(['jquery'],function($) {
             row.addClass('selectedRow');
             row.removeClass('rowHover');
 
-            updateFields();
+            updateFields(that._model);
           });
 
           if (choice.choice === re) {
@@ -125,42 +125,42 @@ define(['jquery'],function($) {
   }
 
   var special = {
-    strHalfLevel: function () {
+    strHalfLevel: function (model) {
       return model.stat("Strength modifier") + model.stat("HALF-LEVEL");
     },
-    conHalfLevel: function () {
+    conHalfLevel: function (model) {
       return model.stat("Constitution modifier") + model.stat("HALF-LEVEL");
     },
-    dexHalfLevel: function () {
+    dexHalfLevel: function (model) {
       return model.stat("Dexterity modifier") + model.stat("HALF-LEVEL");
     },
-    intHalfLevel: function () {
+    intHalfLevel: function (model) {
       return model.stat("Intelligence modifier") + model.stat("HALF-LEVEL");
     },
-    wisHalfLevel: function () {
+    wisHalfLevel: function (model) {
       return model.stat("Wisdom modifier") + model.stat("HALF-LEVEL");
     },
-    chaHalfLevel: function () {
+    chaHalfLevel: function (model) {
       return model.stat("Charisma modifier") + model.stat("HALF-LEVEL");
     },
-    tenHalfLevel: function () {
+    tenHalfLevel: function (model) {
       return 10 + model.stat("HALF-LEVEL");
     },
-    bloodiedHP: function () {
+    bloodiedHP: function (model) {
       return Math.floor(model.stat("Hit Points") / 2);
     },
-    surgeValue: function () {
+    surgeValue: function (model) {
       return Math.floor(model.stat("Hit Points") / 4);
     },
-    passiveInsight: function () {
+    passiveInsight: function (model) {
       return model.stat("Insight") + 10;
     },
-    passivePerception: function () {
+    passivePerception: function (model) {
       return model.stat("Perception") + 10;
     }
   };
 
-  function updateFields() {
+  function updateFields(model) {
     $("[data-boundStat]:visible").each(function () {
       var value;
       var elem = $(this);
@@ -181,7 +181,7 @@ define(['jquery'],function($) {
 
     $("[data-special]:visible").each(function () {
       var elem = $(this);
-      elem.val(special[elem.attr("data-special")]());
+      elem.val(special[elem.attr("data-special")](model));
     });
 
     $("[data-boundText]:visible").each(function () {
@@ -215,7 +215,7 @@ define(['jquery'],function($) {
       var elem = $(this);
       elem.change(function () {
         model.override(elem.attr("data-boundStat"), elem.val());
-        updateFields();
+        updateFields(model);
       });
     });
 

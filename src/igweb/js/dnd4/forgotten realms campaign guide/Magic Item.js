@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Crown Jewel of Chessenta"] = new RulesElement({
+  te = Magic_Item["Crown Jewel of Chessenta"] = new engine.RulesElement({
     name: "Crown Jewel of Chessenta",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1241",
@@ -23,7 +24,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Crown of Whispers (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Crown of Whispers (heroic tier)"] = new engine.RulesElement({
     name: "Crown of Whispers (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1233",
@@ -36,7 +37,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goblin Totem +1"] = new RulesElement({
+  te = Magic_Item["Goblin Totem +1"] = new engine.RulesElement({
     name: "Goblin Totem +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1234",
@@ -48,7 +49,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goblin Totem +2"] = new RulesElement({
+  te = Magic_Item["Goblin Totem +2"] = new engine.RulesElement({
     name: "Goblin Totem +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1235",
@@ -60,7 +61,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goblin Totem +3"] = new RulesElement({
+  te = Magic_Item["Goblin Totem +3"] = new engine.RulesElement({
     name: "Goblin Totem +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1236",
@@ -72,7 +73,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goblin Totem +4"] = new RulesElement({
+  te = Magic_Item["Goblin Totem +4"] = new engine.RulesElement({
     name: "Goblin Totem +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1237",
@@ -84,7 +85,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goblin Totem +5"] = new RulesElement({
+  te = Magic_Item["Goblin Totem +5"] = new engine.RulesElement({
     name: "Goblin Totem +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1238",
@@ -96,7 +97,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goblin Totem +6"] = new RulesElement({
+  te = Magic_Item["Goblin Totem +6"] = new engine.RulesElement({
     name: "Goblin Totem +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1239",
@@ -108,7 +109,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Greatsword of Impiltur +3"] = new RulesElement({
+  te = Magic_Item["Greatsword of Impiltur +3"] = new engine.RulesElement({
     name: "Greatsword of Impiltur +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1240",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Horn Totem +1"] = new RulesElement({
+  te = Magic_Item["Horn Totem +1"] = new engine.RulesElement({
     name: "Horn Totem +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1231",
@@ -129,7 +130,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Manshoon's Bloodmask"] = new RulesElement({
+  te = Magic_Item["Manshoon's Bloodmask"] = new engine.RulesElement({
     name: "Manshoon's Bloodmask",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1242",
@@ -139,7 +140,7 @@
       model.statadd("Saving Throws", function() { /* against charm effects */ return 6; }, "item");
       model.statadd("Insight Misc", 6, "item");
       model.statadd("resist:ranged", 10, "resist");
-      model.grant(elements.id["ID_INTERNAL_VISION_SEE_INVISIBLE"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_SEE_INVISIBLE"]);
       model.statadd("Fortitude Defense", 6, "Enhancement");
       model.statadd("Reflex Defense", 6, "Enhancement");
       model.statadd("Will Defense", 6, "Enhancement");
@@ -147,7 +148,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Marlspire of Najara"] = new RulesElement({
+  te = Magic_Item["Marlspire of Najara"] = new engine.RulesElement({
     name: "Marlspire of Najara",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1243",
@@ -159,7 +160,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Scepter of the Chosen Tyrant"] = new RulesElement({
+  te = Magic_Item["Scepter of the Chosen Tyrant"] = new engine.RulesElement({
     name: "Scepter of the Chosen Tyrant",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1244",
@@ -172,7 +173,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Skull Totem +1"] = new RulesElement({
+  te = Magic_Item["Skull Totem +1"] = new engine.RulesElement({
     name: "Skull Totem +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1232",
@@ -184,7 +185,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Thakorsil's Seat"] = new RulesElement({
+  te = Magic_Item["Thakorsil's Seat"] = new engine.RulesElement({
     name: "Thakorsil's Seat",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1245",
@@ -194,4 +195,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

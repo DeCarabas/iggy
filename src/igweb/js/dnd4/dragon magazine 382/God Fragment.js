@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var God_Fragment = types['God Fragment'] || (types['God Fragment'] = {});
-  te = God_Fragment["Fragment of Avandra"] = new RulesElement({
+  te = God_Fragment["Fragment of Avandra"] = new engine.RulesElement({
     name: "Fragment of Avandra",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_0",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Bahamut"] = new RulesElement({
+  te = God_Fragment["Fragment of Bahamut"] = new engine.RulesElement({
     name: "Fragment of Bahamut",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_1",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Corellon"] = new RulesElement({
+  te = God_Fragment["Fragment of Corellon"] = new engine.RulesElement({
     name: "Fragment of Corellon",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_2",
@@ -44,7 +45,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Erathis"] = new RulesElement({
+  te = God_Fragment["Fragment of Erathis"] = new engine.RulesElement({
     name: "Fragment of Erathis",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_3",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Ioun"] = new RulesElement({
+  te = God_Fragment["Fragment of Ioun"] = new engine.RulesElement({
     name: "Fragment of Ioun",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_4",
@@ -66,7 +67,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Kord"] = new RulesElement({
+  te = God_Fragment["Fragment of Kord"] = new engine.RulesElement({
     name: "Fragment of Kord",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_5",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Melora"] = new RulesElement({
+  te = God_Fragment["Fragment of Melora"] = new engine.RulesElement({
     name: "Fragment of Melora",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_6",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Moradin"] = new RulesElement({
+  te = God_Fragment["Fragment of Moradin"] = new engine.RulesElement({
     name: "Fragment of Moradin",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_7",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Pelor"] = new RulesElement({
+  te = God_Fragment["Fragment of Pelor"] = new engine.RulesElement({
     name: "Fragment of Pelor",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_8",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of Sehanine"] = new RulesElement({
+  te = God_Fragment["Fragment of Sehanine"] = new engine.RulesElement({
     name: "Fragment of Sehanine",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_10",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = God_Fragment["Fragment of The Raven Queen"] = new RulesElement({
+  te = God_Fragment["Fragment of The Raven Queen"] = new engine.RulesElement({
     name: "Fragment of The Raven Queen",
     type: "God Fragment",
     id: "ID_FMP_GOD_FRAGMENT_9",
@@ -137,4 +138,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

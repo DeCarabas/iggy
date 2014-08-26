@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Slaying Stone of Kiris Dahn (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Slaying Stone of Kiris Dahn (paragon tier)"] = new engine.RulesElement({
     name: "Slaying Stone of Kiris Dahn (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9155",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Triflik's Blade +1"] = new RulesElement({
+  te = Magic_Item["Triflik's Blade +1"] = new engine.RulesElement({
     name: "Triflik's Blade +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9156",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Triflik's Blade +2"] = new RulesElement({
+  te = Magic_Item["Triflik's Blade +2"] = new engine.RulesElement({
     name: "Triflik's Blade +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9157",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Triflik's Blade +3"] = new RulesElement({
+  te = Magic_Item["Triflik's Blade +3"] = new engine.RulesElement({
     name: "Triflik's Blade +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9158",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Triflik's Blade +4"] = new RulesElement({
+  te = Magic_Item["Triflik's Blade +4"] = new engine.RulesElement({
     name: "Triflik's Blade +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9159",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Triflik's Blade +5"] = new RulesElement({
+  te = Magic_Item["Triflik's Blade +5"] = new engine.RulesElement({
     name: "Triflik's Blade +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9160",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Triflik's Blade +6"] = new RulesElement({
+  te = Magic_Item["Triflik's Blade +6"] = new engine.RulesElement({
     name: "Triflik's Blade +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9161",
@@ -71,4 +72,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

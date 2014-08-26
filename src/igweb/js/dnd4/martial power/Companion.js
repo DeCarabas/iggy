@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Companion = types['Companion'] || (types['Companion'] = {});
-  te = Companion["Bear"] = new RulesElement({
+  te = Companion["Bear"] = new engine.RulesElement({
     name: "Bear",
     type: "Companion",
     id: "ID_FMP_COMPANION_1",
@@ -20,12 +21,12 @@
       model.statadd("Companion.Intelligence", 6);
       model.statadd("Companion.Wisdom", 12);
       model.statadd("Companion.Charisma", 6);
-      model.grant(elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
+      model.grant(model.elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
     }
   });
   byID[te.id] = te;
   
-  te = Companion["Boar"] = new RulesElement({
+  te = Companion["Boar"] = new engine.RulesElement({
     name: "Boar",
     type: "Companion",
     id: "ID_FMP_COMPANION_2",
@@ -38,12 +39,12 @@
       model.statadd("Companion.Intelligence", 6);
       model.statadd("Companion.Wisdom", 12);
       model.statadd("Companion.Charisma", 6);
-      model.grant(elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
+      model.grant(model.elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
     }
   });
   byID[te.id] = te;
   
-  te = Companion["Cat"] = new RulesElement({
+  te = Companion["Cat"] = new engine.RulesElement({
     name: "Cat",
     type: "Companion",
     id: "ID_FMP_COMPANION_3",
@@ -56,12 +57,12 @@
       model.statadd("Companion.Intelligence", 6);
       model.statadd("Companion.Wisdom", 14);
       model.statadd("Companion.Charisma", 6);
-      model.grant(elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
+      model.grant(model.elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
     }
   });
   byID[te.id] = te;
   
-  te = Companion["Lizard"] = new RulesElement({
+  te = Companion["Lizard"] = new engine.RulesElement({
     name: "Lizard",
     type: "Companion",
     id: "ID_FMP_COMPANION_4",
@@ -74,12 +75,12 @@
       model.statadd("Companion.Intelligence", 6);
       model.statadd("Companion.Wisdom", 12);
       model.statadd("Companion.Charisma", 6);
-      model.grant(elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
+      model.grant(model.elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
     }
   });
   byID[te.id] = te;
   
-  te = Companion["Raptor"] = new RulesElement({
+  te = Companion["Raptor"] = new engine.RulesElement({
     name: "Raptor",
     type: "Companion",
     id: "ID_FMP_COMPANION_5",
@@ -92,12 +93,12 @@
       model.statadd("Companion.Intelligence", 6);
       model.statadd("Companion.Wisdom", 12);
       model.statadd("Companion.Charisma", 6);
-      model.grant(elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
+      model.grant(model.elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
     }
   });
   byID[te.id] = te;
   
-  te = Companion["Serpent"] = new RulesElement({
+  te = Companion["Serpent"] = new engine.RulesElement({
     name: "Serpent",
     type: "Companion",
     id: "ID_FMP_COMPANION_6",
@@ -110,12 +111,12 @@
       model.statadd("Companion.Intelligence", 6);
       model.statadd("Companion.Wisdom", 12);
       model.statadd("Companion.Charisma", 6);
-      model.grant(elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
+      model.grant(model.elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
     }
   });
   byID[te.id] = te;
   
-  te = Companion["Spider"] = new RulesElement({
+  te = Companion["Spider"] = new engine.RulesElement({
     name: "Spider",
     type: "Companion",
     id: "ID_FMP_COMPANION_7",
@@ -128,12 +129,12 @@
       model.statadd("Companion.Intelligence", 6);
       model.statadd("Companion.Wisdom", 12);
       model.statadd("Companion.Charisma", 6);
-      model.grant(elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
+      model.grant(model.elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
     }
   });
   byID[te.id] = te;
   
-  te = Companion["Wolf"] = new RulesElement({
+  te = Companion["Wolf"] = new engine.RulesElement({
     name: "Wolf",
     type: "Companion",
     id: "ID_FMP_COMPANION_8",
@@ -146,10 +147,14 @@
       model.statadd("Companion.Intelligence", 6);
       model.statadd("Companion.Wisdom", 14);
       model.statadd("Companion.Charisma", 6);
-      model.grant(elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
+      model.grant(model.elements.id["ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

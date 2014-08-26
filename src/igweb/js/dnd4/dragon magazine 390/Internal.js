@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Internal = types['Internal'] || (types['Internal'] = {});
-  te = Internal["Circle of Smoke and Whispers"] = new RulesElement({
+  te = Internal["Circle of Smoke and Whispers"] = new engine.RulesElement({
     name: "Circle of Smoke and Whispers",
     type: "Internal",
     id: "ID_INTERNAL_INTERNAL_CIRCLE_OF_SMOKE_AND_WHISPERS",
@@ -17,4 +18,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Aura Mask"] = new RulesElement({
+  te = Ritual["Aura Mask"] = new engine.RulesElement({
     name: "Aura Mask",
     type: "Ritual",
     id: "ID_FMP_RITUAL_159",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Cauldron's Rebirth"] = new RulesElement({
+  te = Ritual["Cauldron's Rebirth"] = new engine.RulesElement({
     name: "Cauldron's Rebirth",
     type: "Ritual",
     id: "ID_FMP_RITUAL_166",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Chamber of Vulnerability"] = new RulesElement({
+  te = Ritual["Chamber of Vulnerability"] = new engine.RulesElement({
     name: "Chamber of Vulnerability",
     type: "Ritual",
     id: "ID_FMP_RITUAL_160",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Disorienting Portal"] = new RulesElement({
+  te = Ritual["Disorienting Portal"] = new engine.RulesElement({
     name: "Disorienting Portal",
     type: "Ritual",
     id: "ID_FMP_RITUAL_161",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Easy Passage"] = new RulesElement({
+  te = Ritual["Easy Passage"] = new engine.RulesElement({
     name: "Easy Passage",
     type: "Ritual",
     id: "ID_FMP_RITUAL_162",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["False Aura"] = new RulesElement({
+  te = Ritual["False Aura"] = new engine.RulesElement({
     name: "False Aura",
     type: "Ritual",
     id: "ID_FMP_RITUAL_296",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Sentinel Eye"] = new RulesElement({
+  te = Ritual["Sentinel Eye"] = new engine.RulesElement({
     name: "Sentinel Eye",
     type: "Ritual",
     id: "ID_FMP_RITUAL_163",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Ward the True Name"] = new RulesElement({
+  te = Ritual["Ward the True Name"] = new engine.RulesElement({
     name: "Ward the True Name",
     type: "Ritual",
     id: "ID_FMP_RITUAL_164",
@@ -88,4 +89,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

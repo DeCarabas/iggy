@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Weapon = types['Weapon'] || (types['Weapon'] = {});
-  te = Weapon["Blowgun"] = new RulesElement({
+  te = Weapon["Blowgun"] = new engine.RulesElement({
     name: "Blowgun",
     type: "Weapon",
     id: "ID_FMP_WEAPON_77",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Blowgun (Large)"] = new RulesElement({
+  te = Weapon["Blowgun (Large)"] = new engine.RulesElement({
     name: "Blowgun (Large)",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_LARGE_BLOWGUN",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Garrote"] = new RulesElement({
+  te = Weapon["Garrote"] = new engine.RulesElement({
     name: "Garrote",
     type: "Weapon",
     id: "ID_FMP_WEAPON_78",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Garrote (Large)"] = new RulesElement({
+  te = Weapon["Garrote (Large)"] = new engine.RulesElement({
     name: "Garrote (Large)",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_LARGE_GARROTE",
@@ -44,4 +45,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

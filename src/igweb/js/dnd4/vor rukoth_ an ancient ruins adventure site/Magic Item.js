@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Devil's Claw +2"] = new RulesElement({
+  te = Magic_Item["Devil's Claw +2"] = new engine.RulesElement({
     name: "Devil's Claw +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9190",
@@ -22,7 +23,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devil's Claw +3"] = new RulesElement({
+  te = Magic_Item["Devil's Claw +3"] = new engine.RulesElement({
     name: "Devil's Claw +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9191",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devil's Claw +4"] = new RulesElement({
+  te = Magic_Item["Devil's Claw +4"] = new engine.RulesElement({
     name: "Devil's Claw +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9192",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devil's Claw +5"] = new RulesElement({
+  te = Magic_Item["Devil's Claw +5"] = new engine.RulesElement({
     name: "Devil's Claw +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9193",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devil's Claw +6"] = new RulesElement({
+  te = Magic_Item["Devil's Claw +6"] = new engine.RulesElement({
     name: "Devil's Claw +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9194",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ever-Fading Armor +2"] = new RulesElement({
+  te = Magic_Item["Ever-Fading Armor +2"] = new engine.RulesElement({
     name: "Ever-Fading Armor +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9201",
@@ -95,7 +96,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ever-Fading Armor +3"] = new RulesElement({
+  te = Magic_Item["Ever-Fading Armor +3"] = new engine.RulesElement({
     name: "Ever-Fading Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9202",
@@ -108,7 +109,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ever-Fading Armor +4"] = new RulesElement({
+  te = Magic_Item["Ever-Fading Armor +4"] = new engine.RulesElement({
     name: "Ever-Fading Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9203",
@@ -121,7 +122,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ever-Fading Armor +5"] = new RulesElement({
+  te = Magic_Item["Ever-Fading Armor +5"] = new engine.RulesElement({
     name: "Ever-Fading Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9204",
@@ -134,7 +135,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ever-Fading Armor +6"] = new RulesElement({
+  te = Magic_Item["Ever-Fading Armor +6"] = new engine.RulesElement({
     name: "Ever-Fading Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9205",
@@ -147,7 +148,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orium Implement +1"] = new RulesElement({
+  te = Magic_Item["Orium Implement +1"] = new engine.RulesElement({
     name: "Orium Implement +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9195",
@@ -156,7 +157,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orium Implement +2"] = new RulesElement({
+  te = Magic_Item["Orium Implement +2"] = new engine.RulesElement({
     name: "Orium Implement +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9196",
@@ -165,7 +166,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orium Implement +3"] = new RulesElement({
+  te = Magic_Item["Orium Implement +3"] = new engine.RulesElement({
     name: "Orium Implement +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9197",
@@ -174,7 +175,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orium Implement +4"] = new RulesElement({
+  te = Magic_Item["Orium Implement +4"] = new engine.RulesElement({
     name: "Orium Implement +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9198",
@@ -183,7 +184,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orium Implement +5"] = new RulesElement({
+  te = Magic_Item["Orium Implement +5"] = new engine.RulesElement({
     name: "Orium Implement +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9199",
@@ -192,7 +193,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orium Implement +6"] = new RulesElement({
+  te = Magic_Item["Orium Implement +6"] = new engine.RulesElement({
     name: "Orium Implement +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9200",
@@ -201,7 +202,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Shard of Decay (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Shard of Decay (paragon tier)"] = new engine.RulesElement({
     name: "Shard of Decay (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9189",
@@ -215,4 +216,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

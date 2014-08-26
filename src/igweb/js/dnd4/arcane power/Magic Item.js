@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Book of Undeniable Fire +1"] = new RulesElement({
+  te = Magic_Item["Book of Undeniable Fire +1"] = new engine.RulesElement({
     name: "Book of Undeniable Fire +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4885",
@@ -22,7 +23,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Book of Undeniable Fire +2"] = new RulesElement({
+  te = Magic_Item["Book of Undeniable Fire +2"] = new engine.RulesElement({
     name: "Book of Undeniable Fire +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4886",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Book of Undeniable Fire +3"] = new RulesElement({
+  te = Magic_Item["Book of Undeniable Fire +3"] = new engine.RulesElement({
     name: "Book of Undeniable Fire +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4887",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Book of Undeniable Fire +4"] = new RulesElement({
+  te = Magic_Item["Book of Undeniable Fire +4"] = new engine.RulesElement({
     name: "Book of Undeniable Fire +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4888",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Book of Undeniable Fire +5"] = new RulesElement({
+  te = Magic_Item["Book of Undeniable Fire +5"] = new engine.RulesElement({
     name: "Book of Undeniable Fire +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4889",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Book of Undeniable Fire +6"] = new RulesElement({
+  te = Magic_Item["Book of Undeniable Fire +6"] = new engine.RulesElement({
     name: "Book of Undeniable Fire +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4890",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Magic Tome +1"] = new RulesElement({
+  te = Magic_Item["Magic Tome +1"] = new engine.RulesElement({
     name: "Magic Tome +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4891",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Magic Tome +2"] = new RulesElement({
+  te = Magic_Item["Magic Tome +2"] = new engine.RulesElement({
     name: "Magic Tome +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4892",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Magic Tome +3"] = new RulesElement({
+  te = Magic_Item["Magic Tome +3"] = new engine.RulesElement({
     name: "Magic Tome +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4893",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Magic Tome +4"] = new RulesElement({
+  te = Magic_Item["Magic Tome +4"] = new engine.RulesElement({
     name: "Magic Tome +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4894",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Magic Tome +5"] = new RulesElement({
+  te = Magic_Item["Magic Tome +5"] = new engine.RulesElement({
     name: "Magic Tome +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4895",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Magic Tome +6"] = new RulesElement({
+  te = Magic_Item["Magic Tome +6"] = new engine.RulesElement({
     name: "Magic Tome +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4896",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Summoner's Tome +1"] = new RulesElement({
+  te = Magic_Item["Summoner's Tome +1"] = new engine.RulesElement({
     name: "Summoner's Tome +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4897",
@@ -168,7 +169,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Summoner's Tome +2"] = new RulesElement({
+  te = Magic_Item["Summoner's Tome +2"] = new engine.RulesElement({
     name: "Summoner's Tome +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4898",
@@ -185,7 +186,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Summoner's Tome +3"] = new RulesElement({
+  te = Magic_Item["Summoner's Tome +3"] = new engine.RulesElement({
     name: "Summoner's Tome +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4899",
@@ -202,7 +203,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Summoner's Tome +4"] = new RulesElement({
+  te = Magic_Item["Summoner's Tome +4"] = new engine.RulesElement({
     name: "Summoner's Tome +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4900",
@@ -219,7 +220,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Summoner's Tome +5"] = new RulesElement({
+  te = Magic_Item["Summoner's Tome +5"] = new engine.RulesElement({
     name: "Summoner's Tome +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4901",
@@ -236,7 +237,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Summoner's Tome +6"] = new RulesElement({
+  te = Magic_Item["Summoner's Tome +6"] = new engine.RulesElement({
     name: "Summoner's Tome +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4902",
@@ -253,7 +254,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Timeless Tome +6"] = new RulesElement({
+  te = Magic_Item["Timeless Tome +6"] = new engine.RulesElement({
     name: "Timeless Tome +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4903",
@@ -262,7 +263,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Arrest +1"] = new RulesElement({
+  te = Magic_Item["Tome of Arrest +1"] = new engine.RulesElement({
     name: "Tome of Arrest +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4904",
@@ -271,7 +272,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Arrest +2"] = new RulesElement({
+  te = Magic_Item["Tome of Arrest +2"] = new engine.RulesElement({
     name: "Tome of Arrest +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4905",
@@ -280,7 +281,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Arrest +3"] = new RulesElement({
+  te = Magic_Item["Tome of Arrest +3"] = new engine.RulesElement({
     name: "Tome of Arrest +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4906",
@@ -289,7 +290,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Arrest +4"] = new RulesElement({
+  te = Magic_Item["Tome of Arrest +4"] = new engine.RulesElement({
     name: "Tome of Arrest +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4907",
@@ -298,7 +299,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Arrest +5"] = new RulesElement({
+  te = Magic_Item["Tome of Arrest +5"] = new engine.RulesElement({
     name: "Tome of Arrest +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4908",
@@ -307,7 +308,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Arrest +6"] = new RulesElement({
+  te = Magic_Item["Tome of Arrest +6"] = new engine.RulesElement({
     name: "Tome of Arrest +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4909",
@@ -316,7 +317,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Forty Steps +1"] = new RulesElement({
+  te = Magic_Item["Tome of Forty Steps +1"] = new engine.RulesElement({
     name: "Tome of Forty Steps +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4910",
@@ -325,7 +326,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Forty Steps +2"] = new RulesElement({
+  te = Magic_Item["Tome of Forty Steps +2"] = new engine.RulesElement({
     name: "Tome of Forty Steps +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4911",
@@ -334,7 +335,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Forty Steps +3"] = new RulesElement({
+  te = Magic_Item["Tome of Forty Steps +3"] = new engine.RulesElement({
     name: "Tome of Forty Steps +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4912",
@@ -343,7 +344,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Forty Steps +4"] = new RulesElement({
+  te = Magic_Item["Tome of Forty Steps +4"] = new engine.RulesElement({
     name: "Tome of Forty Steps +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4913",
@@ -352,7 +353,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Forty Steps +5"] = new RulesElement({
+  te = Magic_Item["Tome of Forty Steps +5"] = new engine.RulesElement({
     name: "Tome of Forty Steps +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4914",
@@ -361,7 +362,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Forty Steps +6"] = new RulesElement({
+  te = Magic_Item["Tome of Forty Steps +6"] = new engine.RulesElement({
     name: "Tome of Forty Steps +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4915",
@@ -370,7 +371,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the North Wind +1"] = new RulesElement({
+  te = Magic_Item["Tome of the North Wind +1"] = new engine.RulesElement({
     name: "Tome of the North Wind +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4916",
@@ -385,7 +386,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the North Wind +2"] = new RulesElement({
+  te = Magic_Item["Tome of the North Wind +2"] = new engine.RulesElement({
     name: "Tome of the North Wind +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4917",
@@ -400,7 +401,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the North Wind +3"] = new RulesElement({
+  te = Magic_Item["Tome of the North Wind +3"] = new engine.RulesElement({
     name: "Tome of the North Wind +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4918",
@@ -415,7 +416,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the North Wind +4"] = new RulesElement({
+  te = Magic_Item["Tome of the North Wind +4"] = new engine.RulesElement({
     name: "Tome of the North Wind +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4919",
@@ -430,7 +431,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the North Wind +5"] = new RulesElement({
+  te = Magic_Item["Tome of the North Wind +5"] = new engine.RulesElement({
     name: "Tome of the North Wind +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4920",
@@ -445,7 +446,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the North Wind +6"] = new RulesElement({
+  te = Magic_Item["Tome of the North Wind +6"] = new engine.RulesElement({
     name: "Tome of the North Wind +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4921",
@@ -460,7 +461,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the Replenishing Flame +1"] = new RulesElement({
+  te = Magic_Item["Tome of the Replenishing Flame +1"] = new engine.RulesElement({
     name: "Tome of the Replenishing Flame +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4922",
@@ -475,7 +476,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the Replenishing Flame +2"] = new RulesElement({
+  te = Magic_Item["Tome of the Replenishing Flame +2"] = new engine.RulesElement({
     name: "Tome of the Replenishing Flame +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4923",
@@ -490,7 +491,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the Replenishing Flame +3"] = new RulesElement({
+  te = Magic_Item["Tome of the Replenishing Flame +3"] = new engine.RulesElement({
     name: "Tome of the Replenishing Flame +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4924",
@@ -505,7 +506,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the Replenishing Flame +4"] = new RulesElement({
+  te = Magic_Item["Tome of the Replenishing Flame +4"] = new engine.RulesElement({
     name: "Tome of the Replenishing Flame +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4925",
@@ -520,7 +521,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the Replenishing Flame +5"] = new RulesElement({
+  te = Magic_Item["Tome of the Replenishing Flame +5"] = new engine.RulesElement({
     name: "Tome of the Replenishing Flame +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4926",
@@ -535,7 +536,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of the Replenishing Flame +6"] = new RulesElement({
+  te = Magic_Item["Tome of the Replenishing Flame +6"] = new engine.RulesElement({
     name: "Tome of the Replenishing Flame +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4927",
@@ -551,4 +552,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

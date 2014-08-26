@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Class = types['Class'] || (types['Class'] = {});
-  te = Class["Assassin"] = new RulesElement({
+  te = Class["Assassin"] = new engine.RulesElement({
     name: "Assassin",
     type: "Class",
     id: "ID_FMP_CLASS_466",
@@ -15,7 +16,7 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=466",
     categories: ["Assassin", "ID_FMP_CLASS_466"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_GRANTS_ASSASSIN"]);
+      model.grant(model.elements.id["ID_INTERNAL_GRANTS_ASSASSIN"]);
       model.select('Power', 2, {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
@@ -38,4 +39,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

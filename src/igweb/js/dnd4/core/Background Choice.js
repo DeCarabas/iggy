@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Background_Choice = types['Background Choice'] || (types['Background Choice'] = {});
-  te = Background_Choice["+2 to Acrobatics"] = new RulesElement({
+  te = Background_Choice["+2 to Acrobatics"] = new engine.RulesElement({
     name: "+2 to Acrobatics",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_ACROBATICS",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Arcana"] = new RulesElement({
+  te = Background_Choice["+2 to Arcana"] = new engine.RulesElement({
     name: "+2 to Arcana",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_ARCANA",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Athletics"] = new RulesElement({
+  te = Background_Choice["+2 to Athletics"] = new engine.RulesElement({
     name: "+2 to Athletics",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_ATHLETICS",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Bluff"] = new RulesElement({
+  te = Background_Choice["+2 to Bluff"] = new engine.RulesElement({
     name: "+2 to Bluff",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_BLUFF",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Diplomacy"] = new RulesElement({
+  te = Background_Choice["+2 to Diplomacy"] = new engine.RulesElement({
     name: "+2 to Diplomacy",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_DIPLOMACY",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Dungeoneering"] = new RulesElement({
+  te = Background_Choice["+2 to Dungeoneering"] = new engine.RulesElement({
     name: "+2 to Dungeoneering",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_DUNGEONEERING",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Endurance"] = new RulesElement({
+  te = Background_Choice["+2 to Endurance"] = new engine.RulesElement({
     name: "+2 to Endurance",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_ENDURANCE",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Heal"] = new RulesElement({
+  te = Background_Choice["+2 to Heal"] = new engine.RulesElement({
     name: "+2 to Heal",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_HEAL",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to History"] = new RulesElement({
+  te = Background_Choice["+2 to History"] = new engine.RulesElement({
     name: "+2 to History",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_HISTORY",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Insight"] = new RulesElement({
+  te = Background_Choice["+2 to Insight"] = new engine.RulesElement({
     name: "+2 to Insight",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_INSIGHT",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Intimidate"] = new RulesElement({
+  te = Background_Choice["+2 to Intimidate"] = new engine.RulesElement({
     name: "+2 to Intimidate",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_INTIMIDATE",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Nature"] = new RulesElement({
+  te = Background_Choice["+2 to Nature"] = new engine.RulesElement({
     name: "+2 to Nature",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_NATURE",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Perception"] = new RulesElement({
+  te = Background_Choice["+2 to Perception"] = new engine.RulesElement({
     name: "+2 to Perception",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_PERCEPTION",
@@ -163,7 +164,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Religion"] = new RulesElement({
+  te = Background_Choice["+2 to Religion"] = new engine.RulesElement({
     name: "+2 to Religion",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_RELIGION",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Stealth"] = new RulesElement({
+  te = Background_Choice["+2 to Stealth"] = new engine.RulesElement({
     name: "+2 to Stealth",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_STEALTH",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Streetwise"] = new RulesElement({
+  te = Background_Choice["+2 to Streetwise"] = new engine.RulesElement({
     name: "+2 to Streetwise",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_STREETWISE",
@@ -199,7 +200,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["+2 to Thievery"] = new RulesElement({
+  te = Background_Choice["+2 to Thievery"] = new engine.RulesElement({
     name: "+2 to Thievery",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_+2_TO_THIEVERY",
@@ -211,7 +212,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Acrobatics class skill"] = new RulesElement({
+  te = Background_Choice["Acrobatics class skill"] = new engine.RulesElement({
     name: "Acrobatics class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_ACROBATICS_CLASS_SKILL",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Arcana class skill"] = new RulesElement({
+  te = Background_Choice["Arcana class skill"] = new engine.RulesElement({
     name: "Arcana class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_ARCANA_CLASS_SKILL",
@@ -235,7 +236,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Athletics class skill"] = new RulesElement({
+  te = Background_Choice["Athletics class skill"] = new engine.RulesElement({
     name: "Athletics class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_ATHLETICS_CLASS_SKILL",
@@ -247,7 +248,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Bluff class skill"] = new RulesElement({
+  te = Background_Choice["Bluff class skill"] = new engine.RulesElement({
     name: "Bluff class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_BLUFF_CLASS_SKILL",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Diplomacy class skill"] = new RulesElement({
+  te = Background_Choice["Diplomacy class skill"] = new engine.RulesElement({
     name: "Diplomacy class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_DIPLOMACY_CLASS_SKILL",
@@ -271,7 +272,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Dungeoneering class skill"] = new RulesElement({
+  te = Background_Choice["Dungeoneering class skill"] = new engine.RulesElement({
     name: "Dungeoneering class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_DUNGEONEERING_CLASS_SKILL",
@@ -283,7 +284,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Endurance class skill"] = new RulesElement({
+  te = Background_Choice["Endurance class skill"] = new engine.RulesElement({
     name: "Endurance class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_ENDURANCE_CLASS_SKILL",
@@ -295,7 +296,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Heal class skill"] = new RulesElement({
+  te = Background_Choice["Heal class skill"] = new engine.RulesElement({
     name: "Heal class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_HEAL_CLASS_SKILL",
@@ -307,7 +308,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["History class skill"] = new RulesElement({
+  te = Background_Choice["History class skill"] = new engine.RulesElement({
     name: "History class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_HISTORY_CLASS_SKILL",
@@ -319,7 +320,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Insight class skill"] = new RulesElement({
+  te = Background_Choice["Insight class skill"] = new engine.RulesElement({
     name: "Insight class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_INSIGHT_CLASS_SKILL",
@@ -331,7 +332,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Intimidate class skill"] = new RulesElement({
+  te = Background_Choice["Intimidate class skill"] = new engine.RulesElement({
     name: "Intimidate class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_INTIMIDATE_CLASS_SKILL",
@@ -343,283 +344,283 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Abyssal"] = new RulesElement({
+  te = Background_Choice["Learn Abyssal"] = new engine.RulesElement({
     name: "Learn Abyssal",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_ABYSSAL",
     source: "Core",
     categories: ["Learn Abyssal", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_ABYSSAL", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_7"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_7"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn All"] = new RulesElement({
+  te = Background_Choice["Learn All"] = new engine.RulesElement({
     name: "Learn All",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_ALL",
     source: "Core",
     categories: ["Learn All", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_ALL", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_LANGUAGE_ALL"]);
+      model.grant(model.elements.id["ID_INTERNAL_LANGUAGE_ALL"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Argon"] = new RulesElement({
+  te = Background_Choice["Learn Argon"] = new engine.RulesElement({
     name: "Learn Argon",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_ARGON",
     source: "Core",
     categories: ["Learn Argon", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_ARGON", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_37"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_37"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Chondathan"] = new RulesElement({
+  te = Background_Choice["Learn Chondathan"] = new engine.RulesElement({
     name: "Learn Chondathan",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_CHONDATHAN",
     source: "Core",
     categories: ["Learn Chondathan", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_CHONDATHAN", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_34"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_34"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Common"] = new RulesElement({
+  te = Background_Choice["Learn Common"] = new engine.RulesElement({
     name: "Learn Common",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_COMMON",
     source: "Core",
     categories: ["Learn Common", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_COMMON", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_1"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_1"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Damaran"] = new RulesElement({
+  te = Background_Choice["Learn Damaran"] = new engine.RulesElement({
     name: "Learn Damaran",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_DAMARAN",
     source: "Core",
     categories: ["Learn Damaran", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_DAMARAN", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_28"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_28"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Deep Speech"] = new RulesElement({
+  te = Background_Choice["Learn Deep Speech"] = new engine.RulesElement({
     name: "Learn Deep Speech",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_DEEP_SPEECH",
     source: "Core",
     categories: ["Learn Deep Speech", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_DEEP_SPEECH", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_18"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_18"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Draconic"] = new RulesElement({
+  te = Background_Choice["Learn Draconic"] = new engine.RulesElement({
     name: "Learn Draconic",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_DRACONIC",
     source: "Core",
     categories: ["Learn Draconic", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_DRACONIC", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Dwarven"] = new RulesElement({
+  te = Background_Choice["Learn Dwarven"] = new engine.RulesElement({
     name: "Learn Dwarven",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_DWARVEN",
     source: "Core",
     categories: ["Learn Dwarven", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_DWARVEN", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_3"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_3"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Elven"] = new RulesElement({
+  te = Background_Choice["Learn Elven"] = new engine.RulesElement({
     name: "Learn Elven",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_ELVEN",
     source: "Core",
     categories: ["Learn Elven", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_ELVEN", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_4"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_4"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Giant"] = new RulesElement({
+  te = Background_Choice["Learn Giant"] = new engine.RulesElement({
     name: "Learn Giant",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_GIANT",
     source: "Core",
     categories: ["Learn Giant", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_GIANT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_19"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_19"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Goblin"] = new RulesElement({
+  te = Background_Choice["Learn Goblin"] = new engine.RulesElement({
     name: "Learn Goblin",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_GOBLIN",
     source: "Core",
     categories: ["Learn Goblin", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_GOBLIN", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_20"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_20"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Netherese"] = new RulesElement({
+  te = Background_Choice["Learn Netherese"] = new engine.RulesElement({
     name: "Learn Netherese",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_NETHERESE",
     source: "Core",
     categories: ["Learn Netherese", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_NETHERESE", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_29"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_29"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Primordial"] = new RulesElement({
+  te = Background_Choice["Learn Primordial"] = new engine.RulesElement({
     name: "Learn Primordial",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_PRIMORDIAL",
     source: "Core",
     categories: ["Learn Primordial", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_PRIMORDIAL", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_6"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_6"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Quori"] = new RulesElement({
+  te = Background_Choice["Learn Quori"] = new engine.RulesElement({
     name: "Learn Quori",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_QUORI",
     source: "Core",
     categories: ["Learn Quori", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_QUORI", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_38"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_38"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Riedran"] = new RulesElement({
+  te = Background_Choice["Learn Riedran"] = new engine.RulesElement({
     name: "Learn Riedran",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_RIEDRAN",
     source: "Core",
     categories: ["Learn Riedran", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_RIEDRAN", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_40"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_40"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Secret Language"] = new RulesElement({
+  te = Background_Choice["Learn Secret Language"] = new engine.RulesElement({
     name: "Learn Secret Language",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_SECRET_LANGUAGE",
     source: "Core",
     categories: ["Learn Secret Language", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_SECRET_LANGUAGE", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_LANGUAGE_SECRET_LANGUAGE"]);
+      model.grant(model.elements.id["ID_INTERNAL_LANGUAGE_SECRET_LANGUAGE"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Shou"] = new RulesElement({
+  te = Background_Choice["Learn Shou"] = new engine.RulesElement({
     name: "Learn Shou",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_SHOU",
     source: "Core",
     categories: ["Learn Shou", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_SHOU", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_30"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_30"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Supernal"] = new RulesElement({
+  te = Background_Choice["Learn Supernal"] = new engine.RulesElement({
     name: "Learn Supernal",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_SUPERNAL",
     source: "Core",
     categories: ["Learn Supernal", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_SUPERNAL", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_8"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_8"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Thayan"] = new RulesElement({
+  te = Background_Choice["Learn Thayan"] = new engine.RulesElement({
     name: "Learn Thayan",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_THAYAN",
     source: "Core",
     categories: ["Learn Thayan", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_THAYAN", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_31"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_31"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn The language of the mind"] = new RulesElement({
+  te = Background_Choice["Learn The language of the mind"] = new engine.RulesElement({
     name: "Learn The language of the mind",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_THE_LANGUAGE_OF_THE_MIND",
     source: "Core",
     categories: ["Learn The language of the mind", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_THE_LANGUAGE_OF_THE_MIND", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_45"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_45"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Tulgan"] = new RulesElement({
+  te = Background_Choice["Learn Tulgan"] = new engine.RulesElement({
     name: "Learn Tulgan",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_TULGAN",
     source: "Core",
     categories: ["Learn Tulgan", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_TULGAN", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_32"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_32"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Learn Untheric"] = new RulesElement({
+  te = Background_Choice["Learn Untheric"] = new engine.RulesElement({
     name: "Learn Untheric",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_UNTHERIC",
     source: "Core",
     categories: ["Learn Untheric", "ID_INTERNAL_BACKGROUND_CHOICE_LEARN_UNTHERIC", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_33"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_33"]);
     }
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Nature class skill"] = new RulesElement({
+  te = Background_Choice["Nature class skill"] = new engine.RulesElement({
     name: "Nature class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_NATURE_CLASS_SKILL",
@@ -631,7 +632,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Perception class skill"] = new RulesElement({
+  te = Background_Choice["Perception class skill"] = new engine.RulesElement({
     name: "Perception class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_PERCEPTION_CLASS_SKILL",
@@ -643,7 +644,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Religion class skill"] = new RulesElement({
+  te = Background_Choice["Religion class skill"] = new engine.RulesElement({
     name: "Religion class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_RELIGION_CLASS_SKILL",
@@ -655,7 +656,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Stealth class skill"] = new RulesElement({
+  te = Background_Choice["Stealth class skill"] = new engine.RulesElement({
     name: "Stealth class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_STEALTH_CLASS_SKILL",
@@ -667,7 +668,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Streetwise class skill"] = new RulesElement({
+  te = Background_Choice["Streetwise class skill"] = new engine.RulesElement({
     name: "Streetwise class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_STREETWISE_CLASS_SKILL",
@@ -679,7 +680,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Thievery class skill"] = new RulesElement({
+  te = Background_Choice["Thievery class skill"] = new engine.RulesElement({
     name: "Thievery class skill",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_THIEVERY_CLASS_SKILL",
@@ -692,4 +693,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

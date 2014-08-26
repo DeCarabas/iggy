@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Adept Dilettante"] = new RulesElement({
+  te = Feat["Adept Dilettante"] = new engine.RulesElement({
     name: "Adept Dilettante",
     type: "Feat",
     id: "ID_FMP_FEAT_2871",
@@ -17,12 +18,12 @@
     rules: function(model) {
       // NYI: [Dilettante]
       model.statadd("dilettante:key ability", "Con,Wis,Cha");
-      model.grant(elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
+      model.grant(model.elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Alchemical Affinity"] = new RulesElement({
+  te = Feat["Alchemical Affinity"] = new engine.RulesElement({
     name: "Alchemical Affinity",
     type: "Feat",
     id: "ID_FMP_FEAT_2864",
@@ -32,7 +33,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Alchemical Blood"] = new RulesElement({
+  te = Feat["Alchemical Blood"] = new engine.RulesElement({
     name: "Alchemical Blood",
     type: "Feat",
     id: "ID_FMP_FEAT_2865",
@@ -49,7 +50,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Ancestral Battle Accuracy"] = new RulesElement({
+  te = Feat["Ancestral Battle Accuracy"] = new engine.RulesElement({
     name: "Ancestral Battle Accuracy",
     type: "Feat",
     id: "ID_FMP_FEAT_2798",
@@ -59,7 +60,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Arcane Malice"] = new RulesElement({
+  te = Feat["Arcane Malice"] = new engine.RulesElement({
     name: "Arcane Malice",
     type: "Feat",
     id: "ID_FMP_FEAT_2838",
@@ -69,7 +70,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Ardent Tsucora Initiation"] = new RulesElement({
+  te = Feat["Ardent Tsucora Initiation"] = new engine.RulesElement({
     name: "Ardent Tsucora Initiation",
     type: "Feat",
     id: "ID_FMP_FEAT_2786",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Assassin's Challenge"] = new RulesElement({
+  te = Feat["Assassin's Challenge"] = new engine.RulesElement({
     name: "Assassin's Challenge",
     type: "Feat",
     id: "ID_FMP_FEAT_2812",
@@ -90,12 +91,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2812",
     categories: ["Assassin's Challenge", "ID_FMP_FEAT_2812"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Battlemind Duulora Initiation"] = new RulesElement({
+  te = Feat["Battlemind Duulora Initiation"] = new engine.RulesElement({
     name: "Battlemind Duulora Initiation",
     type: "Feat",
     id: "ID_FMP_FEAT_2787",
@@ -105,7 +106,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Beginner's Luck"] = new RulesElement({
+  te = Feat["Beginner's Luck"] = new engine.RulesElement({
     name: "Beginner's Luck",
     type: "Feat",
     id: "ID_FMP_FEAT_2804",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Betrayal of Zerthimon"] = new RulesElement({
+  te = Feat["Betrayal of Zerthimon"] = new engine.RulesElement({
     name: "Betrayal of Zerthimon",
     type: "Feat",
     id: "ID_FMP_FEAT_2813",
@@ -125,7 +126,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Bolstering Touch"] = new RulesElement({
+  te = Feat["Bolstering Touch"] = new engine.RulesElement({
     name: "Bolstering Touch",
     type: "Feat",
     id: "ID_FMP_FEAT_2872",
@@ -135,7 +136,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Coincidental Success"] = new RulesElement({
+  te = Feat["Coincidental Success"] = new engine.RulesElement({
     name: "Coincidental Success",
     type: "Feat",
     id: "ID_FMP_FEAT_2809",
@@ -145,7 +146,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Corrupting Attacks"] = new RulesElement({
+  te = Feat["Corrupting Attacks"] = new engine.RulesElement({
     name: "Corrupting Attacks",
     type: "Feat",
     id: "ID_FMP_FEAT_2839",
@@ -155,7 +156,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Cursed Shadow"] = new RulesElement({
+  te = Feat["Cursed Shadow"] = new engine.RulesElement({
     name: "Cursed Shadow",
     type: "Feat",
     id: "ID_FMP_FEAT_2814",
@@ -163,13 +164,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2814",
     categories: ["Cursed Shadow", "ID_FMP_FEAT_2814"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)"]);
-      model.grant(elements.id["ID_FMP_CLASS_FEATURE_604"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)"]);
+      model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_604"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Darkened Soul"] = new RulesElement({
+  te = Feat["Darkened Soul"] = new engine.RulesElement({
     name: "Darkened Soul",
     type: "Feat",
     id: "ID_FMP_FEAT_2834",
@@ -177,14 +178,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2834",
     categories: ["Darkened Soul", "ID_FMP_FEAT_2834", "ID_INTERNAL_CATEGORY_MULTICLASS_ASSASSIN", "Multiclass Assassin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_9402"]);
-      model.grant(elements.id["ID_INTERNAL_COUNTSASCLASS_ASSASSIN"]);
-      model.grant(elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
+      model.grant(model.elements.id["ID_FMP_POWER_9402"]);
+      model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_ASSASSIN"]);
+      model.grant(model.elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Darkness's Wings"] = new RulesElement({
+  te = Feat["Darkness's Wings"] = new engine.RulesElement({
     name: "Darkness's Wings",
     type: "Feat",
     id: "ID_FMP_FEAT_2815",
@@ -192,12 +193,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2815",
     categories: ["Darkness's Wings", "ID_FMP_FEAT_2815"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_VISION_DARKVISION"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_DARKVISION"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Defending Dabbler"] = new RulesElement({
+  te = Feat["Defending Dabbler"] = new engine.RulesElement({
     name: "Defending Dabbler",
     type: "Feat",
     id: "ID_FMP_FEAT_2873",
@@ -207,7 +208,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Defensive Wrath"] = new RulesElement({
+  te = Feat["Defensive Wrath"] = new engine.RulesElement({
     name: "Defensive Wrath",
     type: "Feat",
     id: "ID_FMP_FEAT_2874",
@@ -217,7 +218,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Disciplined Killer"] = new RulesElement({
+  te = Feat["Disciplined Killer"] = new engine.RulesElement({
     name: "Disciplined Killer",
     type: "Feat",
     id: "ID_FMP_FEAT_2816",
@@ -230,7 +231,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Distracting Coincidences"] = new RulesElement({
+  te = Feat["Distracting Coincidences"] = new engine.RulesElement({
     name: "Distracting Coincidences",
     type: "Feat",
     id: "ID_FMP_FEAT_2805",
@@ -240,7 +241,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Dual Mind Reserves"] = new RulesElement({
+  te = Feat["Dual Mind Reserves"] = new engine.RulesElement({
     name: "Dual Mind Reserves",
     type: "Feat",
     id: "ID_FMP_FEAT_2790",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Dual Mind Strength"] = new RulesElement({
+  te = Feat["Dual Mind Strength"] = new engine.RulesElement({
     name: "Dual Mind Strength",
     type: "Feat",
     id: "ID_FMP_FEAT_2788",
@@ -266,7 +267,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Dungeon Experience"] = new RulesElement({
+  te = Feat["Dungeon Experience"] = new engine.RulesElement({
     name: "Dungeon Experience",
     type: "Feat",
     id: "ID_FMP_FEAT_2835",
@@ -276,7 +277,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Earth Mote's Stability"] = new RulesElement({
+  te = Feat["Earth Mote's Stability"] = new engine.RulesElement({
     name: "Earth Mote's Stability",
     type: "Feat",
     id: "ID_FMP_FEAT_2840",
@@ -291,7 +292,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Effortless Dilettante"] = new RulesElement({
+  te = Feat["Effortless Dilettante"] = new engine.RulesElement({
     name: "Effortless Dilettante",
     type: "Feat",
     id: "ID_FMP_FEAT_2875",
@@ -301,7 +302,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Eilserv's Treachery"] = new RulesElement({
+  te = Feat["Eilserv's Treachery"] = new engine.RulesElement({
     name: "Eilserv's Treachery",
     type: "Feat",
     id: "ID_FMP_FEAT_2817",
@@ -311,7 +312,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Elven Resilience"] = new RulesElement({
+  te = Feat["Elven Resilience"] = new engine.RulesElement({
     name: "Elven Resilience",
     type: "Feat",
     id: "ID_FMP_FEAT_2799",
@@ -321,7 +322,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Encouraging Shield"] = new RulesElement({
+  te = Feat["Encouraging Shield"] = new engine.RulesElement({
     name: "Encouraging Shield",
     type: "Feat",
     id: "ID_FMP_FEAT_2860",
@@ -334,7 +335,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Eye of Death and Despair"] = new RulesElement({
+  te = Feat["Eye of Death and Despair"] = new engine.RulesElement({
     name: "Eye of Death and Despair",
     type: "Feat",
     id: "ID_FMP_FEAT_2818",
@@ -347,7 +348,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Far Shadow"] = new RulesElement({
+  te = Feat["Far Shadow"] = new engine.RulesElement({
     name: "Far Shadow",
     type: "Feat",
     id: "ID_FMP_FEAT_2819",
@@ -360,7 +361,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Ferocious Frenzy"] = new RulesElement({
+  te = Feat["Ferocious Frenzy"] = new engine.RulesElement({
     name: "Ferocious Frenzy",
     type: "Feat",
     id: "ID_FMP_FEAT_2781",
@@ -370,7 +371,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Flamespeed Shifting"] = new RulesElement({
+  te = Feat["Flamespeed Shifting"] = new engine.RulesElement({
     name: "Flamespeed Shifting",
     type: "Feat",
     id: "ID_FMP_FEAT_2841",
@@ -380,7 +381,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Flickering Fortunes"] = new RulesElement({
+  te = Feat["Flickering Fortunes"] = new engine.RulesElement({
     name: "Flickering Fortunes",
     type: "Feat",
     id: "ID_FMP_FEAT_2820",
@@ -393,7 +394,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Fortifying Word"] = new RulesElement({
+  te = Feat["Fortifying Word"] = new engine.RulesElement({
     name: "Fortifying Word",
     type: "Feat",
     id: "ID_FMP_FEAT_2866",
@@ -406,7 +407,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Fortunate Resistance"] = new RulesElement({
+  te = Feat["Fortunate Resistance"] = new engine.RulesElement({
     name: "Fortunate Resistance",
     type: "Feat",
     id: "ID_FMP_FEAT_2806",
@@ -416,7 +417,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Gambler's Initiative"] = new RulesElement({
+  te = Feat["Gambler's Initiative"] = new engine.RulesElement({
     name: "Gambler's Initiative",
     type: "Feat",
     id: "ID_FMP_FEAT_2807",
@@ -426,7 +427,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Ghostly Voyage"] = new RulesElement({
+  te = Feat["Ghostly Voyage"] = new engine.RulesElement({
     name: "Ghostly Voyage",
     type: "Feat",
     id: "ID_FMP_FEAT_2821",
@@ -439,7 +440,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Group Vigor"] = new RulesElement({
+  te = Feat["Group Vigor"] = new engine.RulesElement({
     name: "Group Vigor",
     type: "Feat",
     id: "ID_FMP_FEAT_2876",
@@ -449,7 +450,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Hindering Shield"] = new RulesElement({
+  te = Feat["Hindering Shield"] = new engine.RulesElement({
     name: "Hindering Shield",
     type: "Feat",
     id: "ID_FMP_FEAT_2862",
@@ -459,7 +460,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Holy Dilettante"] = new RulesElement({
+  te = Feat["Holy Dilettante"] = new engine.RulesElement({
     name: "Holy Dilettante",
     type: "Feat",
     id: "ID_FMP_FEAT_2877",
@@ -469,7 +470,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Honor's Path"] = new RulesElement({
+  te = Feat["Honor's Path"] = new engine.RulesElement({
     name: "Honor's Path",
     type: "Feat",
     id: "ID_FMP_FEAT_2782",
@@ -479,7 +480,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Horned Nightmare"] = new RulesElement({
+  te = Feat["Horned Nightmare"] = new engine.RulesElement({
     name: "Horned Nightmare",
     type: "Feat",
     id: "ID_FMP_FEAT_2822",
@@ -492,7 +493,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Hunting Shadow"] = new RulesElement({
+  te = Feat["Hunting Shadow"] = new engine.RulesElement({
     name: "Hunting Shadow",
     type: "Feat",
     id: "ID_FMP_FEAT_2823",
@@ -505,7 +506,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Insidious Shroud"] = new RulesElement({
+  te = Feat["Insidious Shroud"] = new engine.RulesElement({
     name: "Insidious Shroud",
     type: "Feat",
     id: "ID_FMP_FEAT_2824",
@@ -515,7 +516,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Light-Footed Warrior"] = new RulesElement({
+  te = Feat["Light-Footed Warrior"] = new engine.RulesElement({
     name: "Light-Footed Warrior",
     type: "Feat",
     id: "ID_FMP_FEAT_2791",
@@ -525,7 +526,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Lingering Fade"] = new RulesElement({
+  te = Feat["Lingering Fade"] = new engine.RulesElement({
     name: "Lingering Fade",
     type: "Feat",
     id: "ID_FMP_FEAT_2842",
@@ -539,7 +540,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Lucky Shot"] = new RulesElement({
+  te = Feat["Lucky Shot"] = new engine.RulesElement({
     name: "Lucky Shot",
     type: "Feat",
     id: "ID_FMP_FEAT_2808",
@@ -549,7 +550,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Master Communicator"] = new RulesElement({
+  te = Feat["Master Communicator"] = new engine.RulesElement({
     name: "Master Communicator",
     type: "Feat",
     id: "ID_FMP_FEAT_2878",
@@ -562,7 +563,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Memories of Destruction"] = new RulesElement({
+  te = Feat["Memories of Destruction"] = new engine.RulesElement({
     name: "Memories of Destruction",
     type: "Feat",
     id: "ID_FMP_FEAT_2843",
@@ -572,7 +573,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Menacing Sorcery"] = new RulesElement({
+  te = Feat["Menacing Sorcery"] = new engine.RulesElement({
     name: "Menacing Sorcery",
     type: "Feat",
     id: "ID_FMP_FEAT_2837",
@@ -582,7 +583,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Merciless Nature"] = new RulesElement({
+  te = Feat["Merciless Nature"] = new engine.RulesElement({
     name: "Merciless Nature",
     type: "Feat",
     id: "ID_FMP_FEAT_2827",
@@ -592,7 +593,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Minotaur Weapon Talent"] = new RulesElement({
+  te = Feat["Minotaur Weapon Talent"] = new engine.RulesElement({
     name: "Minotaur Weapon Talent",
     type: "Feat",
     id: "ID_FMP_FEAT_2783",
@@ -600,15 +601,15 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2783",
     categories: ["Minotaur Weapon Talent", "ID_FMP_FEAT_2783"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Murderous Hunter"] = new RulesElement({
+  te = Feat["Murderous Hunter"] = new engine.RulesElement({
     name: "Murderous Hunter",
     type: "Feat",
     id: "ID_FMP_FEAT_2828",
@@ -618,7 +619,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Opportune Chaos Burst"] = new RulesElement({
+  te = Feat["Opportune Chaos Burst"] = new engine.RulesElement({
     name: "Opportune Chaos Burst",
     type: "Feat",
     id: "ID_FMP_FEAT_2810",
@@ -628,7 +629,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Path of the Scarred"] = new RulesElement({
+  te = Feat["Path of the Scarred"] = new engine.RulesElement({
     name: "Path of the Scarred",
     type: "Feat",
     id: "ID_FMP_FEAT_2844",
@@ -644,7 +645,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Pernicious Onslaught"] = new RulesElement({
+  te = Feat["Pernicious Onslaught"] = new engine.RulesElement({
     name: "Pernicious Onslaught",
     type: "Feat",
     id: "ID_FMP_FEAT_2845",
@@ -654,7 +655,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Plague of Chance"] = new RulesElement({
+  te = Feat["Plague of Chance"] = new engine.RulesElement({
     name: "Plague of Chance",
     type: "Feat",
     id: "ID_FMP_FEAT_2846",
@@ -664,7 +665,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Plagued Breath"] = new RulesElement({
+  te = Feat["Plagued Breath"] = new engine.RulesElement({
     name: "Plagued Breath",
     type: "Feat",
     id: "ID_FMP_FEAT_2847",
@@ -679,7 +680,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Plagued Regeneration"] = new RulesElement({
+  te = Feat["Plagued Regeneration"] = new engine.RulesElement({
     name: "Plagued Regeneration",
     type: "Feat",
     id: "ID_FMP_FEAT_2848",
@@ -689,7 +690,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Plagueforged Accuracy"] = new RulesElement({
+  te = Feat["Plagueforged Accuracy"] = new engine.RulesElement({
     name: "Plagueforged Accuracy",
     type: "Feat",
     id: "ID_FMP_FEAT_2849",
@@ -699,7 +700,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Plaguing Bloodhunt"] = new RulesElement({
+  te = Feat["Plaguing Bloodhunt"] = new engine.RulesElement({
     name: "Plaguing Bloodhunt",
     type: "Feat",
     id: "ID_FMP_FEAT_2850",
@@ -715,7 +716,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Planar Blurring"] = new RulesElement({
+  te = Feat["Planar Blurring"] = new engine.RulesElement({
     name: "Planar Blurring",
     type: "Feat",
     id: "ID_FMP_FEAT_2851",
@@ -728,7 +729,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Poison Plague Feast"] = new RulesElement({
+  te = Feat["Poison Plague Feast"] = new engine.RulesElement({
     name: "Poison Plague Feast",
     type: "Feat",
     id: "ID_FMP_FEAT_2852",
@@ -738,7 +739,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Psion Hashalaq Initiation"] = new RulesElement({
+  te = Feat["Psion Hashalaq Initiation"] = new engine.RulesElement({
     name: "Psion Hashalaq Initiation",
     type: "Feat",
     id: "ID_FMP_FEAT_2789",
@@ -748,7 +749,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Pupil of the All-Father"] = new RulesElement({
+  te = Feat["Pupil of the All-Father"] = new engine.RulesElement({
     name: "Pupil of the All-Father",
     type: "Feat",
     id: "ID_FMP_FEAT_2867",
@@ -762,7 +763,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Ravenous Blessing"] = new RulesElement({
+  te = Feat["Ravenous Blessing"] = new engine.RulesElement({
     name: "Ravenous Blessing",
     type: "Feat",
     id: "ID_FMP_FEAT_2853",
@@ -772,7 +773,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Revitalizing Dabbler"] = new RulesElement({
+  te = Feat["Revitalizing Dabbler"] = new engine.RulesElement({
     name: "Revitalizing Dabbler",
     type: "Feat",
     id: "ID_FMP_FEAT_2879",
@@ -782,7 +783,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Roar of the Ancestors"] = new RulesElement({
+  te = Feat["Roar of the Ancestors"] = new engine.RulesElement({
     name: "Roar of the Ancestors",
     type: "Feat",
     id: "ID_FMP_FEAT_2792",
@@ -792,7 +793,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Roguish Killer"] = new RulesElement({
+  te = Feat["Roguish Killer"] = new engine.RulesElement({
     name: "Roguish Killer",
     type: "Feat",
     id: "ID_FMP_FEAT_2829",
@@ -802,7 +803,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Scar and Fury"] = new RulesElement({
+  te = Feat["Scar and Fury"] = new engine.RulesElement({
     name: "Scar and Fury",
     type: "Feat",
     id: "ID_FMP_FEAT_2854",
@@ -812,7 +813,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Scar of the Shadowweave"] = new RulesElement({
+  te = Feat["Scar of the Shadowweave"] = new engine.RulesElement({
     name: "Scar of the Shadowweave",
     type: "Feat",
     id: "ID_FMP_FEAT_2855",
@@ -822,7 +823,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shadowforged Killer"] = new RulesElement({
+  te = Feat["Shadowforged Killer"] = new engine.RulesElement({
     name: "Shadowforged Killer",
     type: "Feat",
     id: "ID_FMP_FEAT_2830",
@@ -832,7 +833,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shared Vitality"] = new RulesElement({
+  te = Feat["Shared Vitality"] = new engine.RulesElement({
     name: "Shared Vitality",
     type: "Feat",
     id: "ID_FMP_FEAT_2868",
@@ -842,7 +843,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Spellcharged Channel"] = new RulesElement({
+  te = Feat["Spellcharged Channel"] = new engine.RulesElement({
     name: "Spellcharged Channel",
     type: "Feat",
     id: "ID_FMP_FEAT_2856",
@@ -852,7 +853,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Spellscarred Invigoration"] = new RulesElement({
+  te = Feat["Spellscarred Invigoration"] = new engine.RulesElement({
     name: "Spellscarred Invigoration",
     type: "Feat",
     id: "ID_FMP_FEAT_2881",
@@ -862,7 +863,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Spellscarred Subterfuge"] = new RulesElement({
+  te = Feat["Spellscarred Subterfuge"] = new engine.RulesElement({
     name: "Spellscarred Subterfuge",
     type: "Feat",
     id: "ID_FMP_FEAT_2882",
@@ -878,7 +879,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Spirited Shadows"] = new RulesElement({
+  te = Feat["Spirited Shadows"] = new engine.RulesElement({
     name: "Spirited Shadows",
     type: "Feat",
     id: "ID_FMP_FEAT_2831",
@@ -891,7 +892,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Stone Cunning"] = new RulesElement({
+  te = Feat["Stone Cunning"] = new engine.RulesElement({
     name: "Stone Cunning",
     type: "Feat",
     id: "ID_FMP_FEAT_2869",
@@ -904,7 +905,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Swift Rider"] = new RulesElement({
+  te = Feat["Swift Rider"] = new engine.RulesElement({
     name: "Swift Rider",
     type: "Feat",
     id: "ID_FMP_FEAT_2800",
@@ -918,7 +919,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Symbol of the Sonnlinor"] = new RulesElement({
+  te = Feat["Symbol of the Sonnlinor"] = new engine.RulesElement({
     name: "Symbol of the Sonnlinor",
     type: "Feat",
     id: "ID_FMP_FEAT_2870",
@@ -926,20 +927,20 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2870",
     categories: ["Symbol of the Sonnlinor", "ID_FMP_FEAT_2870"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_HAMMER"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_AXE"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_PICK"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_HAMMER"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_AXE"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_PICK"]);
       model.statadd("implement hammer group:divine", 1);
       model.statadd("implement axe group:divine", 1);
       model.statadd("implement pick group:divine", 1);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAMMER_GROUP)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(AXE_GROUP)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PICK_GROUP)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HAMMER_GROUP)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(AXE_GROUP)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PICK_GROUP)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Tainted Darkness"] = new RulesElement({
+  te = Feat["Tainted Darkness"] = new engine.RulesElement({
     name: "Tainted Darkness",
     type: "Feat",
     id: "ID_FMP_FEAT_2857",
@@ -953,7 +954,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Tenacity for Living"] = new RulesElement({
+  te = Feat["Tenacity for Living"] = new engine.RulesElement({
     name: "Tenacity for Living",
     type: "Feat",
     id: "ID_FMP_FEAT_2858",
@@ -966,7 +967,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Traveler's Insight"] = new RulesElement({
+  te = Feat["Traveler's Insight"] = new engine.RulesElement({
     name: "Traveler's Insight",
     type: "Feat",
     id: "ID_FMP_FEAT_2836",
@@ -979,7 +980,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Ubiquitous Shield"] = new RulesElement({
+  te = Feat["Ubiquitous Shield"] = new engine.RulesElement({
     name: "Ubiquitous Shield",
     type: "Feat",
     id: "ID_FMP_FEAT_2863",
@@ -989,7 +990,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Unbalancing Shield Shove"] = new RulesElement({
+  te = Feat["Unbalancing Shield Shove"] = new engine.RulesElement({
     name: "Unbalancing Shield Shove",
     type: "Feat",
     id: "ID_FMP_FEAT_2861",
@@ -999,7 +1000,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Uncovered Hatred"] = new RulesElement({
+  te = Feat["Uncovered Hatred"] = new engine.RulesElement({
     name: "Uncovered Hatred",
     type: "Feat",
     id: "ID_FMP_FEAT_2832",
@@ -1009,7 +1010,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Unexpected Flourish"] = new RulesElement({
+  te = Feat["Unexpected Flourish"] = new engine.RulesElement({
     name: "Unexpected Flourish",
     type: "Feat",
     id: "ID_FMP_FEAT_2859",
@@ -1026,7 +1027,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Unlucky Teleport"] = new RulesElement({
+  te = Feat["Unlucky Teleport"] = new engine.RulesElement({
     name: "Unlucky Teleport",
     type: "Feat",
     id: "ID_FMP_FEAT_2811",
@@ -1039,7 +1040,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Valenar Dervish Stalwart"] = new RulesElement({
+  te = Feat["Valenar Dervish Stalwart"] = new engine.RulesElement({
     name: "Valenar Dervish Stalwart",
     type: "Feat",
     id: "ID_FMP_FEAT_2802",
@@ -1049,7 +1050,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Valenar Dervish Student"] = new RulesElement({
+  te = Feat["Valenar Dervish Student"] = new engine.RulesElement({
     name: "Valenar Dervish Student",
     type: "Feat",
     id: "ID_FMP_FEAT_2801",
@@ -1062,7 +1063,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Valenar Dervish Whirlwind"] = new RulesElement({
+  te = Feat["Valenar Dervish Whirlwind"] = new engine.RulesElement({
     name: "Valenar Dervish Whirlwind",
     type: "Feat",
     id: "ID_FMP_FEAT_2803",
@@ -1072,7 +1073,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Valenar Rider Training"] = new RulesElement({
+  te = Feat["Valenar Rider Training"] = new engine.RulesElement({
     name: "Valenar Rider Training",
     type: "Feat",
     id: "ID_FMP_FEAT_2793",
@@ -1080,8 +1081,8 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2793",
     categories: ["Valenar Rider Training", "ID_FMP_FEAT_2793"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_SIMPLE_SPEAR"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_SPEAR"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_SIMPLE_SPEAR"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_SPEAR"]);
       model.statadd("Shortbow:damage", function() { /* while you are riding a mount */ return 2; }, "Feat");
       model.statadd("spear group:damage", function() { /* while you are riding a mount */ return 2; }, "Feat");
       model.statadd("Valenar Rider Training", 1);
@@ -1090,7 +1091,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Valenar Weapon Training"] = new RulesElement({
+  te = Feat["Valenar Weapon Training"] = new engine.RulesElement({
     name: "Valenar Weapon Training",
     type: "Feat",
     id: "ID_FMP_FEAT_2794",
@@ -1098,9 +1099,9 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2794",
     categories: ["Valenar Weapon Training", "ID_FMP_FEAT_2794"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
       model.statadd("Valenar Weapon Training", 2);
       model.statadd("Scimitar:damage", function() { return model.stat("Valenar Weapon Training"); }, "Feat");
       model.statadd("Double Scimitar:damage", function() { return model.stat("Valenar Weapon Training"); }, "Feat");
@@ -1111,7 +1112,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Valenar Weapon Warding"] = new RulesElement({
+  te = Feat["Valenar Weapon Warding"] = new engine.RulesElement({
     name: "Valenar Weapon Warding",
     type: "Feat",
     id: "ID_FMP_FEAT_2795",
@@ -1133,7 +1134,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Vigilant Recovery"] = new RulesElement({
+  te = Feat["Vigilant Recovery"] = new engine.RulesElement({
     name: "Vigilant Recovery",
     type: "Feat",
     id: "ID_FMP_FEAT_2784",
@@ -1143,7 +1144,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Wild Dilettante"] = new RulesElement({
+  te = Feat["Wild Dilettante"] = new engine.RulesElement({
     name: "Wild Dilettante",
     type: "Feat",
     id: "ID_FMP_FEAT_2880",
@@ -1156,7 +1157,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Wild Grasp"] = new RulesElement({
+  te = Feat["Wild Grasp"] = new engine.RulesElement({
     name: "Wild Grasp",
     type: "Feat",
     id: "ID_FMP_FEAT_2796",
@@ -1166,7 +1167,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Word of Shadow"] = new RulesElement({
+  te = Feat["Word of Shadow"] = new engine.RulesElement({
     name: "Word of Shadow",
     type: "Feat",
     id: "ID_FMP_FEAT_2833",
@@ -1179,7 +1180,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Word of the Ancestors"] = new RulesElement({
+  te = Feat["Word of the Ancestors"] = new engine.RulesElement({
     name: "Word of the Ancestors",
     type: "Feat",
     id: "ID_FMP_FEAT_2797",
@@ -1193,4 +1194,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

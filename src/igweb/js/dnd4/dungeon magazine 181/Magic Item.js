@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Philter of the Fading Dream (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Philter of the Fading Dream (heroic tier)"] = new engine.RulesElement({
     name: "Philter of the Fading Dream (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9518",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ring of Circling Fangs (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Ring of Circling Fangs (paragon tier)"] = new engine.RulesElement({
     name: "Ring of Circling Fangs (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9749",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Whispers from Beyond (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Whispers from Beyond (heroic tier)"] = new engine.RulesElement({
     name: "Whispers from Beyond (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9750",
@@ -39,4 +40,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

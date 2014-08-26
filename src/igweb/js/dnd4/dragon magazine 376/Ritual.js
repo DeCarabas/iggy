@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Bravery Powder"] = new RulesElement({
+  te = Ritual["Bravery Powder"] = new engine.RulesElement({
     name: "Bravery Powder",
     type: "Ritual",
     id: "ID_FMP_RITUAL_282",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Corrosive Oil"] = new RulesElement({
+  te = Ritual["Corrosive Oil"] = new engine.RulesElement({
     name: "Corrosive Oil",
     type: "Ritual",
     id: "ID_FMP_RITUAL_281",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Rust Bomb"] = new RulesElement({
+  te = Ritual["Rust Bomb"] = new engine.RulesElement({
     name: "Rust Bomb",
     type: "Ritual",
     id: "ID_FMP_RITUAL_280",
@@ -38,4 +39,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

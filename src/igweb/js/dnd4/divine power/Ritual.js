@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Adjure"] = new RulesElement({
+  te = Ritual["Adjure"] = new engine.RulesElement({
     name: "Adjure",
     type: "Ritual",
     id: "ID_FMP_RITUAL_272",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Create Holy Water"] = new RulesElement({
+  te = Ritual["Create Holy Water"] = new engine.RulesElement({
     name: "Create Holy Water",
     type: "Ritual",
     id: "ID_FMP_RITUAL_273",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Ease Spirit"] = new RulesElement({
+  te = Ritual["Ease Spirit"] = new engine.RulesElement({
     name: "Ease Spirit",
     type: "Ritual",
     id: "ID_FMP_RITUAL_274",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Hallowed Temple"] = new RulesElement({
+  te = Ritual["Hallowed Temple"] = new engine.RulesElement({
     name: "Hallowed Temple",
     type: "Ritual",
     id: "ID_FMP_RITUAL_275",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Iron Vigil"] = new RulesElement({
+  te = Ritual["Iron Vigil"] = new engine.RulesElement({
     name: "Iron Vigil",
     type: "Ritual",
     id: "ID_FMP_RITUAL_276",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Mark of Justice"] = new RulesElement({
+  te = Ritual["Mark of Justice"] = new engine.RulesElement({
     name: "Mark of Justice",
     type: "Ritual",
     id: "ID_FMP_RITUAL_277",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Succor"] = new RulesElement({
+  te = Ritual["Succor"] = new engine.RulesElement({
     name: "Succor",
     type: "Ritual",
     id: "ID_FMP_RITUAL_278",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Thief's Lament"] = new RulesElement({
+  te = Ritual["Thief's Lament"] = new engine.RulesElement({
     name: "Thief's Lament",
     type: "Ritual",
     id: "ID_FMP_RITUAL_279",
@@ -88,4 +89,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Crownring of Tchazzar (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Crownring of Tchazzar (paragon tier)"] = new engine.RulesElement({
     name: "Crownring of Tchazzar (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9173",
@@ -20,7 +21,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devilblind Weapon +2"] = new RulesElement({
+  te = Magic_Item["Devilblind Weapon +2"] = new engine.RulesElement({
     name: "Devilblind Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9174",
@@ -32,7 +33,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devilblind Weapon +3"] = new RulesElement({
+  te = Magic_Item["Devilblind Weapon +3"] = new engine.RulesElement({
     name: "Devilblind Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9175",
@@ -44,7 +45,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devilblind Weapon +4"] = new RulesElement({
+  te = Magic_Item["Devilblind Weapon +4"] = new engine.RulesElement({
     name: "Devilblind Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9176",
@@ -56,7 +57,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devilblind Weapon +5"] = new RulesElement({
+  te = Magic_Item["Devilblind Weapon +5"] = new engine.RulesElement({
     name: "Devilblind Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9177",
@@ -68,7 +69,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Devilblind Weapon +6"] = new RulesElement({
+  te = Magic_Item["Devilblind Weapon +6"] = new engine.RulesElement({
     name: "Devilblind Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9178",
@@ -80,14 +81,14 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Scepter of Cimbar +3"] = new RulesElement({
+  te = Magic_Item["Scepter of Cimbar +3"] = new engine.RulesElement({
     name: "Scepter of Cimbar +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9171",
     source: "Dungeon Magazine 178",
     categories: ["Scepter of Cimbar +3", "ID_FMP_MAGIC_ITEM_9171"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_VISION_TELEPATHY"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_TELEPATHY"]);
       model.statadd("Insight Misc", 3, "item");
       model.statadd("Perception Misc", 3, "item");
       model.statadd("ID_FMP_ITEM_SET_40 Set Count", 1, "Scepter of Cimbar");
@@ -95,7 +96,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tiamat's Bloody Bulwark (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Tiamat's Bloody Bulwark (paragon tier)"] = new engine.RulesElement({
     name: "Tiamat's Bloody Bulwark (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9172",
@@ -108,4 +109,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

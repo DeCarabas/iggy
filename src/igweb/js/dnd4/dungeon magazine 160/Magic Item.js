@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Earthshaker Staff +3"] = new RulesElement({
+  te = Magic_Item["Earthshaker Staff +3"] = new engine.RulesElement({
     name: "Earthshaker Staff +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4536",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Earthshaker Staff +4"] = new RulesElement({
+  te = Magic_Item["Earthshaker Staff +4"] = new engine.RulesElement({
     name: "Earthshaker Staff +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4537",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Earthshaker Staff +5"] = new RulesElement({
+  te = Magic_Item["Earthshaker Staff +5"] = new engine.RulesElement({
     name: "Earthshaker Staff +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4538",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Earthshaker Staff +6"] = new RulesElement({
+  te = Magic_Item["Earthshaker Staff +6"] = new engine.RulesElement({
     name: "Earthshaker Staff +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4539",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Elderwood Falcon (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Elderwood Falcon (heroic tier)"] = new engine.RulesElement({
     name: "Elderwood Falcon (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4530",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ironwood Hound (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Ironwood Hound (heroic tier)"] = new engine.RulesElement({
     name: "Ironwood Hound (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4531",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Summer +3"] = new RulesElement({
+  te = Magic_Item["Weapon of Summer +3"] = new engine.RulesElement({
     name: "Weapon of Summer +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4540",
@@ -73,7 +74,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Summer +4"] = new RulesElement({
+  te = Magic_Item["Weapon of Summer +4"] = new engine.RulesElement({
     name: "Weapon of Summer +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4541",
@@ -85,7 +86,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Summer +5"] = new RulesElement({
+  te = Magic_Item["Weapon of Summer +5"] = new engine.RulesElement({
     name: "Weapon of Summer +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4542",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Summer +6"] = new RulesElement({
+  te = Magic_Item["Weapon of Summer +6"] = new engine.RulesElement({
     name: "Weapon of Summer +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4543",
@@ -109,7 +110,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wicked Fang +3"] = new RulesElement({
+  te = Magic_Item["Wicked Fang +3"] = new engine.RulesElement({
     name: "Wicked Fang +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4532",
@@ -118,7 +119,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wicked Fang +4"] = new RulesElement({
+  te = Magic_Item["Wicked Fang +4"] = new engine.RulesElement({
     name: "Wicked Fang +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4533",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wicked Fang +5"] = new RulesElement({
+  te = Magic_Item["Wicked Fang +5"] = new engine.RulesElement({
     name: "Wicked Fang +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4534",
@@ -136,7 +137,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wicked Fang +6"] = new RulesElement({
+  te = Magic_Item["Wicked Fang +6"] = new engine.RulesElement({
     name: "Wicked Fang +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4535",
@@ -146,4 +147,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

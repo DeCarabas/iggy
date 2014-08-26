@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Cleansing Challenge"] = new RulesElement({
+  te = Feat["Cleansing Challenge"] = new engine.RulesElement({
     name: "Cleansing Challenge",
     type: "Feat",
     id: "ID_FMP_FEAT_1086",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Dazing Rebuke"] = new RulesElement({
+  te = Feat["Dazing Rebuke"] = new engine.RulesElement({
     name: "Dazing Rebuke",
     type: "Feat",
     id: "ID_FMP_FEAT_1093",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Divine Boon"] = new RulesElement({
+  te = Feat["Divine Boon"] = new engine.RulesElement({
     name: "Divine Boon",
     type: "Feat",
     id: "ID_FMP_FEAT_1087",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Divine Purity"] = new RulesElement({
+  te = Feat["Divine Purity"] = new engine.RulesElement({
     name: "Divine Purity",
     type: "Feat",
     id: "ID_FMP_FEAT_1088",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Ghost Touched"] = new RulesElement({
+  te = Feat["Ghost Touched"] = new engine.RulesElement({
     name: "Ghost Touched",
     type: "Feat",
     id: "ID_FMP_FEAT_1097",
@@ -60,7 +61,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Greater Turning"] = new RulesElement({
+  te = Feat["Greater Turning"] = new engine.RulesElement({
     name: "Greater Turning",
     type: "Feat",
     id: "ID_FMP_FEAT_1089",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Purifying Light"] = new RulesElement({
+  te = Feat["Purifying Light"] = new engine.RulesElement({
     name: "Purifying Light",
     type: "Feat",
     id: "ID_FMP_FEAT_1090",
@@ -86,7 +87,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Radiant Hunter"] = new RulesElement({
+  te = Feat["Radiant Hunter"] = new engine.RulesElement({
     name: "Radiant Hunter",
     type: "Feat",
     id: "ID_FMP_FEAT_1094",
@@ -96,7 +97,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Radiant Soul"] = new RulesElement({
+  te = Feat["Radiant Soul"] = new engine.RulesElement({
     name: "Radiant Soul",
     type: "Feat",
     id: "ID_FMP_FEAT_1098",
@@ -109,7 +110,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Radiant Touch"] = new RulesElement({
+  te = Feat["Radiant Touch"] = new engine.RulesElement({
     name: "Radiant Touch",
     type: "Feat",
     id: "ID_FMP_FEAT_1091",
@@ -117,12 +118,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1091",
     categories: ["Radiant Touch", "ID_FMP_FEAT_1091"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_6578"]);
+      model.grant(model.elements.id["ID_FMP_POWER_6578"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Raven Queen Devotee"] = new RulesElement({
+  te = Feat["Raven Queen Devotee"] = new engine.RulesElement({
     name: "Raven Queen Devotee",
     type: "Feat",
     id: "ID_FMP_FEAT_1099",
@@ -135,7 +136,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shadow Born Warlock"] = new RulesElement({
+  te = Feat["Shadow Born Warlock"] = new engine.RulesElement({
     name: "Shadow Born Warlock",
     type: "Feat",
     id: "ID_FMP_FEAT_1095",
@@ -145,7 +146,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shadow Soul"] = new RulesElement({
+  te = Feat["Shadow Soul"] = new engine.RulesElement({
     name: "Shadow Soul",
     type: "Feat",
     id: "ID_FMP_FEAT_1100",
@@ -158,7 +159,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Student of Moil"] = new RulesElement({
+  te = Feat["Student of Moil"] = new engine.RulesElement({
     name: "Student of Moil",
     type: "Feat",
     id: "ID_FMP_FEAT_1092",
@@ -176,7 +177,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Undead Hunter"] = new RulesElement({
+  te = Feat["Undead Hunter"] = new engine.RulesElement({
     name: "Undead Hunter",
     type: "Feat",
     id: "ID_FMP_FEAT_1101",
@@ -189,7 +190,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Undead Ward"] = new RulesElement({
+  te = Feat["Undead Ward"] = new engine.RulesElement({
     name: "Undead Ward",
     type: "Feat",
     id: "ID_FMP_FEAT_1096",
@@ -199,7 +200,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Zombie Veteran"] = new RulesElement({
+  te = Feat["Zombie Veteran"] = new engine.RulesElement({
     name: "Zombie Veteran",
     type: "Feat",
     id: "ID_FMP_FEAT_1102",
@@ -213,4 +214,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

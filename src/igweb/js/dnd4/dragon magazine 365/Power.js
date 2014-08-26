@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Divine Tilt"] = new RulesElement({
+  te = Power["Divine Tilt"] = new engine.RulesElement({
     name: "Divine Tilt",
     type: "Power",
     id: "ID_FMP_POWER_4183",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Exultant Withdrawal"] = new RulesElement({
+  te = Power["Exultant Withdrawal"] = new engine.RulesElement({
     name: "Exultant Withdrawal",
     type: "Power",
     id: "ID_FMP_POWER_4179",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Favor of Tymora"] = new RulesElement({
+  te = Power["Favor of Tymora"] = new engine.RulesElement({
     name: "Favor of Tymora",
     type: "Power",
     id: "ID_FMP_POWER_4184",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Fiery Infusion"] = new RulesElement({
+  te = Power["Fiery Infusion"] = new engine.RulesElement({
     name: "Fiery Infusion",
     type: "Power",
     id: "ID_FMP_POWER_4139",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Healing Infusion: Restorative Formula"] = new RulesElement({
+  te = Power["Healing Infusion: Restorative Formula"] = new engine.RulesElement({
     name: "Healing Infusion: Restorative Formula",
     type: "Power",
     id: "ID_FMP_POWER_4127",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Hornet Shot"] = new RulesElement({
+  te = Power["Hornet Shot"] = new engine.RulesElement({
     name: "Hornet Shot",
     type: "Power",
     id: "ID_FMP_POWER_4153",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Impaling Strike"] = new RulesElement({
+  te = Power["Impaling Strike"] = new engine.RulesElement({
     name: "Impaling Strike",
     type: "Power",
     id: "ID_FMP_POWER_4178",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Inauspicious Vulnerability"] = new RulesElement({
+  te = Power["Inauspicious Vulnerability"] = new engine.RulesElement({
     name: "Inauspicious Vulnerability",
     type: "Power",
     id: "ID_FMP_POWER_4182",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Luckbolt"] = new RulesElement({
+  te = Power["Luckbolt"] = new engine.RulesElement({
     name: "Luckbolt",
     type: "Power",
     id: "ID_FMP_POWER_4181",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Repair Object"] = new RulesElement({
+  te = Power["Repair Object"] = new engine.RulesElement({
     name: "Repair Object",
     type: "Power",
     id: "ID_FMP_POWER_4197",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Stance of Legend"] = new RulesElement({
+  te = Power["Stance of Legend"] = new engine.RulesElement({
     name: "Stance of Legend",
     type: "Power",
     id: "ID_FMP_POWER_4211",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Taunting Press"] = new RulesElement({
+  te = Power["Taunting Press"] = new engine.RulesElement({
     name: "Taunting Press",
     type: "Power",
     id: "ID_FMP_POWER_4180",
@@ -128,4 +129,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

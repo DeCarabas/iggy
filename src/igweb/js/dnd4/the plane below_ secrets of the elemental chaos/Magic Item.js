@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Crystal of Ebon Flame"] = new RulesElement({
+  te = Magic_Item["Crystal of Ebon Flame"] = new engine.RulesElement({
     name: "Crystal of Ebon Flame",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8320",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Plastron of Tziphal"] = new RulesElement({
+  te = Magic_Item["Plastron of Tziphal"] = new engine.RulesElement({
     name: "Plastron of Tziphal",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8319",
@@ -35,7 +36,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wave"] = new RulesElement({
+  te = Magic_Item["Wave"] = new engine.RulesElement({
     name: "Wave",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8321",
@@ -48,4 +49,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

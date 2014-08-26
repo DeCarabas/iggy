@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Build_Suggestions = types['Build Suggestions'] || (types['Build Suggestions'] = {});
-  te = Build_Suggestions["Eagle Shaman"] = new RulesElement({
+  te = Build_Suggestions["Eagle Shaman"] = new engine.RulesElement({
     name: "Eagle Shaman",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_EAGLE_SHAMAN",
@@ -26,7 +27,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Life Warden"] = new RulesElement({
+  te = Build_Suggestions["Life Warden"] = new engine.RulesElement({
     name: "Life Warden",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_LIFE_WARDEN",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Storm Warden"] = new RulesElement({
+  te = Build_Suggestions["Storm Warden"] = new engine.RulesElement({
     name: "Storm Warden",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_STORM_WARDEN",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Swarm Druid"] = new RulesElement({
+  te = Build_Suggestions["Swarm Druid"] = new engine.RulesElement({
     name: "Swarm Druid",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_SWARM_DRUID",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Thunderborn Barbarian"] = new RulesElement({
+  te = Build_Suggestions["Thunderborn Barbarian"] = new engine.RulesElement({
     name: "Thunderborn Barbarian",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_THUNDERBORN_BARBARIAN",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Whirling Barbarian"] = new RulesElement({
+  te = Build_Suggestions["Whirling Barbarian"] = new engine.RulesElement({
     name: "Whirling Barbarian",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_WHIRLING_BARBARIAN",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["World Speaker Shaman"] = new RulesElement({
+  te = Build_Suggestions["World Speaker Shaman"] = new engine.RulesElement({
     name: "World Speaker Shaman",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_WORLD_SPEAKER_SHAMAN",
@@ -136,4 +137,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

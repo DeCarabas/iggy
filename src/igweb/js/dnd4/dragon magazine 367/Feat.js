@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Brutal Charge"] = new RulesElement({
+  te = Feat["Brutal Charge"] = new engine.RulesElement({
     name: "Brutal Charge",
     type: "Feat",
     id: "ID_FMP_FEAT_932",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Butcher's Lure"] = new RulesElement({
+  te = Feat["Butcher's Lure"] = new engine.RulesElement({
     name: "Butcher's Lure",
     type: "Feat",
     id: "ID_FMP_FEAT_926",
@@ -25,13 +26,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=926",
     categories: ["Butcher's Lure", "ID_FMP_FEAT_926"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_1217"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1217"]);
       model.statadd("Bluff Misc", function() { /* when using ghost sound to mimic specific people or sounds */ return 2; }, "Feat");
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Carrion Eater"] = new RulesElement({
+  te = Feat["Carrion Eater"] = new engine.RulesElement({
     name: "Carrion Eater",
     type: "Feat",
     id: "ID_FMP_FEAT_927",
@@ -45,7 +46,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Claw Fighter"] = new RulesElement({
+  te = Feat["Claw Fighter"] = new engine.RulesElement({
     name: "Claw Fighter",
     type: "Feat",
     id: "ID_FMP_FEAT_928",
@@ -54,12 +55,12 @@
     categories: ["Claw Fighter", "ID_FMP_FEAT_928"],
     rules: function(model) {
       model.statadd("FREEBEE:ID_INTERNAL_WEAPON_CLAW_FIGHTER_CLAW", 1);
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Drow Fighting Style"] = new RulesElement({
+  te = Feat["Drow Fighting Style"] = new engine.RulesElement({
     name: "Drow Fighting Style",
     type: "Feat",
     id: "ID_FMP_FEAT_933",
@@ -69,7 +70,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Drow Heretic"] = new RulesElement({
+  te = Feat["Drow Heretic"] = new engine.RulesElement({
     name: "Drow Heretic",
     type: "Feat",
     id: "ID_FMP_FEAT_934",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Earthshock Master"] = new RulesElement({
+  te = Feat["Earthshock Master"] = new engine.RulesElement({
     name: "Earthshock Master",
     type: "Feat",
     id: "ID_FMP_FEAT_921",
@@ -96,7 +97,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Fast Manifestation"] = new RulesElement({
+  te = Feat["Fast Manifestation"] = new engine.RulesElement({
     name: "Fast Manifestation",
     type: "Feat",
     id: "ID_FMP_FEAT_922",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Fierce Charge"] = new RulesElement({
+  te = Feat["Fierce Charge"] = new engine.RulesElement({
     name: "Fierce Charge",
     type: "Feat",
     id: "ID_FMP_FEAT_930",
@@ -116,7 +117,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Firepulse Master"] = new RulesElement({
+  te = Feat["Firepulse Master"] = new engine.RulesElement({
     name: "Firepulse Master",
     type: "Feat",
     id: "ID_FMP_FEAT_923",
@@ -130,7 +131,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Flickering Shroud"] = new RulesElement({
+  te = Feat["Flickering Shroud"] = new engine.RulesElement({
     name: "Flickering Shroud",
     type: "Feat",
     id: "ID_FMP_FEAT_938",
@@ -140,7 +141,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Genasi Fire Affinity"] = new RulesElement({
+  te = Feat["Genasi Fire Affinity"] = new engine.RulesElement({
     name: "Genasi Fire Affinity",
     type: "Feat",
     id: "ID_FMP_FEAT_920",
@@ -153,7 +154,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Genasi Frost Affinity"] = new RulesElement({
+  te = Feat["Genasi Frost Affinity"] = new engine.RulesElement({
     name: "Genasi Frost Affinity",
     type: "Feat",
     id: "ID_FMP_FEAT_924",
@@ -166,7 +167,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Gnoll Tracker"] = new RulesElement({
+  te = Feat["Gnoll Tracker"] = new engine.RulesElement({
     name: "Gnoll Tracker",
     type: "Feat",
     id: "ID_FMP_FEAT_929",
@@ -180,7 +181,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Highborn Drow"] = new RulesElement({
+  te = Feat["Highborn Drow"] = new engine.RulesElement({
     name: "Highborn Drow",
     type: "Feat",
     id: "ID_FMP_FEAT_939",
@@ -189,12 +190,12 @@
     categories: ["Highborn Drow", "ID_FMP_FEAT_939"],
     rules: function(model) {
       model.statadd("Arcana Misc", 2, "Feat");
-      model.grant(elements.id["ID_FMP_POWER_4790"]);
+      model.grant(model.elements.id["ID_FMP_POWER_4790"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Instinctive Darkness"] = new RulesElement({
+  te = Feat["Instinctive Darkness"] = new engine.RulesElement({
     name: "Instinctive Darkness",
     type: "Feat",
     id: "ID_FMP_FEAT_935",
@@ -204,7 +205,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Lolth's Meat"] = new RulesElement({
+  te = Feat["Lolth's Meat"] = new engine.RulesElement({
     name: "Lolth's Meat",
     type: "Feat",
     id: "ID_FMP_FEAT_936",
@@ -217,7 +218,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Primordial Surge"] = new RulesElement({
+  te = Feat["Primordial Surge"] = new engine.RulesElement({
     name: "Primordial Surge",
     type: "Feat",
     id: "ID_FMP_FEAT_925",
@@ -227,7 +228,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shadowborn"] = new RulesElement({
+  te = Feat["Shadowborn"] = new engine.RulesElement({
     name: "Shadowborn",
     type: "Feat",
     id: "ID_FMP_FEAT_940",
@@ -237,7 +238,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shadowslip"] = new RulesElement({
+  te = Feat["Shadowslip"] = new engine.RulesElement({
     name: "Shadowslip",
     type: "Feat",
     id: "ID_FMP_FEAT_937",
@@ -247,7 +248,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Swift Bite"] = new RulesElement({
+  te = Feat["Swift Bite"] = new engine.RulesElement({
     name: "Swift Bite",
     type: "Feat",
     id: "ID_FMP_FEAT_931",
@@ -258,4 +259,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

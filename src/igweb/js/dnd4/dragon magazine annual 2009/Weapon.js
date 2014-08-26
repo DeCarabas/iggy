@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Weapon = types['Weapon'] || (types['Weapon'] = {});
-  te = Weapon["Quarterstaff - Secondary End"] = new RulesElement({
+  te = Weapon["Quarterstaff - Secondary End"] = new engine.RulesElement({
     name: "Quarterstaff - Secondary End",
     type: "Weapon",
     id: "ID_INTERNAL_QUARTERSTAFF_SECONDARY_END",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Quarterstaff - Secondary End (Large)"] = new RulesElement({
+  te = Weapon["Quarterstaff - Secondary End (Large)"] = new engine.RulesElement({
     name: "Quarterstaff - Secondary End (Large)",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_LARGE_QUARTERSTAFF_-_SECONDARY_END",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Spiked Chain - Secondary End"] = new RulesElement({
+  te = Weapon["Spiked Chain - Secondary End"] = new engine.RulesElement({
     name: "Spiked Chain - Secondary End",
     type: "Weapon",
     id: "ID_INTERNAL_SPIKED_CHAIN_SECONDARY_END",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Spiked Chain - Secondary End (Large)"] = new RulesElement({
+  te = Weapon["Spiked Chain - Secondary End (Large)"] = new engine.RulesElement({
     name: "Spiked Chain - Secondary End (Large)",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_LARGE_SPIKED_CHAIN_-_SECONDARY_END",
@@ -44,4 +45,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual_Scroll = types['Ritual Scroll'] || (types['Ritual Scroll'] = {});
-  te = Ritual_Scroll["Scroll of Anthem of Unity"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Anthem of Unity"] = new engine.RulesElement({
     name: "Scroll of Anthem of Unity",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_ANTHEM_OF_UNITY",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Beast Growth"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Beast Growth"] = new engine.RulesElement({
     name: "Scroll of Beast Growth",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_BEAST_GROWTH",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Call of Friendship"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Call of Friendship"] = new engine.RulesElement({
     name: "Scroll of Call of Friendship",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_CALL_OF_FRIENDSHIP",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Detect Treasure"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Detect Treasure"] = new engine.RulesElement({
     name: "Scroll of Detect Treasure",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_DETECT_TREASURE",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Farsight"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Farsight"] = new engine.RulesElement({
     name: "Scroll of Farsight",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_FARSIGHT",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Fool's Gold"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Fool's Gold"] = new engine.RulesElement({
     name: "Scroll of Fool's Gold",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_FOOL'S_GOLD",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Guards and Wards"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Guards and Wards"] = new engine.RulesElement({
     name: "Scroll of Guards and Wards",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_GUARDS_AND_WARDS",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of History Revealed"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of History Revealed"] = new engine.RulesElement({
     name: "Scroll of History Revealed",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_HISTORY_REVEALED",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Imprisonment"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Imprisonment"] = new engine.RulesElement({
     name: "Scroll of Imprisonment",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_IMPRISONMENT",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Lower Water"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Lower Water"] = new engine.RulesElement({
     name: "Scroll of Lower Water",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_LOWER_WATER",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Magic Map"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Magic Map"] = new engine.RulesElement({
     name: "Scroll of Magic Map",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_MAGIC_MAP",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Object Reading"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Object Reading"] = new engine.RulesElement({
     name: "Scroll of Object Reading",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_OBJECT_READING",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Preserve Flame"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Preserve Flame"] = new engine.RulesElement({
     name: "Scroll of Preserve Flame",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_PRESERVE_FLAME",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Purify Water"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Purify Water"] = new engine.RulesElement({
     name: "Scroll of Purify Water",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_PURIFY_WATER",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Shrink"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Shrink"] = new engine.RulesElement({
     name: "Scroll of Shrink",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_SHRINK",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Telepathic Bond"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Telepathic Bond"] = new engine.RulesElement({
     name: "Scroll of Telepathic Bond",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_TELEPATHIC_BOND",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Unseen Servant"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Unseen Servant"] = new engine.RulesElement({
     name: "Scroll of Unseen Servant",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_UNSEEN_SERVANT",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Whispers of the Edifice"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Whispers of the Edifice"] = new engine.RulesElement({
     name: "Scroll of Whispers of the Edifice",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_WHISPERS_OF_THE_EDIFICE",
@@ -170,4 +171,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

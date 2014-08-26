@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Adaptable Maneuver"] = new RulesElement({
+  te = Power["Adaptable Maneuver"] = new engine.RulesElement({
     name: "Adaptable Maneuver",
     type: "Power",
     id: "ID_FMP_POWER_9369",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Bahamut's Shield"] = new RulesElement({
+  te = Power["Bahamut's Shield"] = new engine.RulesElement({
     name: "Bahamut's Shield",
     type: "Power",
     id: "ID_FMP_POWER_9389",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Blade Feint"] = new RulesElement({
+  te = Power["Blade Feint"] = new engine.RulesElement({
     name: "Blade Feint",
     type: "Power",
     id: "ID_FMP_POWER_9372",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Breath Weapon"] = new RulesElement({
+  te = Power["Breath Weapon"] = new engine.RulesElement({
     name: "Breath Weapon",
     type: "Power",
     id: "ID_FMP_POWER_9489",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Dancing Defense"] = new RulesElement({
+  te = Power["Dancing Defense"] = new engine.RulesElement({
     name: "Dancing Defense",
     type: "Power",
     id: "ID_FMP_POWER_9365",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Dragon Bite"] = new RulesElement({
+  te = Power["Dragon Bite"] = new engine.RulesElement({
     name: "Dragon Bite",
     type: "Power",
     id: "ID_FMP_POWER_9488",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Dragon's Rebuke"] = new RulesElement({
+  te = Power["Dragon's Rebuke"] = new engine.RulesElement({
     name: "Dragon's Rebuke",
     type: "Power",
     id: "ID_FMP_POWER_9386",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Elaborate Assault"] = new RulesElement({
+  te = Power["Elaborate Assault"] = new engine.RulesElement({
     name: "Elaborate Assault",
     type: "Power",
     id: "ID_FMP_POWER_9373",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Enemy Undone"] = new RulesElement({
+  te = Power["Enemy Undone"] = new engine.RulesElement({
     name: "Enemy Undone",
     type: "Power",
     id: "ID_FMP_POWER_9371",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Excoriating Strands"] = new RulesElement({
+  te = Power["Excoriating Strands"] = new engine.RulesElement({
     name: "Excoriating Strands",
     type: "Power",
     id: "ID_FMP_POWER_9398",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Explosive Outburst"] = new RulesElement({
+  te = Power["Explosive Outburst"] = new engine.RulesElement({
     name: "Explosive Outburst",
     type: "Power",
     id: "ID_FMP_POWER_9378",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Hand of Justice"] = new RulesElement({
+  te = Power["Hand of Justice"] = new engine.RulesElement({
     name: "Hand of Justice",
     type: "Power",
     id: "ID_FMP_POWER_9387",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Heartstrike"] = new RulesElement({
+  te = Power["Heartstrike"] = new engine.RulesElement({
     name: "Heartstrike",
     type: "Power",
     id: "ID_FMP_POWER_9383",
@@ -137,7 +138,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Masterful Parry"] = new RulesElement({
+  te = Power["Masterful Parry"] = new engine.RulesElement({
     name: "Masterful Parry",
     type: "Power",
     id: "ID_FMP_POWER_9368",
@@ -147,7 +148,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Mocking Target"] = new RulesElement({
+  te = Power["Mocking Target"] = new engine.RulesElement({
     name: "Mocking Target",
     type: "Power",
     id: "ID_FMP_POWER_9380",
@@ -157,7 +158,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Nimble Step"] = new RulesElement({
+  te = Power["Nimble Step"] = new engine.RulesElement({
     name: "Nimble Step",
     type: "Power",
     id: "ID_FMP_POWER_9374",
@@ -167,7 +168,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Platinum Mantle"] = new RulesElement({
+  te = Power["Platinum Mantle"] = new engine.RulesElement({
     name: "Platinum Mantle",
     type: "Power",
     id: "ID_FMP_POWER_9929",
@@ -177,7 +178,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Probability Travel"] = new RulesElement({
+  te = Power["Probability Travel"] = new engine.RulesElement({
     name: "Probability Travel",
     type: "Power",
     id: "ID_FMP_POWER_9397",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Punishing Storm"] = new RulesElement({
+  te = Power["Punishing Storm"] = new engine.RulesElement({
     name: "Punishing Storm",
     type: "Power",
     id: "ID_FMP_POWER_9367",
@@ -197,7 +198,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Righteous Intolerance"] = new RulesElement({
+  te = Power["Righteous Intolerance"] = new engine.RulesElement({
     name: "Righteous Intolerance",
     type: "Power",
     id: "ID_FMP_POWER_9390",
@@ -207,7 +208,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Righteous Judgment"] = new RulesElement({
+  te = Power["Righteous Judgment"] = new engine.RulesElement({
     name: "Righteous Judgment",
     type: "Power",
     id: "ID_FMP_POWER_9388",
@@ -217,7 +218,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Righteous Savior"] = new RulesElement({
+  te = Power["Righteous Savior"] = new engine.RulesElement({
     name: "Righteous Savior",
     type: "Power",
     id: "ID_FMP_POWER_9391",
@@ -227,7 +228,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Rolling Stab"] = new RulesElement({
+  te = Power["Rolling Stab"] = new engine.RulesElement({
     name: "Rolling Stab",
     type: "Power",
     id: "ID_FMP_POWER_9382",
@@ -237,7 +238,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Rousing Cry"] = new RulesElement({
+  te = Power["Rousing Cry"] = new engine.RulesElement({
     name: "Rousing Cry",
     type: "Power",
     id: "ID_FMP_POWER_9384",
@@ -247,7 +248,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Ruinous Assault"] = new RulesElement({
+  te = Power["Ruinous Assault"] = new engine.RulesElement({
     name: "Ruinous Assault",
     type: "Power",
     id: "ID_FMP_POWER_9364",
@@ -257,7 +258,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Seven Canaries"] = new RulesElement({
+  te = Power["Seven Canaries"] = new engine.RulesElement({
     name: "Seven Canaries",
     type: "Power",
     id: "ID_FMP_POWER_9396",
@@ -267,7 +268,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Shining Purpose"] = new RulesElement({
+  te = Power["Shining Purpose"] = new engine.RulesElement({
     name: "Shining Purpose",
     type: "Power",
     id: "ID_FMP_POWER_9392",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Spinning Razor Strike"] = new RulesElement({
+  te = Power["Spinning Razor Strike"] = new engine.RulesElement({
     name: "Spinning Razor Strike",
     type: "Power",
     id: "ID_FMP_POWER_9366",
@@ -287,7 +288,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Storm's Fury Strike"] = new RulesElement({
+  te = Power["Storm's Fury Strike"] = new engine.RulesElement({
     name: "Storm's Fury Strike",
     type: "Power",
     id: "ID_FMP_POWER_9370",
@@ -297,7 +298,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Unequaled Might"] = new RulesElement({
+  te = Power["Unequaled Might"] = new engine.RulesElement({
     name: "Unequaled Might",
     type: "Power",
     id: "ID_FMP_POWER_9379",
@@ -307,7 +308,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Wind of Reprisal"] = new RulesElement({
+  te = Power["Wind of Reprisal"] = new engine.RulesElement({
     name: "Wind of Reprisal",
     type: "Power",
     id: "ID_FMP_POWER_9399",
@@ -317,7 +318,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Zealous Fury"] = new RulesElement({
+  te = Power["Zealous Fury"] = new engine.RulesElement({
     name: "Zealous Fury",
     type: "Power",
     id: "ID_FMP_POWER_9393",
@@ -328,4 +329,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

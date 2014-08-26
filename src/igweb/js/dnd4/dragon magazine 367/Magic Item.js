@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Gloves of Venom (epic tier)"] = new RulesElement({
+  te = Magic_Item["Gloves of Venom (epic tier)"] = new engine.RulesElement({
     name: "Gloves of Venom (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4283",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Gloves of Venom (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Gloves of Venom (heroic tier)"] = new engine.RulesElement({
     name: "Gloves of Venom (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4279",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Gloves of Venom (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Gloves of Venom (paragon tier)"] = new engine.RulesElement({
     name: "Gloves of Venom (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4281",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Piwafwi +4"] = new RulesElement({
+  te = Magic_Item["Piwafwi +4"] = new engine.RulesElement({
     name: "Piwafwi +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4284",
@@ -51,7 +52,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Piwafwi +5"] = new RulesElement({
+  te = Magic_Item["Piwafwi +5"] = new engine.RulesElement({
     name: "Piwafwi +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4285",
@@ -68,7 +69,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Piwafwi +6"] = new RulesElement({
+  te = Magic_Item["Piwafwi +6"] = new engine.RulesElement({
     name: "Piwafwi +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4286",
@@ -85,7 +86,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Flaying +5"] = new RulesElement({
+  te = Magic_Item["Rod of Flaying +5"] = new engine.RulesElement({
     name: "Rod of Flaying +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4277",
@@ -94,7 +95,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Flaying +6"] = new RulesElement({
+  te = Magic_Item["Rod of Flaying +6"] = new engine.RulesElement({
     name: "Rod of Flaying +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4278",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Spiderkissed Weapon +2"] = new RulesElement({
+  te = Magic_Item["Spiderkissed Weapon +2"] = new engine.RulesElement({
     name: "Spiderkissed Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4266",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Spiderkissed Weapon +3"] = new RulesElement({
+  te = Magic_Item["Spiderkissed Weapon +3"] = new engine.RulesElement({
     name: "Spiderkissed Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4267",
@@ -121,7 +122,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Spiderkissed Weapon +4"] = new RulesElement({
+  te = Magic_Item["Spiderkissed Weapon +4"] = new engine.RulesElement({
     name: "Spiderkissed Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4268",
@@ -130,7 +131,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Spiderkissed Weapon +5"] = new RulesElement({
+  te = Magic_Item["Spiderkissed Weapon +5"] = new engine.RulesElement({
     name: "Spiderkissed Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4269",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Spiderkissed Weapon +6"] = new RulesElement({
+  te = Magic_Item["Spiderkissed Weapon +6"] = new engine.RulesElement({
     name: "Spiderkissed Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4270",
@@ -149,4 +150,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

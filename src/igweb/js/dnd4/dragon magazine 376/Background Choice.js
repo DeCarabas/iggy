@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Background_Choice = types['Background Choice'] || (types['Background Choice'] = {});
-  te = Background_Choice["Sarifal Benefit"] = new RulesElement({
+  te = Background_Choice["Sarifal Benefit"] = new engine.RulesElement({
     name: "Sarifal Benefit",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_SARIFAL_BENEFIT",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Tarmalune Benefit"] = new RulesElement({
+  te = Background_Choice["Tarmalune Benefit"] = new engine.RulesElement({
     name: "Tarmalune Benefit",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_TARMALUNE_BENEFIT",
@@ -29,7 +30,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Acrobatics)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Acrobatics)"] = new engine.RulesElement({
     name: "Windrise Ports (Acrobatics)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(ACROBATICS)",
@@ -41,7 +42,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Arcana)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Arcana)"] = new engine.RulesElement({
     name: "Windrise Ports (Arcana)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(ARCANA)",
@@ -53,7 +54,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Athletics)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Athletics)"] = new engine.RulesElement({
     name: "Windrise Ports (Athletics)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(ATHLETICS)",
@@ -65,7 +66,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Bluff)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Bluff)"] = new engine.RulesElement({
     name: "Windrise Ports (Bluff)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(BLUFF)",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Diplomacy)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Diplomacy)"] = new engine.RulesElement({
     name: "Windrise Ports (Diplomacy)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(DIPLOMACY)",
@@ -89,7 +90,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Dungeoneering)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Dungeoneering)"] = new engine.RulesElement({
     name: "Windrise Ports (Dungeoneering)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(DUNGEONEERING)",
@@ -101,7 +102,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Endurance)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Endurance)"] = new engine.RulesElement({
     name: "Windrise Ports (Endurance)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(ENDURANCE)",
@@ -113,7 +114,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Heal)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Heal)"] = new engine.RulesElement({
     name: "Windrise Ports (Heal)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(HEAL)",
@@ -125,7 +126,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (History)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (History)"] = new engine.RulesElement({
     name: "Windrise Ports (History)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(HISTORY)",
@@ -137,7 +138,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Insight)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Insight)"] = new engine.RulesElement({
     name: "Windrise Ports (Insight)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(INSIGHT)",
@@ -149,7 +150,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Intimidate)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Intimidate)"] = new engine.RulesElement({
     name: "Windrise Ports (Intimidate)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(INTIMIDATE)",
@@ -161,7 +162,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Nature)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Nature)"] = new engine.RulesElement({
     name: "Windrise Ports (Nature)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(NATURE)",
@@ -173,7 +174,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Perception)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Perception)"] = new engine.RulesElement({
     name: "Windrise Ports (Perception)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(PERCEPTION)",
@@ -185,7 +186,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Religion)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Religion)"] = new engine.RulesElement({
     name: "Windrise Ports (Religion)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(RELIGION)",
@@ -197,7 +198,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Stealth)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Stealth)"] = new engine.RulesElement({
     name: "Windrise Ports (Stealth)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(STEALTH)",
@@ -209,7 +210,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Streetwise)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Streetwise)"] = new engine.RulesElement({
     name: "Windrise Ports (Streetwise)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(STREETWISE)",
@@ -221,7 +222,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports (Thievery)"] = new RulesElement({
+  te = Background_Choice["Windrise Ports (Thievery)"] = new engine.RulesElement({
     name: "Windrise Ports (Thievery)",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_(THIEVERY)",
@@ -233,7 +234,7 @@
   });
   byID[te.id] = te;
   
-  te = Background_Choice["Windrise Ports Benefit"] = new RulesElement({
+  te = Background_Choice["Windrise Ports Benefit"] = new engine.RulesElement({
     name: "Windrise Ports Benefit",
     type: "Background Choice",
     id: "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_BENEFIT",
@@ -249,4 +250,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Weapon = types['Weapon'] || (types['Weapon'] = {});
-  te = Weapon["Bola"] = new RulesElement({
+  te = Weapon["Bola"] = new engine.RulesElement({
     name: "Bola",
     type: "Weapon",
     id: "ID_FMP_WEAPON_76",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Bola (Large)"] = new RulesElement({
+  te = Weapon["Bola (Large)"] = new engine.RulesElement({
     name: "Bola (Large)",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_LARGE_BOLA",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Net"] = new RulesElement({
+  te = Weapon["Net"] = new engine.RulesElement({
     name: "Net",
     type: "Weapon",
     id: "ID_FMP_WEAPON_74",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Net (Large)"] = new RulesElement({
+  te = Weapon["Net (Large)"] = new engine.RulesElement({
     name: "Net (Large)",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_LARGE_NET",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Whip"] = new RulesElement({
+  te = Weapon["Whip"] = new engine.RulesElement({
     name: "Whip",
     type: "Weapon",
     id: "ID_FMP_WEAPON_31",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon["Whip (Large)"] = new RulesElement({
+  te = Weapon["Whip (Large)"] = new engine.RulesElement({
     name: "Whip (Large)",
     type: "Weapon",
     id: "ID_INTERNAL_WEAPON_LARGE_WHIP",
@@ -62,4 +63,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

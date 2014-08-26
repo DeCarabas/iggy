@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Racial_Trait = types['Racial Trait'] || (types['Racial Trait'] = {});
-  te = Racial_Trait["Battle Ready"] = new RulesElement({
+  te = Racial_Trait["Battle Ready"] = new engine.RulesElement({
     name: "Battle Ready",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_715",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Githyanki Willpower"] = new RulesElement({
+  te = Racial_Trait["Githyanki Willpower"] = new engine.RulesElement({
     name: "Githyanki Willpower",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_424",
@@ -32,7 +33,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Goblin Reflexes"] = new RulesElement({
+  te = Racial_Trait["Goblin Reflexes"] = new engine.RulesElement({
     name: "Goblin Reflexes",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_714",
@@ -44,58 +45,58 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Goblin Tactics"] = new RulesElement({
+  te = Racial_Trait["Goblin Tactics"] = new engine.RulesElement({
     name: "Goblin Tactics",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_394",
     source: "Monster Manual",
     categories: ["Goblin Tactics", "ID_FMP_RACIAL_TRAIT_394"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_1489"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1489"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Hobgoblin Resilience"] = new RulesElement({
+  te = Racial_Trait["Hobgoblin Resilience"] = new engine.RulesElement({
     name: "Hobgoblin Resilience",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_716",
     source: "Monster Manual",
     categories: ["Hobgoblin Resilience", "ID_FMP_RACIAL_TRAIT_716"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_2478"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2478"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Oversized"] = new RulesElement({
+  te = Racial_Trait["Oversized"] = new engine.RulesElement({
     name: "Oversized",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_392",
     source: "Monster Manual",
     categories: ["Oversized", "ID_FMP_RACIAL_TRAIT_392"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_OVERSIZED"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_OVERSIZED"]);
     }
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Predatory Eye"] = new RulesElement({
+  te = Racial_Trait["Predatory Eye"] = new engine.RulesElement({
     name: "Predatory Eye",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_694",
     source: "Monster Manual",
     categories: ["Predatory Eye", "ID_FMP_RACIAL_TRAIT_694"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_2324"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2324"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Running Charge"] = new RulesElement({
+  te = Racial_Trait["Running Charge"] = new engine.RulesElement({
     name: "Running Charge",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_418",
@@ -107,33 +108,33 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Shifty"] = new RulesElement({
+  te = Racial_Trait["Shifty"] = new engine.RulesElement({
     name: "Shifty",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_416",
     source: "Monster Manual",
     categories: ["Shifty", "ID_FMP_RACIAL_TRAIT_416"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_2479"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2479"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Telekinetic Leap"] = new RulesElement({
+  te = Racial_Trait["Telekinetic Leap"] = new engine.RulesElement({
     name: "Telekinetic Leap",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_711",
     source: "Monster Manual",
     categories: ["Telekinetic Leap", "ID_FMP_RACIAL_TRAIT_711"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_2474"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2474"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Trap Sense"] = new RulesElement({
+  te = Racial_Trait["Trap Sense"] = new engine.RulesElement({
     name: "Trap Sense",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_717",
@@ -148,18 +149,22 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Warrior's Surge"] = new RulesElement({
+  te = Racial_Trait["Warrior's Surge"] = new engine.RulesElement({
     name: "Warrior's Surge",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_718",
     source: "Monster Manual",
     categories: ["Warrior's Surge", "ID_FMP_RACIAL_TRAIT_718"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_2481"]);
+      model.grant(model.elements.id["ID_FMP_POWER_2481"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

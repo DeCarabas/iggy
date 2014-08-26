@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Blessing of Mielikki"] = new RulesElement({
+  te = class_feature["Blessing of Mielikki"] = new engine.RulesElement({
     name: "Blessing of Mielikki",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1039",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Burden of Redemption"] = new RulesElement({
+  te = class_feature["Burden of Redemption"] = new engine.RulesElement({
     name: "Burden of Redemption",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1050",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Clinging Shadows"] = new RulesElement({
+  te = class_feature["Clinging Shadows"] = new engine.RulesElement({
     name: "Clinging Shadows",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1045",
@@ -40,7 +41,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Curseborn Action"] = new RulesElement({
+  te = class_feature["Curseborn Action"] = new engine.RulesElement({
     name: "Curseborn Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1046",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Darkfire Conflagration"] = new RulesElement({
+  te = class_feature["Darkfire Conflagration"] = new engine.RulesElement({
     name: "Darkfire Conflagration",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1047",
@@ -64,7 +65,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Empowered by Life"] = new RulesElement({
+  te = class_feature["Empowered by Life"] = new engine.RulesElement({
     name: "Empowered by Life",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1037",
@@ -73,7 +74,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Harper's Study"] = new RulesElement({
+  te = class_feature["Harper's Study"] = new engine.RulesElement({
     name: "Harper's Study",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1038",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["High Magic"] = new RulesElement({
+  te = class_feature["High Magic"] = new engine.RulesElement({
     name: "High Magic",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1035",
@@ -99,7 +100,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Lift Her Touch"] = new RulesElement({
+  te = class_feature["Lift Her Touch"] = new engine.RulesElement({
     name: "Lift Her Touch",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1049",
@@ -108,7 +109,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["One with Magic"] = new RulesElement({
+  te = class_feature["One with Magic"] = new engine.RulesElement({
     name: "One with Magic",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1034",
@@ -120,7 +121,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sacred Duty"] = new RulesElement({
+  te = class_feature["Sacred Duty"] = new engine.RulesElement({
     name: "Sacred Duty",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1048",
@@ -129,7 +130,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Spectral Harpist"] = new RulesElement({
+  te = class_feature["Spectral Harpist"] = new engine.RulesElement({
     name: "Spectral Harpist",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1040",
@@ -138,7 +139,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sustained by Magic"] = new RulesElement({
+  te = class_feature["Sustained by Magic"] = new engine.RulesElement({
     name: "Sustained by Magic",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1036",
@@ -148,4 +149,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

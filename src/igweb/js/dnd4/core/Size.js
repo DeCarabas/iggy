@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Size = types['Size'] || (types['Size'] = {});
-  te = Size["Medium"] = new RulesElement({
+  te = Size["Medium"] = new engine.RulesElement({
     name: "Medium",
     type: "Size",
     id: "ID_INTERNAL_SIZE_MEDIUM",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Size["Small"] = new RulesElement({
+  te = Size["Small"] = new engine.RulesElement({
     name: "Small",
     type: "Size",
     id: "ID_INTERNAL_SIZE_SMALL",
@@ -26,4 +27,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

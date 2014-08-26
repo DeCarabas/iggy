@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Build_Suggestions = types['Build Suggestions'] || (types['Build Suggestions'] = {});
-  te = Build_Suggestions["Brawling Fighter"] = new RulesElement({
+  te = Build_Suggestions["Brawling Fighter"] = new engine.RulesElement({
     name: "Brawling Fighter",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_BRAWLING_FIGHTER",
@@ -30,7 +31,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Hunter Ranger"] = new RulesElement({
+  te = Build_Suggestions["Hunter Ranger"] = new engine.RulesElement({
     name: "Hunter Ranger",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_HUNTER_RANGER",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Insightful Warlord"] = new RulesElement({
+  te = Build_Suggestions["Insightful Warlord"] = new engine.RulesElement({
     name: "Insightful Warlord",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_INSIGHTFUL_WARLORD",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Marauder Ranger"] = new RulesElement({
+  te = Build_Suggestions["Marauder Ranger"] = new engine.RulesElement({
     name: "Marauder Ranger",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_MARAUDER_RANGER",
@@ -105,7 +106,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Shadowy Rogue"] = new RulesElement({
+  te = Build_Suggestions["Shadowy Rogue"] = new engine.RulesElement({
     name: "Shadowy Rogue",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_SHADOWY_ROGUE",
@@ -131,7 +132,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Skirmishing Warlord"] = new RulesElement({
+  te = Build_Suggestions["Skirmishing Warlord"] = new engine.RulesElement({
     name: "Skirmishing Warlord",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_SKIRMISHING_WARLORD",
@@ -156,4 +157,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

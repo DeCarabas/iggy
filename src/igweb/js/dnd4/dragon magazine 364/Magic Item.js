@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Greaves of Maldeen (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Greaves of Maldeen (paragon tier)"] = new engine.RulesElement({
     name: "Greaves of Maldeen (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1222",
@@ -16,14 +17,14 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Hood of the Wolf (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Hood of the Wolf (paragon tier)"] = new engine.RulesElement({
     name: "Hood of the Wolf (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1223",
     source: "Dragon Magazine 364",
     categories: ["Hood of the Wolf (paragon tier)", "ID_FMP_MAGIC_ITEM_1223"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_VISION_DARKVISION"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_DARKVISION"]);
       model.statadd("Insight Misc", 4, "item");
       model.statadd("Perception Misc", 4, "item");
       model.statadd("Intimidate Misc", 4, "item");
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Shoulderbow +2"] = new RulesElement({
+  te = Magic_Item["Shoulderbow +2"] = new engine.RulesElement({
     name: "Shoulderbow +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1212",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Shoulderbow +3"] = new RulesElement({
+  te = Magic_Item["Shoulderbow +3"] = new engine.RulesElement({
     name: "Shoulderbow +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1213",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Shoulderbow +4"] = new RulesElement({
+  te = Magic_Item["Shoulderbow +4"] = new engine.RulesElement({
     name: "Shoulderbow +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1214",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Shoulderbow +5"] = new RulesElement({
+  te = Magic_Item["Shoulderbow +5"] = new engine.RulesElement({
     name: "Shoulderbow +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1215",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Shoulderbow +6"] = new RulesElement({
+  te = Magic_Item["Shoulderbow +6"] = new engine.RulesElement({
     name: "Shoulderbow +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1216",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Spear of the Skylord"] = new RulesElement({
+  te = Magic_Item["Spear of the Skylord"] = new engine.RulesElement({
     name: "Spear of the Skylord",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1230",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Myrdroon's Shard +1"] = new RulesElement({
+  te = Magic_Item["Weapon of Myrdroon's Shard +1"] = new engine.RulesElement({
     name: "Weapon of Myrdroon's Shard +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1224",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Myrdroon's Shard +2"] = new RulesElement({
+  te = Magic_Item["Weapon of Myrdroon's Shard +2"] = new engine.RulesElement({
     name: "Weapon of Myrdroon's Shard +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1225",
@@ -121,7 +122,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Myrdroon's Shard +3"] = new RulesElement({
+  te = Magic_Item["Weapon of Myrdroon's Shard +3"] = new engine.RulesElement({
     name: "Weapon of Myrdroon's Shard +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1226",
@@ -130,7 +131,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Myrdroon's Shard +4"] = new RulesElement({
+  te = Magic_Item["Weapon of Myrdroon's Shard +4"] = new engine.RulesElement({
     name: "Weapon of Myrdroon's Shard +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1227",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Myrdroon's Shard +5"] = new RulesElement({
+  te = Magic_Item["Weapon of Myrdroon's Shard +5"] = new engine.RulesElement({
     name: "Weapon of Myrdroon's Shard +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1228",
@@ -148,7 +149,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Weapon of Myrdroon's Shard +6"] = new RulesElement({
+  te = Magic_Item["Weapon of Myrdroon's Shard +6"] = new engine.RulesElement({
     name: "Weapon of Myrdroon's Shard +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1229",
@@ -157,7 +158,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wolfen Weapon +2"] = new RulesElement({
+  te = Magic_Item["Wolfen Weapon +2"] = new engine.RulesElement({
     name: "Wolfen Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1217",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wolfen Weapon +3"] = new RulesElement({
+  te = Magic_Item["Wolfen Weapon +3"] = new engine.RulesElement({
     name: "Wolfen Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1218",
@@ -181,7 +182,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wolfen Weapon +4"] = new RulesElement({
+  te = Magic_Item["Wolfen Weapon +4"] = new engine.RulesElement({
     name: "Wolfen Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1219",
@@ -193,7 +194,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wolfen Weapon +5"] = new RulesElement({
+  te = Magic_Item["Wolfen Weapon +5"] = new engine.RulesElement({
     name: "Wolfen Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1220",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wolfen Weapon +6"] = new RulesElement({
+  te = Magic_Item["Wolfen Weapon +6"] = new engine.RulesElement({
     name: "Wolfen Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1221",
@@ -218,4 +219,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

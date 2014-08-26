@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Familiar = types['Familiar'] || (types['Familiar'] = {});
-  te = Familiar["Bat"] = new RulesElement({
+  te = Familiar["Bat"] = new engine.RulesElement({
     name: "Bat",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_9",
@@ -20,7 +21,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Book Imp"] = new RulesElement({
+  te = Familiar["Book Imp"] = new engine.RulesElement({
     name: "Book Imp",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_10",
@@ -29,14 +30,14 @@
     rules: function(model) {
       model.statadd("Arcana Misc", 2);
       model.statadd("History Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_8"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_8"]);
       model.statadd("resist:fire", 5, "resist");
       model.statadd("resist:fire", 2, "resist");
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Bound Demon"] = new RulesElement({
+  te = Familiar["Bound Demon"] = new engine.RulesElement({
     name: "Bound Demon",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_12",
@@ -44,12 +45,12 @@
     categories: ["Bound Demon", "ID_FMP_FAMILIAR_12"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_7"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_7"]);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Cat"] = new RulesElement({
+  te = Familiar["Cat"] = new engine.RulesElement({
     name: "Cat",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_20",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Crafter Homunculus"] = new RulesElement({
+  te = Familiar["Crafter Homunculus"] = new engine.RulesElement({
     name: "Crafter Homunculus",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_14",
@@ -73,19 +74,19 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Dragonling"] = new RulesElement({
+  te = Familiar["Dragonling"] = new engine.RulesElement({
     name: "Dragonling",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_15",
     source: "Arcane Power",
     categories: ["Dragonling", "ID_FMP_FAMILIAR_15"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Falcon"] = new RulesElement({
+  te = Familiar["Falcon"] = new engine.RulesElement({
     name: "Falcon",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_16",
@@ -101,7 +102,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Owl"] = new RulesElement({
+  te = Familiar["Owl"] = new engine.RulesElement({
     name: "Owl",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_11",
@@ -110,7 +111,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Rat"] = new RulesElement({
+  te = Familiar["Rat"] = new engine.RulesElement({
     name: "Rat",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_18",
@@ -122,7 +123,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Raven"] = new RulesElement({
+  te = Familiar["Raven"] = new engine.RulesElement({
     name: "Raven",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_19",
@@ -134,7 +135,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Serpent"] = new RulesElement({
+  te = Familiar["Serpent"] = new engine.RulesElement({
     name: "Serpent",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_21",
@@ -146,7 +147,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Spider"] = new RulesElement({
+  te = Familiar["Spider"] = new engine.RulesElement({
     name: "Spider",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_22",
@@ -159,4 +160,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

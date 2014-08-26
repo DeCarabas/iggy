@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Bola Expert"] = new RulesElement({
+  te = Feat["Bola Expert"] = new engine.RulesElement({
     name: "Bola Expert",
     type: "Feat",
     id: "ID_FMP_FEAT_961",
@@ -20,7 +21,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Bola Novice"] = new RulesElement({
+  te = Feat["Bola Novice"] = new engine.RulesElement({
     name: "Bola Novice",
     type: "Feat",
     id: "ID_FMP_FEAT_960",
@@ -33,7 +34,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Bola Specialist"] = new RulesElement({
+  te = Feat["Bola Specialist"] = new engine.RulesElement({
     name: "Bola Specialist",
     type: "Feat",
     id: "ID_FMP_FEAT_962",
@@ -46,7 +47,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Bola Training"] = new RulesElement({
+  te = Feat["Bola Training"] = new engine.RulesElement({
     name: "Bola Training",
     type: "Feat",
     id: "ID_FMP_FEAT_959",
@@ -54,13 +55,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=959",
     categories: ["Bola Training", "ID_FMP_FEAT_959", "ID_INTERNAL_CATEGORY_MULTICLASS_BOLA", "Multiclass Bola", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOLA)"]);
-      model.grant(elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOLA)"]);
+      model.grant(model.elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Net Expert"] = new RulesElement({
+  te = Feat["Net Expert"] = new engine.RulesElement({
     name: "Net Expert",
     type: "Feat",
     id: "ID_FMP_FEAT_965",
@@ -73,7 +74,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Net Novice"] = new RulesElement({
+  te = Feat["Net Novice"] = new engine.RulesElement({
     name: "Net Novice",
     type: "Feat",
     id: "ID_FMP_FEAT_964",
@@ -86,7 +87,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Net Specialist"] = new RulesElement({
+  te = Feat["Net Specialist"] = new engine.RulesElement({
     name: "Net Specialist",
     type: "Feat",
     id: "ID_FMP_FEAT_966",
@@ -99,7 +100,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Net Training"] = new RulesElement({
+  te = Feat["Net Training"] = new engine.RulesElement({
     name: "Net Training",
     type: "Feat",
     id: "ID_FMP_FEAT_963",
@@ -107,13 +108,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=963",
     categories: ["Net Training", "ID_FMP_FEAT_963", "ID_INTERNAL_CATEGORY_MULTICLASS_NET", "Multiclass Net", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NET)"]);
-      model.grant(elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NET)"]);
+      model.grant(model.elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Whip Expert"] = new RulesElement({
+  te = Feat["Whip Expert"] = new engine.RulesElement({
     name: "Whip Expert",
     type: "Feat",
     id: "ID_FMP_FEAT_969",
@@ -126,7 +127,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Whip Novice"] = new RulesElement({
+  te = Feat["Whip Novice"] = new engine.RulesElement({
     name: "Whip Novice",
     type: "Feat",
     id: "ID_FMP_FEAT_968",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Whip Specialist"] = new RulesElement({
+  te = Feat["Whip Specialist"] = new engine.RulesElement({
     name: "Whip Specialist",
     type: "Feat",
     id: "ID_FMP_FEAT_970",
@@ -152,7 +153,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Whip Training"] = new RulesElement({
+  te = Feat["Whip Training"] = new engine.RulesElement({
     name: "Whip Training",
     type: "Feat",
     id: "ID_FMP_FEAT_967",
@@ -160,11 +161,15 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=967",
     categories: ["Whip Training", "ID_FMP_FEAT_967", "ID_INTERNAL_CATEGORY_MULTICLASS_WHIP", "Multiclass Whip", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)"]);
-      model.grant(elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)"]);
+      model.grant(model.elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

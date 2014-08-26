@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Bane's Tactics"] = new RulesElement({
+  te = Feat["Bane's Tactics"] = new engine.RulesElement({
     name: "Bane's Tactics",
     type: "Feat",
     id: "ID_FMP_FEAT_1111",
@@ -15,10 +16,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1111",
     categories: ["Bane's Tactics", "ID_FMP_FEAT_1111", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_6595"]);
+      model.grant(model.elements.id["ID_FMP_POWER_6595"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Arcane Armorer's Action"] = new RulesElement({
+  te = class_feature["Arcane Armorer's Action"] = new engine.RulesElement({
     name: "Arcane Armorer's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2128",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Arcane Weaponmaster"] = new RulesElement({
+  te = class_feature["Arcane Weaponmaster"] = new engine.RulesElement({
     name: "Arcane Weaponmaster",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2130",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Beacon of Justice"] = new RulesElement({
+  te = class_feature["Beacon of Justice"] = new engine.RulesElement({
     name: "Beacon of Justice",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2135",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Acrobatics)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Acrobatics)"] = new engine.RulesElement({
     name: "Patron's Guidance (Acrobatics)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(ACROBATICS)",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Arcana)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Arcana)"] = new engine.RulesElement({
     name: "Patron's Guidance (Arcana)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(ARCANA)",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Athletics)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Athletics)"] = new engine.RulesElement({
     name: "Patron's Guidance (Athletics)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(ATHLETICS)",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Bluff)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Bluff)"] = new engine.RulesElement({
     name: "Patron's Guidance (Bluff)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(BLUFF)",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Diplomacy)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Diplomacy)"] = new engine.RulesElement({
     name: "Patron's Guidance (Diplomacy)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(DIPLOMACY)",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Dungeoneering)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Dungeoneering)"] = new engine.RulesElement({
     name: "Patron's Guidance (Dungeoneering)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(DUNGEONEERING)",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Endurance)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Endurance)"] = new engine.RulesElement({
     name: "Patron's Guidance (Endurance)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(ENDURANCE)",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Heal)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Heal)"] = new engine.RulesElement({
     name: "Patron's Guidance (Heal)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(HEAL)",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (History)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (History)"] = new engine.RulesElement({
     name: "Patron's Guidance (History)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(HISTORY)",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Insight)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Insight)"] = new engine.RulesElement({
     name: "Patron's Guidance (Insight)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(INSIGHT)",
@@ -163,7 +164,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Intimidate)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Intimidate)"] = new engine.RulesElement({
     name: "Patron's Guidance (Intimidate)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(INTIMIDATE)",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Nature)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Nature)"] = new engine.RulesElement({
     name: "Patron's Guidance (Nature)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(NATURE)",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Perception)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Perception)"] = new engine.RulesElement({
     name: "Patron's Guidance (Perception)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(PERCEPTION)",
@@ -199,7 +200,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Religion)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Religion)"] = new engine.RulesElement({
     name: "Patron's Guidance (Religion)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(RELIGION)",
@@ -211,7 +212,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Stealth)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Stealth)"] = new engine.RulesElement({
     name: "Patron's Guidance (Stealth)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(STEALTH)",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Streetwise)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Streetwise)"] = new engine.RulesElement({
     name: "Patron's Guidance (Streetwise)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(STREETWISE)",
@@ -235,7 +236,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Patron's Guidance (Thievery)"] = new RulesElement({
+  te = class_feature["Patron's Guidance (Thievery)"] = new engine.RulesElement({
     name: "Patron's Guidance (Thievery)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_PATRON'S_GUIDANCE_(THIEVERY)",
@@ -247,7 +248,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Practiced Armorer"] = new RulesElement({
+  te = class_feature["Practiced Armorer"] = new engine.RulesElement({
     name: "Practiced Armorer",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2129",
@@ -256,7 +257,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Protective Spell Shield"] = new RulesElement({
+  te = class_feature["Protective Spell Shield"] = new engine.RulesElement({
     name: "Protective Spell Shield",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2127",
@@ -265,7 +266,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Retributive Action"] = new RulesElement({
+  te = class_feature["Retributive Action"] = new engine.RulesElement({
     name: "Retributive Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2133",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sliver of Justice"] = new RulesElement({
+  te = class_feature["Sliver of Justice"] = new engine.RulesElement({
     name: "Sliver of Justice",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2134",
@@ -286,7 +287,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Spell Commander's Action"] = new RulesElement({
+  te = class_feature["Spell Commander's Action"] = new engine.RulesElement({
     name: "Spell Commander's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2131",
@@ -298,7 +299,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Unleash Spell Power"] = new RulesElement({
+  te = class_feature["Unleash Spell Power"] = new engine.RulesElement({
     name: "Unleash Spell Power",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2132",
@@ -308,4 +309,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

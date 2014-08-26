@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Champion's Ring (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Champion's Ring (paragon tier)"] = new engine.RulesElement({
     name: "Champion's Ring (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8091",
@@ -21,7 +22,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Controller's Implement +3"] = new RulesElement({
+  te = Magic_Item["Controller's Implement +3"] = new engine.RulesElement({
     name: "Controller's Implement +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8078",
@@ -33,7 +34,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Controller's Implement +4"] = new RulesElement({
+  te = Magic_Item["Controller's Implement +4"] = new engine.RulesElement({
     name: "Controller's Implement +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8079",
@@ -45,7 +46,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Controller's Implement +5"] = new RulesElement({
+  te = Magic_Item["Controller's Implement +5"] = new engine.RulesElement({
     name: "Controller's Implement +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8080",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Controller's Implement +6"] = new RulesElement({
+  te = Magic_Item["Controller's Implement +6"] = new engine.RulesElement({
     name: "Controller's Implement +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8081",
@@ -69,7 +70,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Defender's Armor +3"] = new RulesElement({
+  te = Magic_Item["Defender's Armor +3"] = new engine.RulesElement({
     name: "Defender's Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8086",
@@ -85,7 +86,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Defender's Armor +4"] = new RulesElement({
+  te = Magic_Item["Defender's Armor +4"] = new engine.RulesElement({
     name: "Defender's Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8087",
@@ -101,7 +102,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Defender's Armor +5"] = new RulesElement({
+  te = Magic_Item["Defender's Armor +5"] = new engine.RulesElement({
     name: "Defender's Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8088",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Defender's Armor +6"] = new RulesElement({
+  te = Magic_Item["Defender's Armor +6"] = new engine.RulesElement({
     name: "Defender's Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8089",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Leader's Helm (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Leader's Helm (paragon tier)"] = new engine.RulesElement({
     name: "Leader's Helm (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8090",
@@ -145,7 +146,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Striker's Weapon +3"] = new RulesElement({
+  te = Magic_Item["Striker's Weapon +3"] = new engine.RulesElement({
     name: "Striker's Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8082",
@@ -157,7 +158,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Striker's Weapon +4"] = new RulesElement({
+  te = Magic_Item["Striker's Weapon +4"] = new engine.RulesElement({
     name: "Striker's Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8083",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Striker's Weapon +5"] = new RulesElement({
+  te = Magic_Item["Striker's Weapon +5"] = new engine.RulesElement({
     name: "Striker's Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8084",
@@ -181,7 +182,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Striker's Weapon +6"] = new RulesElement({
+  te = Magic_Item["Striker's Weapon +6"] = new engine.RulesElement({
     name: "Striker's Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8085",
@@ -194,4 +195,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Ancestor's Warning"] = new RulesElement({
+  te = class_feature["Ancestor's Warning"] = new engine.RulesElement({
     name: "Ancestor's Warning",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2819",
@@ -21,7 +22,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Falling Needle Mastery"] = new RulesElement({
+  te = class_feature["Falling Needle Mastery"] = new engine.RulesElement({
     name: "Falling Needle Mastery",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2999",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Falling Needle Training"] = new RulesElement({
+  te = class_feature["Falling Needle Training"] = new engine.RulesElement({
     name: "Falling Needle Training",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2996",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Itinerant Action"] = new RulesElement({
+  te = class_feature["Itinerant Action"] = new engine.RulesElement({
     name: "Itinerant Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2997",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Madness of Leng"] = new RulesElement({
+  te = class_feature["Madness of Leng"] = new engine.RulesElement({
     name: "Madness of Leng",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2820",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Path of the Itinerant Monk"] = new RulesElement({
+  te = class_feature["Path of the Itinerant Monk"] = new engine.RulesElement({
     name: "Path of the Itinerant Monk",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2998",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Relentless Bloodlust"] = new RulesElement({
+  te = class_feature["Relentless Bloodlust"] = new engine.RulesElement({
     name: "Relentless Bloodlust",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2821",
@@ -89,4 +90,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

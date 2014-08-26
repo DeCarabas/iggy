@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Familiar = types['Familiar'] || (types['Familiar'] = {});
-  te = Familiar["Coure Attendant"] = new RulesElement({
+  te = Familiar["Coure Attendant"] = new engine.RulesElement({
     name: "Coure Attendant",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_89",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Faerie Dragonling"] = new RulesElement({
+  te = Familiar["Faerie Dragonling"] = new engine.RulesElement({
     name: "Faerie Dragonling",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_88",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Fiddling Grig"] = new RulesElement({
+  te = Familiar["Fiddling Grig"] = new engine.RulesElement({
     name: "Fiddling Grig",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_87",
@@ -41,4 +42,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

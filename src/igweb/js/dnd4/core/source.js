@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var source = types['source'] || (types['source'] = {});
-  te = source["Adventurer's Vault"] = new RulesElement({
+  te = source["Adventurer's Vault"] = new engine.RulesElement({
     name: "Adventurer's Vault",
     type: "source",
     id: "ID_FMP_SOURCE_10",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Adventurer's Vault 2"] = new RulesElement({
+  te = source["Adventurer's Vault 2"] = new engine.RulesElement({
     name: "Adventurer's Vault 2",
     type: "source",
     id: "ID_FMP_SOURCE_73",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Arcane Power"] = new RulesElement({
+  te = source["Arcane Power"] = new engine.RulesElement({
     name: "Arcane Power",
     type: "source",
     id: "ID_FMP_SOURCE_14",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = source["City of Stormreach"] = new RulesElement({
+  te = source["City of Stormreach"] = new engine.RulesElement({
     name: "City of Stormreach",
     type: "source",
     id: "ID_FMP_SOURCE_191",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Core"] = new RulesElement({
+  te = source["Core"] = new engine.RulesElement({
     name: "Core",
     type: "source",
     id: "ID_INTERNAL_SOURCE_CORE",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = source["D&D Player's Strategy Guide"] = new RulesElement({
+  te = source["D&D Player's Strategy Guide"] = new engine.RulesElement({
     name: "D&D Player's Strategy Guide",
     type: "source",
     id: "ID_FMP_SOURCE_200",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Demonomicon"] = new RulesElement({
+  te = source["Demonomicon"] = new engine.RulesElement({
     name: "Demonomicon",
     type: "source",
     id: "ID_FMP_SOURCE_205",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Divine Power"] = new RulesElement({
+  te = source["Divine Power"] = new engine.RulesElement({
     name: "Divine Power",
     type: "source",
     id: "ID_FMP_SOURCE_15",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Draconomicon: Chromatic Dragons"] = new RulesElement({
+  te = source["Draconomicon: Chromatic Dragons"] = new engine.RulesElement({
     name: "Draconomicon: Chromatic Dragons",
     type: "source",
     id: "ID_FMP_SOURCE_11",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Draconomicon: Metallic Dragons"] = new RulesElement({
+  te = source["Draconomicon: Metallic Dragons"] = new engine.RulesElement({
     name: "Draconomicon: Metallic Dragons",
     type: "source",
     id: "ID_FMP_SOURCE_12",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 364"] = new RulesElement({
+  te = source["Dragon Magazine 364"] = new engine.RulesElement({
     name: "Dragon Magazine 364",
     type: "source",
     id: "ID_FMP_SOURCE_28",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 365"] = new RulesElement({
+  te = source["Dragon Magazine 365"] = new engine.RulesElement({
     name: "Dragon Magazine 365",
     type: "source",
     id: "ID_FMP_SOURCE_32",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 366"] = new RulesElement({
+  te = source["Dragon Magazine 366"] = new engine.RulesElement({
     name: "Dragon Magazine 366",
     type: "source",
     id: "ID_FMP_SOURCE_34",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 367"] = new RulesElement({
+  te = source["Dragon Magazine 367"] = new engine.RulesElement({
     name: "Dragon Magazine 367",
     type: "source",
     id: "ID_FMP_SOURCE_36",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 368"] = new RulesElement({
+  te = source["Dragon Magazine 368"] = new engine.RulesElement({
     name: "Dragon Magazine 368",
     type: "source",
     id: "ID_FMP_SOURCE_56",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 369"] = new RulesElement({
+  te = source["Dragon Magazine 369"] = new engine.RulesElement({
     name: "Dragon Magazine 369",
     type: "source",
     id: "ID_FMP_SOURCE_62",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 370"] = new RulesElement({
+  te = source["Dragon Magazine 370"] = new engine.RulesElement({
     name: "Dragon Magazine 370",
     type: "source",
     id: "ID_FMP_SOURCE_71",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 371"] = new RulesElement({
+  te = source["Dragon Magazine 371"] = new engine.RulesElement({
     name: "Dragon Magazine 371",
     type: "source",
     id: "ID_FMP_SOURCE_89",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 372"] = new RulesElement({
+  te = source["Dragon Magazine 372"] = new engine.RulesElement({
     name: "Dragon Magazine 372",
     type: "source",
     id: "ID_FMP_SOURCE_99",
@@ -178,7 +179,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 373"] = new RulesElement({
+  te = source["Dragon Magazine 373"] = new engine.RulesElement({
     name: "Dragon Magazine 373",
     type: "source",
     id: "ID_FMP_SOURCE_104",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 374"] = new RulesElement({
+  te = source["Dragon Magazine 374"] = new engine.RulesElement({
     name: "Dragon Magazine 374",
     type: "source",
     id: "ID_FMP_SOURCE_107",
@@ -196,7 +197,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 375"] = new RulesElement({
+  te = source["Dragon Magazine 375"] = new engine.RulesElement({
     name: "Dragon Magazine 375",
     type: "source",
     id: "ID_FMP_SOURCE_115",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 376"] = new RulesElement({
+  te = source["Dragon Magazine 376"] = new engine.RulesElement({
     name: "Dragon Magazine 376",
     type: "source",
     id: "ID_FMP_SOURCE_133",
@@ -214,7 +215,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 377"] = new RulesElement({
+  te = source["Dragon Magazine 377"] = new engine.RulesElement({
     name: "Dragon Magazine 377",
     type: "source",
     id: "ID_FMP_SOURCE_144",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 378"] = new RulesElement({
+  te = source["Dragon Magazine 378"] = new engine.RulesElement({
     name: "Dragon Magazine 378",
     type: "source",
     id: "ID_FMP_SOURCE_162",
@@ -232,7 +233,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 379"] = new RulesElement({
+  te = source["Dragon Magazine 379"] = new engine.RulesElement({
     name: "Dragon Magazine 379",
     type: "source",
     id: "ID_FMP_SOURCE_164",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 380"] = new RulesElement({
+  te = source["Dragon Magazine 380"] = new engine.RulesElement({
     name: "Dragon Magazine 380",
     type: "source",
     id: "ID_FMP_SOURCE_171",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 381"] = new RulesElement({
+  te = source["Dragon Magazine 381"] = new engine.RulesElement({
     name: "Dragon Magazine 381",
     type: "source",
     id: "ID_FMP_SOURCE_172",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 382"] = new RulesElement({
+  te = source["Dragon Magazine 382"] = new engine.RulesElement({
     name: "Dragon Magazine 382",
     type: "source",
     id: "ID_FMP_SOURCE_189",
@@ -268,7 +269,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 383"] = new RulesElement({
+  te = source["Dragon Magazine 383"] = new engine.RulesElement({
     name: "Dragon Magazine 383",
     type: "source",
     id: "ID_FMP_SOURCE_194",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 384"] = new RulesElement({
+  te = source["Dragon Magazine 384"] = new engine.RulesElement({
     name: "Dragon Magazine 384",
     type: "source",
     id: "ID_FMP_SOURCE_221",
@@ -286,7 +287,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 385"] = new RulesElement({
+  te = source["Dragon Magazine 385"] = new engine.RulesElement({
     name: "Dragon Magazine 385",
     type: "source",
     id: "ID_FMP_SOURCE_223",
@@ -295,7 +296,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 386"] = new RulesElement({
+  te = source["Dragon Magazine 386"] = new engine.RulesElement({
     name: "Dragon Magazine 386",
     type: "source",
     id: "ID_FMP_SOURCE_224",
@@ -304,7 +305,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 387"] = new RulesElement({
+  te = source["Dragon Magazine 387"] = new engine.RulesElement({
     name: "Dragon Magazine 387",
     type: "source",
     id: "ID_FMP_SOURCE_225",
@@ -313,7 +314,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 388"] = new RulesElement({
+  te = source["Dragon Magazine 388"] = new engine.RulesElement({
     name: "Dragon Magazine 388",
     type: "source",
     id: "ID_FMP_SOURCE_226",
@@ -322,7 +323,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 389"] = new RulesElement({
+  te = source["Dragon Magazine 389"] = new engine.RulesElement({
     name: "Dragon Magazine 389",
     type: "source",
     id: "ID_FMP_SOURCE_227",
@@ -331,7 +332,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine 390"] = new RulesElement({
+  te = source["Dragon Magazine 390"] = new engine.RulesElement({
     name: "Dragon Magazine 390",
     type: "source",
     id: "ID_FMP_SOURCE_228",
@@ -340,7 +341,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragon Magazine Annual 2009"] = new RulesElement({
+  te = source["Dragon Magazine Annual 2009"] = new engine.RulesElement({
     name: "Dragon Magazine Annual 2009",
     type: "source",
     id: "ID_FMP_SOURCE_149",
@@ -349,7 +350,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dragons of Eberron"] = new RulesElement({
+  te = source["Dragons of Eberron"] = new engine.RulesElement({
     name: "Dragons of Eberron",
     type: "source",
     id: "ID_FMP_SOURCE_192",
@@ -358,7 +359,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Delve"] = new RulesElement({
+  te = source["Dungeon Delve"] = new engine.RulesElement({
     name: "Dungeon Delve",
     type: "source",
     id: "ID_FMP_SOURCE_65",
@@ -367,7 +368,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 155"] = new RulesElement({
+  te = source["Dungeon Magazine 155"] = new engine.RulesElement({
     name: "Dungeon Magazine 155",
     type: "source",
     id: "ID_FMP_SOURCE_29",
@@ -376,7 +377,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 156"] = new RulesElement({
+  te = source["Dungeon Magazine 156"] = new engine.RulesElement({
     name: "Dungeon Magazine 156",
     type: "source",
     id: "ID_FMP_SOURCE_33",
@@ -385,7 +386,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 157"] = new RulesElement({
+  te = source["Dungeon Magazine 157"] = new engine.RulesElement({
     name: "Dungeon Magazine 157",
     type: "source",
     id: "ID_FMP_SOURCE_35",
@@ -394,7 +395,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 158"] = new RulesElement({
+  te = source["Dungeon Magazine 158"] = new engine.RulesElement({
     name: "Dungeon Magazine 158",
     type: "source",
     id: "ID_FMP_SOURCE_37",
@@ -403,7 +404,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 159"] = new RulesElement({
+  te = source["Dungeon Magazine 159"] = new engine.RulesElement({
     name: "Dungeon Magazine 159",
     type: "source",
     id: "ID_FMP_SOURCE_57",
@@ -412,7 +413,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 160"] = new RulesElement({
+  te = source["Dungeon Magazine 160"] = new engine.RulesElement({
     name: "Dungeon Magazine 160",
     type: "source",
     id: "ID_FMP_SOURCE_63",
@@ -421,7 +422,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 161"] = new RulesElement({
+  te = source["Dungeon Magazine 161"] = new engine.RulesElement({
     name: "Dungeon Magazine 161",
     type: "source",
     id: "ID_FMP_SOURCE_72",
@@ -430,7 +431,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 162"] = new RulesElement({
+  te = source["Dungeon Magazine 162"] = new engine.RulesElement({
     name: "Dungeon Magazine 162",
     type: "source",
     id: "ID_FMP_SOURCE_90",
@@ -439,7 +440,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 163"] = new RulesElement({
+  te = source["Dungeon Magazine 163"] = new engine.RulesElement({
     name: "Dungeon Magazine 163",
     type: "source",
     id: "ID_FMP_SOURCE_100",
@@ -448,7 +449,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 164"] = new RulesElement({
+  te = source["Dungeon Magazine 164"] = new engine.RulesElement({
     name: "Dungeon Magazine 164",
     type: "source",
     id: "ID_FMP_SOURCE_106",
@@ -457,7 +458,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 165"] = new RulesElement({
+  te = source["Dungeon Magazine 165"] = new engine.RulesElement({
     name: "Dungeon Magazine 165",
     type: "source",
     id: "ID_FMP_SOURCE_108",
@@ -466,7 +467,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 166"] = new RulesElement({
+  te = source["Dungeon Magazine 166"] = new engine.RulesElement({
     name: "Dungeon Magazine 166",
     type: "source",
     id: "ID_FMP_SOURCE_116",
@@ -475,7 +476,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 167"] = new RulesElement({
+  te = source["Dungeon Magazine 167"] = new engine.RulesElement({
     name: "Dungeon Magazine 167",
     type: "source",
     id: "ID_FMP_SOURCE_134",
@@ -484,7 +485,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 168"] = new RulesElement({
+  te = source["Dungeon Magazine 168"] = new engine.RulesElement({
     name: "Dungeon Magazine 168",
     type: "source",
     id: "ID_FMP_SOURCE_145",
@@ -493,7 +494,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 169"] = new RulesElement({
+  te = source["Dungeon Magazine 169"] = new engine.RulesElement({
     name: "Dungeon Magazine 169",
     type: "source",
     id: "ID_FMP_SOURCE_150",
@@ -502,7 +503,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 170"] = new RulesElement({
+  te = source["Dungeon Magazine 170"] = new engine.RulesElement({
     name: "Dungeon Magazine 170",
     type: "source",
     id: "ID_FMP_SOURCE_166",
@@ -511,7 +512,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 171"] = new RulesElement({
+  te = source["Dungeon Magazine 171"] = new engine.RulesElement({
     name: "Dungeon Magazine 171",
     type: "source",
     id: "ID_FMP_SOURCE_174",
@@ -520,7 +521,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 172"] = new RulesElement({
+  te = source["Dungeon Magazine 172"] = new engine.RulesElement({
     name: "Dungeon Magazine 172",
     type: "source",
     id: "ID_FMP_SOURCE_175",
@@ -529,7 +530,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 173"] = new RulesElement({
+  te = source["Dungeon Magazine 173"] = new engine.RulesElement({
     name: "Dungeon Magazine 173",
     type: "source",
     id: "ID_FMP_SOURCE_181",
@@ -538,7 +539,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 174"] = new RulesElement({
+  te = source["Dungeon Magazine 174"] = new engine.RulesElement({
     name: "Dungeon Magazine 174",
     type: "source",
     id: "ID_FMP_SOURCE_193",
@@ -547,7 +548,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 175"] = new RulesElement({
+  te = source["Dungeon Magazine 175"] = new engine.RulesElement({
     name: "Dungeon Magazine 175",
     type: "source",
     id: "ID_FMP_SOURCE_210",
@@ -556,7 +557,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 176"] = new RulesElement({
+  te = source["Dungeon Magazine 176"] = new engine.RulesElement({
     name: "Dungeon Magazine 176",
     type: "source",
     id: "ID_FMP_SOURCE_211",
@@ -565,7 +566,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 177"] = new RulesElement({
+  te = source["Dungeon Magazine 177"] = new engine.RulesElement({
     name: "Dungeon Magazine 177",
     type: "source",
     id: "ID_FMP_SOURCE_212",
@@ -574,7 +575,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 178"] = new RulesElement({
+  te = source["Dungeon Magazine 178"] = new engine.RulesElement({
     name: "Dungeon Magazine 178",
     type: "source",
     id: "ID_FMP_SOURCE_213",
@@ -583,7 +584,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 179"] = new RulesElement({
+  te = source["Dungeon Magazine 179"] = new engine.RulesElement({
     name: "Dungeon Magazine 179",
     type: "source",
     id: "ID_FMP_SOURCE_214",
@@ -592,7 +593,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 180"] = new RulesElement({
+  te = source["Dungeon Magazine 180"] = new engine.RulesElement({
     name: "Dungeon Magazine 180",
     type: "source",
     id: "ID_FMP_SOURCE_215",
@@ -601,7 +602,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine 181"] = new RulesElement({
+  te = source["Dungeon Magazine 181"] = new engine.RulesElement({
     name: "Dungeon Magazine 181",
     type: "source",
     id: "ID_FMP_SOURCE_216",
@@ -610,7 +611,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Magazine Annual"] = new RulesElement({
+  te = source["Dungeon Magazine Annual"] = new engine.RulesElement({
     name: "Dungeon Magazine Annual",
     type: "source",
     id: "ID_FMP_SOURCE_199",
@@ -619,7 +620,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Master's Guide"] = new RulesElement({
+  te = source["Dungeon Master's Guide"] = new engine.RulesElement({
     name: "Dungeon Master's Guide",
     type: "source",
     id: "ID_FMP_SOURCE_3",
@@ -628,7 +629,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Dungeon Master's Guide 2"] = new RulesElement({
+  te = source["Dungeon Master's Guide 2"] = new engine.RulesElement({
     name: "Dungeon Master's Guide 2",
     type: "source",
     id: "ID_FMP_SOURCE_19",
@@ -637,7 +638,7 @@
   });
   byID[te.id] = te;
   
-  te = source["E1 Death's Reach"] = new RulesElement({
+  te = source["E1 Death's Reach"] = new engine.RulesElement({
     name: "E1 Death's Reach",
     type: "source",
     id: "ID_FMP_SOURCE_67",
@@ -646,7 +647,7 @@
   });
   byID[te.id] = te;
   
-  te = source["E2 Kingdom of the Ghouls"] = new RulesElement({
+  te = source["E2 Kingdom of the Ghouls"] = new engine.RulesElement({
     name: "E2 Kingdom of the Ghouls",
     type: "source",
     id: "ID_FMP_SOURCE_123",
@@ -655,7 +656,7 @@
   });
   byID[te.id] = te;
   
-  te = source["E3 Prince of Undeath"] = new RulesElement({
+  te = source["E3 Prince of Undeath"] = new engine.RulesElement({
     name: "E3 Prince of Undeath",
     type: "source",
     id: "ID_FMP_SOURCE_147",
@@ -664,7 +665,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Eberron Campaign Setting"] = new RulesElement({
+  te = source["Eberron Campaign Setting"] = new engine.RulesElement({
     name: "Eberron Campaign Setting",
     type: "source",
     id: "ID_FMP_SOURCE_8",
@@ -673,7 +674,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Eberron Player's Guide"] = new RulesElement({
+  te = source["Eberron Player's Guide"] = new engine.RulesElement({
     name: "Eberron Player's Guide",
     type: "source",
     id: "ID_FMP_SOURCE_9",
@@ -682,7 +683,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Elder Evils"] = new RulesElement({
+  te = source["Elder Evils"] = new engine.RulesElement({
     name: "Elder Evils",
     type: "source",
     id: "ID_FMP_SOURCE_141",
@@ -691,7 +692,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Exemplars of Evil"] = new RulesElement({
+  te = source["Exemplars of Evil"] = new engine.RulesElement({
     name: "Exemplars of Evil",
     type: "source",
     id: "ID_FMP_SOURCE_142",
@@ -700,7 +701,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Forgotten Realms Campaign Guide"] = new RulesElement({
+  te = source["Forgotten Realms Campaign Guide"] = new engine.RulesElement({
     name: "Forgotten Realms Campaign Guide",
     type: "source",
     id: "ID_FMP_SOURCE_6",
@@ -709,7 +710,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Forgotten Realms Player's Guide"] = new RulesElement({
+  te = source["Forgotten Realms Player's Guide"] = new engine.RulesElement({
     name: "Forgotten Realms Player's Guide",
     type: "source",
     id: "ID_FMP_SOURCE_7",
@@ -718,7 +719,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Fortress of the Yuan-ti"] = new RulesElement({
+  te = source["Fortress of the Yuan-ti"] = new engine.RulesElement({
     name: "Fortress of the Yuan-ti",
     type: "source",
     id: "ID_FMP_SOURCE_165",
@@ -727,7 +728,7 @@
   });
   byID[te.id] = te;
   
-  te = source["FR1 Scepter Tower of Spellgard"] = new RulesElement({
+  te = source["FR1 Scepter Tower of Spellgard"] = new engine.RulesElement({
     name: "FR1 Scepter Tower of Spellgard",
     type: "source",
     id: "ID_FMP_SOURCE_24",
@@ -736,7 +737,7 @@
   });
   byID[te.id] = te;
   
-  te = source["H1 Keep on the Shadowfell"] = new RulesElement({
+  te = source["H1 Keep on the Shadowfell"] = new engine.RulesElement({
     name: "H1 Keep on the Shadowfell",
     type: "source",
     id: "ID_FMP_SOURCE_4",
@@ -745,7 +746,7 @@
   });
   byID[te.id] = te;
   
-  te = source["H2 Thunderspire Labyrinth"] = new RulesElement({
+  te = source["H2 Thunderspire Labyrinth"] = new engine.RulesElement({
     name: "H2 Thunderspire Labyrinth",
     type: "source",
     id: "ID_FMP_SOURCE_5",
@@ -754,7 +755,7 @@
   });
   byID[te.id] = te;
   
-  te = source["H3 Pyramid of Shadows"] = new RulesElement({
+  te = source["H3 Pyramid of Shadows"] = new engine.RulesElement({
     name: "H3 Pyramid of Shadows",
     type: "source",
     id: "ID_FMP_SOURCE_25",
@@ -763,7 +764,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Hammerfast"] = new RulesElement({
+  te = source["Hammerfast"] = new engine.RulesElement({
     name: "Hammerfast",
     type: "source",
     id: "ID_FMP_SOURCE_196",
@@ -772,7 +773,7 @@
   });
   byID[te.id] = te;
   
-  te = source["HS1 The Slaying Stone"] = new RulesElement({
+  te = source["HS1 The Slaying Stone"] = new engine.RulesElement({
     name: "HS1 The Slaying Stone",
     type: "source",
     id: "ID_FMP_SOURCE_198",
@@ -781,7 +782,7 @@
   });
   byID[te.id] = te;
   
-  te = source["HS2 Orcs of Stonefang Pass"] = new RulesElement({
+  te = source["HS2 Orcs of Stonefang Pass"] = new engine.RulesElement({
     name: "HS2 Orcs of Stonefang Pass",
     type: "source",
     id: "ID_FMP_SOURCE_206",
@@ -790,7 +791,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Manual of the Planes"] = new RulesElement({
+  te = source["Manual of the Planes"] = new engine.RulesElement({
     name: "Manual of the Planes",
     type: "source",
     id: "ID_FMP_SOURCE_23",
@@ -799,7 +800,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Martial Power"] = new RulesElement({
+  te = source["Martial Power"] = new engine.RulesElement({
     name: "Martial Power",
     type: "source",
     id: "ID_FMP_SOURCE_13",
@@ -808,7 +809,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Martial Power 2"] = new RulesElement({
+  te = source["Martial Power 2"] = new engine.RulesElement({
     name: "Martial Power 2",
     type: "source",
     id: "ID_FMP_SOURCE_180",
@@ -817,7 +818,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Monster Manual"] = new RulesElement({
+  te = source["Monster Manual"] = new engine.RulesElement({
     name: "Monster Manual",
     type: "source",
     id: "ID_FMP_SOURCE_2",
@@ -826,7 +827,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Monster Manual 2"] = new RulesElement({
+  te = source["Monster Manual 2"] = new engine.RulesElement({
     name: "Monster Manual 2",
     type: "source",
     id: "ID_FMP_SOURCE_18",
@@ -835,7 +836,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Monster Manual 3"] = new RulesElement({
+  te = source["Monster Manual 3"] = new engine.RulesElement({
     name: "Monster Manual 3",
     type: "source",
     id: "ID_FMP_SOURCE_201",
@@ -844,7 +845,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Monster Manual: Dangerous Delves"] = new RulesElement({
+  te = source["Monster Manual: Dangerous Delves"] = new engine.RulesElement({
     name: "Monster Manual: Dangerous Delves",
     type: "source",
     id: "ID_FMP_SOURCE_114",
@@ -853,7 +854,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Monster Manual: Legendary Evils"] = new RulesElement({
+  te = source["Monster Manual: Legendary Evils"] = new engine.RulesElement({
     name: "Monster Manual: Legendary Evils",
     type: "source",
     id: "ID_FMP_SOURCE_132",
@@ -862,7 +863,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Monster Manual: Savage Encounters"] = new RulesElement({
+  te = source["Monster Manual: Savage Encounters"] = new engine.RulesElement({
     name: "Monster Manual: Savage Encounters",
     type: "source",
     id: "ID_FMP_SOURCE_176",
@@ -871,7 +872,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Open Grave: Secrets of the Undead"] = new RulesElement({
+  te = source["Open Grave: Secrets of the Undead"] = new engine.RulesElement({
     name: "Open Grave: Secrets of the Undead",
     type: "source",
     id: "ID_FMP_SOURCE_64",
@@ -880,7 +881,7 @@
   });
   byID[te.id] = te;
   
-  te = source["P1 King of the Trollhaunt Warrens"] = new RulesElement({
+  te = source["P1 King of the Trollhaunt Warrens"] = new engine.RulesElement({
     name: "P1 King of the Trollhaunt Warrens",
     type: "source",
     id: "ID_FMP_SOURCE_26",
@@ -889,7 +890,7 @@
   });
   byID[te.id] = te;
   
-  te = source["P2 Demon Queen Enclave"] = new RulesElement({
+  te = source["P2 Demon Queen Enclave"] = new engine.RulesElement({
     name: "P2 Demon Queen Enclave",
     type: "source",
     id: "ID_FMP_SOURCE_27",
@@ -898,7 +899,7 @@
   });
   byID[te.id] = te;
   
-  te = source["P3 Assault on Nightwyrm Fortress"] = new RulesElement({
+  te = source["P3 Assault on Nightwyrm Fortress"] = new engine.RulesElement({
     name: "P3 Assault on Nightwyrm Fortress",
     type: "source",
     id: "ID_FMP_SOURCE_66",
@@ -907,7 +908,7 @@
   });
   byID[te.id] = te;
   
-  te = source["PH Heroes: Series 1"] = new RulesElement({
+  te = source["PH Heroes: Series 1"] = new engine.RulesElement({
     name: "PH Heroes: Series 1",
     type: "source",
     id: "ID_FMP_SOURCE_74",
@@ -916,7 +917,7 @@
   });
   byID[te.id] = te;
   
-  te = source["PH Heroes: Series 2"] = new RulesElement({
+  te = source["PH Heroes: Series 2"] = new engine.RulesElement({
     name: "PH Heroes: Series 2",
     type: "source",
     id: "ID_FMP_SOURCE_91",
@@ -925,7 +926,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Player's Handbook"] = new RulesElement({
+  te = source["Player's Handbook"] = new engine.RulesElement({
     name: "Player's Handbook",
     type: "source",
     id: "ID_FMP_SOURCE_1",
@@ -934,7 +935,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Player's Handbook 2"] = new RulesElement({
+  te = source["Player's Handbook 2"] = new engine.RulesElement({
     name: "Player's Handbook 2",
     type: "source",
     id: "ID_FMP_SOURCE_17",
@@ -943,7 +944,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Player's Handbook 3"] = new RulesElement({
+  te = source["Player's Handbook 3"] = new engine.RulesElement({
     name: "Player's Handbook 3",
     type: "source",
     id: "ID_FMP_SOURCE_21",
@@ -952,7 +953,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Player's Handbook Races: Dragonborn"] = new RulesElement({
+  te = source["Player's Handbook Races: Dragonborn"] = new engine.RulesElement({
     name: "Player's Handbook Races: Dragonborn",
     type: "source",
     id: "ID_FMP_SOURCE_179",
@@ -961,7 +962,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Player's Handbook Races: Tiefling"] = new RulesElement({
+  te = source["Player's Handbook Races: Tiefling"] = new engine.RulesElement({
     name: "Player's Handbook Races: Tiefling",
     type: "source",
     id: "ID_FMP_SOURCE_195",
@@ -970,7 +971,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Primal Power"] = new RulesElement({
+  te = source["Primal Power"] = new engine.RulesElement({
     name: "Primal Power",
     type: "source",
     id: "ID_FMP_SOURCE_16",
@@ -979,7 +980,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Psionic Power"] = new RulesElement({
+  te = source["Psionic Power"] = new engine.RulesElement({
     name: "Psionic Power",
     type: "source",
     id: "ID_FMP_SOURCE_242",
@@ -988,7 +989,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Revenge of the Giants"] = new RulesElement({
+  te = source["Revenge of the Giants"] = new engine.RulesElement({
     name: "Revenge of the Giants",
     type: "source",
     id: "ID_FMP_SOURCE_146",
@@ -997,7 +998,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Seekers of the Ashen Crown"] = new RulesElement({
+  te = source["Seekers of the Ashen Crown"] = new engine.RulesElement({
     name: "Seekers of the Ashen Crown",
     type: "source",
     id: "ID_FMP_SOURCE_143",
@@ -1006,7 +1007,7 @@
   });
   byID[te.id] = te;
   
-  te = source["The Plane Above: Secrets of the Astral Plane"] = new RulesElement({
+  te = source["The Plane Above: Secrets of the Astral Plane"] = new engine.RulesElement({
     name: "The Plane Above: Secrets of the Astral Plane",
     type: "source",
     id: "ID_FMP_SOURCE_197",
@@ -1015,7 +1016,7 @@
   });
   byID[te.id] = te;
   
-  te = source["The Plane Below: Secrets of the Elemental Chaos"] = new RulesElement({
+  te = source["The Plane Below: Secrets of the Elemental Chaos"] = new engine.RulesElement({
     name: "The Plane Below: Secrets of the Elemental Chaos",
     type: "source",
     id: "ID_FMP_SOURCE_177",
@@ -1024,7 +1025,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Tomb of Horrors"] = new RulesElement({
+  te = source["Tomb of Horrors"] = new engine.RulesElement({
     name: "Tomb of Horrors",
     type: "source",
     id: "ID_FMP_SOURCE_207",
@@ -1033,7 +1034,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Underdark"] = new RulesElement({
+  te = source["Underdark"] = new engine.RulesElement({
     name: "Underdark",
     type: "source",
     id: "ID_FMP_SOURCE_178",
@@ -1042,7 +1043,7 @@
   });
   byID[te.id] = te;
   
-  te = source["Vor Rukoth: An Ancient Ruins Adventure Site"] = new RulesElement({
+  te = source["Vor Rukoth: An Ancient Ruins Adventure Site"] = new engine.RulesElement({
     name: "Vor Rukoth: An Ancient Ruins Adventure Site",
     type: "source",
     id: "ID_FMP_SOURCE_208",
@@ -1052,4 +1053,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

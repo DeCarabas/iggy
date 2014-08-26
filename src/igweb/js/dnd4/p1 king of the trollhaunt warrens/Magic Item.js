@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Eladrin Ring of Passage (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Eladrin Ring of Passage (paragon tier)"] = new engine.RulesElement({
     name: "Eladrin Ring of Passage (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4306",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Life Force Amulet +4"] = new RulesElement({
+  te = Magic_Item["Life Force Amulet +4"] = new engine.RulesElement({
     name: "Life Force Amulet +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4307",
@@ -30,7 +31,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Life Force Amulet +5"] = new RulesElement({
+  te = Magic_Item["Life Force Amulet +5"] = new engine.RulesElement({
     name: "Life Force Amulet +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4308",
@@ -44,7 +45,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Life Force Amulet +6"] = new RulesElement({
+  te = Magic_Item["Life Force Amulet +6"] = new engine.RulesElement({
     name: "Life Force Amulet +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4309",
@@ -58,7 +59,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Moran's Eye +3"] = new RulesElement({
+  te = Magic_Item["Moran's Eye +3"] = new engine.RulesElement({
     name: "Moran's Eye +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4320",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mordant Weapon +2"] = new RulesElement({
+  te = Magic_Item["Mordant Weapon +2"] = new engine.RulesElement({
     name: "Mordant Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4310",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mordant Weapon +3"] = new RulesElement({
+  te = Magic_Item["Mordant Weapon +3"] = new engine.RulesElement({
     name: "Mordant Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4311",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mordant Weapon +4"] = new RulesElement({
+  te = Magic_Item["Mordant Weapon +4"] = new engine.RulesElement({
     name: "Mordant Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4312",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mordant Weapon +5"] = new RulesElement({
+  te = Magic_Item["Mordant Weapon +5"] = new engine.RulesElement({
     name: "Mordant Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4313",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mordant Weapon +6"] = new RulesElement({
+  te = Magic_Item["Mordant Weapon +6"] = new engine.RulesElement({
     name: "Mordant Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4314",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Sunwrath +3"] = new RulesElement({
+  te = Magic_Item["Sunwrath +3"] = new engine.RulesElement({
     name: "Sunwrath +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4319",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torc of Fortune +3"] = new RulesElement({
+  te = Magic_Item["Torc of Fortune +3"] = new engine.RulesElement({
     name: "Torc of Fortune +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4315",
@@ -138,7 +139,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torc of Fortune +4"] = new RulesElement({
+  te = Magic_Item["Torc of Fortune +4"] = new engine.RulesElement({
     name: "Torc of Fortune +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4316",
@@ -152,7 +153,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torc of Fortune +5"] = new RulesElement({
+  te = Magic_Item["Torc of Fortune +5"] = new engine.RulesElement({
     name: "Torc of Fortune +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4317",
@@ -166,7 +167,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torc of Fortune +6"] = new RulesElement({
+  te = Magic_Item["Torc of Fortune +6"] = new engine.RulesElement({
     name: "Torc of Fortune +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4318",
@@ -181,4 +182,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

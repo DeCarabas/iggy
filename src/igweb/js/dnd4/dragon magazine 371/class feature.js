@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Deadeye"] = new RulesElement({
+  te = class_feature["Deadeye"] = new engine.RulesElement({
     name: "Deadeye",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1312",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Deadstalker's Action"] = new RulesElement({
+  te = class_feature["Deadstalker's Action"] = new engine.RulesElement({
     name: "Deadstalker's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1310",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Essence of Heur-Ket"] = new RulesElement({
+  te = class_feature["Essence of Heur-Ket"] = new engine.RulesElement({
     name: "Essence of Heur-Ket",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1313",
@@ -42,7 +43,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Indomitable Blood"] = new RulesElement({
+  te = class_feature["Indomitable Blood"] = new engine.RulesElement({
     name: "Indomitable Blood",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1311",
@@ -54,7 +55,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Storm Form"] = new RulesElement({
+  te = class_feature["Storm Form"] = new engine.RulesElement({
     name: "Storm Form",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1315",
@@ -63,7 +64,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Storm Surge"] = new RulesElement({
+  te = class_feature["Storm Surge"] = new engine.RulesElement({
     name: "Storm Surge",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1314",
@@ -73,4 +74,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

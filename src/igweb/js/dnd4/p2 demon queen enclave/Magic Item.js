@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Death Weapon +3"] = new RulesElement({
+  te = Magic_Item["Death Weapon +3"] = new engine.RulesElement({
     name: "Death Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4325",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Death Weapon +4"] = new RulesElement({
+  te = Magic_Item["Death Weapon +4"] = new engine.RulesElement({
     name: "Death Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4326",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Death Weapon +5"] = new RulesElement({
+  te = Magic_Item["Death Weapon +5"] = new engine.RulesElement({
     name: "Death Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4327",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Death Weapon +6"] = new RulesElement({
+  te = Magic_Item["Death Weapon +6"] = new engine.RulesElement({
     name: "Death Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4328",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Drow House Insignia +3"] = new RulesElement({
+  te = Magic_Item["Drow House Insignia +3"] = new engine.RulesElement({
     name: "Drow House Insignia +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4329",
@@ -58,7 +59,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Drow House Insignia +4"] = new RulesElement({
+  te = Magic_Item["Drow House Insignia +4"] = new engine.RulesElement({
     name: "Drow House Insignia +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4330",
@@ -73,7 +74,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Drow House Insignia +5"] = new RulesElement({
+  te = Magic_Item["Drow House Insignia +5"] = new engine.RulesElement({
     name: "Drow House Insignia +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4331",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Drow House Insignia +6"] = new RulesElement({
+  te = Magic_Item["Drow House Insignia +6"] = new engine.RulesElement({
     name: "Drow House Insignia +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4332",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mask of the Matriarch (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Mask of the Matriarch (paragon tier)"] = new engine.RulesElement({
     name: "Mask of the Matriarch (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4333",
@@ -115,17 +116,21 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Nightbringer"] = new RulesElement({
+  te = Magic_Item["Nightbringer"] = new engine.RulesElement({
     name: "Nightbringer",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4334",
     source: "P2 Demon Queen Enclave",
     categories: ["Nightbringer", "ID_FMP_MAGIC_ITEM_4334"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_7"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_7"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

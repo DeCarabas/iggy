@@ -44,7 +44,7 @@
         {
             if (this.element != null)
             {
-                writer.WriteLine("model.grant(elements.id[\"{0}\"]);", Converter.QuoteString(this.element.Id));
+                writer.WriteLine("model.grant(model.elements.id[\"{0}\"]);", Converter.QuoteString(this.element.Id));
             }
             else
             {

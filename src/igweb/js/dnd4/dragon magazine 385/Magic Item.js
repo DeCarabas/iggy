@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Alchemical Atomizer (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Alchemical Atomizer (heroic tier)"] = new engine.RulesElement({
     name: "Alchemical Atomizer (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8977",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Defense Nodes +1"] = new RulesElement({
+  te = Magic_Item["Alchemical Defense Nodes +1"] = new engine.RulesElement({
     name: "Alchemical Defense Nodes +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8978",
@@ -29,7 +30,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Defense Nodes +2"] = new RulesElement({
+  te = Magic_Item["Alchemical Defense Nodes +2"] = new engine.RulesElement({
     name: "Alchemical Defense Nodes +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8979",
@@ -42,7 +43,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Defense Nodes +3"] = new RulesElement({
+  te = Magic_Item["Alchemical Defense Nodes +3"] = new engine.RulesElement({
     name: "Alchemical Defense Nodes +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8980",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Defense Nodes +4"] = new RulesElement({
+  te = Magic_Item["Alchemical Defense Nodes +4"] = new engine.RulesElement({
     name: "Alchemical Defense Nodes +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8981",
@@ -68,7 +69,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Defense Nodes +5"] = new RulesElement({
+  te = Magic_Item["Alchemical Defense Nodes +5"] = new engine.RulesElement({
     name: "Alchemical Defense Nodes +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8982",
@@ -81,7 +82,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Defense Nodes +6"] = new RulesElement({
+  te = Magic_Item["Alchemical Defense Nodes +6"] = new engine.RulesElement({
     name: "Alchemical Defense Nodes +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8983",
@@ -94,7 +95,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Failsafe (epic tier)"] = new RulesElement({
+  te = Magic_Item["Alchemical Failsafe (epic tier)"] = new engine.RulesElement({
     name: "Alchemical Failsafe (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8988",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Failsafe (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Alchemical Failsafe (heroic tier)"] = new engine.RulesElement({
     name: "Alchemical Failsafe (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8984",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Failsafe (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Alchemical Failsafe (paragon tier)"] = new engine.RulesElement({
     name: "Alchemical Failsafe (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8986",
@@ -121,7 +122,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Alchemical Launcher (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Alchemical Launcher (heroic tier)"] = new engine.RulesElement({
     name: "Alchemical Launcher (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8989",
@@ -130,7 +131,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Avalanche Boots (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Avalanche Boots (heroic tier)"] = new engine.RulesElement({
     name: "Avalanche Boots (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8990",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Belt of Sonnlinor Righteousness (epic tier)"] = new RulesElement({
+  te = Magic_Item["Belt of Sonnlinor Righteousness (epic tier)"] = new engine.RulesElement({
     name: "Belt of Sonnlinor Righteousness (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8995",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Belt of Sonnlinor Righteousness (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Belt of Sonnlinor Righteousness (heroic tier)"] = new engine.RulesElement({
     name: "Belt of Sonnlinor Righteousness (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8991",
@@ -163,7 +164,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Belt of Sonnlinor Righteousness (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Belt of Sonnlinor Righteousness (paragon tier)"] = new engine.RulesElement({
     name: "Belt of Sonnlinor Righteousness (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8993",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragontooth Shield (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Dragontooth Shield (heroic tier)"] = new engine.RulesElement({
     name: "Dragontooth Shield (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8973",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dwarven Thrower +1"] = new RulesElement({
+  te = Magic_Item["Dwarven Thrower +1"] = new engine.RulesElement({
     name: "Dwarven Thrower +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8996",
@@ -200,7 +201,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dwarven Thrower +2"] = new RulesElement({
+  te = Magic_Item["Dwarven Thrower +2"] = new engine.RulesElement({
     name: "Dwarven Thrower +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8997",
@@ -213,7 +214,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dwarven Thrower +3"] = new RulesElement({
+  te = Magic_Item["Dwarven Thrower +3"] = new engine.RulesElement({
     name: "Dwarven Thrower +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8998",
@@ -226,7 +227,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dwarven Thrower +4"] = new RulesElement({
+  te = Magic_Item["Dwarven Thrower +4"] = new engine.RulesElement({
     name: "Dwarven Thrower +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8999",
@@ -239,7 +240,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dwarven Thrower +5"] = new RulesElement({
+  te = Magic_Item["Dwarven Thrower +5"] = new engine.RulesElement({
     name: "Dwarven Thrower +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9000",
@@ -252,7 +253,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dwarven Thrower +6"] = new RulesElement({
+  te = Magic_Item["Dwarven Thrower +6"] = new engine.RulesElement({
     name: "Dwarven Thrower +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9001",
@@ -265,7 +266,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Fighting Shield (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Fighting Shield (heroic tier)"] = new engine.RulesElement({
     name: "Fighting Shield (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8974",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rubicant Blade +2"] = new RulesElement({
+  te = Magic_Item["Rubicant Blade +2"] = new engine.RulesElement({
     name: "Rubicant Blade +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9003",
@@ -286,7 +287,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rubicant Blade +3"] = new RulesElement({
+  te = Magic_Item["Rubicant Blade +3"] = new engine.RulesElement({
     name: "Rubicant Blade +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9004",
@@ -295,7 +296,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rubicant Blade +4"] = new RulesElement({
+  te = Magic_Item["Rubicant Blade +4"] = new engine.RulesElement({
     name: "Rubicant Blade +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9005",
@@ -304,7 +305,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rubicant Blade +5"] = new RulesElement({
+  te = Magic_Item["Rubicant Blade +5"] = new engine.RulesElement({
     name: "Rubicant Blade +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9006",
@@ -313,7 +314,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rubicant Blade +6"] = new RulesElement({
+  te = Magic_Item["Rubicant Blade +6"] = new engine.RulesElement({
     name: "Rubicant Blade +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9007",
@@ -322,7 +323,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soul Shield (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Soul Shield (paragon tier)"] = new engine.RulesElement({
     name: "Soul Shield (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8975",
@@ -334,7 +335,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Sun Shield (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Sun Shield (paragon tier)"] = new engine.RulesElement({
     name: "Sun Shield (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8976",
@@ -347,4 +348,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

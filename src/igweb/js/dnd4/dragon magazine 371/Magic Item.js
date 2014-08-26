@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Circlet of the Urbane (epic tier)"] = new RulesElement({
+  te = Magic_Item["Circlet of the Urbane (epic tier)"] = new engine.RulesElement({
     name: "Circlet of the Urbane (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4875",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Hestavar Dueling Blade +4"] = new RulesElement({
+  te = Magic_Item["Hestavar Dueling Blade +4"] = new engine.RulesElement({
     name: "Hestavar Dueling Blade +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4870",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Hestavar Dueling Blade +5"] = new RulesElement({
+  te = Magic_Item["Hestavar Dueling Blade +5"] = new engine.RulesElement({
     name: "Hestavar Dueling Blade +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4871",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Hestavar Dueling Blade +6"] = new RulesElement({
+  te = Magic_Item["Hestavar Dueling Blade +6"] = new engine.RulesElement({
     name: "Hestavar Dueling Blade +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4872",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ioun Orb +5"] = new RulesElement({
+  te = Magic_Item["Ioun Orb +5"] = new engine.RulesElement({
     name: "Ioun Orb +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4873",
@@ -64,7 +65,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ioun Orb +6"] = new RulesElement({
+  te = Magic_Item["Ioun Orb +6"] = new engine.RulesElement({
     name: "Ioun Orb +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4874",
@@ -74,4 +75,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

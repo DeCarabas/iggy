@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Alter Ego"] = new RulesElement({
+  te = Ritual["Alter Ego"] = new engine.RulesElement({
     name: "Alter Ego",
     type: "Ritual",
     id: "ID_FMP_RITUAL_293",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Precise Forgery"] = new RulesElement({
+  te = Ritual["Precise Forgery"] = new engine.RulesElement({
     name: "Precise Forgery",
     type: "Ritual",
     id: "ID_FMP_RITUAL_294",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Speech Without Words"] = new RulesElement({
+  te = Ritual["Speech Without Words"] = new engine.RulesElement({
     name: "Speech Without Words",
     type: "Ritual",
     id: "ID_FMP_RITUAL_295",
@@ -38,4 +39,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

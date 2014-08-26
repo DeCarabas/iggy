@@ -1,23 +1,28 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Racial_Trait = types['Racial Trait'] || (types['Racial Trait'] = {});
-  te = Racial_Trait["Dragonfear"] = new RulesElement({
+  te = Racial_Trait["Dragonfear"] = new engine.RulesElement({
     name: "Dragonfear",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_2711",
     source: "Dragon Magazine 388",
     categories: ["Dragonfear", "ID_FMP_RACIAL_TRAIT_2711", "ID_FMP_RACIAL_TRAIT_3162", "Dragonborn Racial Power"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_12577"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12577"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});
