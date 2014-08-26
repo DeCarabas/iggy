@@ -1,10 +1,8 @@
 //
 // This contains the implementation of the rules engine.
 //
-define([],function() {
+define(['./log'],function(log) {
   "use strict";
-
-  function log(message) { console.log(message); }
 
   var Stat = function () { };
   Stat.prototype = {
