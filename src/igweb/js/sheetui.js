@@ -21,7 +21,6 @@ define(['jquery'],function($) {
 
     this._choiceType = this._rootElement.attr("data-boundChoice");
 
-    var that = this;
     this._rootElement.find("[data-command=nextStep]").click(wizardNext);
 
     if (this._rootElement.hasClass("wizardFirst")) { wizardFirst = this; }

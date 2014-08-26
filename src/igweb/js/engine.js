@@ -133,9 +133,10 @@ define(['./log'],function(log) {
       this._stats[alias] = this._stats[stat] || (this._stats[stat] = new Stat());
     },
     getChoices: function(type) {
-      var tcs = this._choices[type] || {};
-      var cs = [];
+      var tcs = this._choices[type];
+      if (!tcs) { return []; }
 
+      var cs = [];
       Object.keys(tcs).forEach(function(c) { cs.push(tcs[c]); });
 
       return cs;
