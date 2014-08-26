@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Hybrid Ardent Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Ardent Fortitude"] = new engine.RulesElement({
     name: "Hybrid Ardent Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_ARDENT_FORTITUDE",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Ardent Will"] = new RulesElement({
+  te = class_feature["Hybrid Ardent Will"] = new engine.RulesElement({
     name: "Hybrid Ardent Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_ARDENT_WILL",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Artificer Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Artificer Fortitude"] = new engine.RulesElement({
     name: "Hybrid Artificer Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_ARTIFICER_FORTITUDE",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Artificer Will"] = new RulesElement({
+  te = class_feature["Hybrid Artificer Will"] = new engine.RulesElement({
     name: "Hybrid Artificer Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_ARTIFICER_WILL",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Assassin Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Assassin Fortitude"] = new engine.RulesElement({
     name: "Hybrid Assassin Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_ASSASSIN_FORTITUDE",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Assassin Will"] = new RulesElement({
+  te = class_feature["Hybrid Assassin Will"] = new engine.RulesElement({
     name: "Hybrid Assassin Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_ASSASSIN_WILL",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Avenger Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Avenger Fortitude"] = new engine.RulesElement({
     name: "Hybrid Avenger Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_AVENGER_FORTITUDE",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Avenger Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Avenger Reflex"] = new engine.RulesElement({
     name: "Hybrid Avenger Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_AVENGER_REFLEX",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Avenger Will"] = new RulesElement({
+  te = class_feature["Hybrid Avenger Will"] = new engine.RulesElement({
     name: "Hybrid Avenger Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_AVENGER_WILL",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Bard Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Bard Reflex"] = new engine.RulesElement({
     name: "Hybrid Bard Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_BARD_REFLEX",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Bard Will"] = new RulesElement({
+  te = class_feature["Hybrid Bard Will"] = new engine.RulesElement({
     name: "Hybrid Bard Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_BARD_WILL",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Druid Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Druid Reflex"] = new engine.RulesElement({
     name: "Hybrid Druid Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_DRUID_REFLEX",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Druid Will"] = new RulesElement({
+  te = class_feature["Hybrid Druid Will"] = new engine.RulesElement({
     name: "Hybrid Druid Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_DRUID_WILL",
@@ -163,7 +164,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Invoker Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Invoker Fortitude"] = new engine.RulesElement({
     name: "Hybrid Invoker Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_INVOKER_FORTITUDE",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Invoker Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Invoker Reflex"] = new engine.RulesElement({
     name: "Hybrid Invoker Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_INVOKER_REFLEX",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Invoker Will"] = new RulesElement({
+  te = class_feature["Hybrid Invoker Will"] = new engine.RulesElement({
     name: "Hybrid Invoker Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_INVOKER_WILL",
@@ -199,7 +200,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Monk Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Monk Fortitude"] = new engine.RulesElement({
     name: "Hybrid Monk Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_MONK_FORTITUDE",
@@ -211,7 +212,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Monk Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Monk Reflex"] = new engine.RulesElement({
     name: "Hybrid Monk Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_MONK_REFLEX",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Monk Will"] = new RulesElement({
+  te = class_feature["Hybrid Monk Will"] = new engine.RulesElement({
     name: "Hybrid Monk Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_MONK_WILL",
@@ -235,7 +236,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Paladin Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Paladin Fortitude"] = new engine.RulesElement({
     name: "Hybrid Paladin Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_PALADIN_FORTITUDE",
@@ -247,7 +248,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Paladin Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Paladin Reflex"] = new engine.RulesElement({
     name: "Hybrid Paladin Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_PALADIN_REFLEX",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Paladin Will"] = new RulesElement({
+  te = class_feature["Hybrid Paladin Will"] = new engine.RulesElement({
     name: "Hybrid Paladin Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_PALADIN_WILL",
@@ -271,7 +272,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Ranger Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Ranger Fortitude"] = new engine.RulesElement({
     name: "Hybrid Ranger Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_RANGER_FORTITUDE",
@@ -283,7 +284,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Ranger Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Ranger Reflex"] = new engine.RulesElement({
     name: "Hybrid Ranger Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_RANGER_REFLEX",
@@ -295,7 +296,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Seeker Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Seeker Reflex"] = new engine.RulesElement({
     name: "Hybrid Seeker Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_SEEKER_REFLEX",
@@ -307,7 +308,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Seeker Will"] = new RulesElement({
+  te = class_feature["Hybrid Seeker Will"] = new engine.RulesElement({
     name: "Hybrid Seeker Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_SEEKER_WILL",
@@ -319,7 +320,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Shaman Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Shaman Fortitude"] = new engine.RulesElement({
     name: "Hybrid Shaman Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_SHAMAN_FORTITUDE",
@@ -331,7 +332,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Shaman Will"] = new RulesElement({
+  te = class_feature["Hybrid Shaman Will"] = new engine.RulesElement({
     name: "Hybrid Shaman Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_SHAMAN_WILL",
@@ -343,7 +344,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Warden Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Warden Fortitude"] = new engine.RulesElement({
     name: "Hybrid Warden Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_WARDEN_FORTITUDE",
@@ -355,7 +356,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Warden Will"] = new RulesElement({
+  te = class_feature["Hybrid Warden Will"] = new engine.RulesElement({
     name: "Hybrid Warden Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_WARDEN_WILL",
@@ -367,7 +368,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Warlock Reflex"] = new RulesElement({
+  te = class_feature["Hybrid Warlock Reflex"] = new engine.RulesElement({
     name: "Hybrid Warlock Reflex",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_WARLOCK_REFLEX",
@@ -379,7 +380,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Warlock Will"] = new RulesElement({
+  te = class_feature["Hybrid Warlock Will"] = new engine.RulesElement({
     name: "Hybrid Warlock Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_WARLOCK_WILL",
@@ -391,7 +392,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Warlord Fortitude"] = new RulesElement({
+  te = class_feature["Hybrid Warlord Fortitude"] = new engine.RulesElement({
     name: "Hybrid Warlord Fortitude",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_WARLORD_FORTITUDE",
@@ -403,7 +404,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hybrid Warlord Will"] = new RulesElement({
+  te = class_feature["Hybrid Warlord Will"] = new engine.RulesElement({
     name: "Hybrid Warlord Will",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_HYBRID_WARLORD_WILL",
@@ -416,4 +417,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

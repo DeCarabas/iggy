@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Broken Blade of Banatruul"] = new RulesElement({
+  te = Magic_Item["Broken Blade of Banatruul"] = new engine.RulesElement({
     name: "Broken Blade of Banatruul",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4335",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Figurine of Tantron"] = new RulesElement({
+  te = Magic_Item["Figurine of Tantron"] = new engine.RulesElement({
     name: "Figurine of Tantron",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4337",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Helm of the Madman's Blood"] = new RulesElement({
+  te = Magic_Item["Helm of the Madman's Blood"] = new engine.RulesElement({
     name: "Helm of the Madman's Blood",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4338",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Immortal Game"] = new RulesElement({
+  te = Magic_Item["The Immortal Game"] = new engine.RulesElement({
     name: "The Immortal Game",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4336",
@@ -47,4 +48,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

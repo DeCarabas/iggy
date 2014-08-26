@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Superior_Implement = types['Superior Implement'] || (types['Superior Implement'] = {});
-  te = Superior_Implement["Accurate dagger"] = new RulesElement({
+  te = Superior_Implement["Accurate dagger"] = new engine.RulesElement({
     name: "Accurate dagger",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_123",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Incendiary dagger"] = new RulesElement({
+  te = Superior_Implement["Incendiary dagger"] = new engine.RulesElement({
     name: "Incendiary dagger",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_124",
@@ -35,7 +36,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Lancing dagger"] = new RulesElement({
+  te = Superior_Implement["Lancing dagger"] = new engine.RulesElement({
     name: "Lancing dagger",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_125",
@@ -50,7 +51,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Resonating dagger"] = new RulesElement({
+  te = Superior_Implement["Resonating dagger"] = new engine.RulesElement({
     name: "Resonating dagger",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_126",
@@ -66,4 +67,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

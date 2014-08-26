@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Rite of Arkentaash"] = new RulesElement({
+  te = Ritual["Rite of Arkentaash"] = new engine.RulesElement({
     name: "Rite of Arkentaash",
     type: "Ritual",
     id: "ID_FMP_RITUAL_284",
@@ -18,4 +19,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

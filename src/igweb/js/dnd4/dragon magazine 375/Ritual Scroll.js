@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual_Scroll = types['Ritual Scroll'] || (types['Ritual Scroll'] = {});
-  te = Ritual_Scroll["Scroll of Imprint Anaxim"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Imprint Anaxim"] = new engine.RulesElement({
     name: "Scroll of Imprint Anaxim",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_IMPRINT_ANAXIM",
@@ -17,4 +18,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

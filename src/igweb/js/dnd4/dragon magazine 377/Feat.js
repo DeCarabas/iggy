@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Courageous Example"] = new RulesElement({
+  te = Feat["Courageous Example"] = new engine.RulesElement({
     name: "Courageous Example",
     type: "Feat",
     id: "ID_FMP_FEAT_1714",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Crusader's Fury"] = new RulesElement({
+  te = Feat["Crusader's Fury"] = new engine.RulesElement({
     name: "Crusader's Fury",
     type: "Feat",
     id: "ID_FMP_FEAT_1715",
@@ -30,7 +31,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Divine Passion"] = new RulesElement({
+  te = Feat["Divine Passion"] = new engine.RulesElement({
     name: "Divine Passion",
     type: "Feat",
     id: "ID_FMP_FEAT_1716",
@@ -40,7 +41,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Enlarge Familiar"] = new RulesElement({
+  te = Feat["Enlarge Familiar"] = new engine.RulesElement({
     name: "Enlarge Familiar",
     type: "Feat",
     id: "ID_FMP_FEAT_1707",
@@ -53,7 +54,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Fires of Heaven"] = new RulesElement({
+  te = Feat["Fires of Heaven"] = new engine.RulesElement({
     name: "Fires of Heaven",
     type: "Feat",
     id: "ID_FMP_FEAT_1729",
@@ -63,7 +64,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Free-Ranging Familiar"] = new RulesElement({
+  te = Feat["Free-Ranging Familiar"] = new engine.RulesElement({
     name: "Free-Ranging Familiar",
     type: "Feat",
     id: "ID_FMP_FEAT_1708",
@@ -73,7 +74,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Human Resolve"] = new RulesElement({
+  te = Feat["Human Resolve"] = new engine.RulesElement({
     name: "Human Resolve",
     type: "Feat",
     id: "ID_FMP_FEAT_1717",
@@ -86,7 +87,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Hunting Beast"] = new RulesElement({
+  te = Feat["Hunting Beast"] = new engine.RulesElement({
     name: "Hunting Beast",
     type: "Feat",
     id: "ID_FMP_FEAT_1718",
@@ -96,7 +97,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Infused Familiar"] = new RulesElement({
+  te = Feat["Infused Familiar"] = new engine.RulesElement({
     name: "Infused Familiar",
     type: "Feat",
     id: "ID_FMP_FEAT_1709",
@@ -109,7 +110,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Limning Challenge"] = new RulesElement({
+  te = Feat["Limning Challenge"] = new engine.RulesElement({
     name: "Limning Challenge",
     type: "Feat",
     id: "ID_FMP_FEAT_1730",
@@ -119,7 +120,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Majestic Fervor"] = new RulesElement({
+  te = Feat["Majestic Fervor"] = new engine.RulesElement({
     name: "Majestic Fervor",
     type: "Feat",
     id: "ID_FMP_FEAT_1719",
@@ -129,7 +130,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Radiant Rage"] = new RulesElement({
+  te = Feat["Radiant Rage"] = new engine.RulesElement({
     name: "Radiant Rage",
     type: "Feat",
     id: "ID_FMP_FEAT_1720",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Retributive Action"] = new RulesElement({
+  te = Feat["Retributive Action"] = new engine.RulesElement({
     name: "Retributive Action",
     type: "Feat",
     id: "ID_FMP_FEAT_1727",
@@ -152,7 +153,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Righteous Challenge"] = new RulesElement({
+  te = Feat["Righteous Challenge"] = new engine.RulesElement({
     name: "Righteous Challenge",
     type: "Feat",
     id: "ID_FMP_FEAT_1731",
@@ -162,7 +163,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Righteous Fury"] = new RulesElement({
+  te = Feat["Righteous Fury"] = new engine.RulesElement({
     name: "Righteous Fury",
     type: "Feat",
     id: "ID_FMP_FEAT_1721",
@@ -172,7 +173,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shardbound Familiar (Eberron)"] = new RulesElement({
+  te = Feat["Shardbound Familiar (Eberron)"] = new engine.RulesElement({
     name: "Shardbound Familiar (Eberron)",
     type: "Feat",
     id: "ID_FMP_FEAT_1711",
@@ -185,7 +186,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shardbound Familiar (Khyber)"] = new RulesElement({
+  te = Feat["Shardbound Familiar (Khyber)"] = new engine.RulesElement({
     name: "Shardbound Familiar (Khyber)",
     type: "Feat",
     id: "ID_FMP_FEAT_1712",
@@ -195,7 +196,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shardbound Familiar (Siberys)"] = new RulesElement({
+  te = Feat["Shardbound Familiar (Siberys)"] = new engine.RulesElement({
     name: "Shardbound Familiar (Siberys)",
     type: "Feat",
     id: "ID_FMP_FEAT_1713",
@@ -208,7 +209,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Sniper's Aim"] = new RulesElement({
+  te = Feat["Sniper's Aim"] = new engine.RulesElement({
     name: "Sniper's Aim",
     type: "Feat",
     id: "ID_FMP_FEAT_1722",
@@ -218,7 +219,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Undeniable Crusader"] = new RulesElement({
+  te = Feat["Undeniable Crusader"] = new engine.RulesElement({
     name: "Undeniable Crusader",
     type: "Feat",
     id: "ID_FMP_FEAT_1732",
@@ -228,7 +229,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Unfailing Courage"] = new RulesElement({
+  te = Feat["Unfailing Courage"] = new engine.RulesElement({
     name: "Unfailing Courage",
     type: "Feat",
     id: "ID_FMP_FEAT_1728",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Vigorous Familiar"] = new RulesElement({
+  te = Feat["Vigorous Familiar"] = new engine.RulesElement({
     name: "Vigorous Familiar",
     type: "Feat",
     id: "ID_FMP_FEAT_1710",
@@ -255,7 +256,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Wrenching Abjuration"] = new RulesElement({
+  te = Feat["Wrenching Abjuration"] = new engine.RulesElement({
     name: "Wrenching Abjuration",
     type: "Feat",
     id: "ID_FMP_FEAT_1724",
@@ -266,4 +267,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

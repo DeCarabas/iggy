@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Answerer +4"] = new RulesElement({
+  te = Magic_Item["Answerer +4"] = new engine.RulesElement({
     name: "Answerer +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7864",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Answerer +5"] = new RulesElement({
+  te = Magic_Item["Answerer +5"] = new engine.RulesElement({
     name: "Answerer +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7865",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Answerer +6"] = new RulesElement({
+  te = Magic_Item["Answerer +6"] = new engine.RulesElement({
     name: "Answerer +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7866",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Crook of Remembrance +4"] = new RulesElement({
+  te = Magic_Item["Crook of Remembrance +4"] = new engine.RulesElement({
     name: "Crook of Remembrance +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7867",
@@ -56,7 +57,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Crook of Remembrance +5"] = new RulesElement({
+  te = Magic_Item["Crook of Remembrance +5"] = new engine.RulesElement({
     name: "Crook of Remembrance +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7868",
@@ -69,7 +70,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Crook of Remembrance +6"] = new RulesElement({
+  te = Magic_Item["Crook of Remembrance +6"] = new engine.RulesElement({
     name: "Crook of Remembrance +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7869",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Empyreal Breastplate +4"] = new RulesElement({
+  te = Magic_Item["Empyreal Breastplate +4"] = new engine.RulesElement({
     name: "Empyreal Breastplate +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7870",
@@ -96,7 +97,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Empyreal Breastplate +5"] = new RulesElement({
+  te = Magic_Item["Empyreal Breastplate +5"] = new engine.RulesElement({
     name: "Empyreal Breastplate +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7871",
@@ -110,7 +111,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Empyreal Breastplate +6"] = new RulesElement({
+  te = Magic_Item["Empyreal Breastplate +6"] = new engine.RulesElement({
     name: "Empyreal Breastplate +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7872",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Familiar's Baldric +1"] = new RulesElement({
+  te = Magic_Item["Familiar's Baldric +1"] = new engine.RulesElement({
     name: "Familiar's Baldric +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7856",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Familiar's Baldric +2"] = new RulesElement({
+  te = Magic_Item["Familiar's Baldric +2"] = new engine.RulesElement({
     name: "Familiar's Baldric +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7858",
@@ -154,7 +155,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Familiar's Baldric +3"] = new RulesElement({
+  te = Magic_Item["Familiar's Baldric +3"] = new engine.RulesElement({
     name: "Familiar's Baldric +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7860",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Familiar's Cowl (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Familiar's Cowl (paragon tier)"] = new engine.RulesElement({
     name: "Familiar's Cowl (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7862",
@@ -178,7 +179,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Homing Collar (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Homing Collar (paragon tier)"] = new engine.RulesElement({
     name: "Homing Collar (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7863",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Safe Retreat (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Safe Retreat (paragon tier)"] = new engine.RulesElement({
     name: "Safe Retreat (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7855",
@@ -196,7 +197,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Verdant Silence Weapon +2"] = new RulesElement({
+  te = Magic_Item["Verdant Silence Weapon +2"] = new engine.RulesElement({
     name: "Verdant Silence Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7873",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Verdant Silence Weapon +3"] = new RulesElement({
+  te = Magic_Item["Verdant Silence Weapon +3"] = new engine.RulesElement({
     name: "Verdant Silence Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7874",
@@ -214,7 +215,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Verdant Silence Weapon +4"] = new RulesElement({
+  te = Magic_Item["Verdant Silence Weapon +4"] = new engine.RulesElement({
     name: "Verdant Silence Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7875",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Verdant Silence Weapon +5"] = new RulesElement({
+  te = Magic_Item["Verdant Silence Weapon +5"] = new engine.RulesElement({
     name: "Verdant Silence Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7876",
@@ -232,7 +233,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Verdant Silence Weapon +6"] = new RulesElement({
+  te = Magic_Item["Verdant Silence Weapon +6"] = new engine.RulesElement({
     name: "Verdant Silence Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7877",
@@ -242,4 +243,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

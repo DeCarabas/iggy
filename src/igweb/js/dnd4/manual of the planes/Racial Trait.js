@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Racial_Trait = types['Racial Trait'] || (types['Racial Trait'] = {});
-  te = Racial_Trait["Acid Resistance"] = new RulesElement({
+  te = Racial_Trait["Acid Resistance"] = new engine.RulesElement({
     name: "Acid Resistance",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_1065",
@@ -21,7 +22,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Improved Razor Storm Constitution"] = new RulesElement({
+  te = Racial_Trait["Improved Razor Storm Constitution"] = new engine.RulesElement({
     name: "Improved Razor Storm Constitution",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_IMPROVED_RAZOR_STORM_CONSTITUTION",
@@ -30,7 +31,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Improved Razor Storm Dexterity"] = new RulesElement({
+  te = Racial_Trait["Improved Razor Storm Dexterity"] = new engine.RulesElement({
     name: "Improved Razor Storm Dexterity",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_IMPROVED_RAZOR_STORM_DEXTERITY",
@@ -39,7 +40,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Improved Razor Storm Strength"] = new RulesElement({
+  te = Racial_Trait["Improved Razor Storm Strength"] = new engine.RulesElement({
     name: "Improved Razor Storm Strength",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_IMPROVED_RAZOR_STORM_STRENGTH",
@@ -48,20 +49,20 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Razor Storm"] = new RulesElement({
+  te = Racial_Trait["Razor Storm"] = new engine.RulesElement({
     name: "Razor Storm",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_1066",
     source: "Manual of the Planes",
     categories: ["Razor Storm", "ID_FMP_RACIAL_TRAIT_1066"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_5599"]);
+      model.grant(model.elements.id["ID_FMP_POWER_5599"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Razor Storm Constitution"] = new RulesElement({
+  te = Racial_Trait["Razor Storm Constitution"] = new engine.RulesElement({
     name: "Razor Storm Constitution",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_RAZOR_STORM_CONSTITUTION",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Razor Storm Dexterity"] = new RulesElement({
+  te = Racial_Trait["Razor Storm Dexterity"] = new engine.RulesElement({
     name: "Razor Storm Dexterity",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_RAZOR_STORM_DEXTERITY",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Razor Storm Strength"] = new RulesElement({
+  te = Racial_Trait["Razor Storm Strength"] = new engine.RulesElement({
     name: "Razor Storm Strength",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_RAZOR_STORM_STRENGTH",
@@ -89,4 +90,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

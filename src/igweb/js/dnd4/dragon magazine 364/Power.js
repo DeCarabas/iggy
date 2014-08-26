@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Casting Ripples"] = new RulesElement({
+  te = Power["Casting Ripples"] = new engine.RulesElement({
     name: "Casting Ripples",
     type: "Power",
     id: "ID_FMP_POWER_3227",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Empathic Resonance"] = new RulesElement({
+  te = Power["Empathic Resonance"] = new engine.RulesElement({
     name: "Empathic Resonance",
     type: "Power",
     id: "ID_FMP_POWER_3155",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Manticore-and-Wyvern"] = new RulesElement({
+  te = Power["Manticore-and-Wyvern"] = new engine.RulesElement({
     name: "Manticore-and-Wyvern",
     type: "Power",
     id: "ID_FMP_POWER_3226",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Straw Soldiers"] = new RulesElement({
+  te = Power["Straw Soldiers"] = new engine.RulesElement({
     name: "Straw Soldiers",
     type: "Power",
     id: "ID_FMP_POWER_3228",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Unleashed Vigor"] = new RulesElement({
+  te = Power["Unleashed Vigor"] = new engine.RulesElement({
     name: "Unleashed Vigor",
     type: "Power",
     id: "ID_FMP_POWER_3156",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Verve Strike"] = new RulesElement({
+  te = Power["Verve Strike"] = new engine.RulesElement({
     name: "Verve Strike",
     type: "Power",
     id: "ID_FMP_POWER_3154",
@@ -68,4 +69,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

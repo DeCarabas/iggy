@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Audaviator"] = new RulesElement({
+  te = Magic_Item["Audaviator"] = new engine.RulesElement({
     name: "Audaviator",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5383",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Sorrowsong Blade +6"] = new RulesElement({
+  te = Magic_Item["Sorrowsong Blade +6"] = new engine.RulesElement({
     name: "Sorrowsong Blade +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5382",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["White Kingdom Boneclaw +6"] = new RulesElement({
+  te = Magic_Item["White Kingdom Boneclaw +6"] = new engine.RulesElement({
     name: "White Kingdom Boneclaw +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5381",
@@ -38,4 +39,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Chaos Shard Implement +1"] = new RulesElement({
+  te = Magic_Item["Chaos Shard Implement +1"] = new engine.RulesElement({
     name: "Chaos Shard Implement +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8337",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Chaos Shard Implement +2"] = new RulesElement({
+  te = Magic_Item["Chaos Shard Implement +2"] = new engine.RulesElement({
     name: "Chaos Shard Implement +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8338",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Chaos Shard Implement +3"] = new RulesElement({
+  te = Magic_Item["Chaos Shard Implement +3"] = new engine.RulesElement({
     name: "Chaos Shard Implement +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8339",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Chaos Shard Implement +4"] = new RulesElement({
+  te = Magic_Item["Chaos Shard Implement +4"] = new engine.RulesElement({
     name: "Chaos Shard Implement +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8340",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Chaos Shard Implement +5"] = new RulesElement({
+  te = Magic_Item["Chaos Shard Implement +5"] = new engine.RulesElement({
     name: "Chaos Shard Implement +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8341",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Chaos Shard Implement +6"] = new RulesElement({
+  te = Magic_Item["Chaos Shard Implement +6"] = new engine.RulesElement({
     name: "Chaos Shard Implement +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8342",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Nightstalker's Poniard +3"] = new RulesElement({
+  te = Magic_Item["Nightstalker's Poniard +3"] = new engine.RulesElement({
     name: "Nightstalker's Poniard +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8442",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Voran's Eternal Chalk (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Voran's Eternal Chalk (heroic tier)"] = new engine.RulesElement({
     name: "Voran's Eternal Chalk (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8445",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Voran's Floating Lantern (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Voran's Floating Lantern (heroic tier)"] = new engine.RulesElement({
     name: "Voran's Floating Lantern (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8446",
@@ -107,4 +108,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

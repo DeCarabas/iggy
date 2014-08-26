@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Racial_Trait = types['Racial Trait'] || (types['Racial Trait'] = {});
-  te = Racial_Trait["Flock Effect"] = new RulesElement({
+  te = Racial_Trait["Flock Effect"] = new engine.RulesElement({
     name: "Flock Effect",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_1524",
@@ -19,20 +20,20 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Infernal Quils"] = new RulesElement({
+  te = Racial_Trait["Infernal Quils"] = new engine.RulesElement({
     name: "Infernal Quils",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_1523",
     source: "Monster Manual 2",
     categories: ["Infernal Quils", "ID_FMP_RACIAL_TRAIT_1523"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_27"]);
+      model.grant(model.elements.id["ID_FMP_POWER_27"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Mimicry"] = new RulesElement({
+  te = Racial_Trait["Mimicry"] = new engine.RulesElement({
     name: "Mimicry",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_1525",
@@ -41,7 +42,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Rancid Air"] = new RulesElement({
+  te = Racial_Trait["Rancid Air"] = new engine.RulesElement({
     name: "Rancid Air",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_1522",
@@ -51,4 +52,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

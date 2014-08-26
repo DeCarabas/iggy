@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Abiding Reaper Charisma"] = new RulesElement({
+  te = class_feature["Abiding Reaper Charisma"] = new engine.RulesElement({
     name: "Abiding Reaper Charisma",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ABIDING_REAPER_CHARISMA",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Abiding Reaper Constitution"] = new RulesElement({
+  te = class_feature["Abiding Reaper Constitution"] = new engine.RulesElement({
     name: "Abiding Reaper Constitution",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ABIDING_REAPER_CONSTITUTION",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Abiding Reaper Dexterity"] = new RulesElement({
+  te = class_feature["Abiding Reaper Dexterity"] = new engine.RulesElement({
     name: "Abiding Reaper Dexterity",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ABIDING_REAPER_DEXTERITY",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Abiding Reaper Intelligence"] = new RulesElement({
+  te = class_feature["Abiding Reaper Intelligence"] = new engine.RulesElement({
     name: "Abiding Reaper Intelligence",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ABIDING_REAPER_INTELLIGENCE",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Abiding Reaper Strength"] = new RulesElement({
+  te = class_feature["Abiding Reaper Strength"] = new engine.RulesElement({
     name: "Abiding Reaper Strength",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ABIDING_REAPER_STRENGTH",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Abiding Reaper Wisdom"] = new RulesElement({
+  te = class_feature["Abiding Reaper Wisdom"] = new engine.RulesElement({
     name: "Abiding Reaper Wisdom",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ABIDING_REAPER_WISDOM",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Astral Critical"] = new RulesElement({
+  te = class_feature["Astral Critical"] = new engine.RulesElement({
     name: "Astral Critical",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1333",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Blood Calling"] = new RulesElement({
+  te = class_feature["Blood Calling"] = new engine.RulesElement({
     name: "Blood Calling",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1484",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Brimstone Step"] = new RulesElement({
+  te = class_feature["Brimstone Step"] = new engine.RulesElement({
     name: "Brimstone Step",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1337",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Chosen Foe"] = new RulesElement({
+  te = class_feature["Chosen Foe"] = new engine.RulesElement({
     name: "Chosen Foe",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1323",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Cycle of Life"] = new RulesElement({
+  te = class_feature["Cycle of Life"] = new engine.RulesElement({
     name: "Cycle of Life",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1490",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Cyclone's Master"] = new RulesElement({
+  te = class_feature["Cyclone's Master"] = new engine.RulesElement({
     name: "Cyclone's Master",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1343",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Deathly Action"] = new RulesElement({
+  te = class_feature["Deathly Action"] = new engine.RulesElement({
     name: "Deathly Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1483",
@@ -145,7 +146,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Death's Companions"] = new RulesElement({
+  te = class_feature["Death's Companions"] = new engine.RulesElement({
     name: "Death's Companions",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1491",
@@ -154,7 +155,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Fearmonger"] = new RulesElement({
+  te = class_feature["Fearmonger"] = new engine.RulesElement({
     name: "Fearmonger",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1487",
@@ -163,7 +164,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Frozen in Ice"] = new RulesElement({
+  te = class_feature["Frozen in Ice"] = new engine.RulesElement({
     name: "Frozen in Ice",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1346",
@@ -172,7 +173,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hardened Spirit"] = new RulesElement({
+  te = class_feature["Hardened Spirit"] = new engine.RulesElement({
     name: "Hardened Spirit",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1485",
@@ -181,7 +182,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hellfire Master"] = new RulesElement({
+  te = class_feature["Hellfire Master"] = new engine.RulesElement({
     name: "Hellfire Master",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1336",
@@ -190,7 +191,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Infernal Form"] = new RulesElement({
+  te = class_feature["Infernal Form"] = new engine.RulesElement({
     name: "Infernal Form",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1335",
@@ -198,7 +199,7 @@
     categories: ["Infernal Form", "ID_FMP_CLASS_FEATURE_1335", "21"],
     rules: function(model) {
       model.statadd("Charisma", 2);
-      model.grant(elements.id["ID_INTERNAL_VISION_DARKVISION"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_DARKVISION"]);
       model.statadd("Infernal Form Resist", 20);
       model.statadd("Infernal Form Resist", function() { return model.stat("HALF-LEVEL"); });
       model.statadd("resist:fire", function() { return model.stat("Infernal Form Resist"); }, "resist");
@@ -206,7 +207,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Lingering Cold"] = new RulesElement({
+  te = class_feature["Lingering Cold"] = new engine.RulesElement({
     name: "Lingering Cold",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1344",
@@ -215,7 +216,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Never Falter"] = new RulesElement({
+  te = class_feature["Never Falter"] = new engine.RulesElement({
     name: "Never Falter",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1325",
@@ -228,7 +229,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Portal Mastery"] = new RulesElement({
+  te = class_feature["Portal Mastery"] = new engine.RulesElement({
     name: "Portal Mastery",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1329",
@@ -237,7 +238,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Quickened Corpus"] = new RulesElement({
+  te = class_feature["Quickened Corpus"] = new engine.RulesElement({
     name: "Quickened Corpus",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1489",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Rattling Action"] = new RulesElement({
+  te = class_feature["Rattling Action"] = new engine.RulesElement({
     name: "Rattling Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1486",
@@ -262,7 +263,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Return from the Shadowfell"] = new RulesElement({
+  te = class_feature["Return from the Shadowfell"] = new engine.RulesElement({
     name: "Return from the Shadowfell",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1327",
@@ -271,7 +272,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Shape Reality"] = new RulesElement({
+  te = class_feature["Shape Reality"] = new engine.RulesElement({
     name: "Shape Reality",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1334",
@@ -280,7 +281,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Stand in Two Worlds"] = new RulesElement({
+  te = class_feature["Stand in Two Worlds"] = new engine.RulesElement({
     name: "Stand in Two Worlds",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1326",
@@ -289,7 +290,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Stormborn"] = new RulesElement({
+  te = class_feature["Stormborn"] = new engine.RulesElement({
     name: "Stormborn",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1341",
@@ -305,7 +306,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Strike Them Down"] = new RulesElement({
+  te = class_feature["Strike Them Down"] = new engine.RulesElement({
     name: "Strike Them Down",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1324",
@@ -317,7 +318,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Thrall in Death"] = new RulesElement({
+  te = class_feature["Thrall in Death"] = new engine.RulesElement({
     name: "Thrall in Death",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1328",
@@ -326,7 +327,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Thrive on Fear"] = new RulesElement({
+  te = class_feature["Thrive on Fear"] = new engine.RulesElement({
     name: "Thrive on Fear",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1488",
@@ -335,7 +336,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Thunder and Lightning"] = new RulesElement({
+  te = class_feature["Thunder and Lightning"] = new engine.RulesElement({
     name: "Thunder and Lightning",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1342",
@@ -344,7 +345,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Traveler's Tricks"] = new RulesElement({
+  te = class_feature["Traveler's Tricks"] = new engine.RulesElement({
     name: "Traveler's Tricks",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1330",
@@ -353,7 +354,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Ultimate Adaptation"] = new RulesElement({
+  te = class_feature["Ultimate Adaptation"] = new engine.RulesElement({
     name: "Ultimate Adaptation",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1332",
@@ -365,7 +366,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Unfettered Passage"] = new RulesElement({
+  te = class_feature["Unfettered Passage"] = new engine.RulesElement({
     name: "Unfettered Passage",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1331",
@@ -374,7 +375,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Winter's Bite"] = new RulesElement({
+  te = class_feature["Winter's Bite"] = new engine.RulesElement({
     name: "Winter's Bite",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1345",
@@ -384,4 +385,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

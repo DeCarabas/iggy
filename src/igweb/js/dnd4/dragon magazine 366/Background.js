@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Background = types['Background'] || (types['Background'] = {});
-  te = Background["Apprentice of Sinister Cabal"] = new RulesElement({
+  te = Background["Apprentice of Sinister Cabal"] = new engine.RulesElement({
     name: "Apprentice of Sinister Cabal",
     type: "Background",
     id: "ID_FMP_BACKGROUND_70",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Arcane Student Who Saw Too Much"] = new RulesElement({
+  te = Background["Arcane Student Who Saw Too Much"] = new engine.RulesElement({
     name: "Arcane Student Who Saw Too Much",
     type: "Background",
     id: "ID_FMP_BACKGROUND_75",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Assassin"] = new RulesElement({
+  te = Background["Assassin"] = new engine.RulesElement({
     name: "Assassin",
     type: "Background",
     id: "ID_FMP_BACKGROUND_66",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Auspicious Birth"] = new RulesElement({
+  te = Background["Auspicious Birth"] = new engine.RulesElement({
     name: "Auspicious Birth",
     type: "Background",
     id: "ID_FMP_BACKGROUND_54",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Born Under a Bad Sign"] = new RulesElement({
+  te = Background["Born Under a Bad Sign"] = new engine.RulesElement({
     name: "Born Under a Bad Sign",
     type: "Background",
     id: "ID_FMP_BACKGROUND_71",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Brother in Battle"] = new RulesElement({
+  te = Background["Brother in Battle"] = new engine.RulesElement({
     name: "Brother in Battle",
     type: "Background",
     id: "ID_FMP_BACKGROUND_35",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Cat Burglar"] = new RulesElement({
+  te = Background["Cat Burglar"] = new engine.RulesElement({
     name: "Cat Burglar",
     type: "Background",
     id: "ID_FMP_BACKGROUND_67",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Cloistered Priest"] = new RulesElement({
+  te = Background["Cloistered Priest"] = new engine.RulesElement({
     name: "Cloistered Priest",
     type: "Background",
     id: "ID_FMP_BACKGROUND_48",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Con Artist"] = new RulesElement({
+  te = Background["Con Artist"] = new engine.RulesElement({
     name: "Con Artist",
     type: "Background",
     id: "ID_FMP_BACKGROUND_45",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Crusading Zealot"] = new RulesElement({
+  te = Background["Crusading Zealot"] = new engine.RulesElement({
     name: "Crusading Zealot",
     type: "Background",
     id: "ID_FMP_BACKGROUND_61",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Cult Escapee"] = new RulesElement({
+  te = Background["Cult Escapee"] = new engine.RulesElement({
     name: "Cult Escapee",
     type: "Background",
     id: "ID_FMP_BACKGROUND_52",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Detective"] = new RulesElement({
+  te = Background["Detective"] = new engine.RulesElement({
     name: "Detective",
     type: "Background",
     id: "ID_FMP_BACKGROUND_43",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Eldritch Harlequin"] = new RulesElement({
+  te = Background["Eldritch Harlequin"] = new engine.RulesElement({
     name: "Eldritch Harlequin",
     type: "Background",
     id: "ID_FMP_BACKGROUND_38",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Explorer/Guide"] = new RulesElement({
+  te = Background["Explorer/Guide"] = new engine.RulesElement({
     name: "Explorer/Guide",
     type: "Background",
     id: "ID_FMP_BACKGROUND_41",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Forest Warden"] = new RulesElement({
+  te = Background["Forest Warden"] = new engine.RulesElement({
     name: "Forest Warden",
     type: "Background",
     id: "ID_FMP_BACKGROUND_40",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Former Barbarian"] = new RulesElement({
+  te = Background["Former Barbarian"] = new engine.RulesElement({
     name: "Former Barbarian",
     type: "Background",
     id: "ID_FMP_BACKGROUND_59",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Former Gladiator"] = new RulesElement({
+  te = Background["Former Gladiator"] = new engine.RulesElement({
     name: "Former Gladiator",
     type: "Background",
     id: "ID_FMP_BACKGROUND_57",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Fugitive from a Vengeful Rival"] = new RulesElement({
+  te = Background["Fugitive from a Vengeful Rival"] = new engine.RulesElement({
     name: "Fugitive from a Vengeful Rival",
     type: "Background",
     id: "ID_FMP_BACKGROUND_65",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Gritty Sergeant"] = new RulesElement({
+  te = Background["Gritty Sergeant"] = new engine.RulesElement({
     name: "Gritty Sergeant",
     type: "Background",
     id: "ID_FMP_BACKGROUND_49",
@@ -178,7 +179,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Haunted Veteran"] = new RulesElement({
+  te = Background["Haunted Veteran"] = new engine.RulesElement({
     name: "Haunted Veteran",
     type: "Background",
     id: "ID_FMP_BACKGROUND_58",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Imbuer"] = new RulesElement({
+  te = Background["Imbuer"] = new engine.RulesElement({
     name: "Imbuer",
     type: "Background",
     id: "ID_FMP_BACKGROUND_77",
@@ -196,7 +197,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Last of the Breed"] = new RulesElement({
+  te = Background["Last of the Breed"] = new engine.RulesElement({
     name: "Last of the Breed",
     type: "Background",
     id: "ID_FMP_BACKGROUND_63",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Magic Scholar"] = new RulesElement({
+  te = Background["Magic Scholar"] = new engine.RulesElement({
     name: "Magic Scholar",
     type: "Background",
     id: "ID_FMP_BACKGROUND_37",
@@ -214,7 +215,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Merchant Prince"] = new RulesElement({
+  te = Background["Merchant Prince"] = new engine.RulesElement({
     name: "Merchant Prince",
     type: "Background",
     id: "ID_FMP_BACKGROUND_42",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Missing Master"] = new RulesElement({
+  te = Background["Missing Master"] = new engine.RulesElement({
     name: "Missing Master",
     type: "Background",
     id: "ID_FMP_BACKGROUND_76",
@@ -232,7 +233,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Monster Hunter"] = new RulesElement({
+  te = Background["Monster Hunter"] = new engine.RulesElement({
     name: "Monster Hunter",
     type: "Background",
     id: "ID_FMP_BACKGROUND_64",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Noble Bred for War"] = new RulesElement({
+  te = Background["Noble Bred for War"] = new engine.RulesElement({
     name: "Noble Bred for War",
     type: "Background",
     id: "ID_FMP_BACKGROUND_73",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Noble Scion"] = new RulesElement({
+  te = Background["Noble Scion"] = new engine.RulesElement({
     name: "Noble Scion",
     type: "Background",
     id: "ID_FMP_BACKGROUND_50",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Officer Who Came Out of Retirement"] = new RulesElement({
+  te = Background["Officer Who Came Out of Retirement"] = new engine.RulesElement({
     name: "Officer Who Came Out of Retirement",
     type: "Background",
     id: "ID_FMP_BACKGROUND_74",
@@ -268,7 +269,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["On the Run from the Devil"] = new RulesElement({
+  te = Background["On the Run from the Devil"] = new engine.RulesElement({
     name: "On the Run from the Devil",
     type: "Background",
     id: "ID_FMP_BACKGROUND_69",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Political Rebel"] = new RulesElement({
+  te = Background["Political Rebel"] = new engine.RulesElement({
     name: "Political Rebel",
     type: "Background",
     id: "ID_FMP_BACKGROUND_68",
@@ -286,7 +287,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Prison Conversion"] = new RulesElement({
+  te = Background["Prison Conversion"] = new engine.RulesElement({
     name: "Prison Conversion",
     type: "Background",
     id: "ID_FMP_BACKGROUND_60",
@@ -295,7 +296,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Recent Convert"] = new RulesElement({
+  te = Background["Recent Convert"] = new engine.RulesElement({
     name: "Recent Convert",
     type: "Background",
     id: "ID_FMP_BACKGROUND_56",
@@ -304,7 +305,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Redemption Seeker"] = new RulesElement({
+  te = Background["Redemption Seeker"] = new engine.RulesElement({
     name: "Redemption Seeker",
     type: "Background",
     id: "ID_FMP_BACKGROUND_31",
@@ -313,7 +314,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["River Smuggler"] = new RulesElement({
+  te = Background["River Smuggler"] = new engine.RulesElement({
     name: "River Smuggler",
     type: "Background",
     id: "ID_FMP_BACKGROUND_47",
@@ -322,7 +323,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Scion of an Ancient Bloodline"] = new RulesElement({
+  te = Background["Scion of an Ancient Bloodline"] = new engine.RulesElement({
     name: "Scion of an Ancient Bloodline",
     type: "Background",
     id: "ID_FMP_BACKGROUND_51",
@@ -331,7 +332,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Scorned Noble"] = new RulesElement({
+  te = Background["Scorned Noble"] = new engine.RulesElement({
     name: "Scorned Noble",
     type: "Background",
     id: "ID_FMP_BACKGROUND_30",
@@ -340,7 +341,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Seducer"] = new RulesElement({
+  te = Background["Seducer"] = new engine.RulesElement({
     name: "Seducer",
     type: "Background",
     id: "ID_FMP_BACKGROUND_36",
@@ -349,7 +350,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Seeker for the Lost Clan"] = new RulesElement({
+  te = Background["Seeker for the Lost Clan"] = new engine.RulesElement({
     name: "Seeker for the Lost Clan",
     type: "Background",
     id: "ID_FMP_BACKGROUND_33",
@@ -358,7 +359,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Silent Hunter"] = new RulesElement({
+  te = Background["Silent Hunter"] = new engine.RulesElement({
     name: "Silent Hunter",
     type: "Background",
     id: "ID_FMP_BACKGROUND_39",
@@ -367,7 +368,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Street Urchin"] = new RulesElement({
+  te = Background["Street Urchin"] = new engine.RulesElement({
     name: "Street Urchin",
     type: "Background",
     id: "ID_FMP_BACKGROUND_46",
@@ -376,7 +377,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Trained from Birth for a Specific Prophecy"] = new RulesElement({
+  te = Background["Trained from Birth for a Specific Prophecy"] = new engine.RulesElement({
     name: "Trained from Birth for a Specific Prophecy",
     type: "Background",
     id: "ID_FMP_BACKGROUND_62",
@@ -385,7 +386,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Traveling Missionary"] = new RulesElement({
+  te = Background["Traveling Missionary"] = new engine.RulesElement({
     name: "Traveling Missionary",
     type: "Background",
     id: "ID_FMP_BACKGROUND_55",
@@ -394,7 +395,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Vet Who Can't Let Go"] = new RulesElement({
+  te = Background["Vet Who Can't Let Go"] = new engine.RulesElement({
     name: "Vet Who Can't Let Go",
     type: "Background",
     id: "ID_FMP_BACKGROUND_72",
@@ -403,7 +404,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Wandering Duelist"] = new RulesElement({
+  te = Background["Wandering Duelist"] = new engine.RulesElement({
     name: "Wandering Duelist",
     type: "Background",
     id: "ID_FMP_BACKGROUND_29",
@@ -412,7 +413,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Wandering Mercenary"] = new RulesElement({
+  te = Background["Wandering Mercenary"] = new engine.RulesElement({
     name: "Wandering Mercenary",
     type: "Background",
     id: "ID_FMP_BACKGROUND_44",
@@ -421,7 +422,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Warsmith"] = new RulesElement({
+  te = Background["Warsmith"] = new engine.RulesElement({
     name: "Warsmith",
     type: "Background",
     id: "ID_FMP_BACKGROUND_34",
@@ -430,7 +431,7 @@
   });
   byID[te.id] = te;
   
-  te = Background["Young Cutthroat"] = new RulesElement({
+  te = Background["Young Cutthroat"] = new engine.RulesElement({
     name: "Young Cutthroat",
     type: "Background",
     id: "ID_FMP_BACKGROUND_53",
@@ -440,4 +441,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

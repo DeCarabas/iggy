@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Gear = types['Gear'] || (types['Gear'] = {});
-  te = Gear["Tome Implement"] = new RulesElement({
+  te = Gear["Tome Implement"] = new engine.RulesElement({
     name: "Tome Implement",
     type: "Gear",
     id: "ID_FMP_GEAR_101",
@@ -17,4 +18,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

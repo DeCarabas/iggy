@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Elemental Prism (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Elemental Prism (paragon tier)"] = new engine.RulesElement({
     name: "Elemental Prism (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5037",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Seed of Winter"] = new RulesElement({
+  te = Magic_Item["Seed of Winter"] = new engine.RulesElement({
     name: "Seed of Winter",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_5038",
@@ -30,4 +31,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

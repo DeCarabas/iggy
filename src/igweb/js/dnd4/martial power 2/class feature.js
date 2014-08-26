@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Acidic Poisons"] = new RulesElement({
+  te = class_feature["Acidic Poisons"] = new engine.RulesElement({
     name: "Acidic Poisons",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2276",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Advanced Dabbler"] = new RulesElement({
+  te = class_feature["Advanced Dabbler"] = new engine.RulesElement({
     name: "Advanced Dabbler",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2250",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Advantageous Positioning"] = new RulesElement({
+  te = class_feature["Advantageous Positioning"] = new engine.RulesElement({
     name: "Advantageous Positioning",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2282",
@@ -40,19 +41,19 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Arcane Burglary"] = new RulesElement({
+  te = class_feature["Arcane Burglary"] = new engine.RulesElement({
     name: "Arcane Burglary",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2239",
     source: "Martial Power 2",
     categories: ["Arcane Burglary", "ID_FMP_CLASS_FEATURE_2239", "11"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Archer Warlord"] = new RulesElement({
+  te = class_feature["Archer Warlord"] = new engine.RulesElement({
     name: "Archer Warlord",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2286",
@@ -61,13 +62,13 @@
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.DropRule
       // unsupported rule: cbimporter.Rules.DropRule
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_RANGED"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_RANGED"]);
       model.statadd("ranged basic,bow group:key ability", "str");
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Avernian Action"] = new RulesElement({
+  te = class_feature["Avernian Action"] = new engine.RulesElement({
     name: "Avernian Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2184",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Back Alley Bravo"] = new RulesElement({
+  te = class_feature["Back Alley Bravo"] = new engine.RulesElement({
     name: "Back Alley Bravo",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2244",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Battle Agility"] = new RulesElement({
+  te = class_feature["Battle Agility"] = new engine.RulesElement({
     name: "Battle Agility",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2188",
@@ -119,7 +120,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Battle Recovery"] = new RulesElement({
+  te = class_feature["Battle Recovery"] = new engine.RulesElement({
     name: "Battle Recovery",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2296",
@@ -128,20 +129,20 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Battlefront Leader"] = new RulesElement({
+  te = class_feature["Battlefront Leader"] = new engine.RulesElement({
     name: "Battlefront Leader",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2287",
     source: "Martial Power 2",
     categories: ["Battlefront Leader", "ID_FMP_CLASS_FEATURE_2287", "1"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)"]);
-      model.grant(elements.id["ID_FMP_POWER_10887"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10887"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Bestial Accuracy"] = new RulesElement({
+  te = class_feature["Bestial Accuracy"] = new engine.RulesElement({
     name: "Bestial Accuracy",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2213",
@@ -153,7 +154,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Binding Action"] = new RulesElement({
+  te = class_feature["Binding Action"] = new engine.RulesElement({
     name: "Binding Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2304",
@@ -165,7 +166,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Blindsense"] = new RulesElement({
+  te = class_feature["Blindsense"] = new engine.RulesElement({
     name: "Blindsense",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2216",
@@ -174,7 +175,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Bold Company"] = new RulesElement({
+  te = class_feature["Bold Company"] = new engine.RulesElement({
     name: "Bold Company",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2313",
@@ -186,7 +187,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Brawler Style"] = new RulesElement({
+  te = class_feature["Brawler Style"] = new engine.RulesElement({
     name: "Brawler Style",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2182",
@@ -219,7 +220,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Brute Charge"] = new RulesElement({
+  te = class_feature["Brute Charge"] = new engine.RulesElement({
     name: "Brute Charge",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2199",
@@ -228,7 +229,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Canny Leader"] = new RulesElement({
+  te = class_feature["Canny Leader"] = new engine.RulesElement({
     name: "Canny Leader",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2285",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Claw Fighter"] = new RulesElement({
+  te = class_feature["Claw Fighter"] = new engine.RulesElement({
     name: "Claw Fighter",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2234",
@@ -255,7 +256,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Cocksure Menace"] = new RulesElement({
+  te = class_feature["Cocksure Menace"] = new engine.RulesElement({
     name: "Cocksure Menace",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2242",
@@ -264,19 +265,19 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Combat Agility"] = new RulesElement({
+  te = class_feature["Combat Agility"] = new engine.RulesElement({
     name: "Combat Agility",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2183",
     source: "Martial Power 2",
     categories: ["Combat Agility", "ID_FMP_CLASS_FEATURE_2183", "1"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_10469"]);
+      model.grant(model.elements.id["ID_FMP_POWER_10469"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Conclusive Action"] = new RulesElement({
+  te = class_feature["Conclusive Action"] = new engine.RulesElement({
     name: "Conclusive Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2295",
@@ -288,7 +289,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Concussive Action"] = new RulesElement({
+  te = class_feature["Concussive Action"] = new engine.RulesElement({
     name: "Concussive Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2246",
@@ -300,7 +301,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Crimson Brutality"] = new RulesElement({
+  te = class_feature["Crimson Brutality"] = new engine.RulesElement({
     name: "Crimson Brutality",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2278",
@@ -312,7 +313,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Cunning Sneak"] = new RulesElement({
+  te = class_feature["Cunning Sneak"] = new engine.RulesElement({
     name: "Cunning Sneak",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2237",
@@ -321,7 +322,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Dabbler"] = new RulesElement({
+  te = class_feature["Dabbler"] = new engine.RulesElement({
     name: "Dabbler",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_28",
@@ -349,7 +350,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Dagger Spell"] = new RulesElement({
+  te = class_feature["Dagger Spell"] = new engine.RulesElement({
     name: "Dagger Spell",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2241",
@@ -358,19 +359,19 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Dagger Threat"] = new RulesElement({
+  te = class_feature["Dagger Threat"] = new engine.RulesElement({
     name: "Dagger Threat",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2280",
     source: "Martial Power 2",
     categories: ["Dagger Threat", "ID_FMP_CLASS_FEATURE_2280", "11"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_FEAT_157"]);
+      model.grant(model.elements.id["ID_FMP_FEAT_157"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Dark Action"] = new RulesElement({
+  te = class_feature["Dark Action"] = new engine.RulesElement({
     name: "Dark Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2214",
@@ -382,7 +383,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Darkstrider Edge"] = new RulesElement({
+  te = class_feature["Darkstrider Edge"] = new engine.RulesElement({
     name: "Darkstrider Edge",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2215",
@@ -396,7 +397,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Delicate Shot"] = new RulesElement({
+  te = class_feature["Delicate Shot"] = new engine.RulesElement({
     name: "Delicate Shot",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2251",
@@ -405,7 +406,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Desert Wind"] = new RulesElement({
+  te = class_feature["Desert Wind"] = new engine.RulesElement({
     name: "Desert Wind",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2314",
@@ -414,7 +415,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Determined Action"] = new RulesElement({
+  te = class_feature["Determined Action"] = new engine.RulesElement({
     name: "Determined Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2205",
@@ -426,7 +427,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Distracting Action (Prince of Knaves)"] = new RulesElement({
+  te = class_feature["Distracting Action (Prince of Knaves)"] = new engine.RulesElement({
     name: "Distracting Action (Prince of Knaves)",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2309",
@@ -438,7 +439,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Dragon Blood"] = new RulesElement({
+  te = class_feature["Dragon Blood"] = new engine.RulesElement({
     name: "Dragon Blood",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2318",
@@ -447,7 +448,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Dragon Soul (Dragonheart)"] = new RulesElement({
+  te = class_feature["Dragon Soul (Dragonheart)"] = new engine.RulesElement({
     name: "Dragon Soul (Dragonheart)",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2320",
@@ -459,7 +460,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Dragon Spirit"] = new RulesElement({
+  te = class_feature["Dragon Spirit"] = new engine.RulesElement({
     name: "Dragon Spirit",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2317",
@@ -471,7 +472,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Duelist's Guard"] = new RulesElement({
+  te = class_feature["Duelist's Guard"] = new engine.RulesElement({
     name: "Duelist's Guard",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2196",
@@ -502,7 +503,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Dynamic Transformation"] = new RulesElement({
+  te = class_feature["Dynamic Transformation"] = new engine.RulesElement({
     name: "Dynamic Transformation",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2212",
@@ -511,7 +512,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Elemental Action"] = new RulesElement({
+  te = class_feature["Elemental Action"] = new engine.RulesElement({
     name: "Elemental Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2292",
@@ -523,7 +524,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Energizing Inspiration"] = new RulesElement({
+  te = class_feature["Energizing Inspiration"] = new engine.RulesElement({
     name: "Energizing Inspiration",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2293",
@@ -535,7 +536,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Expert Assault"] = new RulesElement({
+  te = class_feature["Expert Assault"] = new engine.RulesElement({
     name: "Expert Assault",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2249",
@@ -547,7 +548,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Fading Action"] = new RulesElement({
+  te = class_feature["Fading Action"] = new engine.RulesElement({
     name: "Fading Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2240",
@@ -559,7 +560,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Favored Tenacity"] = new RulesElement({
+  te = class_feature["Favored Tenacity"] = new engine.RulesElement({
     name: "Favored Tenacity",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2453",
@@ -568,7 +569,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Favored Warrior"] = new RulesElement({
+  te = class_feature["Favored Warrior"] = new engine.RulesElement({
     name: "Favored Warrior",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2452",
@@ -582,7 +583,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Focused Hunter"] = new RulesElement({
+  te = class_feature["Focused Hunter"] = new engine.RulesElement({
     name: "Focused Hunter",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2224",
@@ -594,7 +595,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Forever War"] = new RulesElement({
+  te = class_feature["Forever War"] = new engine.RulesElement({
     name: "Forever War",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2322",
@@ -603,7 +604,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Generous Flanker"] = new RulesElement({
+  te = class_feature["Generous Flanker"] = new engine.RulesElement({
     name: "Generous Flanker",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2307",
@@ -612,7 +613,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Glancing Shot"] = new RulesElement({
+  te = class_feature["Glancing Shot"] = new engine.RulesElement({
     name: "Glancing Shot",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2219",
@@ -621,7 +622,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Great Captain"] = new RulesElement({
+  te = class_feature["Great Captain"] = new engine.RulesElement({
     name: "Great Captain",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1041",
@@ -630,7 +631,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Great Weapon Defense"] = new RulesElement({
+  te = class_feature["Great Weapon Defense"] = new engine.RulesElement({
     name: "Great Weapon Defense",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2204",
@@ -646,7 +647,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Guardian Action (Shinaelestran Guardian)"] = new RulesElement({
+  te = class_feature["Guardian Action (Shinaelestran Guardian)"] = new engine.RulesElement({
     name: "Guardian Action (Shinaelestran Guardian)",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2231",
@@ -658,7 +659,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Guardian Defense"] = new RulesElement({
+  te = class_feature["Guardian Defense"] = new engine.RulesElement({
     name: "Guardian Defense",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2232",
@@ -667,7 +668,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Guardian Vigilance"] = new RulesElement({
+  te = class_feature["Guardian Vigilance"] = new engine.RulesElement({
     name: "Guardian Vigilance",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2233",
@@ -679,7 +680,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hellish Mark"] = new RulesElement({
+  te = class_feature["Hellish Mark"] = new engine.RulesElement({
     name: "Hellish Mark",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2186",
@@ -688,7 +689,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hindering Grasp"] = new RulesElement({
+  te = class_feature["Hindering Grasp"] = new engine.RulesElement({
     name: "Hindering Grasp",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2305",
@@ -697,7 +698,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Homeland"] = new RulesElement({
+  te = class_feature["Homeland"] = new engine.RulesElement({
     name: "Homeland",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1042",
@@ -712,20 +713,20 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hunter Fighting Style"] = new RulesElement({
+  te = class_feature["Hunter Fighting Style"] = new engine.RulesElement({
     name: "Hunter Fighting Style",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2208",
     source: "Martial Power 2",
     categories: ["Hunter Fighting Style", "ID_FMP_CLASS_FEATURE_2208", "ID_FMP_CLASS_FEATURE_321", "Fighting Style", "1"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_FEAT_157"]);
+      model.grant(model.elements.id["ID_FMP_FEAT_157"]);
       model.statadd("AC", function() { /* against opportunity attacks you provoke by making a ranged attack */ return 4; });
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Huntmaster's Action"] = new RulesElement({
+  te = class_feature["Huntmaster's Action"] = new engine.RulesElement({
     name: "Huntmaster's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2220",
@@ -737,7 +738,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Insightful Presence"] = new RulesElement({
+  te = class_feature["Insightful Presence"] = new engine.RulesElement({
     name: "Insightful Presence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2283",
@@ -749,7 +750,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Intrepid Hunter"] = new RulesElement({
+  te = class_feature["Intrepid Hunter"] = new engine.RulesElement({
     name: "Intrepid Hunter",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2221",
@@ -761,7 +762,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Invigorating Charge"] = new RulesElement({
+  te = class_feature["Invigorating Charge"] = new engine.RulesElement({
     name: "Invigorating Charge",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2321",
@@ -773,7 +774,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Iron Determination"] = new RulesElement({
+  te = class_feature["Iron Determination"] = new engine.RulesElement({
     name: "Iron Determination",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2207",
@@ -785,7 +786,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Ironstar Action"] = new RulesElement({
+  te = class_feature["Ironstar Action"] = new engine.RulesElement({
     name: "Ironstar Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2190",
@@ -797,7 +798,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Ironstar Expertise"] = new RulesElement({
+  te = class_feature["Ironstar Expertise"] = new engine.RulesElement({
     name: "Ironstar Expertise",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2192",
@@ -806,7 +807,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Ironstar Master"] = new RulesElement({
+  te = class_feature["Ironstar Master"] = new engine.RulesElement({
     name: "Ironstar Master",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2191",
@@ -819,7 +820,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Know Your Strength"] = new RulesElement({
+  te = class_feature["Know Your Strength"] = new engine.RulesElement({
     name: "Know Your Strength",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2300",
@@ -828,7 +829,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Kulkor Master"] = new RulesElement({
+  te = class_feature["Kulkor Master"] = new engine.RulesElement({
     name: "Kulkor Master",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2193",
@@ -837,7 +838,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Kulkor Persistence"] = new RulesElement({
+  te = class_feature["Kulkor Persistence"] = new engine.RulesElement({
     name: "Kulkor Persistence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2194",
@@ -849,7 +850,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Legendary Presence"] = new RulesElement({
+  te = class_feature["Legendary Presence"] = new engine.RulesElement({
     name: "Legendary Presence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2443",
@@ -861,7 +862,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Light-Footed"] = new RulesElement({
+  te = class_feature["Light-Footed"] = new engine.RulesElement({
     name: "Light-Footed",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2253",
@@ -870,7 +871,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Lord of Scoundrels"] = new RulesElement({
+  te = class_feature["Lord of Scoundrels"] = new engine.RulesElement({
     name: "Lord of Scoundrels",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2310",
@@ -879,7 +880,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Loyal Support"] = new RulesElement({
+  te = class_feature["Loyal Support"] = new engine.RulesElement({
     name: "Loyal Support",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2311",
@@ -891,7 +892,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Main Gauche Action"] = new RulesElement({
+  te = class_feature["Main Gauche Action"] = new engine.RulesElement({
     name: "Main Gauche Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2197",
@@ -903,14 +904,14 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Marauder Fighting Style"] = new RulesElement({
+  te = class_feature["Marauder Fighting Style"] = new engine.RulesElement({
     name: "Marauder Fighting Style",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2210",
     source: "Martial Power 2",
     categories: ["Marauder Fighting Style", "ID_FMP_CLASS_FEATURE_2210", "ID_FMP_CLASS_FEATURE_321", "Fighting Style", "1"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_FEAT_172"]);
+      model.grant(model.elements.id["ID_FMP_FEAT_172"]);
       model.statadd("Marauder Fighting Style", function() { 
         if (!(model.wearing('Armor', ['Shield']))) {
           return 1;
@@ -925,7 +926,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Marked Opportunity"] = new RulesElement({
+  te = class_feature["Marked Opportunity"] = new engine.RulesElement({
     name: "Marked Opportunity",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2198",
@@ -934,19 +935,19 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Melee Implement"] = new RulesElement({
+  te = class_feature["Melee Implement"] = new engine.RulesElement({
     name: "Melee Implement",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2185",
     source: "Martial Power 2",
     categories: ["Melee Implement", "ID_FMP_CLASS_FEATURE_2185", "11"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_INTERNAL_MELEE_WEAPONS_AS_WARLOCK_IMPLEMENTS"]);
+      model.grant(model.elements.id["ID_INTERNAL_INTERNAL_MELEE_WEAPONS_AS_WARLOCK_IMPLEMENTS"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Myrmidon Athleticism"] = new RulesElement({
+  te = class_feature["Myrmidon Athleticism"] = new engine.RulesElement({
     name: "Myrmidon Athleticism",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2189",
@@ -961,7 +962,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Myrmidon's Action"] = new RulesElement({
+  te = class_feature["Myrmidon's Action"] = new engine.RulesElement({
     name: "Myrmidon's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2187",
@@ -973,7 +974,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Nomad's Blessing"] = new RulesElement({
+  te = class_feature["Nomad's Blessing"] = new engine.RulesElement({
     name: "Nomad's Blessing",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2316",
@@ -982,7 +983,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Nowhere to Run"] = new RulesElement({
+  te = class_feature["Nowhere to Run"] = new engine.RulesElement({
     name: "Nowhere to Run",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2297",
@@ -991,7 +992,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Overwhelming Action"] = new RulesElement({
+  te = class_feature["Overwhelming Action"] = new engine.RulesElement({
     name: "Overwhelming Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2223",
@@ -1003,7 +1004,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Poison Maven"] = new RulesElement({
+  te = class_feature["Poison Maven"] = new engine.RulesElement({
     name: "Poison Maven",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2273",
@@ -1015,7 +1016,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Presence of Greatness"] = new RulesElement({
+  te = class_feature["Presence of Greatness"] = new engine.RulesElement({
     name: "Presence of Greatness",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2302",
@@ -1027,7 +1028,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Raider's Action"] = new RulesElement({
+  te = class_feature["Raider's Action"] = new engine.RulesElement({
     name: "Raider's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2226",
@@ -1039,7 +1040,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Rampager's Action"] = new RulesElement({
+  te = class_feature["Rampager's Action"] = new engine.RulesElement({
     name: "Rampager's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2200",
@@ -1051,7 +1052,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Razor Action"] = new RulesElement({
+  te = class_feature["Razor Action"] = new engine.RulesElement({
     name: "Razor Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2281",
@@ -1063,7 +1064,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Red Cloak Reaction"] = new RulesElement({
+  te = class_feature["Red Cloak Reaction"] = new engine.RulesElement({
     name: "Red Cloak Reaction",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2279",
@@ -1072,7 +1073,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Resilient Blade"] = new RulesElement({
+  te = class_feature["Resilient Blade"] = new engine.RulesElement({
     name: "Resilient Blade",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2294",
@@ -1084,7 +1085,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Resurgent Star"] = new RulesElement({
+  te = class_feature["Resurgent Star"] = new engine.RulesElement({
     name: "Resurgent Star",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2454",
@@ -1093,7 +1094,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Revitalized Offense"] = new RulesElement({
+  te = class_feature["Revitalized Offense"] = new engine.RulesElement({
     name: "Revitalized Offense",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2206",
@@ -1102,7 +1103,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Riposte Action"] = new RulesElement({
+  te = class_feature["Riposte Action"] = new engine.RulesElement({
     name: "Riposte Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2243",
@@ -1111,7 +1112,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Roof Runner"] = new RulesElement({
+  te = class_feature["Roof Runner"] = new engine.RulesElement({
     name: "Roof Runner",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2277",
@@ -1120,7 +1121,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Running Attack"] = new RulesElement({
+  te = class_feature["Running Attack"] = new engine.RulesElement({
     name: "Running Attack",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2209",
@@ -1129,7 +1130,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Seeking Action"] = new RulesElement({
+  te = class_feature["Seeking Action"] = new engine.RulesElement({
     name: "Seeking Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2298",
@@ -1141,7 +1142,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Seize the Day"] = new RulesElement({
+  te = class_feature["Seize the Day"] = new engine.RulesElement({
     name: "Seize the Day",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2301",
@@ -1153,7 +1154,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sharpshooter Talent"] = new RulesElement({
+  te = class_feature["Sharpshooter Talent"] = new engine.RulesElement({
     name: "Sharpshooter Talent",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2238",
@@ -1163,12 +1164,12 @@
       model.select('class feature', 1, {
         filter: function(model, element) { return (element.hasCategory("ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(CROSSBOW)") || element.hasCategory("ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(SLING)")); }
       });
-      model.grant(elements.id["ID_FMP_FEAT_139"]);
+      model.grant(model.elements.id["ID_FMP_FEAT_139"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Sharpshooter Talent (Crossbow)"] = new RulesElement({
+  te = class_feature["Sharpshooter Talent (Crossbow)"] = new engine.RulesElement({
     name: "Sharpshooter Talent (Crossbow)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(CROSSBOW)",
@@ -1180,7 +1181,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sharpshooter Talent (Sling)"] = new RulesElement({
+  te = class_feature["Sharpshooter Talent (Sling)"] = new engine.RulesElement({
     name: "Sharpshooter Talent (Sling)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(SLING)",
@@ -1192,7 +1193,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Shifter's Action"] = new RulesElement({
+  te = class_feature["Shifter's Action"] = new engine.RulesElement({
     name: "Shifter's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2211",
@@ -1204,7 +1205,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Shredding Escape"] = new RulesElement({
+  te = class_feature["Shredding Escape"] = new engine.RulesElement({
     name: "Shredding Escape",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2306",
@@ -1213,19 +1214,19 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sign of Challenge"] = new RulesElement({
+  te = class_feature["Sign of Challenge"] = new engine.RulesElement({
     name: "Sign of Challenge",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2455",
     source: "Martial Power 2",
     categories: ["Sign of Challenge", "ID_FMP_CLASS_FEATURE_2455", "30"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_11028"]);
+      model.grant(model.elements.id["ID_FMP_POWER_11028"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Skirmishing Presence"] = new RulesElement({
+  te = class_feature["Skirmishing Presence"] = new engine.RulesElement({
     name: "Skirmishing Presence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2284",
@@ -1234,7 +1235,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sling Mastery"] = new RulesElement({
+  te = class_feature["Sling Mastery"] = new engine.RulesElement({
     name: "Sling Mastery",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2245",
@@ -1248,7 +1249,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Smite the Fallen"] = new RulesElement({
+  te = class_feature["Smite the Fallen"] = new engine.RulesElement({
     name: "Smite the Fallen",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2195",
@@ -1257,7 +1258,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sniper's Action"] = new RulesElement({
+  te = class_feature["Sniper's Action"] = new engine.RulesElement({
     name: "Sniper's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2217",
@@ -1269,7 +1270,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Snow Tiger Action"] = new RulesElement({
+  te = class_feature["Snow Tiger Action"] = new engine.RulesElement({
     name: "Snow Tiger Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2235",
@@ -1281,7 +1282,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Steel Challenge"] = new RulesElement({
+  te = class_feature["Steel Challenge"] = new engine.RulesElement({
     name: "Steel Challenge",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2203",
@@ -1290,7 +1291,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sword of Kings"] = new RulesElement({
+  te = class_feature["Sword of Kings"] = new engine.RulesElement({
     name: "Sword of Kings",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1044",
@@ -1304,7 +1305,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Tactical Adept"] = new RulesElement({
+  te = class_feature["Tactical Adept"] = new engine.RulesElement({
     name: "Tactical Adept",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2299",
@@ -1313,7 +1314,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["This Is Not My Fate"] = new RulesElement({
+  te = class_feature["This Is Not My Fate"] = new engine.RulesElement({
     name: "This Is Not My Fate",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1043",
@@ -1322,7 +1323,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Tormenting the Prey"] = new RulesElement({
+  te = class_feature["Tormenting the Prey"] = new engine.RulesElement({
     name: "Tormenting the Prey",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2218",
@@ -1334,7 +1335,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Trampling Rampager"] = new RulesElement({
+  te = class_feature["Trampling Rampager"] = new engine.RulesElement({
     name: "Trampling Rampager",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2201",
@@ -1343,7 +1344,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Transmuting Strike"] = new RulesElement({
+  te = class_feature["Transmuting Strike"] = new engine.RulesElement({
     name: "Transmuting Strike",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2291",
@@ -1352,7 +1353,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Tundra Strider"] = new RulesElement({
+  te = class_feature["Tundra Strider"] = new engine.RulesElement({
     name: "Tundra Strider",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2236",
@@ -1365,7 +1366,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Turn the Tables"] = new RulesElement({
+  te = class_feature["Turn the Tables"] = new engine.RulesElement({
     name: "Turn the Tables",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2229",
@@ -1374,7 +1375,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Uncanny Aim"] = new RulesElement({
+  te = class_feature["Uncanny Aim"] = new engine.RulesElement({
     name: "Uncanny Aim",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2247",
@@ -1383,7 +1384,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Unfair Advantage (Reaving Axe Savant)"] = new RulesElement({
+  te = class_feature["Unfair Advantage (Reaving Axe Savant)"] = new engine.RulesElement({
     name: "Unfair Advantage (Reaving Axe Savant)",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2228",
@@ -1395,7 +1396,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Unstoppable Assault"] = new RulesElement({
+  te = class_feature["Unstoppable Assault"] = new engine.RulesElement({
     name: "Unstoppable Assault",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2323",
@@ -1404,7 +1405,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Vanguard Action"] = new RulesElement({
+  te = class_feature["Vanguard Action"] = new engine.RulesElement({
     name: "Vanguard Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2202",
@@ -1416,7 +1417,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Vanishing Action"] = new RulesElement({
+  te = class_feature["Vanishing Action"] = new engine.RulesElement({
     name: "Vanishing Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2252",
@@ -1428,7 +1429,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Vanquishing Chase"] = new RulesElement({
+  te = class_feature["Vanquishing Chase"] = new engine.RulesElement({
     name: "Vanquishing Chase",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2225",
@@ -1437,7 +1438,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Venomous Action (Master of Poisons)"] = new RulesElement({
+  te = class_feature["Venomous Action (Master of Poisons)"] = new engine.RulesElement({
     name: "Venomous Action (Master of Poisons)",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2275",
@@ -1449,7 +1450,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Warchief's Favor"] = new RulesElement({
+  te = class_feature["Warchief's Favor"] = new engine.RulesElement({
     name: "Warchief's Favor",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2315",
@@ -1461,7 +1462,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Warlord's Chains"] = new RulesElement({
+  te = class_feature["Warlord's Chains"] = new engine.RulesElement({
     name: "Warlord's Chains",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2303",
@@ -1475,7 +1476,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Wary Hunter"] = new RulesElement({
+  te = class_feature["Wary Hunter"] = new engine.RulesElement({
     name: "Wary Hunter",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2222",
@@ -1484,7 +1485,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["White Raven Tactics"] = new RulesElement({
+  te = class_feature["White Raven Tactics"] = new engine.RulesElement({
     name: "White Raven Tactics",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2312",
@@ -1497,4 +1498,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

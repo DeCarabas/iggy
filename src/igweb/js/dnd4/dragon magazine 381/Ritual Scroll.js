@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual_Scroll = types['Ritual Scroll'] || (types['Ritual Scroll'] = {});
-  te = Ritual_Scroll["Scroll of Alter Ego"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Alter Ego"] = new engine.RulesElement({
     name: "Scroll of Alter Ego",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_ALTER_EGO",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Precise Forgery"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Precise Forgery"] = new engine.RulesElement({
     name: "Scroll of Precise Forgery",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_PRECISE_FORGERY",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Speech Without Words"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Speech Without Words"] = new engine.RulesElement({
     name: "Scroll of Speech Without Words",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_SPEECH_WITHOUT_WORDS",
@@ -35,4 +36,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

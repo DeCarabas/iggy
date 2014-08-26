@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Aura of True Vision"] = new RulesElement({
+  te = Ritual["Aura of True Vision"] = new engine.RulesElement({
     name: "Aura of True Vision",
     type: "Ritual",
     id: "ID_FMP_RITUAL_327",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Corpselike Visage"] = new RulesElement({
+  te = Ritual["Corpselike Visage"] = new engine.RulesElement({
     name: "Corpselike Visage",
     type: "Ritual",
     id: "ID_FMP_RITUAL_328",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Donning Trollflesh"] = new RulesElement({
+  te = Ritual["Donning Trollflesh"] = new engine.RulesElement({
     name: "Donning Trollflesh",
     type: "Ritual",
     id: "ID_FMP_RITUAL_329",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Dragonward"] = new RulesElement({
+  te = Ritual["Dragonward"] = new engine.RulesElement({
     name: "Dragonward",
     type: "Ritual",
     id: "ID_FMP_RITUAL_330",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Evard's Extensible Rope"] = new RulesElement({
+  te = Ritual["Evard's Extensible Rope"] = new engine.RulesElement({
     name: "Evard's Extensible Rope",
     type: "Ritual",
     id: "ID_FMP_RITUAL_331",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Follow the Voice"] = new RulesElement({
+  te = Ritual["Follow the Voice"] = new engine.RulesElement({
     name: "Follow the Voice",
     type: "Ritual",
     id: "ID_FMP_RITUAL_332",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Memory of a Thousand Deaths"] = new RulesElement({
+  te = Ritual["Memory of a Thousand Deaths"] = new engine.RulesElement({
     name: "Memory of a Thousand Deaths",
     type: "Ritual",
     id: "ID_FMP_RITUAL_333",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Memory of the Dragon"] = new RulesElement({
+  te = Ritual["Memory of the Dragon"] = new engine.RulesElement({
     name: "Memory of the Dragon",
     type: "Ritual",
     id: "ID_FMP_RITUAL_334",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Quench the Flame"] = new RulesElement({
+  te = Ritual["Quench the Flame"] = new engine.RulesElement({
     name: "Quench the Flame",
     type: "Ritual",
     id: "ID_FMP_RITUAL_335",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Self-Holding Bag"] = new RulesElement({
+  te = Ritual["Self-Holding Bag"] = new engine.RulesElement({
     name: "Self-Holding Bag",
     type: "Ritual",
     id: "ID_FMP_RITUAL_336",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Snowstorm Summons"] = new RulesElement({
+  te = Ritual["Snowstorm Summons"] = new engine.RulesElement({
     name: "Snowstorm Summons",
     type: "Ritual",
     id: "ID_FMP_RITUAL_337",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Wavestrider Enchantment"] = new RulesElement({
+  te = Ritual["Wavestrider Enchantment"] = new engine.RulesElement({
     name: "Wavestrider Enchantment",
     type: "Ritual",
     id: "ID_FMP_RITUAL_338",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Windmaster's Mantle"] = new RulesElement({
+  te = Ritual["Windmaster's Mantle"] = new engine.RulesElement({
     name: "Windmaster's Mantle",
     type: "Ritual",
     id: "ID_FMP_RITUAL_339",
@@ -138,4 +139,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

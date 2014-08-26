@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Familiar = types['Familiar'] || (types['Familiar'] = {});
-  te = Familiar["Air Mephit"] = new RulesElement({
+  te = Familiar["Air Mephit"] = new engine.RulesElement({
     name: "Air Mephit",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_36",
@@ -15,7 +16,7 @@
     categories: ["Air Mephit", "ID_FMP_FAMILIAR_36"],
     rules: function(model) {
       model.statadd("Bluff Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_6"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_6"]);
       model.statadd("resist:lightning", 5, "resist");
       model.statadd("resist:thunder", 5, "resist");
       model.statadd("resist:lightning", 2, "resist");
@@ -24,7 +25,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Arcane Eye"] = new RulesElement({
+  te = Familiar["Arcane Eye"] = new engine.RulesElement({
     name: "Arcane Eye",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_23",
@@ -36,7 +37,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Arcane Wisp"] = new RulesElement({
+  te = Familiar["Arcane Wisp"] = new engine.RulesElement({
     name: "Arcane Wisp",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_37",
@@ -48,7 +49,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Badger"] = new RulesElement({
+  te = Familiar["Badger"] = new engine.RulesElement({
     name: "Badger",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_24",
@@ -64,7 +65,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Beholderkin"] = new RulesElement({
+  te = Familiar["Beholderkin"] = new engine.RulesElement({
     name: "Beholderkin",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_38",
@@ -72,12 +73,12 @@
     categories: ["Beholderkin", "ID_FMP_FAMILIAR_38"],
     rules: function(model) {
       model.statadd("Perception Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_18"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_18"]);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Blackspawn Darkling"] = new RulesElement({
+  te = Familiar["Blackspawn Darkling"] = new engine.RulesElement({
     name: "Blackspawn Darkling",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_39",
@@ -85,14 +86,14 @@
     categories: ["Blackspawn Darkling", "ID_FMP_FAMILIAR_39"],
     rules: function(model) {
       model.statadd("Stealth Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
       model.statadd("resist:acid", 5, "resist");
       model.statadd("resist:acid", 2);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Blazing Skull"] = new RulesElement({
+  te = Familiar["Blazing Skull"] = new engine.RulesElement({
     name: "Blazing Skull",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_50",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Bluespawn Nimblespark"] = new RulesElement({
+  te = Familiar["Bluespawn Nimblespark"] = new engine.RulesElement({
     name: "Bluespawn Nimblespark",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_40",
@@ -116,14 +117,14 @@
     rules: function(model) {
       model.statadd("Athletics Misc", 2);
       model.statadd("Nature Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
       model.statadd("resist:lightning", 5, "resist");
       model.statadd("resist:lightning", 2);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Canine Construct"] = new RulesElement({
+  te = Familiar["Canine Construct"] = new engine.RulesElement({
     name: "Canine Construct",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_25",
@@ -135,7 +136,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Chaos Shard"] = new RulesElement({
+  te = Familiar["Chaos Shard"] = new engine.RulesElement({
     name: "Chaos Shard",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_51",
@@ -148,7 +149,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Disembodied Hand"] = new RulesElement({
+  te = Familiar["Disembodied Hand"] = new engine.RulesElement({
     name: "Disembodied Hand",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_26",
@@ -157,7 +158,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Earth Mephit"] = new RulesElement({
+  te = Familiar["Earth Mephit"] = new engine.RulesElement({
     name: "Earth Mephit",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_41",
@@ -166,12 +167,12 @@
     rules: function(model) {
       model.statadd("Bluff Misc", 2);
       model.statadd("Endurance Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_6"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_6"]);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Fire Lizard"] = new RulesElement({
+  te = Familiar["Fire Lizard"] = new engine.RulesElement({
     name: "Fire Lizard",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_27",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Fire Mephit"] = new RulesElement({
+  te = Familiar["Fire Mephit"] = new engine.RulesElement({
     name: "Fire Mephit",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_42",
@@ -195,14 +196,14 @@
     categories: ["Fire Mephit", "ID_FMP_FAMILIAR_42"],
     rules: function(model) {
       model.statadd("Bluff Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_6"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_6"]);
       model.statadd("resist:fire", 5, "resist");
       model.statadd("resist:fire", 2);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Gibbering Pet"] = new RulesElement({
+  te = Familiar["Gibbering Pet"] = new engine.RulesElement({
     name: "Gibbering Pet",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_52",
@@ -211,7 +212,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Grayspawn Shortfang"] = new RulesElement({
+  te = Familiar["Grayspawn Shortfang"] = new engine.RulesElement({
     name: "Grayspawn Shortfang",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_43",
@@ -220,14 +221,14 @@
     rules: function(model) {
       model.statadd("Arcana Misc", 2);
       model.statadd("Intimidate Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
       model.statadd("resist:acid", 5, "resist");
       model.statadd("resist:acid", 2);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Greenspawn Banespeak"] = new RulesElement({
+  te = Familiar["Greenspawn Banespeak"] = new engine.RulesElement({
     name: "Greenspawn Banespeak",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_44",
@@ -235,14 +236,14 @@
     categories: ["Greenspawn Banespeak", "ID_FMP_FAMILIAR_44"],
     rules: function(model) {
       model.statadd("Bluff Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
       model.statadd("resist:poison", 5, "resist");
       model.statadd("resist:poison", 2);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Ice Mephit"] = new RulesElement({
+  te = Familiar["Ice Mephit"] = new engine.RulesElement({
     name: "Ice Mephit",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_45",
@@ -250,14 +251,14 @@
     categories: ["Ice Mephit", "ID_FMP_FAMILIAR_45"],
     rules: function(model) {
       model.statadd("Bluff Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_6"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_6"]);
       model.statadd("resist:cold", 5, "resist");
       model.statadd("resist:cold", 2);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Lightning Lizard"] = new RulesElement({
+  te = Familiar["Lightning Lizard"] = new engine.RulesElement({
     name: "Lightning Lizard",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_28",
@@ -273,7 +274,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Ooze"] = new RulesElement({
+  te = Familiar["Ooze"] = new engine.RulesElement({
     name: "Ooze",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_29",
@@ -287,7 +288,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Parrot"] = new RulesElement({
+  te = Familiar["Parrot"] = new engine.RulesElement({
     name: "Parrot",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_30",
@@ -300,7 +301,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Rakshasa Claw"] = new RulesElement({
+  te = Familiar["Rakshasa Claw"] = new engine.RulesElement({
     name: "Rakshasa Claw",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_46",
@@ -313,7 +314,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Redspawn Spirfire"] = new RulesElement({
+  te = Familiar["Redspawn Spirfire"] = new engine.RulesElement({
     name: "Redspawn Spirfire",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_47",
@@ -321,14 +322,14 @@
     categories: ["Redspawn Spirfire", "ID_FMP_FAMILIAR_47"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2);
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
       model.statadd("resist:fire", 5, "resist");
       model.statadd("resist:fire", 2);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Rootling"] = new RulesElement({
+  te = Familiar["Rootling"] = new engine.RulesElement({
     name: "Rootling",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_31",
@@ -340,7 +341,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Scout Homunculus"] = new RulesElement({
+  te = Familiar["Scout Homunculus"] = new engine.RulesElement({
     name: "Scout Homunculus",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_32",
@@ -352,7 +353,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Shadow Incarnate"] = new RulesElement({
+  te = Familiar["Shadow Incarnate"] = new engine.RulesElement({
     name: "Shadow Incarnate",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_53",
@@ -360,12 +361,12 @@
     categories: ["Shadow Incarnate", "ID_FMP_FAMILIAR_53"],
     rules: function(model) {
       model.statadd("Stealth Misc", 2);
-      model.grant(elements.id["ID_INTERNAL_VISION_DARKVISION"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_DARKVISION"]);
     }
   });
   byID[te.id] = te;
   
-  te = Familiar["Skull"] = new RulesElement({
+  te = Familiar["Skull"] = new engine.RulesElement({
     name: "Skull",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_33",
@@ -378,7 +379,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Stone Fowl"] = new RulesElement({
+  te = Familiar["Stone Fowl"] = new engine.RulesElement({
     name: "Stone Fowl",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_48",
@@ -392,7 +393,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Toad"] = new RulesElement({
+  te = Familiar["Toad"] = new engine.RulesElement({
     name: "Toad",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_34",
@@ -406,7 +407,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Weasel"] = new RulesElement({
+  te = Familiar["Weasel"] = new engine.RulesElement({
     name: "Weasel",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_35",
@@ -419,14 +420,14 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Whitespawn Snowstepper"] = new RulesElement({
+  te = Familiar["Whitespawn Snowstepper"] = new engine.RulesElement({
     name: "Whitespawn Snowstepper",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_49",
     source: "Dragon Magazine 374",
     categories: ["Whitespawn Snowstepper", "ID_FMP_FAMILIAR_49"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
       model.statadd("resist:cold", 5, "resist");
       model.statadd("resist:cold", 2);
     }
@@ -434,4 +435,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

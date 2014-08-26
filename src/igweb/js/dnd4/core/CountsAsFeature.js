@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var CountsAsFeature = types['CountsAsFeature'] || (types['CountsAsFeature'] = {});
-  te = CountsAsFeature["Archer Fighting Style"] = new RulesElement({
+  te = CountsAsFeature["Archer Fighting Style"] = new engine.RulesElement({
     name: "Archer Fighting Style",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ARCHER_FIGHTING_STYLE",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Ardent Mantle"] = new RulesElement({
+  te = CountsAsFeature["Ardent Mantle"] = new engine.RulesElement({
     name: "Ardent Mantle",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ARDENT_MANTLE",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Ardent Surge"] = new RulesElement({
+  te = CountsAsFeature["Ardent Surge"] = new engine.RulesElement({
     name: "Ardent Surge",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ARDENT_SURGE",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Artful Dodger"] = new RulesElement({
+  te = CountsAsFeature["Artful Dodger"] = new engine.RulesElement({
     name: "Artful Dodger",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ARTFUL_DODGER",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Assassin's Shroud"] = new RulesElement({
+  te = CountsAsFeature["Assassin's Shroud"] = new engine.RulesElement({
     name: "Assassin's Shroud",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ASSASSIN'S_SHROUD",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Avenger's Censure"] = new RulesElement({
+  te = CountsAsFeature["Avenger's Censure"] = new engine.RulesElement({
     name: "Avenger's Censure",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_AVENGER'S_CENSURE",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Battle Resilience"] = new RulesElement({
+  te = CountsAsFeature["Battle Resilience"] = new engine.RulesElement({
     name: "Battle Resilience",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BATTLE_RESILIENCE",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Battlefront Leader"] = new RulesElement({
+  te = CountsAsFeature["Battlefront Leader"] = new engine.RulesElement({
     name: "Battlefront Leader",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BATTLEFRONT_LEADER",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Battlerager Vigor"] = new RulesElement({
+  te = CountsAsFeature["Battlerager Vigor"] = new engine.RulesElement({
     name: "Battlerager Vigor",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BATTLERAGER_VIGOR",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Beast Mastery"] = new RulesElement({
+  te = CountsAsFeature["Beast Mastery"] = new engine.RulesElement({
     name: "Beast Mastery",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BEAST_MASTERY",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Bleak Disciple"] = new RulesElement({
+  te = CountsAsFeature["Bleak Disciple"] = new engine.RulesElement({
     name: "Bleak Disciple",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BLEAK_DISCIPLE",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Bloodbond"] = new RulesElement({
+  te = CountsAsFeature["Bloodbond"] = new engine.RulesElement({
     name: "Bloodbond",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BLOODBOND",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Bravura Presence"] = new RulesElement({
+  te = CountsAsFeature["Bravura Presence"] = new engine.RulesElement({
     name: "Bravura Presence",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BRAVURA_PRESENCE",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Brawler Style"] = new RulesElement({
+  te = CountsAsFeature["Brawler Style"] = new engine.RulesElement({
     name: "Brawler Style",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BRAWLER_STYLE",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Brutal Scoundrel"] = new RulesElement({
+  te = CountsAsFeature["Brutal Scoundrel"] = new engine.RulesElement({
     name: "Brutal Scoundrel",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_BRUTAL_SCOUNDREL",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Canny Leader"] = new RulesElement({
+  te = CountsAsFeature["Canny Leader"] = new engine.RulesElement({
     name: "Canny Leader",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_CANNY_LEADER",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Centered Breath"] = new RulesElement({
+  te = CountsAsFeature["Centered Breath"] = new engine.RulesElement({
     name: "Centered Breath",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_CENTERED_BREATH",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Channel Divinity"] = new RulesElement({
+  te = CountsAsFeature["Channel Divinity"] = new engine.RulesElement({
     name: "Channel Divinity",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Combat Agility"] = new RulesElement({
+  te = CountsAsFeature["Combat Agility"] = new engine.RulesElement({
     name: "Combat Agility",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_COMBAT_AGILITY",
@@ -178,7 +179,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Combat Challenge"] = new RulesElement({
+  te = CountsAsFeature["Combat Challenge"] = new engine.RulesElement({
     name: "Combat Challenge",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_COMBAT_CHALLENGE",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Combat Leader"] = new RulesElement({
+  te = CountsAsFeature["Combat Leader"] = new engine.RulesElement({
     name: "Combat Leader",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_COMBAT_LEADER",
@@ -196,7 +197,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Combat Superiority"] = new RulesElement({
+  te = CountsAsFeature["Combat Superiority"] = new engine.RulesElement({
     name: "Combat Superiority",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_COMBAT_SUPERIORITY",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Commanding Presence"] = new RulesElement({
+  te = CountsAsFeature["Commanding Presence"] = new engine.RulesElement({
     name: "Commanding Presence",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_COMMANDING_PRESENCE",
@@ -214,7 +215,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Companion Spirit"] = new RulesElement({
+  te = CountsAsFeature["Companion Spirit"] = new engine.RulesElement({
     name: "Companion Spirit",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_COMPANION_SPIRIT",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Cosmic Magic"] = new RulesElement({
+  te = CountsAsFeature["Cosmic Magic"] = new engine.RulesElement({
     name: "Cosmic Magic",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_COSMIC_MAGIC",
@@ -232,7 +233,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Cunning Sneak"] = new RulesElement({
+  te = CountsAsFeature["Cunning Sneak"] = new engine.RulesElement({
     name: "Cunning Sneak",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_CUNNING_SNEAK",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Dark Pact"] = new RulesElement({
+  te = CountsAsFeature["Dark Pact"] = new engine.RulesElement({
     name: "Dark Pact",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_DARK_PACT",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Discipline Focus"] = new RulesElement({
+  te = CountsAsFeature["Discipline Focus"] = new engine.RulesElement({
     name: "Discipline Focus",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_DISCIPLINE_FOCUS",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Divine Challenge"] = new RulesElement({
+  te = CountsAsFeature["Divine Challenge"] = new engine.RulesElement({
     name: "Divine Challenge",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_DIVINE_CHALLENGE",
@@ -268,7 +269,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Dragon Magic"] = new RulesElement({
+  te = CountsAsFeature["Dragon Magic"] = new engine.RulesElement({
     name: "Dragon Magic",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_DRAGON_MAGIC",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Eldritch Pact"] = new RulesElement({
+  te = CountsAsFeature["Eldritch Pact"] = new engine.RulesElement({
     name: "Eldritch Pact",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ELDRITCH_PACT",
@@ -286,7 +287,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Fey Pact"] = new RulesElement({
+  te = CountsAsFeature["Fey Pact"] = new engine.RulesElement({
     name: "Fey Pact",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_FEY_PACT",
@@ -295,7 +296,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Guild Training"] = new RulesElement({
+  te = CountsAsFeature["Guild Training"] = new engine.RulesElement({
     name: "Guild Training",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_GUILD_TRAINING",
@@ -304,7 +305,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Healing Infusion"] = new RulesElement({
+  te = CountsAsFeature["Healing Infusion"] = new engine.RulesElement({
     name: "Healing Infusion",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_HEALING_INFUSION",
@@ -313,7 +314,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Healing Spirit"] = new RulesElement({
+  te = CountsAsFeature["Healing Spirit"] = new engine.RulesElement({
     name: "Healing Spirit",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_HEALING_SPIRIT",
@@ -322,7 +323,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Healing Word"] = new RulesElement({
+  te = CountsAsFeature["Healing Word"] = new engine.RulesElement({
     name: "Healing Word",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_HEALING_WORD",
@@ -331,7 +332,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Hunter Fighting Style"] = new RulesElement({
+  te = CountsAsFeature["Hunter Fighting Style"] = new engine.RulesElement({
     name: "Hunter Fighting Style",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_HUNTER_FIGHTING_STYLE",
@@ -340,7 +341,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Hunter's Quarry"] = new RulesElement({
+  te = CountsAsFeature["Hunter's Quarry"] = new engine.RulesElement({
     name: "Hunter's Quarry",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_HUNTER'S_QUARRY",
@@ -349,7 +350,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Inevitable Shot"] = new RulesElement({
+  te = CountsAsFeature["Inevitable Shot"] = new engine.RulesElement({
     name: "Inevitable Shot",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_INEVITABLE_SHOT",
@@ -358,7 +359,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Infernal Pact"] = new RulesElement({
+  te = CountsAsFeature["Infernal Pact"] = new engine.RulesElement({
     name: "Infernal Pact",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_INFERNAL_PACT",
@@ -367,7 +368,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Insightful Presence"] = new RulesElement({
+  te = CountsAsFeature["Insightful Presence"] = new engine.RulesElement({
     name: "Insightful Presence",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_INSIGHTFUL_PRESENCE",
@@ -376,7 +377,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Inspiring Presence"] = new RulesElement({
+  te = CountsAsFeature["Inspiring Presence"] = new engine.RulesElement({
     name: "Inspiring Presence",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_INSPIRING_PRESENCE",
@@ -385,7 +386,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Inspiring Word"] = new RulesElement({
+  te = CountsAsFeature["Inspiring Word"] = new engine.RulesElement({
     name: "Inspiring Word",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_INSPIRING_WORD",
@@ -394,7 +395,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Knowledge of Ancient Lives"] = new RulesElement({
+  te = CountsAsFeature["Knowledge of Ancient Lives"] = new engine.RulesElement({
     name: "Knowledge of Ancient Lives",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_KNOWLEDGE_OF_ANCIENT_LIVES",
@@ -403,7 +404,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Majestic Word"] = new RulesElement({
+  te = CountsAsFeature["Majestic Word"] = new engine.RulesElement({
     name: "Majestic Word",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_MAJESTIC_WORD",
@@ -412,7 +413,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Mantle of Clarity"] = new RulesElement({
+  te = CountsAsFeature["Mantle of Clarity"] = new engine.RulesElement({
     name: "Mantle of Clarity",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_MANTLE_OF_CLARITY",
@@ -421,7 +422,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Mantle of Elation"] = new RulesElement({
+  te = CountsAsFeature["Mantle of Elation"] = new engine.RulesElement({
     name: "Mantle of Elation",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_MANTLE_OF_ELATION",
@@ -430,7 +431,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Marauder Fighting Style"] = new RulesElement({
+  te = CountsAsFeature["Marauder Fighting Style"] = new engine.RulesElement({
     name: "Marauder Fighting Style",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_MARAUDER_FIGHTING_STYLE",
@@ -439,7 +440,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Monastic Tradition"] = new RulesElement({
+  te = CountsAsFeature["Monastic Tradition"] = new engine.RulesElement({
     name: "Monastic Tradition",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_MONASTIC_TRADITION",
@@ -448,7 +449,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Nature's Wrath"] = new RulesElement({
+  te = CountsAsFeature["Nature's Wrath"] = new engine.RulesElement({
     name: "Nature's Wrath",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_NATURE'S_WRATH",
@@ -457,7 +458,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Night Stalker"] = new RulesElement({
+  te = CountsAsFeature["Night Stalker"] = new engine.RulesElement({
     name: "Night Stalker",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_NIGHT_STALKER",
@@ -466,7 +467,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Oath of Enmity"] = new RulesElement({
+  te = CountsAsFeature["Oath of Enmity"] = new engine.RulesElement({
     name: "Oath of Enmity",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_OATH_OF_ENMITY",
@@ -475,7 +476,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["One-handed Weapon Talent"] = new RulesElement({
+  te = CountsAsFeature["One-handed Weapon Talent"] = new engine.RulesElement({
     name: "One-handed Weapon Talent",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ONE-HANDED_WEAPON_TALENT",
@@ -484,7 +485,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Prime Shot"] = new RulesElement({
+  te = CountsAsFeature["Prime Shot"] = new engine.RulesElement({
     name: "Prime Shot",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_PRIME_SHOT",
@@ -493,7 +494,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Protector Spirit"] = new RulesElement({
+  te = CountsAsFeature["Protector Spirit"] = new engine.RulesElement({
     name: "Protector Spirit",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_PROTECTOR_SPIRIT",
@@ -502,7 +503,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Psionic Augmentation"] = new RulesElement({
+  te = CountsAsFeature["Psionic Augmentation"] = new engine.RulesElement({
     name: "Psionic Augmentation",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_PSIONIC_AUGMENTATION",
@@ -511,7 +512,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Psionic Defense"] = new RulesElement({
+  te = CountsAsFeature["Psionic Defense"] = new engine.RulesElement({
     name: "Psionic Defense",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_PSIONIC_DEFENSE",
@@ -520,7 +521,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Psionic Study"] = new RulesElement({
+  te = CountsAsFeature["Psionic Study"] = new engine.RulesElement({
     name: "Psionic Study",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_PSIONIC_STUDY",
@@ -529,7 +530,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Resourceful Presence"] = new RulesElement({
+  te = CountsAsFeature["Resourceful Presence"] = new engine.RulesElement({
     name: "Resourceful Presence",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_RESOURCEFUL_PRESENCE",
@@ -538,7 +539,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Rogue Tactics"] = new RulesElement({
+  te = CountsAsFeature["Rogue Tactics"] = new engine.RulesElement({
     name: "Rogue Tactics",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ROGUE_TACTICS",
@@ -547,7 +548,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Rogue Weapon Talent"] = new RulesElement({
+  te = CountsAsFeature["Rogue Weapon Talent"] = new engine.RulesElement({
     name: "Rogue Weapon Talent",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_ROGUE_WEAPON_TALENT",
@@ -556,7 +557,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Rune of Mending"] = new RulesElement({
+  te = CountsAsFeature["Rune of Mending"] = new engine.RulesElement({
     name: "Rune of Mending",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_RUNE_OF_MENDING",
@@ -565,7 +566,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Running Attack"] = new RulesElement({
+  te = CountsAsFeature["Running Attack"] = new engine.RulesElement({
     name: "Running Attack",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_RUNNING_ATTACK",
@@ -574,7 +575,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Ruthless Ruffian"] = new RulesElement({
+  te = CountsAsFeature["Ruthless Ruffian"] = new engine.RulesElement({
     name: "Ruthless Ruffian",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_RUTHLESS_RUFFIAN",
@@ -583,7 +584,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Seeker's Bond"] = new RulesElement({
+  te = CountsAsFeature["Seeker's Bond"] = new engine.RulesElement({
     name: "Seeker's Bond",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_SEEKER'S_BOND",
@@ -592,7 +593,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Sharpshooter Talent"] = new RulesElement({
+  te = CountsAsFeature["Sharpshooter Talent"] = new engine.RulesElement({
     name: "Sharpshooter Talent",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_SHARPSHOOTER_TALENT",
@@ -601,7 +602,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Skirmishing Presence"] = new RulesElement({
+  te = CountsAsFeature["Skirmishing Presence"] = new engine.RulesElement({
     name: "Skirmishing Presence",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_SKIRMISHING_PRESENCE",
@@ -610,7 +611,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Sneak Attack"] = new RulesElement({
+  te = CountsAsFeature["Sneak Attack"] = new engine.RulesElement({
     name: "Sneak Attack",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_SNEAK_ATTACK",
@@ -619,7 +620,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Speed of Thought"] = new RulesElement({
+  te = CountsAsFeature["Speed of Thought"] = new engine.RulesElement({
     name: "Speed of Thought",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_SPEED_OF_THOUGHT",
@@ -628,7 +629,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Spirit Boon"] = new RulesElement({
+  te = CountsAsFeature["Spirit Boon"] = new engine.RulesElement({
     name: "Spirit Boon",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_SPIRIT_BOON",
@@ -637,7 +638,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Spiritbond"] = new RulesElement({
+  te = CountsAsFeature["Spiritbond"] = new engine.RulesElement({
     name: "Spiritbond",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_SPIRITBOND",
@@ -646,7 +647,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Stalker Spirit"] = new RulesElement({
+  te = CountsAsFeature["Stalker Spirit"] = new engine.RulesElement({
     name: "Stalker Spirit",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_STALKER_SPIRIT",
@@ -655,7 +656,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Star Pact"] = new RulesElement({
+  te = CountsAsFeature["Star Pact"] = new engine.RulesElement({
     name: "Star Pact",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_STAR_PACT",
@@ -664,7 +665,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Stone Fist"] = new RulesElement({
+  te = CountsAsFeature["Stone Fist"] = new engine.RulesElement({
     name: "Stone Fist",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_STONE_FIST",
@@ -673,7 +674,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Storm Magic"] = new RulesElement({
+  te = CountsAsFeature["Storm Magic"] = new engine.RulesElement({
     name: "Storm Magic",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_STORM_MAGIC",
@@ -682,7 +683,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Swordmage Aegis"] = new RulesElement({
+  te = CountsAsFeature["Swordmage Aegis"] = new engine.RulesElement({
     name: "Swordmage Aegis",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_SWORDMAGE_AEGIS",
@@ -691,7 +692,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Tactical Presence"] = new RulesElement({
+  te = CountsAsFeature["Tactical Presence"] = new engine.RulesElement({
     name: "Tactical Presence",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_TACTICAL_PRESENCE",
@@ -700,7 +701,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Telekinesis Focus"] = new RulesElement({
+  te = CountsAsFeature["Telekinesis Focus"] = new engine.RulesElement({
     name: "Telekinesis Focus",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_TELEKINESIS_FOCUS",
@@ -709,7 +710,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Telepathy Focus"] = new RulesElement({
+  te = CountsAsFeature["Telepathy Focus"] = new engine.RulesElement({
     name: "Telepathy Focus",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_TELEPATHY_FOCUS",
@@ -718,7 +719,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Tempest Technique"] = new RulesElement({
+  te = CountsAsFeature["Tempest Technique"] = new engine.RulesElement({
     name: "Tempest Technique",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_TEMPEST_TECHNIQUE",
@@ -727,7 +728,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Two-Blade Fighting Style"] = new RulesElement({
+  te = CountsAsFeature["Two-Blade Fighting Style"] = new engine.RulesElement({
     name: "Two-Blade Fighting Style",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_TWO-BLADE_FIGHTING_STYLE",
@@ -736,7 +737,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Two-handed Weapon Talent"] = new RulesElement({
+  te = CountsAsFeature["Two-handed Weapon Talent"] = new engine.RulesElement({
     name: "Two-handed Weapon Talent",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_TWO-HANDED_WEAPON_TALENT",
@@ -745,7 +746,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Vestige Pact"] = new RulesElement({
+  te = CountsAsFeature["Vestige Pact"] = new engine.RulesElement({
     name: "Vestige Pact",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_VESTIGE_PACT",
@@ -754,7 +755,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Warlock's Curse"] = new RulesElement({
+  te = CountsAsFeature["Warlock's Curse"] = new engine.RulesElement({
     name: "Warlock's Curse",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_WARLOCK'S_CURSE",
@@ -763,7 +764,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Watcher Spirit"] = new RulesElement({
+  te = CountsAsFeature["Watcher Spirit"] = new engine.RulesElement({
     name: "Watcher Spirit",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_WATCHER_SPIRIT",
@@ -772,7 +773,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["Wild Magic"] = new RulesElement({
+  te = CountsAsFeature["Wild Magic"] = new engine.RulesElement({
     name: "Wild Magic",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_WILD_MAGIC",
@@ -781,7 +782,7 @@
   });
   byID[te.id] = te;
   
-  te = CountsAsFeature["World Speaker Spirit"] = new RulesElement({
+  te = CountsAsFeature["World Speaker Spirit"] = new engine.RulesElement({
     name: "World Speaker Spirit",
     type: "CountsAsFeature",
     id: "ID_INTERNAL_COUNTSASFEATURE_WORLD_SPEAKER_SPIRIT",
@@ -791,4 +792,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

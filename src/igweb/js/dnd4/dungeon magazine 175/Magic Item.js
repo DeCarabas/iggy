@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Bahamut's Golden Canary (epic tier)"] = new RulesElement({
+  te = Magic_Item["Bahamut's Golden Canary (epic tier)"] = new engine.RulesElement({
     name: "Bahamut's Golden Canary (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8965",
@@ -17,4 +18,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

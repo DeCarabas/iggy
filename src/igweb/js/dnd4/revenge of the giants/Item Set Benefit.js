@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Item_Set_Benefit = types['Item Set Benefit'] || (types['Item Set Benefit'] = {});
-  te = Item_Set_Benefit["Implements of Argent (2)"] = new RulesElement({
+  te = Item_Set_Benefit["Implements of Argent (2)"] = new engine.RulesElement({
     name: "Implements of Argent (2)",
     type: "Item Set Benefit",
     id: "ID_FMP_ITEM_SET_BENEFIT_78",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Item_Set_Benefit["Implements of Argent (3)"] = new RulesElement({
+  te = Item_Set_Benefit["Implements of Argent (3)"] = new engine.RulesElement({
     name: "Implements of Argent (3)",
     type: "Item Set Benefit",
     id: "ID_FMP_ITEM_SET_BENEFIT_79",
@@ -28,17 +29,21 @@
   });
   byID[te.id] = te;
   
-  te = Item_Set_Benefit["Implements of Argent (4)"] = new RulesElement({
+  te = Item_Set_Benefit["Implements of Argent (4)"] = new engine.RulesElement({
     name: "Implements of Argent (4)",
     type: "Item Set Benefit",
     id: "ID_FMP_ITEM_SET_BENEFIT_80",
     source: "Revenge of the Giants",
     categories: ["Implements of Argent (4)", "ID_FMP_ITEM_SET_BENEFIT_80"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_9554"]);
+      model.grant(model.elements.id["ID_FMP_POWER_9554"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

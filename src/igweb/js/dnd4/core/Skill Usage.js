@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Skill_Usage = types['Skill Usage'] || (types['Skill Usage'] = {});
-  te = Skill_Usage["Acrobatic Stunt 60"] = new RulesElement({
+  te = Skill_Usage["Acrobatic Stunt 60"] = new engine.RulesElement({
     name: "Acrobatic Stunt 60",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_60",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Arcana Knowledge 5"] = new RulesElement({
+  te = Skill_Usage["Arcana Knowledge 5"] = new engine.RulesElement({
     name: "Arcana Knowledge 5",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_5",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Balance 1"] = new RulesElement({
+  te = Skill_Usage["Balance 1"] = new engine.RulesElement({
     name: "Balance 1",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_1",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Bluff 7"] = new RulesElement({
+  te = Skill_Usage["Bluff 7"] = new engine.RulesElement({
     name: "Bluff 7",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_7",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Climb 54"] = new RulesElement({
+  te = Skill_Usage["Climb 54"] = new engine.RulesElement({
     name: "Climb 54",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_54",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Detect Magic 62"] = new RulesElement({
+  te = Skill_Usage["Detect Magic 62"] = new engine.RulesElement({
     name: "Detect Magic 62",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_62",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Disable Trap 51"] = new RulesElement({
+  te = Skill_Usage["Disable Trap 51"] = new engine.RulesElement({
     name: "Disable Trap 51",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_51",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Dungeoneering Knowledge 12"] = new RulesElement({
+  te = Skill_Usage["Dungeoneering Knowledge 12"] = new engine.RulesElement({
     name: "Dungeoneering Knowledge 12",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_12",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Endurance 14"] = new RulesElement({
+  te = Skill_Usage["Endurance 14"] = new engine.RulesElement({
     name: "Endurance 14",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_14",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Escape from a Grab 55"] = new RulesElement({
+  te = Skill_Usage["Escape from a Grab 55"] = new engine.RulesElement({
     name: "Escape from a Grab 55",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_55",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Escape from a Grab 61"] = new RulesElement({
+  te = Skill_Usage["Escape from a Grab 61"] = new engine.RulesElement({
     name: "Escape from a Grab 61",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_61",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Escape from Restraints 3"] = new RulesElement({
+  te = Skill_Usage["Escape from Restraints 3"] = new engine.RulesElement({
     name: "Escape from Restraints 3",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_3",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["First Aid 63"] = new RulesElement({
+  te = Skill_Usage["First Aid 63"] = new engine.RulesElement({
     name: "First Aid 63",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_63",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Forage 11"] = new RulesElement({
+  te = Skill_Usage["Forage 11"] = new engine.RulesElement({
     name: "Forage 11",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_11",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Forage 30"] = new RulesElement({
+  te = Skill_Usage["Forage 30"] = new engine.RulesElement({
     name: "Forage 30",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_30",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Handle Animal 33"] = new RulesElement({
+  te = Skill_Usage["Handle Animal 33"] = new engine.RulesElement({
     name: "Handle Animal 33",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_33",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["History Knowledge 65"] = new RulesElement({
+  te = Skill_Usage["History Knowledge 65"] = new engine.RulesElement({
     name: "History Knowledge 65",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_65",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Hop Down 66"] = new RulesElement({
+  te = Skill_Usage["Hop Down 66"] = new engine.RulesElement({
     name: "Hop Down 66",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_66",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Insight 23"] = new RulesElement({
+  te = Skill_Usage["Insight 23"] = new engine.RulesElement({
     name: "Insight 23",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_23",
@@ -178,7 +179,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Intimidate 24"] = new RulesElement({
+  te = Skill_Usage["Intimidate 24"] = new engine.RulesElement({
     name: "Intimidate 24",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_24",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Jump 56"] = new RulesElement({
+  te = Skill_Usage["Jump 56"] = new engine.RulesElement({
     name: "Jump 56",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_56",
@@ -196,7 +197,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Monster Knowledge 13"] = new RulesElement({
+  te = Skill_Usage["Monster Knowledge 13"] = new engine.RulesElement({
     name: "Monster Knowledge 13",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_13",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Monster Knowledge 32"] = new RulesElement({
+  te = Skill_Usage["Monster Knowledge 32"] = new engine.RulesElement({
     name: "Monster Knowledge 32",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_32",
@@ -214,7 +215,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Monster Knowledge 39"] = new RulesElement({
+  te = Skill_Usage["Monster Knowledge 39"] = new engine.RulesElement({
     name: "Monster Knowledge 39",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_39",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Monster Knowledge 6"] = new RulesElement({
+  te = Skill_Usage["Monster Knowledge 6"] = new engine.RulesElement({
     name: "Monster Knowledge 6",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_6",
@@ -232,7 +233,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Nature Knowledge 31"] = new RulesElement({
+  te = Skill_Usage["Nature Knowledge 31"] = new engine.RulesElement({
     name: "Nature Knowledge 31",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_31",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Open Lock 43"] = new RulesElement({
+  te = Skill_Usage["Open Lock 43"] = new engine.RulesElement({
     name: "Open Lock 43",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_43",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Perception 36"] = new RulesElement({
+  te = Skill_Usage["Perception 36"] = new engine.RulesElement({
     name: "Perception 36",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_36",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Pick Pocket 45"] = new RulesElement({
+  te = Skill_Usage["Pick Pocket 45"] = new engine.RulesElement({
     name: "Pick Pocket 45",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_45",
@@ -268,7 +269,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Reduce Falling Damage 4"] = new RulesElement({
+  te = Skill_Usage["Reduce Falling Damage 4"] = new engine.RulesElement({
     name: "Reduce Falling Damage 4",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_4",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Religion Knowledge 38"] = new RulesElement({
+  te = Skill_Usage["Religion Knowledge 38"] = new engine.RulesElement({
     name: "Religion Knowledge 38",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_38",
@@ -286,7 +287,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Sleight of Hand 44"] = new RulesElement({
+  te = Skill_Usage["Sleight of Hand 44"] = new engine.RulesElement({
     name: "Sleight of Hand 44",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_44",
@@ -295,7 +296,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Stealth 40"] = new RulesElement({
+  te = Skill_Usage["Stealth 40"] = new engine.RulesElement({
     name: "Stealth 40",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_40",
@@ -304,7 +305,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Streetwise 41"] = new RulesElement({
+  te = Skill_Usage["Streetwise 41"] = new engine.RulesElement({
     name: "Streetwise 41",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_41",
@@ -313,7 +314,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Swim 59"] = new RulesElement({
+  te = Skill_Usage["Swim 59"] = new engine.RulesElement({
     name: "Swim 59",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_59",
@@ -322,7 +323,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Usage["Treat Disease 64"] = new RulesElement({
+  te = Skill_Usage["Treat Disease 64"] = new engine.RulesElement({
     name: "Treat Disease 64",
     type: "Skill Usage",
     id: "ID_FMP_SKILL_USAGE_64",
@@ -332,4 +333,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

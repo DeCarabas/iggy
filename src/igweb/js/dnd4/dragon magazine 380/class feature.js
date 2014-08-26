@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Abyssal Blood Action"] = new RulesElement({
+  te = class_feature["Abyssal Blood Action"] = new engine.RulesElement({
     name: "Abyssal Blood Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2098",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Abyssal Presence"] = new RulesElement({
+  te = class_feature["Abyssal Presence"] = new engine.RulesElement({
     name: "Abyssal Presence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2100",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Bleak Visage"] = new RulesElement({
+  te = class_feature["Bleak Visage"] = new engine.RulesElement({
     name: "Bleak Visage",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2116",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Call of Letherna (Charisma)"] = new RulesElement({
+  te = class_feature["Call of Letherna (Charisma)"] = new engine.RulesElement({
     name: "Call of Letherna (Charisma)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_CALL_OF_LETHERNA_(CHARISMA)",
@@ -49,7 +50,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Call of Letherna (Strength)"] = new RulesElement({
+  te = class_feature["Call of Letherna (Strength)"] = new engine.RulesElement({
     name: "Call of Letherna (Strength)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_CALL_OF_LETHERNA_(STRENGTH)",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Call of Letherna (Wisdom)"] = new RulesElement({
+  te = class_feature["Call of Letherna (Wisdom)"] = new engine.RulesElement({
     name: "Call of Letherna (Wisdom)",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_CALL_OF_LETHERNA_(WISDOM)",
@@ -73,7 +74,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Call of Letherna Charisma"] = new RulesElement({
+  te = class_feature["Call of Letherna Charisma"] = new engine.RulesElement({
     name: "Call of Letherna Charisma",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_CALL_OF_LETHERNA_CHARISMA",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Call of Letherna Strength"] = new RulesElement({
+  te = class_feature["Call of Letherna Strength"] = new engine.RulesElement({
     name: "Call of Letherna Strength",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_CALL_OF_LETHERNA_STRENGTH",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Call of Letherna Wisdom"] = new RulesElement({
+  te = class_feature["Call of Letherna Wisdom"] = new engine.RulesElement({
     name: "Call of Letherna Wisdom",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_CALL_OF_LETHERNA_WISDOM",
@@ -100,7 +101,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Cursed Action"] = new RulesElement({
+  te = class_feature["Cursed Action"] = new engine.RulesElement({
     name: "Cursed Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2119",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Disrupting Attack"] = new RulesElement({
+  te = class_feature["Disrupting Attack"] = new engine.RulesElement({
     name: "Disrupting Attack",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2113",
@@ -121,7 +122,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Drawn to Death"] = new RulesElement({
+  te = class_feature["Drawn to Death"] = new engine.RulesElement({
     name: "Drawn to Death",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2114",
@@ -130,7 +131,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Erosion Action"] = new RulesElement({
+  te = class_feature["Erosion Action"] = new engine.RulesElement({
     name: "Erosion Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2105",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Fated Outcome Charisma"] = new RulesElement({
+  te = class_feature["Fated Outcome Charisma"] = new engine.RulesElement({
     name: "Fated Outcome Charisma",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_FATED_OUTCOME_CHARISMA",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Fated Outcome Strength"] = new RulesElement({
+  te = class_feature["Fated Outcome Strength"] = new engine.RulesElement({
     name: "Fated Outcome Strength",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_FATED_OUTCOME_STRENGTH",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Fated Outcome Wisdom"] = new RulesElement({
+  te = class_feature["Fated Outcome Wisdom"] = new engine.RulesElement({
     name: "Fated Outcome Wisdom",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_FATED_OUTCOME_WISDOM",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Flowing Movement"] = new RulesElement({
+  te = class_feature["Flowing Movement"] = new engine.RulesElement({
     name: "Flowing Movement",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2107",
@@ -178,7 +179,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Grave Smite Charisma"] = new RulesElement({
+  te = class_feature["Grave Smite Charisma"] = new engine.RulesElement({
     name: "Grave Smite Charisma",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_GRAVE_SMITE_CHARISMA",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Grave Smite Strength"] = new RulesElement({
+  te = class_feature["Grave Smite Strength"] = new engine.RulesElement({
     name: "Grave Smite Strength",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_GRAVE_SMITE_STRENGTH",
@@ -196,7 +197,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Harvesting Action"] = new RulesElement({
+  te = class_feature["Harvesting Action"] = new engine.RulesElement({
     name: "Harvesting Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2112",
@@ -208,7 +209,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Master of the Vistani Curse"] = new RulesElement({
+  te = class_feature["Master of the Vistani Curse"] = new engine.RulesElement({
     name: "Master of the Vistani Curse",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2121",
@@ -220,7 +221,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Maze of Words"] = new RulesElement({
+  te = class_feature["Maze of Words"] = new engine.RulesElement({
     name: "Maze of Words",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2111",
@@ -229,7 +230,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Nonbeing Action"] = new RulesElement({
+  te = class_feature["Nonbeing Action"] = new engine.RulesElement({
     name: "Nonbeing Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2101",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["On Sorrow's Wings"] = new RulesElement({
+  te = class_feature["On Sorrow's Wings"] = new engine.RulesElement({
     name: "On Sorrow's Wings",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2118",
@@ -253,7 +254,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Paper Secrets"] = new RulesElement({
+  te = class_feature["Paper Secrets"] = new engine.RulesElement({
     name: "Paper Secrets",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2108",
@@ -282,7 +283,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Secret Formularies"] = new RulesElement({
+  te = class_feature["Secret Formularies"] = new engine.RulesElement({
     name: "Secret Formularies",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2109",
@@ -294,7 +295,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Shadow Rush"] = new RulesElement({
+  te = class_feature["Shadow Rush"] = new engine.RulesElement({
     name: "Shadow Rush",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2117",
@@ -303,7 +304,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sight Beyond Sight"] = new RulesElement({
+  te = class_feature["Sight Beyond Sight"] = new engine.RulesElement({
     name: "Sight Beyond Sight",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2120",
@@ -312,7 +313,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sorrowborn"] = new RulesElement({
+  te = class_feature["Sorrowborn"] = new engine.RulesElement({
     name: "Sorrowborn",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2115",
@@ -322,12 +323,12 @@
       model.statadd("Constitution", 2);
       model.statadd("Dexterity", 2);
       model.statadd("Speed", 2);
-      model.grant(elements.id["ID_INTERNAL_VISION_DARKVISION"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_DARKVISION"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Steal from the Abyss"] = new RulesElement({
+  te = class_feature["Steal from the Abyss"] = new engine.RulesElement({
     name: "Steal from the Abyss",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2099",
@@ -336,7 +337,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Tome of Confusion"] = new RulesElement({
+  te = class_feature["Tome of Confusion"] = new engine.RulesElement({
     name: "Tome of Confusion",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2110",
@@ -348,7 +349,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Touching the Void"] = new RulesElement({
+  te = class_feature["Touching the Void"] = new engine.RulesElement({
     name: "Touching the Void",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2102",
@@ -357,7 +358,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Union of Blessed and Cursed Waters"] = new RulesElement({
+  te = class_feature["Union of Blessed and Cursed Waters"] = new engine.RulesElement({
     name: "Union of Blessed and Cursed Waters",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2106",
@@ -366,7 +367,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Void Phase"] = new RulesElement({
+  te = class_feature["Void Phase"] = new engine.RulesElement({
     name: "Void Phase",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2104",
@@ -379,4 +380,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

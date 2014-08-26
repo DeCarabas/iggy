@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Advanced Delver's Training (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Advanced Delver's Training (heroic tier)"] = new engine.RulesElement({
     name: "Advanced Delver's Training (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9515",
@@ -20,7 +21,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bow of True Arrows +1"] = new RulesElement({
+  te = Magic_Item["Bow of True Arrows +1"] = new engine.RulesElement({
     name: "Bow of True Arrows +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9251",
@@ -29,7 +30,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bow of True Arrows +2"] = new RulesElement({
+  te = Magic_Item["Bow of True Arrows +2"] = new engine.RulesElement({
     name: "Bow of True Arrows +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9252",
@@ -38,7 +39,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bow of True Arrows +3"] = new RulesElement({
+  te = Magic_Item["Bow of True Arrows +3"] = new engine.RulesElement({
     name: "Bow of True Arrows +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9253",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bow of True Arrows +4"] = new RulesElement({
+  te = Magic_Item["Bow of True Arrows +4"] = new engine.RulesElement({
     name: "Bow of True Arrows +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9254",
@@ -56,7 +57,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bow of True Arrows +5"] = new RulesElement({
+  te = Magic_Item["Bow of True Arrows +5"] = new engine.RulesElement({
     name: "Bow of True Arrows +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9255",
@@ -65,7 +66,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bow of True Arrows +6"] = new RulesElement({
+  te = Magic_Item["Bow of True Arrows +6"] = new engine.RulesElement({
     name: "Bow of True Arrows +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9256",
@@ -74,7 +75,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Demonbound (level 13)"] = new RulesElement({
+  te = Magic_Item["Demonbound (level 13)"] = new engine.RulesElement({
     name: "Demonbound (level 13)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9241",
@@ -83,7 +84,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Demonbound (level 18)"] = new RulesElement({
+  te = Magic_Item["Demonbound (level 18)"] = new engine.RulesElement({
     name: "Demonbound (level 18)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9242",
@@ -92,7 +93,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Demonbound (level 23)"] = new RulesElement({
+  te = Magic_Item["Demonbound (level 23)"] = new engine.RulesElement({
     name: "Demonbound (level 23)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9243",
@@ -101,7 +102,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Demonbound (level 28)"] = new RulesElement({
+  te = Magic_Item["Demonbound (level 28)"] = new engine.RulesElement({
     name: "Demonbound (level 28)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9244",
@@ -110,7 +111,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Demonbound (level 3)"] = new RulesElement({
+  te = Magic_Item["Demonbound (level 3)"] = new engine.RulesElement({
     name: "Demonbound (level 3)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9239",
@@ -119,7 +120,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Demonbound (level 8)"] = new RulesElement({
+  te = Magic_Item["Demonbound (level 8)"] = new engine.RulesElement({
     name: "Demonbound (level 8)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9240",
@@ -128,7 +129,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Foe-Seeking Bow +1"] = new RulesElement({
+  te = Magic_Item["Foe-Seeking Bow +1"] = new engine.RulesElement({
     name: "Foe-Seeking Bow +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9257",
@@ -137,7 +138,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Foe-Seeking Bow +2"] = new RulesElement({
+  te = Magic_Item["Foe-Seeking Bow +2"] = new engine.RulesElement({
     name: "Foe-Seeking Bow +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9258",
@@ -146,7 +147,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Foe-Seeking Bow +3"] = new RulesElement({
+  te = Magic_Item["Foe-Seeking Bow +3"] = new engine.RulesElement({
     name: "Foe-Seeking Bow +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9259",
@@ -155,7 +156,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Foe-Seeking Bow +4"] = new RulesElement({
+  te = Magic_Item["Foe-Seeking Bow +4"] = new engine.RulesElement({
     name: "Foe-Seeking Bow +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9260",
@@ -164,7 +165,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Foe-Seeking Bow +5"] = new RulesElement({
+  te = Magic_Item["Foe-Seeking Bow +5"] = new engine.RulesElement({
     name: "Foe-Seeking Bow +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9261",
@@ -173,7 +174,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Foe-Seeking Bow +6"] = new RulesElement({
+  te = Magic_Item["Foe-Seeking Bow +6"] = new engine.RulesElement({
     name: "Foe-Seeking Bow +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9262",
@@ -182,7 +183,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Inevitable Bow +3"] = new RulesElement({
+  te = Magic_Item["Inevitable Bow +3"] = new engine.RulesElement({
     name: "Inevitable Bow +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9263",
@@ -191,7 +192,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Inevitable Bow +4"] = new RulesElement({
+  te = Magic_Item["Inevitable Bow +4"] = new engine.RulesElement({
     name: "Inevitable Bow +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9264",
@@ -200,7 +201,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Inevitable Bow +5"] = new RulesElement({
+  te = Magic_Item["Inevitable Bow +5"] = new engine.RulesElement({
     name: "Inevitable Bow +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9265",
@@ -209,7 +210,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Inevitable Bow +6"] = new RulesElement({
+  te = Magic_Item["Inevitable Bow +6"] = new engine.RulesElement({
     name: "Inevitable Bow +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9266",
@@ -218,7 +219,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Insight of the Vault (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Insight of the Vault (heroic tier)"] = new engine.RulesElement({
     name: "Insight of the Vault (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9514",
@@ -227,7 +228,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Kingslayer's Curse - Face Me, Cowards (epic tier)"] = new RulesElement({
+  te = Magic_Item["Kingslayer's Curse - Face Me, Cowards (epic tier)"] = new engine.RulesElement({
     name: "Kingslayer's Curse - Face Me, Cowards (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9237",
@@ -236,7 +237,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Kingslayer's Curse - Fearsome Reputation (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Kingslayer's Curse - Fearsome Reputation (paragon tier)"] = new engine.RulesElement({
     name: "Kingslayer's Curse - Fearsome Reputation (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9235",
@@ -248,7 +249,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Kingslayer's Curse - God Hunter (epic tier)"] = new RulesElement({
+  te = Magic_Item["Kingslayer's Curse - God Hunter (epic tier)"] = new engine.RulesElement({
     name: "Kingslayer's Curse - God Hunter (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9238",
@@ -257,7 +258,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Kingslayer's Curse - Outlaw's Fortitude (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Kingslayer's Curse - Outlaw's Fortitude (heroic tier)"] = new engine.RulesElement({
     name: "Kingslayer's Curse - Outlaw's Fortitude (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9233",
@@ -266,7 +267,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Kingslayer's Curse - Rage of the Persecuted (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Kingslayer's Curse - Rage of the Persecuted (paragon tier)"] = new engine.RulesElement({
     name: "Kingslayer's Curse - Rage of the Persecuted (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9236",
@@ -275,7 +276,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Kingslayer's Curse - Unconquerable (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Kingslayer's Curse - Unconquerable (heroic tier)"] = new engine.RulesElement({
     name: "Kingslayer's Curse - Unconquerable (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9231",
@@ -288,7 +289,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Resolve of the Inner Vault (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Resolve of the Inner Vault (heroic tier)"] = new engine.RulesElement({
     name: "Resolve of the Inner Vault (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9516",
@@ -300,7 +301,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Retributive Bow +3"] = new RulesElement({
+  te = Magic_Item["Retributive Bow +3"] = new engine.RulesElement({
     name: "Retributive Bow +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9267",
@@ -309,7 +310,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Retributive Bow +4"] = new RulesElement({
+  te = Magic_Item["Retributive Bow +4"] = new engine.RulesElement({
     name: "Retributive Bow +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9268",
@@ -318,7 +319,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Retributive Bow +5"] = new RulesElement({
+  te = Magic_Item["Retributive Bow +5"] = new engine.RulesElement({
     name: "Retributive Bow +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9269",
@@ -327,7 +328,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Retributive Bow +6"] = new RulesElement({
+  te = Magic_Item["Retributive Bow +6"] = new engine.RulesElement({
     name: "Retributive Bow +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9270",
@@ -336,7 +337,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fading One - Battle Ghost (epic tier)"] = new RulesElement({
+  te = Magic_Item["The Fading One - Battle Ghost (epic tier)"] = new engine.RulesElement({
     name: "The Fading One - Battle Ghost (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9249",
@@ -345,7 +346,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fading One - Ghostfoot (heroic tier)"] = new RulesElement({
+  te = Magic_Item["The Fading One - Ghostfoot (heroic tier)"] = new engine.RulesElement({
     name: "The Fading One - Ghostfoot (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9245",
@@ -357,7 +358,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fading One - Life Drain (paragon tier)"] = new RulesElement({
+  te = Magic_Item["The Fading One - Life Drain (paragon tier)"] = new engine.RulesElement({
     name: "The Fading One - Life Drain (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9248",
@@ -369,7 +370,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fading One - Lighter than Wind (heroic tier)"] = new RulesElement({
+  te = Magic_Item["The Fading One - Lighter than Wind (heroic tier)"] = new engine.RulesElement({
     name: "The Fading One - Lighter than Wind (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9246",
@@ -383,7 +384,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fading One - Spirit Body (paragon tier)"] = new RulesElement({
+  te = Magic_Item["The Fading One - Spirit Body (paragon tier)"] = new engine.RulesElement({
     name: "The Fading One - Spirit Body (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9247",
@@ -396,7 +397,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fading One - Touch from Beyond (epic tier)"] = new RulesElement({
+  te = Magic_Item["The Fading One - Touch from Beyond (epic tier)"] = new engine.RulesElement({
     name: "The Fading One - Touch from Beyond (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9250",
@@ -405,7 +406,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["True Kiss of the Mistress (level 13)"] = new RulesElement({
+  te = Magic_Item["True Kiss of the Mistress (level 13)"] = new engine.RulesElement({
     name: "True Kiss of the Mistress (level 13)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9226",
@@ -417,7 +418,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["True Kiss of the Mistress (level 18)"] = new RulesElement({
+  te = Magic_Item["True Kiss of the Mistress (level 18)"] = new engine.RulesElement({
     name: "True Kiss of the Mistress (level 18)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9227",
@@ -429,7 +430,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["True Kiss of the Mistress (level 23)"] = new RulesElement({
+  te = Magic_Item["True Kiss of the Mistress (level 23)"] = new engine.RulesElement({
     name: "True Kiss of the Mistress (level 23)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9228",
@@ -441,7 +442,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["True Kiss of the Mistress (level 28)"] = new RulesElement({
+  te = Magic_Item["True Kiss of the Mistress (level 28)"] = new engine.RulesElement({
     name: "True Kiss of the Mistress (level 28)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9229",
@@ -453,7 +454,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["True Kiss of the Mistress (level 3)"] = new RulesElement({
+  te = Magic_Item["True Kiss of the Mistress (level 3)"] = new engine.RulesElement({
     name: "True Kiss of the Mistress (level 3)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9224",
@@ -465,7 +466,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["True Kiss of the Mistress (level 8)"] = new RulesElement({
+  te = Magic_Item["True Kiss of the Mistress (level 8)"] = new engine.RulesElement({
     name: "True Kiss of the Mistress (level 8)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9225",
@@ -478,4 +479,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Item_Set = types['Item Set'] || (types['Item Set'] = {});
-  te = Item_Set["Royal Regalia of Chessenta"] = new RulesElement({
+  te = Item_Set["Royal Regalia of Chessenta"] = new engine.RulesElement({
     name: "Royal Regalia of Chessenta",
     type: "Item Set",
     id: "ID_FMP_ITEM_SET_40",
@@ -17,4 +18,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

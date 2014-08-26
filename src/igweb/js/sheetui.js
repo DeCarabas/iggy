@@ -1,13 +1,11 @@
 //
 // Character builder UI
 //
-(function (global, undefined) {
+define(['jquery'],function($) {
   "use strict";
 
   var showZero = true; // For debugging.
   var topOfPage = $("#sheetHeader").height(); // For magical alignment.
-
-  var model = new Model();
 
   var uiElements = {};
   var wizardFirst;
@@ -17,9 +15,9 @@
     this._model = model;
     this._rootElement = $(element);
 
-    this._listTarget = $(global.window.document.getElementById(this._rootElement.attr("data-listTarget")));
+    this._listTarget = $(window.document.getElementById(this._rootElement.attr("data-listTarget")));
     this._detailName = this._rootElement.attr("data-detailTarget");
-    this._detailTarget = $(global.window.document.getElementById(this._detailName));
+    this._detailTarget = $(window.document.getElementById(this._detailName));
 
     this._choiceType = this._rootElement.attr("data-boundChoice");
 
@@ -59,7 +57,7 @@
 
         this.visible = true;
         this.update();
-        updateFields();
+        updateFields(this._model);
       }
     },
     update: function () {
@@ -88,7 +86,7 @@
             row.addClass('selectedRow');
             row.removeClass('rowHover');
 
-            updateFields();
+            updateFields(that._model);
           });
 
           if (choice.choice === re) {
@@ -119,7 +117,7 @@
     }
   }
 
-  function setupUI() {
+  function setupUI(model) {
     var uis = $(".chooseUI");
     uis.each(function () {
       uiElements[this.id] = new ChoiceUI(model, this);
@@ -127,42 +125,42 @@
   }
 
   var special = {
-    strHalfLevel: function () {
+    strHalfLevel: function (model) {
       return model.stat("Strength modifier") + model.stat("HALF-LEVEL");
     },
-    conHalfLevel: function () {
+    conHalfLevel: function (model) {
       return model.stat("Constitution modifier") + model.stat("HALF-LEVEL");
     },
-    dexHalfLevel: function () {
+    dexHalfLevel: function (model) {
       return model.stat("Dexterity modifier") + model.stat("HALF-LEVEL");
     },
-    intHalfLevel: function () {
+    intHalfLevel: function (model) {
       return model.stat("Intelligence modifier") + model.stat("HALF-LEVEL");
     },
-    wisHalfLevel: function () {
+    wisHalfLevel: function (model) {
       return model.stat("Wisdom modifier") + model.stat("HALF-LEVEL");
     },
-    chaHalfLevel: function () {
+    chaHalfLevel: function (model) {
       return model.stat("Charisma modifier") + model.stat("HALF-LEVEL");
     },
-    tenHalfLevel: function () {
+    tenHalfLevel: function (model) {
       return 10 + model.stat("HALF-LEVEL");
     },
-    bloodiedHP: function () {
+    bloodiedHP: function (model) {
       return Math.floor(model.stat("Hit Points") / 2);
     },
-    surgeValue: function () {
+    surgeValue: function (model) {
       return Math.floor(model.stat("Hit Points") / 4);
     },
-    passiveInsight: function () {
+    passiveInsight: function (model) {
       return model.stat("Insight") + 10;
     },
-    passivePerception: function () {
+    passivePerception: function (model) {
       return model.stat("Perception") + 10;
     }
   };
 
-  function updateFields() {
+  function updateFields(model) {
     $("[data-boundStat]:visible").each(function () {
       var value;
       var elem = $(this);
@@ -183,7 +181,7 @@
 
     $("[data-special]:visible").each(function () {
       var elem = $(this);
-      elem.val(special[elem.attr("data-special")]());
+      elem.val(special[elem.attr("data-special")](model));
     });
 
     $("[data-boundText]:visible").each(function () {
@@ -208,7 +206,7 @@
     });
   }
 
-  function bindFields() {
+  function bindFields(model) {
     // TODO: Stats aren't bound; need to validate integers and report
     // errors and the like. If only HTML5 <input type="number"
     // weren't so crap.
@@ -217,7 +215,7 @@
       var elem = $(this);
       elem.change(function () {
         model.override(elem.attr("data-boundStat"), elem.val());
-        updateFields();
+        updateFields(model);
       });
     });
 
@@ -226,24 +224,10 @@
     });
   }
 
-  /* Haxors for now: initial setup to test binding */
-  model.grant(global.elements.types["Level"]["1"]);
-  //model.grant(global.elements.types["Race"]["Elf"]);
-  //model.grant(global.elements.types["Class"]["Ranger"]);
-  //model.getChoices("Class")[0].choice = global.elements.types["Class"]["Ranger"];
-
-  model.rawStatObject("dex").baseValue = 18;
-  model.rawStatObject("str").baseValue = 13;
-  model.rawStatObject("wis").baseValue = 13;
-  model.rawStatObject("con").baseValue = 10;
-  model.rawStatObject("int").baseValue = 10;
-  model.rawStatObject("cha").baseValue = 8;
-
-  bindFields();
-  setupUI();
-
-  wizardNext();
-
-})(this);
-
+  return {
+    bindFields: bindFields,
+    setupUI: setupUI,
+    wizardNext: wizardNext,
+  };
+});
 

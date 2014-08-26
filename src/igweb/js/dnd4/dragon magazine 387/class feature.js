@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Communal Action"] = new RulesElement({
+  te = class_feature["Communal Action"] = new engine.RulesElement({
     name: "Communal Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2699",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Dangerous Threshold"] = new RulesElement({
+  te = class_feature["Dangerous Threshold"] = new engine.RulesElement({
     name: "Dangerous Threshold",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2686",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Death-Seer's Action"] = new RulesElement({
+  te = class_feature["Death-Seer's Action"] = new engine.RulesElement({
     name: "Death-Seer's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2696",
@@ -40,7 +41,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Exorcise Corruption"] = new RulesElement({
+  te = class_feature["Exorcise Corruption"] = new engine.RulesElement({
     name: "Exorcise Corruption",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2685",
@@ -49,7 +50,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Gate Ward"] = new RulesElement({
+  te = class_feature["Gate Ward"] = new engine.RulesElement({
     name: "Gate Ward",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2688",
@@ -58,7 +59,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Gatekeeper's Action"] = new RulesElement({
+  te = class_feature["Gatekeeper's Action"] = new engine.RulesElement({
     name: "Gatekeeper's Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2687",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Guardian Mindfulness"] = new RulesElement({
+  te = class_feature["Guardian Mindfulness"] = new engine.RulesElement({
     name: "Guardian Mindfulness",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2692",
@@ -85,20 +86,20 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Incorruptible"] = new RulesElement({
+  te = class_feature["Incorruptible"] = new engine.RulesElement({
     name: "Incorruptible",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2683",
     source: "Dragon Magazine 387",
     categories: ["Incorruptible", "ID_FMP_CLASS_FEATURE_2683", "11"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_SKILL_TRAINING_INSIGHT"]);
-      model.grant(elements.id["ID_INTERNAL_SKILL_TRAINING_STREETWISE"]);
+      model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_INSIGHT"]);
+      model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_STREETWISE"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Irrepressible Defense"] = new RulesElement({
+  te = class_feature["Irrepressible Defense"] = new engine.RulesElement({
     name: "Irrepressible Defense",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2693",
@@ -107,19 +108,19 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Never Again"] = new RulesElement({
+  te = class_feature["Never Again"] = new engine.RulesElement({
     name: "Never Again",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2694",
     source: "Dragon Magazine 387",
     categories: ["Never Again", "ID_FMP_CLASS_FEATURE_2694", "30"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_12498"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12498"]);
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["One for All"] = new RulesElement({
+  te = class_feature["One for All"] = new engine.RulesElement({
     name: "One for All",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2701",
@@ -128,7 +129,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Psychic Channel"] = new RulesElement({
+  te = class_feature["Psychic Channel"] = new engine.RulesElement({
     name: "Psychic Channel",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2691",
@@ -137,7 +138,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Psychic Network"] = new RulesElement({
+  te = class_feature["Psychic Network"] = new engine.RulesElement({
     name: "Psychic Network",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2689",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Puissant Gaze"] = new RulesElement({
+  te = class_feature["Puissant Gaze"] = new engine.RulesElement({
     name: "Puissant Gaze",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2698",
@@ -163,7 +164,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Shard Swarm Reflex"] = new RulesElement({
+  te = class_feature["Shard Swarm Reflex"] = new engine.RulesElement({
     name: "Shard Swarm Reflex",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2690",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Strength in Numbers"] = new RulesElement({
+  te = class_feature["Strength in Numbers"] = new engine.RulesElement({
     name: "Strength in Numbers",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2700",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Unity Unbroken"] = new RulesElement({
+  te = class_feature["Unity Unbroken"] = new engine.RulesElement({
     name: "Unity Unbroken",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2684",
@@ -199,7 +200,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Weakness of the Hale"] = new RulesElement({
+  te = class_feature["Weakness of the Hale"] = new engine.RulesElement({
     name: "Weakness of the Hale",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_2697",
@@ -209,4 +210,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,15 @@
 // This is the engine that powers binding from the model to the UI.
-
-(function (global, undefined) {
+define(['jquery'], function($) {
   "use strict";
-   
-  global.updateStats = function updateStats(model) {
+
+  var updateStats = function updateStats(model) {
     $("[x-score]").each(function (index) {
       var statName = $(this).attr("x-score");
       $(this).text(model.stat(statName));
     });
   };
 
-})(this);
+  return { 
+    updateStats: updateStats
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Level = types['Level'] || (types['Level'] = {});
-  te = Level["1"] = new RulesElement({
+  te = Level["1"] = new engine.RulesElement({
     name: "1",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_1",
@@ -72,13 +73,13 @@
       model.statadd("Initiative", function() { return model.stat("Initiative Misc"); });
       model.statadd("Ring Slots", 2);
       model.statadd("_BaseActionPoints", 1);
-      model.grant(elements.id["ID_INTERNAL_LEVEL1RULES_LEVEL1RULES"]);
-      model.grant(elements.id["ID_INTERNAL_LEVEL1RULES_DETAILSRULES"]);
-      model.grant(elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION1"]);
-      model.grant(elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION2"]);
-      model.grant(elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION3"]);
-      model.grant(elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION4"]);
-      model.grant(elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION5"]);
+      model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_LEVEL1RULES"]);
+      model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_DETAILSRULES"]);
+      model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION1"]);
+      model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION2"]);
+      model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION3"]);
+      model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION4"]);
+      model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION5"]);
       model.select('Race', 1);
       model.select('Class', 1);
       model.select('Feat', 1);
@@ -96,7 +97,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["10"] = new RulesElement({
+  te = Level["10"] = new engine.RulesElement({
     name: "10",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_10",
@@ -116,7 +117,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["11"] = new RulesElement({
+  te = Level["11"] = new engine.RulesElement({
     name: "11",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_11",
@@ -131,7 +132,7 @@
       model.statadd("Intelligence", 1);
       model.statadd("Wisdom", 1);
       model.statadd("Charisma", 1);
-      model.grant(elements.id["ID_INTERNAL_TIER_PARAGON"]);
+      model.grant(model.elements.id["ID_INTERNAL_TIER_PARAGON"]);
       model.select('Feat', 1);
       model.select('Paragon Path', 1, {
         optional: true
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["12"] = new RulesElement({
+  te = Level["12"] = new engine.RulesElement({
     name: "12",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_12",
@@ -159,7 +160,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["13"] = new RulesElement({
+  te = Level["13"] = new engine.RulesElement({
     name: "13",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_13",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["14"] = new RulesElement({
+  te = Level["14"] = new engine.RulesElement({
     name: "14",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_14",
@@ -193,7 +194,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["15"] = new RulesElement({
+  te = Level["15"] = new engine.RulesElement({
     name: "15",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_15",
@@ -209,7 +210,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["16"] = new RulesElement({
+  te = Level["16"] = new engine.RulesElement({
     name: "16",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_16",
@@ -229,7 +230,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["17"] = new RulesElement({
+  te = Level["17"] = new engine.RulesElement({
     name: "17",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_17",
@@ -245,7 +246,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["18"] = new RulesElement({
+  te = Level["18"] = new engine.RulesElement({
     name: "18",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_18",
@@ -263,7 +264,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["19"] = new RulesElement({
+  te = Level["19"] = new engine.RulesElement({
     name: "19",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_19",
@@ -279,7 +280,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["2"] = new RulesElement({
+  te = Level["2"] = new engine.RulesElement({
     name: "2",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_2",
@@ -299,7 +300,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["20"] = new RulesElement({
+  te = Level["20"] = new engine.RulesElement({
     name: "20",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_20",
@@ -316,7 +317,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["21"] = new RulesElement({
+  te = Level["21"] = new engine.RulesElement({
     name: "21",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_21",
@@ -331,7 +332,7 @@
       model.statadd("Intelligence", 1);
       model.statadd("Wisdom", 1);
       model.statadd("Charisma", 1);
-      model.grant(elements.id["ID_INTERNAL_TIER_EPIC"]);
+      model.grant(model.elements.id["ID_INTERNAL_TIER_EPIC"]);
       model.select('Feat', 1);
       model.select('Epic Destiny', 1, {
         optional: true
@@ -342,7 +343,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["22"] = new RulesElement({
+  te = Level["22"] = new engine.RulesElement({
     name: "22",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_22",
@@ -362,7 +363,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["23"] = new RulesElement({
+  te = Level["23"] = new engine.RulesElement({
     name: "23",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_23",
@@ -378,7 +379,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["24"] = new RulesElement({
+  te = Level["24"] = new engine.RulesElement({
     name: "24",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_24",
@@ -396,7 +397,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["25"] = new RulesElement({
+  te = Level["25"] = new engine.RulesElement({
     name: "25",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_25",
@@ -412,7 +413,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["26"] = new RulesElement({
+  te = Level["26"] = new engine.RulesElement({
     name: "26",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_26",
@@ -429,7 +430,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["27"] = new RulesElement({
+  te = Level["27"] = new engine.RulesElement({
     name: "27",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_27",
@@ -445,7 +446,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["28"] = new RulesElement({
+  te = Level["28"] = new engine.RulesElement({
     name: "28",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_28",
@@ -463,7 +464,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["29"] = new RulesElement({
+  te = Level["29"] = new engine.RulesElement({
     name: "29",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_29",
@@ -479,7 +480,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["3"] = new RulesElement({
+  te = Level["3"] = new engine.RulesElement({
     name: "3",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_3",
@@ -497,7 +498,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["30"] = new RulesElement({
+  te = Level["30"] = new engine.RulesElement({
     name: "30",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_30",
@@ -514,7 +515,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["4"] = new RulesElement({
+  te = Level["4"] = new engine.RulesElement({
     name: "4",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_4",
@@ -532,7 +533,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["5"] = new RulesElement({
+  te = Level["5"] = new engine.RulesElement({
     name: "5",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_5",
@@ -550,7 +551,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["6"] = new RulesElement({
+  te = Level["6"] = new engine.RulesElement({
     name: "6",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_6",
@@ -570,7 +571,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["7"] = new RulesElement({
+  te = Level["7"] = new engine.RulesElement({
     name: "7",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_7",
@@ -588,7 +589,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["8"] = new RulesElement({
+  te = Level["8"] = new engine.RulesElement({
     name: "8",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_8",
@@ -606,7 +607,7 @@
   });
   byID[te.id] = te;
   
-  te = Level["9"] = new RulesElement({
+  te = Level["9"] = new engine.RulesElement({
     name: "9",
     type: "Level",
     id: "ID_INTERNAL_LEVEL_9",
@@ -625,4 +626,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

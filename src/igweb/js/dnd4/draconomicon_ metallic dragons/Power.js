@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Dragon Claw Strike"] = new RulesElement({
+  te = Power["Dragon Claw Strike"] = new engine.RulesElement({
     name: "Dragon Claw Strike",
     type: "Power",
     id: "ID_FMP_POWER_10326",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Platinum Presence"] = new RulesElement({
+  te = Power["Platinum Presence"] = new engine.RulesElement({
     name: "Platinum Presence",
     type: "Power",
     id: "ID_FMP_POWER_10327",
@@ -28,4 +29,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

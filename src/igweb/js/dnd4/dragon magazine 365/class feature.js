@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Deeds of Song and Story"] = new RulesElement({
+  te = class_feature["Deeds of Song and Story"] = new engine.RulesElement({
     name: "Deeds of Song and Story",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_872",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Divine Fortune"] = new RulesElement({
+  te = class_feature["Divine Fortune"] = new engine.RulesElement({
     name: "Divine Fortune",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_869",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Fleet Skirmisher"] = new RulesElement({
+  te = class_feature["Fleet Skirmisher"] = new engine.RulesElement({
     name: "Fleet Skirmisher",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_864",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Legendary Action"] = new RulesElement({
+  te = class_feature["Legendary Action"] = new engine.RulesElement({
     name: "Legendary Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_871",
@@ -46,7 +47,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Legends Never Die"] = new RulesElement({
+  te = class_feature["Legends Never Die"] = new engine.RulesElement({
     name: "Legends Never Die",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_870",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Luck Blade"] = new RulesElement({
+  te = class_feature["Luck Blade"] = new engine.RulesElement({
     name: "Luck Blade",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_868",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Marauder Precision"] = new RulesElement({
+  te = class_feature["Marauder Precision"] = new engine.RulesElement({
     name: "Marauder Precision",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_865",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Press the Advantage"] = new RulesElement({
+  te = class_feature["Press the Advantage"] = new engine.RulesElement({
     name: "Press the Advantage",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_866",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Probability Control"] = new RulesElement({
+  te = class_feature["Probability Control"] = new engine.RulesElement({
     name: "Probability Control",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_867",
@@ -98,4 +99,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

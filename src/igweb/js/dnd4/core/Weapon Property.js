@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Weapon_Property = types['Weapon Property'] || (types['Weapon Property'] = {});
-  te = Weapon_Property["Accurate"] = new RulesElement({
+  te = Weapon_Property["Accurate"] = new engine.RulesElement({
     name: "Accurate",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_14",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Blinking"] = new RulesElement({
+  te = Weapon_Property["Blinking"] = new engine.RulesElement({
     name: "Blinking",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_33",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Brutal"] = new RulesElement({
+  te = Weapon_Property["Brutal"] = new engine.RulesElement({
     name: "Brutal",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_10",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Deadly"] = new RulesElement({
+  te = Weapon_Property["Deadly"] = new engine.RulesElement({
     name: "Deadly",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_15",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Defensive"] = new RulesElement({
+  te = Weapon_Property["Defensive"] = new engine.RulesElement({
     name: "Defensive",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_11",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Distant"] = new RulesElement({
+  te = Weapon_Property["Distant"] = new engine.RulesElement({
     name: "Distant",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_16",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Empowered Crit"] = new RulesElement({
+  te = Weapon_Property["Empowered Crit"] = new engine.RulesElement({
     name: "Empowered Crit",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_17",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (acid)"] = new RulesElement({
+  te = Weapon_Property["Energized (acid)"] = new engine.RulesElement({
     name: "Energized (acid)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_18",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (cold)"] = new RulesElement({
+  te = Weapon_Property["Energized (cold)"] = new engine.RulesElement({
     name: "Energized (cold)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_24",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (fire)"] = new RulesElement({
+  te = Weapon_Property["Energized (fire)"] = new engine.RulesElement({
     name: "Energized (fire)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_25",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (force)"] = new RulesElement({
+  te = Weapon_Property["Energized (force)"] = new engine.RulesElement({
     name: "Energized (force)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_30",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (lightning)"] = new RulesElement({
+  te = Weapon_Property["Energized (lightning)"] = new engine.RulesElement({
     name: "Energized (lightning)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_27",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (necrotic)"] = new RulesElement({
+  te = Weapon_Property["Energized (necrotic)"] = new engine.RulesElement({
     name: "Energized (necrotic)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_31",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (psychic)"] = new RulesElement({
+  te = Weapon_Property["Energized (psychic)"] = new engine.RulesElement({
     name: "Energized (psychic)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_29",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (radiant)"] = new RulesElement({
+  te = Weapon_Property["Energized (radiant)"] = new engine.RulesElement({
     name: "Energized (radiant)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_28",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Energized (thunder)"] = new RulesElement({
+  te = Weapon_Property["Energized (thunder)"] = new engine.RulesElement({
     name: "Energized (thunder)",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_26",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Forceful"] = new RulesElement({
+  te = Weapon_Property["Forceful"] = new engine.RulesElement({
     name: "Forceful",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_19",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Heavy Thrown"] = new RulesElement({
+  te = Weapon_Property["Heavy Thrown"] = new engine.RulesElement({
     name: "Heavy Thrown",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_3",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["High Crit"] = new RulesElement({
+  te = Weapon_Property["High Crit"] = new engine.RulesElement({
     name: "High Crit",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_4",
@@ -178,7 +179,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Light Thrown"] = new RulesElement({
+  te = Weapon_Property["Light Thrown"] = new engine.RulesElement({
     name: "Light Thrown",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_5",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Load Free"] = new RulesElement({
+  te = Weapon_Property["Load Free"] = new engine.RulesElement({
     name: "Load Free",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_9",
@@ -196,7 +197,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Load Minor"] = new RulesElement({
+  te = Weapon_Property["Load Minor"] = new engine.RulesElement({
     name: "Load Minor",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_6",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Mobile"] = new RulesElement({
+  te = Weapon_Property["Mobile"] = new engine.RulesElement({
     name: "Mobile",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_32",
@@ -214,7 +215,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["off-hand"] = new RulesElement({
+  te = Weapon_Property["off-hand"] = new engine.RulesElement({
     name: "off-hand",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_1",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Reach"] = new RulesElement({
+  te = Weapon_Property["Reach"] = new engine.RulesElement({
     name: "Reach",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_7",
@@ -232,7 +233,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Reaching"] = new RulesElement({
+  te = Weapon_Property["Reaching"] = new engine.RulesElement({
     name: "Reaching",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_34",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Shielding"] = new RulesElement({
+  te = Weapon_Property["Shielding"] = new engine.RulesElement({
     name: "Shielding",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_20",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Small"] = new RulesElement({
+  te = Weapon_Property["Small"] = new engine.RulesElement({
     name: "Small",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_8",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Stout"] = new RulesElement({
+  te = Weapon_Property["Stout"] = new engine.RulesElement({
     name: "Stout",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_13",
@@ -268,7 +269,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Undeniable"] = new RulesElement({
+  te = Weapon_Property["Undeniable"] = new engine.RulesElement({
     name: "Undeniable",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_21",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Unerring"] = new RulesElement({
+  te = Weapon_Property["Unerring"] = new engine.RulesElement({
     name: "Unerring",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_22",
@@ -286,7 +287,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Unstoppable"] = new RulesElement({
+  te = Weapon_Property["Unstoppable"] = new engine.RulesElement({
     name: "Unstoppable",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_23",
@@ -295,7 +296,7 @@
   });
   byID[te.id] = te;
   
-  te = Weapon_Property["Versatile"] = new RulesElement({
+  te = Weapon_Property["Versatile"] = new engine.RulesElement({
     name: "Versatile",
     type: "Weapon Property",
     id: "ID_FMP_WEAPON_PROPERTY_2",
@@ -305,4 +306,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

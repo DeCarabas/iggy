@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Gender = types['Gender'] || (types['Gender'] = {});
-  te = Gender["Female"] = new RulesElement({
+  te = Gender["Female"] = new engine.RulesElement({
     name: "Female",
     type: "Gender",
     id: "ID_INTERNAL_GENDER_FEMALE",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Gender["Male"] = new RulesElement({
+  te = Gender["Male"] = new engine.RulesElement({
     name: "Male",
     type: "Gender",
     id: "ID_INTERNAL_GENDER_MALE",
@@ -26,4 +27,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

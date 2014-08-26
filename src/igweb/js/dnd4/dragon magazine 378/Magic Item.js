@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Boar Tusk Helm (epic tier)"] = new RulesElement({
+  te = Magic_Item["Boar Tusk Helm (epic tier)"] = new engine.RulesElement({
     name: "Boar Tusk Helm (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7911",
@@ -15,13 +16,13 @@
     categories: ["Boar Tusk Helm (epic tier)", "ID_FMP_MAGIC_ITEM_7911"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Boar Tusk Helm (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Boar Tusk Helm (heroic tier)"] = new engine.RulesElement({
     name: "Boar Tusk Helm (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7907",
@@ -29,13 +30,13 @@
     categories: ["Boar Tusk Helm (heroic tier)", "ID_FMP_MAGIC_ITEM_7907"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Boar Tusk Helm (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Boar Tusk Helm (paragon tier)"] = new engine.RulesElement({
     name: "Boar Tusk Helm (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7909",
@@ -43,13 +44,13 @@
     categories: ["Boar Tusk Helm (paragon tier)", "ID_FMP_MAGIC_ITEM_7909"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOAR_TUSK)"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Boots of the Dryad (epic tier)"] = new RulesElement({
+  te = Magic_Item["Boots of the Dryad (epic tier)"] = new engine.RulesElement({
     name: "Boots of the Dryad (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7900",
@@ -58,7 +59,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Boots of the Dryad (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Boots of the Dryad (heroic tier)"] = new engine.RulesElement({
     name: "Boots of the Dryad (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7896",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Boots of the Dryad (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Boots of the Dryad (paragon tier)"] = new engine.RulesElement({
     name: "Boots of the Dryad (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7898",
@@ -76,7 +77,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bracers of Brachiation (epic tier)"] = new RulesElement({
+  te = Magic_Item["Bracers of Brachiation (epic tier)"] = new engine.RulesElement({
     name: "Bracers of Brachiation (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7894",
@@ -85,7 +86,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bracers of Brachiation (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Bracers of Brachiation (heroic tier)"] = new engine.RulesElement({
     name: "Bracers of Brachiation (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7890",
@@ -94,7 +95,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bracers of Brachiation (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Bracers of Brachiation (paragon tier)"] = new engine.RulesElement({
     name: "Bracers of Brachiation (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7892",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Giving Spirit Soulfang (level 13)"] = new RulesElement({
+  te = Magic_Item["Giving Spirit Soulfang (level 13)"] = new engine.RulesElement({
     name: "Giving Spirit Soulfang (level 13)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7922",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Giving Spirit Soulfang (level 18)"] = new RulesElement({
+  te = Magic_Item["Giving Spirit Soulfang (level 18)"] = new engine.RulesElement({
     name: "Giving Spirit Soulfang (level 18)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7923",
@@ -121,7 +122,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Giving Spirit Soulfang (level 23)"] = new RulesElement({
+  te = Magic_Item["Giving Spirit Soulfang (level 23)"] = new engine.RulesElement({
     name: "Giving Spirit Soulfang (level 23)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7924",
@@ -130,7 +131,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Giving Spirit Soulfang (level 28)"] = new RulesElement({
+  te = Magic_Item["Giving Spirit Soulfang (level 28)"] = new engine.RulesElement({
     name: "Giving Spirit Soulfang (level 28)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7925",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Giving Spirit Soulfang (level 3)"] = new RulesElement({
+  te = Magic_Item["Giving Spirit Soulfang (level 3)"] = new engine.RulesElement({
     name: "Giving Spirit Soulfang (level 3)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7920",
@@ -148,7 +149,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Giving Spirit Soulfang (level 8)"] = new RulesElement({
+  te = Magic_Item["Giving Spirit Soulfang (level 8)"] = new engine.RulesElement({
     name: "Giving Spirit Soulfang (level 8)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7921",
@@ -157,7 +158,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Gorilla Gloves (epic tier)"] = new RulesElement({
+  te = Magic_Item["Gorilla Gloves (epic tier)"] = new engine.RulesElement({
     name: "Gorilla Gloves (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7906",
@@ -166,7 +167,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Gorilla Gloves (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Gorilla Gloves (heroic tier)"] = new engine.RulesElement({
     name: "Gorilla Gloves (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7902",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Gorilla Gloves (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Gorilla Gloves (paragon tier)"] = new engine.RulesElement({
     name: "Gorilla Gloves (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7904",
@@ -184,7 +185,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ironskin Soulfang (level 10)"] = new RulesElement({
+  te = Magic_Item["Ironskin Soulfang (level 10)"] = new engine.RulesElement({
     name: "Ironskin Soulfang (level 10)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7927",
@@ -193,7 +194,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ironskin Soulfang (level 15)"] = new RulesElement({
+  te = Magic_Item["Ironskin Soulfang (level 15)"] = new engine.RulesElement({
     name: "Ironskin Soulfang (level 15)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7928",
@@ -202,7 +203,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ironskin Soulfang (level 20)"] = new RulesElement({
+  te = Magic_Item["Ironskin Soulfang (level 20)"] = new engine.RulesElement({
     name: "Ironskin Soulfang (level 20)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7929",
@@ -211,7 +212,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ironskin Soulfang (level 25)"] = new RulesElement({
+  te = Magic_Item["Ironskin Soulfang (level 25)"] = new engine.RulesElement({
     name: "Ironskin Soulfang (level 25)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7930",
@@ -220,7 +221,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ironskin Soulfang (level 30)"] = new RulesElement({
+  te = Magic_Item["Ironskin Soulfang (level 30)"] = new engine.RulesElement({
     name: "Ironskin Soulfang (level 30)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7931",
@@ -229,7 +230,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ironskin Soulfang (level 5)"] = new RulesElement({
+  te = Magic_Item["Ironskin Soulfang (level 5)"] = new engine.RulesElement({
     name: "Ironskin Soulfang (level 5)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7926",
@@ -238,7 +239,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Pouncing Armor +1"] = new RulesElement({
+  te = Magic_Item["Pouncing Armor +1"] = new engine.RulesElement({
     name: "Pouncing Armor +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7878",
@@ -251,7 +252,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Pouncing Armor +2"] = new RulesElement({
+  te = Magic_Item["Pouncing Armor +2"] = new engine.RulesElement({
     name: "Pouncing Armor +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7885",
@@ -264,7 +265,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Pouncing Armor +3"] = new RulesElement({
+  te = Magic_Item["Pouncing Armor +3"] = new engine.RulesElement({
     name: "Pouncing Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7886",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Pouncing Armor +4"] = new RulesElement({
+  te = Magic_Item["Pouncing Armor +4"] = new engine.RulesElement({
     name: "Pouncing Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7887",
@@ -290,7 +291,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Pouncing Armor +5"] = new RulesElement({
+  te = Magic_Item["Pouncing Armor +5"] = new engine.RulesElement({
     name: "Pouncing Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7888",
@@ -303,7 +304,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Pouncing Armor +6"] = new RulesElement({
+  te = Magic_Item["Pouncing Armor +6"] = new engine.RulesElement({
     name: "Pouncing Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7889",
@@ -316,7 +317,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ring of Giants (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Ring of Giants (paragon tier)"] = new engine.RulesElement({
     name: "Ring of Giants (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7912",
@@ -325,7 +326,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Roused Spirit Soulfang (level 12)"] = new RulesElement({
+  te = Magic_Item["Roused Spirit Soulfang (level 12)"] = new engine.RulesElement({
     name: "Roused Spirit Soulfang (level 12)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7916",
@@ -334,7 +335,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Roused Spirit Soulfang (level 17)"] = new RulesElement({
+  te = Magic_Item["Roused Spirit Soulfang (level 17)"] = new engine.RulesElement({
     name: "Roused Spirit Soulfang (level 17)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7917",
@@ -343,7 +344,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Roused Spirit Soulfang (level 2)"] = new RulesElement({
+  te = Magic_Item["Roused Spirit Soulfang (level 2)"] = new engine.RulesElement({
     name: "Roused Spirit Soulfang (level 2)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7914",
@@ -352,7 +353,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Roused Spirit Soulfang (level 22)"] = new RulesElement({
+  te = Magic_Item["Roused Spirit Soulfang (level 22)"] = new engine.RulesElement({
     name: "Roused Spirit Soulfang (level 22)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7918",
@@ -361,7 +362,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Roused Spirit Soulfang (level 27)"] = new RulesElement({
+  te = Magic_Item["Roused Spirit Soulfang (level 27)"] = new engine.RulesElement({
     name: "Roused Spirit Soulfang (level 27)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7919",
@@ -370,7 +371,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Roused Spirit Soulfang (level 7)"] = new RulesElement({
+  te = Magic_Item["Roused Spirit Soulfang (level 7)"] = new engine.RulesElement({
     name: "Roused Spirit Soulfang (level 7)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7915",
@@ -379,7 +380,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Predatory Nature (level 13)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Predatory Nature (level 13)"] = new engine.RulesElement({
     name: "Soulfang of Predatory Nature (level 13)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7934",
@@ -388,7 +389,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Predatory Nature (level 18)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Predatory Nature (level 18)"] = new engine.RulesElement({
     name: "Soulfang of Predatory Nature (level 18)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7935",
@@ -397,7 +398,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Predatory Nature (level 23)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Predatory Nature (level 23)"] = new engine.RulesElement({
     name: "Soulfang of Predatory Nature (level 23)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7936",
@@ -406,7 +407,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Predatory Nature (level 28)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Predatory Nature (level 28)"] = new engine.RulesElement({
     name: "Soulfang of Predatory Nature (level 28)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7937",
@@ -415,7 +416,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Predatory Nature (level 3)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Predatory Nature (level 3)"] = new engine.RulesElement({
     name: "Soulfang of Predatory Nature (level 3)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7932",
@@ -424,7 +425,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Predatory Nature (level 8)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Predatory Nature (level 8)"] = new engine.RulesElement({
     name: "Soulfang of Predatory Nature (level 8)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7933",
@@ -433,7 +434,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Rage (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Rage (heroic tier)"] = new engine.RulesElement({
     name: "Soulfang of Rage (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7938",
@@ -442,7 +443,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Resistance (epic tier)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Resistance (epic tier)"] = new engine.RulesElement({
     name: "Soulfang of Resistance (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7943",
@@ -451,7 +452,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Resistance (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Resistance (heroic tier)"] = new engine.RulesElement({
     name: "Soulfang of Resistance (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7939",
@@ -460,7 +461,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Resistance (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Resistance (paragon tier)"] = new engine.RulesElement({
     name: "Soulfang of Resistance (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7941",
@@ -469,7 +470,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Retribution (level 10)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Retribution (level 10)"] = new engine.RulesElement({
     name: "Soulfang of Retribution (level 10)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7946",
@@ -478,7 +479,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Retribution (level 15)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Retribution (level 15)"] = new engine.RulesElement({
     name: "Soulfang of Retribution (level 15)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7947",
@@ -487,7 +488,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Retribution (level 20)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Retribution (level 20)"] = new engine.RulesElement({
     name: "Soulfang of Retribution (level 20)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7948",
@@ -496,7 +497,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Retribution (level 25)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Retribution (level 25)"] = new engine.RulesElement({
     name: "Soulfang of Retribution (level 25)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7949",
@@ -505,7 +506,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Retribution (level 30)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Retribution (level 30)"] = new engine.RulesElement({
     name: "Soulfang of Retribution (level 30)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7950",
@@ -514,7 +515,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of Retribution (level 5)"] = new RulesElement({
+  te = Magic_Item["Soulfang of Retribution (level 5)"] = new engine.RulesElement({
     name: "Soulfang of Retribution (level 5)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7945",
@@ -523,7 +524,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of the Cheetah (epic tier)"] = new RulesElement({
+  te = Magic_Item["Soulfang of the Cheetah (epic tier)"] = new engine.RulesElement({
     name: "Soulfang of the Cheetah (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7968",
@@ -532,7 +533,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of the Cheetah (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Soulfang of the Cheetah (heroic tier)"] = new engine.RulesElement({
     name: "Soulfang of the Cheetah (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7964",
@@ -541,7 +542,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulfang of the Cheetah (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Soulfang of the Cheetah (paragon tier)"] = new engine.RulesElement({
     name: "Soulfang of the Cheetah (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7966",
@@ -550,7 +551,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stormlash Soulfang (level 10)"] = new RulesElement({
+  te = Magic_Item["Stormlash Soulfang (level 10)"] = new engine.RulesElement({
     name: "Stormlash Soulfang (level 10)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7952",
@@ -559,7 +560,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stormlash Soulfang (level 15)"] = new RulesElement({
+  te = Magic_Item["Stormlash Soulfang (level 15)"] = new engine.RulesElement({
     name: "Stormlash Soulfang (level 15)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7953",
@@ -568,7 +569,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stormlash Soulfang (level 20)"] = new RulesElement({
+  te = Magic_Item["Stormlash Soulfang (level 20)"] = new engine.RulesElement({
     name: "Stormlash Soulfang (level 20)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7954",
@@ -577,7 +578,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stormlash Soulfang (level 25)"] = new RulesElement({
+  te = Magic_Item["Stormlash Soulfang (level 25)"] = new engine.RulesElement({
     name: "Stormlash Soulfang (level 25)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7955",
@@ -586,7 +587,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stormlash Soulfang (level 30)"] = new RulesElement({
+  te = Magic_Item["Stormlash Soulfang (level 30)"] = new engine.RulesElement({
     name: "Stormlash Soulfang (level 30)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7956",
@@ -595,7 +596,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stormlash Soulfang (level 5)"] = new RulesElement({
+  te = Magic_Item["Stormlash Soulfang (level 5)"] = new engine.RulesElement({
     name: "Stormlash Soulfang (level 5)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7951",
@@ -604,7 +605,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Swift Shaper's Soulfang (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Swift Shaper's Soulfang (paragon tier)"] = new engine.RulesElement({
     name: "Swift Shaper's Soulfang (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7957",
@@ -613,7 +614,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Temblor Weapon +1"] = new RulesElement({
+  te = Magic_Item["Temblor Weapon +1"] = new engine.RulesElement({
     name: "Temblor Weapon +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7879",
@@ -622,7 +623,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Temblor Weapon +2"] = new RulesElement({
+  te = Magic_Item["Temblor Weapon +2"] = new engine.RulesElement({
     name: "Temblor Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7880",
@@ -631,7 +632,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Temblor Weapon +3"] = new RulesElement({
+  te = Magic_Item["Temblor Weapon +3"] = new engine.RulesElement({
     name: "Temblor Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7881",
@@ -640,7 +641,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Temblor Weapon +4"] = new RulesElement({
+  te = Magic_Item["Temblor Weapon +4"] = new engine.RulesElement({
     name: "Temblor Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7882",
@@ -649,7 +650,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Temblor Weapon +5"] = new RulesElement({
+  te = Magic_Item["Temblor Weapon +5"] = new engine.RulesElement({
     name: "Temblor Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7883",
@@ -658,7 +659,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Temblor Weapon +6"] = new RulesElement({
+  te = Magic_Item["Temblor Weapon +6"] = new engine.RulesElement({
     name: "Temblor Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7884",
@@ -667,7 +668,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Thorn Grasp Soulfang (level 13)"] = new RulesElement({
+  te = Magic_Item["Thorn Grasp Soulfang (level 13)"] = new engine.RulesElement({
     name: "Thorn Grasp Soulfang (level 13)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7960",
@@ -676,7 +677,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Thorn Grasp Soulfang (level 18)"] = new RulesElement({
+  te = Magic_Item["Thorn Grasp Soulfang (level 18)"] = new engine.RulesElement({
     name: "Thorn Grasp Soulfang (level 18)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7961",
@@ -685,7 +686,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Thorn Grasp Soulfang (level 23)"] = new RulesElement({
+  te = Magic_Item["Thorn Grasp Soulfang (level 23)"] = new engine.RulesElement({
     name: "Thorn Grasp Soulfang (level 23)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7962",
@@ -694,7 +695,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Thorn Grasp Soulfang (level 28)"] = new RulesElement({
+  te = Magic_Item["Thorn Grasp Soulfang (level 28)"] = new engine.RulesElement({
     name: "Thorn Grasp Soulfang (level 28)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7963",
@@ -703,7 +704,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Thorn Grasp Soulfang (level 3)"] = new RulesElement({
+  te = Magic_Item["Thorn Grasp Soulfang (level 3)"] = new engine.RulesElement({
     name: "Thorn Grasp Soulfang (level 3)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7958",
@@ -712,7 +713,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Thorn Grasp Soulfang (level 8)"] = new RulesElement({
+  te = Magic_Item["Thorn Grasp Soulfang (level 8)"] = new engine.RulesElement({
     name: "Thorn Grasp Soulfang (level 8)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_7959",
@@ -722,4 +723,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Beast Melee Basic Attack"] = new RulesElement({
+  te = Power["Beast Melee Basic Attack"] = new engine.RulesElement({
     name: "Beast Melee Basic Attack",
     type: "Power",
     id: "ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Dwarven Resilience"] = new RulesElement({
+  te = Power["Dwarven Resilience"] = new engine.RulesElement({
     name: "Dwarven Resilience",
     type: "Power",
     id: "ID_FMP_POWER_13211",
@@ -26,7 +27,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Melee Basic Attack"] = new RulesElement({
+  te = Power["Melee Basic Attack"] = new engine.RulesElement({
     name: "Melee Basic Attack",
     type: "Power",
     id: "ID_INTERNAL_POWER_MELEE_BASIC_ATTACK",
@@ -36,7 +37,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Ranged Basic Attack"] = new RulesElement({
+  te = Power["Ranged Basic Attack"] = new engine.RulesElement({
     name: "Ranged Basic Attack",
     type: "Power",
     id: "ID_INTERNAL_POWER_RANGED_BASIC_ATTACK",
@@ -47,4 +48,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

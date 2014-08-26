@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Belt of Fiends (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Belt of Fiends (paragon tier)"] = new engine.RulesElement({
     name: "Belt of Fiends (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4259",
@@ -39,7 +40,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ring of Fury (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Ring of Fury (paragon tier)"] = new engine.RulesElement({
     name: "Ring of Fury (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4260",
@@ -52,4 +53,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

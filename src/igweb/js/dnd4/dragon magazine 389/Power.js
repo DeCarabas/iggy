@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Arrows of Misfortune"] = new RulesElement({
+  te = Power["Arrows of Misfortune"] = new engine.RulesElement({
     name: "Arrows of Misfortune",
     type: "Power",
     id: "ID_FMP_POWER_12796",
@@ -15,12 +16,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=12796",
     categories: ["Arrows of Misfortune", "ID_FMP_POWER_12796", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_472", "Seeker", "ID_FMP_CATEGORY_33", "Primal", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "15"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_12797"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12797"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Arrows of Misfortune Attack"] = new RulesElement({
+  te = Power["Arrows of Misfortune Attack"] = new engine.RulesElement({
     name: "Arrows of Misfortune Attack",
     type: "Power",
     id: "ID_FMP_POWER_12797",
@@ -30,7 +31,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Biting Wind Arrows"] = new RulesElement({
+  te = Power["Biting Wind Arrows"] = new engine.RulesElement({
     name: "Biting Wind Arrows",
     type: "Power",
     id: "ID_FMP_POWER_12801",
@@ -38,12 +39,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=12801",
     categories: ["Biting Wind Arrows", "ID_FMP_POWER_12801", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_472", "Seeker", "ID_FMP_CATEGORY_33", "Primal", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "29"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_12802"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12802"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Biting Wind Arrows Attack"] = new RulesElement({
+  te = Power["Biting Wind Arrows Attack"] = new engine.RulesElement({
     name: "Biting Wind Arrows Attack",
     type: "Power",
     id: "ID_FMP_POWER_12802",
@@ -53,7 +54,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Black Arrow of Fate"] = new RulesElement({
+  te = Power["Black Arrow of Fate"] = new engine.RulesElement({
     name: "Black Arrow of Fate",
     type: "Power",
     id: "ID_FMP_POWER_12799",
@@ -63,7 +64,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Blood Frenzy Howl"] = new RulesElement({
+  te = Power["Blood Frenzy Howl"] = new engine.RulesElement({
     name: "Blood Frenzy Howl",
     type: "Power",
     id: "ID_FMP_POWER_12834",
@@ -73,7 +74,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Blood Fugue"] = new RulesElement({
+  te = Power["Blood Fugue"] = new engine.RulesElement({
     name: "Blood Fugue",
     type: "Power",
     id: "ID_FMP_POWER_12783",
@@ -83,7 +84,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Cordon of Thorns"] = new RulesElement({
+  te = Power["Cordon of Thorns"] = new engine.RulesElement({
     name: "Cordon of Thorns",
     type: "Power",
     id: "ID_FMP_POWER_12794",
@@ -91,12 +92,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=12794",
     categories: ["Cordon of Thorns", "ID_FMP_POWER_12794", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_472", "Seeker", "ID_FMP_CATEGORY_33", "Primal", "ID_FMP_CATEGORY_24", "Weapon", "ID_FMP_CATEGORY_39", "Zone", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "13"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_12795"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12795"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Cordon of Thorns Attack"] = new RulesElement({
+  te = Power["Cordon of Thorns Attack"] = new engine.RulesElement({
     name: "Cordon of Thorns Attack",
     type: "Power",
     id: "ID_FMP_POWER_12795",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Cursed Dart"] = new RulesElement({
+  te = Power["Cursed Dart"] = new engine.RulesElement({
     name: "Cursed Dart",
     type: "Power",
     id: "ID_FMP_POWER_12791",
@@ -116,7 +117,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Damning Secret"] = new RulesElement({
+  te = Power["Damning Secret"] = new engine.RulesElement({
     name: "Damning Secret",
     type: "Power",
     id: "ID_FMP_POWER_12828",
@@ -126,7 +127,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Enthroned in Blood"] = new RulesElement({
+  te = Power["Enthroned in Blood"] = new engine.RulesElement({
     name: "Enthroned in Blood",
     type: "Power",
     id: "ID_FMP_POWER_12785",
@@ -136,7 +137,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Fall of the Anvil's Master"] = new RulesElement({
+  te = Power["Fall of the Anvil's Master"] = new engine.RulesElement({
     name: "Fall of the Anvil's Master",
     type: "Power",
     id: "ID_FMP_POWER_13229",
@@ -144,12 +145,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13229",
     categories: ["Fall of the Anvil's Master", "ID_FMP_POWER_13229", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_362", "Monk", "ID_FMP_CATEGORY_60", "Full Discipline", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_35", "Psionic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "17"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13230"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13230"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Fall of the Anvil's Master [Movement Technique]"] = new RulesElement({
+  te = Power["Fall of the Anvil's Master [Movement Technique]"] = new engine.RulesElement({
     name: "Fall of the Anvil's Master [Movement Technique]",
     type: "Power",
     id: "ID_FMP_POWER_13230",
@@ -159,7 +160,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Fallen from the Thread"] = new RulesElement({
+  te = Power["Fallen from the Thread"] = new engine.RulesElement({
     name: "Fallen from the Thread",
     type: "Power",
     id: "ID_FMP_POWER_13238",
@@ -167,12 +168,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13238",
     categories: ["Fallen from the Thread", "ID_FMP_POWER_13238", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_747", "Falling Needle Itinerant", "ID_FMP_CATEGORY_60", "Full Discipline", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_35", "Psionic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13237"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13237"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Fallen from the Thread [Movement Technique]"] = new RulesElement({
+  te = Power["Fallen from the Thread [Movement Technique]"] = new engine.RulesElement({
     name: "Fallen from the Thread [Movement Technique]",
     type: "Power",
     id: "ID_FMP_POWER_13237",
@@ -182,7 +183,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Fallen Hammer in Repose"] = new RulesElement({
+  te = Power["Fallen Hammer in Repose"] = new engine.RulesElement({
     name: "Fallen Hammer in Repose",
     type: "Power",
     id: "ID_FMP_POWER_13223",
@@ -190,12 +191,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13223",
     categories: ["Fallen Hammer in Repose", "ID_FMP_POWER_13223", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_362", "Monk", "ID_FMP_CATEGORY_60", "Full Discipline", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_35", "Psionic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "3"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13224"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13224"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Fallen Hammer in Repose [Movement Technique]"] = new RulesElement({
+  te = Power["Fallen Hammer in Repose [Movement Technique]"] = new engine.RulesElement({
     name: "Fallen Hammer in Repose [Movement Technique]",
     type: "Power",
     id: "ID_FMP_POWER_13224",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Fallen Needle"] = new RulesElement({
+  te = Power["Fallen Needle"] = new engine.RulesElement({
     name: "Fallen Needle",
     type: "Power",
     id: "ID_FMP_POWER_13219",
@@ -213,12 +214,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13219",
     categories: ["Fallen Needle", "ID_FMP_POWER_13219", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_AT-WILL", "at-will", "ID_INTERNAL_CATEGORY_AT-WILL_USAGE", "At-Will Usage", "ID_FMP_CLASS_362", "Monk", "ID_FMP_CATEGORY_60", "Full Discipline", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_35", "Psionic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "1"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13220"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13220"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Fallen Needle [Movement Technique]"] = new RulesElement({
+  te = Power["Fallen Needle [Movement Technique]"] = new engine.RulesElement({
     name: "Fallen Needle [Movement Technique]",
     type: "Power",
     id: "ID_FMP_POWER_13220",
@@ -228,7 +229,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Far Step Arrow"] = new RulesElement({
+  te = Power["Far Step Arrow"] = new engine.RulesElement({
     name: "Far Step Arrow",
     type: "Power",
     id: "ID_FMP_POWER_12793",
@@ -238,7 +239,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Faulty Memory"] = new RulesElement({
+  te = Power["Faulty Memory"] = new engine.RulesElement({
     name: "Faulty Memory",
     type: "Power",
     id: "ID_FMP_POWER_12829",
@@ -248,7 +249,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Form of the Night Owl"] = new RulesElement({
+  te = Power["Form of the Night Owl"] = new engine.RulesElement({
     name: "Form of the Night Owl",
     type: "Power",
     id: "ID_FMP_POWER_12836",
@@ -256,12 +257,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=12836",
     categories: ["Form of the Night Owl", "ID_FMP_POWER_12836", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_126", "Druid", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_15", "Polymorph", "ID_FMP_CATEGORY_33", "Primal", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "19"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_12837"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12837"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Gentle Rainfall"] = new RulesElement({
+  te = Power["Gentle Rainfall"] = new engine.RulesElement({
     name: "Gentle Rainfall",
     type: "Power",
     id: "ID_FMP_POWER_13221",
@@ -269,12 +270,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13221",
     categories: ["Gentle Rainfall", "ID_FMP_POWER_13221", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_362", "Monk", "ID_FMP_CATEGORY_60", "Full Discipline", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_35", "Psionic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "1"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13222"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13222"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Gentle Rainfall [Movement Technique]"] = new RulesElement({
+  te = Power["Gentle Rainfall [Movement Technique]"] = new engine.RulesElement({
     name: "Gentle Rainfall [Movement Technique]",
     type: "Power",
     id: "ID_FMP_POWER_13222",
@@ -284,7 +285,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Gripping Swarm"] = new RulesElement({
+  te = Power["Gripping Swarm"] = new engine.RulesElement({
     name: "Gripping Swarm",
     type: "Power",
     id: "ID_FMP_POWER_12843",
@@ -294,7 +295,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Infesting Strike"] = new RulesElement({
+  te = Power["Infesting Strike"] = new engine.RulesElement({
     name: "Infesting Strike",
     type: "Power",
     id: "ID_FMP_POWER_12840",
@@ -304,7 +305,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Infiltrating Drone"] = new RulesElement({
+  te = Power["Infiltrating Drone"] = new engine.RulesElement({
     name: "Infiltrating Drone",
     type: "Power",
     id: "ID_FMP_POWER_12841",
@@ -314,7 +315,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Lost in the Labyrinth City"] = new RulesElement({
+  te = Power["Lost in the Labyrinth City"] = new engine.RulesElement({
     name: "Lost in the Labyrinth City",
     type: "Power",
     id: "ID_FMP_POWER_12784",
@@ -324,7 +325,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Master Diplomat"] = new RulesElement({
+  te = Power["Master Diplomat"] = new engine.RulesElement({
     name: "Master Diplomat",
     type: "Power",
     id: "ID_FMP_POWER_12830",
@@ -334,7 +335,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Night Owl Attack"] = new RulesElement({
+  te = Power["Night Owl Attack"] = new engine.RulesElement({
     name: "Night Owl Attack",
     type: "Power",
     id: "ID_FMP_POWER_12837",
@@ -344,7 +345,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Palming Strike"] = new RulesElement({
+  te = Power["Palming Strike"] = new engine.RulesElement({
     name: "Palming Strike",
     type: "Power",
     id: "ID_FMP_POWER_13217",
@@ -354,7 +355,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Persistent Arrow"] = new RulesElement({
+  te = Power["Persistent Arrow"] = new engine.RulesElement({
     name: "Persistent Arrow",
     type: "Power",
     id: "ID_FMP_POWER_12787",
@@ -362,12 +363,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=12787",
     categories: ["Persistent Arrow", "ID_FMP_POWER_12787", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_472", "Seeker", "ID_FMP_CATEGORY_26", "Conjuration", "ID_FMP_CATEGORY_33", "Primal", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "1"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_12788"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12788"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Persistent Arrow Attack"] = new RulesElement({
+  te = Power["Persistent Arrow Attack"] = new engine.RulesElement({
     name: "Persistent Arrow Attack",
     type: "Power",
     id: "ID_FMP_POWER_12788",
@@ -377,7 +378,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Primal Beast Apotheosis"] = new RulesElement({
+  te = Power["Primal Beast Apotheosis"] = new engine.RulesElement({
     name: "Primal Beast Apotheosis",
     type: "Power",
     id: "ID_FMP_POWER_12839",
@@ -387,7 +388,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Secrets of the City"] = new RulesElement({
+  te = Power["Secrets of the City"] = new engine.RulesElement({
     name: "Secrets of the City",
     type: "Power",
     id: "ID_FMP_POWER_12827",
@@ -397,7 +398,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Seeker's Due"] = new RulesElement({
+  te = Power["Seeker's Due"] = new engine.RulesElement({
     name: "Seeker's Due",
     type: "Power",
     id: "ID_FMP_POWER_12790",
@@ -407,7 +408,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Seeker's Peerless Shot"] = new RulesElement({
+  te = Power["Seeker's Peerless Shot"] = new engine.RulesElement({
     name: "Seeker's Peerless Shot",
     type: "Power",
     id: "ID_FMP_POWER_12798",
@@ -417,7 +418,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Seeking Arrow"] = new RulesElement({
+  te = Power["Seeking Arrow"] = new engine.RulesElement({
     name: "Seeking Arrow",
     type: "Power",
     id: "ID_FMP_POWER_12800",
@@ -427,7 +428,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Serpent's Hold"] = new RulesElement({
+  te = Power["Serpent's Hold"] = new engine.RulesElement({
     name: "Serpent's Hold",
     type: "Power",
     id: "ID_FMP_POWER_12835",
@@ -437,7 +438,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Serpent's Tongue"] = new RulesElement({
+  te = Power["Serpent's Tongue"] = new engine.RulesElement({
     name: "Serpent's Tongue",
     type: "Power",
     id: "ID_FMP_POWER_12826",
@@ -447,7 +448,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Slashing Dash"] = new RulesElement({
+  te = Power["Slashing Dash"] = new engine.RulesElement({
     name: "Slashing Dash",
     type: "Power",
     id: "ID_FMP_POWER_12838",
@@ -457,7 +458,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Spider Dodge"] = new RulesElement({
+  te = Power["Spider Dodge"] = new engine.RulesElement({
     name: "Spider Dodge",
     type: "Power",
     id: "ID_FMP_POWER_13216",
@@ -467,7 +468,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Steel Forest"] = new RulesElement({
+  te = Power["Steel Forest"] = new engine.RulesElement({
     name: "Steel Forest",
     type: "Power",
     id: "ID_FMP_POWER_12786",
@@ -477,7 +478,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Storms Fall without Warning"] = new RulesElement({
+  te = Power["Storms Fall without Warning"] = new engine.RulesElement({
     name: "Storms Fall without Warning",
     type: "Power",
     id: "ID_FMP_POWER_13231",
@@ -485,12 +486,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13231",
     categories: ["Storms Fall without Warning", "ID_FMP_POWER_13231", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_362", "Monk", "ID_FMP_CATEGORY_60", "Full Discipline", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_35", "Psionic", "ID_FMP_CATEGORY_16", "psychic", "ID_FMP_CATEGORY_19", "teleportation", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "27"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13232"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13232"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Storms Fall without Warning [Movement Technique]"] = new RulesElement({
+  te = Power["Storms Fall without Warning [Movement Technique]"] = new engine.RulesElement({
     name: "Storms Fall without Warning [Movement Technique]",
     type: "Power",
     id: "ID_FMP_POWER_13232",
@@ -500,7 +501,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Swarming Bulwark"] = new RulesElement({
+  te = Power["Swarming Bulwark"] = new engine.RulesElement({
     name: "Swarming Bulwark",
     type: "Power",
     id: "ID_FMP_POWER_12842",
@@ -508,12 +509,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=12842",
     categories: ["Swarming Bulwark", "ID_FMP_POWER_12842", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_126", "Druid", "ID_FMP_CATEGORY_50", "beast form", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_33", "Primal", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "19"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_12843"]);
+      model.grant(model.elements.id["ID_FMP_POWER_12843"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Swirling Arrows"] = new RulesElement({
+  te = Power["Swirling Arrows"] = new engine.RulesElement({
     name: "Swirling Arrows",
     type: "Power",
     id: "ID_FMP_POWER_12792",
@@ -523,7 +524,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Threading the Eye"] = new RulesElement({
+  te = Power["Threading the Eye"] = new engine.RulesElement({
     name: "Threading the Eye",
     type: "Power",
     id: "ID_FMP_POWER_13236",
@@ -533,7 +534,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Torrent of Falling Knives"] = new RulesElement({
+  te = Power["Torrent of Falling Knives"] = new engine.RulesElement({
     name: "Torrent of Falling Knives",
     type: "Power",
     id: "ID_FMP_POWER_13227",
@@ -541,12 +542,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13227",
     categories: ["Torrent of Falling Knives", "ID_FMP_POWER_13227", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_362", "Monk", "ID_FMP_CATEGORY_60", "Full Discipline", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_35", "Psionic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "13"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13228"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13228"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Torrent of Falling Knives [Movement Technique]"] = new RulesElement({
+  te = Power["Torrent of Falling Knives [Movement Technique]"] = new engine.RulesElement({
     name: "Torrent of Falling Knives [Movement Technique]",
     type: "Power",
     id: "ID_FMP_POWER_13228",
@@ -556,7 +557,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Two Falling Feathers"] = new RulesElement({
+  te = Power["Two Falling Feathers"] = new engine.RulesElement({
     name: "Two Falling Feathers",
     type: "Power",
     id: "ID_FMP_POWER_13225",
@@ -564,12 +565,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13225",
     categories: ["Two Falling Feathers", "ID_FMP_POWER_13225", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_362", "Monk", "ID_FMP_CATEGORY_60", "Full Discipline", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_35", "Psionic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "7"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13226"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13226"]);
     }
   });
   byID[te.id] = te;
   
-  te = Power["Two Falling Feathers [Movement Technique]"] = new RulesElement({
+  te = Power["Two Falling Feathers [Movement Technique]"] = new engine.RulesElement({
     name: "Two Falling Feathers [Movement Technique]",
     type: "Power",
     id: "ID_FMP_POWER_13226",
@@ -579,7 +580,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Warding Arrow"] = new RulesElement({
+  te = Power["Warding Arrow"] = new engine.RulesElement({
     name: "Warding Arrow",
     type: "Power",
     id: "ID_FMP_POWER_12789",
@@ -589,7 +590,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Wind-Blown Pine"] = new RulesElement({
+  te = Power["Wind-Blown Pine"] = new engine.RulesElement({
     name: "Wind-Blown Pine",
     type: "Power",
     id: "ID_FMP_POWER_13239",
@@ -600,4 +601,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

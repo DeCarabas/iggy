@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Dreamstone Amulet +3"] = new RulesElement({
+  te = Magic_Item["Dreamstone Amulet +3"] = new engine.RulesElement({
     name: "Dreamstone Amulet +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1246",
@@ -21,7 +22,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dreamstone Amulet +4"] = new RulesElement({
+  te = Magic_Item["Dreamstone Amulet +4"] = new engine.RulesElement({
     name: "Dreamstone Amulet +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1247",
@@ -35,7 +36,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dreamstone Amulet +5"] = new RulesElement({
+  te = Magic_Item["Dreamstone Amulet +5"] = new engine.RulesElement({
     name: "Dreamstone Amulet +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1248",
@@ -49,7 +50,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dreamstone Amulet +6"] = new RulesElement({
+  te = Magic_Item["Dreamstone Amulet +6"] = new engine.RulesElement({
     name: "Dreamstone Amulet +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1249",
@@ -63,7 +64,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dreamstone Weapon +3"] = new RulesElement({
+  te = Magic_Item["Dreamstone Weapon +3"] = new engine.RulesElement({
     name: "Dreamstone Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1250",
@@ -72,7 +73,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dreamstone Weapon +4"] = new RulesElement({
+  te = Magic_Item["Dreamstone Weapon +4"] = new engine.RulesElement({
     name: "Dreamstone Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1251",
@@ -81,7 +82,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dreamstone Weapon +5"] = new RulesElement({
+  te = Magic_Item["Dreamstone Weapon +5"] = new engine.RulesElement({
     name: "Dreamstone Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1252",
@@ -90,7 +91,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dreamstone Weapon +6"] = new RulesElement({
+  te = Magic_Item["Dreamstone Weapon +6"] = new engine.RulesElement({
     name: "Dreamstone Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_1253",
@@ -100,4 +101,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

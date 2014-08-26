@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Superior_Implement = types['Superior Implement'] || (types['Superior Implement'] = {});
-  te = Superior_Implement["Accurate Ki Focus"] = new RulesElement({
+  te = Superior_Implement["Accurate Ki Focus"] = new engine.RulesElement({
     name: "Accurate Ki Focus",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_150",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Fluid Ki Focus"] = new RulesElement({
+  te = Superior_Implement["Fluid Ki Focus"] = new engine.RulesElement({
     name: "Fluid Ki Focus",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_151",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Inexorable Ki Focus"] = new RulesElement({
+  te = Superior_Implement["Inexorable Ki Focus"] = new engine.RulesElement({
     name: "Inexorable Ki Focus",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_152",
@@ -44,7 +45,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Iron Ki Focus"] = new RulesElement({
+  te = Superior_Implement["Iron Ki Focus"] = new engine.RulesElement({
     name: "Iron Ki Focus",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_153",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Mighty Ki Focus"] = new RulesElement({
+  te = Superior_Implement["Mighty Ki Focus"] = new engine.RulesElement({
     name: "Mighty Ki Focus",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_154",
@@ -73,7 +74,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Mountain Ki Focus"] = new RulesElement({
+  te = Superior_Implement["Mountain Ki Focus"] = new engine.RulesElement({
     name: "Mountain Ki Focus",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_155",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Serene Ki Focus"] = new RulesElement({
+  te = Superior_Implement["Serene Ki Focus"] = new engine.RulesElement({
     name: "Serene Ki Focus",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_156",
@@ -98,7 +99,7 @@
   });
   byID[te.id] = te;
   
-  te = Superior_Implement["Transcendent Ki Focus"] = new RulesElement({
+  te = Superior_Implement["Transcendent Ki Focus"] = new engine.RulesElement({
     name: "Transcendent Ki Focus",
     type: "Superior Implement",
     id: "ID_FMP_SUPERIOR_IMPLEMENT_157",
@@ -108,4 +109,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

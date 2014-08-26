@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Bloodied Regeneration"] = new RulesElement({
+  te = Power["Bloodied Regeneration"] = new engine.RulesElement({
     name: "Bloodied Regeneration",
     type: "Power",
     id: "ID_FMP_POWER_6581",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Deadeye Strike"] = new RulesElement({
+  te = Power["Deadeye Strike"] = new engine.RulesElement({
     name: "Deadeye Strike",
     type: "Power",
     id: "ID_FMP_POWER_6588",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Deadwalker Instant Escape"] = new RulesElement({
+  te = Power["Deadwalker Instant Escape"] = new engine.RulesElement({
     name: "Deadwalker Instant Escape",
     type: "Power",
     id: "ID_FMP_POWER_6587",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Fury of Heur-Ket"] = new RulesElement({
+  te = Power["Fury of Heur-Ket"] = new engine.RulesElement({
     name: "Fury of Heur-Ket",
     type: "Power",
     id: "ID_FMP_POWER_6589",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Impaling Blow"] = new RulesElement({
+  te = Power["Impaling Blow"] = new engine.RulesElement({
     name: "Impaling Blow",
     type: "Power",
     id: "ID_FMP_POWER_6586",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Mist Form"] = new RulesElement({
+  te = Power["Mist Form"] = new engine.RulesElement({
     name: "Mist Form",
     type: "Power",
     id: "ID_FMP_POWER_6580",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Radiant Touch"] = new RulesElement({
+  te = Power["Radiant Touch"] = new engine.RulesElement({
     name: "Radiant Touch",
     type: "Power",
     id: "ID_FMP_POWER_6578",
@@ -78,4 +79,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

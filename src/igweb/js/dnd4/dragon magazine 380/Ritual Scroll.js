@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual_Scroll = types['Ritual Scroll'] || (types['Ritual Scroll'] = {});
-  te = Ritual_Scroll["Scroll of Comrades' Succor"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Comrades' Succor"] = new engine.RulesElement({
     name: "Scroll of Comrades' Succor",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_COMRADES'_SUCCOR",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Ghost Walk"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Ghost Walk"] = new engine.RulesElement({
     name: "Scroll of Ghost Walk",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_GHOST_WALK",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Hunter's Blessing"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Hunter's Blessing"] = new engine.RulesElement({
     name: "Scroll of Hunter's Blessing",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_HUNTER'S_BLESSING",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Hunter's Curse"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Hunter's Curse"] = new engine.RulesElement({
     name: "Scroll of Hunter's Curse",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_HUNTER'S_CURSE",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Spirit Fetch"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Spirit Fetch"] = new engine.RulesElement({
     name: "Scroll of Spirit Fetch",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_SPIRIT_FETCH",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Vistani Passkey"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Vistani Passkey"] = new engine.RulesElement({
     name: "Scroll of Vistani Passkey",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_VISTANI_PASSKEY",
@@ -62,4 +63,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

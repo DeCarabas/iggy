@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Blue Orb of Dragonkind"] = new RulesElement({
+  te = Magic_Item["Blue Orb of Dragonkind"] = new engine.RulesElement({
     name: "Blue Orb of Dragonkind",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4322",
@@ -16,12 +17,12 @@
     rules: function(model) {
       model.statadd("push:attack", 1, "Blue Orb of Dragonkind");
       model.statadd("lightning:attack", 1, "Blue Orb of Dragonkind");
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ilthuviel's Blackened Heart"] = new RulesElement({
+  te = Magic_Item["Ilthuviel's Blackened Heart"] = new engine.RulesElement({
     name: "Ilthuviel's Blackened Heart",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4321",
@@ -30,17 +31,17 @@
     rules: function(model) {
       model.statadd("Ilthuviel's Blackened Heart", 10, "Ilthuviel's Blackened Heart");
       model.statadd("resist:poison", function() { return model.stat("Ilthuviel's Blackened Heart"); }, "resist");
-      model.grant(elements.id["ID_FMP_LANGUAGE_2"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
       model.statadd("Fortitude Defense", 4, "Enhancement");
       model.statadd("Reflex Defense", 4, "Enhancement");
       model.statadd("Will Defense", 4, "Enhancement");
-      model.grant(elements.id["ID_FMP_POWER_1312"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1312"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Spear of Urrok the Brave"] = new RulesElement({
+  te = Magic_Item["Spear of Urrok the Brave"] = new engine.RulesElement({
     name: "Spear of Urrok the Brave",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4323",
@@ -48,13 +49,13 @@
     categories: ["Spear of Urrok the Brave", "ID_FMP_MAGIC_ITEM_4323"],
     rules: function(model) {
       model.statadd("resist:dragon breath", 5, "resist");
-      model.grant(elements.id["ID_FMP_POWER_1026"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1026"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Unconquered Standard of Arkhosia"] = new RulesElement({
+  te = Magic_Item["Unconquered Standard of Arkhosia"] = new engine.RulesElement({
     name: "Unconquered Standard of Arkhosia",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4324",
@@ -73,11 +74,15 @@
       model.statadd("ALLY.Death Saving Throws", function() { /* when in range of the Unconquered Standard of Arkhosia */ return 1; });
       model.statadd("resist:fire", function() { /* when in range of the Unconquered Standard of Arkhosia */ return 5; }, "resist");
       model.statadd("ALLY.resist:fire", function() { /* when in range of the Unconquered Standard of Arkhosia */ return 5; }, "resist");
-      model.grant(elements.id["ID_FMP_POWER_1559"]);
+      model.grant(model.elements.id["ID_FMP_POWER_1559"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

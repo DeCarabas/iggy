@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual_Scroll = types['Ritual Scroll'] || (types['Ritual Scroll'] = {});
-  te = Ritual_Scroll["Scroll of Adjure"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Adjure"] = new engine.RulesElement({
     name: "Scroll of Adjure",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_ADJURE",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Create Holy Water"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Create Holy Water"] = new engine.RulesElement({
     name: "Scroll of Create Holy Water",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_CREATE_HOLY_WATER",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Ease Spirit"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Ease Spirit"] = new engine.RulesElement({
     name: "Scroll of Ease Spirit",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_EASE_SPIRIT",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Hallowed Temple"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Hallowed Temple"] = new engine.RulesElement({
     name: "Scroll of Hallowed Temple",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_HALLOWED_TEMPLE",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Iron Vigil"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Iron Vigil"] = new engine.RulesElement({
     name: "Scroll of Iron Vigil",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_IRON_VIGIL",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Mark of Justice"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Mark of Justice"] = new engine.RulesElement({
     name: "Scroll of Mark of Justice",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_MARK_OF_JUSTICE",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Succor"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Succor"] = new engine.RulesElement({
     name: "Scroll of Succor",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_SUCCOR",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Thief's Lament"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Thief's Lament"] = new engine.RulesElement({
     name: "Scroll of Thief's Lament",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_THIEF'S_LAMENT",
@@ -80,4 +81,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

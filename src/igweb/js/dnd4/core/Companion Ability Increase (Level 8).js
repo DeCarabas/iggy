@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Companion_Ability_Increase_Level_8 = types['Companion Ability Increase (Level 8)'] || (types['Companion Ability Increase (Level 8)'] = {});
-  te = Companion_Ability_Increase_Level_8["Charisma"] = new RulesElement({
+  te = Companion_Ability_Increase_Level_8["Charisma"] = new engine.RulesElement({
     name: "Charisma",
     type: "Companion Ability Increase (Level 8)",
     id: "ID_INTERNAL_COMPANION_ABILITY_INCREASE_(LEVEL_8)_CHARISMA",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Companion_Ability_Increase_Level_8["Constitution"] = new RulesElement({
+  te = Companion_Ability_Increase_Level_8["Constitution"] = new engine.RulesElement({
     name: "Constitution",
     type: "Companion Ability Increase (Level 8)",
     id: "ID_INTERNAL_COMPANION_ABILITY_INCREASE_(LEVEL_8)_CONSTITUTION",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Companion_Ability_Increase_Level_8["Dexterity"] = new RulesElement({
+  te = Companion_Ability_Increase_Level_8["Dexterity"] = new engine.RulesElement({
     name: "Dexterity",
     type: "Companion Ability Increase (Level 8)",
     id: "ID_INTERNAL_COMPANION_ABILITY_INCREASE_(LEVEL_8)_DEXTERITY",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Companion_Ability_Increase_Level_8["Intelligence"] = new RulesElement({
+  te = Companion_Ability_Increase_Level_8["Intelligence"] = new engine.RulesElement({
     name: "Intelligence",
     type: "Companion Ability Increase (Level 8)",
     id: "ID_INTERNAL_COMPANION_ABILITY_INCREASE_(LEVEL_8)_INTELLIGENCE",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Companion_Ability_Increase_Level_8["Strength"] = new RulesElement({
+  te = Companion_Ability_Increase_Level_8["Strength"] = new engine.RulesElement({
     name: "Strength",
     type: "Companion Ability Increase (Level 8)",
     id: "ID_INTERNAL_COMPANION_ABILITY_INCREASE_(LEVEL_8)_STRENGTH",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Companion_Ability_Increase_Level_8["Wisdom"] = new RulesElement({
+  te = Companion_Ability_Increase_Level_8["Wisdom"] = new engine.RulesElement({
     name: "Wisdom",
     type: "Companion Ability Increase (Level 8)",
     id: "ID_INTERNAL_COMPANION_ABILITY_INCREASE_(LEVEL_8)_WISDOM",
@@ -80,4 +81,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

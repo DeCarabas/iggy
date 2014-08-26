@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Accomplished Liar"] = new RulesElement({
+  te = class_feature["Accomplished Liar"] = new engine.RulesElement({
     name: "Accomplished Liar",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1132",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Blinded by the Light"] = new RulesElement({
+  te = class_feature["Blinded by the Light"] = new engine.RulesElement({
     name: "Blinded by the Light",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1129",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Hellbound Fury"] = new RulesElement({
+  te = class_feature["Hellbound Fury"] = new engine.RulesElement({
     name: "Hellbound Fury",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1133",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Immobilizing Action"] = new RulesElement({
+  te = class_feature["Immobilizing Action"] = new engine.RulesElement({
     name: "Immobilizing Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1126",
@@ -46,7 +47,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["In the Thick of the Action"] = new RulesElement({
+  te = class_feature["In the Thick of the Action"] = new engine.RulesElement({
     name: "In the Thick of the Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1134",
@@ -58,20 +59,20 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Lawbreaker's Doom"] = new RulesElement({
+  te = class_feature["Lawbreaker's Doom"] = new engine.RulesElement({
     name: "Lawbreaker's Doom",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1125",
     source: "Dragon Magazine 370",
     categories: ["Lawbreaker's Doom", "ID_FMP_CLASS_FEATURE_1125", "11"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_6017"]);
+      model.grant(model.elements.id["ID_FMP_POWER_6017"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
     }
   });
   byID[te.id] = te;
   
-  te = class_feature["Northlander Persistence"] = new RulesElement({
+  te = class_feature["Northlander Persistence"] = new engine.RulesElement({
     name: "Northlander Persistence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1135",
@@ -80,7 +81,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["One More Time"] = new RulesElement({
+  te = class_feature["One More Time"] = new engine.RulesElement({
     name: "One More Time",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1136",
@@ -89,7 +90,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Rise and Fire"] = new RulesElement({
+  te = class_feature["Rise and Fire"] = new engine.RulesElement({
     name: "Rise and Fire",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1130",
@@ -98,7 +99,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Sacred Stealth"] = new RulesElement({
+  te = class_feature["Sacred Stealth"] = new engine.RulesElement({
     name: "Sacred Stealth",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1128",
@@ -110,7 +111,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Strength of Conviction"] = new RulesElement({
+  te = class_feature["Strength of Conviction"] = new engine.RulesElement({
     name: "Strength of Conviction",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1127",
@@ -119,7 +120,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Terrifying Wrath"] = new RulesElement({
+  te = class_feature["Terrifying Wrath"] = new engine.RulesElement({
     name: "Terrifying Wrath",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1131",
@@ -132,4 +133,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

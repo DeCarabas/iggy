@@ -1,25 +1,26 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Jet Black Ioun Stone"] = new RulesElement({
+  te = Magic_Item["Jet Black Ioun Stone"] = new engine.RulesElement({
     name: "Jet Black Ioun Stone",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4550",
     source: "Open Grave: Secrets of the Undead",
     categories: ["Jet Black Ioun Stone", "ID_FMP_MAGIC_ITEM_4550"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_VISION_LOW-LIGHT"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_LOW-LIGHT"]);
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mirror of Secrets"] = new RulesElement({
+  te = Magic_Item["Mirror of Secrets"] = new engine.RulesElement({
     name: "Mirror of Secrets",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4551",
@@ -37,26 +38,26 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Light"] = new RulesElement({
+  te = Magic_Item["Orb of Light"] = new engine.RulesElement({
     name: "Orb of Light",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4552",
     source: "Open Grave: Secrets of the Undead",
     categories: ["Orb of Light", "ID_FMP_MAGIC_ITEM_4552"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_8"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_8"]);
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Silver Mask of Kas"] = new RulesElement({
+  te = Magic_Item["Silver Mask of Kas"] = new engine.RulesElement({
     name: "Silver Mask of Kas",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4553",
     source: "Open Grave: Secrets of the Undead",
     categories: ["Silver Mask of Kas", "ID_FMP_MAGIC_ITEM_4553"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_VISION_DARKVISION"]);
+      model.grant(model.elements.id["ID_INTERNAL_VISION_DARKVISION"]);
       model.statadd("Perception Misc", 2, "item");
       model.statadd("Diplomacy Misc", function() { /* against undead creatures */ return 4; }, "item");
       model.statadd("Intimidate Misc", function() { /* against undead creatures */ return 4; }, "item");
@@ -64,7 +65,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Soulsword"] = new RulesElement({
+  te = Magic_Item["Soulsword"] = new engine.RulesElement({
     name: "Soulsword",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4554",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Sword of Kas"] = new RulesElement({
+  te = Magic_Item["Sword of Kas"] = new engine.RulesElement({
     name: "Sword of Kas",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4555",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tome of Shadow"] = new RulesElement({
+  te = Magic_Item["Tome of Shadow"] = new engine.RulesElement({
     name: "Tome of Shadow",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4556",
@@ -106,12 +107,12 @@
       // unsupported rule: cbimporter.Rules.ModifyRule
       // unsupported rule: cbimporter.Rules.ModifyRule
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.grant(elements.id["ID_FMP_POWER_5594"]);
+      model.grant(model.elements.id["ID_FMP_POWER_5594"]);
     }
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Von Zarovich Family Sword"] = new RulesElement({
+  te = Magic_Item["Von Zarovich Family Sword"] = new engine.RulesElement({
     name: "Von Zarovich Family Sword",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4557",
@@ -120,7 +121,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Whelm"] = new RulesElement({
+  te = Magic_Item["Whelm"] = new engine.RulesElement({
     name: "Whelm",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4558",
@@ -135,4 +136,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

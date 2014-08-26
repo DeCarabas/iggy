@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Racial_Trait = types['Racial Trait'] || (types['Racial Trait'] = {});
-  te = Racial_Trait["Acrobatics Bonus"] = new RulesElement({
+  te = Racial_Trait["Acrobatics Bonus"] = new engine.RulesElement({
     name: "Acrobatics Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Arcana Bonus"] = new RulesElement({
+  te = Racial_Trait["Arcana Bonus"] = new engine.RulesElement({
     name: "Arcana Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Athletics Bonus"] = new RulesElement({
+  te = Racial_Trait["Athletics Bonus"] = new engine.RulesElement({
     name: "Athletics Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Bluff Bonus"] = new RulesElement({
+  te = Racial_Trait["Bluff Bonus"] = new engine.RulesElement({
     name: "Bluff Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Diplomacy Bonus"] = new RulesElement({
+  te = Racial_Trait["Diplomacy Bonus"] = new engine.RulesElement({
     name: "Diplomacy Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_DIPLOMACY_BONUS",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Dungeoneering Bonus"] = new RulesElement({
+  te = Racial_Trait["Dungeoneering Bonus"] = new engine.RulesElement({
     name: "Dungeoneering Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Endurance Bonus"] = new RulesElement({
+  te = Racial_Trait["Endurance Bonus"] = new engine.RulesElement({
     name: "Endurance Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Heal Bonus"] = new RulesElement({
+  te = Racial_Trait["Heal Bonus"] = new engine.RulesElement({
     name: "Heal Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_HEAL_BONUS",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["History Bonus"] = new RulesElement({
+  te = Racial_Trait["History Bonus"] = new engine.RulesElement({
     name: "History Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Human Power Selection"] = new RulesElement({
+  te = Racial_Trait["Human Power Selection"] = new engine.RulesElement({
     name: "Human Power Selection",
     type: "Racial Trait",
     id: "ID_FMP_RACIAL_TRAIT_2966",
@@ -128,7 +129,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Insight Bonus"] = new RulesElement({
+  te = Racial_Trait["Insight Bonus"] = new engine.RulesElement({
     name: "Insight Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS",
@@ -140,7 +141,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Intimidate Bonus"] = new RulesElement({
+  te = Racial_Trait["Intimidate Bonus"] = new engine.RulesElement({
     name: "Intimidate Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS",
@@ -152,7 +153,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Nature Bonus"] = new RulesElement({
+  te = Racial_Trait["Nature Bonus"] = new engine.RulesElement({
     name: "Nature Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS",
@@ -164,7 +165,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Perception Bonus"] = new RulesElement({
+  te = Racial_Trait["Perception Bonus"] = new engine.RulesElement({
     name: "Perception Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS",
@@ -176,7 +177,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Religion Bonus"] = new RulesElement({
+  te = Racial_Trait["Religion Bonus"] = new engine.RulesElement({
     name: "Religion Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS",
@@ -188,7 +189,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Stealth Bonus"] = new RulesElement({
+  te = Racial_Trait["Stealth Bonus"] = new engine.RulesElement({
     name: "Stealth Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS",
@@ -200,7 +201,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Streetwise Bonus"] = new RulesElement({
+  te = Racial_Trait["Streetwise Bonus"] = new engine.RulesElement({
     name: "Streetwise Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_STREETWISE_BONUS",
@@ -212,7 +213,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Thievery Bonus"] = new RulesElement({
+  te = Racial_Trait["Thievery Bonus"] = new engine.RulesElement({
     name: "Thievery Bonus",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS",
@@ -225,4 +226,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

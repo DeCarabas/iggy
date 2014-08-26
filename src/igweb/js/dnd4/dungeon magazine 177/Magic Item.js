@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Empathic Mind (epic tier)"] = new RulesElement({
+  te = Magic_Item["Empathic Mind (epic tier)"] = new engine.RulesElement({
     name: "Empathic Mind (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9032",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Empathic Mind (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Empathic Mind (heroic tier)"] = new engine.RulesElement({
     name: "Empathic Mind (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9028",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Empathic Mind (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Empathic Mind (paragon tier)"] = new engine.RulesElement({
     name: "Empathic Mind (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9030",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Madstone (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Madstone (heroic tier)"] = new engine.RulesElement({
     name: "Madstone (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9117",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Melegaunt's Darkblade +3"] = new RulesElement({
+  te = Magic_Item["Melegaunt's Darkblade +3"] = new engine.RulesElement({
     name: "Melegaunt's Darkblade +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9024",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Melegaunt's Darkblade +4"] = new RulesElement({
+  te = Magic_Item["Melegaunt's Darkblade +4"] = new engine.RulesElement({
     name: "Melegaunt's Darkblade +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9025",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Melegaunt's Darkblade +5"] = new RulesElement({
+  te = Magic_Item["Melegaunt's Darkblade +5"] = new engine.RulesElement({
     name: "Melegaunt's Darkblade +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9026",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Melegaunt's Darkblade +6"] = new RulesElement({
+  te = Magic_Item["Melegaunt's Darkblade +6"] = new engine.RulesElement({
     name: "Melegaunt's Darkblade +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9027",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mercurial Mind (epic tier)"] = new RulesElement({
+  te = Magic_Item["Mercurial Mind (epic tier)"] = new engine.RulesElement({
     name: "Mercurial Mind (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9037",
@@ -100,7 +101,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mercurial Mind (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Mercurial Mind (heroic tier)"] = new engine.RulesElement({
     name: "Mercurial Mind (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9033",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mercurial Mind (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Mercurial Mind (paragon tier)"] = new engine.RulesElement({
     name: "Mercurial Mind (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9035",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Muddling Mind (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Muddling Mind (paragon tier)"] = new engine.RulesElement({
     name: "Muddling Mind (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9039",
@@ -136,7 +137,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Sculpting Mind (epic tier)"] = new RulesElement({
+  te = Magic_Item["Sculpting Mind (epic tier)"] = new engine.RulesElement({
     name: "Sculpting Mind (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9044",
@@ -148,7 +149,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Sculpting Mind (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Sculpting Mind (heroic tier)"] = new engine.RulesElement({
     name: "Sculpting Mind (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9040",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Sculpting Mind (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Sculpting Mind (paragon tier)"] = new engine.RulesElement({
     name: "Sculpting Mind (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9042",
@@ -172,7 +173,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tattoo of Bloodied Chains (epic tier)"] = new RulesElement({
+  te = Magic_Item["Tattoo of Bloodied Chains (epic tier)"] = new engine.RulesElement({
     name: "Tattoo of Bloodied Chains (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9061",
@@ -181,7 +182,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tattoo of Bloodied Chains (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Tattoo of Bloodied Chains (heroic tier)"] = new engine.RulesElement({
     name: "Tattoo of Bloodied Chains (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9057",
@@ -190,7 +191,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tattoo of Bloodied Chains (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Tattoo of Bloodied Chains (paragon tier)"] = new engine.RulesElement({
     name: "Tattoo of Bloodied Chains (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9059",
@@ -199,7 +200,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tattoo of the Penitent Martyr (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Tattoo of the Penitent Martyr (paragon tier)"] = new engine.RulesElement({
     name: "Tattoo of the Penitent Martyr (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9062",
@@ -208,7 +209,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Deck of Many Things"] = new RulesElement({
+  te = Magic_Item["The Deck of Many Things"] = new engine.RulesElement({
     name: "The Deck of Many Things",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9116",
@@ -222,7 +223,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torog's Lamentation of the Shackled (level 13)"] = new RulesElement({
+  te = Magic_Item["Torog's Lamentation of the Shackled (level 13)"] = new engine.RulesElement({
     name: "Torog's Lamentation of the Shackled (level 13)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9053",
@@ -234,7 +235,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torog's Lamentation of the Shackled (level 18)"] = new RulesElement({
+  te = Magic_Item["Torog's Lamentation of the Shackled (level 18)"] = new engine.RulesElement({
     name: "Torog's Lamentation of the Shackled (level 18)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9054",
@@ -246,7 +247,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torog's Lamentation of the Shackled (level 23)"] = new RulesElement({
+  te = Magic_Item["Torog's Lamentation of the Shackled (level 23)"] = new engine.RulesElement({
     name: "Torog's Lamentation of the Shackled (level 23)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9055",
@@ -258,7 +259,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torog's Lamentation of the Shackled (level 28)"] = new RulesElement({
+  te = Magic_Item["Torog's Lamentation of the Shackled (level 28)"] = new engine.RulesElement({
     name: "Torog's Lamentation of the Shackled (level 28)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9056",
@@ -270,7 +271,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torog's Lamentation of the Shackled (level 3)"] = new RulesElement({
+  te = Magic_Item["Torog's Lamentation of the Shackled (level 3)"] = new engine.RulesElement({
     name: "Torog's Lamentation of the Shackled (level 3)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9051",
@@ -282,7 +283,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Torog's Lamentation of the Shackled (level 8)"] = new RulesElement({
+  te = Magic_Item["Torog's Lamentation of the Shackled (level 8)"] = new engine.RulesElement({
     name: "Torog's Lamentation of the Shackled (level 8)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9052",
@@ -294,7 +295,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Warding Mind (epic tier)"] = new RulesElement({
+  te = Magic_Item["Warding Mind (epic tier)"] = new engine.RulesElement({
     name: "Warding Mind (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9049",
@@ -306,7 +307,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Warding Mind (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Warding Mind (heroic tier)"] = new engine.RulesElement({
     name: "Warding Mind (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9045",
@@ -318,7 +319,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Warding Mind (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Warding Mind (paragon tier)"] = new engine.RulesElement({
     name: "Warding Mind (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9047",
@@ -331,4 +332,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

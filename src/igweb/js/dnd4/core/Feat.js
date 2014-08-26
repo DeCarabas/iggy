@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Armor Proficiency"] = new RulesElement({
+  te = Feat["Armor Proficiency"] = new engine.RulesElement({
     name: "Armor Proficiency",
     type: "Feat",
     id: "ID_INTERNAL_FEAT_ARMOR_PROFICIENCY",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Paragon Hybrid Talent"] = new RulesElement({
+  te = Feat["Paragon Hybrid Talent"] = new engine.RulesElement({
     name: "Paragon Hybrid Talent",
     type: "Feat",
     id: "ID_INTERNAL_FEAT_PARAGON_HYBRID_TALENT",
@@ -32,7 +33,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Shield Proficiency"] = new RulesElement({
+  te = Feat["Shield Proficiency"] = new engine.RulesElement({
     name: "Shield Proficiency",
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SHIELD_PROFICIENCY",
@@ -43,4 +44,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

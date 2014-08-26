@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Greathorn"] = new RulesElement({
+  te = Feat["Greathorn"] = new engine.RulesElement({
     name: "Greathorn",
     type: "Feat",
     id: "ID_FMP_FEAT_1061",
@@ -20,7 +21,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Hell's Implement"] = new RulesElement({
+  te = Feat["Hell's Implement"] = new engine.RulesElement({
     name: "Hell's Implement",
     type: "Feat",
     id: "ID_FMP_FEAT_1070",
@@ -28,12 +29,12 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1070",
     categories: ["Hell's Implement", "ID_FMP_FEAT_1070", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(POLEARM_GROUP)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(POLEARM_GROUP)"]);
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Infernal Captain's Fury"] = new RulesElement({
+  te = Feat["Infernal Captain's Fury"] = new engine.RulesElement({
     name: "Infernal Captain's Fury",
     type: "Feat",
     id: "ID_FMP_FEAT_1069",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Infernal Captain's Pact"] = new RulesElement({
+  te = Feat["Infernal Captain's Pact"] = new engine.RulesElement({
     name: "Infernal Captain's Pact",
     type: "Feat",
     id: "ID_FMP_FEAT_1068",
@@ -53,7 +54,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Natural Cunning"] = new RulesElement({
+  te = Feat["Natural Cunning"] = new engine.RulesElement({
     name: "Natural Cunning",
     type: "Feat",
     id: "ID_FMP_FEAT_1062",
@@ -66,7 +67,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Opportunity Gore"] = new RulesElement({
+  te = Feat["Opportunity Gore"] = new engine.RulesElement({
     name: "Opportunity Gore",
     type: "Feat",
     id: "ID_FMP_FEAT_1063",
@@ -77,4 +78,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

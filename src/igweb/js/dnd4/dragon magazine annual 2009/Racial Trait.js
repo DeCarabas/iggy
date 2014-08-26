@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Racial_Trait = types['Racial Trait'] || (types['Racial Trait'] = {});
-  te = Racial_Trait["Blood Drain Constitution"] = new RulesElement({
+  te = Racial_Trait["Blood Drain Constitution"] = new engine.RulesElement({
     name: "Blood Drain Constitution",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_BLOOD_DRAIN_CONSTITUTION",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Blood Drain Dexterity"] = new RulesElement({
+  te = Racial_Trait["Blood Drain Dexterity"] = new engine.RulesElement({
     name: "Blood Drain Dexterity",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_BLOOD_DRAIN_DEXTERITY",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Blood Drain Strength"] = new RulesElement({
+  te = Racial_Trait["Blood Drain Strength"] = new engine.RulesElement({
     name: "Blood Drain Strength",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_BLOOD_DRAIN_STRENGTH",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Dominating Gaze Constitution"] = new RulesElement({
+  te = Racial_Trait["Dominating Gaze Constitution"] = new engine.RulesElement({
     name: "Dominating Gaze Constitution",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_DOMINATING_GAZE_CONSTITUTION",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Dominating Gaze Dexterity"] = new RulesElement({
+  te = Racial_Trait["Dominating Gaze Dexterity"] = new engine.RulesElement({
     name: "Dominating Gaze Dexterity",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_DOMINATING_GAZE_DEXTERITY",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Racial_Trait["Dominating Gaze Intelligence"] = new RulesElement({
+  te = Racial_Trait["Dominating Gaze Intelligence"] = new engine.RulesElement({
     name: "Dominating Gaze Intelligence",
     type: "Racial Trait",
     id: "ID_INTERNAL_RACIAL_TRAIT_DOMINATING_GAZE_INTELLIGENCE",
@@ -62,4 +63,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

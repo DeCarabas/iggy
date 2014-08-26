@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Information = types['Information'] || (types['Information'] = {});
-  te = Information["Ability Scores"] = new RulesElement({
+  te = Information["Ability Scores"] = new engine.RulesElement({
     name: "Ability Scores",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_ABILITY_SCORES",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Alchemy"] = new RulesElement({
+  te = Information["Alchemy"] = new engine.RulesElement({
     name: "Alchemy",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_ALCHEMY",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Background"] = new RulesElement({
+  te = Information["Background"] = new engine.RulesElement({
     name: "Background",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_BACKGROUND",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Bonuses"] = new RulesElement({
+  te = Information["Bonuses"] = new engine.RulesElement({
     name: "Bonuses",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_BONUSES",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Build"] = new RulesElement({
+  te = Information["Build"] = new engine.RulesElement({
     name: "Build",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_BUILD",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Campaign"] = new RulesElement({
+  te = Information["Campaign"] = new engine.RulesElement({
     name: "Campaign",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_CAMPAIGN",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Character Sheet"] = new RulesElement({
+  te = Information["Character Sheet"] = new engine.RulesElement({
     name: "Character Sheet",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_CHARACTER_SHEET",
@@ -70,7 +71,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Class"] = new RulesElement({
+  te = Information["Class"] = new engine.RulesElement({
     name: "Class",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_CLASS",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Companion"] = new RulesElement({
+  te = Information["Companion"] = new engine.RulesElement({
     name: "Companion",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_COMPANION",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Deity"] = new RulesElement({
+  te = Information["Deity"] = new engine.RulesElement({
     name: "Deity",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_DEITY",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Details"] = new RulesElement({
+  te = Information["Details"] = new engine.RulesElement({
     name: "Details",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_DETAILS",
@@ -106,7 +107,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Epic Destiny"] = new RulesElement({
+  te = Information["Epic Destiny"] = new engine.RulesElement({
     name: "Epic Destiny",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_EPIC_DESTINY",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Equipment"] = new RulesElement({
+  te = Information["Equipment"] = new engine.RulesElement({
     name: "Equipment",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_EQUIPMENT",
@@ -124,7 +125,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Feats"] = new RulesElement({
+  te = Information["Feats"] = new engine.RulesElement({
     name: "Feats",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_FEATS",
@@ -133,7 +134,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Inherent Bonuses"] = new RulesElement({
+  te = Information["Inherent Bonuses"] = new engine.RulesElement({
     name: "Inherent Bonuses",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_INHERENT_BONUSES",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Journal"] = new RulesElement({
+  te = Information["Journal"] = new engine.RulesElement({
     name: "Journal",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_JOURNAL",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Leveling"] = new RulesElement({
+  te = Information["Leveling"] = new engine.RulesElement({
     name: "Leveling",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_LEVELING",
@@ -160,7 +161,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Martial Practices"] = new RulesElement({
+  te = Information["Martial Practices"] = new engine.RulesElement({
     name: "Martial Practices",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_MARTIAL_PRACTICES",
@@ -169,7 +170,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Money"] = new RulesElement({
+  te = Information["Money"] = new engine.RulesElement({
     name: "Money",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_MONEY",
@@ -178,7 +179,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Paragon Path"] = new RulesElement({
+  te = Information["Paragon Path"] = new engine.RulesElement({
     name: "Paragon Path",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_PARAGON_PATH",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Portrait"] = new RulesElement({
+  te = Information["Portrait"] = new engine.RulesElement({
     name: "Portrait",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_PORTRAIT",
@@ -196,7 +197,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Powers"] = new RulesElement({
+  te = Information["Powers"] = new engine.RulesElement({
     name: "Powers",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_POWERS",
@@ -205,7 +206,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Race"] = new RulesElement({
+  te = Information["Race"] = new engine.RulesElement({
     name: "Race",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_RACE",
@@ -214,7 +215,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Retraining"] = new RulesElement({
+  te = Information["Retraining"] = new engine.RulesElement({
     name: "Retraining",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_RETRAINING",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Rituals"] = new RulesElement({
+  te = Information["Rituals"] = new engine.RulesElement({
     name: "Rituals",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_RITUALS",
@@ -232,7 +233,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Skills"] = new RulesElement({
+  te = Information["Skills"] = new engine.RulesElement({
     name: "Skills",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_SKILLS",
@@ -241,7 +242,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Spellbook"] = new RulesElement({
+  te = Information["Spellbook"] = new engine.RulesElement({
     name: "Spellbook",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_SPELLBOOK",
@@ -250,7 +251,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Spellscarred"] = new RulesElement({
+  te = Information["Spellscarred"] = new engine.RulesElement({
     name: "Spellscarred",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_SPELLSCARRED",
@@ -259,7 +260,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Summary"] = new RulesElement({
+  te = Information["Summary"] = new engine.RulesElement({
     name: "Summary",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_SUMMARY",
@@ -268,7 +269,7 @@
   });
   byID[te.id] = te;
   
-  te = Information["Toggling a Source"] = new RulesElement({
+  te = Information["Toggling a Source"] = new engine.RulesElement({
     name: "Toggling a Source",
     type: "Information",
     id: "ID_INTERNAL_INFORMATION_TOGGLING_A_SOURCE",
@@ -278,4 +279,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

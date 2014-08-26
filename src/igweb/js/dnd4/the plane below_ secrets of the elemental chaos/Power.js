@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Consumption of the Ebon Flame"] = new RulesElement({
+  te = Power["Consumption of the Ebon Flame"] = new engine.RulesElement({
     name: "Consumption of the Ebon Flame",
     type: "Power",
     id: "ID_FMP_POWER_10348",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Influence Instability"] = new RulesElement({
+  te = Power["Influence Instability"] = new engine.RulesElement({
     name: "Influence Instability",
     type: "Power",
     id: "ID_FMP_POWER_10329",
@@ -28,4 +29,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

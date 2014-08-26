@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Build_Suggestions = types['Build Suggestions'] || (types['Build Suggestions'] = {});
-  te = Build_Suggestions["Bleak Disciple Assassin"] = new RulesElement({
+  te = Build_Suggestions["Bleak Disciple Assassin"] = new engine.RulesElement({
     name: "Bleak Disciple Assassin",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_BLEAK_DISCIPLE_ASSASSIN",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Night Stalker Assassin"] = new RulesElement({
+  te = Build_Suggestions["Night Stalker Assassin"] = new engine.RulesElement({
     name: "Night Stalker Assassin",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_NIGHT_STALKER_ASSASSIN",
@@ -48,4 +49,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Eldritch Strike Charisma"] = new RulesElement({
+  te = class_feature["Eldritch Strike Charisma"] = new engine.RulesElement({
     name: "Eldritch Strike Charisma",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ELDRITCH_STRIKE_CHARISMA",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Eldritch Strike Constitution"] = new RulesElement({
+  te = class_feature["Eldritch Strike Constitution"] = new engine.RulesElement({
     name: "Eldritch Strike Constitution",
     type: "class feature",
     id: "ID_INTERNAL_CLASS_FEATURE_ELDRITCH_STRIKE_CONSTITUTION",
@@ -26,4 +27,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

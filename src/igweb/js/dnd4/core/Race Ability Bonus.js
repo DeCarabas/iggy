@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Race_Ability_Bonus = types['Race Ability Bonus'] || (types['Race Ability Bonus'] = {});
-  te = Race_Ability_Bonus["Charisma"] = new RulesElement({
+  te = Race_Ability_Bonus["Charisma"] = new engine.RulesElement({
     name: "Charisma",
     type: "Race Ability Bonus",
     id: "ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Race_Ability_Bonus["Constitution"] = new RulesElement({
+  te = Race_Ability_Bonus["Constitution"] = new engine.RulesElement({
     name: "Constitution",
     type: "Race Ability Bonus",
     id: "ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Race_Ability_Bonus["Dexterity"] = new RulesElement({
+  te = Race_Ability_Bonus["Dexterity"] = new engine.RulesElement({
     name: "Dexterity",
     type: "Race Ability Bonus",
     id: "ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Race_Ability_Bonus["Intelligence"] = new RulesElement({
+  te = Race_Ability_Bonus["Intelligence"] = new engine.RulesElement({
     name: "Intelligence",
     type: "Race Ability Bonus",
     id: "ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Race_Ability_Bonus["Strength"] = new RulesElement({
+  te = Race_Ability_Bonus["Strength"] = new engine.RulesElement({
     name: "Strength",
     type: "Race Ability Bonus",
     id: "ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Race_Ability_Bonus["Wisdom"] = new RulesElement({
+  te = Race_Ability_Bonus["Wisdom"] = new engine.RulesElement({
     name: "Wisdom",
     type: "Race Ability Bonus",
     id: "ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM",
@@ -80,4 +81,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

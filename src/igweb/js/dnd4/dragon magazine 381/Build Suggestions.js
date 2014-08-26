@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Build_Suggestions = types['Build Suggestions'] || (types['Build Suggestions'] = {});
-  te = Build_Suggestions["Warrior Forge Artificer"] = new RulesElement({
+  te = Build_Suggestions["Warrior Forge Artificer"] = new engine.RulesElement({
     name: "Warrior Forge Artificer",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_WARRIOR_FORGE_ARTIFICER",
@@ -28,4 +29,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

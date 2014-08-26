@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Anthem of Unity"] = new RulesElement({
+  te = Ritual["Anthem of Unity"] = new engine.RulesElement({
     name: "Anthem of Unity",
     type: "Ritual",
     id: "ID_FMP_RITUAL_214",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Beast Growth"] = new RulesElement({
+  te = Ritual["Beast Growth"] = new engine.RulesElement({
     name: "Beast Growth",
     type: "Ritual",
     id: "ID_FMP_RITUAL_216",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Call of Friendship"] = new RulesElement({
+  te = Ritual["Call of Friendship"] = new engine.RulesElement({
     name: "Call of Friendship",
     type: "Ritual",
     id: "ID_FMP_RITUAL_217",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Detect Treasure"] = new RulesElement({
+  te = Ritual["Detect Treasure"] = new engine.RulesElement({
     name: "Detect Treasure",
     type: "Ritual",
     id: "ID_FMP_RITUAL_218",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Farsight"] = new RulesElement({
+  te = Ritual["Farsight"] = new engine.RulesElement({
     name: "Farsight",
     type: "Ritual",
     id: "ID_FMP_RITUAL_112",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Fool's Gold"] = new RulesElement({
+  te = Ritual["Fool's Gold"] = new engine.RulesElement({
     name: "Fool's Gold",
     type: "Ritual",
     id: "ID_FMP_RITUAL_219",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Guards and Wards"] = new RulesElement({
+  te = Ritual["Guards and Wards"] = new engine.RulesElement({
     name: "Guards and Wards",
     type: "Ritual",
     id: "ID_FMP_RITUAL_220",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["History Revealed"] = new RulesElement({
+  te = Ritual["History Revealed"] = new engine.RulesElement({
     name: "History Revealed",
     type: "Ritual",
     id: "ID_FMP_RITUAL_221",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Imprisonment"] = new RulesElement({
+  te = Ritual["Imprisonment"] = new engine.RulesElement({
     name: "Imprisonment",
     type: "Ritual",
     id: "ID_FMP_RITUAL_222",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Lower Water"] = new RulesElement({
+  te = Ritual["Lower Water"] = new engine.RulesElement({
     name: "Lower Water",
     type: "Ritual",
     id: "ID_FMP_RITUAL_223",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Magic Map"] = new RulesElement({
+  te = Ritual["Magic Map"] = new engine.RulesElement({
     name: "Magic Map",
     type: "Ritual",
     id: "ID_FMP_RITUAL_224",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Object Reading"] = new RulesElement({
+  te = Ritual["Object Reading"] = new engine.RulesElement({
     name: "Object Reading",
     type: "Ritual",
     id: "ID_FMP_RITUAL_225",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Preserve Flame"] = new RulesElement({
+  te = Ritual["Preserve Flame"] = new engine.RulesElement({
     name: "Preserve Flame",
     type: "Ritual",
     id: "ID_FMP_RITUAL_118",
@@ -137,7 +138,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Purify Water"] = new RulesElement({
+  te = Ritual["Purify Water"] = new engine.RulesElement({
     name: "Purify Water",
     type: "Ritual",
     id: "ID_FMP_RITUAL_227",
@@ -147,7 +148,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Shrink"] = new RulesElement({
+  te = Ritual["Shrink"] = new engine.RulesElement({
     name: "Shrink",
     type: "Ritual",
     id: "ID_FMP_RITUAL_228",
@@ -157,7 +158,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Telepathic Bond"] = new RulesElement({
+  te = Ritual["Telepathic Bond"] = new engine.RulesElement({
     name: "Telepathic Bond",
     type: "Ritual",
     id: "ID_FMP_RITUAL_229",
@@ -167,7 +168,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Unseen Servant"] = new RulesElement({
+  te = Ritual["Unseen Servant"] = new engine.RulesElement({
     name: "Unseen Servant",
     type: "Ritual",
     id: "ID_FMP_RITUAL_230",
@@ -177,7 +178,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Whispers of the Edifice"] = new RulesElement({
+  te = Ritual["Whispers of the Edifice"] = new engine.RulesElement({
     name: "Whispers of the Edifice",
     type: "Ritual",
     id: "ID_FMP_RITUAL_231",
@@ -188,4 +189,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

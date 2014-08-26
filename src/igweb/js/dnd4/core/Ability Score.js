@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ability_Score = types['Ability Score'] || (types['Ability Score'] = {});
-  te = Ability_Score["Charisma"] = new RulesElement({
+  te = Ability_Score["Charisma"] = new engine.RulesElement({
     name: "Charisma",
     type: "Ability Score",
     id: "ID_FMP_ABILITY_SCORE_6",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Score["Constitution"] = new RulesElement({
+  te = Ability_Score["Constitution"] = new engine.RulesElement({
     name: "Constitution",
     type: "Ability Score",
     id: "ID_FMP_ABILITY_SCORE_2",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Score["Dexterity"] = new RulesElement({
+  te = Ability_Score["Dexterity"] = new engine.RulesElement({
     name: "Dexterity",
     type: "Ability Score",
     id: "ID_FMP_ABILITY_SCORE_3",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Score["Intelligence"] = new RulesElement({
+  te = Ability_Score["Intelligence"] = new engine.RulesElement({
     name: "Intelligence",
     type: "Ability Score",
     id: "ID_FMP_ABILITY_SCORE_4",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Score["Strength"] = new RulesElement({
+  te = Ability_Score["Strength"] = new engine.RulesElement({
     name: "Strength",
     type: "Ability Score",
     id: "ID_FMP_ABILITY_SCORE_1",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Ability_Score["Wisdom"] = new RulesElement({
+  te = Ability_Score["Wisdom"] = new engine.RulesElement({
     name: "Wisdom",
     type: "Ability Score",
     id: "ID_FMP_ABILITY_SCORE_5",
@@ -62,4 +63,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

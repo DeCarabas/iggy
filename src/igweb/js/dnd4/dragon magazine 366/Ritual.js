@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Arcane Barrier"] = new RulesElement({
+  te = Ritual["Arcane Barrier"] = new engine.RulesElement({
     name: "Arcane Barrier",
     type: "Ritual",
     id: "ID_FMP_RITUAL_100",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Banish Vermin"] = new RulesElement({
+  te = Ritual["Banish Vermin"] = new engine.RulesElement({
     name: "Banish Vermin",
     type: "Ritual",
     id: "ID_FMP_RITUAL_101",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Battlefield Elocution"] = new RulesElement({
+  te = Ritual["Battlefield Elocution"] = new engine.RulesElement({
     name: "Battlefield Elocution",
     type: "Ritual",
     id: "ID_FMP_RITUAL_102",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Bolster Object"] = new RulesElement({
+  te = Ritual["Bolster Object"] = new engine.RulesElement({
     name: "Bolster Object",
     type: "Ritual",
     id: "ID_FMP_RITUAL_103",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Chameleon's Cloak"] = new RulesElement({
+  te = Ritual["Chameleon's Cloak"] = new engine.RulesElement({
     name: "Chameleon's Cloak",
     type: "Ritual",
     id: "ID_FMP_RITUAL_104",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Conceal Object"] = new RulesElement({
+  te = Ritual["Conceal Object"] = new engine.RulesElement({
     name: "Conceal Object",
     type: "Ritual",
     id: "ID_FMP_RITUAL_105",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Deceive Sensor"] = new RulesElement({
+  te = Ritual["Deceive Sensor"] = new engine.RulesElement({
     name: "Deceive Sensor",
     type: "Ritual",
     id: "ID_FMP_RITUAL_106",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Delay Affliction"] = new RulesElement({
+  te = Ritual["Delay Affliction"] = new engine.RulesElement({
     name: "Delay Affliction",
     type: "Ritual",
     id: "ID_FMP_RITUAL_107",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Delver's Fire"] = new RulesElement({
+  te = Ritual["Delver's Fire"] = new engine.RulesElement({
     name: "Delver's Fire",
     type: "Ritual",
     id: "ID_FMP_RITUAL_108",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Earthen Ramparts"] = new RulesElement({
+  te = Ritual["Earthen Ramparts"] = new engine.RulesElement({
     name: "Earthen Ramparts",
     type: "Ritual",
     id: "ID_FMP_RITUAL_109",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Excavation"] = new RulesElement({
+  te = Ritual["Excavation"] = new engine.RulesElement({
     name: "Excavation",
     type: "Ritual",
     id: "ID_FMP_RITUAL_110",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Explorer's Fire"] = new RulesElement({
+  te = Ritual["Explorer's Fire"] = new engine.RulesElement({
     name: "Explorer's Fire",
     type: "Ritual",
     id: "ID_FMP_RITUAL_111",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Fastidiousness"] = new RulesElement({
+  te = Ritual["Fastidiousness"] = new engine.RulesElement({
     name: "Fastidiousness",
     type: "Ritual",
     id: "ID_FMP_RITUAL_113",
@@ -137,7 +138,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Memory Seal"] = new RulesElement({
+  te = Ritual["Memory Seal"] = new engine.RulesElement({
     name: "Memory Seal",
     type: "Ritual",
     id: "ID_FMP_RITUAL_114",
@@ -147,7 +148,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Mordenkainen's Ascent"] = new RulesElement({
+  te = Ritual["Mordenkainen's Ascent"] = new engine.RulesElement({
     name: "Mordenkainen's Ascent",
     type: "Ritual",
     id: "ID_FMP_RITUAL_115",
@@ -157,7 +158,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Mordenkainen's Joining"] = new RulesElement({
+  te = Ritual["Mordenkainen's Joining"] = new engine.RulesElement({
     name: "Mordenkainen's Joining",
     type: "Ritual",
     id: "ID_FMP_RITUAL_116",
@@ -167,7 +168,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Overland Flight"] = new RulesElement({
+  te = Ritual["Overland Flight"] = new engine.RulesElement({
     name: "Overland Flight",
     type: "Ritual",
     id: "ID_FMP_RITUAL_117",
@@ -177,7 +178,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Planar Sending"] = new RulesElement({
+  te = Ritual["Planar Sending"] = new engine.RulesElement({
     name: "Planar Sending",
     type: "Ritual",
     id: "ID_FMP_RITUAL_120",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Preservation"] = new RulesElement({
+  te = Ritual["Preservation"] = new engine.RulesElement({
     name: "Preservation",
     type: "Ritual",
     id: "ID_FMP_RITUAL_119",
@@ -197,7 +198,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Safeguard"] = new RulesElement({
+  te = Ritual["Safeguard"] = new engine.RulesElement({
     name: "Safeguard",
     type: "Ritual",
     id: "ID_FMP_RITUAL_121",
@@ -207,7 +208,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Scribe"] = new RulesElement({
+  te = Ritual["Scribe"] = new engine.RulesElement({
     name: "Scribe",
     type: "Ritual",
     id: "ID_FMP_RITUAL_122",
@@ -217,7 +218,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Signal of Pursuit"] = new RulesElement({
+  te = Ritual["Signal of Pursuit"] = new engine.RulesElement({
     name: "Signal of Pursuit",
     type: "Ritual",
     id: "ID_FMP_RITUAL_123",
@@ -227,7 +228,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Stasis Shell"] = new RulesElement({
+  te = Ritual["Stasis Shell"] = new engine.RulesElement({
     name: "Stasis Shell",
     type: "Ritual",
     id: "ID_FMP_RITUAL_124",
@@ -237,7 +238,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Teleport Catcher"] = new RulesElement({
+  te = Ritual["Teleport Catcher"] = new engine.RulesElement({
     name: "Teleport Catcher",
     type: "Ritual",
     id: "ID_FMP_RITUAL_125",
@@ -247,7 +248,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Tenser's Binding"] = new RulesElement({
+  te = Ritual["Tenser's Binding"] = new engine.RulesElement({
     name: "Tenser's Binding",
     type: "Ritual",
     id: "ID_FMP_RITUAL_126",
@@ -257,7 +258,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Tenser's Lift"] = new RulesElement({
+  te = Ritual["Tenser's Lift"] = new engine.RulesElement({
     name: "Tenser's Lift",
     type: "Ritual",
     id: "ID_FMP_RITUAL_127",
@@ -267,7 +268,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["True Sending"] = new RulesElement({
+  te = Ritual["True Sending"] = new engine.RulesElement({
     name: "True Sending",
     type: "Ritual",
     id: "ID_FMP_RITUAL_128",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Visage of Life"] = new RulesElement({
+  te = Ritual["Visage of Life"] = new engine.RulesElement({
     name: "Visage of Life",
     type: "Ritual",
     id: "ID_FMP_RITUAL_129",
@@ -287,7 +288,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Voicecatcher Veil"] = new RulesElement({
+  te = Ritual["Voicecatcher Veil"] = new engine.RulesElement({
     name: "Voicecatcher Veil",
     type: "Ritual",
     id: "ID_FMP_RITUAL_130",
@@ -297,7 +298,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Wizard's Curtain"] = new RulesElement({
+  te = Ritual["Wizard's Curtain"] = new engine.RulesElement({
     name: "Wizard's Curtain",
     type: "Ritual",
     id: "ID_FMP_RITUAL_131",
@@ -307,7 +308,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Wizard's Escape"] = new RulesElement({
+  te = Ritual["Wizard's Escape"] = new engine.RulesElement({
     name: "Wizard's Escape",
     type: "Ritual",
     id: "ID_FMP_RITUAL_132",
@@ -318,4 +319,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

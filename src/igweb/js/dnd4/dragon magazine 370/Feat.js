@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Feat = types['Feat'] || (types['Feat'] = {});
-  te = Feat["Delthuntle Sailor"] = new RulesElement({
+  te = Feat["Delthuntle Sailor"] = new engine.RulesElement({
     name: "Delthuntle Sailor",
     type: "Feat",
     id: "ID_FMP_FEAT_1071",
@@ -15,14 +16,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1071",
     categories: ["Delthuntle Sailor", "ID_FMP_FEAT_1071"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_6"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_6"]);
       model.statadd("Acrobatics Misc", function() { /* while aboard a ship */ return 2; });
       model.statadd("Athletics Misc", function() { /* while aboard a ship */ return 2; });
     }
   });
   byID[te.id] = te;
   
-  te = Feat["Earthspur Deepminer"] = new RulesElement({
+  te = Feat["Earthspur Deepminer"] = new engine.RulesElement({
     name: "Earthspur Deepminer",
     type: "Feat",
     id: "ID_FMP_FEAT_1073",
@@ -30,7 +31,7 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1073",
     categories: ["Earthspur Deepminer", "ID_FMP_FEAT_1073"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_LANGUAGE_18"]);
+      model.grant(model.elements.id["ID_FMP_LANGUAGE_18"]);
       model.statadd("resist:necrotic", 2, "resist");
       model.statadd("resist:necrotic", 3, "resist");
       model.statadd("resist:necrotic", 5, "resist");
@@ -38,7 +39,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Moray Militia"] = new RulesElement({
+  te = Feat["Moray Militia"] = new engine.RulesElement({
     name: "Moray Militia",
     type: "Feat",
     id: "ID_FMP_FEAT_1075",
@@ -48,7 +49,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["New Sarshel Enforcer"] = new RulesElement({
+  te = Feat["New Sarshel Enforcer"] = new engine.RulesElement({
     name: "New Sarshel Enforcer",
     type: "Feat",
     id: "ID_FMP_FEAT_1074",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Snowdown Courier"] = new RulesElement({
+  te = Feat["Snowdown Courier"] = new engine.RulesElement({
     name: "Snowdown Courier",
     type: "Feat",
     id: "ID_FMP_FEAT_1076",
@@ -74,7 +75,7 @@
   });
   byID[te.id] = te;
   
-  te = Feat["Yuirwood Feyfriend"] = new RulesElement({
+  te = Feat["Yuirwood Feyfriend"] = new engine.RulesElement({
     name: "Yuirwood Feyfriend",
     type: "Feat",
     id: "ID_FMP_FEAT_1072",
@@ -89,4 +90,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

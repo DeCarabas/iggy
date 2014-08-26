@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Barbarian Blood Frenzy"] = new RulesElement({
+  te = Power["Barbarian Blood Frenzy"] = new engine.RulesElement({
     name: "Barbarian Blood Frenzy",
     type: "Power",
     id: "ID_FMP_POWER_4857",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Barbarian Great Leap"] = new RulesElement({
+  te = Power["Barbarian Great Leap"] = new engine.RulesElement({
     name: "Barbarian Great Leap",
     type: "Power",
     id: "ID_FMP_POWER_4828",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Barbarian Inexorable Shift"] = new RulesElement({
+  te = Power["Barbarian Inexorable Shift"] = new engine.RulesElement({
     name: "Barbarian Inexorable Shift",
     type: "Power",
     id: "ID_FMP_POWER_4833",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Binding Bola"] = new RulesElement({
+  te = Power["Binding Bola"] = new engine.RulesElement({
     name: "Binding Bola",
     type: "Power",
     id: "ID_FMP_POWER_5250",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Bola Recovery"] = new RulesElement({
+  te = Power["Bola Recovery"] = new engine.RulesElement({
     name: "Bola Recovery",
     type: "Power",
     id: "ID_FMP_POWER_5251",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Divine Rage"] = new RulesElement({
+  te = Power["Divine Rage"] = new engine.RulesElement({
     name: "Divine Rage",
     type: "Power",
     id: "ID_FMP_POWER_5233",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Entangling Whip"] = new RulesElement({
+  te = Power["Entangling Whip"] = new engine.RulesElement({
     name: "Entangling Whip",
     type: "Power",
     id: "ID_FMP_POWER_5258",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Felling Bola"] = new RulesElement({
+  te = Power["Felling Bola"] = new engine.RulesElement({
     name: "Felling Bola",
     type: "Power",
     id: "ID_FMP_POWER_5252",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Net Shield"] = new RulesElement({
+  te = Power["Net Shield"] = new engine.RulesElement({
     name: "Net Shield",
     type: "Power",
     id: "ID_FMP_POWER_5254",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Net Sweep"] = new RulesElement({
+  te = Power["Net Sweep"] = new engine.RulesElement({
     name: "Net Sweep",
     type: "Power",
     id: "ID_FMP_POWER_5253",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Net Trap"] = new RulesElement({
+  te = Power["Net Trap"] = new engine.RulesElement({
     name: "Net Trap",
     type: "Power",
     id: "ID_FMP_POWER_5255",
@@ -117,7 +118,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Whip Crack"] = new RulesElement({
+  te = Power["Whip Crack"] = new engine.RulesElement({
     name: "Whip Crack",
     type: "Power",
     id: "ID_FMP_POWER_5257",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Whip Snare"] = new RulesElement({
+  te = Power["Whip Snare"] = new engine.RulesElement({
     name: "Whip Snare",
     type: "Power",
     id: "ID_FMP_POWER_5256",
@@ -138,4 +139,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

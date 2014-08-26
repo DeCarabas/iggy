@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Horn of Geryon (epic tier)"] = new RulesElement({
+  te = Magic_Item["Horn of Geryon (epic tier)"] = new engine.RulesElement({
     name: "Horn of Geryon (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8972",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Necroshard Weapon +1"] = new RulesElement({
+  te = Magic_Item["Necroshard Weapon +1"] = new engine.RulesElement({
     name: "Necroshard Weapon +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8966",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Necroshard Weapon +2"] = new RulesElement({
+  te = Magic_Item["Necroshard Weapon +2"] = new engine.RulesElement({
     name: "Necroshard Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8967",
@@ -40,7 +41,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Necroshard Weapon +3"] = new RulesElement({
+  te = Magic_Item["Necroshard Weapon +3"] = new engine.RulesElement({
     name: "Necroshard Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8968",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Necroshard Weapon +4"] = new RulesElement({
+  te = Magic_Item["Necroshard Weapon +4"] = new engine.RulesElement({
     name: "Necroshard Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8969",
@@ -64,7 +65,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Necroshard Weapon +5"] = new RulesElement({
+  te = Magic_Item["Necroshard Weapon +5"] = new engine.RulesElement({
     name: "Necroshard Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8970",
@@ -76,7 +77,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Necroshard Weapon +6"] = new RulesElement({
+  te = Magic_Item["Necroshard Weapon +6"] = new engine.RulesElement({
     name: "Necroshard Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_8971",
@@ -89,4 +90,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

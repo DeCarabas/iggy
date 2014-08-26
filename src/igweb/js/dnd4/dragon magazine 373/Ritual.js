@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Drowsy Dust"] = new RulesElement({
+  te = Ritual["Drowsy Dust"] = new engine.RulesElement({
     name: "Drowsy Dust",
     type: "Ritual",
     id: "ID_FMP_RITUAL_233",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Eyesting"] = new RulesElement({
+  te = Ritual["Eyesting"] = new engine.RulesElement({
     name: "Eyesting",
     type: "Ritual",
     id: "ID_FMP_RITUAL_234",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Flashbang Powder"] = new RulesElement({
+  te = Ritual["Flashbang Powder"] = new engine.RulesElement({
     name: "Flashbang Powder",
     type: "Ritual",
     id: "ID_FMP_RITUAL_235",
@@ -38,4 +39,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Skill_Training = types['Skill Training'] || (types['Skill Training'] = {});
-  te = Skill_Training["Acrobatics"] = new RulesElement({
+  te = Skill_Training["Acrobatics"] = new engine.RulesElement({
     name: "Acrobatics",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_ACROBATICS",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Arcana"] = new RulesElement({
+  te = Skill_Training["Arcana"] = new engine.RulesElement({
     name: "Arcana",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_ARCANA",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Athletics"] = new RulesElement({
+  te = Skill_Training["Athletics"] = new engine.RulesElement({
     name: "Athletics",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_ATHLETICS",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Bluff"] = new RulesElement({
+  te = Skill_Training["Bluff"] = new engine.RulesElement({
     name: "Bluff",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_BLUFF",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Diplomacy"] = new RulesElement({
+  te = Skill_Training["Diplomacy"] = new engine.RulesElement({
     name: "Diplomacy",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_DIPLOMACY",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Dungeoneering"] = new RulesElement({
+  te = Skill_Training["Dungeoneering"] = new engine.RulesElement({
     name: "Dungeoneering",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Endurance"] = new RulesElement({
+  te = Skill_Training["Endurance"] = new engine.RulesElement({
     name: "Endurance",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_ENDURANCE",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Heal"] = new RulesElement({
+  te = Skill_Training["Heal"] = new engine.RulesElement({
     name: "Heal",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_HEAL",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["History"] = new RulesElement({
+  te = Skill_Training["History"] = new engine.RulesElement({
     name: "History",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_HISTORY",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Insight"] = new RulesElement({
+  te = Skill_Training["Insight"] = new engine.RulesElement({
     name: "Insight",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_INSIGHT",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Intimidate"] = new RulesElement({
+  te = Skill_Training["Intimidate"] = new engine.RulesElement({
     name: "Intimidate",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_INTIMIDATE",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Nature"] = new RulesElement({
+  te = Skill_Training["Nature"] = new engine.RulesElement({
     name: "Nature",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_NATURE",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Perception"] = new RulesElement({
+  te = Skill_Training["Perception"] = new engine.RulesElement({
     name: "Perception",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_PERCEPTION",
@@ -163,7 +164,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Religion"] = new RulesElement({
+  te = Skill_Training["Religion"] = new engine.RulesElement({
     name: "Religion",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_RELIGION",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Stealth"] = new RulesElement({
+  te = Skill_Training["Stealth"] = new engine.RulesElement({
     name: "Stealth",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_STEALTH",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Streetwise"] = new RulesElement({
+  te = Skill_Training["Streetwise"] = new engine.RulesElement({
     name: "Streetwise",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_STREETWISE",
@@ -199,7 +200,7 @@
   });
   byID[te.id] = te;
   
-  te = Skill_Training["Thievery"] = new RulesElement({
+  te = Skill_Training["Thievery"] = new engine.RulesElement({
     name: "Thievery",
     type: "Skill Training",
     id: "ID_INTERNAL_SKILL_TRAINING_THIEVERY",
@@ -212,4 +213,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Astral Guide"] = new RulesElement({
+  te = Ritual["Astral Guide"] = new engine.RulesElement({
     name: "Astral Guide",
     type: "Ritual",
     id: "ID_FMP_RITUAL_168",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Astral Sojourn"] = new RulesElement({
+  te = Ritual["Astral Sojourn"] = new engine.RulesElement({
     name: "Astral Sojourn",
     type: "Ritual",
     id: "ID_FMP_RITUAL_169",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Create Teleportation Circle"] = new RulesElement({
+  te = Ritual["Create Teleportation Circle"] = new engine.RulesElement({
     name: "Create Teleportation Circle",
     type: "Ritual",
     id: "ID_FMP_RITUAL_170",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Demicache"] = new RulesElement({
+  te = Ritual["Demicache"] = new engine.RulesElement({
     name: "Demicache",
     type: "Ritual",
     id: "ID_FMP_RITUAL_171",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Elemental Transference"] = new RulesElement({
+  te = Ritual["Elemental Transference"] = new engine.RulesElement({
     name: "Elemental Transference",
     type: "Ritual",
     id: "ID_FMP_RITUAL_172",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Far Sending"] = new RulesElement({
+  te = Ritual["Far Sending"] = new engine.RulesElement({
     name: "Far Sending",
     type: "Ritual",
     id: "ID_FMP_RITUAL_174",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Fey Passage"] = new RulesElement({
+  te = Ritual["Fey Passage"] = new engine.RulesElement({
     name: "Fey Passage",
     type: "Ritual",
     id: "ID_FMP_RITUAL_173",
@@ -77,7 +78,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Plane Shift"] = new RulesElement({
+  te = Ritual["Plane Shift"] = new engine.RulesElement({
     name: "Plane Shift",
     type: "Ritual",
     id: "ID_FMP_RITUAL_175",
@@ -87,7 +88,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Rope Trick"] = new RulesElement({
+  te = Ritual["Rope Trick"] = new engine.RulesElement({
     name: "Rope Trick",
     type: "Ritual",
     id: "ID_FMP_RITUAL_176",
@@ -97,7 +98,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Scramble Portal"] = new RulesElement({
+  te = Ritual["Scramble Portal"] = new engine.RulesElement({
     name: "Scramble Portal",
     type: "Ritual",
     id: "ID_FMP_RITUAL_177",
@@ -107,7 +108,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Shadow Passage"] = new RulesElement({
+  te = Ritual["Shadow Passage"] = new engine.RulesElement({
     name: "Shadow Passage",
     type: "Ritual",
     id: "ID_FMP_RITUAL_178",
@@ -118,4 +119,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

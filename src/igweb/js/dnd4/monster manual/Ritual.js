@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual = types['Ritual'] || (types['Ritual'] = {});
-  te = Ritual["Dark Gift of the Undying"] = new RulesElement({
+  te = Ritual["Dark Gift of the Undying"] = new engine.RulesElement({
     name: "Dark Gift of the Undying",
     type: "Ritual",
     id: "ID_FMP_RITUAL_72",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual["Lich Transformation"] = new RulesElement({
+  te = Ritual["Lich Transformation"] = new engine.RulesElement({
     name: "Lich Transformation",
     type: "Ritual",
     id: "ID_FMP_RITUAL_71",
@@ -28,4 +29,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

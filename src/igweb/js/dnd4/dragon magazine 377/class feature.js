@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var class_feature = types['class feature'] || (types['class feature'] = {});
-  te = class_feature["Bloodsmith Action"] = new RulesElement({
+  te = class_feature["Bloodsmith Action"] = new engine.RulesElement({
     name: "Bloodsmith Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1902",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Captivating Presence"] = new RulesElement({
+  te = class_feature["Captivating Presence"] = new engine.RulesElement({
     name: "Captivating Presence",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1892",
@@ -33,7 +34,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Familiar Blood Bond"] = new RulesElement({
+  te = class_feature["Familiar Blood Bond"] = new engine.RulesElement({
     name: "Familiar Blood Bond",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1901",
@@ -42,7 +43,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Martyr's Blood"] = new RulesElement({
+  te = class_feature["Martyr's Blood"] = new engine.RulesElement({
     name: "Martyr's Blood",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1894",
@@ -51,7 +52,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Second Familiar"] = new RulesElement({
+  te = class_feature["Second Familiar"] = new engine.RulesElement({
     name: "Second Familiar",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1903",
@@ -63,7 +64,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Vengeance's Imperative"] = new RulesElement({
+  te = class_feature["Vengeance's Imperative"] = new engine.RulesElement({
     name: "Vengeance's Imperative",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1898",
@@ -72,7 +73,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Vengeful Action"] = new RulesElement({
+  te = class_feature["Vengeful Action"] = new engine.RulesElement({
     name: "Vengeful Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1896",
@@ -84,7 +85,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Vengeful Action (Vengeful Crusader)"] = new RulesElement({
+  te = class_feature["Vengeful Action (Vengeful Crusader)"] = new engine.RulesElement({
     name: "Vengeful Action (Vengeful Crusader)",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1899",
@@ -96,7 +97,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Vengeful Shield"] = new RulesElement({
+  te = class_feature["Vengeful Shield"] = new engine.RulesElement({
     name: "Vengeful Shield",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1900",
@@ -105,7 +106,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Watcher's Insight"] = new RulesElement({
+  te = class_feature["Watcher's Insight"] = new engine.RulesElement({
     name: "Watcher's Insight",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1895",
@@ -120,7 +121,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Witnessed Weakness"] = new RulesElement({
+  te = class_feature["Witnessed Weakness"] = new engine.RulesElement({
     name: "Witnessed Weakness",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1897",
@@ -129,7 +130,7 @@
   });
   byID[te.id] = te;
   
-  te = class_feature["Zealous Action"] = new RulesElement({
+  te = class_feature["Zealous Action"] = new engine.RulesElement({
     name: "Zealous Action",
     type: "class feature",
     id: "ID_FMP_CLASS_FEATURE_1893",
@@ -142,4 +143,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

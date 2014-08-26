@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Build_Suggestions = types['Build Suggestions'] || (types['Build Suggestions'] = {});
-  te = Build_Suggestions["Ardent Paladin"] = new RulesElement({
+  te = Build_Suggestions["Ardent Paladin"] = new engine.RulesElement({
     name: "Ardent Paladin",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_ARDENT_PALADIN",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Commanding Avenger"] = new RulesElement({
+  te = Build_Suggestions["Commanding Avenger"] = new engine.RulesElement({
     name: "Commanding Avenger",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_COMMANDING_AVENGER",
@@ -44,7 +45,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Malediction Invoker"] = new RulesElement({
+  te = Build_Suggestions["Malediction Invoker"] = new engine.RulesElement({
     name: "Malediction Invoker",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_MALEDICTION_INVOKER",
@@ -63,7 +64,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Shielding Cleric"] = new RulesElement({
+  te = Build_Suggestions["Shielding Cleric"] = new engine.RulesElement({
     name: "Shielding Cleric",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_SHIELDING_CLERIC",
@@ -81,7 +82,7 @@
   });
   byID[te.id] = te;
   
-  te = Build_Suggestions["Virtuous Paladin"] = new RulesElement({
+  te = Build_Suggestions["Virtuous Paladin"] = new engine.RulesElement({
     name: "Virtuous Paladin",
     type: "Build Suggestions",
     id: "ID_INTERNAL_BUILD_SUGGESTIONS_VIRTUOUS_PALADIN",
@@ -100,4 +101,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

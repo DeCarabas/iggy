@@ -1,23 +1,28 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Theme = types['Theme'] || (types['Theme'] = {});
-  te = Theme["Escaped Slave"] = new RulesElement({
+  te = Theme["Escaped Slave"] = new engine.RulesElement({
     name: "Escaped Slave",
     type: "Theme",
     id: "ID_FMP_THEME_768",
     source: "Dragon Magazine 390",
     categories: ["Escaped Slave", "ID_FMP_THEME_768"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_POWER_13431"]);
+      model.grant(model.elements.id["ID_FMP_POWER_13431"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

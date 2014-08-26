@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Familiar = types['Familiar'] || (types['Familiar'] = {});
-  te = Familiar["Gallant Hawk"] = new RulesElement({
+  te = Familiar["Gallant Hawk"] = new engine.RulesElement({
     name: "Gallant Hawk",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_81",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Least Air Elemental"] = new RulesElement({
+  te = Familiar["Least Air Elemental"] = new engine.RulesElement({
     name: "Least Air Elemental",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_84",
@@ -28,7 +29,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Least Earth Elemental"] = new RulesElement({
+  te = Familiar["Least Earth Elemental"] = new engine.RulesElement({
     name: "Least Earth Elemental",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_86",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Moon Wisp"] = new RulesElement({
+  te = Familiar["Moon Wisp"] = new engine.RulesElement({
     name: "Moon Wisp",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_82",
@@ -50,7 +51,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Muse Sprite"] = new RulesElement({
+  te = Familiar["Muse Sprite"] = new engine.RulesElement({
     name: "Muse Sprite",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_79",
@@ -62,7 +63,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Specter"] = new RulesElement({
+  te = Familiar["Specter"] = new engine.RulesElement({
     name: "Specter",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_83",
@@ -75,7 +76,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["Tiny Gelatinous Cube"] = new RulesElement({
+  te = Familiar["Tiny Gelatinous Cube"] = new engine.RulesElement({
     name: "Tiny Gelatinous Cube",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_85",
@@ -88,7 +89,7 @@
   });
   byID[te.id] = te;
   
-  te = Familiar["White-Eyed Crow"] = new RulesElement({
+  te = Familiar["White-Eyed Crow"] = new engine.RulesElement({
     name: "White-Eyed Crow",
     type: "Familiar",
     id: "ID_FMP_FAMILIAR_80",
@@ -98,4 +99,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

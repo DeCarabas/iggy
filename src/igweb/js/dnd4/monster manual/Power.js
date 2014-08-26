@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Goblin Tactics"] = new RulesElement({
+  te = Power["Goblin Tactics"] = new engine.RulesElement({
     name: "Goblin Tactics",
     type: "Power",
     id: "ID_FMP_POWER_1489",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Hobgoblin Resilience"] = new RulesElement({
+  te = Power["Hobgoblin Resilience"] = new engine.RulesElement({
     name: "Hobgoblin Resilience",
     type: "Power",
     id: "ID_FMP_POWER_2478",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Predatory Eye"] = new RulesElement({
+  te = Power["Predatory Eye"] = new engine.RulesElement({
     name: "Predatory Eye",
     type: "Power",
     id: "ID_FMP_POWER_2324",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Shifty"] = new RulesElement({
+  te = Power["Shifty"] = new engine.RulesElement({
     name: "Shifty",
     type: "Power",
     id: "ID_FMP_POWER_2479",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Telekinetic Leap"] = new RulesElement({
+  te = Power["Telekinetic Leap"] = new engine.RulesElement({
     name: "Telekinetic Leap",
     type: "Power",
     id: "ID_FMP_POWER_2474",
@@ -57,7 +58,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Warrior's Surge"] = new RulesElement({
+  te = Power["Warrior's Surge"] = new engine.RulesElement({
     name: "Warrior's Surge",
     type: "Power",
     id: "ID_FMP_POWER_2481",
@@ -68,4 +69,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

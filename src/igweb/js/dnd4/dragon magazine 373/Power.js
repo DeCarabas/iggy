@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Power = types['Power'] || (types['Power'] = {});
-  te = Power["Blight Locus"] = new RulesElement({
+  te = Power["Blight Locus"] = new engine.RulesElement({
     name: "Blight Locus",
     type: "Power",
     id: "ID_FMP_POWER_7372",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Blighted Agony"] = new RulesElement({
+  te = Power["Blighted Agony"] = new engine.RulesElement({
     name: "Blighted Agony",
     type: "Power",
     id: "ID_FMP_POWER_7370",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Body Shield (Garrote Expert)"] = new RulesElement({
+  te = Power["Body Shield (Garrote Expert)"] = new engine.RulesElement({
     name: "Body Shield (Garrote Expert)",
     type: "Power",
     id: "ID_FMP_POWER_3287",
@@ -37,7 +38,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Brutal Instinct"] = new RulesElement({
+  te = Power["Brutal Instinct"] = new engine.RulesElement({
     name: "Brutal Instinct",
     type: "Power",
     id: "ID_FMP_POWER_7359",
@@ -47,7 +48,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Choking Grab"] = new RulesElement({
+  te = Power["Choking Grab"] = new engine.RulesElement({
     name: "Choking Grab",
     type: "Power",
     id: "ID_FMP_POWER_7364",
@@ -62,7 +63,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Crippling Needle"] = new RulesElement({
+  te = Power["Crippling Needle"] = new engine.RulesElement({
     name: "Crippling Needle",
     type: "Power",
     id: "ID_FMP_POWER_7357",
@@ -72,7 +73,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Cutthroat's Scrutiny"] = new RulesElement({
+  te = Power["Cutthroat's Scrutiny"] = new engine.RulesElement({
     name: "Cutthroat's Scrutiny",
     type: "Power",
     id: "ID_FMP_POWER_7362",
@@ -82,7 +83,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Dread Disappearance"] = new RulesElement({
+  te = Power["Dread Disappearance"] = new engine.RulesElement({
     name: "Dread Disappearance",
     type: "Power",
     id: "ID_FMP_POWER_7375",
@@ -92,7 +93,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Improvised Poison"] = new RulesElement({
+  te = Power["Improvised Poison"] = new engine.RulesElement({
     name: "Improvised Poison",
     type: "Power",
     id: "ID_FMP_POWER_7367",
@@ -102,7 +103,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Maggot Form"] = new RulesElement({
+  te = Power["Maggot Form"] = new engine.RulesElement({
     name: "Maggot Form",
     type: "Power",
     id: "ID_FMP_POWER_7371",
@@ -112,7 +113,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Nightmare Stalker"] = new RulesElement({
+  te = Power["Nightmare Stalker"] = new engine.RulesElement({
     name: "Nightmare Stalker",
     type: "Power",
     id: "ID_FMP_POWER_7376",
@@ -122,7 +123,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Painful Delusion"] = new RulesElement({
+  te = Power["Painful Delusion"] = new engine.RulesElement({
     name: "Painful Delusion",
     type: "Power",
     id: "ID_FMP_POWER_7373",
@@ -132,7 +133,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Potent Poison"] = new RulesElement({
+  te = Power["Potent Poison"] = new engine.RulesElement({
     name: "Potent Poison",
     type: "Power",
     id: "ID_FMP_POWER_7368",
@@ -142,7 +143,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Progressive Toxin"] = new RulesElement({
+  te = Power["Progressive Toxin"] = new engine.RulesElement({
     name: "Progressive Toxin",
     type: "Power",
     id: "ID_FMP_POWER_7369",
@@ -152,7 +153,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Quick Kill"] = new RulesElement({
+  te = Power["Quick Kill"] = new engine.RulesElement({
     name: "Quick Kill",
     type: "Power",
     id: "ID_FMP_POWER_7363",
@@ -162,7 +163,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Stinging Shot"] = new RulesElement({
+  te = Power["Stinging Shot"] = new engine.RulesElement({
     name: "Stinging Shot",
     type: "Power",
     id: "ID_FMP_POWER_7355",
@@ -172,7 +173,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Strangler's Hold"] = new RulesElement({
+  te = Power["Strangler's Hold"] = new engine.RulesElement({
     name: "Strangler's Hold",
     type: "Power",
     id: "ID_FMP_POWER_7366",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Sudden Retaliation"] = new RulesElement({
+  te = Power["Sudden Retaliation"] = new engine.RulesElement({
     name: "Sudden Retaliation",
     type: "Power",
     id: "ID_FMP_POWER_7361",
@@ -197,7 +198,7 @@
   });
   byID[te.id] = te;
   
-  te = Power["Uncanny Aim (Blowgun)"] = new RulesElement({
+  te = Power["Uncanny Aim (Blowgun)"] = new engine.RulesElement({
     name: "Uncanny Aim (Blowgun)",
     type: "Power",
     id: "ID_FMP_POWER_7356",
@@ -208,4 +209,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

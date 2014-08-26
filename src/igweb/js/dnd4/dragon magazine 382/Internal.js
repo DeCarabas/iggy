@@ -1,48 +1,49 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Internal = types['Internal'] || (types['Internal'] = {});
-  te = Internal["Dusk Elf Weapon Training"] = new RulesElement({
+  te = Internal["Dusk Elf Weapon Training"] = new engine.RulesElement({
     name: "Dusk Elf Weapon Training",
     type: "Internal",
     id: "ID_INTERNAL_INTERNAL_DUSK_ELF_WEAPON_TRAINING",
     source: "Dragon Magazine 382",
     categories: ["Dusk Elf Weapon Training", "ID_INTERNAL_INTERNAL_DUSK_ELF_WEAPON_TRAINING"],
     rules: function(model) {
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
       model.statadd("Dagger:damage", 2, "Feat");
       model.statadd("Dagger:damage", 3, "Feat");
       model.statadd("Dagger:damage", 4, "Feat");
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
       model.statadd("Sickle:damage", 2, "Feat");
       model.statadd("Sickle:damage", 3, "Feat");
       model.statadd("Sickle:damage", 4, "Feat");
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
       model.statadd("Short sword:damage", 2, "Feat");
       model.statadd("Short sword:damage", 3, "Feat");
       model.statadd("Short sword:damage", 4, "Feat");
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
       model.statadd("Rapier:damage", 2, "Feat");
       model.statadd("Rapier:damage", 3, "Feat");
       model.statadd("Rapier:damage", 4, "Feat");
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)"]);
       model.statadd("Claw Fighter Claw:damage", 2, "Feat");
       model.statadd("Claw Fighter Claw:damage", 3, "Feat");
       model.statadd("Claw Fighter Claw:damage", 4, "Feat");
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHADOWBLADE)"]);
       model.statadd("Shadowblade:damage", 2, "Feat");
       model.statadd("Shadowblade:damage", 3, "Feat");
       model.statadd("Shadowblade:damage", 4, "Feat");
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLIMBING_CLAW)"]);
       model.statadd("Climbing Claw:damage", 2, "Feat");
       model.statadd("Climbing Claw:damage", 3, "Feat");
       model.statadd("Climbing Claw:damage", 4, "Feat");
-      model.grant(elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
+      model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FERAL_ARMOR_CLAW)"]);
       model.statadd("Feral Armor Claw:damage", 2, "Feat");
       model.statadd("Feral Armor Claw:damage", 3, "Feat");
       model.statadd("Feral Armor Claw:damage", 4, "Feat");
@@ -50,7 +51,7 @@
   });
   byID[te.id] = te;
   
-  te = Internal["Weapon Master"] = new RulesElement({
+  te = Internal["Weapon Master"] = new engine.RulesElement({
     name: "Weapon Master",
     type: "Internal",
     id: "ID_INTERNAL_INTERNAL_WEAPON_MASTER",
@@ -242,4 +243,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

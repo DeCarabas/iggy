@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Ritual_Scroll = types['Ritual Scroll'] || (types['Ritual Scroll'] = {});
-  te = Ritual_Scroll["Scroll of Corpse Gate"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Corpse Gate"] = new engine.RulesElement({
     name: "Scroll of Corpse Gate",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_CORPSE_GATE",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Corpse Light"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Corpse Light"] = new engine.RulesElement({
     name: "Scroll of Corpse Light",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_CORPSE_LIGHT",
@@ -25,7 +26,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Gravesight"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Gravesight"] = new engine.RulesElement({
     name: "Scroll of Gravesight",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_GRAVESIGHT",
@@ -34,7 +35,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Last Sight Vision"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Last Sight Vision"] = new engine.RulesElement({
     name: "Scroll of Last Sight Vision",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_LAST_SIGHT_VISION",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Skull Watch"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Skull Watch"] = new engine.RulesElement({
     name: "Scroll of Skull Watch",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_SKULL_WATCH",
@@ -52,7 +53,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Undead Servitor"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Undead Servitor"] = new engine.RulesElement({
     name: "Scroll of Undead Servitor",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_UNDEAD_SERVITOR",
@@ -61,7 +62,7 @@
   });
   byID[te.id] = te;
   
-  te = Ritual_Scroll["Scroll of Undead Ward"] = new RulesElement({
+  te = Ritual_Scroll["Scroll of Undead Ward"] = new engine.RulesElement({
     name: "Scroll of Undead Ward",
     type: "Ritual Scroll",
     id: "ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_UNDEAD_WARD",
@@ -71,4 +72,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

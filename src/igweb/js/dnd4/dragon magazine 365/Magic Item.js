@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Amulet of Scales +3"] = new RulesElement({
+  te = Magic_Item["Amulet of Scales +3"] = new engine.RulesElement({
     name: "Amulet of Scales +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4233",
@@ -21,7 +22,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Amulet of Scales +4"] = new RulesElement({
+  te = Magic_Item["Amulet of Scales +4"] = new engine.RulesElement({
     name: "Amulet of Scales +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4234",
@@ -35,7 +36,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Amulet of Scales +5"] = new RulesElement({
+  te = Magic_Item["Amulet of Scales +5"] = new engine.RulesElement({
     name: "Amulet of Scales +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4235",
@@ -49,7 +50,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Amulet of Scales +6"] = new RulesElement({
+  te = Magic_Item["Amulet of Scales +6"] = new engine.RulesElement({
     name: "Amulet of Scales +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4236",
@@ -63,7 +64,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Belt of Lucky Strikes (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Belt of Lucky Strikes (heroic tier)"] = new engine.RulesElement({
     name: "Belt of Lucky Strikes (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4239",
@@ -72,7 +73,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Belt of Mountain Endurance (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Belt of Mountain Endurance (paragon tier)"] = new engine.RulesElement({
     name: "Belt of Mountain Endurance (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4240",
@@ -81,7 +82,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bracers of Escape (epic tier)"] = new RulesElement({
+  te = Magic_Item["Bracers of Escape (epic tier)"] = new engine.RulesElement({
     name: "Bracers of Escape (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4221",
@@ -90,7 +91,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bracers of Escape (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Bracers of Escape (heroic tier)"] = new engine.RulesElement({
     name: "Bracers of Escape (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4219",
@@ -99,7 +100,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bracers of Escape (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Bracers of Escape (paragon tier)"] = new engine.RulesElement({
     name: "Bracers of Escape (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4220",
@@ -108,7 +109,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Cannith Goggles (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Cannith Goggles (heroic tier)"] = new engine.RulesElement({
     name: "Cannith Goggles (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4100",
@@ -120,7 +121,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Circlet of Clear Thought (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Circlet of Clear Thought (paragon tier)"] = new engine.RulesElement({
     name: "Circlet of Clear Thought (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4230",
@@ -132,7 +133,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonclaw Armor +1"] = new RulesElement({
+  te = Magic_Item["Dragonclaw Armor +1"] = new engine.RulesElement({
     name: "Dragonclaw Armor +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4101",
@@ -145,7 +146,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonclaw Armor +2"] = new RulesElement({
+  te = Magic_Item["Dragonclaw Armor +2"] = new engine.RulesElement({
     name: "Dragonclaw Armor +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4102",
@@ -158,7 +159,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonclaw Armor +3"] = new RulesElement({
+  te = Magic_Item["Dragonclaw Armor +3"] = new engine.RulesElement({
     name: "Dragonclaw Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4103",
@@ -171,7 +172,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonclaw Armor +4"] = new RulesElement({
+  te = Magic_Item["Dragonclaw Armor +4"] = new engine.RulesElement({
     name: "Dragonclaw Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4104",
@@ -184,7 +185,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonclaw Armor +5"] = new RulesElement({
+  te = Magic_Item["Dragonclaw Armor +5"] = new engine.RulesElement({
     name: "Dragonclaw Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4105",
@@ -197,7 +198,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonclaw Armor +6"] = new RulesElement({
+  te = Magic_Item["Dragonclaw Armor +6"] = new engine.RulesElement({
     name: "Dragonclaw Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4106",
@@ -210,7 +211,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonrider Armor +3"] = new RulesElement({
+  te = Magic_Item["Dragonrider Armor +3"] = new engine.RulesElement({
     name: "Dragonrider Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4107",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonrider Armor +4"] = new RulesElement({
+  te = Magic_Item["Dragonrider Armor +4"] = new engine.RulesElement({
     name: "Dragonrider Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4108",
@@ -236,7 +237,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonrider Armor +5"] = new RulesElement({
+  te = Magic_Item["Dragonrider Armor +5"] = new engine.RulesElement({
     name: "Dragonrider Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4109",
@@ -249,7 +250,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonrider Armor +6"] = new RulesElement({
+  te = Magic_Item["Dragonrider Armor +6"] = new engine.RulesElement({
     name: "Dragonrider Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4110",
@@ -262,7 +263,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonscale Shield (epic tier)"] = new RulesElement({
+  te = Magic_Item["Dragonscale Shield (epic tier)"] = new engine.RulesElement({
     name: "Dragonscale Shield (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4223",
@@ -271,7 +272,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Dragonscale Shield (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Dragonscale Shield (paragon tier)"] = new engine.RulesElement({
     name: "Dragonscale Shield (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4222",
@@ -280,7 +281,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Earthwalker's Boots (epic tier)"] = new RulesElement({
+  te = Magic_Item["Earthwalker's Boots (epic tier)"] = new engine.RulesElement({
     name: "Earthwalker's Boots (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4226",
@@ -289,7 +290,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Eyes of the Dragon (epic tier)"] = new RulesElement({
+  te = Magic_Item["Eyes of the Dragon (epic tier)"] = new engine.RulesElement({
     name: "Eyes of the Dragon (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4229",
@@ -301,7 +302,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Far Hand Gloves (epic tier)"] = new RulesElement({
+  te = Magic_Item["Far Hand Gloves (epic tier)"] = new engine.RulesElement({
     name: "Far Hand Gloves (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4228",
@@ -310,7 +311,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Final Word Weapon +1"] = new RulesElement({
+  te = Magic_Item["Final Word Weapon +1"] = new engine.RulesElement({
     name: "Final Word Weapon +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4125",
@@ -319,7 +320,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Final Word Weapon +2"] = new RulesElement({
+  te = Magic_Item["Final Word Weapon +2"] = new engine.RulesElement({
     name: "Final Word Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4126",
@@ -328,7 +329,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Final Word Weapon +3"] = new RulesElement({
+  te = Magic_Item["Final Word Weapon +3"] = new engine.RulesElement({
     name: "Final Word Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4127",
@@ -337,7 +338,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Final Word Weapon +4"] = new RulesElement({
+  te = Magic_Item["Final Word Weapon +4"] = new engine.RulesElement({
     name: "Final Word Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4128",
@@ -346,7 +347,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Final Word Weapon +5"] = new RulesElement({
+  te = Magic_Item["Final Word Weapon +5"] = new engine.RulesElement({
     name: "Final Word Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4129",
@@ -355,7 +356,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Final Word Weapon +6"] = new RulesElement({
+  te = Magic_Item["Final Word Weapon +6"] = new engine.RulesElement({
     name: "Final Word Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4130",
@@ -364,7 +365,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Flask of the Dragon's Breath (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Flask of the Dragon's Breath (heroic tier)"] = new engine.RulesElement({
     name: "Flask of the Dragon's Breath (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4241",
@@ -373,7 +374,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Fortified Armor +2"] = new RulesElement({
+  te = Magic_Item["Fortified Armor +2"] = new engine.RulesElement({
     name: "Fortified Armor +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4111",
@@ -387,7 +388,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Fortified Armor +3"] = new RulesElement({
+  te = Magic_Item["Fortified Armor +3"] = new engine.RulesElement({
     name: "Fortified Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4112",
@@ -401,7 +402,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Fortified Armor +4"] = new RulesElement({
+  te = Magic_Item["Fortified Armor +4"] = new engine.RulesElement({
     name: "Fortified Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4113",
@@ -415,7 +416,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Fortified Armor +5"] = new RulesElement({
+  te = Magic_Item["Fortified Armor +5"] = new engine.RulesElement({
     name: "Fortified Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4114",
@@ -429,7 +430,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Fortified Armor +6"] = new RulesElement({
+  te = Magic_Item["Fortified Armor +6"] = new engine.RulesElement({
     name: "Fortified Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4115",
@@ -443,7 +444,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goring Weapon +1"] = new RulesElement({
+  te = Magic_Item["Goring Weapon +1"] = new engine.RulesElement({
     name: "Goring Weapon +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4137",
@@ -452,7 +453,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goring Weapon +2"] = new RulesElement({
+  te = Magic_Item["Goring Weapon +2"] = new engine.RulesElement({
     name: "Goring Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4138",
@@ -461,7 +462,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goring Weapon +3"] = new RulesElement({
+  te = Magic_Item["Goring Weapon +3"] = new engine.RulesElement({
     name: "Goring Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4139",
@@ -470,7 +471,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goring Weapon +4"] = new RulesElement({
+  te = Magic_Item["Goring Weapon +4"] = new engine.RulesElement({
     name: "Goring Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4140",
@@ -479,7 +480,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goring Weapon +5"] = new RulesElement({
+  te = Magic_Item["Goring Weapon +5"] = new engine.RulesElement({
     name: "Goring Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4141",
@@ -488,7 +489,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Goring Weapon +6"] = new RulesElement({
+  te = Magic_Item["Goring Weapon +6"] = new engine.RulesElement({
     name: "Goring Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4142",
@@ -497,7 +498,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Homing Weapon +2"] = new RulesElement({
+  te = Magic_Item["Homing Weapon +2"] = new engine.RulesElement({
     name: "Homing Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4131",
@@ -506,7 +507,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Homing Weapon +3"] = new RulesElement({
+  te = Magic_Item["Homing Weapon +3"] = new engine.RulesElement({
     name: "Homing Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4132",
@@ -515,7 +516,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Homing Weapon +4"] = new RulesElement({
+  te = Magic_Item["Homing Weapon +4"] = new engine.RulesElement({
     name: "Homing Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4133",
@@ -524,7 +525,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Homing Weapon +5"] = new RulesElement({
+  te = Magic_Item["Homing Weapon +5"] = new engine.RulesElement({
     name: "Homing Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4134",
@@ -533,7 +534,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Homing Weapon +6"] = new RulesElement({
+  te = Magic_Item["Homing Weapon +6"] = new engine.RulesElement({
     name: "Homing Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4135",
@@ -542,7 +543,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Immolating Armor +2"] = new RulesElement({
+  te = Magic_Item["Immolating Armor +2"] = new engine.RulesElement({
     name: "Immolating Armor +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4116",
@@ -555,7 +556,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Immolating Armor +3"] = new RulesElement({
+  te = Magic_Item["Immolating Armor +3"] = new engine.RulesElement({
     name: "Immolating Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4117",
@@ -568,7 +569,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Immolating Armor +4"] = new RulesElement({
+  te = Magic_Item["Immolating Armor +4"] = new engine.RulesElement({
     name: "Immolating Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4118",
@@ -581,7 +582,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Immolating Armor +5"] = new RulesElement({
+  te = Magic_Item["Immolating Armor +5"] = new engine.RulesElement({
     name: "Immolating Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4119",
@@ -594,7 +595,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Immolating Armor +6"] = new RulesElement({
+  te = Magic_Item["Immolating Armor +6"] = new engine.RulesElement({
     name: "Immolating Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4120",
@@ -607,7 +608,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ingot Liberatis +4"] = new RulesElement({
+  te = Magic_Item["Ingot Liberatis +4"] = new engine.RulesElement({
     name: "Ingot Liberatis +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4091",
@@ -616,7 +617,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ingot Liberatis +5"] = new RulesElement({
+  te = Magic_Item["Ingot Liberatis +5"] = new engine.RulesElement({
     name: "Ingot Liberatis +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4092",
@@ -625,7 +626,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ingot Liberatis +6"] = new RulesElement({
+  te = Magic_Item["Ingot Liberatis +6"] = new engine.RulesElement({
     name: "Ingot Liberatis +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4093",
@@ -634,7 +635,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mask of Terrors (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Mask of Terrors (paragon tier)"] = new engine.RulesElement({
     name: "Mask of Terrors (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4231",
@@ -646,7 +647,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mind-Rending Weapon +3"] = new RulesElement({
+  te = Magic_Item["Mind-Rending Weapon +3"] = new engine.RulesElement({
     name: "Mind-Rending Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4143",
@@ -655,7 +656,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mind-Rending Weapon +4"] = new RulesElement({
+  te = Magic_Item["Mind-Rending Weapon +4"] = new engine.RulesElement({
     name: "Mind-Rending Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4144",
@@ -664,7 +665,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mind-Rending Weapon +5"] = new RulesElement({
+  te = Magic_Item["Mind-Rending Weapon +5"] = new engine.RulesElement({
     name: "Mind-Rending Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4145",
@@ -673,7 +674,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mind-Rending Weapon +6"] = new RulesElement({
+  te = Magic_Item["Mind-Rending Weapon +6"] = new engine.RulesElement({
     name: "Mind-Rending Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4146",
@@ -682,7 +683,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Netherdark Shield (epic tier)"] = new RulesElement({
+  te = Magic_Item["Netherdark Shield (epic tier)"] = new engine.RulesElement({
     name: "Netherdark Shield (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4225",
@@ -691,7 +692,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Netherdark Shield (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Netherdark Shield (paragon tier)"] = new engine.RulesElement({
     name: "Netherdark Shield (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4224",
@@ -700,7 +701,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Fiery Condemnation +3"] = new RulesElement({
+  te = Magic_Item["Orb of Fiery Condemnation +3"] = new engine.RulesElement({
     name: "Orb of Fiery Condemnation +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4181",
@@ -709,7 +710,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Fiery Condemnation +4"] = new RulesElement({
+  te = Magic_Item["Orb of Fiery Condemnation +4"] = new engine.RulesElement({
     name: "Orb of Fiery Condemnation +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4182",
@@ -718,7 +719,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Fiery Condemnation +5"] = new RulesElement({
+  te = Magic_Item["Orb of Fiery Condemnation +5"] = new engine.RulesElement({
     name: "Orb of Fiery Condemnation +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4183",
@@ -727,7 +728,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Fiery Condemnation +6"] = new RulesElement({
+  te = Magic_Item["Orb of Fiery Condemnation +6"] = new engine.RulesElement({
     name: "Orb of Fiery Condemnation +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4184",
@@ -736,7 +737,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Inexplicable Contention +2"] = new RulesElement({
+  te = Magic_Item["Orb of Inexplicable Contention +2"] = new engine.RulesElement({
     name: "Orb of Inexplicable Contention +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4176",
@@ -745,7 +746,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Inexplicable Contention +3"] = new RulesElement({
+  te = Magic_Item["Orb of Inexplicable Contention +3"] = new engine.RulesElement({
     name: "Orb of Inexplicable Contention +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4177",
@@ -754,7 +755,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Inexplicable Contention +4"] = new RulesElement({
+  te = Magic_Item["Orb of Inexplicable Contention +4"] = new engine.RulesElement({
     name: "Orb of Inexplicable Contention +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4178",
@@ -763,7 +764,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Inexplicable Contention +5"] = new RulesElement({
+  te = Magic_Item["Orb of Inexplicable Contention +5"] = new engine.RulesElement({
     name: "Orb of Inexplicable Contention +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4179",
@@ -772,7 +773,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Inexplicable Contention +6"] = new RulesElement({
+  te = Magic_Item["Orb of Inexplicable Contention +6"] = new engine.RulesElement({
     name: "Orb of Inexplicable Contention +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4180",
@@ -781,7 +782,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Temporal Dissonance +3"] = new RulesElement({
+  te = Magic_Item["Orb of Temporal Dissonance +3"] = new engine.RulesElement({
     name: "Orb of Temporal Dissonance +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4185",
@@ -790,7 +791,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Temporal Dissonance +4"] = new RulesElement({
+  te = Magic_Item["Orb of Temporal Dissonance +4"] = new engine.RulesElement({
     name: "Orb of Temporal Dissonance +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4186",
@@ -799,7 +800,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Temporal Dissonance +5"] = new RulesElement({
+  te = Magic_Item["Orb of Temporal Dissonance +5"] = new engine.RulesElement({
     name: "Orb of Temporal Dissonance +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4187",
@@ -808,7 +809,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Orb of Temporal Dissonance +6"] = new RulesElement({
+  te = Magic_Item["Orb of Temporal Dissonance +6"] = new engine.RulesElement({
     name: "Orb of Temporal Dissonance +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4188",
@@ -817,7 +818,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Purple Dragon Commander's Ring (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Purple Dragon Commander's Ring (paragon tier)"] = new engine.RulesElement({
     name: "Purple Dragon Commander's Ring (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4242",
@@ -826,7 +827,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Quickstride Boots (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Quickstride Boots (paragon tier)"] = new engine.RulesElement({
     name: "Quickstride Boots (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4227",
@@ -835,7 +836,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Relentless Weapon +1"] = new RulesElement({
+  te = Magic_Item["Relentless Weapon +1"] = new engine.RulesElement({
     name: "Relentless Weapon +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4147",
@@ -844,7 +845,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Relentless Weapon +2"] = new RulesElement({
+  te = Magic_Item["Relentless Weapon +2"] = new engine.RulesElement({
     name: "Relentless Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4148",
@@ -853,7 +854,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Relentless Weapon +3"] = new RulesElement({
+  te = Magic_Item["Relentless Weapon +3"] = new engine.RulesElement({
     name: "Relentless Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4149",
@@ -862,7 +863,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Relentless Weapon +4"] = new RulesElement({
+  te = Magic_Item["Relentless Weapon +4"] = new engine.RulesElement({
     name: "Relentless Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4150",
@@ -871,7 +872,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Relentless Weapon +5"] = new RulesElement({
+  te = Magic_Item["Relentless Weapon +5"] = new engine.RulesElement({
     name: "Relentless Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4151",
@@ -880,7 +881,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Relentless Weapon +6"] = new RulesElement({
+  te = Magic_Item["Relentless Weapon +6"] = new engine.RulesElement({
     name: "Relentless Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4152",
@@ -889,7 +890,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Reparation Apparatus (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Reparation Apparatus (heroic tier)"] = new engine.RulesElement({
     name: "Reparation Apparatus (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4099",
@@ -898,7 +899,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rimewrought Armor +3"] = new RulesElement({
+  te = Magic_Item["Rimewrought Armor +3"] = new engine.RulesElement({
     name: "Rimewrought Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4121",
@@ -912,7 +913,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rimewrought Armor +4"] = new RulesElement({
+  te = Magic_Item["Rimewrought Armor +4"] = new engine.RulesElement({
     name: "Rimewrought Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4122",
@@ -926,7 +927,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rimewrought Armor +5"] = new RulesElement({
+  te = Magic_Item["Rimewrought Armor +5"] = new engine.RulesElement({
     name: "Rimewrought Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4123",
@@ -940,7 +941,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rimewrought Armor +6"] = new RulesElement({
+  te = Magic_Item["Rimewrought Armor +6"] = new engine.RulesElement({
     name: "Rimewrought Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4124",
@@ -954,7 +955,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ring of Draconic Zeal (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Ring of Draconic Zeal (paragon tier)"] = new engine.RulesElement({
     name: "Ring of Draconic Zeal (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4237",
@@ -966,7 +967,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ring of the Ghost Knight (epic tier)"] = new RulesElement({
+  te = Magic_Item["Ring of the Ghost Knight (epic tier)"] = new engine.RulesElement({
     name: "Ring of the Ghost Knight (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4238",
@@ -978,7 +979,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Baleful Geas +3"] = new RulesElement({
+  te = Magic_Item["Rod of Baleful Geas +3"] = new engine.RulesElement({
     name: "Rod of Baleful Geas +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4189",
@@ -987,7 +988,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Baleful Geas +4"] = new RulesElement({
+  te = Magic_Item["Rod of Baleful Geas +4"] = new engine.RulesElement({
     name: "Rod of Baleful Geas +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4190",
@@ -996,7 +997,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Baleful Geas +5"] = new RulesElement({
+  te = Magic_Item["Rod of Baleful Geas +5"] = new engine.RulesElement({
     name: "Rod of Baleful Geas +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4191",
@@ -1005,7 +1006,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Baleful Geas +6"] = new RulesElement({
+  te = Magic_Item["Rod of Baleful Geas +6"] = new engine.RulesElement({
     name: "Rod of Baleful Geas +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4192",
@@ -1014,7 +1015,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Deadly Casting +1"] = new RulesElement({
+  te = Magic_Item["Rod of Deadly Casting +1"] = new engine.RulesElement({
     name: "Rod of Deadly Casting +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4079",
@@ -1023,7 +1024,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Deadly Casting +2"] = new RulesElement({
+  te = Magic_Item["Rod of Deadly Casting +2"] = new engine.RulesElement({
     name: "Rod of Deadly Casting +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4080",
@@ -1032,7 +1033,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Deadly Casting +3"] = new RulesElement({
+  te = Magic_Item["Rod of Deadly Casting +3"] = new engine.RulesElement({
     name: "Rod of Deadly Casting +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4081",
@@ -1041,7 +1042,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Deadly Casting +4"] = new RulesElement({
+  te = Magic_Item["Rod of Deadly Casting +4"] = new engine.RulesElement({
     name: "Rod of Deadly Casting +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4082",
@@ -1050,7 +1051,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Deadly Casting +5"] = new RulesElement({
+  te = Magic_Item["Rod of Deadly Casting +5"] = new engine.RulesElement({
     name: "Rod of Deadly Casting +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4083",
@@ -1059,7 +1060,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Deadly Casting +6"] = new RulesElement({
+  te = Magic_Item["Rod of Deadly Casting +6"] = new engine.RulesElement({
     name: "Rod of Deadly Casting +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4084",
@@ -1068,7 +1069,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Draconic Fury +1"] = new RulesElement({
+  te = Magic_Item["Rod of Draconic Fury +1"] = new engine.RulesElement({
     name: "Rod of Draconic Fury +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4193",
@@ -1077,7 +1078,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Draconic Fury +2"] = new RulesElement({
+  te = Magic_Item["Rod of Draconic Fury +2"] = new engine.RulesElement({
     name: "Rod of Draconic Fury +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4194",
@@ -1086,7 +1087,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Draconic Fury +3"] = new RulesElement({
+  te = Magic_Item["Rod of Draconic Fury +3"] = new engine.RulesElement({
     name: "Rod of Draconic Fury +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4195",
@@ -1095,7 +1096,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Draconic Fury +4"] = new RulesElement({
+  te = Magic_Item["Rod of Draconic Fury +4"] = new engine.RulesElement({
     name: "Rod of Draconic Fury +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4196",
@@ -1104,7 +1105,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Draconic Fury +5"] = new RulesElement({
+  te = Magic_Item["Rod of Draconic Fury +5"] = new engine.RulesElement({
     name: "Rod of Draconic Fury +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4197",
@@ -1113,7 +1114,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Draconic Fury +6"] = new RulesElement({
+  te = Magic_Item["Rod of Draconic Fury +6"] = new engine.RulesElement({
     name: "Rod of Draconic Fury +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4198",
@@ -1122,7 +1123,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Runic Resistance +2"] = new RulesElement({
+  te = Magic_Item["Rod of Runic Resistance +2"] = new engine.RulesElement({
     name: "Rod of Runic Resistance +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4086",
@@ -1131,7 +1132,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Runic Resistance +3"] = new RulesElement({
+  te = Magic_Item["Rod of Runic Resistance +3"] = new engine.RulesElement({
     name: "Rod of Runic Resistance +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4087",
@@ -1140,7 +1141,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Runic Resistance +4"] = new RulesElement({
+  te = Magic_Item["Rod of Runic Resistance +4"] = new engine.RulesElement({
     name: "Rod of Runic Resistance +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4088",
@@ -1149,7 +1150,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Runic Resistance +5"] = new RulesElement({
+  te = Magic_Item["Rod of Runic Resistance +5"] = new engine.RulesElement({
     name: "Rod of Runic Resistance +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4089",
@@ -1158,7 +1159,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of Runic Resistance +6"] = new RulesElement({
+  te = Magic_Item["Rod of Runic Resistance +6"] = new engine.RulesElement({
     name: "Rod of Runic Resistance +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4090",
@@ -1167,7 +1168,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of the Dragon's Heart +5"] = new RulesElement({
+  te = Magic_Item["Rod of the Dragon's Heart +5"] = new engine.RulesElement({
     name: "Rod of the Dragon's Heart +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4199",
@@ -1176,7 +1177,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Rod of the Dragon's Heart +6"] = new RulesElement({
+  te = Magic_Item["Rod of the Dragon's Heart +6"] = new engine.RulesElement({
     name: "Rod of the Dragon's Heart +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4200",
@@ -1185,7 +1186,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Ruby Lenses (paragon tier)"] = new RulesElement({
+  te = Magic_Item["Ruby Lenses (paragon tier)"] = new engine.RulesElement({
     name: "Ruby Lenses (paragon tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4232",
@@ -1197,7 +1198,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Draconic Power +1"] = new RulesElement({
+  te = Magic_Item["Staff of Draconic Power +1"] = new engine.RulesElement({
     name: "Staff of Draconic Power +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4201",
@@ -1206,7 +1207,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Draconic Power +2"] = new RulesElement({
+  te = Magic_Item["Staff of Draconic Power +2"] = new engine.RulesElement({
     name: "Staff of Draconic Power +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4202",
@@ -1215,7 +1216,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Draconic Power +3"] = new RulesElement({
+  te = Magic_Item["Staff of Draconic Power +3"] = new engine.RulesElement({
     name: "Staff of Draconic Power +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4203",
@@ -1224,7 +1225,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Draconic Power +4"] = new RulesElement({
+  te = Magic_Item["Staff of Draconic Power +4"] = new engine.RulesElement({
     name: "Staff of Draconic Power +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4204",
@@ -1233,7 +1234,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Draconic Power +5"] = new RulesElement({
+  te = Magic_Item["Staff of Draconic Power +5"] = new engine.RulesElement({
     name: "Staff of Draconic Power +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4205",
@@ -1242,7 +1243,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Draconic Power +6"] = new RulesElement({
+  te = Magic_Item["Staff of Draconic Power +6"] = new engine.RulesElement({
     name: "Staff of Draconic Power +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4206",
@@ -1251,7 +1252,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Expansion +1"] = new RulesElement({
+  te = Magic_Item["Staff of Expansion +1"] = new engine.RulesElement({
     name: "Staff of Expansion +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4207",
@@ -1260,7 +1261,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Expansion +2"] = new RulesElement({
+  te = Magic_Item["Staff of Expansion +2"] = new engine.RulesElement({
     name: "Staff of Expansion +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4208",
@@ -1269,7 +1270,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Expansion +3"] = new RulesElement({
+  te = Magic_Item["Staff of Expansion +3"] = new engine.RulesElement({
     name: "Staff of Expansion +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4209",
@@ -1278,7 +1279,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Expansion +4"] = new RulesElement({
+  te = Magic_Item["Staff of Expansion +4"] = new engine.RulesElement({
     name: "Staff of Expansion +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4210",
@@ -1287,7 +1288,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Expansion +5"] = new RulesElement({
+  te = Magic_Item["Staff of Expansion +5"] = new engine.RulesElement({
     name: "Staff of Expansion +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4211",
@@ -1296,7 +1297,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Expansion +6"] = new RulesElement({
+  te = Magic_Item["Staff of Expansion +6"] = new engine.RulesElement({
     name: "Staff of Expansion +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4212",
@@ -1305,7 +1306,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Verdant Growth +1"] = new RulesElement({
+  te = Magic_Item["Staff of Verdant Growth +1"] = new engine.RulesElement({
     name: "Staff of Verdant Growth +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4213",
@@ -1314,7 +1315,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Verdant Growth +2"] = new RulesElement({
+  te = Magic_Item["Staff of Verdant Growth +2"] = new engine.RulesElement({
     name: "Staff of Verdant Growth +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4214",
@@ -1323,7 +1324,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Verdant Growth +3"] = new RulesElement({
+  te = Magic_Item["Staff of Verdant Growth +3"] = new engine.RulesElement({
     name: "Staff of Verdant Growth +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4215",
@@ -1332,7 +1333,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Verdant Growth +4"] = new RulesElement({
+  te = Magic_Item["Staff of Verdant Growth +4"] = new engine.RulesElement({
     name: "Staff of Verdant Growth +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4216",
@@ -1341,7 +1342,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Verdant Growth +5"] = new RulesElement({
+  te = Magic_Item["Staff of Verdant Growth +5"] = new engine.RulesElement({
     name: "Staff of Verdant Growth +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4217",
@@ -1350,7 +1351,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Staff of Verdant Growth +6"] = new RulesElement({
+  te = Magic_Item["Staff of Verdant Growth +6"] = new engine.RulesElement({
     name: "Staff of Verdant Growth +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4218",
@@ -1359,7 +1360,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stonemeld Armor +2"] = new RulesElement({
+  te = Magic_Item["Stonemeld Armor +2"] = new engine.RulesElement({
     name: "Stonemeld Armor +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4094",
@@ -1372,7 +1373,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stonemeld Armor +3"] = new RulesElement({
+  te = Magic_Item["Stonemeld Armor +3"] = new engine.RulesElement({
     name: "Stonemeld Armor +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4095",
@@ -1385,7 +1386,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stonemeld Armor +4"] = new RulesElement({
+  te = Magic_Item["Stonemeld Armor +4"] = new engine.RulesElement({
     name: "Stonemeld Armor +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4096",
@@ -1398,7 +1399,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stonemeld Armor +5"] = new RulesElement({
+  te = Magic_Item["Stonemeld Armor +5"] = new engine.RulesElement({
     name: "Stonemeld Armor +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4097",
@@ -1411,7 +1412,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Stonemeld Armor +6"] = new RulesElement({
+  te = Magic_Item["Stonemeld Armor +6"] = new engine.RulesElement({
     name: "Stonemeld Armor +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4098",
@@ -1424,7 +1425,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Courage +2"] = new RulesElement({
+  te = Magic_Item["Symbol of Courage +2"] = new engine.RulesElement({
     name: "Symbol of Courage +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4159",
@@ -1436,7 +1437,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Courage +3"] = new RulesElement({
+  te = Magic_Item["Symbol of Courage +3"] = new engine.RulesElement({
     name: "Symbol of Courage +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4160",
@@ -1448,7 +1449,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Courage +4"] = new RulesElement({
+  te = Magic_Item["Symbol of Courage +4"] = new engine.RulesElement({
     name: "Symbol of Courage +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4161",
@@ -1460,7 +1461,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Courage +5"] = new RulesElement({
+  te = Magic_Item["Symbol of Courage +5"] = new engine.RulesElement({
     name: "Symbol of Courage +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4162",
@@ -1472,7 +1473,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Courage +6"] = new RulesElement({
+  te = Magic_Item["Symbol of Courage +6"] = new engine.RulesElement({
     name: "Symbol of Courage +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4163",
@@ -1484,7 +1485,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Excellence +1"] = new RulesElement({
+  te = Magic_Item["Symbol of Excellence +1"] = new engine.RulesElement({
     name: "Symbol of Excellence +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4164",
@@ -1493,7 +1494,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Excellence +2"] = new RulesElement({
+  te = Magic_Item["Symbol of Excellence +2"] = new engine.RulesElement({
     name: "Symbol of Excellence +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4165",
@@ -1502,7 +1503,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Excellence +3"] = new RulesElement({
+  te = Magic_Item["Symbol of Excellence +3"] = new engine.RulesElement({
     name: "Symbol of Excellence +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4166",
@@ -1511,7 +1512,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Excellence +4"] = new RulesElement({
+  te = Magic_Item["Symbol of Excellence +4"] = new engine.RulesElement({
     name: "Symbol of Excellence +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4167",
@@ -1520,7 +1521,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Excellence +5"] = new RulesElement({
+  te = Magic_Item["Symbol of Excellence +5"] = new engine.RulesElement({
     name: "Symbol of Excellence +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4168",
@@ -1529,7 +1530,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of Excellence +6"] = new RulesElement({
+  te = Magic_Item["Symbol of Excellence +6"] = new engine.RulesElement({
     name: "Symbol of Excellence +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4169",
@@ -1538,7 +1539,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of the Dragon +1"] = new RulesElement({
+  te = Magic_Item["Symbol of the Dragon +1"] = new engine.RulesElement({
     name: "Symbol of the Dragon +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4170",
@@ -1547,7 +1548,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of the Dragon +2"] = new RulesElement({
+  te = Magic_Item["Symbol of the Dragon +2"] = new engine.RulesElement({
     name: "Symbol of the Dragon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4171",
@@ -1556,7 +1557,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of the Dragon +3"] = new RulesElement({
+  te = Magic_Item["Symbol of the Dragon +3"] = new engine.RulesElement({
     name: "Symbol of the Dragon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4172",
@@ -1565,7 +1566,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of the Dragon +4"] = new RulesElement({
+  te = Magic_Item["Symbol of the Dragon +4"] = new engine.RulesElement({
     name: "Symbol of the Dragon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4173",
@@ -1574,7 +1575,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of the Dragon +5"] = new RulesElement({
+  te = Magic_Item["Symbol of the Dragon +5"] = new engine.RulesElement({
     name: "Symbol of the Dragon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4174",
@@ -1583,7 +1584,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Symbol of the Dragon +6"] = new RulesElement({
+  te = Magic_Item["Symbol of the Dragon +6"] = new engine.RulesElement({
     name: "Symbol of the Dragon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4175",
@@ -1592,7 +1593,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Vitriolic Weapon +1"] = new RulesElement({
+  te = Magic_Item["Vitriolic Weapon +1"] = new engine.RulesElement({
     name: "Vitriolic Weapon +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4153",
@@ -1601,7 +1602,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Vitriolic Weapon +2"] = new RulesElement({
+  te = Magic_Item["Vitriolic Weapon +2"] = new engine.RulesElement({
     name: "Vitriolic Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4154",
@@ -1610,7 +1611,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Vitriolic Weapon +3"] = new RulesElement({
+  te = Magic_Item["Vitriolic Weapon +3"] = new engine.RulesElement({
     name: "Vitriolic Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4155",
@@ -1619,7 +1620,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Vitriolic Weapon +4"] = new RulesElement({
+  te = Magic_Item["Vitriolic Weapon +4"] = new engine.RulesElement({
     name: "Vitriolic Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4156",
@@ -1628,7 +1629,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Vitriolic Weapon +5"] = new RulesElement({
+  te = Magic_Item["Vitriolic Weapon +5"] = new engine.RulesElement({
     name: "Vitriolic Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4157",
@@ -1637,7 +1638,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Vitriolic Weapon +6"] = new RulesElement({
+  te = Magic_Item["Vitriolic Weapon +6"] = new engine.RulesElement({
     name: "Vitriolic Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_4158",
@@ -1647,4 +1648,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Magic_Item = types['Magic Item'] || (types['Magic Item'] = {});
-  te = Magic_Item["Bard's Songblade +1"] = new RulesElement({
+  te = Magic_Item["Bard's Songblade +1"] = new engine.RulesElement({
     name: "Bard's Songblade +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9682",
@@ -19,7 +20,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songblade +2"] = new RulesElement({
+  te = Magic_Item["Bard's Songblade +2"] = new engine.RulesElement({
     name: "Bard's Songblade +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9683",
@@ -31,7 +32,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songblade +3"] = new RulesElement({
+  te = Magic_Item["Bard's Songblade +3"] = new engine.RulesElement({
     name: "Bard's Songblade +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9684",
@@ -43,7 +44,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songblade +4"] = new RulesElement({
+  te = Magic_Item["Bard's Songblade +4"] = new engine.RulesElement({
     name: "Bard's Songblade +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9685",
@@ -55,7 +56,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songblade +5"] = new RulesElement({
+  te = Magic_Item["Bard's Songblade +5"] = new engine.RulesElement({
     name: "Bard's Songblade +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9686",
@@ -67,7 +68,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songblade +6"] = new RulesElement({
+  te = Magic_Item["Bard's Songblade +6"] = new engine.RulesElement({
     name: "Bard's Songblade +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9687",
@@ -79,7 +80,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songbow +1"] = new RulesElement({
+  te = Magic_Item["Bard's Songbow +1"] = new engine.RulesElement({
     name: "Bard's Songbow +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9688",
@@ -91,7 +92,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songbow +2"] = new RulesElement({
+  te = Magic_Item["Bard's Songbow +2"] = new engine.RulesElement({
     name: "Bard's Songbow +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9689",
@@ -103,7 +104,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songbow +3"] = new RulesElement({
+  te = Magic_Item["Bard's Songbow +3"] = new engine.RulesElement({
     name: "Bard's Songbow +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9690",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songbow +4"] = new RulesElement({
+  te = Magic_Item["Bard's Songbow +4"] = new engine.RulesElement({
     name: "Bard's Songbow +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9691",
@@ -127,7 +128,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songbow +5"] = new RulesElement({
+  te = Magic_Item["Bard's Songbow +5"] = new engine.RulesElement({
     name: "Bard's Songbow +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9692",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Bard's Songbow +6"] = new RulesElement({
+  te = Magic_Item["Bard's Songbow +6"] = new engine.RulesElement({
     name: "Bard's Songbow +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9693",
@@ -151,7 +152,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Howling Songbow +1"] = new RulesElement({
+  te = Magic_Item["Howling Songbow +1"] = new engine.RulesElement({
     name: "Howling Songbow +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9694",
@@ -163,7 +164,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Howling Songbow +2"] = new RulesElement({
+  te = Magic_Item["Howling Songbow +2"] = new engine.RulesElement({
     name: "Howling Songbow +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9695",
@@ -175,7 +176,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Howling Songbow +3"] = new RulesElement({
+  te = Magic_Item["Howling Songbow +3"] = new engine.RulesElement({
     name: "Howling Songbow +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9696",
@@ -187,7 +188,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Howling Songbow +4"] = new RulesElement({
+  te = Magic_Item["Howling Songbow +4"] = new engine.RulesElement({
     name: "Howling Songbow +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9697",
@@ -199,7 +200,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Howling Songbow +5"] = new RulesElement({
+  te = Magic_Item["Howling Songbow +5"] = new engine.RulesElement({
     name: "Howling Songbow +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9698",
@@ -211,7 +212,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Howling Songbow +6"] = new RulesElement({
+  te = Magic_Item["Howling Songbow +6"] = new engine.RulesElement({
     name: "Howling Songbow +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9699",
@@ -223,7 +224,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Lyre of Supplication (epic tier)"] = new RulesElement({
+  te = Magic_Item["Lyre of Supplication (epic tier)"] = new engine.RulesElement({
     name: "Lyre of Supplication (epic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9724",
@@ -237,7 +238,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Mesmerizing Harp (heroic tier)"] = new RulesElement({
+  te = Magic_Item["Mesmerizing Harp (heroic tier)"] = new engine.RulesElement({
     name: "Mesmerizing Harp (heroic tier)",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9725",
@@ -251,7 +252,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Clutch of Lolth +3"] = new RulesElement({
+  te = Magic_Item["The Clutch of Lolth +3"] = new engine.RulesElement({
     name: "The Clutch of Lolth +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9730",
@@ -260,7 +261,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Clutch of Lolth +4"] = new RulesElement({
+  te = Magic_Item["The Clutch of Lolth +4"] = new engine.RulesElement({
     name: "The Clutch of Lolth +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9731",
@@ -269,7 +270,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Clutch of Lolth +5"] = new RulesElement({
+  te = Magic_Item["The Clutch of Lolth +5"] = new engine.RulesElement({
     name: "The Clutch of Lolth +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9732",
@@ -278,7 +279,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Clutch of Lolth +6"] = new RulesElement({
+  te = Magic_Item["The Clutch of Lolth +6"] = new engine.RulesElement({
     name: "The Clutch of Lolth +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9733",
@@ -287,7 +288,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fearcatcher +3"] = new RulesElement({
+  te = Magic_Item["The Fearcatcher +3"] = new engine.RulesElement({
     name: "The Fearcatcher +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9734",
@@ -296,7 +297,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fearcatcher +4"] = new RulesElement({
+  te = Magic_Item["The Fearcatcher +4"] = new engine.RulesElement({
     name: "The Fearcatcher +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9735",
@@ -305,7 +306,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fearcatcher +5"] = new RulesElement({
+  te = Magic_Item["The Fearcatcher +5"] = new engine.RulesElement({
     name: "The Fearcatcher +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9736",
@@ -314,7 +315,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Fearcatcher +6"] = new RulesElement({
+  te = Magic_Item["The Fearcatcher +6"] = new engine.RulesElement({
     name: "The Fearcatcher +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9737",
@@ -323,7 +324,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Skinsplitter +1"] = new RulesElement({
+  te = Magic_Item["The Skinsplitter +1"] = new engine.RulesElement({
     name: "The Skinsplitter +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9738",
@@ -332,7 +333,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Skinsplitter +2"] = new RulesElement({
+  te = Magic_Item["The Skinsplitter +2"] = new engine.RulesElement({
     name: "The Skinsplitter +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9739",
@@ -341,7 +342,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Skinsplitter +3"] = new RulesElement({
+  te = Magic_Item["The Skinsplitter +3"] = new engine.RulesElement({
     name: "The Skinsplitter +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9740",
@@ -350,7 +351,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Skinsplitter +4"] = new RulesElement({
+  te = Magic_Item["The Skinsplitter +4"] = new engine.RulesElement({
     name: "The Skinsplitter +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9741",
@@ -359,7 +360,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Skinsplitter +5"] = new RulesElement({
+  te = Magic_Item["The Skinsplitter +5"] = new engine.RulesElement({
     name: "The Skinsplitter +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9742",
@@ -368,7 +369,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["The Skinsplitter +6"] = new RulesElement({
+  te = Magic_Item["The Skinsplitter +6"] = new engine.RulesElement({
     name: "The Skinsplitter +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9743",
@@ -377,7 +378,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tuning Songblade +1"] = new RulesElement({
+  te = Magic_Item["Tuning Songblade +1"] = new engine.RulesElement({
     name: "Tuning Songblade +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9700",
@@ -389,7 +390,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tuning Songblade +2"] = new RulesElement({
+  te = Magic_Item["Tuning Songblade +2"] = new engine.RulesElement({
     name: "Tuning Songblade +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9701",
@@ -401,7 +402,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tuning Songblade +3"] = new RulesElement({
+  te = Magic_Item["Tuning Songblade +3"] = new engine.RulesElement({
     name: "Tuning Songblade +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9702",
@@ -413,7 +414,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tuning Songblade +4"] = new RulesElement({
+  te = Magic_Item["Tuning Songblade +4"] = new engine.RulesElement({
     name: "Tuning Songblade +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9703",
@@ -425,7 +426,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tuning Songblade +5"] = new RulesElement({
+  te = Magic_Item["Tuning Songblade +5"] = new engine.RulesElement({
     name: "Tuning Songblade +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9704",
@@ -437,7 +438,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Tuning Songblade +6"] = new RulesElement({
+  te = Magic_Item["Tuning Songblade +6"] = new engine.RulesElement({
     name: "Tuning Songblade +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9705",
@@ -449,7 +450,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songblade +1"] = new RulesElement({
+  te = Magic_Item["Venomous Songblade +1"] = new engine.RulesElement({
     name: "Venomous Songblade +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9706",
@@ -461,7 +462,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songblade +2"] = new RulesElement({
+  te = Magic_Item["Venomous Songblade +2"] = new engine.RulesElement({
     name: "Venomous Songblade +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9707",
@@ -473,7 +474,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songblade +3"] = new RulesElement({
+  te = Magic_Item["Venomous Songblade +3"] = new engine.RulesElement({
     name: "Venomous Songblade +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9708",
@@ -485,7 +486,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songblade +4"] = new RulesElement({
+  te = Magic_Item["Venomous Songblade +4"] = new engine.RulesElement({
     name: "Venomous Songblade +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9709",
@@ -497,7 +498,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songblade +5"] = new RulesElement({
+  te = Magic_Item["Venomous Songblade +5"] = new engine.RulesElement({
     name: "Venomous Songblade +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9710",
@@ -509,7 +510,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songblade +6"] = new RulesElement({
+  te = Magic_Item["Venomous Songblade +6"] = new engine.RulesElement({
     name: "Venomous Songblade +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9711",
@@ -521,7 +522,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songbow +1"] = new RulesElement({
+  te = Magic_Item["Venomous Songbow +1"] = new engine.RulesElement({
     name: "Venomous Songbow +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9712",
@@ -533,7 +534,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songbow +2"] = new RulesElement({
+  te = Magic_Item["Venomous Songbow +2"] = new engine.RulesElement({
     name: "Venomous Songbow +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9713",
@@ -545,7 +546,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songbow +3"] = new RulesElement({
+  te = Magic_Item["Venomous Songbow +3"] = new engine.RulesElement({
     name: "Venomous Songbow +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9714",
@@ -557,7 +558,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songbow +4"] = new RulesElement({
+  te = Magic_Item["Venomous Songbow +4"] = new engine.RulesElement({
     name: "Venomous Songbow +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9715",
@@ -569,7 +570,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songbow +5"] = new RulesElement({
+  te = Magic_Item["Venomous Songbow +5"] = new engine.RulesElement({
     name: "Venomous Songbow +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9716",
@@ -581,7 +582,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Venomous Songbow +6"] = new RulesElement({
+  te = Magic_Item["Venomous Songbow +6"] = new engine.RulesElement({
     name: "Venomous Songbow +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9717",
@@ -593,7 +594,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Songbow +1"] = new RulesElement({
+  te = Magic_Item["Wailing Songbow +1"] = new engine.RulesElement({
     name: "Wailing Songbow +1",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9718",
@@ -605,7 +606,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Songbow +2"] = new RulesElement({
+  te = Magic_Item["Wailing Songbow +2"] = new engine.RulesElement({
     name: "Wailing Songbow +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9719",
@@ -617,7 +618,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Songbow +3"] = new RulesElement({
+  te = Magic_Item["Wailing Songbow +3"] = new engine.RulesElement({
     name: "Wailing Songbow +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9720",
@@ -629,7 +630,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Songbow +4"] = new RulesElement({
+  te = Magic_Item["Wailing Songbow +4"] = new engine.RulesElement({
     name: "Wailing Songbow +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9721",
@@ -641,7 +642,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Songbow +5"] = new RulesElement({
+  te = Magic_Item["Wailing Songbow +5"] = new engine.RulesElement({
     name: "Wailing Songbow +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9722",
@@ -653,7 +654,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Wailing Songbow +6"] = new RulesElement({
+  te = Magic_Item["Wailing Songbow +6"] = new engine.RulesElement({
     name: "Wailing Songbow +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9723",
@@ -665,7 +666,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Whistling Weapon +2"] = new RulesElement({
+  te = Magic_Item["Whistling Weapon +2"] = new engine.RulesElement({
     name: "Whistling Weapon +2",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9744",
@@ -674,7 +675,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Whistling Weapon +3"] = new RulesElement({
+  te = Magic_Item["Whistling Weapon +3"] = new engine.RulesElement({
     name: "Whistling Weapon +3",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9745",
@@ -683,7 +684,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Whistling Weapon +4"] = new RulesElement({
+  te = Magic_Item["Whistling Weapon +4"] = new engine.RulesElement({
     name: "Whistling Weapon +4",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9746",
@@ -692,7 +693,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Whistling Weapon +5"] = new RulesElement({
+  te = Magic_Item["Whistling Weapon +5"] = new engine.RulesElement({
     name: "Whistling Weapon +5",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9747",
@@ -701,7 +702,7 @@
   });
   byID[te.id] = te;
   
-  te = Magic_Item["Whistling Weapon +6"] = new RulesElement({
+  te = Magic_Item["Whistling Weapon +6"] = new engine.RulesElement({
     name: "Whistling Weapon +6",
     type: "Magic Item",
     id: "ID_FMP_MAGIC_ITEM_9748",
@@ -711,4 +712,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

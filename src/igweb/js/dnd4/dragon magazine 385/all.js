@@ -1,0 +1,39 @@
+define(
+  [
+    './Background',
+    './class feature',
+    './Epic Destiny',
+    './Feat',
+    './Grants',
+    './Hybrid Class',
+    './Magic Item',
+    './Paragon Path',
+    './Power',
+    './Ritual',
+    './Ritual Scroll',
+    './Superior Implement',
+    './Weapon'
+  ],function() {
+    var mergedTypes = {};
+    var mergedIds = {};
+    
+    var modules = Array.prototype.slice.call(arguments);
+    modules.forEach(function(mod) {
+      var type, name, id, mt, ot;
+      for(type in mod.types) {
+        mt = mergedTypes[type] || (mergedTypes[type] = {});
+        ot = mod.types[type];
+        for(name in ot) {
+          mt[name] = ot[name];
+        }
+      }
+      for(id in mod.id) {
+        mergedIds[id] = mod.id[id];
+      }
+    });
+    
+    return {
+      types: mergedTypes,
+      id: mergedIds
+    };
+  });

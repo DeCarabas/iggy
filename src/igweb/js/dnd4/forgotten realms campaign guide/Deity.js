@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Deity = types['Deity'] || (types['Deity'] = {});
-  te = Deity["Abbathor"] = new RulesElement({
+  te = Deity["Abbathor"] = new engine.RulesElement({
     name: "Abbathor",
     type: "Deity",
     id: "ID_FMP_DEITY_52",
@@ -17,7 +18,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Akadi"] = new RulesElement({
+  te = Deity["Akadi"] = new engine.RulesElement({
     name: "Akadi",
     type: "Deity",
     id: "ID_FMP_DEITY_47",
@@ -27,7 +28,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Amaunator"] = new RulesElement({
+  te = Deity["Amaunator"] = new engine.RulesElement({
     name: "Amaunator",
     type: "Deity",
     id: "ID_FMP_DEITY_14",
@@ -35,14 +36,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=14",
     categories: ["Amaunator", "ID_FMP_DEITY_14"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_3"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_12"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_26"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_3"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_12"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_26"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Angharradh"] = new RulesElement({
+  te = Deity["Angharradh"] = new engine.RulesElement({
     name: "Angharradh",
     type: "Deity",
     id: "ID_FMP_DEITY_30",
@@ -50,13 +51,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=30",
     categories: ["Angharradh", "ID_FMP_DEITY_30"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_11"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_20"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_11"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_20"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Arvoreen"] = new RulesElement({
+  te = Deity["Arvoreen"] = new engine.RulesElement({
     name: "Arvoreen",
     type: "Deity",
     id: "ID_FMP_DEITY_53",
@@ -66,7 +67,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Asmodeus (Forgotten Realms)"] = new RulesElement({
+  te = Deity["Asmodeus (Forgotten Realms)"] = new engine.RulesElement({
     name: "Asmodeus (Forgotten Realms)",
     type: "Deity",
     id: "ID_FMP_DEITY_137",
@@ -74,14 +75,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=137",
     categories: ["Asmodeus (Forgotten Realms)", "ID_FMP_DEITY_137"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_13"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_27"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_29"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_13"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_27"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_29"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Auril"] = new RulesElement({
+  te = Deity["Auril"] = new engine.RulesElement({
     name: "Auril",
     type: "Deity",
     id: "ID_FMP_DEITY_31",
@@ -89,13 +90,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=31",
     categories: ["Auril", "ID_FMP_DEITY_31"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_23"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_34"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_23"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_34"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Baalzebul"] = new RulesElement({
+  te = Deity["Baalzebul"] = new engine.RulesElement({
     name: "Baalzebul",
     type: "Deity",
     id: "ID_FMP_DEITY_95",
@@ -105,7 +106,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Baervan Wildwanderer"] = new RulesElement({
+  te = Deity["Baervan Wildwanderer"] = new engine.RulesElement({
     name: "Baervan Wildwanderer",
     type: "Deity",
     id: "ID_FMP_DEITY_54",
@@ -115,7 +116,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Bahamut (Forgotten Realms)"] = new RulesElement({
+  te = Deity["Bahamut (Forgotten Realms)"] = new engine.RulesElement({
     name: "Bahamut (Forgotten Realms)",
     type: "Deity",
     id: "ID_FMP_DEITY_136",
@@ -123,13 +124,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=136",
     categories: ["Bahamut (Forgotten Realms)", "ID_FMP_DEITY_136"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_12"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_24"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_12"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_24"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Bahgtru"] = new RulesElement({
+  te = Deity["Bahgtru"] = new engine.RulesElement({
     name: "Bahgtru",
     type: "Deity",
     id: "ID_FMP_DEITY_55",
@@ -139,7 +140,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Bane (Forgotten Realms)"] = new RulesElement({
+  te = Deity["Bane (Forgotten Realms)"] = new engine.RulesElement({
     name: "Bane (Forgotten Realms)",
     type: "Deity",
     id: "ID_FMP_DEITY_138",
@@ -147,14 +148,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=138",
     categories: ["Bane (Forgotten Realms)", "ID_FMP_DEITY_138"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_3"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_29"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_32"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_3"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_29"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_32"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Baravar Cloakshadow"] = new RulesElement({
+  te = Deity["Baravar Cloakshadow"] = new engine.RulesElement({
     name: "Baravar Cloakshadow",
     type: "Deity",
     id: "ID_FMP_DEITY_56",
@@ -164,7 +165,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Bazim-Gorag"] = new RulesElement({
+  te = Deity["Bazim-Gorag"] = new engine.RulesElement({
     name: "Bazim-Gorag",
     type: "Deity",
     id: "ID_FMP_DEITY_48",
@@ -174,7 +175,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Bel"] = new RulesElement({
+  te = Deity["Bel"] = new engine.RulesElement({
     name: "Bel",
     type: "Deity",
     id: "ID_FMP_DEITY_89",
@@ -184,7 +185,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Belial"] = new RulesElement({
+  te = Deity["Belial"] = new engine.RulesElement({
     name: "Belial",
     type: "Deity",
     id: "ID_FMP_DEITY_92",
@@ -194,7 +195,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Berronar Truesilver"] = new RulesElement({
+  te = Deity["Berronar Truesilver"] = new engine.RulesElement({
     name: "Berronar Truesilver",
     type: "Deity",
     id: "ID_FMP_DEITY_32",
@@ -202,13 +203,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=32",
     categories: ["Berronar Truesilver", "ID_FMP_DEITY_32"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_14"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_20"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_14"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_20"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Beshaba"] = new RulesElement({
+  te = Deity["Beshaba"] = new engine.RulesElement({
     name: "Beshaba",
     type: "Deity",
     id: "ID_FMP_DEITY_33",
@@ -216,13 +217,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=33",
     categories: ["Beshaba", "ID_FMP_DEITY_33"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_9"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_28"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_9"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_28"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Brandobaris"] = new RulesElement({
+  te = Deity["Brandobaris"] = new engine.RulesElement({
     name: "Brandobaris",
     type: "Deity",
     id: "ID_FMP_DEITY_57",
@@ -232,7 +233,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Callarduran Smoothhands"] = new RulesElement({
+  te = Deity["Callarduran Smoothhands"] = new engine.RulesElement({
     name: "Callarduran Smoothhands",
     type: "Deity",
     id: "ID_FMP_DEITY_58",
@@ -242,7 +243,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Chauntea"] = new RulesElement({
+  te = Deity["Chauntea"] = new engine.RulesElement({
     name: "Chauntea",
     type: "Deity",
     id: "ID_FMP_DEITY_17",
@@ -250,14 +251,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=17",
     categories: ["Chauntea", "ID_FMP_DEITY_17"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_8"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_11"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_14"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_8"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_11"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_14"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Clangeddin Silverbeard"] = new RulesElement({
+  te = Deity["Clangeddin Silverbeard"] = new engine.RulesElement({
     name: "Clangeddin Silverbeard",
     type: "Deity",
     id: "ID_FMP_DEITY_59",
@@ -267,7 +268,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Corellon (Forgotten Realms)"] = new RulesElement({
+  te = Deity["Corellon (Forgotten Realms)"] = new engine.RulesElement({
     name: "Corellon (Forgotten Realms)",
     type: "Deity",
     id: "ID_FMP_DEITY_142",
@@ -277,7 +278,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Cyric"] = new RulesElement({
+  te = Deity["Cyric"] = new engine.RulesElement({
     name: "Cyric",
     type: "Deity",
     id: "ID_FMP_DEITY_18",
@@ -285,14 +286,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=18",
     categories: ["Cyric", "ID_FMP_DEITY_18"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_17"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_25"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_28"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_17"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_25"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_28"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Cyrrollalee"] = new RulesElement({
+  te = Deity["Cyrrollalee"] = new engine.RulesElement({
     name: "Cyrrollalee",
     type: "Deity",
     id: "ID_FMP_DEITY_60",
@@ -302,7 +303,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Deep Sashelas"] = new RulesElement({
+  te = Deity["Deep Sashelas"] = new engine.RulesElement({
     name: "Deep Sashelas",
     type: "Deity",
     id: "ID_FMP_DEITY_61",
@@ -312,7 +313,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Dispater"] = new RulesElement({
+  te = Deity["Dispater"] = new engine.RulesElement({
     name: "Dispater",
     type: "Deity",
     id: "ID_FMP_DEITY_90",
@@ -322,7 +323,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Dugmaren Brightmantle"] = new RulesElement({
+  te = Deity["Dugmaren Brightmantle"] = new engine.RulesElement({
     name: "Dugmaren Brightmantle",
     type: "Deity",
     id: "ID_FMP_DEITY_62",
@@ -332,7 +333,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Erevan Ilesere"] = new RulesElement({
+  te = Deity["Erevan Ilesere"] = new engine.RulesElement({
     name: "Erevan Ilesere",
     type: "Deity",
     id: "ID_FMP_DEITY_63",
@@ -342,7 +343,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Fenmarel Mestarine"] = new RulesElement({
+  te = Deity["Fenmarel Mestarine"] = new engine.RulesElement({
     name: "Fenmarel Mestarine",
     type: "Deity",
     id: "ID_FMP_DEITY_64",
@@ -352,7 +353,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Fzoul Chembryl"] = new RulesElement({
+  te = Deity["Fzoul Chembryl"] = new engine.RulesElement({
     name: "Fzoul Chembryl",
     type: "Deity",
     id: "ID_FMP_DEITY_65",
@@ -362,7 +363,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Garagos"] = new RulesElement({
+  te = Deity["Garagos"] = new engine.RulesElement({
     name: "Garagos",
     type: "Deity",
     id: "ID_FMP_DEITY_66",
@@ -372,7 +373,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Garl Glittergold"] = new RulesElement({
+  te = Deity["Garl Glittergold"] = new engine.RulesElement({
     name: "Garl Glittergold",
     type: "Deity",
     id: "ID_FMP_DEITY_34",
@@ -380,13 +381,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=34",
     categories: ["Garl Glittergold", "ID_FMP_DEITY_34"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_4"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_28"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_4"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_28"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Ghaunadaur"] = new RulesElement({
+  te = Deity["Ghaunadaur"] = new engine.RulesElement({
     name: "Ghaunadaur",
     type: "Deity",
     id: "ID_FMP_DEITY_19",
@@ -394,14 +395,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=19",
     categories: ["Ghaunadaur", "ID_FMP_DEITY_19"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_7"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_8"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_17"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_7"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_8"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_17"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Glasya"] = new RulesElement({
+  te = Deity["Glasya"] = new engine.RulesElement({
     name: "Glasya",
     type: "Deity",
     id: "ID_FMP_DEITY_94",
@@ -411,7 +412,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Gond"] = new RulesElement({
+  te = Deity["Gond"] = new engine.RulesElement({
     name: "Gond",
     type: "Deity",
     id: "ID_FMP_DEITY_35",
@@ -419,13 +420,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=35",
     categories: ["Gond", "ID_FMP_DEITY_35"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_4"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_13"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_4"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_13"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Grumbar"] = new RulesElement({
+  te = Deity["Grumbar"] = new engine.RulesElement({
     name: "Grumbar",
     type: "Deity",
     id: "ID_FMP_DEITY_49",
@@ -435,7 +436,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Gruumsh (Forgotten Realms)"] = new RulesElement({
+  te = Deity["Gruumsh (Forgotten Realms)"] = new engine.RulesElement({
     name: "Gruumsh (Forgotten Realms)",
     type: "Deity",
     id: "ID_FMP_DEITY_139",
@@ -443,14 +444,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=139",
     categories: ["Gruumsh (Forgotten Realms)", "ID_FMP_DEITY_139"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_7"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_23"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_24"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_7"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_23"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_24"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Hoar"] = new RulesElement({
+  te = Deity["Hoar"] = new engine.RulesElement({
     name: "Hoar",
     type: "Deity",
     id: "ID_FMP_DEITY_67",
@@ -460,7 +461,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Hruggek"] = new RulesElement({
+  te = Deity["Hruggek"] = new engine.RulesElement({
     name: "Hruggek",
     type: "Deity",
     id: "ID_FMP_DEITY_68",
@@ -470,7 +471,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Ilmater"] = new RulesElement({
+  te = Deity["Ilmater"] = new engine.RulesElement({
     name: "Ilmater",
     type: "Deity",
     id: "ID_FMP_DEITY_36",
@@ -478,13 +479,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=36",
     categories: ["Ilmater", "ID_FMP_DEITY_36"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_10"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_11"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_10"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_11"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Istishia"] = new RulesElement({
+  te = Deity["Istishia"] = new engine.RulesElement({
     name: "Istishia",
     type: "Deity",
     id: "ID_FMP_DEITY_50",
@@ -494,7 +495,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Jergal"] = new RulesElement({
+  te = Deity["Jergal"] = new engine.RulesElement({
     name: "Jergal",
     type: "Deity",
     id: "ID_FMP_DEITY_69",
@@ -504,7 +505,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Kelemvor"] = new RulesElement({
+  te = Deity["Kelemvor"] = new engine.RulesElement({
     name: "Kelemvor",
     type: "Deity",
     id: "ID_FMP_DEITY_21",
@@ -512,14 +513,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=21",
     categories: ["Kelemvor", "ID_FMP_DEITY_21"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_6"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_9"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_12"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_6"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_9"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_12"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Kossuth"] = new RulesElement({
+  te = Deity["Kossuth"] = new engine.RulesElement({
     name: "Kossuth",
     type: "Deity",
     id: "ID_FMP_DEITY_51",
@@ -529,7 +530,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Labelas Enoreth"] = new RulesElement({
+  te = Deity["Labelas Enoreth"] = new engine.RulesElement({
     name: "Labelas Enoreth",
     type: "Deity",
     id: "ID_FMP_DEITY_70",
@@ -539,7 +540,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Levistus"] = new RulesElement({
+  te = Deity["Levistus"] = new engine.RulesElement({
     name: "Levistus",
     type: "Deity",
     id: "ID_FMP_DEITY_93",
@@ -549,7 +550,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Lliira"] = new RulesElement({
+  te = Deity["Lliira"] = new engine.RulesElement({
     name: "Lliira",
     type: "Deity",
     id: "ID_FMP_DEITY_71",
@@ -559,7 +560,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Lolth (Forgotten Realms)"] = new RulesElement({
+  te = Deity["Lolth (Forgotten Realms)"] = new engine.RulesElement({
     name: "Lolth (Forgotten Realms)",
     type: "Deity",
     id: "ID_FMP_DEITY_140",
@@ -567,14 +568,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=140",
     categories: ["Lolth (Forgotten Realms)", "ID_FMP_DEITY_140"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_5"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_19"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_25"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_5"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_19"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_25"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Loviatar"] = new RulesElement({
+  te = Deity["Loviatar"] = new engine.RulesElement({
     name: "Loviatar",
     type: "Deity",
     id: "ID_FMP_DEITY_37",
@@ -582,13 +583,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=37",
     categories: ["Loviatar", "ID_FMP_DEITY_37"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_27"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_31"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_27"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_31"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Luthic"] = new RulesElement({
+  te = Deity["Luthic"] = new engine.RulesElement({
     name: "Luthic",
     type: "Deity",
     id: "ID_FMP_DEITY_38",
@@ -596,13 +597,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=38",
     categories: ["Luthic", "ID_FMP_DEITY_38"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_8"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_20"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_8"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_20"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Maglubiyet"] = new RulesElement({
+  te = Deity["Maglubiyet"] = new engine.RulesElement({
     name: "Maglubiyet",
     type: "Deity",
     id: "ID_FMP_DEITY_72",
@@ -612,7 +613,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Malar"] = new RulesElement({
+  te = Deity["Malar"] = new engine.RulesElement({
     name: "Malar",
     type: "Deity",
     id: "ID_FMP_DEITY_73",
@@ -622,7 +623,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Mammon"] = new RulesElement({
+  te = Deity["Mammon"] = new engine.RulesElement({
     name: "Mammon",
     type: "Deity",
     id: "ID_FMP_DEITY_91",
@@ -632,7 +633,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Marthammor Duin"] = new RulesElement({
+  te = Deity["Marthammor Duin"] = new engine.RulesElement({
     name: "Marthammor Duin",
     type: "Deity",
     id: "ID_FMP_DEITY_74",
@@ -642,7 +643,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Mephistopheles"] = new RulesElement({
+  te = Deity["Mephistopheles"] = new engine.RulesElement({
     name: "Mephistopheles",
     type: "Deity",
     id: "ID_FMP_DEITY_96",
@@ -652,7 +653,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Mielikki"] = new RulesElement({
+  te = Deity["Mielikki"] = new engine.RulesElement({
     name: "Mielikki",
     type: "Deity",
     id: "ID_FMP_DEITY_39",
@@ -660,13 +661,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=39",
     categories: ["Mielikki", "ID_FMP_DEITY_39"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_10"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_33"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_10"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_33"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Milil"] = new RulesElement({
+  te = Deity["Milil"] = new engine.RulesElement({
     name: "Milil",
     type: "Deity",
     id: "ID_FMP_DEITY_75",
@@ -676,7 +677,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Obould"] = new RulesElement({
+  te = Deity["Obould"] = new engine.RulesElement({
     name: "Obould",
     type: "Deity",
     id: "ID_FMP_DEITY_76",
@@ -686,7 +687,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Oghma"] = new RulesElement({
+  te = Deity["Oghma"] = new engine.RulesElement({
     name: "Oghma",
     type: "Deity",
     id: "ID_FMP_DEITY_23",
@@ -694,14 +695,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=23",
     categories: ["Oghma", "ID_FMP_DEITY_23"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_13"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_22"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_28"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_13"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_22"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_28"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Selûne"] = new RulesElement({
+  te = Deity["Selûne"] = new engine.RulesElement({
     name: "Selûne",
     type: "Deity",
     id: "ID_FMP_DEITY_24",
@@ -709,14 +710,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=24",
     categories: ["Selûne", "ID_FMP_DEITY_24"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_1"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_2"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_18"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_1"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_2"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_18"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Shar"] = new RulesElement({
+  te = Deity["Shar"] = new engine.RulesElement({
     name: "Shar",
     type: "Deity",
     id: "ID_FMP_DEITY_25",
@@ -724,14 +725,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=25",
     categories: ["Shar", "ID_FMP_DEITY_25"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_5"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_13"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_30"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_5"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_13"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_30"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Sharess"] = new RulesElement({
+  te = Deity["Sharess"] = new engine.RulesElement({
     name: "Sharess",
     type: "Deity",
     id: "ID_FMP_DEITY_78",
@@ -741,7 +742,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Shargaas"] = new RulesElement({
+  te = Deity["Shargaas"] = new engine.RulesElement({
     name: "Shargaas",
     type: "Deity",
     id: "ID_FMP_DEITY_79",
@@ -751,7 +752,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Sheela Peryroyl"] = new RulesElement({
+  te = Deity["Sheela Peryroyl"] = new engine.RulesElement({
     name: "Sheela Peryroyl",
     type: "Deity",
     id: "ID_FMP_DEITY_40",
@@ -759,13 +760,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=40",
     categories: ["Sheela Peryroyl", "ID_FMP_DEITY_40"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_15"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_33"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_15"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_33"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Shevarash"] = new RulesElement({
+  te = Deity["Shevarash"] = new engine.RulesElement({
     name: "Shevarash",
     type: "Deity",
     id: "ID_FMP_DEITY_80",
@@ -775,7 +776,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Shiallia"] = new RulesElement({
+  te = Deity["Shiallia"] = new engine.RulesElement({
     name: "Shiallia",
     type: "Deity",
     id: "ID_FMP_DEITY_81",
@@ -785,7 +786,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Siamorphe"] = new RulesElement({
+  te = Deity["Siamorphe"] = new engine.RulesElement({
     name: "Siamorphe",
     type: "Deity",
     id: "ID_FMP_DEITY_82",
@@ -795,7 +796,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Silvanus"] = new RulesElement({
+  te = Deity["Silvanus"] = new engine.RulesElement({
     name: "Silvanus",
     type: "Deity",
     id: "ID_FMP_DEITY_26",
@@ -803,14 +804,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=26",
     categories: ["Silvanus", "ID_FMP_DEITY_26"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_14"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_23"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_33"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_14"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_23"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_33"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Solonor Thelandira"] = new RulesElement({
+  te = Deity["Solonor Thelandira"] = new engine.RulesElement({
     name: "Solonor Thelandira",
     type: "Deity",
     id: "ID_FMP_DEITY_83",
@@ -820,7 +821,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Sseth"] = new RulesElement({
+  te = Deity["Sseth"] = new engine.RulesElement({
     name: "Sseth",
     type: "Deity",
     id: "ID_FMP_DEITY_41",
@@ -828,13 +829,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=41",
     categories: ["Sseth", "ID_FMP_DEITY_41"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_1"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_5"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_1"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_5"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Sune"] = new RulesElement({
+  te = Deity["Sune"] = new engine.RulesElement({
     name: "Sune",
     type: "Deity",
     id: "ID_FMP_DEITY_27",
@@ -842,14 +843,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=27",
     categories: ["Sune", "ID_FMP_DEITY_27"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_15"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_22"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_28"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_15"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_22"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_28"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Talona"] = new RulesElement({
+  te = Deity["Talona"] = new engine.RulesElement({
     name: "Talona",
     type: "Deity",
     id: "ID_FMP_DEITY_42",
@@ -857,13 +858,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=42",
     categories: ["Talona", "ID_FMP_DEITY_42"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_7"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_19"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_7"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_19"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Tempus"] = new RulesElement({
+  te = Deity["Tempus"] = new engine.RulesElement({
     name: "Tempus",
     type: "Deity",
     id: "ID_FMP_DEITY_28",
@@ -871,14 +872,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=28",
     categories: ["Tempus", "ID_FMP_DEITY_28"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_20"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_24"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_32"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_20"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_24"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_32"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Thard Harr"] = new RulesElement({
+  te = Deity["Thard Harr"] = new engine.RulesElement({
     name: "Thard Harr",
     type: "Deity",
     id: "ID_FMP_DEITY_84",
@@ -888,7 +889,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["The Red Knight"] = new RulesElement({
+  te = Deity["The Red Knight"] = new engine.RulesElement({
     name: "The Red Knight",
     type: "Deity",
     id: "ID_FMP_DEITY_77",
@@ -898,7 +899,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Tiamat (Forgotten Realms)"] = new RulesElement({
+  te = Deity["Tiamat (Forgotten Realms)"] = new engine.RulesElement({
     name: "Tiamat (Forgotten Realms)",
     type: "Deity",
     id: "ID_FMP_DEITY_141",
@@ -906,13 +907,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=141",
     categories: ["Tiamat (Forgotten Realms)", "ID_FMP_DEITY_141"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_29"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_31"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_29"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_31"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Torm"] = new RulesElement({
+  te = Deity["Torm"] = new engine.RulesElement({
     name: "Torm",
     type: "Deity",
     id: "ID_FMP_DEITY_29",
@@ -920,14 +921,14 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=29",
     categories: ["Torm", "ID_FMP_DEITY_29"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_3"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_12"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_20"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_3"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_12"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_20"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Tymora"] = new RulesElement({
+  te = Deity["Tymora"] = new engine.RulesElement({
     name: "Tymora",
     type: "Deity",
     id: "ID_FMP_DEITY_13",
@@ -935,13 +936,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=13",
     categories: ["Tymora", "ID_FMP_DEITY_13"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_2"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_16"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_2"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_16"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Umberlee"] = new RulesElement({
+  te = Deity["Umberlee"] = new engine.RulesElement({
     name: "Umberlee",
     type: "Deity",
     id: "ID_FMP_DEITY_44",
@@ -949,13 +950,13 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=44",
     categories: ["Umberlee", "ID_FMP_DEITY_44"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_21"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_23"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_21"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_23"]);
     }
   });
   byID[te.id] = te;
   
-  te = Deity["Uthgar"] = new RulesElement({
+  te = Deity["Uthgar"] = new engine.RulesElement({
     name: "Uthgar",
     type: "Deity",
     id: "ID_FMP_DEITY_85",
@@ -965,7 +966,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Valkur"] = new RulesElement({
+  te = Deity["Valkur"] = new engine.RulesElement({
     name: "Valkur",
     type: "Deity",
     id: "ID_FMP_DEITY_86",
@@ -975,7 +976,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Vaprak"] = new RulesElement({
+  te = Deity["Vaprak"] = new engine.RulesElement({
     name: "Vaprak",
     type: "Deity",
     id: "ID_FMP_DEITY_87",
@@ -985,7 +986,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Vergadain"] = new RulesElement({
+  te = Deity["Vergadain"] = new engine.RulesElement({
     name: "Vergadain",
     type: "Deity",
     id: "ID_FMP_DEITY_88",
@@ -995,7 +996,7 @@
   });
   byID[te.id] = te;
   
-  te = Deity["Waukeen"] = new RulesElement({
+  te = Deity["Waukeen"] = new engine.RulesElement({
     name: "Waukeen",
     type: "Deity",
     id: "ID_FMP_DEITY_45",
@@ -1003,11 +1004,15 @@
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/deity.aspx?id=45",
     categories: ["Waukeen", "ID_FMP_DEITY_45"],
     rules: function(model) {
-      model.grant(elements.id["ID_FMP_DOMAIN_3"]);
-      model.grant(elements.id["ID_FMP_DOMAIN_13"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_3"]);
+      model.grant(model.elements.id["ID_FMP_DOMAIN_13"]);
     }
   });
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});

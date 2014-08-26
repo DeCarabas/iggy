@@ -1,13 +1,14 @@
-(function(global, undefined) {
+define(['engine', 'dnd4model'], function(engine, dnd4model) {
   "use strict";
   
-  var elements = global.elements || (global.elements = {});
-  var types = elements.types || (elements.types = {});
-  var byID = elements.id || (elements.id = {});
+  var abilitymod = dnd4model.abilitymod;
+  
+  var types = {};
+  var byID = {};
   var te;
   
   var Language = types['Language'] || (types['Language'] = {});
-  te = Language["All"] = new RulesElement({
+  te = Language["All"] = new engine.RulesElement({
     name: "All",
     type: "Language",
     id: "ID_INTERNAL_LANGUAGE_ALL",
@@ -16,7 +17,7 @@
   });
   byID[te.id] = te;
   
-  te = Language["Secret Language"] = new RulesElement({
+  te = Language["Secret Language"] = new engine.RulesElement({
     name: "Secret Language",
     type: "Language",
     id: "ID_INTERNAL_LANGUAGE_SECRET_LANGUAGE",
@@ -26,4 +27,8 @@
   byID[te.id] = te;
   
   
-})(this);
+  return {
+    types: types,
+    id: byID
+  };
+});
