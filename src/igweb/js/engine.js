@@ -4,7 +4,7 @@
 define([],function() {
   "use strict";
 
-  function log(message) { console.log(message); };
+  function log(message) { console.log(message); }
 
   var Stat = function () { };
   Stat.prototype = {
