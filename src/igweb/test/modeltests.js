@@ -2,12 +2,12 @@
 // TODO: getGrantByType, override, stats are case insensitive, rawStatObject, Stat.getModifier
 
 // These are for QUnit: http://docs.jquery.com/QUnit
-(function(global, undefined) {
+define(['../js/engine'], function(engine) {
 
 module("Model tests");
 test('Stat tests', function () {
 
-    var stat = new Stat();
+    var stat = new engine.Stat();
 
     stat.baseValue = 17;
     equal(stat.getValue(), 17, "baseValue sets the value");
@@ -48,13 +48,13 @@ test('Stat tests', function () {
 test('Constant statadd', function() {
   expect(3);
 
-  var element = new RulesElement({
+  var element = new engine.RulesElement({
     rules: function(model) {
       model.statadd('speed', 6);
     }
   });
        
-  var model = new Model();
+  var model = new engine.Model();
        
   equal(model.stat('speed'), 0, 'Speed before grant');
   model.grant(element);
@@ -67,13 +67,13 @@ test('Constant statadd', function() {
 test('Text statadd', function() {
   expect(3);
 
-  var element = new RulesElement({
+  var element = new engine.RulesElement({
     rules: function(model) {
       model.statadd('Size', 'Medium');
     }
   });
 
-  var model = new Model();
+  var model = new engine.Model();
        
   ok(!model.stat('Size'), 'Size should be undefined');
   model.grant(element);
@@ -85,13 +85,13 @@ test('Text statadd', function() {
 test('Function statadd', function() {
   expect(3);
        
-  var element = new RulesElement({
+  var element = new engine.RulesElement({
     rules: function(model) {
       model.statadd('ToHit', function() { return 4; });
     }
   });
        
-  var model = new Model();
+  var model = new engine.Model();
        
   ok(!model.stat('ToHit'), 'Size should be undefined');
   model.grant(element);
@@ -103,19 +103,19 @@ test('Function statadd', function() {
 test('Dependent statadd', function() {
   expect(8);
        
-  var elementOne = new RulesElement({
+  var elementOne = new engine.RulesElement({
     rules: function(model) {
       model.statadd('x', function() { return model.stat('y'); });
     }
   });
 
-  var elementTwo = new RulesElement({
+  var elementTwo = new engine.RulesElement({
     rules: function(model) {
       model.statadd('y', 7);
     }
   });
        
-  var model = new Model();
+  var model = new engine.Model();
        
   equal(model.stat('x'), 0, "x before anything");
   equal(model.stat('y'), 0, "y before anything");
@@ -132,19 +132,19 @@ test('Dependent statadd', function() {
 
 test('Transitive grants', function() {
        
-  var elementOne = new RulesElement({
+  var elementOne = new engine.RulesElement({
     rules: function(model) {
       model.grant(elementTwo);
     }
   });
 
-  var elementTwo = new RulesElement({
+  var elementTwo = new engine.RulesElement({
     rules: function(model) {
       model.statadd('y', 7);
     }
   });
        
-  var model = new Model();
+  var model = new engine.Model();
        
   equal(model.stat('y'), 0, "y before anything");
   model.grant(elementOne);
@@ -154,16 +154,17 @@ test('Transitive grants', function() {
 });
 
 
+var rules = {};
+
 module("Model Tests: Choice Tests", {
   setup: function() {
     var e;
 
-    var elements = global.elements || (global.elements = {});
-    var types = elements.types || (elements.types = {});
-    var byID = elements.id || (elements.id = {});
+    var types = rules.types || (rules.types = {});
+    var byID = rules.id || (rules.id = {});
 
     var T1 = types["T1"] || (types["T1"] = {});
-    e = T1["Dwarf"] = new RulesElement({ 
+    e = T1["Dwarf"] = new engine.RulesElement({ 
         name: "Dwarf",
         categories: ['a', 'b'],
         rules: function(model) {
@@ -172,7 +173,7 @@ module("Model Tests: Choice Tests", {
     });
     byID[e.id] = e;
 
-    e = T1["Dragonborn"] = new RulesElement({ 
+    e = T1["Dragonborn"] = new engine.RulesElement({ 
         name: "Dragonborn",
         categories: ['b', 'c'],
         rules: function(model) {
@@ -181,7 +182,7 @@ module("Model Tests: Choice Tests", {
     });
     byID[e.id] = e;
 
-    e = T1["Neverseen"] = new RulesElement({
+    e = T1["Neverseen"] = new engine.RulesElement({
       name: "Neverseen",
       categories: ['c', 'd'],
       prereqs: function(model) { return false; }
@@ -189,7 +190,7 @@ module("Model Tests: Choice Tests", {
     byID[e.id] = e;
 
     var T2 = types["T2"] || (types["T2"] = {});
-    e = T2["A"] = new RulesElement({
+    e = T2["A"] = new engine.RulesElement({
       name: "foo",
       rules: function(model) {
           model.select('T3', 1);
@@ -198,7 +199,7 @@ module("Model Tests: Choice Tests", {
     byID[e.id] = e;
 
     var T3 = types["T3"] || (types["T3"] = {});
-    e = T3["A"] = new RulesElement({
+    e = T3["A"] = new engine.RulesElement({
         name: "bar",
         rules: function(model) {
           model.statadd('X', 10);
@@ -208,15 +209,13 @@ module("Model Tests: Choice Tests", {
 
   },
   teardown: function() {
-    delete global.elements.types["T1"];
-    delete global.elements.types["T2"];
-    delete global.elements.types["T3"];
+    rules = {};
   }
 });
 
 test('Basic choices', function() {
 
-  var element = new RulesElement({
+  var element = new engine.RulesElement({
     rules: function(model) {
       model.select("T1", 1);
       model.select("T1", 1, {
@@ -225,7 +224,7 @@ test('Basic choices', function() {
     }
   });
 
-  var model = new Model();
+  var model = new engine.Model(rules);
   model.grant(element);
   var choices = model.getChoices("T1");
   equal(choices.length, 2, "Number of choices for T1");
@@ -240,9 +239,9 @@ test('Basic choices', function() {
 
   var choice = choices[0];
   equal(model.stat('X'), 0, "X before choosing");
-  choice.choice = elements.types["T1"]["Dwarf"];
+  choice.choice = rules.types["T1"]["Dwarf"];
   equal(model.stat('X'), 10, "X after choosing Dwarf");
-  choice.choice = elements.types["T1"]["Dragonborn"];
+  choice.choice = rules.types["T1"]["Dragonborn"];
   equal(model.stat('X'), 20, "X after choosing Dragonborn");
   choice.choice = null;
   equal(model.stat('X'), 0, "X after choosing nothing");
@@ -251,13 +250,13 @@ test('Basic choices', function() {
 
 test('Removing a choice ungrants the selection', function() {
 
-  var element = new RulesElement({
+  var element = new engine.RulesElement({
     rules: function(model) {
       model.select("T1", 1);
     }
   });
 
-  var model = new Model();
+  var model = new engine.Model(rules);
   model.grant(element);
 
   var choices = model.getChoices("T1");
@@ -277,13 +276,13 @@ test('Removing a choice ungrants the selection', function() {
 
 test('Transitive grant/ungrant with choices', function() {
 
-  var element = new RulesElement({
+  var element = new engine.RulesElement({
     rules: function(model) {
       model.select("T2", 1);
     }
   });
 
-  var model = new Model();
+  var model = new engine.Model(rules);
   equal(model.getChoices("T2").length, 0, "Number of T2 choices before grant");
   equal(model.getChoices("T3").length, 0, "Number of T3 choices before grant");
   equal(model.stat('X'), 0, "X before grant");
@@ -322,5 +321,4 @@ test('Transitive grant/ungrant with choices', function() {
   equal(model.stat('X'), 0, "X after remove");
 });
 
-
-})(this);
+});

@@ -1,13 +1,11 @@
 //
 // Character builder UI
 //
-(function (global, undefined) {
+define(['jquery'],function($) {
   "use strict";
 
   var showZero = true; // For debugging.
   var topOfPage = $("#sheetHeader").height(); // For magical alignment.
-
-  var model = new Model();
 
   var uiElements = {};
   var wizardFirst;
@@ -17,9 +15,9 @@
     this._model = model;
     this._rootElement = $(element);
 
-    this._listTarget = $(global.window.document.getElementById(this._rootElement.attr("data-listTarget")));
+    this._listTarget = $(window.document.getElementById(this._rootElement.attr("data-listTarget")));
     this._detailName = this._rootElement.attr("data-detailTarget");
-    this._detailTarget = $(global.window.document.getElementById(this._detailName));
+    this._detailTarget = $(window.document.getElementById(this._detailName));
 
     this._choiceType = this._rootElement.attr("data-boundChoice");
 
@@ -119,7 +117,7 @@
     }
   }
 
-  function setupUI() {
+  function setupUI(model) {
     var uis = $(".chooseUI");
     uis.each(function () {
       uiElements[this.id] = new ChoiceUI(model, this);
@@ -208,7 +206,7 @@
     });
   }
 
-  function bindFields() {
+  function bindFields(model) {
     // TODO: Stats aren't bound; need to validate integers and report
     // errors and the like. If only HTML5 <input type="number"
     // weren't so crap.
@@ -226,24 +224,10 @@
     });
   }
 
-  /* Haxors for now: initial setup to test binding */
-  model.grant(global.elements.types["Level"]["1"]);
-  //model.grant(global.elements.types["Race"]["Elf"]);
-  //model.grant(global.elements.types["Class"]["Ranger"]);
-  //model.getChoices("Class")[0].choice = global.elements.types["Class"]["Ranger"];
-
-  model.rawStatObject("dex").baseValue = 18;
-  model.rawStatObject("str").baseValue = 13;
-  model.rawStatObject("wis").baseValue = 13;
-  model.rawStatObject("con").baseValue = 10;
-  model.rawStatObject("int").baseValue = 10;
-  model.rawStatObject("cha").baseValue = 8;
-
-  bindFields();
-  setupUI();
-
-  wizardNext();
-
-})(this);
-
+  return {
+    bindFields: bindFields,
+    setupUI: setupUI,
+    wizardNext: wizardNext,
+  };
+});
 

@@ -5,22 +5,16 @@
     <link rel="stylesheet" href="qunit/qunit-1.15.0.css" media="screen" />
 
     <script src="qunit/qunit-1.15.0.js"></script>
-    <script src="misc.js"></script>
-      
+    <script type="text/javascript">
+      // Don't get any ideas, QUnit!
+      QUnit.config.autostart = false;
+    </script>
+    
     <!-- reference your own javascript files here -->
     <script src="../js/libs/modernizr-1.6.min.js"></script>
-  
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-    <script src="../js/plugins.js"></script> 
-    <script src="../js/script.js"></script>
-    <script src="../js/model.js"></script>
-    <script src="../js/dnd4model.js"></script> 
-    <script src="../js/binding.js"></script>
 
     <!-- test runner files -->
-    <script src="modeltests.js"></script>
-    <script src="dnd4tests.js"></script>
-    <script src="bindingtests.js"></script>
+    <script data-main="tests" src="../js/require.js"></script>
   </head>
   <body class="flora">
     <h1 id="qunit-header">IgorWeb Test Suite</h1>

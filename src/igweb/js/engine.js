@@ -1,11 +1,10 @@
 //
 // This contains the implementation of the rules engine.
 //
-
-(function(global, undefined) {
+define([],function() {
   "use strict";
 
-  var log = global.testLog || function log(message) { console.log(message); };
+  function log(message) { console.log(message); };
 
   var Stat = function () { };
   Stat.prototype = {
@@ -101,7 +100,7 @@
     getValidElements: function() {
       var that = this;
       var r = [];
-      var eot = (global.elements && global.elements.types && global.elements.types[this.type]);
+      var eot = (this.model.elements.types[this.type]);
       Object.keys(eot || {}).forEach(function(name) {
         var element = eot[name];
         if ((!that.filter || that.filter(that.model, element)) && 
@@ -122,11 +121,12 @@
   });
 
 
-  var Model = function() {
+  var Model = function(elements) {
     this._granted = {};
     this._stats = {};
     this._trackingInfo = null;
     this._choices = {};
+    this.elements = elements;
   };
   Model.prototype = {
     alias: function (stat, alias) {
@@ -143,12 +143,12 @@
       return cs;
     },
     getGrantsByType: function(type) {
-      if (!global.elements.id) return null;
+      if (!this.elements.id) return null;
 
       var result = [];
       var grants = Object.keys(this._granted);
       for(var i = 0; i < grants.length; i++) {
-        var elem = global.elements.id[grants[i]];
+        var elem = this.elements.id[grants[i]];
         if (elem && elem.type === type) { result.push(elem); }
       }
 
@@ -248,8 +248,9 @@
     }
   };
 
-  global.Stat = Stat;
-  global.Model = Model;
-  global.RulesElement = RulesElement;
-
-}) (this);
+  return {
+    Stat: Stat,
+    Model: Model,
+    RulesElement: RulesElement
+  };
+});
