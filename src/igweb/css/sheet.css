@@ -327,7 +327,7 @@ tr.abilSpacer
 
 .mutiLineText
 {
-    width: 295px;
+    width: 294px;
     resize: none;
     border-style: none;
     font-family: Calibri, Sans-Serif;
@@ -389,18 +389,24 @@ input[type="number"] {
     -webkit-appearance: textfield;
 }
 
+textArea {
+    overflow: auto;
+}
 
 /****************************************************************
  * Highlighting Elements that want selections
  ****************************************************************/
 .choiceAvailable
 {
-    margin:          -2px;
+    padding:          2px;
+    margin:          -4px;
     border-radius:    4px;
     border-width:     2px;
     border-style:     solid;
     border-color:     green;
     background-color: lightgreen;
+    z-index:          10;
+    position:         relative;
 }
 
 .choiceAvailable input
