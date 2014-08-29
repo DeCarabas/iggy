@@ -419,6 +419,40 @@ textArea {
     background-color: lightgreen;
 }
 
+.choiceAvailable:hover
+{
+    animation: greenIn 0.3s;
+    -webkit-animation: greenIn 0.3s;
+    background-color:  #75C175;
+    cursor: pointer;
+}
+
+.choiceAvailable:hover input
+{
+    animation: greenIn 0.3s;
+    -webkit-animation: greenIn 0.3s;
+    background-color: #75C175;
+    cursor: pointer;
+}
+
+.choiceAvailable:hover textarea
+{
+    animation: greenIn 0.3s;
+    -webkit-animation: greenIn 0.3s;
+    background-color: #75C175;
+    cursor: pointer;
+}
+
+@-webkit-keyframes greenIn {
+  from { background-color: lightgreen; }
+  to   { background-color: #75C175; }
+}
+
+@keyframes greenIn {
+  from { background-color: lightgreen; }
+  to   { background-color: #75C175; }
+}
+
 /****************************************************************
  * Selection UI
  ****************************************************************/
