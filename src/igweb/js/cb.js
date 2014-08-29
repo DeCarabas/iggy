@@ -19,7 +19,6 @@ define(
             model.rawStatObject("int").baseValue = 10;
             model.rawStatObject("cha").baseValue = 8;
     
-            sheetui.bindFields(model);
             sheetui.setupUI(model);
 
             // sheetui.wizardNext();
