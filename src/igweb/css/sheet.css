@@ -4,10 +4,6 @@
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
 .hidden { display: none; visibility: hidden; } 
 
-input[type="number"] {
-    -webkit-appearance: textfield;
-}
-
 .header
 {
     background-color: #444;
@@ -378,6 +374,15 @@ tr.abilSpacer
 }
 
 /****************************************************************
+ * Form controls
+ ****************************************************************/
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+}
+
+
+/****************************************************************
  * Highlighting Elements that want selections
  ****************************************************************/
 .choiceAvailable
@@ -387,6 +392,16 @@ tr.abilSpacer
     border-style: solid;
     border-color: green;
     background-color: lightgreen;
+}
+
+.choiceAvailable input
+{
+    background-color: #90EE90;
+}
+
+.choiceAvailable textarea
+{
+    background-color: #90EE90;
 }
 
 /****************************************************************

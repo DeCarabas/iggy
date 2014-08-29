@@ -60,7 +60,7 @@
           Level
         </div>
         <div class="grid_2">
-          <div data-boundChoice="Race">
+          <div data-boundChoice="Class">
             <input data-boundGrant="Class" class="writeHere" readonly="true" />
             Class
           </div>
@@ -94,8 +94,10 @@
           Age
         </div>
         <div class="grid_1">
-          <input data-boundGrant="Gender" class="writeHere" readonly="true" />
-          Gender
+          <div data-boundChoice="Gender">
+            <input data-boundGrant="Gender" class="writeHere" readonly="true" />
+            Gender
+          </div>
         </div>
         <div class="grid_1">
           <input data-boundText="Height" class="writeHere" />
@@ -106,12 +108,16 @@
           Weight
         </div>
         <div class="grid_1">
-          <input data-boundGrant="alignment" class="writeHere" readonly="true" />
-          Alignment
+          <div data-boundChoice="alignment">
+            <input data-boundGrant="alignment" class="writeHere" readonly="true" />
+            Alignment
+          </div>
         </div>
         <div class="grid_1">
-          <input data-boundGrant="Deity" class="writeHere" readonly="true" />
-          Deity
+          <div data-boundChoice="Deity">
+            <input data-boundGrant="Deity" class="writeHere" readonly="true" />
+            Deity
+          </div>
         </div>
         <div class="grid_3">
           <input data-boundText="company" class="writeHere" />
@@ -471,8 +477,10 @@
           </div>
           <h3>Race Features</h3>
           <textarea data-boundGrant="Racial Trait" class="mutiLineText raceFeatures"></textarea>
-          <h3>Class/Path/Destiny Features</h3>
-          <textarea data-boundGrant="class feature" class="mutiLineText classFeatures"></textarea>
+          <div data-boundChoice="Background,Background Choice,Theme">
+            <h3>Class/Path/Destiny Features</h3>
+            <textarea data-boundGrant="class feature" class="mutiLineText classFeatures"></textarea>
+          </div>
           <h3>Languages Known</h3>
           <textarea data-boundGrant="Language" class="mutiLineText languagesKnown"></textarea>
         </div>
@@ -586,8 +594,10 @@
                 <td class="attackBonus"><input name="damageMiscBonusTwoTwo" /></td>
             </tr>
           </table>
-          <h3>Feats</h3>
-          <textarea data-boundGrant="Feat" class="mutiLineText feats"></textarea>          
+          <div data-boundChoice="Feat">
+            <h3>Feats</h3>
+            <textarea data-boundGrant="Feat" class="mutiLineText feats"></textarea>
+          </div>
         </div>
         <div class="clear"></div>
     </div>

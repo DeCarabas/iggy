@@ -163,11 +163,17 @@ define(['jquery'],function($) {
   function updateFields(model) {
     $("[data-boundChoice]:visible").each(function() {
       var elem = $(this);
-      var choiceName = elem.attr("data-boundChoice");
-      var choices = model.getChoices(choiceName);
+      var choiceName = elem.attr("data-boundChoice") || "";
+      
+      var hasChoice = false;
+      var names = choiceName.split(',');
+      for(var i = 0; i < names.length && !hasChoice; i++) {
+        var choices = model.getChoices(names[i]);
+        for(var j = 0; j < choices.length && !hasChoice; j++) {
+          hasChoice = choices[j].choice === null;
+        }
+      }
 
-      var hasChoice = choices.map(function(v) { return v.choice === null; })
-                             .reduce(function(hc, v) { return hc || v; }, false);
       if (hasChoice) {
         elem.addClass("choiceAvailable");
       } else {
