@@ -603,28 +603,36 @@
     </div>
   </div>
 
-  <div id="chooseClass" 
-       class="chooseUI wizardFirst" 
-       data-boundChoice="Class" 
-       data-detailTarget="classDetail" 
-       data-listTarget="classList"
-       data-nextChoice="chooseRace"
-  >
+  <div id="chooseControl" class="chooseUI">
     <div class="container_16">
-        <div class="chooseUIWrapper">
-            <div class="grid_12">
-                <h1>Choose a class</h1>
-            </div>          
-            <div class="grid_3 whatButton">
-                <a><i>What's a class?</i></a>
-            </div>
-            <hr />
-            <div class="grid_4">
-                <div class="elementList choicePanel" id="classList">
-                    <!-- Templating? -->
-                </div>
-            </div>
-            <div class="grid_11 choicePanel detailPanel_11" id="classDetail">
+      <div class="chooseUIWrapper">
+        <div class="grid_12">
+          <h1>Choose a class</h1>
+        </div>          
+        <div class="grid_3 whatButton">
+          <a><i>What's a class?</i></a>
+        </div>
+        <hr />
+        <div class="grid_4">
+          <div class="elementList choicePanel">
+            <!-- Templating? -->
+          </div>
+        </div>
+        <div class="grid_12 elementDetail choicePanel detailPanel_11">
+          <div class="whatPanel"> </div>
+        </div>
+        <hr />
+        <div class="grid_2 prefix_14">
+          <div class="uiButton">
+            <a>OK</a>
+          </div>
+        </div>            
+        <hr />
+      </div>      
+    </div>      
+  </div>
+
+  <!--
                 <div class="whatPanel">
                     <h2>About Classes</h2>
                     <p>Your class is the primary definition of what your character can 
@@ -638,36 +646,7 @@
                     A flamboyant rogue with a dagger up your sleeve? A tatooed wizard with
                     a crystal staff? The choice is yours.</p>
                 </div>
-            </div>
-            <hr />
-            <div class="grid_2 prefix_13 suffix_1">
-                <a class="uiButton" data-command="nextStep">Next step</a>
-            </div>            
-            <hr />
-        </div>      
-    </div>  
-  </div>
 
-  <div id="chooseRace" 
-       class="chooseUI" 
-       data-boundChoice="Race" 
-       data-listTarget="raceList" 
-       data-detailTarget="raceDetail">
-    <div class="container_16">
-        <div class="chooseUIWrapper">
-            <div class="grid_12">
-                <h1>Choose a race</h1>
-            </div>          
-            <div class="grid_3 whatButton">
-                <a><i>What's a race?</i></a>
-            </div>
-            <hr />
-            <div class="grid_4">
-                <div class="elementList  choicePanel" id="raceList">
-                    <!-- Templating? -->
-                </div>
-            </div>
-            <div class="grid_11 choicePanel detailPanel_11" id="raceDetail">
                 <div class="whatPanel">
                     <h2>About Races</h2>
                     <p>A variety of cultures and societies populate the world of the 
@@ -682,20 +661,8 @@
                     your ability scores and powers but also provides the first cues for
                     building your character's story.</p>
                 </div>
-            </div>
-            <hr />
-            <div class="grid_2 prefix_13 suffix_1">
-                <a class="uiButton" data-command="nextStep">Next step</a>
-            </div>
-            <hr />
-        </div>
-    </div>
-  </div>
+  -->
 
-  <div id="chooseAbilityScores">
-
-  </div>
- 
   <!-- All code kicks off here. -->
   <script data-main="js/main" src="js/require.js"></script>
     

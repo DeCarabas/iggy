@@ -58,7 +58,7 @@ define(['jquery'], function($) {
     });
   }
 
-  function updateBoundChoice(element, model) {
+  function updateBoundChoice(element, model, onClick) {
     var elem = $(element);
     var choiceName = elem.attr("data-boundChoice") || "";
       
@@ -73,6 +73,7 @@ define(['jquery'], function($) {
 
     if (hasChoice) {
       elem.addClass("choiceAvailable");
+      elem.click(onClick);
     } else {
       elem.removeClass("choiceAvailable");
     }

@@ -468,6 +468,7 @@ textArea {
 {
     background-color: white;
     display: none;  /* Start life hidden because. */
+    z-index: 20;
 }
 
 .chooseUIWrapper
@@ -513,8 +514,9 @@ textArea {
 
 .detailPanel_11
 {
-    border: 1px solid #444; 
-    background-color: White; 
+    border: 1px solid #444;
+    margin: -1px;
+    background-color: White;
 }
 
 
@@ -545,7 +547,6 @@ textArea {
 
 .uiButton
 {    
-    padding: 5px;
     text-align: center;
     font-size: 16px;
     border: 1px solid #444;
