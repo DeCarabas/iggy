@@ -4,8 +4,8 @@
 define(['../js/binding', '../js/engine', 'jquery'], function(binding, engine, $) {
 
   module("Binding tests");
-  test('Basic tests', function () {
-    $('#qunit-fixture').html('<p id="test-x" x-score="x"></p><p id="test-y" x-score="y"></p>');
+  test('data-boundStat', function () {
+    $('#qunit-fixture').html('<input id="test-x" data-boundStat="x"></input><input id="test-y" data-boundStat="y"></input>');
     var element = new engine.RulesElement({
       rules: function(model) {
         model.statadd('x', 6);
@@ -15,15 +15,15 @@ define(['../js/binding', '../js/engine', 'jquery'], function(binding, engine, $)
 
     var model = new engine.Model();
 
-    binding.updateStats(model);
-    equal($("#test-x").text(), "0", "Before grant, x value");
-    equal($("#test-y").text(), "0", "Before grant, y value");
+    binding.updateFields(model);
+    equal($("#test-x").val(), "0", "Before grant, x value");
+    equal($("#test-y").val(), "0", "Before grant, y value");
     
     model.grant(element);
-    binding.updateStats(model);
+    binding.updateFields(model);
     
-    equal($("#test-x").text(), "6", "After grant, x value");
-    equal($("#test-y").text(), "8", "After grant, y value");
+    equal($("#test-x").val(), "6", "After grant, x value");
+    equal($("#test-y").val(), "8", "After grant, y value");
   });
 
 });
