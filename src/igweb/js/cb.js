@@ -22,7 +22,7 @@ define(
             sheetui.bindFields(model);
             sheetui.setupUI(model);
 
-            sheetui.wizardNext();
+            // sheetui.wizardNext();
         }
     };
 });

@@ -121,6 +121,7 @@ define(['jquery'],function($) {
     uis.each(function () {
       uiElements[this.id] = new ChoiceUI(model, this);
     });
+    updateFields(model);
   }
 
   var special = {
@@ -160,6 +161,19 @@ define(['jquery'],function($) {
   };
 
   function updateFields(model) {
+    $("[data-boundChoice]:visible").each(function() {
+      var elem = $(this);
+      var choiceName = elem.attr("data-boundChoice");
+      var choices = model.getChoices(choiceName);
+
+      var hasChoice = choices.map(function(v) { return v.choice === null; })
+                             .reduce(function(hc, v) { return hc || v; }, false);
+      if (hasChoice) {
+        elem.addClass("choiceAvailable");
+      } else {
+        elem.removeClass("choiceAvailable");
+      }
+    });
     $("[data-boundStat]:visible").each(function () {
       var value;
       var elem = $(this);
