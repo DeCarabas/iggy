@@ -159,7 +159,8 @@ define(['./log'],function(log) {
       var oldTrackingInfo;
       var ti = this._granted[element.id];
       if (!ti) {
-        log("Granting [" + element.type + "]:[" + element.name + "]");
+        var tag = "Granting [" + element.type + "]:[" + element.name + "]";
+        log.group(tag);
         oldTrackingInfo = this._trackingInfo;
         ti = this._trackingInfo = { refs: 1, undo: [] };
         this._granted[element.id] = this._trackingInfo;
@@ -167,15 +168,16 @@ define(['./log'],function(log) {
         if (element.rules) { element.rules(this); }
 
         this._trackingInfo = oldTrackingInfo;
+        log.groupEnd(tag);
       } else {
         ti.refs++;
-        log("[" + element.type + "]:[" + element.name + "] refs: " + ti.refs);
+        log.log("[" + element.type + "]:[" + element.name + "] refs: " + ti.refs);
       }
 
       if (this._trackingInfo) {
         var that = this;
         this._trackingInfo.undo.push(function() {
-          log("Undoing grant [" + element.type + "]:[" + element.name + "]");
+          log.log("Undoing grant [" + element.type + "]:[" + element.name + "]");
           that.remove(element);
         });
       }
@@ -201,12 +203,14 @@ define(['./log'],function(log) {
     remove: function(element) {
       var tracking = this._granted[element.id];
       if (tracking) {
-        log("Removing [" + element.type + "]:[" + element.name + "]");
+        log.log("Removing [" + element.type + "]:[" + element.name + "]");
         tracking.refs--;
-        log("[" + element.type + "]:[" + element.name + "] refs: " + tracking.refs);
+        log.log("[" + element.type + "]:[" + element.name + "] refs: " + tracking.refs);
         if (tracking.refs === 0) {
+          log.group("cleaning up");
           tracking.undo.forEach(function (ti) { ti(); });
           delete this._granted[element.id];
+          log.groupEnd("cleaning up");
         }
       }
     },
@@ -215,11 +219,11 @@ define(['./log'],function(log) {
       var ec = this._choices[type] || (this._choices[type] = {});
       ec[nc.id] = nc;
 
-      log("Selecting ("+type+","+number+") as " + nc.id);
+      log.log("Selecting ("+type+","+number+") as " + nc.id);
 
       if (this._trackingInfo) { 
         this._trackingInfo.undo.push(function () { 
-            log("Undoing selection " + nc.id +" ("+type+","+number+")");
+            log.log("Undoing selection " + nc.id +" ("+type+","+number+")");
             nc.choice = null;
             delete ec[nc.id];
         });

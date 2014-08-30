@@ -1,4 +1,7 @@
 define([], function() {
-  return function log(message) {
+  return {
+    log: function log(message) { },
+    group: function group(tag) { },
+    groupEnd: function groupEnd(tag) { }
   };
 });
