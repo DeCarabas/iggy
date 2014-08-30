@@ -13,6 +13,8 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     this._model = model;
     this._rootElement = $(element);
 
+    this._chooseTitle = this._rootElement.find(".chooseTitle");
+    this._whatButton = this._rootElement.find(".whatButton");
     this._listTarget = this._rootElement.find(".elementList");
     this._detailTarget = this._rootElement.find(".elementDetail");
 
@@ -34,6 +36,10 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     show: function (type) {
       if (!this.visible) {
         if (selectedUI && selectedUI.hide) { selectedUI.hide(); }
+
+        this.updateTitle(type);
+        this._whatButton.click(function() { this.updateDetailTarget(type, null); }.bind(this));
+
         this._rootElement.show();
         this._rootElement.offset({ top: topOfPage, left: 0 });
         selectedUI = this;
@@ -46,12 +52,6 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     },
     update: function (type) {
       var that = this;
-
-      function updateDetailTarget(url) {
-        url = url || 'about/'+type+'.html';        
-        log.log("Choice: Setting detail URL to '" + url + "'");
-        that._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');        
-      }
 
       var detailUrl = null;
       this._listTarget.empty();
@@ -71,7 +71,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
             row.removeClass('rowHover'); 
           });
           row.click(function () {
-            updateDetailTarget(re.compendiumUrl);
+            that.updateDetailTarget(type, re.compendiumUrl);
             choice.choice = re; // TODO: Make this less live?
 
             that._listTarget.find(".selectedRow").removeClass('selectedRow');
@@ -91,7 +91,16 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         });
       }
 
-      updateDetailTarget(detailUrl);
+      that.updateDetailTarget(type, detailUrl);
+    },
+    updateDetailTarget: function updateDetailTarget(type, url) {
+        url = url || 'about/'+type+'.html';        
+        log.log("Choice: Setting detail URL to '" + url + "'");
+        this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');        
+    },
+    updateTitle: function updateTitle(type) {
+        this._chooseTitle.html("<h1>Choose a " + type + "</h1>");
+        this._whatButton.html("<a><i>What's a " + type + "?</i></a>");
     }
   };
 

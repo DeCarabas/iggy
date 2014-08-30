@@ -407,6 +407,7 @@ textArea {
     background-color: lightgreen;
     z-index:          10;
     position:         relative;
+    cursor:           pointer;
 }
 
 .choiceAvailable input
@@ -424,7 +425,6 @@ textArea {
     animation: greenIn 0.3s;
     -webkit-animation: greenIn 0.3s;
     background-color:  #75C175;
-    cursor: pointer;
 }
 
 .choiceAvailable:hover input
@@ -522,6 +522,7 @@ textArea {
 .whatButton
 {
     margin-top: 10px;
+    cursor:     pointer;    
 }
 
 .choiceRow
