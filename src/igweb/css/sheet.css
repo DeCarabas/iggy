@@ -466,8 +466,6 @@ textArea {
 
 .chooseUI
 {
-    background-color: white;
-    display: none;  /* Start life hidden because. */
     z-index: 20;
 }
 
@@ -475,6 +473,7 @@ textArea {
 {
     background-color: #DDD;
     border: 1px solid #444;
+    margin: -1px;
 }
 
 .chooseUIWrapper hr
@@ -495,30 +494,23 @@ textArea {
 
 .elementList
 {
-    font-size: 14px;
-    border: 1px solid #444;
-    overflow: auto;
 }
 
 .choicePanel
 {
+    font-size: 14px;
+    border: 1px solid #444;
+    overflow: auto;
     height: 650px;
+    background-color: white;
 }
 
-.detailPanel_10
-{
-    border: 1px solid #444; 
-    background-color: White; 
-    width: 638px;
-}
-
-.detailPanel_11
+.detailPanel
 {
     border: 1px solid #444;
     margin: -1px;
     background-color: White;
 }
-
 
 .whatPanel
 {
