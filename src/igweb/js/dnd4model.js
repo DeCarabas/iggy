@@ -1,7 +1,7 @@
 //
-// This contains the model for dnd40. These are useful global
-// functions, and extensions that are specific to 4e. The actual data
-// is in dnd4data.js.
+// This contains the model for dnd40. These are useful global functions, and
+// extensions that are specific to 4e. The actual data is provided by
+// dnd4/all.js, and those modules require this one.
 //
 define(['./engine'], function(engine) {
   "use strict";

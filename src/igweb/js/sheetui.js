@@ -1,7 +1,7 @@
 //
 // Character builder UI
 //
-define(['jquery', './binding'],function($, binding) {
+define(['jquery', './binding', './log'],function($, binding, log) {
   "use strict";
 
   var topOfPage = $("#sheetHeader").height(); // For magical alignment.
@@ -46,8 +46,14 @@ define(['jquery', './binding'],function($, binding) {
     },
     update: function (type) {
       var that = this;
-      var setDetail = false;
 
+      function updateDetailTarget(url) {
+        url = url || 'about/'+type+'.html';        
+        log.log("Choice: Setting detail URL to '" + url + "'");
+        that._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');        
+      }
+
+      var detailUrl = null;
       this._listTarget.empty();
       var choices = this._model.getChoices(type);
       if (choices.length > 0) {
@@ -65,7 +71,7 @@ define(['jquery', './binding'],function($, binding) {
             row.removeClass('rowHover'); 
           });
           row.click(function () {
-            that._detailTarget.html('<iframe src="' + re.compendiumUrl + '" width="100%" height="100%" />');
+            updateDetailTarget(re.compendiumUrl);
             choice.choice = re; // TODO: Make this less live?
 
             that._listTarget.find(".selectedRow").removeClass('selectedRow');
@@ -78,15 +84,14 @@ define(['jquery', './binding'],function($, binding) {
 
           if (choice.choice === re) {
             row.addClass('selectedRow');
-            that._detailTarget.html('<iframe src="' + re.compendiumUrl + '" width="100%" height="100%" />');
-            setDetail = true;
+            detailUrl = re.compendiumUrl || detailUrl;
           }
 
           that._listTarget.append(row);
         });
       }
 
-      if (!setDetail) { this._detailTarget.empty(); }
+      updateDetailTarget(detailUrl);
     }
   };
 

@@ -203,15 +203,15 @@ define(['./log'],function(log) {
     remove: function(element) {
       var tracking = this._granted[element.id];
       if (tracking) {
-        log.log("Removing [" + element.type + "]:[" + element.name + "]");
+        var tag = "Removing [" + element.type + "]:[" + element.name + "]";
+        log.group(tag);
         tracking.refs--;
         log.log("[" + element.type + "]:[" + element.name + "] refs: " + tracking.refs);
         if (tracking.refs === 0) {
-          log.group("cleaning up");
           tracking.undo.forEach(function (ti) { ti(); });
           delete this._granted[element.id];
-          log.groupEnd("cleaning up");
         }
+        log.groupEnd(tag);
       }
     },
     select: function(type, number, options) {
