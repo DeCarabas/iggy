@@ -466,6 +466,7 @@ textArea {
 
 .chooseUI
 {
+    display: none;
     z-index: 20;
 }
 
@@ -510,6 +511,7 @@ textArea {
     border: 1px solid #444;
     margin: -1px;
     background-color: White;
+    overflow: hidden;
 }
 
 .whatPanel
