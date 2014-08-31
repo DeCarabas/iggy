@@ -18,7 +18,10 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     this._listTarget = this._rootElement.find(".elementList");
     this._detailTarget = this._rootElement.find(".elementDetail");
 
-    this._rootElement.find(".uiButton").click(function() {
+    this._rootElement.find(".okButton").click(function() {
+      this.applySelection();
+    }.bind(this));
+    this._rootElement.find(".cancelButton").click(function() {
       this.hide();
     }.bind(this));
 
@@ -26,6 +29,9 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     this.visible = false;
   }
   ChoiceUI.prototype = {
+    applySelection: function applySelection() {
+      this.hide();
+    },
     hide: function () {
       if (this.visible) {
         this._rootElement.hide();
@@ -46,27 +52,30 @@ define(['jquery', './binding', './log'],function($, binding, log) {
 
         this.visible = true;
 
+        var choices = this._model.getChoices(type);
+        this.choice = (choices.length > 0)
+          ? choices[0]
+          : null;
+
         this.update(type);
         binding.updateFields(this._model);
       }
     },
-    update: function (type) {
+    update: function () {
       var that = this;
 
       var detailUrl = null;
       this._listTarget.empty();
-      var choices = this._model.getChoices(type);
-      if (choices.length > 0) {
-        var choice = choices[0];
 
-        choice.getValidElements().forEach(function (re, i) {
+      if (that.choice) {
+        that.choice.getValidElements().forEach(function (re, i) {
           var row = $("<div class='choiceRow'></div>");
           row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
           row.text(re.name);
 
           row.click(function () {
-            that.updateDetailTarget(type, re.compendiumUrl);
-            choice.choice = re; // TODO: Make this less live?
+            that.updateDetailTarget(re.compendiumUrl);
+            that.choice.choice = re; // TODO: Make this less live?
 
             that._listTarget.find(".selectedRow").removeClass('selectedRow');
 
@@ -76,7 +85,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
             binding.updateFields(that._model);
           });
 
-          if (choice.choice === re) {
+          if (that.choice.choice === re) {
             row.addClass('selectedRow');
             detailUrl = re.compendiumUrl || detailUrl;
           }
@@ -85,10 +94,10 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         });
       }
 
-      that.updateDetailTarget(type, detailUrl);
+      that.updateDetailTarget(detailUrl);
     },
-    updateDetailTarget: function updateDetailTarget(type, url) {
-      url = url || 'about/'+type+'.html';        
+    updateDetailTarget: function updateDetailTarget(url) {
+      url = url || 'about/'+this.choice.type+'.html';
       log.log("Choice: Setting detail URL to '" + url + "'");
       this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');
     },
