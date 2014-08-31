@@ -9,6 +9,30 @@ define(['jquery', './binding', './log'],function($, binding, log) {
   var chooseUI;
   var selectedUI;
 
+  function getContextForChoice(choice) {
+    return {
+      applySelection: function(selection) {
+        choice.choice = selection;
+      },
+      getDetailUrl: function(context) {
+        return context.compendiumUrl;
+      },
+      getGroup: function(context) {
+        return {
+          title: null,
+          items: (context)
+            ? context.getValidElements().map(function(re) {
+              return { text: re.name, context: re };
+            })
+          : []
+        };
+      },
+      getRootContext: function() {
+        return choice;
+      },
+    };
+  };
+
   function ChoiceUI(model, element) {
     this._model = model;
     this._rootElement = $(element);
@@ -29,10 +53,23 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     this.visible = false;
   }
   ChoiceUI.prototype = {
-    applySelection: function applySelection() {
+    applySelection: function applySelection() { // OVERRIDE?
       this._choice.choice = this._selected;
       binding.updateFields(this._model);
       this.hide();
+    },
+    getDetailUrl: function(re) { // OVERRIDE
+      return re.compendiumUrl;
+    },
+    getGroup: function (context) { // OVERRIDE
+      return {
+        title: null,
+        items: (context)
+          ? context.getValidElements().map(function(re) {
+              return { text: re.name, context: re };
+            })
+          : []
+      };
     },
     hide: function () {
       if (this.visible) {
@@ -46,7 +83,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         if (selectedUI && selectedUI.hide) { selectedUI.hide(); }
 
         this.updateTitle(type);
-        this._whatButton.click(function() { this.updateDetailTarget(type, null); }.bind(this));
+        this._whatButton.click(function() { this.updateDetailTarget(null); }.bind(this));
 
         this._rootElement.show();
         this._rootElement.offset({ top: topOfPage, left: 0 });
@@ -64,36 +101,44 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         binding.updateFields(this._model);
       }
     },
-    update: function () {
+    update: function (target, context, level) {
       var that = this;
-
       var detailUrl = null;
-      this._listTarget.empty();
 
-      if (that._choice) {
-        that._choice.getValidElements().forEach(function (re, i) {
+      target = target || this._listTarget;
+      context = context || this._choice;
+      level = level || 2;
+
+      target.empty();
+      var targetDiv = $("<div class='choiceGroup'></div>");
+
+      var group = this.getGroup(context);
+      if (group.title) {
+        var header = $("<h"+level+">"+group.title+"</h"+level+">");
+        targetDiv.append(header);
+      }
+      group.items.forEach(function (item, i) {
           var row = $("<div class='choiceRow'></div>");
           row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
-          row.text(re.name);
+          row.text(item.text);
 
           row.click(function () {
-            that.updateDetailTarget(re.compendiumUrl);
-            that._selected = re;
+            that.updateDetailTarget(that.getDetailUrl(item.context));
+            that._selected = item.context;
 
             that._listTarget.find(".selectedRow").removeClass('selectedRow');
-
             row.addClass('selectedRow');
           });
 
-          if (that._selected === re) {
+          if (that._selected === item.context) {
             row.addClass('selectedRow');
-            detailUrl = re.compendiumUrl || detailUrl;
+            detailUrl = that.getDetailUrl(item.context) || detailUrl;
           }
 
-          that._listTarget.append(row);
-        });
-      }
-
+          targetDiv.append(row);
+      });
+      
+      target.append(targetDiv);
       that.updateDetailTarget(detailUrl);
     },
     updateDetailTarget: function updateDetailTarget(url) {
