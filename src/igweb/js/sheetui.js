@@ -9,13 +9,17 @@ define(['jquery', './binding', './log'],function($, binding, log) {
   var chooseUI;
   var selectedUI;
 
-  function getContextForChoice(choice) {
+  function getAdapterForChoice(choice) {
     return {
       applySelection: function(selection) {
         choice.choice = selection;
       },
-      getDetailUrl: function(context) {
-        return context.compendiumUrl;
+      getDetailUrl: function(context) {        
+        var url = context
+          ? context.compendiumUrl
+          : null;
+        
+        return url || 'about/'+choice.type+'.html';
       },
       getGroup: function(context) {
         return {
@@ -27,9 +31,12 @@ define(['jquery', './binding', './log'],function($, binding, log) {
           : []
         };
       },
+      getInitialSelection: function() {
+        return choice.choice;
+      },
       getRootContext: function() {
         return choice;
-      },
+      }
     };
   };
 
@@ -54,22 +61,9 @@ define(['jquery', './binding', './log'],function($, binding, log) {
   }
   ChoiceUI.prototype = {
     applySelection: function applySelection() { // OVERRIDE?
-      this._choice.choice = this._selected;
+      this._adapter.applySelection(this._selected);
       binding.updateFields(this._model);
       this.hide();
-    },
-    getDetailUrl: function(re) { // OVERRIDE
-      return re.compendiumUrl;
-    },
-    getGroup: function (context) { // OVERRIDE
-      return {
-        title: null,
-        items: (context)
-          ? context.getValidElements().map(function(re) {
-              return { text: re.name, context: re };
-            })
-          : []
-      };
     },
     hide: function () {
       if (this.visible) {
@@ -78,11 +72,11 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         selectedUI = null;
       }
     },
-    show: function (type) {
+    show: function (title, adapter) {
       if (!this.visible) {
         if (selectedUI && selectedUI.hide) { selectedUI.hide(); }
 
-        this.updateTitle(type);
+        this.updateTitle(title);
         this._whatButton.click(function() { this.updateDetailTarget(null); }.bind(this));
 
         this._rootElement.show();
@@ -91,11 +85,8 @@ define(['jquery', './binding', './log'],function($, binding, log) {
 
         this.visible = true;
 
-        var choices = this._model.getChoices(type);
-        this._choice = (choices.length > 0)
-          ? choices[0]
-          : null;
-        this._selected = this._choice.choice;
+        this._adapter = adapter;
+        this._selected = adapter.getInitialSelection();
 
         this.update();
         binding.updateFields(this._model);
@@ -103,16 +94,15 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     },
     update: function (target, context, level) {
       var that = this;
-      var detailUrl = null;
 
       target = target || this._listTarget;
-      context = context || this._choice;
+      context = context || this._adapter.getRootContext();
       level = level || 2;
 
       target.empty();
       var targetDiv = $("<div class='choiceGroup'></div>");
 
-      var group = this.getGroup(context);
+      var group = this._adapter.getGroup(context);
       if (group.title) {
         var header = $("<h"+level+">"+group.title+"</h"+level+">");
         targetDiv.append(header);
@@ -123,7 +113,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
           row.text(item.text);
 
           row.click(function () {
-            that.updateDetailTarget(that.getDetailUrl(item.context));
+            that.updateDetailTarget(that._adapter.getDetailUrl(item.context));
             that._selected = item.context;
 
             that._listTarget.find(".selectedRow").removeClass('selectedRow');
@@ -132,17 +122,15 @@ define(['jquery', './binding', './log'],function($, binding, log) {
 
           if (that._selected === item.context) {
             row.addClass('selectedRow');
-            detailUrl = that.getDetailUrl(item.context) || detailUrl;
           }
 
           targetDiv.append(row);
       });
       
       target.append(targetDiv);
-      that.updateDetailTarget(detailUrl);
+      that.updateDetailTarget(that._adapter.getDetailUrl(that._selected));
     },
     updateDetailTarget: function updateDetailTarget(url) {
-      url = url || 'about/'+this._choice.type+'.html';
       log.log("Choice: Setting detail URL to '" + url + "'");
       this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');
     },
@@ -170,7 +158,14 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       var elem = $(this);
       var types = elem.attr("data-boundChoice").split(',');
 
-      elem.click(function() { chooseUI.show(types[0]); });
+      elem.click(function() { 
+        var choices = model.getChoices(types[0]);
+        var choice = (choices.length > 0)
+          ? choices[0]
+          : null;
+
+        chooseUI.show(types[0], getAdapterForChoice(choice)); 
+      });
     });
     binding.bindFields(model);
     binding.updateFields(model);
