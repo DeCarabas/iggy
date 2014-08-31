@@ -30,6 +30,8 @@ define(['jquery', './binding', './log'],function($, binding, log) {
   }
   ChoiceUI.prototype = {
     applySelection: function applySelection() {
+      this._choice.choice = this._selected;
+      binding.updateFields(this._model);
       this.hide();
     },
     hide: function () {
@@ -53,11 +55,12 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         this.visible = true;
 
         var choices = this._model.getChoices(type);
-        this.choice = (choices.length > 0)
+        this._choice = (choices.length > 0)
           ? choices[0]
           : null;
+        this._selected = this._choice.choice;
 
-        this.update(type);
+        this.update();
         binding.updateFields(this._model);
       }
     },
@@ -67,25 +70,22 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       var detailUrl = null;
       this._listTarget.empty();
 
-      if (that.choice) {
-        that.choice.getValidElements().forEach(function (re, i) {
+      if (that._choice) {
+        that._choice.getValidElements().forEach(function (re, i) {
           var row = $("<div class='choiceRow'></div>");
           row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
           row.text(re.name);
 
           row.click(function () {
             that.updateDetailTarget(re.compendiumUrl);
-            that.choice.choice = re; // TODO: Make this less live?
+            that._selected = re;
 
             that._listTarget.find(".selectedRow").removeClass('selectedRow');
 
             row.addClass('selectedRow');
-            row.removeClass('rowHover');
-
-            binding.updateFields(that._model);
           });
 
-          if (that.choice.choice === re) {
+          if (that._selected === re) {
             row.addClass('selectedRow');
             detailUrl = re.compendiumUrl || detailUrl;
           }
@@ -97,7 +97,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       that.updateDetailTarget(detailUrl);
     },
     updateDetailTarget: function updateDetailTarget(url) {
-      url = url || 'about/'+this.choice.type+'.html';
+      url = url || 'about/'+this._choice.type+'.html';
       log.log("Choice: Setting detail URL to '" + url + "'");
       this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');
     },
