@@ -94,13 +94,25 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       that.updateDetailTarget(type, detailUrl);
     },
     updateDetailTarget: function updateDetailTarget(type, url) {
-        url = url || 'about/'+type+'.html';        
-        log.log("Choice: Setting detail URL to '" + url + "'");
-        this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');        
+      url = url || 'about/'+type+'.html';        
+      log.log("Choice: Setting detail URL to '" + url + "'");
+      this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');
     },
     updateTitle: function updateTitle(type) {
-        this._chooseTitle.html("<h1>Choose a " + type + "</h1>");
-        this._whatButton.html("<a><i>What's a " + type + "?</i></a>");
+      var title = type.toLowerCase();
+      var article = 'a';
+
+      if ((title[0] === 'a') || 
+          (title[0] === 'e') || 
+          (title[0] === 'i') || 
+          (title[0] === 'o') ||
+          (title[0] === 'u'))
+      {
+        article = 'an';
+      }
+
+      this._chooseTitle.html("<h1>Choose " + article + " " + title + "</h1>");
+      this._whatButton.html("<a><i>What's " + article + " " + title + "?</i></a>");
     }
   };
 
