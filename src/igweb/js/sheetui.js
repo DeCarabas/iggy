@@ -9,6 +9,22 @@ define(['jquery', './binding', './log'],function($, binding, log) {
   var chooseUI;
   var selectedUI;
 
+  function getTitleString(title) {
+    title = title.toLowerCase();
+    var article = 'a';
+
+    if ((title[0] === 'a') || 
+        (title[0] === 'e') || 
+        (title[0] === 'i') || 
+        (title[0] === 'o') ||
+        (title[0] === 'u'))
+    {
+      article = 'an';
+    }
+
+    return article + " " + title;
+  }
+
   function getAdapterForChoice(choice) {
     return {
       applySelection: function(selection) {
@@ -21,22 +37,48 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         
         return url || 'about/'+choice.type+'.html';
       },
-      getGroup: function(context) {
-        return {
+      getGroups: function() {
+        return [{
           title: null,
-          items: (context)
-            ? context.getValidElements().map(function(re) {
+          items: (choice)
+            ? choice.getValidElements().map(function(re) {
               return { text: re.name, context: re };
             })
           : []
-        };
+        }];
       },
       getInitialSelection: function() {
         return choice.choice;
-      },
-      getRootContext: function() {
-        return choice;
       }
+    };
+  };
+
+  function getAdapterForMultipleChoices(choices) {
+    return {
+      applySelection: function(selection) { },
+      getDetailUrl: function(context) { },
+      getGroups: function() {
+        var groups = choices.reduce(function (map, choice) {
+            var list = map[choice.type] || (map[choice.type] = []);
+            list.push(choice);
+            return map;
+        }, {});
+
+        return Object.keys(groups).map(function (type) {
+          return {
+            title: type,
+            items: groups[type].map(function(choice) {
+              return {
+                text: choice.choice 
+                  ? choice.choice.name 
+                  : "Choose " + getTitleString(choice.type) + "...",
+                context: choice
+              };
+            })
+          };
+        });
+      },
+      getInitialSelection: function() { }
     };
   };
 
@@ -92,22 +134,17 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         binding.updateFields(this._model);
       }
     },
-    update: function (target, context, level) {
+    update: function () {
       var that = this;
 
-      target = target || this._listTarget;
-      context = context || this._adapter.getRootContext();
-      level = level || 2;
-
-      target.empty();
-      var targetDiv = $("<div class='choiceGroup'></div>");
-
-      var group = this._adapter.getGroup(context);
-      if (group.title) {
-        var header = $("<h"+level+">"+group.title+"</h"+level+">");
-        targetDiv.append(header);
-      }
-      group.items.forEach(function (item, i) {
+      this._listTarget.empty();
+      this._adapter.getGroups().forEach(function (group) {
+        var targetDiv = $("<div class='choiceGroup'></div>");
+        if (group.title) {
+          var header = $("<h2>"+group.title+"</h2>");
+          targetDiv.append(header);
+        }
+        group.items.forEach(function (item, i) {
           var row = $("<div class='choiceRow'></div>");
           row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
           row.text(item.text);
@@ -125,30 +162,22 @@ define(['jquery', './binding', './log'],function($, binding, log) {
           }
 
           targetDiv.append(row);
+        });
+        
+        that._listTarget.append(targetDiv);
       });
       
-      target.append(targetDiv);
       that.updateDetailTarget(that._adapter.getDetailUrl(that._selected));
     },
     updateDetailTarget: function updateDetailTarget(url) {
       log.log("Choice: Setting detail URL to '" + url + "'");
       this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');
     },
-    updateTitle: function updateTitle(type) {
-      var title = type.toLowerCase();
-      var article = 'a';
+    updateTitle: function updateTitle(title) {
+      var atitle = getTitleString(title);
 
-      if ((title[0] === 'a') || 
-          (title[0] === 'e') || 
-          (title[0] === 'i') || 
-          (title[0] === 'o') ||
-          (title[0] === 'u'))
-      {
-        article = 'an';
-      }
-
-      this._chooseTitle.html("<h1>Choose " + article + " " + title + "</h1>");
-      this._whatButton.html("<a><i>What's " + article + " " + title + "?</i></a>");
+      this._chooseTitle.html("<h1>Choose " + atitle + "</h1>");
+      this._whatButton.html("<a><i>What's " + atitle + "?</i></a>");
     }
   };
 
@@ -159,12 +188,22 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       var types = elem.attr("data-boundChoice").split(',');
 
       elem.click(function() { 
-        var choices = model.getChoices(types[0]);
-        var choice = (choices.length > 0)
-          ? choices[0]
-          : null;
+        var choices = [];
+        types.forEach(function(type) { 
+          choices.push.apply(choices, model.getChoices(type)); 
+        });
 
-        chooseUI.show(types[0], getAdapterForChoice(choice)); 
+        var adapter;
+        var title;
+        if (choices.length == 1) {
+          title = choices[0].type;
+          adapter = getAdapterForChoice(choices[0]);
+        } else {
+          title = "uhhh...";
+          adapter = getAdapterForMultipleChoices(choices);
+        }
+
+        chooseUI.show(title, adapter); 
       });
     });
     binding.bindFields(model);
