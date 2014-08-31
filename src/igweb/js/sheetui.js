@@ -64,12 +64,6 @@ define(['jquery', './binding', './log'],function($, binding, log) {
           row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
           row.text(re.name);
 
-          row.mouseenter(function () {
-            if (!row.hasClass('selectedRow')) { row.addClass('rowHover'); }
-          });
-          row.mouseleave(function () { 
-            row.removeClass('rowHover'); 
-          });
           row.click(function () {
             that.updateDetailTarget(type, re.compendiumUrl);
             choice.choice = re; // TODO: Make this less live?
@@ -120,8 +114,9 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     chooseUI = new ChoiceUI(model, $("#chooseControl"));
     $("[data-boundChoice]:visible").each(function () {
       var elem = $(this);
-      var type = elem.attr("data-boundChoice");
-      elem.click(function() { chooseUI.show(type); });
+      var types = elem.attr("data-boundChoice").split(',');
+
+      elem.click(function() { chooseUI.show(types[0]); });
     });
     binding.bindFields(model);
     binding.updateFields(model);

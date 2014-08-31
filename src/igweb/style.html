@@ -608,6 +608,9 @@
     </div>
   </div>
 
+  <div>&nbsp;</div>
+  <hr/>
+
   <h1>Choice UI</h1>
 
   <h2>An option with a choice</h2>
@@ -626,6 +629,9 @@
     </div>
   </div>
 
+  <div>&nbsp;</div>
+  <hr/>
+  
   <h2>Choose Control</h2>
   
   <p>The HTML that comes up to pick something looks like this:</p>
@@ -645,9 +651,82 @@
         <div class="grid_4">
           <div class="elementList choicePanel">
             <!-- Templating? -->
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow selectedRow'>Selected (Odd)</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow selectedRow'>Selected (Even)</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
+            <div class='choiceRow evenRow'>Even</div>
+            <div class='choiceRow oddRow'>Odd</div>
           </div>
         </div>
         <div class="grid_12">
+          <div class="elementDetail choicePanel detailPanel">
+              <iframe src="about/class.html" width="100%" height="100%"></iframe>
+          </div>
+        </div>
+        <hr />
+        <div class="grid_2 prefix_14">
+          <div class="uiButton">
+            <a>OK</a>
+          </div>
+        </div>            
+        <hr />
+      </div>      
+    </div>
+  </div>
+
+  <div>&nbsp;</div>
+  <hr/>
+
+  <p>When the choice has more than one option, it looks like this:</p>
+  
+  <div id="chooseControl_2" class="chooseUI" style="display: block">
+    <div class="container_16">
+      <div class="chooseUIWrapper">
+        <div class="grid_13">
+          <h1>Feats</h1>
+        </div>          
+        <div class="grid_3">
+          <div class="whatButton">
+            <a><i>What's a feat?</i></a>
+          </div>
+        </div>
+        <hr />
+        <div class="grid_6">
+          <div class="elementList choicePanel">
+            <!-- Templating? -->
+            <div class="choiceGroup">
+              <h2>Level 1</h2>
+              <div class="evenRow selected">Improved Initiative</div>
+              <div class="oddRow selected">Weapon Proficiency (Dagger)</div>
+            </div>
+            <div class="choiceGroup">
+              <h2>Level 2</h2>
+              <div class="evenRow selected">More Jumping</div>
+            </div>            
+            <div class="choiceGroup">
+              <h2>Level 3</h2>
+              <div class="evenRow available">Choose a feat...</div>
+            </div>
+          </div>
+        </div>
+        <div class="grid_10">
           <div class="elementDetail choicePanel detailPanel">
             <div class="whatPanel"> </div>
           </div>
@@ -660,39 +739,9 @@
         </div>            
         <hr />
       </div>      
-    </div>      
+    </div>
   </div>
 
-  <!--
-                <div class="whatPanel">
-                    <h2>About Classes</h2>
-                    <p>Your class is the primary definition of what your character can 
-                    do in the extraordinary magical landscape of the Dungeons and Dragons 
-                    world.</p>
-                    <p>A class is more than a profession; it is your character's 
-                    calling. Your class choice shapes every action you take as you adventure 
-                    across a spell-tangled, monster-ridden, battle-torn fantasy world.</p>
-                    <p>Will you be a gutsy, youthful sword fighter? A pact-sworn warlock
-                    with questionable ties? A gods-worshiping cleric who knows too much?
-                    A flamboyant rogue with a dagger up your sleeve? A tatooed wizard with
-                    a crystal staff? The choice is yours.</p>
-                </div>
-
-                <div class="whatPanel">
-                    <h2>About Races</h2>
-                    <p>A variety of cultures and societies populate the world of the 
-                    Dungeons & Dragons game, some made up of humans but others made up
-                    of fantastic races such as elves, dwarves, and tieflings. 
-                    Adventurers and heroes can arise from these various peoples. Your
-                    choice of character race provides you with a basic set of advantages
-                    and special abilities. If you're a fighter, are youa stubborn dwarf
-                    monster-slayer, a graceful elf blademaster, or a fierce dragonborn
-                    gladiator? If you're a wizard, are you a brave human spell-for-hire
-                    or a devious tiefling conjurer? Your character race not only affects
-                    your ability scores and powers but also provides the first cues for
-                    building your character's story.</p>
-                </div>
-  -->    
-
+  
 </body>
 </html>

@@ -457,13 +457,6 @@ textArea {
  * Selection UI
  ****************************************************************/
 
-.popover
-{
-    border-width: 1px;
-    border-style: solid;
-    padding: 10px;
-}
-
 .chooseUI
 {
     display: none;
@@ -493,10 +486,6 @@ textArea {
     font-size: 14px;
 }
 
-.elementList
-{
-}
-
 .choicePanel
 {
     font-size: 14px;
@@ -504,6 +493,16 @@ textArea {
     overflow: auto;
     height: 650px;
     background-color: white;
+}
+
+.choicePanel .oddRow:hover
+{
+  background-color: #CCC;    
+}
+
+.choicePanel .evenRow:hover
+{
+  background-color: #CCC;
 }
 
 .detailPanel
@@ -535,11 +534,6 @@ textArea {
     background-color: #BBB;
 }
 
-.rowHover
-{
-    background-color: #CCC;    
-}
-
 .uiButton
 {    
     text-align: center;
@@ -552,4 +546,38 @@ textArea {
 .uiButton:hover
 {
     background-color: #CCC;
+}
+
+.choiceGroup
+{
+  margin-left:    5px;
+  margin-right:   5px;
+  padding-top:    5px;
+  padding-bottom: 5px;
+  border-bottom:  1px solid black;
+}
+
+.choiceGroup h2
+{
+  font-size:     20px;
+  margin-top:    5px;
+  margin-bottom: 5px;
+}
+
+.choiceGroup div
+{
+  padding-left: 10px;
+}
+
+.choiceGroup div.available
+{
+  font-weight: bold;
+  background-color: lightGreen;
+}
+
+.choiceGroup div.available:hover
+{
+  animation: greenIn 0.3s;
+  -webkit-animation: greenIn 0.3s;
+  background-color: #75C175;
 }
