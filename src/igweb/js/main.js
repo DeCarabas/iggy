@@ -2,6 +2,7 @@
 // in a module.  (Why does the app live in a module? So I can import it and
 // hang debugging stuff off the side, of course...)
 //
+/*global require*/
 require.config({
   baseUrl: 'js',
   paths: {

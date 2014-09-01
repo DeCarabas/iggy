@@ -1,4 +1,5 @@
 // This is the engine that powers binding from the model to the UI.
+/*global define*/
 define(['jquery'], function($) {
   "use strict";
 

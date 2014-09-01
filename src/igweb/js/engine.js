@@ -1,6 +1,7 @@
 //
 // This contains the implementation of the rules engine.
 //
+/*global define*/
 define(['./log'],function(log) {
   "use strict";
 

@@ -26,9 +26,12 @@ module.exports = function(grunt) {
         browser: true,
         curly: true,
         devel: true,
+        eqeqeq: true,
         jquery: true,
         laxbreak: true,
-        sub: true
+        sub: true,
+        undef: true,
+        unused: true
       },
       libs: [
         'src/igweb/js/*.js', '!src/igweb/js/require.js'

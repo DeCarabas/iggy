@@ -1,4 +1,5 @@
 // Core builder application
+/*global define*/
 define(
   ['./sheetui', './engine', './dnd4/all'],
   function(sheetui, engine, elements) {

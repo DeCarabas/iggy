@@ -1,6 +1,7 @@
 //
 // Character builder UI
 //
+/*global define*/
 define(['jquery', './binding', './log'],function($, binding, log) {
   "use strict";
 
@@ -83,7 +84,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
 
   function getAdapterForMultipleChoices(type, choices) {
     return {
-      applySelection: function(selection) { },
+      applySelection: function(/*selection*/) { },
       getDetailUrl: function(context) {
         var url = null;
         if (context) {

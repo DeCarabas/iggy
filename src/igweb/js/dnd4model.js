@@ -3,6 +3,7 @@
 // extensions that are specific to 4e. The actual data is provided by
 // dnd4/all.js, and those modules require this one.
 //
+/*global define*/
 define(['./engine'], function(engine) {
   "use strict";
 
@@ -14,7 +15,7 @@ define(['./engine'], function(engine) {
 
   // Here are our extensions for the model, specific for 4e.
   //
-  engine.Model.prototype.wearing = function(thng, arr) {
+  engine.Model.prototype.wearing = function(/*thng, arr*/) {
     // TBD
   };
   Object.defineProperty(engine.Model.prototype, "class", {

@@ -1,3 +1,4 @@
+/*global define*/
 define([], function() {
   return {
     log: function log(message) { console.log(message); },
