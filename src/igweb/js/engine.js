@@ -84,12 +84,11 @@ define(['./log'],function(log) {
     }
   };
 
-  var Choice = function(model, type, number, name, options) {
+  var Choice = function(model, type, name, options) {
     var that = this;
     Object.keys(options || {}).forEach(function (key) { that[key] = options[key]; });
     this.type = type;
     this.name = name;
-    this.number = number;
     this.model = model;
     this.id = Choice._uniqueId || (Choice._uniqueId = 1);
     this._choice = null;
@@ -144,7 +143,7 @@ define(['./log'],function(log) {
             ? "[" + choice.choice.type + "]:[" + choice.choice.name + "]"
             : "<null>";
 
-          log.log("["+choice.type+"] ("+choice.name+"): " + selection);
+          log.log("["+choice.type+"] ("+choice.name+") : " + selection);
         }.bind(this));
         log.groupEnd(choiceType);
       }.bind(this));
@@ -233,18 +232,20 @@ define(['./log'],function(log) {
       }
     },
     select: function(type, number, name, options) {
-      var nc = new Choice(this, type, number, name, options);
-      var ec = this._choices[type] || (this._choices[type] = {});
-      ec[nc.id] = nc;
+      for(var i = 0; i < number; i++) {
+        var nc = new Choice(this, type, name, options);
+        var ec = this._choices[type] || (this._choices[type] = {});
+        ec[nc.id] = nc;
 
-      log.log("Selecting (["+type+"],"+number+") as " + nc.id);
+        log.log("Selecting (["+type+"]) as " + nc.id);
 
-      if (this._trackingInfo) { 
-        this._trackingInfo.undo.push(function () { 
+        if (this._trackingInfo) { 
+          this._trackingInfo.undo.push(function () { 
             log.log("Undoing selection " + nc.id +" ("+type+","+number+")");
             nc.choice = null;
             delete ec[nc.id];
-        });
+          });
+        }
       }
     },
     stat: function (statName) {
