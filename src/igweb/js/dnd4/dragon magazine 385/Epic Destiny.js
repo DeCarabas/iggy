@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_644",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=644",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=644",
     categories: ["Disincarnate", "ID_FMP_EPIC_DESTINY_644"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2577"]);
@@ -32,7 +32,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_645",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=645",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=645",
     categories: ["Soul of the World", "ID_FMP_EPIC_DESTINY_645"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2064"]);

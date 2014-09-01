@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_303",
     source: "The Plane Below: Secrets of the Elemental Chaos",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=303",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=303",
     categories: ["Endure Primordial Elements", "ID_FMP_RITUAL_303"]
   });
   byID[te.id] = te;

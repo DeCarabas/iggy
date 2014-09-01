@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2285",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2285",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2285",
     categories: ["Ancient Covenant of Nessus", "ID_FMP_FEAT_2285"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2304",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2304",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2304",
     categories: ["Baalzebul's Desperate Gambit", "ID_FMP_FEAT_2304"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2305",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2305",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2305",
     categories: ["Bel's Impending Victory", "ID_FMP_FEAT_2305"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2306",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2306",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2306",
     categories: ["Blood of Levistus", "ID_FMP_FEAT_2306"],
     rules: function(model) {
       model.statadd("Blood of Levistus", 5);
@@ -59,7 +59,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2286",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2286",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2286",
     categories: ["Blood Pact of Cania", "ID_FMP_FEAT_2286"],
     rules: function(model) {
       model.statadd("Blood Pact of Cania", 2);
@@ -75,7 +75,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2287",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2287",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2287",
     categories: ["Bloodhunter's Dread", "ID_FMP_FEAT_2287"]
   });
   byID[te.id] = te;
@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2288",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2288",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2288",
     categories: ["Bloodhunter's Flank", "ID_FMP_FEAT_2288"],
     rules: function(model) {
       model.statadd("damage rolls", function() { /* against a bloodied foe you flank */ return 2; });
@@ -100,7 +100,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2289",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2289",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2289",
     categories: ["Burning Wrath of Phlegethos", "ID_FMP_FEAT_2289"]
   });
   byID[te.id] = te;
@@ -110,7 +110,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2290",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2290",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2290",
     categories: ["Clever Tail", "ID_FMP_FEAT_2290"]
   });
   byID[te.id] = te;
@@ -120,7 +120,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2291",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2291",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2291",
     categories: ["Cloying Shadow of Maladomini", "ID_FMP_FEAT_2291"]
   });
   byID[te.id] = te;
@@ -130,7 +130,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2307",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2307",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2307",
     categories: ["Dispater's Iron Discipline", "ID_FMP_FEAT_2307"],
     rules: function(model) {
       model.statadd("Will Defense", 2, "Feat");
@@ -146,7 +146,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2308",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2308",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2308",
     categories: ["Glasya's Charming Words", "ID_FMP_FEAT_2308"],
     rules: function(model) {
       model.statadd("charm:attack", 1, "Feat");
@@ -159,7 +159,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2292",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2292",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2292",
     categories: ["Hellbook", "ID_FMP_FEAT_2292"]
   });
   byID[te.id] = te;
@@ -169,7 +169,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2309",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2309",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2309",
     categories: ["Hellfire of Mephistopheles", "ID_FMP_FEAT_2309"]
   });
   byID[te.id] = te;
@@ -179,7 +179,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2313",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2313",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2313",
     categories: ["Hellfire Teleport", "ID_FMP_FEAT_2313"]
   });
   byID[te.id] = te;
@@ -189,7 +189,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2293",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2293",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2293",
     categories: ["Hellish Blast", "ID_FMP_FEAT_2293"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -204,7 +204,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2314",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2314",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2314",
     categories: ["Hell's Burning Mark", "ID_FMP_FEAT_2314"]
   });
   byID[te.id] = te;
@@ -214,7 +214,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2294",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2294",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2294",
     categories: ["Icy Clutch of Stygia", "ID_FMP_FEAT_2294"]
   });
   byID[te.id] = te;
@@ -224,7 +224,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2295",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2295",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2295",
     categories: ["Infernal Touch of Warding", "ID_FMP_FEAT_2295"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -237,7 +237,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2296",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2296",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2296",
     categories: ["Insatiable Rage of Minauros", "ID_FMP_FEAT_2296"],
     rules: function(model) {
       model.statadd("Insatiable Rage of Minauros", 2);
@@ -253,7 +253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2310",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2310",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2310",
     categories: ["Mammon's Theft of Health", "ID_FMP_FEAT_2310"]
   });
   byID[te.id] = te;
@@ -263,7 +263,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2297",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2297",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2297",
     categories: ["Psychic Corruption of Malbolge", "ID_FMP_FEAT_2297"]
   });
   byID[te.id] = te;
@@ -273,7 +273,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2315",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2315",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2315",
     categories: ["Renewed Wrath", "ID_FMP_FEAT_2315"]
   });
   byID[te.id] = te;
@@ -283,7 +283,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2316",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2316",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2316",
     categories: ["Royal Command of Asmodeus", "ID_FMP_FEAT_2316"]
   });
   byID[te.id] = te;
@@ -293,7 +293,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2311",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2311",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2311",
     categories: ["Secrets of Belial", "ID_FMP_FEAT_2311"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -306,7 +306,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2298",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2298",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2298",
     categories: ["Stirring Song of Baator", "ID_FMP_FEAT_2298"]
   });
   byID[te.id] = te;
@@ -316,7 +316,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2299",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2299",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2299",
     categories: ["Tail Slide", "ID_FMP_FEAT_2299"]
   });
   byID[te.id] = te;
@@ -326,7 +326,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2312",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2312",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2312",
     categories: ["Tail Trip", "ID_FMP_FEAT_2312"]
   });
   byID[te.id] = te;
@@ -336,7 +336,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2300",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2300",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2300",
     categories: ["Turathi Spirit Companion", "ID_FMP_FEAT_2300"]
   });
   byID[te.id] = te;
@@ -346,7 +346,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2301",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2301",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2301",
     categories: ["Turathi Weapon Training", "ID_FMP_FEAT_2301"],
     rules: function(model) {
       model.statadd("Turathi Weapon Training", 2);
@@ -373,7 +373,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2302",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2302",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2302",
     categories: ["War Captain of Avernus", "ID_FMP_FEAT_2302"]
   });
   byID[te.id] = te;

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK",
     source: "Core",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=OWER_BEAST_MELEE_BASIC_ATTACK",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=OWER_BEAST_MELEE_BASIC_ATTACK",
     categories: ["Beast Melee Basic Attack", "ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK"]
   });
   byID[te.id] = te;
@@ -22,7 +22,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     name: "Dwarven Resilience",
     type: "Power",
     id: "ID_FMP_POWER_13211",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13211",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=13211",
     categories: ["Dwarven Resilience", "ID_FMP_POWER_13211", "ID_FMP_RACIAL_TRAIT_12", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"]
   });
   byID[te.id] = te;
@@ -32,7 +32,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_INTERNAL_POWER_MELEE_BASIC_ATTACK",
     source: "Core",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=OWER_MELEE_BASIC_ATTACK",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=OWER_MELEE_BASIC_ATTACK",
     categories: ["Melee Basic Attack", "ID_INTERNAL_POWER_MELEE_BASIC_ATTACK"]
   });
   byID[te.id] = te;
@@ -42,7 +42,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_INTERNAL_POWER_RANGED_BASIC_ATTACK",
     source: "Core",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=OWER_RANGED_BASIC_ATTACK",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=OWER_RANGED_BASIC_ATTACK",
     categories: ["Ranged Basic Attack", "ID_INTERNAL_POWER_RANGED_BASIC_ATTACK"]
   });
   byID[te.id] = te;

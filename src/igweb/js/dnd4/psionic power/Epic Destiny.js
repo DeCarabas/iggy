@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_762",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=762",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=762",
     categories: ["Cosmic Soul", "ID_FMP_EPIC_DESTINY_762"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3138"]);
@@ -29,7 +29,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_763",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=763",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=763",
     categories: ["Demiurge", "ID_FMP_EPIC_DESTINY_763"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3141"]);
@@ -45,7 +45,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_764",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=764",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=764",
     categories: ["Eighth Seal", "ID_FMP_EPIC_DESTINY_764"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3144"]);
@@ -61,7 +61,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_765",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=765",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=765",
     categories: ["Grandmaster of Flowers", "ID_FMP_EPIC_DESTINY_765"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3147"]);
@@ -78,7 +78,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_766",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=766",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=766",
     categories: ["Master of Moments", "ID_FMP_EPIC_DESTINY_766"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3151"]);
@@ -95,7 +95,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_767",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=767",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=767",
     categories: ["Topaz Crusader", "ID_FMP_EPIC_DESTINY_767"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3155"]);

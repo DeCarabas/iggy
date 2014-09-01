@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_199",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=199",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=199",
     categories: ["Adamantine Soldier", "ID_FMP_EPIC_DESTINY_199"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_997"]);
@@ -29,7 +29,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_200",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=200",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=200",
     categories: ["Beastlord", "ID_FMP_EPIC_DESTINY_200"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1000"]);
@@ -45,7 +45,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_201",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=201",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=201",
     categories: ["Dark Wanderer", "ID_FMP_EPIC_DESTINY_201"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1005"]);
@@ -61,7 +61,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_202",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=202",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=202",
     categories: ["Eternal Defender", "ID_FMP_EPIC_DESTINY_202"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1006"]);
@@ -77,7 +77,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_203",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=203",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=203",
     categories: ["Godhunter", "ID_FMP_EPIC_DESTINY_203"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1011"]);
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_204",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=204",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=204",
     categories: ["Legendary General", "ID_FMP_EPIC_DESTINY_204"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1012"]);
@@ -109,7 +109,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_205",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=205",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=205",
     categories: ["Martial Archetype", "ID_FMP_EPIC_DESTINY_205"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1015"]);
@@ -125,7 +125,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_206",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=206",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=206",
     categories: ["Perfect Assassin", "ID_FMP_EPIC_DESTINY_206"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1019"]);
@@ -141,7 +141,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_207",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=207",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=207",
     categories: ["Undying Warrior", "ID_FMP_EPIC_DESTINY_207"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1022"]);
@@ -157,7 +157,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_208",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=208",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=208",
     categories: ["Warmaster", "ID_FMP_EPIC_DESTINY_208"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1025"]);

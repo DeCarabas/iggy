@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_430",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=430",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=430",
     categories: ["Avatar of Death", "ID_FMP_EPIC_DESTINY_430"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1781"]);
@@ -30,7 +30,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_431",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=431",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=431",
     categories: ["Avatar of Freedom", "ID_FMP_EPIC_DESTINY_431"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1785"]);
@@ -47,7 +47,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_432",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=432",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=432",
     categories: ["Avatar of Hope", "ID_FMP_EPIC_DESTINY_432"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1789"]);
@@ -64,7 +64,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_433",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=433",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=433",
     categories: ["Avatar of Justice", "ID_FMP_EPIC_DESTINY_433"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1793"]);
@@ -81,7 +81,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_434",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=434",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=434",
     categories: ["Avatar of Life", "ID_FMP_EPIC_DESTINY_434"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1797"]);
@@ -98,7 +98,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_435",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=435",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=435",
     categories: ["Avatar of Storm", "ID_FMP_EPIC_DESTINY_435"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1801"]);
@@ -115,7 +115,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_436",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=436",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=436",
     categories: ["Avatar of War", "ID_FMP_EPIC_DESTINY_436"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1805"]);
@@ -132,7 +132,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_448",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=448",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=448",
     categories: ["Exalted Angel", "ID_FMP_EPIC_DESTINY_448"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1855"]);
@@ -148,7 +148,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_449",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=449",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=449",
     categories: ["Saint", "ID_FMP_EPIC_DESTINY_449"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1858"]);

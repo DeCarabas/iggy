@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_568",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=568",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=568",
     categories: ["Hell's Keeper", "ID_FMP_PARAGON_PATH_568"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2257"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_571",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=571",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=571",
     categories: ["Infernal Eye", "ID_FMP_PARAGON_PATH_571"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2267"]);
@@ -50,7 +50,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_564",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=564",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=564",
     categories: ["Lost Soul", "ID_FMP_PARAGON_PATH_564"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2254"]);
@@ -68,7 +68,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_570",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=570",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=570",
     categories: ["Redeemer of the Damned", "ID_FMP_PARAGON_PATH_570"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2264"]);
@@ -86,7 +86,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_569",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=569",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=569",
     categories: ["Turathi Hell-Kite", "ID_FMP_PARAGON_PATH_569"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2261"]);

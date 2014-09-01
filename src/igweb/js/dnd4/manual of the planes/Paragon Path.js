@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_218",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=218",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=218",
     categories: ["Blade of Cendriane", "ID_FMP_PARAGON_PATH_218"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1067"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_219",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=219",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=219",
     categories: ["Doomguard Marauder", "ID_FMP_PARAGON_PATH_219"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1070"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_220",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=220",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=220",
     categories: ["Gatecrasher", "ID_FMP_PARAGON_PATH_220"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1073"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_221",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=221",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=221",
     categories: ["Knight of Celestia", "ID_FMP_PARAGON_PATH_221"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1076"]);
@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_222",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=222",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=222",
     categories: ["Malec-Keth Janissary", "ID_FMP_PARAGON_PATH_222"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1079"]);
@@ -104,7 +104,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_223",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=223",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=223",
     categories: ["Planeshifter", "ID_FMP_PARAGON_PATH_223"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1083"]);
@@ -122,7 +122,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_224",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=224",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=224",
     categories: ["Shadow Captain", "ID_FMP_PARAGON_PATH_224"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1086"]);
@@ -140,7 +140,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_225",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=225",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=225",
     categories: ["Soul Guide", "ID_FMP_PARAGON_PATH_225"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1089"]);

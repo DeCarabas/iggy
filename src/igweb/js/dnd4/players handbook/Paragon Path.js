@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_17",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=17",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=17",
     categories: ["Angelic Avenger", "ID_FMP_PARAGON_PATH_17"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_441"]);
@@ -32,7 +32,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_43",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=43",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=43",
     categories: ["Astral Weapon", "ID_FMP_PARAGON_PATH_43"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_471"]);
@@ -50,7 +50,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_46",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=46",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=46",
     categories: ["Battle Captain", "ID_FMP_PARAGON_PATH_46"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_491"]);
@@ -68,7 +68,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_29",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=29",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=29",
     categories: ["Battle Mage", "ID_FMP_PARAGON_PATH_29"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_456"]);
@@ -86,7 +86,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_52",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=52",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=52",
     categories: ["Battlefield Archer", "ID_FMP_PARAGON_PATH_52"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_501"]);
@@ -104,7 +104,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_50",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=50",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=50",
     categories: ["Beast Stalker", "ID_FMP_PARAGON_PATH_50"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_503"]);
@@ -122,7 +122,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_31",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=31",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=31",
     categories: ["Blood Mage", "ID_FMP_PARAGON_PATH_31"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_460"]);
@@ -140,7 +140,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_36",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=36",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=36",
     categories: ["Cat Burglar", "ID_FMP_PARAGON_PATH_36"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_484"]);
@@ -158,7 +158,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_44",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=44",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=44",
     categories: ["Champion of Order", "ID_FMP_PARAGON_PATH_44"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_473"]);
@@ -176,7 +176,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_45",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=45",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=45",
     categories: ["Combat Veteran", "ID_FMP_PARAGON_PATH_45"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_489"]);
@@ -194,7 +194,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_34",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=34",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=34",
     categories: ["Daggermaster", "ID_FMP_PARAGON_PATH_34"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_508"]);
@@ -212,7 +212,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_16",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=16",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=16",
     categories: ["Divine Oracle", "ID_FMP_PARAGON_PATH_16"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_438"]);
@@ -230,7 +230,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_39",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=39",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=39",
     categories: ["Doomsayer", "ID_FMP_PARAGON_PATH_39"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_477"]);
@@ -248,7 +248,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_14",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=14",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=14",
     categories: ["Feytouched", "ID_FMP_PARAGON_PATH_14"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_435"]);
@@ -266,7 +266,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_41",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=41",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=41",
     categories: ["Hospitaler", "ID_FMP_PARAGON_PATH_41"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_467"]);
@@ -284,7 +284,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_28",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=28",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=28",
     categories: ["Iron Vanguard", "ID_FMP_PARAGON_PATH_28"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_448"]);
@@ -302,7 +302,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_42",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=42",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=42",
     categories: ["Justiciar", "ID_FMP_PARAGON_PATH_42"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_469"]);
@@ -320,7 +320,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_21",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=21",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=21",
     categories: ["Kensei", "ID_FMP_PARAGON_PATH_21"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_452"]);
@@ -338,7 +338,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_47",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=47",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=47",
     categories: ["Knight Commander", "ID_FMP_PARAGON_PATH_47"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_493"]);
@@ -356,7 +356,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_38",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=38",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=38",
     categories: ["Life-Stealer", "ID_FMP_PARAGON_PATH_38"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_514"]);
@@ -374,7 +374,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_102",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=102",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=102",
     categories: ["Master Infiltrator", "ID_FMP_PARAGON_PATH_102"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_658"]);
@@ -392,7 +392,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_INTERNAL_PARAGON_PATH_PARAGON_MULTICLASSING",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=PATH_PARAGON_MULTICLASSING",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=PATH_PARAGON_MULTICLASSING",
     categories: ["Paragon Multiclassing", "ID_INTERNAL_PARAGON_PATH_PARAGON_MULTICLASSING"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -425,7 +425,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_49",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=49",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=49",
     categories: ["Pathfinder", "ID_FMP_PARAGON_PATH_49"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_497"]);
@@ -443,7 +443,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_99",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=99",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=99",
     categories: ["Pit Fighter", "ID_FMP_PARAGON_PATH_99"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_650"]);
@@ -461,7 +461,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_18",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=18",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=18",
     categories: ["Radiant Servant", "ID_FMP_PARAGON_PATH_18"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_447"]);
@@ -479,7 +479,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_103",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=103",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=103",
     categories: ["Shadow Assassin", "ID_FMP_PARAGON_PATH_103"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_661"]);
@@ -497,7 +497,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_59",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=59",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=59",
     categories: ["Spellstorm Mage", "ID_FMP_PARAGON_PATH_59"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_545"]);
@@ -515,7 +515,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_51",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=51",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=51",
     categories: ["Stormwarden", "ID_FMP_PARAGON_PATH_51"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_499"]);
@@ -533,7 +533,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_48",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=48",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=48",
     categories: ["Sword Marshal", "ID_FMP_PARAGON_PATH_48"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_495"]);
@@ -551,7 +551,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_26",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=26",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=26",
     categories: ["Swordmaster", "ID_FMP_PARAGON_PATH_26"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_450"]);
@@ -569,7 +569,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_15",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=15",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=15",
     categories: ["Warpriest Paragon Path", "ID_FMP_PARAGON_PATH_15"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_436"]);
@@ -588,7 +588,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_32",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=32",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=32",
     categories: ["Wizard of the Spiral Tower", "ID_FMP_PARAGON_PATH_32"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_462"]);

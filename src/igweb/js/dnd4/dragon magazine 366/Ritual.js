@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_100",
     source: "Dragon Magazine 366,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=100",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=100",
     categories: ["Arcane Barrier", "ID_FMP_RITUAL_100"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_101",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=101",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=101",
     categories: ["Banish Vermin", "ID_FMP_RITUAL_101"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_102",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=102",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=102",
     categories: ["Battlefield Elocution", "ID_FMP_RITUAL_102"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_103",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=103",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=103",
     categories: ["Bolster Object", "ID_FMP_RITUAL_103"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_104",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=104",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=104",
     categories: ["Chameleon's Cloak", "ID_FMP_RITUAL_104"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_105",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=105",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=105",
     categories: ["Conceal Object", "ID_FMP_RITUAL_105"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_106",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=106",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=106",
     categories: ["Deceive Sensor", "ID_FMP_RITUAL_106"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_107",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=107",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=107",
     categories: ["Delay Affliction", "ID_FMP_RITUAL_107"]
   });
   byID[te.id] = te;
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_108",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=108",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=108",
     categories: ["Delver's Fire", "ID_FMP_RITUAL_108"]
   });
   byID[te.id] = te;
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_109",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=109",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=109",
     categories: ["Earthen Ramparts", "ID_FMP_RITUAL_109"]
   });
   byID[te.id] = te;
@@ -113,7 +113,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_110",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=110",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=110",
     categories: ["Excavation", "ID_FMP_RITUAL_110"]
   });
   byID[te.id] = te;
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_111",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=111",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=111",
     categories: ["Explorer's Fire", "ID_FMP_RITUAL_111"]
   });
   byID[te.id] = te;
@@ -133,7 +133,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_113",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=113",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=113",
     categories: ["Fastidiousness", "ID_FMP_RITUAL_113"]
   });
   byID[te.id] = te;
@@ -143,7 +143,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_114",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=114",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=114",
     categories: ["Memory Seal", "ID_FMP_RITUAL_114"]
   });
   byID[te.id] = te;
@@ -153,7 +153,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_115",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=115",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=115",
     categories: ["Mordenkainen's Ascent", "ID_FMP_RITUAL_115"]
   });
   byID[te.id] = te;
@@ -163,7 +163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_116",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=116",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=116",
     categories: ["Mordenkainen's Joining", "ID_FMP_RITUAL_116"]
   });
   byID[te.id] = te;
@@ -173,7 +173,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_117",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=117",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=117",
     categories: ["Overland Flight", "ID_FMP_RITUAL_117"]
   });
   byID[te.id] = te;
@@ -183,7 +183,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_120",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=120",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=120",
     categories: ["Planar Sending", "ID_FMP_RITUAL_120"]
   });
   byID[te.id] = te;
@@ -193,7 +193,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_119",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=119",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=119",
     categories: ["Preservation", "ID_FMP_RITUAL_119"]
   });
   byID[te.id] = te;
@@ -203,7 +203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_121",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=121",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=121",
     categories: ["Safeguard", "ID_FMP_RITUAL_121"]
   });
   byID[te.id] = te;
@@ -213,7 +213,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_122",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=122",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=122",
     categories: ["Scribe", "ID_FMP_RITUAL_122"]
   });
   byID[te.id] = te;
@@ -223,7 +223,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_123",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=123",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=123",
     categories: ["Signal of Pursuit", "ID_FMP_RITUAL_123"]
   });
   byID[te.id] = te;
@@ -233,7 +233,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_124",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=124",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=124",
     categories: ["Stasis Shell", "ID_FMP_RITUAL_124"]
   });
   byID[te.id] = te;
@@ -243,7 +243,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_125",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=125",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=125",
     categories: ["Teleport Catcher", "ID_FMP_RITUAL_125"]
   });
   byID[te.id] = te;
@@ -253,7 +253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_126",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=126",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=126",
     categories: ["Tenser's Binding", "ID_FMP_RITUAL_126"]
   });
   byID[te.id] = te;
@@ -263,7 +263,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_127",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=127",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=127",
     categories: ["Tenser's Lift", "ID_FMP_RITUAL_127"]
   });
   byID[te.id] = te;
@@ -273,7 +273,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_128",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=128",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=128",
     categories: ["True Sending", "ID_FMP_RITUAL_128"]
   });
   byID[te.id] = te;
@@ -283,7 +283,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_129",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=129",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=129",
     categories: ["Visage of Life", "ID_FMP_RITUAL_129"]
   });
   byID[te.id] = te;
@@ -293,7 +293,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_130",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=130",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=130",
     categories: ["Voicecatcher Veil", "ID_FMP_RITUAL_130"]
   });
   byID[te.id] = te;
@@ -303,7 +303,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_131",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=131",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=131",
     categories: ["Wizard's Curtain", "ID_FMP_RITUAL_131"]
   });
   byID[te.id] = te;
@@ -313,7 +313,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_132",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=132",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=132",
     categories: ["Wizard's Escape", "ID_FMP_RITUAL_132"]
   });
   byID[te.id] = te;

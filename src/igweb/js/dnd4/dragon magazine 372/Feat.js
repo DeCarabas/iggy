@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1111",
     source: "Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1111",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1111",
     categories: ["Bane's Tactics", "ID_FMP_FEAT_1111", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_6595"]);

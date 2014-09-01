@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_503",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=503",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=503",
     categories: ["Fang of the World Serpent", "ID_FMP_EPIC_DESTINY_503"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2049"]);
@@ -29,7 +29,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_504",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=504",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=504",
     categories: ["Fury of the Wild", "ID_FMP_EPIC_DESTINY_504"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2052"]);
@@ -45,7 +45,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_505",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=505",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=505",
     categories: ["Honored Ancestor", "ID_FMP_EPIC_DESTINY_505"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2055"]);
@@ -61,7 +61,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_506",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=506",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=506",
     categories: ["Mythic Spirit", "ID_FMP_EPIC_DESTINY_506"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2058"]);
@@ -77,7 +77,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_507",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=507",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=507",
     categories: ["Perfect Guardian", "ID_FMP_EPIC_DESTINY_507"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2061"]);
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_508",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=508",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=508",
     categories: ["Reincarnate Champion", "ID_FMP_EPIC_DESTINY_508"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2064"]);
@@ -110,7 +110,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_509",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=509",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=509",
     categories: ["Sovereign Beast", "ID_FMP_EPIC_DESTINY_509"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2068"]);
@@ -126,7 +126,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_510",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=510",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=510",
     categories: ["World Tree Guardian", "ID_FMP_EPIC_DESTINY_510"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2071"]);

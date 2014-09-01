@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3166",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3166",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3166",
     categories: ["Dancing Thorn Style", "ID_FMP_FEAT_3166"],
     rules: function(model) {
       model.statadd("ID_FMP_CLASS_362,implement,longsword:attack", 1);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3169",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3169",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3169",
     categories: ["Darkening Mind", "ID_FMP_FEAT_3169", "ID_INTERNAL_CATEGORY_AUGMENT", "Augment"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -44,7 +44,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3170",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3170",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3170",
     categories: ["Death's Grasp", "ID_FMP_FEAT_3170"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -59,7 +59,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3167",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3167",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3167",
     categories: ["Elemental Recovery", "ID_FMP_FEAT_3167"],
     rules: function(model) {
       model.statadd("Elemental Recovery", 5);
@@ -72,7 +72,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3160",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3160",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3160",
     categories: ["Enlightened Spirit", "ID_FMP_FEAT_3160"],
     rules: function(model) {
       model.statadd("Athletics Misc", function() { return model.stat("Constitution modifier"); }, "Ability");
@@ -86,7 +86,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3164",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3164",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3164",
     categories: ["Enlightened Transformation", "ID_FMP_FEAT_3164"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -99,7 +99,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3176",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3176",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3176",
     categories: ["Far Thought", "ID_FMP_FEAT_3176"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_VISION_TELEPATHY"]);
@@ -112,7 +112,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3177",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3177",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3177",
     categories: ["Foreign Memories", "ID_FMP_FEAT_3177"]
   });
   byID[te.id] = te;
@@ -122,7 +122,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3168",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3168",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3168",
     categories: ["Get in Your Head", "ID_FMP_FEAT_3168"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -137,7 +137,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3171",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3171",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3171",
     categories: ["Grave Flurry", "ID_FMP_FEAT_3171"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -152,7 +152,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3172",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3172",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3172",
     categories: ["Mind Rot", "ID_FMP_FEAT_3172"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -165,7 +165,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3158",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3158",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3158",
     categories: ["Mindfire", "ID_FMP_FEAT_3158"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -179,7 +179,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3174",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3174",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3174",
     categories: ["Psiforged Resolve", "ID_FMP_FEAT_3174"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -192,7 +192,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3159",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3159",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3159",
     categories: ["Psionic Accuracy", "ID_FMP_FEAT_3159"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -206,7 +206,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3162",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3162",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3162",
     categories: ["Psionic Ferocity", "ID_FMP_FEAT_3162"]
   });
   byID[te.id] = te;
@@ -216,7 +216,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3161",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3161",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3161",
     categories: ["Psionic Fury", "ID_FMP_FEAT_3161"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -230,7 +230,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3165",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3165",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3165",
     categories: ["Psychic Feast", "ID_FMP_FEAT_3165"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -243,7 +243,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3163",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3163",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3163",
     categories: ["Rampaging Thought", "ID_FMP_FEAT_3163"]
   });
   byID[te.id] = te;
@@ -253,7 +253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3175",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3175",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3175",
     categories: ["Snake Blooded", "ID_FMP_FEAT_3175"],
     rules: function(model) {
       model.statadd("resist:poison", 5, "resist");
@@ -267,7 +267,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3178",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3178",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3178",
     categories: ["Sturdy Mind", "ID_FMP_FEAT_3178"],
     rules: function(model) {
       model.statadd("Saving Throws", function() { /* against charm, illusion, and psychic effects */ return 2; }, "Feat");
@@ -280,7 +280,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3173",
     source: "Dragon Magazine 389",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3173",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3173",
     categories: ["Unnatural Mantle", "ID_FMP_FEAT_3173"]
   });
   byID[te.id] = te;

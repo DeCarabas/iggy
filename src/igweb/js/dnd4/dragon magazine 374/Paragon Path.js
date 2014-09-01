@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_351",
     source: "Dragon Magazine 374",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=351",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=351",
     categories: ["Academy Master", "ID_FMP_PARAGON_PATH_351"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1519"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_350",
     source: "Dragon Magazine 374",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=350",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=350",
     categories: ["Familiar Keeper", "ID_FMP_PARAGON_PATH_350"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1516"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_361",
     source: "Dragon Magazine 374",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=361",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=361",
     categories: ["Long Night Scion", "ID_FMP_PARAGON_PATH_361"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1535"]);

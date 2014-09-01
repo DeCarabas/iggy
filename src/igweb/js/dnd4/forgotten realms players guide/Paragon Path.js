@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_74",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=74",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=74",
     categories: ["Anarch of Shyr", "ID_FMP_PARAGON_PATH_74"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_576"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_73",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=73",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=73",
     categories: ["Coronal Guard", "ID_FMP_PARAGON_PATH_73"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_578"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_138",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=138",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=138",
     categories: ["Darkwalker", "ID_FMP_PARAGON_PATH_138"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_633"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_81",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=81",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=81",
     categories: ["Doomguide", "ID_FMP_PARAGON_PATH_81"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_587"]);
@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_82",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=82",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=82",
     categories: ["Drow Wanderer", "ID_FMP_PARAGON_PATH_82"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_589"]);
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_83",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=83",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=83",
     categories: ["Earthheart Defender", "ID_FMP_PARAGON_PATH_83"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_591"]);
@@ -121,7 +121,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_84",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=84",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=84",
     categories: ["Elemental Tempest", "ID_FMP_PARAGON_PATH_84"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_593"]);
@@ -140,7 +140,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_88",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=88",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=88",
     categories: ["Evermeet Warlock", "ID_FMP_PARAGON_PATH_88"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_817"]);
@@ -158,7 +158,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_67",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=67",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=67",
     categories: ["Ghost of Eventide", "ID_FMP_PARAGON_PATH_67"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_566"]);
@@ -176,7 +176,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_141",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=141",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=141",
     categories: ["Heartwarder", "ID_FMP_PARAGON_PATH_141"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_821"]);
@@ -194,7 +194,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_63",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=63",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=63",
     categories: ["High Forest Scout", "ID_FMP_PARAGON_PATH_63"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_560"]);
@@ -212,7 +212,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_77",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=77",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=77",
     categories: ["Impilturan Demonslayer", "ID_FMP_PARAGON_PATH_77"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_582"]);
@@ -230,7 +230,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_89",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=89",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=89",
     categories: ["Morninglord", "ID_FMP_PARAGON_PATH_89"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_825"]);
@@ -248,7 +248,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_85",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=85",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=85",
     categories: ["Purple Dragon Knight", "ID_FMP_PARAGON_PATH_85"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_595"]);
@@ -266,7 +266,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_143",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=143",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=143",
     categories: ["Silverstar", "ID_FMP_PARAGON_PATH_143"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_829"]);
@@ -285,7 +285,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_87",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=87",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=87",
     categories: ["Simbarch of Aglarond", "ID_FMP_PARAGON_PATH_87"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_832"]);
@@ -303,7 +303,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_86",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=86",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=86",
     categories: ["Spellguard Wizard", "ID_FMP_PARAGON_PATH_86"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_597"]);
@@ -321,7 +321,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_62",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=62",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=62",
     categories: ["Spellscarred Savant", "ID_FMP_PARAGON_PATH_62"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_558"]);
@@ -338,7 +338,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_145",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=145",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=145",
     categories: ["Steelsky Liberator", "ID_FMP_PARAGON_PATH_145"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_838"]);
@@ -356,7 +356,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_61",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=61",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=61",
     categories: ["Sword Coast Corsair", "ID_FMP_PARAGON_PATH_61"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_562"]);
@@ -374,7 +374,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_71",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=71",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=71",
     categories: ["Umbriri", "ID_FMP_PARAGON_PATH_71"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_574"]);
@@ -392,7 +392,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_76",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=76",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=76",
     categories: ["Wandering Swordmage", "ID_FMP_PARAGON_PATH_76"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_580"]);
@@ -411,7 +411,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_66",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=66",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=66",
     categories: ["War Wizard of Cormyr", "ID_FMP_PARAGON_PATH_66"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_568"]);
@@ -429,7 +429,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_69",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=69",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=69",
     categories: ["Whirlwind Genasi", "ID_FMP_PARAGON_PATH_69"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_572"]);
@@ -447,7 +447,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_68",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=68",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=68",
     categories: ["Wildfire Genasi", "ID_FMP_PARAGON_PATH_68"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_570"]);

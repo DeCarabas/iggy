@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_1",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=1",
     categories: ["Acrobatics", "ID_FMP_SKILL_1"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_2",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=2",
     categories: ["Arcana", "ID_FMP_SKILL_2"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_27",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=27",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=27",
     categories: ["Athletics", "ID_FMP_SKILL_27"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_3",
     source: "Player's Handbook,Player's Handbook 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=3",
     categories: ["Bluff", "ID_FMP_SKILL_3"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_6",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=6",
     categories: ["Diplomacy", "ID_FMP_SKILL_6"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_7",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=7",
     categories: ["Dungeoneering", "ID_FMP_SKILL_7"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_8",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=8",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=8",
     categories: ["Endurance", "ID_FMP_SKILL_8"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_9",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=9",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=9",
     categories: ["Heal", "ID_FMP_SKILL_9"]
   });
   byID[te.id] = te;
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_11",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=11",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=11",
     categories: ["History", "ID_FMP_SKILL_11"]
   });
   byID[te.id] = te;
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_13",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=13",
     categories: ["Insight", "ID_FMP_SKILL_13"]
   });
   byID[te.id] = te;
@@ -113,7 +113,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_14",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=14",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=14",
     categories: ["Intimidate", "ID_FMP_SKILL_14"]
   });
   byID[te.id] = te;
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_16",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=16",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=16",
     categories: ["Nature", "ID_FMP_SKILL_16"]
   });
   byID[te.id] = te;
@@ -133,7 +133,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_17",
     source: "Player's Handbook,Player's Handbook 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=17",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=17",
     categories: ["Perception", "ID_FMP_SKILL_17"]
   });
   byID[te.id] = te;
@@ -143,7 +143,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_18",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=18",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=18",
     categories: ["Religion", "ID_FMP_SKILL_18"]
   });
   byID[te.id] = te;
@@ -153,7 +153,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_20",
     source: "Player's Handbook,Player's Handbook 2,Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=20",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=20",
     categories: ["Stealth", "ID_FMP_SKILL_20"]
   });
   byID[te.id] = te;
@@ -163,7 +163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_21",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=21",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=21",
     categories: ["Streetwise", "ID_FMP_SKILL_21"]
   });
   byID[te.id] = te;
@@ -173,7 +173,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Skill",
     id: "ID_FMP_SKILL_23",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=23",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/skill.aspx?id=23",
     categories: ["Thievery", "ID_FMP_SKILL_23"]
   });
   byID[te.id] = te;

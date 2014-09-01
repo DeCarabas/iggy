@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_152",
     source: "Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=152",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=152",
     categories: ["Draeven Marauder", "ID_FMP_PARAGON_PATH_152"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_864"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_153",
     source: "Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=153",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=153",
     categories: ["Luckbringer of Tymora", "ID_FMP_PARAGON_PATH_153"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_867"]);

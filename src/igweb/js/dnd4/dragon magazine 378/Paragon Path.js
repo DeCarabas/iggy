@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_461",
     source: "Dragon Magazine 378",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=461",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=461",
     categories: ["Bladestorm Duelist", "ID_FMP_PARAGON_PATH_461"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1905"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_463",
     source: "Dragon Magazine 378",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=463",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=463",
     categories: ["Chromatic Bane", "ID_FMP_PARAGON_PATH_463"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1911"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_465",
     source: "Dragon Magazine 378",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=465",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=465",
     categories: ["Storvakal", "ID_FMP_PARAGON_PATH_465"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1917"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_462",
     source: "Dragon Magazine 378",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=462",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=462",
     categories: ["Wrathbearer", "ID_FMP_PARAGON_PATH_462"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1908"]);

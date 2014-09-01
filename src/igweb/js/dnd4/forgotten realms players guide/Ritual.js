@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_75",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=75",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=75",
     categories: ["Amanuensis", "ID_FMP_RITUAL_75"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_76",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=76",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=76",
     categories: ["Analyze Portal", "ID_FMP_RITUAL_76"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_77",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=77",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=77",
     categories: ["Arcane Mark", "ID_FMP_RITUAL_77"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_78",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=78",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=78",
     categories: ["Clear the Path", "ID_FMP_RITUAL_78"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_79",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=79",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=79",
     categories: ["Dark Light", "ID_FMP_RITUAL_79"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_80",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=80",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=80",
     categories: ["Deathly Shroud", "ID_FMP_RITUAL_80"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_81",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=81",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=81",
     categories: ["Divine Sight", "ID_FMP_RITUAL_81"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_82",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=82",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=82",
     categories: ["Duplicate", "ID_FMP_RITUAL_82"]
   });
   byID[te.id] = te;
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_83",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=83",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=83",
     categories: ["Feat of Strength", "ID_FMP_RITUAL_83"]
   });
   byID[te.id] = te;
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_84",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=84",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=84",
     categories: ["Purge Spellplague", "ID_FMP_RITUAL_84"]
   });
   byID[te.id] = te;
@@ -113,7 +113,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_85",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=85",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=85",
     categories: ["Purify Spellscarred", "ID_FMP_RITUAL_85"]
   });
   byID[te.id] = te;
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_86",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=86",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=86",
     categories: ["Raise Land", "ID_FMP_RITUAL_86"]
   });
   byID[te.id] = te;
@@ -133,7 +133,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_87",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=87",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=87",
     categories: ["Seek Rumor", "ID_FMP_RITUAL_87"]
   });
   byID[te.id] = te;
@@ -143,7 +143,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_88",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=88",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=88",
     categories: ["Shadow Bridge", "ID_FMP_RITUAL_88"]
   });
   byID[te.id] = te;
@@ -153,7 +153,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_89",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=89",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=89",
     categories: ["Share Husk", "ID_FMP_RITUAL_89"]
   });
   byID[te.id] = te;
@@ -163,7 +163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_90",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=90",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=90",
     categories: ["Shift Mote", "ID_FMP_RITUAL_90"]
   });
   byID[te.id] = te;
@@ -173,7 +173,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_91",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=91",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=91",
     categories: ["Simbul's Conversion", "ID_FMP_RITUAL_91"]
   });
   byID[te.id] = te;
@@ -183,7 +183,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_92",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=92",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=92",
     categories: ["Soulguard", "ID_FMP_RITUAL_92"]
   });
   byID[te.id] = te;
@@ -193,7 +193,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_93",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=93",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=93",
     categories: ["Status", "ID_FMP_RITUAL_93"]
   });
   byID[te.id] = te;
@@ -203,7 +203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_94",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=94",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=94",
     categories: ["Time Ravager", "ID_FMP_RITUAL_94"]
   });
   byID[te.id] = te;
@@ -213,7 +213,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_95",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=95",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=95",
     categories: ["Tiny Lanterns", "ID_FMP_RITUAL_95"]
   });
   byID[te.id] = te;
@@ -223,7 +223,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_96",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=96",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=96",
     categories: ["Trailblaze", "ID_FMP_RITUAL_96"]
   });
   byID[te.id] = te;
@@ -233,7 +233,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_97",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=97",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=97",
     categories: ["Walk Crossroads", "ID_FMP_RITUAL_97"]
   });
   byID[te.id] = te;
@@ -243,7 +243,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_98",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=98",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=98",
     categories: ["Waterborn", "ID_FMP_RITUAL_98"]
   });
   byID[te.id] = te;

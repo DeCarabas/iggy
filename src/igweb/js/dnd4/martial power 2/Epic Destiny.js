@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_582",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=582",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=582",
     categories: ["Dragonheart", "ID_FMP_EPIC_DESTINY_582"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2317"]);
@@ -29,7 +29,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_583",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=583",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=583",
     categories: ["Invincible Vanguard", "ID_FMP_EPIC_DESTINY_583"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2321"]);
@@ -45,7 +45,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_211",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=211",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=211",
     categories: ["Legendary Sovereign", "ID_FMP_EPIC_DESTINY_211"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1041"]);
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_585",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=585",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=585",
     categories: ["Star-Favored Champion", "ID_FMP_EPIC_DESTINY_585"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2452"]);

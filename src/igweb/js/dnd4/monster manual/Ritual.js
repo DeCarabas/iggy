@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_72",
     source: "Monster Manual",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=72",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=72",
     categories: ["Dark Gift of the Undying", "ID_FMP_RITUAL_72"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_71",
     source: "Monster Manual",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=71",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=71",
     categories: ["Lich Transformation", "ID_FMP_RITUAL_71"]
   });
   byID[te.id] = te;

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1425",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1425",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1425",
     categories: ["Arcana Ward", "ID_FMP_FEAT_1425", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8173"]);
@@ -26,7 +26,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1488",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1488",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1488",
     categories: ["Armor of Burning Wrath", "ID_FMP_FEAT_1488"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -40,7 +40,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1489",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1489",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1489",
     categories: ["Armor of Vengeance", "ID_FMP_FEAT_1489"]
   });
   byID[te.id] = te;
@@ -50,7 +50,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1564",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1564",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1564",
     categories: ["Armored by Faith", "ID_FMP_FEAT_1564"]
   });
   byID[te.id] = te;
@@ -60,7 +60,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1490",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1490",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1490",
     categories: ["Astral Enmity", "ID_FMP_FEAT_1490"]
   });
   byID[te.id] = te;
@@ -70,7 +70,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1491",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1491",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1491",
     categories: ["Astral Preservation", "ID_FMP_FEAT_1491"]
   });
   byID[te.id] = te;
@@ -80,7 +80,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1492",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1492",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1492",
     categories: ["Avenging Allure", "ID_FMP_FEAT_1492"]
   });
   byID[te.id] = te;
@@ -90,7 +90,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1493",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1493",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1493",
     categories: ["Avenging Opportunist", "ID_FMP_FEAT_1493"]
   });
   byID[te.id] = te;
@@ -100,7 +100,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1565",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1565",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1565",
     categories: ["Avenging Surge", "ID_FMP_FEAT_1565"]
   });
   byID[te.id] = te;
@@ -110,7 +110,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1494",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1494",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1494",
     categories: ["Baleful Malediction", "ID_FMP_FEAT_1494"]
   });
   byID[te.id] = te;
@@ -120,7 +120,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1495",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1495",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1495",
     categories: ["Battle Healer", "ID_FMP_FEAT_1495"]
   });
   byID[te.id] = te;
@@ -130,7 +130,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1593",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1593",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1593",
     categories: ["Beatific Healer", "ID_FMP_FEAT_1593"]
   });
   byID[te.id] = te;
@@ -140,7 +140,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1496",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1496",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1496",
     categories: ["Blessed Scoundrel", "ID_FMP_FEAT_1496"]
   });
   byID[te.id] = te;
@@ -150,7 +150,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1497",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1497",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1497",
     categories: ["Blessed Shifter", "ID_FMP_FEAT_1497"]
   });
   byID[te.id] = te;
@@ -160,7 +160,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1498",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1498",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1498",
     categories: ["Blessing of Avandra", "ID_FMP_FEAT_1498"]
   });
   byID[te.id] = te;
@@ -170,7 +170,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1499",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1499",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1499",
     categories: ["Blessing of Corellon", "ID_FMP_FEAT_1499"]
   });
   byID[te.id] = te;
@@ -180,7 +180,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1500",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1500",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1500",
     categories: ["Breath of Life", "ID_FMP_FEAT_1500"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -193,7 +193,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1501",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1501",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1501",
     categories: ["Brilliant Darkfire", "ID_FMP_FEAT_1501"]
   });
   byID[te.id] = te;
@@ -203,7 +203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1566",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1566",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1566",
     categories: ["Censure's Grip", "ID_FMP_FEAT_1566"]
   });
   byID[te.id] = te;
@@ -213,7 +213,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1502",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1502",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1502",
     categories: ["Channel Might", "ID_FMP_FEAT_1502"]
   });
   byID[te.id] = te;
@@ -223,7 +223,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1622",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1622",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1622",
     categories: ["Channel of Faith", "ID_FMP_FEAT_1622", "ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC", "Multiclass Cleric", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_1589"]);
@@ -238,7 +238,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1623",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1623",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1623",
     categories: ["Channel of Invocation", "ID_FMP_FEAT_1623", "ID_INTERNAL_CATEGORY_MULTICLASS_INVOKER", "Multiclass Invoker", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_5184"]);
@@ -253,7 +253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1624",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1624",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1624",
     categories: ["Channel of Valor", "ID_FMP_FEAT_1624", "ID_INTERNAL_CATEGORY_MULTICLASS_PALADIN", "Multiclass Paladin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_1746"]);
@@ -268,7 +268,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1625",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1625",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1625",
     categories: ["Channel of Vengeance", "ID_FMP_FEAT_1625", "ID_INTERNAL_CATEGORY_MULTICLASS_AVENGER", "Multiclass Avenger", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_5330"]);
@@ -283,7 +283,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1503",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1503",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1503",
     categories: ["Clarity of Spirit", "ID_FMP_FEAT_1503"]
   });
   byID[te.id] = te;
@@ -293,7 +293,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1567",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1567",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1567",
     categories: ["Clinging Radiance", "ID_FMP_FEAT_1567"]
   });
   byID[te.id] = te;
@@ -303,7 +303,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1504",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1504",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1504",
     categories: ["Closing Pledge", "ID_FMP_FEAT_1504"]
   });
   byID[te.id] = te;
@@ -313,7 +313,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1568",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1568",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1568",
     categories: ["Contagious Challenge", "ID_FMP_FEAT_1568"]
   });
   byID[te.id] = te;
@@ -323,7 +323,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1594",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1594",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1594",
     categories: ["Crusading Wrath", "ID_FMP_FEAT_1594"]
   });
   byID[te.id] = te;
@@ -333,7 +333,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1427",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1427",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1427",
     categories: ["Cycle of Change", "ID_FMP_FEAT_1427", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8174"]);
@@ -346,7 +346,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1505",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1505",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1505",
     categories: ["Darkfire Vitality", "ID_FMP_FEAT_1505"]
   });
   byID[te.id] = te;
@@ -356,7 +356,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1569",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1569",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1569",
     categories: ["Darkfoe", "ID_FMP_FEAT_1569"]
   });
   byID[te.id] = te;
@@ -366,7 +366,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1430",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1430",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1430",
     categories: ["Darkness Consumes", "ID_FMP_FEAT_1430", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8175"]);
@@ -379,7 +379,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1506",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1506",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1506",
     categories: ["Deadly Rebuke", "ID_FMP_FEAT_1506"]
   });
   byID[te.id] = te;
@@ -389,7 +389,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1432",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1432",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1432",
     categories: ["Death Knell", "ID_FMP_FEAT_1432", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8176"]);
@@ -402,7 +402,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1507",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1507",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1507",
     categories: ["Defensive Grace", "ID_FMP_FEAT_1507"]
   });
   byID[te.id] = te;
@@ -412,7 +412,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1508",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1508",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1508",
     categories: ["Defensive Healing Word", "ID_FMP_FEAT_1508"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -425,7 +425,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1509",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1509",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1509",
     categories: ["Demonbane", "ID_FMP_FEAT_1509"]
   });
   byID[te.id] = te;
@@ -435,7 +435,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1510",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1510",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1510",
     categories: ["Demonbane Malediction", "ID_FMP_FEAT_1510"]
   });
   byID[te.id] = te;
@@ -445,7 +445,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1595",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1595",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1595",
     categories: ["Devastating Invocation", "ID_FMP_FEAT_1595"]
   });
   byID[te.id] = te;
@@ -455,7 +455,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1511",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1511",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1511",
     categories: ["Devilbane", "ID_FMP_FEAT_1511"]
   });
   byID[te.id] = te;
@@ -465,7 +465,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1512",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1512",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1512",
     categories: ["Devoted Paladin", "ID_FMP_FEAT_1512"],
     rules: function(model) {
       model.statadd("Healing Surges", 1);
@@ -478,7 +478,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1570",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1570",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1570",
     categories: ["Devout Guidance", "ID_FMP_FEAT_1570"]
   });
   byID[te.id] = te;
@@ -488,7 +488,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1513",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1513",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1513",
     categories: ["Divine Approval", "ID_FMP_FEAT_1513"]
   });
   byID[te.id] = te;
@@ -498,7 +498,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1514",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1514",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1514",
     categories: ["Divine Assault", "ID_FMP_FEAT_1514"]
   });
   byID[te.id] = te;
@@ -508,7 +508,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1627",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1627",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1627",
     categories: ["Divine Channeler", "ID_FMP_FEAT_1627", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       model.select('Power', 1, "Divine Channeler", {
@@ -525,7 +525,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(AVENGER)",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_DIVINE_CHANNELER_(AVENGER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_DIVINE_CHANNELER_(AVENGER)",
     categories: ["Divine Channeler (Avenger)", "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(AVENGER)", "ID_INTERNAL_CATEGORY_MULTICLASS_AVENGER", "Multiclass Avenger", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Power', 1, "Divine Channeler (Avenger)", {
@@ -544,7 +544,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(CLERIC)",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_DIVINE_CHANNELER_(CLERIC)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_DIVINE_CHANNELER_(CLERIC)",
     categories: ["Divine Channeler (Cleric)", "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(CLERIC)", "ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC", "Multiclass Cleric", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Power', 1, "Divine Channeler (Cleric)", {
@@ -563,7 +563,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(INVOKER)",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_DIVINE_CHANNELER_(INVOKER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_DIVINE_CHANNELER_(INVOKER)",
     categories: ["Divine Channeler (Invoker)", "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(INVOKER)", "ID_INTERNAL_CATEGORY_MULTICLASS_INVOKER", "Multiclass Invoker", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Power', 1, "Divine Channeler (Invoker)", {
@@ -582,7 +582,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(PALADIN)",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_DIVINE_CHANNELER_(PALADIN)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_DIVINE_CHANNELER_(PALADIN)",
     categories: ["Divine Channeler (Paladin)", "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(PALADIN)", "ID_INTERNAL_CATEGORY_MULTICLASS_PALADIN", "Multiclass Paladin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Power', 1, "Divine Channeler (Paladin)", {
@@ -601,7 +601,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1571",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1571",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1571",
     categories: ["Divine Cleansing", "ID_FMP_FEAT_1571"]
   });
   byID[te.id] = te;
@@ -611,7 +611,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1515",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1515",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1515",
     categories: ["Divine Distraction", "ID_FMP_FEAT_1515"],
     rules: function(model) {
       model.statadd("Divine Distraction", 1);
@@ -625,7 +625,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1462",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1462",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1462",
     categories: ["Divine Excellence", "ID_FMP_FEAT_1462", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8192"]);
@@ -638,7 +638,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1628",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1628",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1628",
     categories: ["Divine Healer", "ID_FMP_FEAT_1628", "ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC", "Multiclass Cleric", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_HEAL"]);
@@ -655,7 +655,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1596",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1596",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1596",
     categories: ["Divine Health", "ID_FMP_FEAT_1596"],
     rules: function(model) {
       model.statadd("Divine Health", function() { return model.stat("HALF-LEVEL"); });
@@ -670,7 +670,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_129",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=129",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=129",
     categories: ["Divine Mastery", "ID_FMP_FEAT_129"],
     rules: function(model) {
       model.statadd("Action Point", "Divine Mastery:When you spend an action point to take an extra action, you also regain the use of a divine encounter power you have used during this encounter.");
@@ -683,7 +683,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1516",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1516",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1516",
     categories: ["Divine Perseverance", "ID_FMP_FEAT_1516"]
   });
   byID[te.id] = te;
@@ -693,7 +693,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1629",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1629",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1629",
     categories: ["Divine Secretkeeper", "ID_FMP_FEAT_1629", "ID_INTERNAL_CATEGORY_MULTICLASS_INVOKER", "Multiclass Invoker", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Divine Secretkeeper", {
@@ -712,7 +712,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1517",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1517",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1517",
     categories: ["Draconic Challenge", "ID_FMP_FEAT_1517"]
   });
   byID[te.id] = te;
@@ -722,7 +722,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1518",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1518",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1518",
     categories: ["Dwarf Battle Priest", "ID_FMP_FEAT_1518"]
   });
   byID[te.id] = te;
@@ -732,7 +732,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1572",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1572",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1572",
     categories: ["Eager for Blood", "ID_FMP_FEAT_1572"]
   });
   byID[te.id] = te;
@@ -742,7 +742,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1435",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1435",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1435",
     categories: ["Earth Hold", "ID_FMP_FEAT_1435", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8179"]);
@@ -755,7 +755,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1519",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1519",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1519",
     categories: ["Elemental Blessing", "ID_FMP_FEAT_1519"]
   });
   byID[te.id] = te;
@@ -765,7 +765,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1520",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1520",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1520",
     categories: ["Elemental Challenge", "ID_FMP_FEAT_1520"]
   });
   byID[te.id] = te;
@@ -775,7 +775,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1521",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1521",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1521",
     categories: ["Elemental Rebuke", "ID_FMP_FEAT_1521"]
   });
   byID[te.id] = te;
@@ -785,7 +785,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1598",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1598",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1598",
     categories: ["Enmity Shared", "ID_FMP_FEAT_1598"]
   });
   byID[te.id] = te;
@@ -795,7 +795,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1599",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1599",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1599",
     categories: ["Epic Turning", "ID_FMP_FEAT_1599"]
   });
   byID[te.id] = te;
@@ -805,7 +805,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1522",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1522",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1522",
     categories: ["Evade and Strike", "ID_FMP_FEAT_1522"]
   });
   byID[te.id] = te;
@@ -815,7 +815,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1573",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1573",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1573",
     categories: ["Extended Healing", "ID_FMP_FEAT_1573"]
   });
   byID[te.id] = te;
@@ -825,7 +825,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1437",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1437",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1437",
     categories: ["Fate Rolls On", "ID_FMP_FEAT_1437", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8180"]);
@@ -838,7 +838,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1523",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1523",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1523",
     categories: ["Fearsome Wrath", "ID_FMP_FEAT_1523"]
   });
   byID[te.id] = te;
@@ -848,7 +848,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1524",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1524",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1524",
     categories: ["Fey Fate", "ID_FMP_FEAT_1524"]
   });
   byID[te.id] = te;
@@ -858,7 +858,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1525",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1525",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1525",
     categories: ["Fey Preserver", "ID_FMP_FEAT_1525"]
   });
   byID[te.id] = te;
@@ -868,7 +868,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1526",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1526",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1526",
     categories: ["Feyborn Fortune", "ID_FMP_FEAT_1526"]
   });
   byID[te.id] = te;
@@ -878,7 +878,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1527",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1527",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1527",
     categories: ["Feyborn Pursuer", "ID_FMP_FEAT_1527"]
   });
   byID[te.id] = te;
@@ -888,7 +888,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1528",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1528",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1528",
     categories: ["Fickle Servant", "ID_FMP_FEAT_1528"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_ALL_DOMAINS"]);
@@ -902,7 +902,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1600",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1600",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1600",
     categories: ["Fist of Heaven", "ID_FMP_FEAT_1600"]
   });
   byID[te.id] = te;
@@ -912,7 +912,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1574",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1574",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1574",
     categories: ["Focused Wrath", "ID_FMP_FEAT_1574"]
   });
   byID[te.id] = te;
@@ -922,7 +922,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1575",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1575",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1575",
     categories: ["Footsteps of Doom", "ID_FMP_FEAT_1575"]
   });
   byID[te.id] = te;
@@ -932,7 +932,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1576",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1576",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1576",
     categories: ["Forceful Covenant", "ID_FMP_FEAT_1576"]
   });
   byID[te.id] = te;
@@ -942,7 +942,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1529",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1529",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1529",
     categories: ["Furious Devotion", "ID_FMP_FEAT_1529"]
   });
   byID[te.id] = te;
@@ -952,7 +952,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1601",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1601",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1601",
     categories: ["Glorious Channeler", "ID_FMP_FEAT_1601"]
   });
   byID[te.id] = te;
@@ -962,7 +962,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1485",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1485",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1485",
     categories: ["Grasp of the Wild", "ID_FMP_FEAT_1485", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8203"]);
@@ -975,7 +975,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1602",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1602",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1602",
     categories: ["Great Malediction", "ID_FMP_FEAT_1602"]
   });
   byID[te.id] = te;
@@ -985,7 +985,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1577",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1577",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1577",
     categories: ["Greater Fortune", "ID_FMP_FEAT_1577"]
   });
   byID[te.id] = te;
@@ -995,7 +995,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1530",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1530",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1530",
     categories: ["Group Defense", "ID_FMP_FEAT_1530"]
   });
   byID[te.id] = te;
@@ -1005,7 +1005,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1603",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1603",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1603",
     categories: ["Guiding Rebuke", "ID_FMP_FEAT_1603"]
   });
   byID[te.id] = te;
@@ -1015,7 +1015,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1531",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1531",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1531",
     categories: ["Healer's Implement", "ID_FMP_FEAT_1531"]
   });
   byID[te.id] = te;
@@ -1025,7 +1025,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1532",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1532",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1532",
     categories: ["Healing Step", "ID_FMP_FEAT_1532"]
   });
   byID[te.id] = te;
@@ -1035,7 +1035,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1604",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1604",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1604",
     categories: ["Heavenly Torrent", "ID_FMP_FEAT_1604"]
   });
   byID[te.id] = te;
@@ -1045,7 +1045,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1630",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1630",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1630",
     categories: ["Hero of Faith", "ID_FMP_FEAT_1630", "ID_INTERNAL_CATEGORY_MULTICLASS_AVENGER", "Multiclass Avenger", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Hero of Faith", {
@@ -1065,7 +1065,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1533",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1533",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1533",
     categories: ["Hidden Channeling", "ID_FMP_FEAT_1533"]
   });
   byID[te.id] = te;
@@ -1075,7 +1075,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1534",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1534",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1534",
     categories: ["Holy Resolve", "ID_FMP_FEAT_1534"]
   });
   byID[te.id] = te;
@@ -1085,7 +1085,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1535",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1535",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1535",
     categories: ["Holy Savagery", "ID_FMP_FEAT_1535"]
   });
   byID[te.id] = te;
@@ -1095,7 +1095,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1536",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1536",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1536",
     categories: ["Holy Speech", "ID_FMP_FEAT_1536"]
   });
   byID[te.id] = te;
@@ -1105,7 +1105,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1578",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1578",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1578",
     categories: ["Honored Foe", "ID_FMP_FEAT_1578"]
   });
   byID[te.id] = te;
@@ -1115,7 +1115,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1441",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1441",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1441",
     categories: ["Hope Remains", "ID_FMP_FEAT_1441", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8182"]);
@@ -1128,7 +1128,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1605",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1605",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1605",
     categories: ["Icon of Hope", "ID_FMP_FEAT_1605"]
   });
   byID[te.id] = te;
@@ -1138,7 +1138,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1606",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1606",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1606",
     categories: ["Icon of Purity", "ID_FMP_FEAT_1606"],
     rules: function(model) {
       model.statadd("Icon of Purity", function() { return model.stat("HALF-LEVEL"); });
@@ -1153,7 +1153,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1450",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1450",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1450",
     categories: ["Imminent Luck", "ID_FMP_FEAT_1450", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8186"]);
@@ -1166,7 +1166,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1607",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1607",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1607",
     categories: ["Indiscriminate Wrath", "ID_FMP_FEAT_1607"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1179,7 +1179,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1537",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1537",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1537",
     categories: ["Infernal Blessing", "ID_FMP_FEAT_1537"]
   });
   byID[te.id] = te;
@@ -1189,7 +1189,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1538",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1538",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1538",
     categories: ["Infernal Malediction", "ID_FMP_FEAT_1538"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1202,7 +1202,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1579",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1579",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1579",
     categories: ["Invigorating Critical", "ID_FMP_FEAT_1579"]
   });
   byID[te.id] = te;
@@ -1212,7 +1212,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1539",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1539",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1539",
     categories: ["Invoke Resilience", "ID_FMP_FEAT_1539"]
   });
   byID[te.id] = te;
@@ -1222,7 +1222,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1540",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1540",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1540",
     categories: ["Invoke Teamwork", "ID_FMP_FEAT_1540"]
   });
   byID[te.id] = te;
@@ -1232,7 +1232,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1608",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1608",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1608",
     categories: ["Invoker's Aura", "ID_FMP_FEAT_1608"]
   });
   byID[te.id] = te;
@@ -1242,7 +1242,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1580",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1580",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1580",
     categories: ["Invoker's Blaze", "ID_FMP_FEAT_1580"],
     rules: function(model) {
       model.statadd("divine,fire:damage", 2, "Feat");
@@ -1262,7 +1262,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1581",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1581",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1581",
     categories: ["Invoker's Control", "ID_FMP_FEAT_1581"]
   });
   byID[te.id] = te;
@@ -1272,7 +1272,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1541",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1541",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1541",
     categories: ["Kord's Resilience", "ID_FMP_FEAT_1541"]
   });
   byID[te.id] = te;
@@ -1282,7 +1282,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1448",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1448",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1448",
     categories: ["Loving Sacrifice", "ID_FMP_FEAT_1448", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8185"]);
@@ -1295,7 +1295,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1542",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1542",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1542",
     categories: ["Majestic Presence", "ID_FMP_FEAT_1542"]
   });
   byID[te.id] = te;
@@ -1305,7 +1305,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1543",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1543",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1543",
     categories: ["Mark of the Infernal", "ID_FMP_FEAT_1543"]
   });
   byID[te.id] = te;
@@ -1315,7 +1315,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1477",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1477",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1477",
     categories: ["Master of Tyranny", "ID_FMP_FEAT_1477", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8199"]);
@@ -1328,7 +1328,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1582",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1582",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1582",
     categories: ["Merciful Power", "ID_FMP_FEAT_1582"]
   });
   byID[te.id] = te;
@@ -1338,7 +1338,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1544",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1544",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1544",
     categories: ["Mighty Challenge", "ID_FMP_FEAT_1544"],
     rules: function(model) {
       model.statadd("Divine Challenge:damage", function() { return model.stat("Strength modifier"); });
@@ -1351,7 +1351,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1454",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1454",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1454",
     categories: ["Moon Touched", "ID_FMP_FEAT_1454", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8188"]);
@@ -1364,7 +1364,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1545",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1545",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1545",
     categories: ["Nimbus of Light", "ID_FMP_FEAT_1545"]
   });
   byID[te.id] = te;
@@ -1374,7 +1374,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1546",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1546",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1546",
     categories: ["Oath Strike", "ID_FMP_FEAT_1546"]
   });
   byID[te.id] = te;
@@ -1384,7 +1384,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1456",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1456",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1456",
     categories: ["Original Poison", "ID_FMP_FEAT_1456", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8189"]);
@@ -1397,7 +1397,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1547",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1547",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1547",
     categories: ["Pacifist Healer", "ID_FMP_FEAT_1547"]
   });
   byID[te.id] = te;
@@ -1407,7 +1407,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1609",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1609",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1609",
     categories: ["Paladin's Truth", "ID_FMP_FEAT_1609"]
   });
   byID[te.id] = te;
@@ -1417,7 +1417,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1706",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1706",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1706",
     categories: ["Path of Destruction", "ID_FMP_FEAT_1706", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8178"]);
@@ -1430,7 +1430,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1439",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1439",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1439",
     categories: ["Path of Freedom", "ID_FMP_FEAT_1439", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8181"]);
@@ -1443,7 +1443,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1483",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1483",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1483",
     categories: ["Path of War", "ID_FMP_FEAT_1483", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8202"]);
@@ -1456,7 +1456,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1487",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1487",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1487",
     categories: ["Path of Winter", "ID_FMP_FEAT_1487", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8204"]);
@@ -1469,7 +1469,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1472",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1472",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1472",
     categories: ["Perfect Torment", "ID_FMP_FEAT_1472", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8197"]);
@@ -1482,7 +1482,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1583",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1583",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1583",
     categories: ["Persistent Challenge", "ID_FMP_FEAT_1583"]
   });
   byID[te.id] = te;
@@ -1492,7 +1492,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1584",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1584",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1584",
     categories: ["Pervasive Light", "ID_FMP_FEAT_1584"]
   });
   byID[te.id] = te;
@@ -1502,7 +1502,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1610",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1610",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1610",
     categories: ["Pious Champion", "ID_FMP_FEAT_1610"]
   });
   byID[te.id] = te;
@@ -1512,7 +1512,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1585",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1585",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1585",
     categories: ["Pledge of Retribution", "ID_FMP_FEAT_1585"]
   });
   byID[te.id] = te;
@@ -1522,7 +1522,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1424",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1424",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1424",
     categories: ["Power of Arcana", "ID_FMP_FEAT_1424", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Arcana Misc", 2, "Feat");
@@ -1535,7 +1535,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1426",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1426",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1426",
     categories: ["Power of Change", "ID_FMP_FEAT_1426", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Thievery Misc", 2, "Feat");
@@ -1548,7 +1548,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1361",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1361",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1361",
     categories: ["Power of Creation", "ID_FMP_FEAT_1361", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -1561,7 +1561,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1429",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1429",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1429",
     categories: ["Power of Darkness", "ID_FMP_FEAT_1429", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Stealth Misc", 2, "Feat");
@@ -1574,7 +1574,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1431",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1431",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1431",
     categories: ["Power of Death", "ID_FMP_FEAT_1431", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -1590,7 +1590,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1433",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1433",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1433",
     categories: ["Power of Destruction", "ID_FMP_FEAT_1433", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -1604,7 +1604,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1434",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1434",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1434",
     categories: ["Power of Earth", "ID_FMP_FEAT_1434", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -1617,7 +1617,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1436",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1436",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1436",
     categories: ["Power of Fate", "ID_FMP_FEAT_1436", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Insight Misc", 2, "Feat");
@@ -1631,7 +1631,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1438",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1438",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1438",
     categories: ["Power of Freedom", "ID_FMP_FEAT_1438", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 2, "Feat");
@@ -1644,7 +1644,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1440",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1440",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1440",
     categories: ["Power of Hope", "ID_FMP_FEAT_1440", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Diplomacy Misc", 2, "Feat");
@@ -1657,7 +1657,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1443",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1443",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1443",
     categories: ["Power of Knowledge", "ID_FMP_FEAT_1443", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("History Misc", 2, "Feat");
@@ -1670,7 +1670,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1445",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1445",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1445",
     categories: ["Power of Life", "ID_FMP_FEAT_1445", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Heal Misc", 2, "Feat");
@@ -1683,7 +1683,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1447",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1447",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1447",
     categories: ["Power of Love", "ID_FMP_FEAT_1447", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Diplomacy Misc", 2, "Feat");
@@ -1696,7 +1696,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1449",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1449",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1449",
     categories: ["Power of Luck", "ID_FMP_FEAT_1449", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 2, "Feat");
@@ -1709,7 +1709,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1451",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1451",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1451",
     categories: ["Power of Madness", "ID_FMP_FEAT_1451", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Bluff Misc", 2, "Feat");
@@ -1722,7 +1722,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1455",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1455",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1455",
     categories: ["Power of Poison", "ID_FMP_FEAT_1455", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Bluff Misc", 2, "Feat");
@@ -1738,7 +1738,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1457",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1457",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1457",
     categories: ["Power of Protection", "ID_FMP_FEAT_1457", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Heal Misc", 2, "Feat");
@@ -1751,7 +1751,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1461",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1461",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1461",
     categories: ["Power of Skill", "ID_FMP_FEAT_1461", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 1, "Feat");
@@ -1780,7 +1780,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1465",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1465",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1465",
     categories: ["Power of Strength", "ID_FMP_FEAT_1465", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -1797,7 +1797,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1467",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1467",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1467",
     categories: ["Power of Strife", "ID_FMP_FEAT_1467", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Bluff Misc", 2, "Feat");
@@ -1812,7 +1812,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1453",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1453",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1453",
     categories: ["Power of the Moon", "ID_FMP_FEAT_1453", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Perception Misc", 1, "Feat");
@@ -1825,7 +1825,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1459",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1459",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1459",
     categories: ["Power of the Sea", "ID_FMP_FEAT_1459", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -1838,7 +1838,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1463",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1463",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1463",
     categories: ["Power of the Storm", "ID_FMP_FEAT_1463", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -1856,7 +1856,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1469",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1469",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1469",
     categories: ["Power of the Sun", "ID_FMP_FEAT_1469", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Insight Misc", 2, "Feat");
@@ -1869,7 +1869,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1484",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1484",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1484",
     categories: ["Power of the Wilderness", "ID_FMP_FEAT_1484", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Nature Misc", 2, "Feat");
@@ -1882,7 +1882,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1471",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1471",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1471",
     categories: ["Power of Torment", "ID_FMP_FEAT_1471", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -1895,7 +1895,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1473",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1473",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1473",
     categories: ["Power of Trickery", "ID_FMP_FEAT_1473", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Thievery Misc", 2, "Feat");
@@ -1908,7 +1908,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1476",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1476",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1476",
     categories: ["Power of Tyranny", "ID_FMP_FEAT_1476", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -1921,7 +1921,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1478",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1478",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1478",
     categories: ["Power of Undeath", "ID_FMP_FEAT_1478", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -1939,7 +1939,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1480",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1480",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1480",
     categories: ["Power of Vengeance", "ID_FMP_FEAT_1480", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -1952,7 +1952,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1482",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1482",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1482",
     categories: ["Power of War", "ID_FMP_FEAT_1482", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("History Misc", 2, "Feat");
@@ -1966,7 +1966,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1486",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1486",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1486",
     categories: ["Power of Winter", "ID_FMP_FEAT_1486", "ID_INTERNAL_CATEGORY_DOMAIN", "Domain"],
     rules: function(model) {
       model.statadd("Endurance Misc", 2, "Feat");
@@ -1985,7 +1985,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1548",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1548",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1548",
     categories: ["Preserver's Call", "ID_FMP_FEAT_1548"]
   });
   byID[te.id] = te;
@@ -1995,7 +1995,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1549",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1549",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1549",
     categories: ["Preserving Concealment", "ID_FMP_FEAT_1549"]
   });
   byID[te.id] = te;
@@ -2005,7 +2005,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1611",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1611",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1611",
     categories: ["Protecting Boon", "ID_FMP_FEAT_1611"]
   });
   byID[te.id] = te;
@@ -2015,7 +2015,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1550",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1550",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1550",
     categories: ["Protector's Commitment", "ID_FMP_FEAT_1550"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* when you or your target is adjacent to a bloodied ally */ return 1; });
@@ -2028,7 +2028,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1551",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1551",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1551",
     categories: ["Psychic Retaliation", "ID_FMP_FEAT_1551"]
   });
   byID[te.id] = te;
@@ -2038,7 +2038,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1446",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1446",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1446",
     categories: ["Pulse of Life", "ID_FMP_FEAT_1446", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8184"]);
@@ -2051,7 +2051,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1612",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1612",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1612",
     categories: ["Punishing Radiance", "ID_FMP_FEAT_1612"]
   });
   byID[te.id] = te;
@@ -2061,7 +2061,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1613",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1613",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1613",
     categories: ["Radiant Advantage", "ID_FMP_FEAT_1613"]
   });
   byID[te.id] = te;
@@ -2071,7 +2071,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1586",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1586",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1586",
     categories: ["Radiant Vessel", "ID_FMP_FEAT_1586"]
   });
   byID[te.id] = te;
@@ -2081,7 +2081,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1614",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1614",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1614",
     categories: ["Reactive Healing", "ID_FMP_FEAT_1614"]
   });
   byID[te.id] = te;
@@ -2091,7 +2091,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1552",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1552",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1552",
     categories: ["Religious Dabbler", "ID_FMP_FEAT_1552"],
     rules: function(model) {
       model.select('Power', 1, "Religious Dabbler", {
@@ -2107,7 +2107,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1587",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1587",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1587",
     categories: ["Resurgent Attack", "ID_FMP_FEAT_1587"]
   });
   byID[te.id] = te;
@@ -2117,7 +2117,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1615",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1615",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1615",
     categories: ["Righteous Focus", "ID_FMP_FEAT_1615"]
   });
   byID[te.id] = te;
@@ -2127,7 +2127,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1588",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1588",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1588",
     categories: ["Saving Grace", "ID_FMP_FEAT_1588"]
   });
   byID[te.id] = te;
@@ -2137,7 +2137,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1452",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1452",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1452",
     categories: ["Screaming Madness", "ID_FMP_FEAT_1452", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8187"]);
@@ -2150,7 +2150,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1460",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1460",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1460",
     categories: ["Sea Surge", "ID_FMP_FEAT_1460", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8191"]);
@@ -2163,7 +2163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1616",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1616",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1616",
     categories: ["Shared Healing", "ID_FMP_FEAT_1616"]
   });
   byID[te.id] = te;
@@ -2173,7 +2173,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1553",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1553",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1553",
     categories: ["Shared Perseverance", "ID_FMP_FEAT_1553"]
   });
   byID[te.id] = te;
@@ -2183,7 +2183,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1481",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1481",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1481",
     categories: ["Small Vengeance", "ID_FMP_FEAT_1481", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8201"]);
@@ -2196,7 +2196,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1470",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1470",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1470",
     categories: ["Solar Enemy", "ID_FMP_FEAT_1470", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8196"]);
@@ -2209,7 +2209,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1631",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1631",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1631",
     categories: ["Soldier of Virtue", "ID_FMP_FEAT_1631", "ID_INTERNAL_CATEGORY_MULTICLASS_PALADIN", "Multiclass Paladin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Soldier of Virtue", {
@@ -2229,7 +2229,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1464",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1464",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1464",
     categories: ["Storm Sacrifice", "ID_FMP_FEAT_1464", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8193"]);
@@ -2242,7 +2242,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1554",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1554",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1554",
     categories: ["Strength of Stone", "ID_FMP_FEAT_1554"]
   });
   byID[te.id] = te;
@@ -2252,7 +2252,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1466",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1466",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1466",
     categories: ["Strength of the Gods", "ID_FMP_FEAT_1466", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8194"]);
@@ -2265,7 +2265,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1468",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1468",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1468",
     categories: ["Sudden Strife", "ID_FMP_FEAT_1468", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8195"]);
@@ -2278,7 +2278,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1617",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1617",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1617",
     categories: ["Supreme Healer", "ID_FMP_FEAT_1617"]
   });
   byID[te.id] = te;
@@ -2288,7 +2288,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1444",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1444",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1444",
     categories: ["Sure Knowledge", "ID_FMP_FEAT_1444", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8183"]);
@@ -2301,7 +2301,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1458",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1458",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1458",
     categories: ["Sure Protection", "ID_FMP_FEAT_1458", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8190"]);
@@ -2314,7 +2314,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1589",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1589",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1589",
     categories: ["Swift Turning", "ID_FMP_FEAT_1589"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -2327,7 +2327,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1555",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1555",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1555",
     categories: ["Taunting Visage", "ID_FMP_FEAT_1555"]
   });
   byID[te.id] = te;
@@ -2337,7 +2337,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1618",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1618",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1618",
     categories: ["Tireless Wrath", "ID_FMP_FEAT_1618"]
   });
   byID[te.id] = te;
@@ -2347,7 +2347,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1590",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1590",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1590",
     categories: ["Touch of Salvation", "ID_FMP_FEAT_1590"]
   });
   byID[te.id] = te;
@@ -2357,7 +2357,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1474",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1474",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1474",
     categories: ["Trickster's Fortune", "ID_FMP_FEAT_1474", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8198"]);
@@ -2370,7 +2370,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1619",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1619",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1619",
     categories: ["Unbearable Malediction", "ID_FMP_FEAT_1619"]
   });
   byID[te.id] = te;
@@ -2380,7 +2380,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1479",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1479",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1479",
     categories: ["Undeath's Ally", "ID_FMP_FEAT_1479", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_8200"]);
@@ -2393,7 +2393,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1556",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1556",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1556",
     categories: ["Unleash the Beast", "ID_FMP_FEAT_1556"]
   });
   byID[te.id] = te;
@@ -2403,7 +2403,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1591",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1591",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1591",
     categories: ["Untiring Virtue", "ID_FMP_FEAT_1591"]
   });
   byID[te.id] = te;
@@ -2413,7 +2413,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1620",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1620",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1620",
     categories: ["Vengeance Recalled", "ID_FMP_FEAT_1620"]
   });
   byID[te.id] = te;
@@ -2423,7 +2423,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1557",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1557",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1557",
     categories: ["Versatile Channeler", "ID_FMP_FEAT_1557"],
     rules: function(model) {
       model.select('Power', 1, "Versatile Channeler", {
@@ -2438,7 +2438,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1558",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1558",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1558",
     categories: ["Vicious Darkfire", "ID_FMP_FEAT_1558"]
   });
   byID[te.id] = te;
@@ -2448,7 +2448,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1621",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1621",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1621",
     categories: ["Virtuous Company", "ID_FMP_FEAT_1621"]
   });
   byID[te.id] = te;
@@ -2458,7 +2458,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1559",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1559",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1559",
     categories: ["Virtuous Recovery", "ID_FMP_FEAT_1559"]
   });
   byID[te.id] = te;
@@ -2468,7 +2468,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1592",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1592",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1592",
     categories: ["Warding Covenant", "ID_FMP_FEAT_1592"]
   });
   byID[te.id] = te;
@@ -2478,7 +2478,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1560",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1560",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1560",
     categories: ["Warforged Example", "ID_FMP_FEAT_1560"]
   });
   byID[te.id] = te;
@@ -2488,7 +2488,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1561",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1561",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1561",
     categories: ["Warforged Faith", "ID_FMP_FEAT_1561"]
   });
   byID[te.id] = te;
@@ -2498,7 +2498,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1562",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1562",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1562",
     categories: ["Wrath of Ages Past", "ID_FMP_FEAT_1562"],
     rules: function(model) {
       model.statadd("Armor of Wrath:damage", function() { /* against an enemy larger than you */ return model.stat("Wisdom modifier"); });
@@ -2511,7 +2511,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1563",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1563",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1563",
     categories: ["Wrath of the Mountain King", "ID_FMP_FEAT_1563"]
   });
   byID[te.id] = te;

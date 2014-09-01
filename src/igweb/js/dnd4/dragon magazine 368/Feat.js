@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_961",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=961",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=961",
     categories: ["Bola Expert", "ID_FMP_FEAT_961", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -26,7 +26,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_960",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=960",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=960",
     categories: ["Bola Novice", "ID_FMP_FEAT_960", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -39,7 +39,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_962",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=962",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=962",
     categories: ["Bola Specialist", "ID_FMP_FEAT_962", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -52,7 +52,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_959",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=959",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=959",
     categories: ["Bola Training", "ID_FMP_FEAT_959", "ID_INTERNAL_CATEGORY_MULTICLASS_BOLA", "Multiclass Bola", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOLA)"]);
@@ -66,7 +66,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_965",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=965",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=965",
     categories: ["Net Expert", "ID_FMP_FEAT_965", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -79,7 +79,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_964",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=964",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=964",
     categories: ["Net Novice", "ID_FMP_FEAT_964", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -92,7 +92,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_966",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=966",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=966",
     categories: ["Net Specialist", "ID_FMP_FEAT_966", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -105,7 +105,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_963",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=963",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=963",
     categories: ["Net Training", "ID_FMP_FEAT_963", "ID_INTERNAL_CATEGORY_MULTICLASS_NET", "Multiclass Net", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NET)"]);
@@ -119,7 +119,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_969",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=969",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=969",
     categories: ["Whip Expert", "ID_FMP_FEAT_969", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -132,7 +132,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_968",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=968",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=968",
     categories: ["Whip Novice", "ID_FMP_FEAT_968", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -145,7 +145,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_970",
     source: "Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=970",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=970",
     categories: ["Whip Specialist", "ID_FMP_FEAT_970", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -158,7 +158,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_967",
     source: "Dragon Magazine 368,Dragon Magazine Annual 2009",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=967",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=967",
     categories: ["Whip Training", "ID_FMP_FEAT_967", "ID_INTERNAL_CATEGORY_MULTICLASS_WHIP", "Multiclass Whip", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)"]);

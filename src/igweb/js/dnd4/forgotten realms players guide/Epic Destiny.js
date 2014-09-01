@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_146",
     source: "Forgotten Realms Player's Guide,Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=146",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=146",
     categories: ["Chosen", "ID_FMP_EPIC_DESTINY_146"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_527"]);

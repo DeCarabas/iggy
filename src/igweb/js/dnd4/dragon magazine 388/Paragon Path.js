@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_695",
     source: "Dragon Magazine 388",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=695",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=695",
     categories: ["Fear Walker", "ID_FMP_PARAGON_PATH_695"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2712"]);
@@ -32,7 +32,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_694",
     source: "Dragon Magazine 388",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=694",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=694",
     categories: ["Gloaming Dancer", "ID_FMP_PARAGON_PATH_694"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2708"]);
@@ -50,7 +50,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_692",
     source: "Dragon Magazine 388",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=692",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=692",
     categories: ["Master of Flame", "ID_FMP_PARAGON_PATH_692"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2702"]);
@@ -68,7 +68,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_693",
     source: "Dragon Magazine 388",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=693",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=693",
     categories: ["Treeborn", "ID_FMP_PARAGON_PATH_693"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2705"]);

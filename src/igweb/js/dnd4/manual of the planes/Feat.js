@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1059",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1059",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1059",
     categories: ["Improved Razor Storm", "ID_FMP_FEAT_1059"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule

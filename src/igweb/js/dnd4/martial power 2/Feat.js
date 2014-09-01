@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2389",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2389",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2389",
     categories: ["Action Rush", "ID_FMP_FEAT_2389"],
     rules: function(model) {
       model.statadd("Action Point", "Action Rush:When you spend an action point to take an extra action, you can shift 2 squares as a free action before or after the extra action.");
@@ -26,7 +26,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2070",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2070",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2070",
     categories: ["Adamant Arrow Commander", "ID_FMP_FEAT_2070", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -36,7 +36,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2325",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2325",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2325",
     categories: ["Adamant Arrow Hunter", "ID_FMP_FEAT_2325", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2069",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2069",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2069",
     categories: ["Adamant Arrow Student", "ID_FMP_FEAT_2069", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Perception Misc", 2, "Feat");
@@ -59,7 +59,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2542",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2542",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2542",
     categories: ["Agile Brawler", "ID_FMP_FEAT_2542", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2183"]);
@@ -72,7 +72,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2480",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2480",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2480",
     categories: ["Agile Command", "ID_FMP_FEAT_2480"]
   });
   byID[te.id] = te;
@@ -82,7 +82,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2390",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2390",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2390",
     categories: ["Agile Running Attack", "ID_FMP_FEAT_2390"]
   });
   byID[te.id] = te;
@@ -92,7 +92,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2391",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2391",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2391",
     categories: ["Agile Stand", "ID_FMP_FEAT_2391"]
   });
   byID[te.id] = te;
@@ -102,7 +102,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2522",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2522",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2522",
     categories: ["Allied Opportunity", "ID_FMP_FEAT_2522"]
   });
   byID[te.id] = te;
@@ -112,7 +112,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2392",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2392",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2392",
     categories: ["Ambush Tactics", "ID_FMP_FEAT_2392"]
   });
   byID[te.id] = te;
@@ -122,7 +122,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2393",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2393",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2393",
     categories: ["Archer Captain", "ID_FMP_FEAT_2393"]
   });
   byID[te.id] = te;
@@ -132,7 +132,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2327",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2327",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2327",
     categories: ["Arkhosian Fang Commander", "ID_FMP_FEAT_2327", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -142,7 +142,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2328",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2328",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2328",
     categories: ["Arkhosian Fang Duelist", "ID_FMP_FEAT_2328", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -152,7 +152,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2329",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2329",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2329",
     categories: ["Arkhosian Fang Mauler", "ID_FMP_FEAT_2329", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -162,7 +162,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2326",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2326",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2326",
     categories: ["Arkhosian Fang Student", "ID_FMP_FEAT_2326", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Endurance Misc", 2, "Feat");
@@ -178,7 +178,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2394",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2394",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2394",
     categories: ["Armored Endurance Training", "ID_FMP_FEAT_2394"],
     rules: function(model) {
       model.statadd("Athletics", 0, "Armor Penalty");
@@ -192,7 +192,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2395",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2395",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2395",
     categories: ["Armored Swiftness Training", "ID_FMP_FEAT_2395"],
     rules: function(model) {
       model.statadd("Acrobatics", 0, "Armor Penalty");
@@ -207,7 +207,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2396",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2396",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2396",
     categories: ["Armored Warlord", "ID_FMP_FEAT_2396"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)"]);
@@ -221,7 +221,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2481",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2481",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2481",
     categories: ["Avalanche Reaver", "ID_FMP_FEAT_2481"]
   });
   byID[te.id] = te;
@@ -231,7 +231,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2397",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2397",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2397",
     categories: ["Barreling Charge", "ID_FMP_FEAT_2397"]
   });
   byID[te.id] = te;
@@ -241,7 +241,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2482",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2482",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2482",
     categories: ["Bestial Death Strike", "ID_FMP_FEAT_2482"],
     rules: function(model) {
       model.statadd("BEAST.attack rolls", function() { /* while bloodied */ return 1; });
@@ -254,7 +254,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1310",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1310",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1310",
     categories: ["Black Hood Butcher", "ID_FMP_FEAT_1310", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -264,7 +264,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2072",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2072",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2072",
     categories: ["Black Hood Executioner", "ID_FMP_FEAT_2072", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -274,7 +274,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1309",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1309",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1309",
     categories: ["Black Hood Slayer", "ID_FMP_FEAT_1309", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_1309 association:key ability", "dex");
@@ -287,7 +287,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2071",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2071",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2071",
     categories: ["Black Hood Student", "ID_FMP_FEAT_2071", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -302,7 +302,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2398",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2398",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2398",
     categories: ["Blood Quarry", "ID_FMP_FEAT_2398"],
     rules: function(model) {
       model.statadd("Bloodhint", function() { /* against a creature designated as your quarry */ return 1; });
@@ -315,7 +315,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2543",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2543",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2543",
     categories: ["Bravura Leader", "ID_FMP_FEAT_2543", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Bravura Leader", {
@@ -333,7 +333,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2399",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2399",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2399",
     categories: ["Brawler Guard", "ID_FMP_FEAT_2399"],
     rules: function(model) {
       model.statadd("AC", function() { 
@@ -363,7 +363,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2544",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2544",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2544",
     categories: ["Brawling Warrior", "ID_FMP_FEAT_2544", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Brawling Warrior", {
@@ -380,7 +380,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2483",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2483",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2483",
     categories: ["Brutal Bludgeon", "ID_FMP_FEAT_2483"]
   });
   byID[te.id] = te;
@@ -390,7 +390,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2400",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2400",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2400",
     categories: ["Brutal Brawler", "ID_FMP_FEAT_2400"],
     rules: function(model) {
       model.statadd("Unarmed Damage Die", "1d6");
@@ -405,7 +405,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2401",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2401",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2401",
     categories: ["Changeling's Mark", "ID_FMP_FEAT_2401"]
   });
   byID[te.id] = te;
@@ -415,7 +415,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2484",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2484",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2484",
     categories: ["Clobbering Brawler", "ID_FMP_FEAT_2484"]
   });
   byID[te.id] = te;
@@ -425,7 +425,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2485",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2485",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2485",
     categories: ["Combat Opportunist", "ID_FMP_FEAT_2485"]
   });
   byID[te.id] = te;
@@ -435,7 +435,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2486",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2486",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2486",
     categories: ["Commander's Memory", "ID_FMP_FEAT_2486"]
   });
   byID[te.id] = te;
@@ -445,7 +445,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2402",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2402",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2402",
     categories: ["Constricting Serpent", "ID_FMP_FEAT_2402"],
     rules: function(model) {
       model.statadd("BEAST.Saving Throws", 2);
@@ -458,7 +458,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2487",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2487",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2487",
     categories: ["Cragborn Courage", "ID_FMP_FEAT_2487"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_1590:healing", function() { return model.stat("Constitution modifier"); });
@@ -471,7 +471,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2403",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2403",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2403",
     categories: ["Crushing Mace", "ID_FMP_FEAT_2403"],
     rules: function(model) {
       model.statadd("melee basic,mace group:damage", 2);
@@ -484,7 +484,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2488",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2488",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2488",
     categories: ["Crushing Pin", "ID_FMP_FEAT_2488"]
   });
   byID[te.id] = te;
@@ -494,7 +494,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2545",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2545",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2545",
     categories: ["Cyclone Warrior", "ID_FMP_FEAT_2545", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Cyclone Warrior", {
@@ -513,7 +513,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2404",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2404",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2404",
     categories: ["Darkfire Strike", "ID_FMP_FEAT_2404"]
   });
   byID[te.id] = te;
@@ -523,7 +523,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2405",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2405",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2405",
     categories: ["Deadeye Slinger", "ID_FMP_FEAT_2405"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -537,7 +537,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2489",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2489",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2489",
     categories: ["Deceptive Staff", "ID_FMP_FEAT_2489"]
   });
   byID[te.id] = te;
@@ -547,7 +547,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2406",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2406",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2406",
     categories: ["Defensive Throw", "ID_FMP_FEAT_2406"]
   });
   byID[te.id] = te;
@@ -557,7 +557,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2490",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2490",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2490",
     categories: ["Deft Blade", "ID_FMP_FEAT_2490"]
   });
   byID[te.id] = te;
@@ -567,7 +567,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2708",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2708",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2708",
     categories: ["Desert Moon Skirmisher", "ID_FMP_FEAT_2708", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -577,7 +577,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1311",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1311",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1311",
     categories: ["Desert Moon Student", "ID_FMP_FEAT_1311", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 2, "Feat");
@@ -590,7 +590,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2709",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2709",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2709",
     categories: ["Desert Moon Swordmaster", "ID_FMP_FEAT_2709", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -600,7 +600,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1312",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1312",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1312",
     categories: ["Desert Moon Zephyr", "ID_FMP_FEAT_1312", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -610,7 +610,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2407",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2407",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2407",
     categories: ["Directing Inspiration", "ID_FMP_FEAT_2407"]
   });
   byID[te.id] = te;
@@ -620,7 +620,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2491",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2491",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2491",
     categories: ["Disheartening Ambush", "ID_FMP_FEAT_2491"]
   });
   byID[te.id] = te;
@@ -630,7 +630,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2492",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2492",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2492",
     categories: ["Dragon Breath Scoundrel", "ID_FMP_FEAT_2492"]
   });
   byID[te.id] = te;
@@ -640,7 +640,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2493",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2493",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2493",
     categories: ["Dragon Breath Tactician", "ID_FMP_FEAT_2493"]
   });
   byID[te.id] = te;
@@ -650,7 +650,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2408",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2408",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2408",
     categories: ["Dragonborn Channeling", "ID_FMP_FEAT_2408"]
   });
   byID[te.id] = te;
@@ -660,7 +660,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2409",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2409",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2409",
     categories: ["Dragonclaw Mark", "ID_FMP_FEAT_2409"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_1448:damage", function() { /* to creatures marked by you */ return model.stat("Strength modifier"); });
@@ -673,7 +673,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2410",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2410",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2410",
     categories: ["Draw First Blood", "ID_FMP_FEAT_2410"],
     rules: function(model) {
       model.statadd("melee basic:damage", function() { /* against undamaged enemies */ return model.stat("Wisdom modifier"); });
@@ -687,7 +687,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2523",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2523",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2523",
     categories: ["Driven Leadership", "ID_FMP_FEAT_2523"]
   });
   byID[te.id] = te;
@@ -697,7 +697,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2524",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2524",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2524",
     categories: ["Dual Challenge", "ID_FMP_FEAT_2524"]
   });
   byID[te.id] = te;
@@ -707,7 +707,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2494",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2494",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2494",
     categories: ["Dwarven Recovery", "ID_FMP_FEAT_2494"]
   });
   byID[te.id] = te;
@@ -717,7 +717,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2411",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2411",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2411",
     categories: ["Eladrin's Challenge", "ID_FMP_FEAT_2411"]
   });
   byID[te.id] = te;
@@ -727,7 +727,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2332",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2332",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2332",
     categories: ["Elsir Hammer Champion", "ID_FMP_FEAT_2332", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -737,7 +737,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2333",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2333",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2333",
     categories: ["Elsir Hammer General", "ID_FMP_FEAT_2333", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -747,7 +747,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2334",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2334",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2334",
     categories: ["Elsir Hammer Stalker", "ID_FMP_FEAT_2334", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -757,7 +757,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2331",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2331",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2331",
     categories: ["Elsir Hammer Student", "ID_FMP_FEAT_2331", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Perception Misc", 2, "Feat");
@@ -770,7 +770,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2495",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2495",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2495",
     categories: ["Elusive Movement", "ID_FMP_FEAT_2495"]
   });
   byID[te.id] = te;
@@ -780,7 +780,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2412",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2412",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2412",
     categories: ["Elven Sidestep", "ID_FMP_FEAT_2412"]
   });
   byID[te.id] = te;
@@ -790,7 +790,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2525",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2525",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2525",
     categories: ["Enabling Shot", "ID_FMP_FEAT_2525"]
   });
   byID[te.id] = te;
@@ -800,7 +800,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2413",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2413",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2413",
     categories: ["Expert Combat Leader", "ID_FMP_FEAT_2413"],
     rules: function(model) {
       model.statadd("Combat Leader", 3, "Combat Leader");
@@ -813,7 +813,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2526",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2526",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2526",
     categories: ["Expert Skirmisher", "ID_FMP_FEAT_2526"]
   });
   byID[te.id] = te;
@@ -823,7 +823,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2496",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2496",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2496",
     categories: ["Expert Sneak", "ID_FMP_FEAT_2496"]
   });
   byID[te.id] = te;
@@ -833,7 +833,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2414",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2414",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2414",
     categories: ["Explosive Leader", "ID_FMP_FEAT_2414"]
   });
   byID[te.id] = te;
@@ -843,7 +843,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2497",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2497",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2497",
     categories: ["Fading Forces", "ID_FMP_FEAT_2497"]
   });
   byID[te.id] = te;
@@ -853,7 +853,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2527",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2527",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2527",
     categories: ["Fate Favors the Bold", "ID_FMP_FEAT_2527"]
   });
   byID[te.id] = te;
@@ -863,7 +863,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2415",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2415",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2415",
     categories: ["Fearless Seeker", "ID_FMP_FEAT_2415"]
   });
   byID[te.id] = te;
@@ -873,7 +873,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2498",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2498",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2498",
     categories: ["Fearsome Assault", "ID_FMP_FEAT_2498"]
   });
   byID[te.id] = te;
@@ -883,7 +883,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2416",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2416",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2416",
     categories: ["Feyborn Shroud", "ID_FMP_FEAT_2416"]
   });
   byID[te.id] = te;
@@ -893,7 +893,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2499",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2499",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2499",
     categories: ["Feyborn Stratagem", "ID_FMP_FEAT_2499"]
   });
   byID[te.id] = te;
@@ -903,7 +903,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2500",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2500",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2500",
     categories: ["Feywild Flanker", "ID_FMP_FEAT_2500"]
   });
   byID[te.id] = te;
@@ -913,7 +913,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2501",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2501",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2501",
     categories: ["Fight On", "ID_FMP_FEAT_2501"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -926,7 +926,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2417",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2417",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2417",
     categories: ["Flank on the Run", "ID_FMP_FEAT_2417"]
   });
   byID[te.id] = te;
@@ -936,7 +936,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2418",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2418",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2418",
     categories: ["Formation Fighting", "ID_FMP_FEAT_2418"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* for each ally adjacent to the enemy, on opportunity attacks */ return 1; });
@@ -950,7 +950,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2419",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2419",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2419",
     categories: ["Furious Charge", "ID_FMP_FEAT_2419"]
   });
   byID[te.id] = te;
@@ -960,7 +960,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2502",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2502",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2502",
     categories: ["Gliding Beast", "ID_FMP_FEAT_2502"]
   });
   byID[te.id] = te;
@@ -970,7 +970,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2420",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2420",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2420",
     categories: ["Gnome Weapon Training", "ID_FMP_FEAT_2420"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_GNOME_WEAPON_TRAINING"]);
@@ -985,7 +985,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2421",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2421",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2421",
     categories: ["Goliath Crusher", "ID_FMP_FEAT_2421"]
   });
   byID[te.id] = te;
@@ -995,7 +995,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2422",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2422",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2422",
     categories: ["Goring Boar", "ID_FMP_FEAT_2422"],
     rules: function(model) {
       model.statadd("BEAST.Saving Throws", 2);
@@ -1008,7 +1008,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2423",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2423",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2423",
     categories: ["Guide the Shot", "ID_FMP_FEAT_2423"]
   });
   byID[te.id] = te;
@@ -1018,7 +1018,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2424",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2424",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2424",
     categories: ["Guiding Step", "ID_FMP_FEAT_2424"]
   });
   byID[te.id] = te;
@@ -1028,7 +1028,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2503",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2503",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2503",
     categories: ["Hammer Shock", "ID_FMP_FEAT_2503"]
   });
   byID[te.id] = te;
@@ -1038,7 +1038,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2336",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2336",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2336",
     categories: ["Harrowing Swarm Captain", "ID_FMP_FEAT_2336", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1048,7 +1048,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2337",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2337",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2337",
     categories: ["Harrowing Swarm Scout", "ID_FMP_FEAT_2337", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_2337 association-thrown", "crossbow group+bow group");
@@ -1062,7 +1062,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2338",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2338",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2338",
     categories: ["Harrowing Swarm Stalker", "ID_FMP_FEAT_2338", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_2338 association-Light Blade", "crossbow group");
@@ -1081,7 +1081,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2335",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2335",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2335",
     categories: ["Harrowing Swarm Student", "ID_FMP_FEAT_2335", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Nature Misc", 2, "Feat");
@@ -1094,7 +1094,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2425",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2425",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2425",
     categories: ["Harrying Raptor", "ID_FMP_FEAT_2425"],
     rules: function(model) {
       model.statadd("BEAST.Saving Throws", 2);
@@ -1107,7 +1107,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2528",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2528",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2528",
     categories: ["Heartening Exploit", "ID_FMP_FEAT_2528"],
     rules: function(model) {
       model.select('Power', 1, "Heartening Exploit", {
@@ -1122,7 +1122,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2426",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2426",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2426",
     categories: ["Hidden Pulse", "ID_FMP_FEAT_2426"]
   });
   byID[te.id] = te;
@@ -1132,7 +1132,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2427",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2427",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2427",
     categories: ["Hip Throw", "ID_FMP_FEAT_2427"]
   });
   byID[te.id] = te;
@@ -1142,7 +1142,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2428",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2428",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2428",
     categories: ["Hobbling Strike", "ID_FMP_FEAT_2428"]
   });
   byID[te.id] = te;
@@ -1152,7 +1152,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2342",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2342",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2342",
     categories: ["Hunting Spear Chieftain", "ID_FMP_FEAT_2342", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("damage rolls", function() { /* against creatures that are larger than you */ return 2; });
@@ -1165,7 +1165,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2341",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2341",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2341",
     categories: ["Hunting Spear Skirmisher", "ID_FMP_FEAT_2341", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("damage rolls", function() { /* against creatures that are larger than you */ return 2; });
@@ -1178,7 +1178,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2339",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2339",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2339",
     categories: ["Hunting Spear Student", "ID_FMP_FEAT_2339", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -1191,7 +1191,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2340",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2340",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2340",
     categories: ["Hunting Spear Warder", "ID_FMP_FEAT_2340", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("damage rolls", function() { /* against creatures that are larger than you */ return 2; });
@@ -1204,7 +1204,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2504",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2504",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2504",
     categories: ["Impaling Spear", "ID_FMP_FEAT_2504"]
   });
   byID[te.id] = te;
@@ -1214,7 +1214,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2505",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2505",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2505",
     categories: ["Improved Battlefront Shift", "ID_FMP_FEAT_2505"]
   });
   byID[te.id] = te;
@@ -1224,7 +1224,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2429",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2429",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2429",
     categories: ["Improved Cunning Sneak", "ID_FMP_FEAT_2429"]
   });
   byID[te.id] = te;
@@ -1234,7 +1234,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2430",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2430",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2430",
     categories: ["Improved Insight", "ID_FMP_FEAT_2430"]
   });
   byID[te.id] = te;
@@ -1244,7 +1244,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2431",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2431",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2431",
     categories: ["Improved Skirmishing", "ID_FMP_FEAT_2431"]
   });
   byID[te.id] = te;
@@ -1254,7 +1254,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2432",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2432",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2432",
     categories: ["Inescapable Hold", "ID_FMP_FEAT_2432"]
   });
   byID[te.id] = te;
@@ -1264,7 +1264,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2433",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2433",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2433",
     categories: ["Infernal Might", "ID_FMP_FEAT_2433"]
   });
   byID[te.id] = te;
@@ -1274,7 +1274,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2546",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2546",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2546",
     categories: ["Insightful Leader", "ID_FMP_FEAT_2546", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Insightful Leader", {
@@ -1292,7 +1292,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2506",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2506",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2506",
     categories: ["Insightful Preparation", "ID_FMP_FEAT_2506"]
   });
   byID[te.id] = te;
@@ -1302,7 +1302,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2434",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2434",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2434",
     categories: ["Inspirational Attacker", "ID_FMP_FEAT_2434"]
   });
   byID[te.id] = te;
@@ -1312,7 +1312,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2435",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2435",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2435",
     categories: ["Inspiring Breath", "ID_FMP_FEAT_2435"]
   });
   byID[te.id] = te;
@@ -1322,7 +1322,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2344",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2344",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2344",
     categories: ["Ironstar Bravo", "ID_FMP_FEAT_2344", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1332,7 +1332,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2345",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2345",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2345",
     categories: ["Ironstar Crusher", "ID_FMP_FEAT_2345", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1342,7 +1342,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2346",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2346",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2346",
     categories: ["Ironstar Marauder", "ID_FMP_FEAT_2346", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1352,7 +1352,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2343",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2343",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2343",
     categories: ["Ironstar Student", "ID_FMP_FEAT_2343", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -1365,7 +1365,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2348",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2348",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2348",
     categories: ["Kulkor Battlearm Captain", "ID_FMP_FEAT_2348", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1375,7 +1375,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2349",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2349",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2349",
     categories: ["Kulkor Battlearm Hunter", "ID_FMP_FEAT_2349", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1385,7 +1385,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2350",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2350",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2350",
     categories: ["Kulkor Battlearm Rattler", "ID_FMP_FEAT_2350", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1395,7 +1395,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2347",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2347",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2347",
     categories: ["Kulkor Battlearm Student", "ID_FMP_FEAT_2347", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -1409,7 +1409,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2351",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2351",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2351",
     categories: ["Kulkor Battlearm Warrior", "ID_FMP_FEAT_2351", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1419,7 +1419,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2507",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2507",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2507",
     categories: ["Lashing Flail", "ID_FMP_FEAT_2507"]
   });
   byID[te.id] = te;
@@ -1429,7 +1429,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2353",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2353",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2353",
     categories: ["Leaf Runner Pathfinder", "ID_FMP_FEAT_2353", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1439,7 +1439,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2354",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2354",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2354",
     categories: ["Leaf Runner Sneak", "ID_FMP_FEAT_2354", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1449,7 +1449,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2355",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2355",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2355",
     categories: ["Leaf Runner Sniper", "ID_FMP_FEAT_2355", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1459,7 +1459,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2352",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2352",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2352",
     categories: ["Leaf Runner Student", "ID_FMP_FEAT_2352", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Stealth Misc", 2, "Feat");
@@ -1472,7 +1472,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2529",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2529",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2529",
     categories: ["Learn by Doing", "ID_FMP_FEAT_2529"]
   });
   byID[te.id] = te;
@@ -1482,7 +1482,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2436",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2436",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2436",
     categories: ["Lend Strength", "ID_FMP_FEAT_2436"]
   });
   byID[te.id] = te;
@@ -1492,7 +1492,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2437",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2437",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2437",
     categories: ["Lethal Hammer Training", "ID_FMP_FEAT_2437"],
     rules: function(model) {
       model.statadd("ID_FMP_CLASS_6-Light Blade", "Warhammer");
@@ -1508,7 +1508,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2530",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2530",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2530",
     categories: ["Lingering Illusion", "ID_FMP_FEAT_2530"]
   });
   byID[te.id] = te;
@@ -1518,7 +1518,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2357",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2357",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2357",
     categories: ["Longhand Bravo", "ID_FMP_FEAT_2357", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1528,7 +1528,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2358",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2358",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2358",
     categories: ["Longhand Guardian", "ID_FMP_FEAT_2358", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1538,7 +1538,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2356",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2356",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2356",
     categories: ["Longhand Student", "ID_FMP_FEAT_2356", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -1551,7 +1551,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2438",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2438",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2438",
     categories: ["Longtooth Fury", "ID_FMP_FEAT_2438"]
   });
   byID[te.id] = te;
@@ -1561,7 +1561,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2439",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2439",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2439",
     categories: ["Manticore's Fury", "ID_FMP_FEAT_2439"]
   });
   byID[te.id] = te;
@@ -1571,7 +1571,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2440",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2440",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2440",
     categories: ["Marked Fury", "ID_FMP_FEAT_2440"]
   });
   byID[te.id] = te;
@@ -1581,7 +1581,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2531",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2531",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2531",
     categories: ["Marked Takedown", "ID_FMP_FEAT_2531"]
   });
   byID[te.id] = te;
@@ -1591,7 +1591,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2508",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2508",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2508",
     categories: ["Martial Accuracy", "ID_FMP_FEAT_2508"]
   });
   byID[te.id] = te;
@@ -1601,7 +1601,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2441",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2441",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2441",
     categories: ["Martial Adaptation", "ID_FMP_FEAT_2441"],
     rules: function(model) {
       model.select('Power', 1, "Martial Adaptation", {
@@ -1616,7 +1616,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2442",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2442",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2442",
     categories: ["Martial Dilettante", "ID_FMP_FEAT_2442"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1629,7 +1629,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2443",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2443",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2443",
     categories: ["Martial Flexibility", "ID_FMP_FEAT_2443"],
     rules: function(model) {
       model.select('Power', 1, "Martial Flexibility", {
@@ -1644,7 +1644,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2444",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2444",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2444",
     categories: ["Martial Ploy", "ID_FMP_FEAT_2444"]
   });
   byID[te.id] = te;
@@ -1654,7 +1654,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2445",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2445",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2445",
     categories: ["Martial Readiness", "ID_FMP_FEAT_2445"],
     rules: function(model) {
       model.select('Power', 1, "Martial Readiness", {
@@ -1669,7 +1669,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2446",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2446",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2446",
     categories: ["Martial Versatility", "ID_FMP_FEAT_2446"],
     rules: function(model) {
       model.select('Power', 1, "Martial Versatility", {
@@ -1684,7 +1684,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2447",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2447",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2447",
     categories: ["Mauling Bear", "ID_FMP_FEAT_2447"],
     rules: function(model) {
       model.statadd("BEAST.Saving Throws", 2);
@@ -1697,7 +1697,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2448",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2448",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2448",
     categories: ["Memory of a Thousand Battles", "ID_FMP_FEAT_2448"]
   });
   byID[te.id] = te;
@@ -1707,7 +1707,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2449",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2449",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2449",
     categories: ["Menacing Thug", "ID_FMP_FEAT_2449"]
   });
   byID[te.id] = te;
@@ -1717,7 +1717,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2360",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2360",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2360",
     categories: ["Midnight Blade Brawler", "ID_FMP_FEAT_2360", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_2360 association", 2);
@@ -1730,7 +1730,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2361",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2361",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2361",
     categories: ["Midnight Blade Marauder", "ID_FMP_FEAT_2361", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_2361 association:key ability", "dex");
@@ -1743,7 +1743,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2359",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2359",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2359",
     categories: ["Midnight Blade Student", "ID_FMP_FEAT_2359", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 2, "Feat");
@@ -1756,7 +1756,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2362",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2362",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2362",
     categories: ["Midnight Blade Whisperer", "ID_FMP_FEAT_2362", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1766,7 +1766,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2364",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2364",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2364",
     categories: ["Moradin's Forge Champion", "ID_FMP_FEAT_2364", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1776,7 +1776,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2365",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2365",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2365",
     categories: ["Moradin's Forge Marshal", "ID_FMP_FEAT_2365", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1786,7 +1786,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2363",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2363",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2363",
     categories: ["Moradin's Forge Student", "ID_FMP_FEAT_2363", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -1799,7 +1799,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2367",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2367",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2367",
     categories: ["Mountain Thunder Avalanche", "ID_FMP_FEAT_2367", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1809,7 +1809,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2368",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2368",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2368",
     categories: ["Mountain Thunder Conqueror", "ID_FMP_FEAT_2368", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1819,7 +1819,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2369",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2369",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2369",
     categories: ["Mountain Thunder Crasher", "ID_FMP_FEAT_2369", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1829,7 +1829,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2370",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2370",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2370",
     categories: ["Mountain Thunder Rampart", "ID_FMP_FEAT_2370", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1839,7 +1839,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2366",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2366",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2366",
     categories: ["Mountain Thunder Student", "ID_FMP_FEAT_2366", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Endurance Misc", 2, "Feat");
@@ -1852,7 +1852,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2372",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2372",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2372",
     categories: ["Nerathan High Blade Captain", "ID_FMP_FEAT_2372", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1862,7 +1862,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2373",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2373",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2373",
     categories: ["Nerathan High Blade Duelist", "ID_FMP_FEAT_2373", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_2373 association:key ability", "dex");
@@ -1875,7 +1875,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2374",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2374",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2374",
     categories: ["Nerathan High Blade Soldier", "ID_FMP_FEAT_2374", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1885,7 +1885,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2371",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2371",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2371",
     categories: ["Nerathan High Blade Student", "ID_FMP_FEAT_2371", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Endurance Misc", 2, "Feat");
@@ -1899,7 +1899,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2450",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2450",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2450",
     categories: ["Nimble Dodge", "ID_FMP_FEAT_2450"]
   });
   byID[te.id] = te;
@@ -1909,7 +1909,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2710",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2710",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2710",
     categories: ["Ninth Legion Commander", "ID_FMP_FEAT_2710", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1919,7 +1919,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1318",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1318",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1318",
     categories: ["Ninth Legion Shield", "ID_FMP_FEAT_1318", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1929,7 +1929,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1317",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1317",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1317",
     categories: ["Ninth Legion Student", "ID_FMP_FEAT_1317", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Insight Misc", 2, "Feat");
@@ -1942,7 +1942,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2376",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2376",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2376",
     categories: ["Ogremight Bruiser", "ID_FMP_FEAT_2376", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1952,7 +1952,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2377",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2377",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2377",
     categories: ["Ogremight Ravager", "ID_FMP_FEAT_2377", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -1962,7 +1962,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2375",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2375",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2375",
     categories: ["Ogremight Student", "ID_FMP_FEAT_2375", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -1975,7 +1975,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2451",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2451",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2451",
     categories: ["Opportunity Knocks", "ID_FMP_FEAT_2451"]
   });
   byID[te.id] = te;
@@ -1985,7 +1985,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2452",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2452",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2452",
     categories: ["Overrun Critical", "ID_FMP_FEAT_2452"]
   });
   byID[te.id] = te;
@@ -1995,7 +1995,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2532",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2532",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2532",
     categories: ["Overwhelming Impact", "ID_FMP_FEAT_2532"]
   });
   byID[te.id] = te;
@@ -2005,7 +2005,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2711",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2711",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2711",
     categories: ["Partisan Polearm Captain", "ID_FMP_FEAT_2711", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2015,7 +2015,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1320",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1320",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1320",
     categories: ["Partisan Polearm Infantry", "ID_FMP_FEAT_1320", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2025,7 +2025,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1319",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1319",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1319",
     categories: ["Partisan Polearm Student", "ID_FMP_FEAT_1319", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("History Misc", 2, "Feat");
@@ -2038,7 +2038,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2533",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2533",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2533",
     categories: ["Perceptive Leadership", "ID_FMP_FEAT_2533"]
   });
   byID[te.id] = te;
@@ -2048,7 +2048,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2509",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2509",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2509",
     categories: ["Piercing Pick", "ID_FMP_FEAT_2509"]
   });
   byID[te.id] = te;
@@ -2058,7 +2058,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2510",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2510",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2510",
     categories: ["Poisonous Beast", "ID_FMP_FEAT_2510"]
   });
   byID[te.id] = te;
@@ -2068,7 +2068,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2453",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2453",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2453",
     categories: ["Pouncing Cat", "ID_FMP_FEAT_2453"],
     rules: function(model) {
       model.statadd("BEAST.Saving Throws", 2);
@@ -2081,7 +2081,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2454",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2454",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2454",
     categories: ["Practiced Prodigy", "ID_FMP_FEAT_2454"],
     rules: function(model) {
       model.statadd("Free Rituals", "The Practiced Prodigy feat grants you two free martial practices of your level or lower (three at 5th level, four at 11th level, five at 15th level, six at 21st level, and seven at 25th level).");
@@ -2094,7 +2094,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2050",
     source: "Martial Power 2,Dragon Magazine 381",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2050",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2050",
     categories: ["Practiced Study", "ID_FMP_FEAT_2050"]
   });
   byID[te.id] = te;
@@ -2104,7 +2104,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2455",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2455",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2455",
     categories: ["Precision Throw", "ID_FMP_FEAT_2455"],
     rules: function(model) {
       model.statadd("ranged basic,thrown:key ability", "dex");
@@ -2117,7 +2117,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2511",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2511",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2511",
     categories: ["Punishing Axe", "ID_FMP_FEAT_2511"]
   });
   byID[te.id] = te;
@@ -2127,7 +2127,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2512",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2512",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2512",
     categories: ["Rampaging Beast", "ID_FMP_FEAT_2512"]
   });
   byID[te.id] = te;
@@ -2137,7 +2137,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2513",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2513",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2513",
     categories: ["Rapid Practice", "ID_FMP_FEAT_2513"]
   });
   byID[te.id] = te;
@@ -2147,7 +2147,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2456",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2456",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2456",
     categories: ["Razorclaw Mark", "ID_FMP_FEAT_2456"]
   });
   byID[te.id] = te;
@@ -2157,7 +2157,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1322",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1322",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1322",
     categories: ["Reaving Axe Brute", "ID_FMP_FEAT_1322", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2167,7 +2167,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2712",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2712",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2712",
     categories: ["Reaving Axe Slayer", "ID_FMP_FEAT_2712", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_2712 association:key ability", "str");
@@ -2180,7 +2180,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1321",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1321",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1321",
     categories: ["Reaving Axe Student", "ID_FMP_FEAT_1321", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -2193,7 +2193,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2713",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2713",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2713",
     categories: ["Reaving Axe Tyrant", "ID_FMP_FEAT_2713", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2203,7 +2203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2380",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2380",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2380",
     categories: ["Red Cloak Rake", "ID_FMP_FEAT_2380", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2213,7 +2213,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2379",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2379",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2379",
     categories: ["Red Cloak Student", "ID_FMP_FEAT_2379", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 2, "Feat");
@@ -2226,7 +2226,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2381",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2381",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2381",
     categories: ["Red Cloak Tough", "ID_FMP_FEAT_2381"]
   });
   byID[te.id] = te;
@@ -2236,7 +2236,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2457",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2457",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2457",
     categories: ["Redoubled Efforts", "ID_FMP_FEAT_2457"]
   });
   byID[te.id] = te;
@@ -2246,7 +2246,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2534",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2534",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2534",
     categories: ["Reliable Action", "ID_FMP_FEAT_2534"],
     rules: function(model) {
       model.statadd("ALLY.Action Point", "Reliable Action:When an ally you can see spends an action point to use an encounter attack power that misses every target, that power is not expended");
@@ -2259,7 +2259,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2514",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2514",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2514",
     categories: ["Reliable Persistence", "ID_FMP_FEAT_2514"]
   });
   byID[te.id] = te;
@@ -2269,7 +2269,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2384",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2384",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2384",
     categories: ["Rending Chains Flayer", "ID_FMP_FEAT_2384", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_2384 association:key ability", "dex");
@@ -2282,7 +2282,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2383",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2383",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2383",
     categories: ["Rending Chains Grappler", "ID_FMP_FEAT_2383", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2292,7 +2292,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2382",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2382",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2382",
     categories: ["Rending Chains Student", "ID_FMP_FEAT_2382", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -2305,7 +2305,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2385",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2385",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2385",
     categories: ["Rending Chains Warmaster", "ID_FMP_FEAT_2385", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2315,7 +2315,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2458",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2458",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2458",
     categories: ["Resilience of Stone", "ID_FMP_FEAT_2458"]
   });
   byID[te.id] = te;
@@ -2325,7 +2325,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2535",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2535",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2535",
     categories: ["Resilient Beast", "ID_FMP_FEAT_2535"],
     rules: function(model) {
       model.statadd("BEAST.AC", 2, "Feat");
@@ -2341,7 +2341,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2547",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2547",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2547",
     categories: ["Resourceful Leader", "ID_FMP_FEAT_2547", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Resourceful Leader", {
@@ -2359,7 +2359,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2515",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2515",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2515",
     categories: ["Retreat Technique", "ID_FMP_FEAT_2515"]
   });
   byID[te.id] = te;
@@ -2369,7 +2369,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2459",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2459",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2459",
     categories: ["Risky Shift", "ID_FMP_FEAT_2459"]
   });
   byID[te.id] = te;
@@ -2379,7 +2379,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2460",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2460",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2460",
     categories: ["Rumbling Earthshock", "ID_FMP_FEAT_2460"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_1767:damage", function() { return model.stat("Strength modifier"); });
@@ -2392,7 +2392,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2461",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2461",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2461",
     categories: ["Savage Wolf", "ID_FMP_FEAT_2461"],
     rules: function(model) {
       model.statadd("BEAST.Saving Throws", 2);
@@ -2405,7 +2405,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2462",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2462",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2462",
     categories: ["Second Shot", "ID_FMP_FEAT_2462"]
   });
   byID[te.id] = te;
@@ -2415,7 +2415,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2536",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2536",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2536",
     categories: ["Shadow Eyes", "ID_FMP_FEAT_2536"]
   });
   byID[te.id] = te;
@@ -2425,7 +2425,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2463",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2463",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2463",
     categories: ["Shared Memories", "ID_FMP_FEAT_2463"]
   });
   byID[te.id] = te;
@@ -2435,7 +2435,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2537",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2537",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2537",
     categories: ["Shared Resources", "ID_FMP_FEAT_2537"]
   });
   byID[te.id] = te;
@@ -2445,7 +2445,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2538",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2538",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2538",
     categories: ["Shift the Field", "ID_FMP_FEAT_2538"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -2459,7 +2459,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2464",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2464",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2464",
     categories: ["Shifting Companion", "ID_FMP_FEAT_2464"]
   });
   byID[te.id] = te;
@@ -2469,7 +2469,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2387",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2387",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2387",
     categories: ["Silent Shot Hunter", "ID_FMP_FEAT_2387", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2479,7 +2479,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2388",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2388",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2388",
     categories: ["Silent Shot Phantom", "ID_FMP_FEAT_2388", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2489,7 +2489,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2386",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2386",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2386",
     categories: ["Silent Shot Student", "ID_FMP_FEAT_2386", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Stealth Misc", 2, "Feat");
@@ -2503,7 +2503,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2548",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2548",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2548",
     categories: ["Skirmishing Leader", "ID_FMP_FEAT_2548", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Skirmishing Leader", {
@@ -2521,7 +2521,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2539",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2539",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2539",
     categories: ["Slashing Storm", "ID_FMP_FEAT_2539"]
   });
   byID[te.id] = te;
@@ -2531,7 +2531,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2465",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2465",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2465",
     categories: ["Snapping Lizard", "ID_FMP_FEAT_2465"],
     rules: function(model) {
       model.statadd("BEAST.Saving Throws", 2);
@@ -2544,7 +2544,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2516",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2516",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2516",
     categories: ["Sneaky Gnome", "ID_FMP_FEAT_2516"]
   });
   byID[te.id] = te;
@@ -2554,7 +2554,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2517",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2517",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2517",
     categories: ["Sneaky Opportunity", "ID_FMP_FEAT_2517"],
     rules: function(model) {
       model.statadd("light blade group:damage", "+1d6");
@@ -2567,7 +2567,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2466",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2466",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2466",
     categories: ["Speed of Sea and Sky", "ID_FMP_FEAT_2466"]
   });
   byID[te.id] = te;
@@ -2577,7 +2577,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2540",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2540",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2540",
     categories: ["Spirit Breaker", "ID_FMP_FEAT_2540"]
   });
   byID[te.id] = te;
@@ -2587,7 +2587,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2467",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2467",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2467",
     categories: ["Staggering Strike", "ID_FMP_FEAT_2467"]
   });
   byID[te.id] = te;
@@ -2597,7 +2597,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2468",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2468",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2468",
     categories: ["Startling Distraction", "ID_FMP_FEAT_2468"]
   });
   byID[te.id] = te;
@@ -2607,7 +2607,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2716",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2716",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2716",
     categories: ["Steel Vanguard Captain", "ID_FMP_FEAT_2716", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2617,7 +2617,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2715",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2715",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2715",
     categories: ["Steel Vanguard Soldier", "ID_FMP_FEAT_2715", "ID_INTERNAL_CATEGORY_GREATER_STYLE", "Greater Style"]
   });
   byID[te.id] = te;
@@ -2627,7 +2627,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2714",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2714",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2714",
     categories: ["Steel Vanguard Student", "ID_FMP_FEAT_2714", "ID_INTERNAL_CATEGORY_LESSER_STYLE", "Lesser Style"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -2640,7 +2640,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2518",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2518",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2518",
     categories: ["Striking Resurgence", "ID_FMP_FEAT_2518"]
   });
   byID[te.id] = te;
@@ -2650,7 +2650,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2469",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2469",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2469",
     categories: ["Swift Footwork", "ID_FMP_FEAT_2469"]
   });
   byID[te.id] = te;
@@ -2660,7 +2660,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2519",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2519",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2519",
     categories: ["Tactical Superiority", "ID_FMP_FEAT_2519"]
   });
   byID[te.id] = te;
@@ -2670,7 +2670,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2470",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2470",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2470",
     categories: ["Telepathic Mark", "ID_FMP_FEAT_2470"]
   });
   byID[te.id] = te;
@@ -2680,7 +2680,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2471",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2471",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2471",
     categories: ["Treetop Sniper", "ID_FMP_FEAT_2471"],
     rules: function(model) {
       model.statadd("ID_FMP_CLASS_6-Crossbow", "Bow group");
@@ -2694,7 +2694,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2472",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2472",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2472",
     categories: ["Trickster's Mark", "ID_FMP_FEAT_2472"]
   });
   byID[te.id] = te;
@@ -2704,7 +2704,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2549",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2549",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2549",
     categories: ["Twilight Adept", "ID_FMP_FEAT_2549", "ID_INTERNAL_CATEGORY_MULTICLASS_ROGUE", "Multiclass Rogue", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_STEALTH"]);
@@ -2719,7 +2719,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2473",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2473",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2473",
     categories: ["Twilight Training", "ID_FMP_FEAT_2473"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_VISION_LOW-LIGHT"]);
@@ -2732,7 +2732,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2520",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2520",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2520",
     categories: ["Unerring Ambush", "ID_FMP_FEAT_2520"]
   });
   byID[te.id] = te;
@@ -2742,7 +2742,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2474",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2474",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2474",
     categories: ["Venomous Spider", "ID_FMP_FEAT_2474"],
     rules: function(model) {
       model.statadd("BEAST.Saving Throws", 2);
@@ -2755,7 +2755,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2541",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2541",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2541",
     categories: ["Versatile Rogue", "ID_FMP_FEAT_2541"],
     rules: function(model) {
       model.select('class feature', 1, "Versatile Rogue", {
@@ -2770,7 +2770,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2475",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2475",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2475",
     categories: ["Versatile Talent", "ID_FMP_FEAT_2475"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1062"]);
@@ -2784,7 +2784,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2476",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2476",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2476",
     categories: ["Warforged Superiority", "ID_FMP_FEAT_2476"]
   });
   byID[te.id] = te;
@@ -2794,7 +2794,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2477",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2477",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2477",
     categories: ["Warpath Leader", "ID_FMP_FEAT_2477"]
   });
   byID[te.id] = te;
@@ -2804,7 +2804,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2521",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2521",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2521",
     categories: ["Wicked Blade", "ID_FMP_FEAT_2521"]
   });
   byID[te.id] = te;
@@ -2814,7 +2814,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2550",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2550",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2550",
     categories: ["Wrathful Warrior", "ID_FMP_FEAT_2550", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Wrathful Warrior", {
@@ -2831,7 +2831,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2478",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2478",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2478",
     categories: ["Wrenching Grasp", "ID_FMP_FEAT_2478"]
   });
   byID[te.id] = te;

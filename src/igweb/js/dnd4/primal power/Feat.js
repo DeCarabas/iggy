@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1822",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1822",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1822",
     categories: ["Agile Form", "ID_FMP_FEAT_1822"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1824",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1824",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1824",
     categories: ["Animal Empathy", "ID_FMP_FEAT_1824"],
     rules: function(model) {
       model.statadd("Nature Misc", 2, "Feat");
@@ -36,7 +36,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1888",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1888",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1888",
     categories: ["Arcing Throw", "ID_FMP_FEAT_1888"]
   });
   byID[te.id] = te;
@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1326",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1326",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1326",
     categories: ["Audacious Crow", "ID_FMP_FEAT_1326", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"],
     rules: function(model) {
       model.statadd("Thievery Misc", 2, "Feat");
@@ -59,7 +59,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1327",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1327",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1327",
     categories: ["Bloodied Spear", "ID_FMP_FEAT_1327", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* on opportunity attacks */ return 1; }, "Feat");
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1826",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1826",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1826",
     categories: ["Bloody Triumph", "ID_FMP_FEAT_1826"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1889",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1889",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1889",
     categories: ["Bolstered Swarm", "ID_FMP_FEAT_1889"]
   });
   byID[te.id] = te;
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1890",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1890",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1890",
     categories: ["Bolstering Guardian", "ID_FMP_FEAT_1890"]
   });
   byID[te.id] = te;
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1891",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1891",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1891",
     categories: ["Commanding Form", "ID_FMP_FEAT_1891"]
   });
   byID[te.id] = te;
@@ -113,7 +113,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1328",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1328",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1328",
     categories: ["Courageous Heart", "ID_FMP_FEAT_1328", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"],
     rules: function(model) {
       model.statadd("Saving Throws", function() { /* against charm effects or fear effects */ return 2; }, "Feat");
@@ -126,7 +126,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1827",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1827",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1827",
     categories: ["Crippling Crush", "ID_FMP_FEAT_1827"],
     rules: function(model) {
       model.statadd("hammer group,weapon:damage", function() { /* when you immobilize or slow an enemy */ return model.stat("Constitution modifier"); });
@@ -140,7 +140,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1892",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1892",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1892",
     categories: ["Cyclone Spirit", "ID_FMP_FEAT_1892"]
   });
   byID[te.id] = te;
@@ -150,7 +150,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1828",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1828",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1828",
     categories: ["Deep Sage", "ID_FMP_FEAT_1828"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_LANGUAGE_18"]);
@@ -163,7 +163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1893",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1893",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1893",
     categories: ["Double Lunge", "ID_FMP_FEAT_1893"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_5249:damage", function() { return model.stat("Strength modifier"); });
@@ -176,7 +176,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1829",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1829",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1829",
     categories: ["Druid of Darkness", "ID_FMP_FEAT_1829"]
   });
   byID[te.id] = te;
@@ -186,7 +186,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1894",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1894",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1894",
     categories: ["Earthstrength Defenses", "ID_FMP_FEAT_1894"]
   });
   byID[te.id] = te;
@@ -196,7 +196,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1919",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1919",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1919",
     categories: ["Earthstrength Might", "ID_FMP_FEAT_1919"]
   });
   byID[te.id] = te;
@@ -206,7 +206,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1830",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1830",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1830",
     categories: ["Earthstrength Resilience", "ID_FMP_FEAT_1830"]
   });
   byID[te.id] = te;
@@ -216,7 +216,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1831",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1831",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1831",
     categories: ["Elemental Barbarian", "ID_FMP_FEAT_1831"]
   });
   byID[te.id] = te;
@@ -226,7 +226,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1329",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1329",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1329",
     categories: ["Enduring Mountain", "ID_FMP_FEAT_1329", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"]
   });
   byID[te.id] = te;
@@ -236,7 +236,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1895",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1895",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1895",
     categories: ["Ephemeral Spirit", "ID_FMP_FEAT_1895"]
   });
   byID[te.id] = te;
@@ -246,7 +246,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1896",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1896",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1896",
     categories: ["Explosive Rage Strike", "ID_FMP_FEAT_1896"]
   });
   byID[te.id] = te;
@@ -256,7 +256,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1832",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1832",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1832",
     categories: ["Eyes of the Spirits", "ID_FMP_FEAT_1832"]
   });
   byID[te.id] = te;
@@ -266,7 +266,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1833",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1833",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1833",
     categories: ["Fading Spirit", "ID_FMP_FEAT_1833"]
   });
   byID[te.id] = te;
@@ -276,7 +276,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1920",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1920",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1920",
     categories: ["Far-Reaching Grasp", "ID_FMP_FEAT_1920"]
   });
   byID[te.id] = te;
@@ -286,7 +286,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1834",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1834",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1834",
     categories: ["Fearsome Charge", "ID_FMP_FEAT_1834"]
   });
   byID[te.id] = te;
@@ -296,7 +296,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1330",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1330",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1330",
     categories: ["Fearsome Host", "ID_FMP_FEAT_1330", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -309,7 +309,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1835",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1835",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1835",
     categories: ["Feral Fey Step", "ID_FMP_FEAT_1835"]
   });
   byID[te.id] = te;
@@ -319,7 +319,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1836",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1836",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1836",
     categories: ["Focus the Spirits' Lives", "ID_FMP_FEAT_1836"]
   });
   byID[te.id] = te;
@@ -329,7 +329,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1897",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1897",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1897",
     categories: ["Forceful Smash", "ID_FMP_FEAT_1897"]
   });
   byID[te.id] = te;
@@ -339,7 +339,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1331",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1331",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1331",
     categories: ["Four Winds", "ID_FMP_FEAT_1331", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"],
     rules: function(model) {
       model.statadd("Athletics Misc", 2, "Feat");
@@ -352,7 +352,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1921",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1921",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1921",
     categories: ["Grave Spirit", "ID_FMP_FEAT_1921"]
   });
   byID[te.id] = te;
@@ -362,7 +362,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1922",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1922",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1922",
     categories: ["Guardian Resurgence", "ID_FMP_FEAT_1922"]
   });
   byID[te.id] = te;
@@ -372,7 +372,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1837",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1837",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1837",
     categories: ["Half-Elf Spirit Speaker", "ID_FMP_FEAT_1837"]
   });
   byID[te.id] = te;
@@ -382,7 +382,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1838",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1838",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1838",
     categories: ["Herbalist", "ID_FMP_FEAT_1838"],
     rules: function(model) {
       model.statadd("Heal Misc", function() { /* to treat diseases */ return 5; });
@@ -396,7 +396,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1839",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1839",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1839",
     categories: ["Hide Armor Expertise", "ID_FMP_FEAT_1839"],
     rules: function(model) {
       model.statadd("Armor Class", function() { 
@@ -413,7 +413,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1840",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1840",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1840",
     categories: ["Human Nature Lore", "ID_FMP_FEAT_1840"]
   });
   byID[te.id] = te;
@@ -423,7 +423,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1937",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1937",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1937",
     categories: ["Hunting Predator", "ID_FMP_FEAT_1937", "ID_INTERNAL_CATEGORY_MULTICLASS_DRUID", "Multiclass Druid", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.statadd("Speed", function() { /* while you are in beast form */ return 1; });
@@ -438,7 +438,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1841",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1841",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1841",
     categories: ["Hurl Weapon", "ID_FMP_FEAT_1841"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_ALLASTHROWN"]);
@@ -451,7 +451,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1842",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1842",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1842",
     categories: ["Impaling Thrust", "ID_FMP_FEAT_1842"]
   });
   byID[te.id] = te;
@@ -461,7 +461,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1843",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1843",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1843",
     categories: ["Improvised Missile", "ID_FMP_FEAT_1843"]
   });
   byID[te.id] = te;
@@ -471,7 +471,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1844",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1844",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1844",
     categories: ["Inner Compass", "ID_FMP_FEAT_1844"]
   });
   byID[te.id] = te;
@@ -481,7 +481,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1845",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1845",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1845",
     categories: ["Invigorating Spirit", "ID_FMP_FEAT_1845"]
   });
   byID[te.id] = te;
@@ -491,7 +491,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1923",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1923",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1923",
     categories: ["Ironheart Spirit", "ID_FMP_FEAT_1923"]
   });
   byID[te.id] = te;
@@ -501,7 +501,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1898",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1898",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1898",
     categories: ["Lifespirit Healing", "ID_FMP_FEAT_1898"]
   });
   byID[te.id] = te;
@@ -511,7 +511,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1846",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1846",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1846",
     categories: ["Lifespirit Vigor", "ID_FMP_FEAT_1846"]
   });
   byID[te.id] = te;
@@ -521,7 +521,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1847",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1847",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1847",
     categories: ["Longtooth Spirit Shifter", "ID_FMP_FEAT_1847"]
   });
   byID[te.id] = te;
@@ -531,7 +531,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1899",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1899",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1899",
     categories: ["Maneuvering Attack", "ID_FMP_FEAT_1899"]
   });
   byID[te.id] = te;
@@ -541,7 +541,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1848",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1848",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1848",
     categories: ["Manifest Healing", "ID_FMP_FEAT_1848"]
   });
   byID[te.id] = te;
@@ -551,7 +551,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1849",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1849",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1849",
     categories: ["Markings of the Elements", "ID_FMP_FEAT_1849"]
   });
   byID[te.id] = te;
@@ -561,7 +561,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1850",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1850",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1850",
     categories: ["Markings of the Predator", "ID_FMP_FEAT_1850"]
   });
   byID[te.id] = te;
@@ -571,7 +571,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1938",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1938",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1938",
     categories: ["Mending Spirit", "ID_FMP_FEAT_1938", "ID_INTERNAL_CATEGORY_MULTICLASS_SHAMAN", "Multiclass Shaman", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3773"]);
@@ -587,7 +587,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1332",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1332",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1332",
     categories: ["Midnight Stalker", "ID_FMP_FEAT_1332", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"],
     rules: function(model) {
       model.statadd("Stealth Misc", 2, "Feat");
@@ -600,7 +600,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1924",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1924",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1924",
     categories: ["Overpowering Charge", "ID_FMP_FEAT_1924"]
   });
   byID[te.id] = te;
@@ -610,7 +610,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1900",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1900",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1900",
     categories: ["Pouncing Form", "ID_FMP_FEAT_1900"]
   });
   byID[te.id] = te;
@@ -620,7 +620,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1851",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1851",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1851",
     categories: ["Precise Fangs", "ID_FMP_FEAT_1851"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_5388:attack", 2);
@@ -633,7 +633,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1852",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1852",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1852",
     categories: ["Predator's Burst", "ID_FMP_FEAT_1852"],
     rules: function(model) {
       model.statadd("Speed", function() { /* when you charge while you are in beast form */ return 2; });
@@ -647,7 +647,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1853",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1853",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1853",
     categories: ["Primal Breath", "ID_FMP_FEAT_1853"]
   });
   byID[te.id] = te;
@@ -657,7 +657,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1854",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1854",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1854",
     categories: ["Primal Halfling Counterattack", "ID_FMP_FEAT_1854"]
   });
   byID[te.id] = te;
@@ -667,7 +667,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1855",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1855",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1855",
     categories: ["Primal Resilience", "ID_FMP_FEAT_1855"]
   });
   byID[te.id] = te;
@@ -677,7 +677,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1925",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1925",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1925",
     categories: ["Primal Summoning Expertise", "ID_FMP_FEAT_1925"]
   });
   byID[te.id] = te;
@@ -687,7 +687,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1856",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1856",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1856",
     categories: ["Protector's Shield", "ID_FMP_FEAT_1856"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_5388:attack", "+1d8");
@@ -700,7 +700,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1926",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1926",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1926",
     categories: ["Purging Spirit", "ID_FMP_FEAT_1926"]
   });
   byID[te.id] = te;
@@ -710,7 +710,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1857",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1857",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1857",
     categories: ["Quick Stow", "ID_FMP_FEAT_1857"]
   });
   byID[te.id] = te;
@@ -720,7 +720,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1858",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1858",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1858",
     categories: ["Raging Bloodcut", "ID_FMP_FEAT_1858"]
   });
   byID[te.id] = te;
@@ -730,7 +730,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1939",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1939",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1939",
     categories: ["Rampant Fury", "ID_FMP_FEAT_1939", "ID_INTERNAL_CATEGORY_MULTICLASS_BARBARIAN", "Multiclass Barbarian", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1053"]);
@@ -745,7 +745,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1859",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1859",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1859",
     categories: ["Razorclaw Spirit Shifter", "ID_FMP_FEAT_1859"]
   });
   byID[te.id] = te;
@@ -755,7 +755,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1860",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1860",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1860",
     categories: ["Reckless Charge", "ID_FMP_FEAT_1860"]
   });
   byID[te.id] = te;
@@ -765,7 +765,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1901",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1901",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1901",
     categories: ["Reckless Rage", "ID_FMP_FEAT_1901"]
   });
   byID[te.id] = te;
@@ -775,7 +775,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1861",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1861",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1861",
     categories: ["Rejuvenating Spirit", "ID_FMP_FEAT_1861"]
   });
   byID[te.id] = te;
@@ -785,7 +785,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1862",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1862",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1862",
     categories: ["Resilient Spirit", "ID_FMP_FEAT_1862"]
   });
   byID[te.id] = te;
@@ -795,7 +795,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1902",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1902",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1902",
     categories: ["Retributive Spirit", "ID_FMP_FEAT_1902"]
   });
   byID[te.id] = te;
@@ -805,7 +805,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1863",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1863",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1863",
     categories: ["Rites of Spirits' Blood", "ID_FMP_FEAT_1863"],
     rules: function(model) {
       model.statadd("Bloodhunt", 1);
@@ -819,7 +819,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1903",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1903",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1903",
     categories: ["Scattering Swarm", "ID_FMP_FEAT_1903"]
   });
   byID[te.id] = te;
@@ -829,7 +829,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1927",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1927",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1927",
     categories: ["Second Skin", "ID_FMP_FEAT_1927"],
     rules: function(model) {
       model.statadd("AC", function() { 
@@ -852,7 +852,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1904",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1904",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1904",
     categories: ["Sentinel Spirit", "ID_FMP_FEAT_1904"]
   });
   byID[te.id] = te;
@@ -862,7 +862,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1905",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1905",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1905",
     categories: ["Shielding Spirit", "ID_FMP_FEAT_1905"]
   });
   byID[te.id] = te;
@@ -872,7 +872,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1864",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1864",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1864",
     categories: ["Skins of the Slain", "ID_FMP_FEAT_1864"],
     rules: function(model) {
       model.statadd("Skins of the Slain", 1);
@@ -891,7 +891,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1928",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1928",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1928",
     categories: ["Slayer's Shift", "ID_FMP_FEAT_1928"]
   });
   byID[te.id] = te;
@@ -901,7 +901,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1865",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1865",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1865",
     categories: ["Spider's Swiftness", "ID_FMP_FEAT_1865"],
     rules: function(model) {
       model.statadd("Spider's Swiftness", 1);
@@ -916,7 +916,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1929",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1929",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1929",
     categories: ["Spirit of Health", "ID_FMP_FEAT_1929"]
   });
   byID[te.id] = te;
@@ -926,7 +926,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1866",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1866",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1866",
     categories: ["Spirit Tribe", "ID_FMP_FEAT_1866"]
   });
   byID[te.id] = te;
@@ -936,7 +936,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1906",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1906",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1906",
     categories: ["Spirit's Eyes", "ID_FMP_FEAT_1906"]
   });
   byID[te.id] = te;
@@ -946,7 +946,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1867",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1867",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1867",
     categories: ["Spirit's Fey Step", "ID_FMP_FEAT_1867"]
   });
   byID[te.id] = te;
@@ -956,7 +956,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1868",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1868",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1868",
     categories: ["Spirits of Stealth", "ID_FMP_FEAT_1868"],
     rules: function(model) {
       model.statadd("Spirits of Stealth", 3);
@@ -972,7 +972,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1869",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1869",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1869",
     categories: ["Spirits of Stone", "ID_FMP_FEAT_1869"]
   });
   byID[te.id] = te;
@@ -982,7 +982,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1870",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1870",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1870",
     categories: ["Spirits of the Primal Dragons", "ID_FMP_FEAT_1870"]
   });
   byID[te.id] = te;
@@ -992,7 +992,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1871",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1871",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1871",
     categories: ["Staggering Smash", "ID_FMP_FEAT_1871"]
   });
   byID[te.id] = te;
@@ -1002,7 +1002,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1872",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1872",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1872",
     categories: ["Stinging Swarm", "ID_FMP_FEAT_1872"]
   });
   byID[te.id] = te;
@@ -1012,7 +1012,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1930",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1930",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1930",
     categories: ["Stone Heart Spirit", "ID_FMP_FEAT_1930"]
   });
   byID[te.id] = te;
@@ -1022,7 +1022,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1873",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1873",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1873",
     categories: ["Stone Step Spirits", "ID_FMP_FEAT_1873"]
   });
   byID[te.id] = te;
@@ -1032,7 +1032,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1874",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1874",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1874",
     categories: ["Stormheart Push", "ID_FMP_FEAT_1874"]
   });
   byID[te.id] = te;
@@ -1042,7 +1042,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1907",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1907",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1907",
     categories: ["Stormheart Thunder", "ID_FMP_FEAT_1907"]
   });
   byID[te.id] = te;
@@ -1052,7 +1052,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1875",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1875",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1875",
     categories: ["Strengthening Spirit", "ID_FMP_FEAT_1875"]
   });
   byID[te.id] = te;
@@ -1062,7 +1062,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1876",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1876",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1876",
     categories: ["Strong-Willed Summoning", "ID_FMP_FEAT_1876"]
   });
   byID[te.id] = te;
@@ -1072,7 +1072,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1877",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1877",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1877",
     categories: ["Sudden Call", "ID_FMP_FEAT_1877"]
   });
   byID[te.id] = te;
@@ -1082,7 +1082,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1931",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1931",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1931",
     categories: ["Sweeping Blade", "ID_FMP_FEAT_1931"]
   });
   byID[te.id] = te;
@@ -1092,7 +1092,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1325",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1325",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1325",
     categories: ["Swift Jaguar", "ID_FMP_FEAT_1325", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"],
     rules: function(model) {
       model.statadd("Initiative Misc", 2, "Feat");
@@ -1105,7 +1105,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1932",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1932",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1932",
     categories: ["Swift Predator", "ID_FMP_FEAT_1932"],
     rules: function(model) {
       model.statadd("speed,", function() { /* while you are in beast form */ return 1; }, "Feat");
@@ -1119,7 +1119,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1878",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1878",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1878",
     categories: ["Swift Slayer", "ID_FMP_FEAT_1878"]
   });
   byID[te.id] = te;
@@ -1129,7 +1129,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1933",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1933",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1933",
     categories: ["Tangling Grasp", "ID_FMP_FEAT_1933"]
   });
   byID[te.id] = te;
@@ -1139,7 +1139,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1879",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1879",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1879",
     categories: ["Targeted Assault", "ID_FMP_FEAT_1879"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* against any creature that has you marked */ return 2; });
@@ -1152,7 +1152,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1908",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1908",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1908",
     categories: ["Thirsty Blade", "ID_FMP_FEAT_1908"]
   });
   byID[te.id] = te;
@@ -1162,7 +1162,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1880",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1880",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1880",
     categories: ["Thunderborn Rage", "ID_FMP_FEAT_1880"]
   });
   byID[te.id] = te;
@@ -1172,7 +1172,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1909",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1909",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1909",
     categories: ["Thundering Bull Rush", "ID_FMP_FEAT_1909"]
   });
   byID[te.id] = te;
@@ -1182,7 +1182,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1910",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1910",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1910",
     categories: ["Thunderous Cry", "ID_FMP_FEAT_1910"]
   });
   byID[te.id] = te;
@@ -1192,7 +1192,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1934",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1934",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1934",
     categories: ["Triumphant Spirit", "ID_FMP_FEAT_1934"]
   });
   byID[te.id] = te;
@@ -1202,7 +1202,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1911",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1911",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1911",
     categories: ["Two-Handed Grasp", "ID_FMP_FEAT_1911"]
   });
   byID[te.id] = te;
@@ -1212,7 +1212,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1935",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1935",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1935",
     categories: ["Vexing Spirit", "ID_FMP_FEAT_1935"]
   });
   byID[te.id] = te;
@@ -1222,7 +1222,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1912",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1912",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1912",
     categories: ["Vicious Spirit", "ID_FMP_FEAT_1912"]
   });
   byID[te.id] = te;
@@ -1232,7 +1232,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1881",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1881",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1881",
     categories: ["Vigorous Spirit", "ID_FMP_FEAT_1881"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_3773:healing", function() { return model.stat("Wisdom modifier"); });
@@ -1245,7 +1245,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1913",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1913",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1913",
     categories: ["Violent Reminder", "ID_FMP_FEAT_1913"]
   });
   byID[te.id] = te;
@@ -1255,7 +1255,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1914",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1914",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1914",
     categories: ["Vital Form", "ID_FMP_FEAT_1914"]
   });
   byID[te.id] = te;
@@ -1265,7 +1265,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1940",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1940",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1940",
     categories: ["Warden's Endurance", "ID_FMP_FEAT_1940", "ID_INTERNAL_CATEGORY_MULTICLASS_WARDEN", "Multiclass Warden", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_WARDEN"]);
@@ -1279,7 +1279,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1915",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1915",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1915",
     categories: ["Warning Guardian", "ID_FMP_FEAT_1915"]
   });
   byID[te.id] = te;
@@ -1289,7 +1289,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1882",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1882",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1882",
     categories: ["Watcher Spirit Adept", "ID_FMP_FEAT_1882"]
   });
   byID[te.id] = te;
@@ -1299,7 +1299,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1883",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1883",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1883",
     categories: ["Watchful Guardian", "ID_FMP_FEAT_1883"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* when making opportunity attacks while you are in beast form */ return 2; }, "Feat");
@@ -1312,7 +1312,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1333",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1333",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1333",
     categories: ["Watchful Owl", "ID_FMP_FEAT_1333", "ID_INTERNAL_CATEGORY_TRIBAL", "Tribal"],
     rules: function(model) {
       model.statadd("Perception Misc", 2, "Feat");
@@ -1325,7 +1325,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1916",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1916",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1916",
     categories: ["Wellspring of Life", "ID_FMP_FEAT_1916"]
   });
   byID[te.id] = te;
@@ -1335,7 +1335,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1884",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1884",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1884",
     categories: ["Wild Bull Rush", "ID_FMP_FEAT_1884"],
     rules: function(model) {
       model.statadd("bull rush attack rolls,", function() { /* while you are in beast form */ return 2; }, "Feat");
@@ -1349,7 +1349,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1885",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1885",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1885",
     categories: ["Wild Sage", "ID_FMP_FEAT_1885"],
     rules: function(model) {
       model.statadd("Free Rituals", "In addition, choose one of the following rituals: Dowsing Rod, Portend Weather, or Traveler's Camouflage.");
@@ -1362,7 +1362,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1936",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1936",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1936",
     categories: ["Wild Surge", "ID_FMP_FEAT_1936"]
   });
   byID[te.id] = te;
@@ -1372,7 +1372,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1886",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1886",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1886",
     categories: ["Wildblood Fury", "ID_FMP_FEAT_1886"]
   });
   byID[te.id] = te;
@@ -1382,7 +1382,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1917",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1917",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1917",
     categories: ["Wildblood Retribution", "ID_FMP_FEAT_1917"]
   });
   byID[te.id] = te;
@@ -1392,7 +1392,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1918",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1918",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1918",
     categories: ["Withering Roar", "ID_FMP_FEAT_1918"]
   });
   byID[te.id] = te;
@@ -1402,7 +1402,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1887",
     source: "Primal Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1887",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1887",
     categories: ["World Speaker Spirit Adept", "ID_FMP_FEAT_1887"]
   });
   byID[te.id] = te;

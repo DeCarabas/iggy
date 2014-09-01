@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_233",
     source: "Dragon Magazine 373",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=233",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=233",
     categories: ["Drowsy Dust", "ID_FMP_RITUAL_233"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_234",
     source: "Dragon Magazine 373",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=234",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=234",
     categories: ["Eyesting", "ID_FMP_RITUAL_234"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_235",
     source: "Dragon Magazine 373",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=235",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=235",
     categories: ["Flashbang Powder", "ID_FMP_RITUAL_235"]
   });
   byID[te.id] = te;

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_300",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=300",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=300",
     categories: ["Punisher of the Gods", "ID_FMP_EPIC_DESTINY_300"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1338"]);
@@ -30,7 +30,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_157",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=157",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=157",
     categories: ["Radiant One", "ID_FMP_EPIC_DESTINY_157"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_881"]);

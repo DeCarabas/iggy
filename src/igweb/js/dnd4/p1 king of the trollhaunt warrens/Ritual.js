@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_165",
     source: "P1 King of the Trollhaunt Warrens",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=165",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=165",
     categories: ["Ritual of Retrieval", "ID_FMP_RITUAL_165"]
   });
   byID[te.id] = te;

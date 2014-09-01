@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_209",
     source: "Dragon Magazine 367",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=209",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=209",
     categories: ["Elf High Mage", "ID_FMP_EPIC_DESTINY_209"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1037"]);
@@ -30,7 +30,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_210",
     source: "Dragon Magazine 367",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=210",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=210",
     categories: ["Harper of Legend", "ID_FMP_EPIC_DESTINY_210"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1038"]);
@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_213",
     source: "Dragon Magazine 367",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=213",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=213",
     categories: ["Redeemed Drow", "ID_FMP_EPIC_DESTINY_213"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1048"]);

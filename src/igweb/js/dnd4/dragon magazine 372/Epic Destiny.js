@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_296",
     source: "Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=296",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=296",
     categories: ["Darklord", "ID_FMP_EPIC_DESTINY_296"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1326"]);
@@ -29,7 +29,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_297",
     source: "Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=297",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=297",
     categories: ["Keybearer", "ID_FMP_EPIC_DESTINY_297"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1329"]);
@@ -45,7 +45,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_298",
     source: "Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=298",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=298",
     categories: ["Planeshaper", "ID_FMP_EPIC_DESTINY_298"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1332"]);
@@ -61,7 +61,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_299",
     source: "Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=299",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=299",
     categories: ["Prince of Hell", "ID_FMP_EPIC_DESTINY_299"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1335"]);
@@ -77,7 +77,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_346",
     source: "Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=346",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=346",
     categories: ["Raven Consort", "ID_FMP_EPIC_DESTINY_346"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1489"]);
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_301",
     source: "Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=301",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=301",
     categories: ["Storm Sovereign", "ID_FMP_EPIC_DESTINY_301"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1341"]);
@@ -109,7 +109,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_302",
     source: "Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=302",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=302",
     categories: ["Winter Sovereign", "ID_FMP_EPIC_DESTINY_302"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1344"]);

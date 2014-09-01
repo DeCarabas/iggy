@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_686",
     source: "Dragon Magazine 387",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=686",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=686",
     categories: ["Agent of the Unbroken Circle", "ID_FMP_PARAGON_PATH_686"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2683"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_688",
     source: "Dragon Magazine 387",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=688",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=688",
     categories: ["Crystalmind", "ID_FMP_PARAGON_PATH_688"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2689"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_687",
     source: "Dragon Magazine 387",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=687",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=687",
     categories: ["Gatekeeper", "ID_FMP_PARAGON_PATH_687"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2686"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_691",
     source: "Dragon Magazine 387",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=691",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=691",
     categories: ["Gatekeeper of the Golden Palace", "ID_FMP_PARAGON_PATH_691"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2699"]);
@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_690",
     source: "Dragon Magazine 387",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=690",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=690",
     categories: ["Seer of Endings", "ID_FMP_PARAGON_PATH_690"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2696"]);

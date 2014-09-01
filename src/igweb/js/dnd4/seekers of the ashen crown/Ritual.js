@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_284",
     source: "Seekers of the Ashen Crown",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=284",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=284",
     categories: ["Rite of Arkentaash", "ID_FMP_RITUAL_284"]
   });
   byID[te.id] = te;

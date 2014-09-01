@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_572",
     source: "Player's Handbook Races: Tiefling",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=572",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=572",
     categories: ["Heir to the Empire", "ID_FMP_EPIC_DESTINY_572"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2270"]);

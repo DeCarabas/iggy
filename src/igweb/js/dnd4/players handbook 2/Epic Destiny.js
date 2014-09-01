@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_286",
     source: "Player's Handbook 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=286",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=286",
     categories: ["Fatesinger", "ID_FMP_EPIC_DESTINY_286"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1292"]);
@@ -29,7 +29,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_287",
     source: "Player's Handbook 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=287",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=287",
     categories: ["Glorious Spirit", "ID_FMP_EPIC_DESTINY_287"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1295"]);
@@ -45,7 +45,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_288",
     source: "Player's Handbook 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=288",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=288",
     categories: ["Harbinger of Doom", "ID_FMP_EPIC_DESTINY_288"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1298"]);
@@ -61,7 +61,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_289",
     source: "Player's Handbook 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=289",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=289",
     categories: ["Lorekeeper", "ID_FMP_EPIC_DESTINY_289"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1301"]);
@@ -77,7 +77,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_243",
     source: "Player's Handbook 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=243",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=243",
     categories: ["Primal Avatar", "ID_FMP_EPIC_DESTINY_243"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1157"]);
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_291",
     source: "Player's Handbook 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=291",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=291",
     categories: ["Revered One", "ID_FMP_EPIC_DESTINY_291"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1304"]);

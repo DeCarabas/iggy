@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_387",
     source: "Player's Handbook Races: Dragonborn,Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=387",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=387",
     categories: ["Adaptable Breath", "ID_FMP_FEAT_387"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Adaptable Breath", {
@@ -28,7 +28,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_II",
     source: "Player's Handbook Races: Dragonborn,Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ADAPTABLE_BREATH_II",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_ADAPTABLE_BREATH_II",
     categories: ["Adaptable Breath II", "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_II"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Adaptable Breath II", {
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_III",
     source: "Player's Handbook Races: Dragonborn,Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ADAPTABLE_BREATH_III",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_ADAPTABLE_BREATH_III",
     categories: ["Adaptable Breath III", "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_III"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Adaptable Breath III", {
@@ -58,7 +58,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_IV",
     source: "Player's Handbook Races: Dragonborn,Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ADAPTABLE_BREATH_IV",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_ADAPTABLE_BREATH_IV",
     categories: ["Adaptable Breath IV", "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_IV"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Adaptable Breath IV", {
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_726",
     source: "Player's Handbook Races: Dragonborn,Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=726",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=726",
     categories: ["Admixture Breath", "ID_FMP_FEAT_726"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2175",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2175",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2175",
     categories: ["Ancient Soul", "ID_FMP_FEAT_2175"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -96,7 +96,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2176",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2176",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2176",
     categories: ["Bolstering Breath", "ID_FMP_FEAT_2176"]
   });
   byID[te.id] = te;
@@ -106,7 +106,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2211",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2211",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2211",
     categories: ["Burning Breath", "ID_FMP_FEAT_2211"]
   });
   byID[te.id] = te;
@@ -116,7 +116,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2219",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2219",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2219",
     categories: ["Concussive Breath", "ID_FMP_FEAT_2219"]
   });
   byID[te.id] = te;
@@ -126,7 +126,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2220",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2220",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2220",
     categories: ["Conflagration Breath", "ID_FMP_FEAT_2220"]
   });
   byID[te.id] = te;
@@ -136,7 +136,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2213",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2213",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2213",
     categories: ["Corrosive Breath", "ID_FMP_FEAT_2213"]
   });
   byID[te.id] = te;
@@ -146,7 +146,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2177",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2177",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2177",
     categories: ["Covenant of Io", "ID_FMP_FEAT_2177"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -159,7 +159,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2212",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2212",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2212",
     categories: ["Critical Breath", "ID_FMP_FEAT_2212"]
   });
   byID[te.id] = te;
@@ -169,7 +169,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2178",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2178",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2178",
     categories: ["Daunting Breath", "ID_FMP_FEAT_2178"]
   });
   byID[te.id] = te;
@@ -179,7 +179,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2221",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2221",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2221",
     categories: ["Debilitating Breath", "ID_FMP_FEAT_2221"]
   });
   byID[te.id] = te;
@@ -189,7 +189,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2222",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2222",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2222",
     categories: ["Dissolving Breath", "ID_FMP_FEAT_2222"]
   });
   byID[te.id] = te;
@@ -199,7 +199,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2179",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2179",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2179",
     categories: ["Draconic Blast", "ID_FMP_FEAT_2179"]
   });
   byID[te.id] = te;
@@ -209,7 +209,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2180",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2180",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2180",
     categories: ["Draconic Combat Challenge", "ID_FMP_FEAT_2180"]
   });
   byID[te.id] = te;
@@ -219,7 +219,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2181",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2181",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2181",
     categories: ["Draconic Enmity", "ID_FMP_FEAT_2181"]
   });
   byID[te.id] = te;
@@ -229,7 +229,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2182",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2182",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2182",
     categories: ["Draconic Healing", "ID_FMP_FEAT_2182"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_1455:healing", function() { /* while you are bloodied */ return model.stat("Constitution modifier"); });
@@ -242,7 +242,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2183",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2183",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2183",
     categories: ["Draconic Hunter", "ID_FMP_FEAT_2183"]
   });
   byID[te.id] = te;
@@ -252,7 +252,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2201",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2201",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2201",
     categories: ["Draconic Majesty", "ID_FMP_FEAT_2201"]
   });
   byID[te.id] = te;
@@ -262,7 +262,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2223",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2223",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2223",
     categories: ["Draconic Restoration", "ID_FMP_FEAT_2223"]
   });
   byID[te.id] = te;
@@ -272,7 +272,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2224",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2224",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2224",
     categories: ["Draconic Triumph", "ID_FMP_FEAT_2224"]
   });
   byID[te.id] = te;
@@ -282,7 +282,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_727",
     source: "Player's Handbook Races: Dragonborn,Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=727",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=727",
     categories: ["Dragonborn Zeal", "ID_FMP_FEAT_727"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -295,7 +295,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2202",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2202",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2202",
     categories: ["Focused Breath", "ID_FMP_FEAT_2202"]
   });
   byID[te.id] = te;
@@ -305,7 +305,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2225",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2225",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2225",
     categories: ["Freezing Breath", "ID_FMP_FEAT_2225"]
   });
   byID[te.id] = te;
@@ -315,7 +315,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2214",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2214",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2214",
     categories: ["Frost Breath", "ID_FMP_FEAT_2214"]
   });
   byID[te.id] = te;
@@ -325,7 +325,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2203",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2203",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2203",
     categories: ["Glorious Victory", "ID_FMP_FEAT_2203"]
   });
   byID[te.id] = te;
@@ -335,7 +335,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_725",
     source: "Player's Handbook Races: Dragonborn,Dragon Magazine 365",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=725",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=725",
     categories: ["Hurl Breath", "ID_FMP_FEAT_725"]
   });
   byID[te.id] = te;
@@ -345,7 +345,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2204",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2204",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2204",
     categories: ["Inspiring Triumph", "ID_FMP_FEAT_2204"]
   });
   byID[te.id] = te;
@@ -355,7 +355,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2205",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2205",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2205",
     categories: ["Io's Challenge", "ID_FMP_FEAT_2205"]
   });
   byID[te.id] = te;
@@ -365,7 +365,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2215",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2215",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2215",
     categories: ["Opportunity Breath", "ID_FMP_FEAT_2215"]
   });
   byID[te.id] = te;
@@ -375,7 +375,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2206",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2206",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2206",
     categories: ["Powerful Breath", "ID_FMP_FEAT_2206"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Powerful Breath", {
@@ -390,7 +390,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2207",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2207",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2207",
     categories: ["Raging Drake Form", "ID_FMP_FEAT_2207"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* while you are bloodied and in beast form */ return 1; });
@@ -404,7 +404,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2216",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2216",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2216",
     categories: ["Spirit Breath", "ID_FMP_FEAT_2216"]
   });
   byID[te.id] = te;
@@ -414,7 +414,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2208",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2208",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2208",
     categories: ["Surprising Breath", "ID_FMP_FEAT_2208"]
   });
   byID[te.id] = te;
@@ -424,7 +424,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2217",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2217",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2217",
     categories: ["Thundering Breath", "ID_FMP_FEAT_2217"]
   });
   byID[te.id] = te;
@@ -434,7 +434,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2218",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2218",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2218",
     categories: ["Toxic Breath", "ID_FMP_FEAT_2218"]
   });
   byID[te.id] = te;

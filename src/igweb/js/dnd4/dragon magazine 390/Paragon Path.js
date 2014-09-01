@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_770",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=770",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=770",
     categories: ["Battle Champion", "ID_FMP_PARAGON_PATH_770"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3163"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_748",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=748",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=748",
     categories: ["Champion of the Vigil", "ID_FMP_PARAGON_PATH_748"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3000"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_769",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=769",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=769",
     categories: ["Freedom Fighter", "ID_FMP_PARAGON_PATH_769"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3159"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_771",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=771",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=771",
     categories: ["Sainted General", "ID_FMP_PARAGON_PATH_771"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3166"]);
@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_772",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=772",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=772",
     categories: ["Warpath Berserker", "ID_FMP_PARAGON_PATH_772"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3169"]);
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_773",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=773",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=773",
     categories: ["Witchmaster", "ID_FMP_PARAGON_PATH_773"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3172"]);

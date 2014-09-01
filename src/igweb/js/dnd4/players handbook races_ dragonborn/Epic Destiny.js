@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_538",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=538",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=538",
     categories: ["Avatar of Io", "ID_FMP_EPIC_DESTINY_538"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2163"]);

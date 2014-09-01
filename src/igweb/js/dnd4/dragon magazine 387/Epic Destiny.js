@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_689",
     source: "Dragon Magazine 387",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=689",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=689",
     categories: ["Ceaseless Guardian", "ID_FMP_EPIC_DESTINY_689"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2692"]);

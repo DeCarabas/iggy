@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_293",
     source: "Dragon Magazine 371",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=293",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=293",
     categories: ["Deadstalker", "ID_FMP_PARAGON_PATH_293"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1310"]);

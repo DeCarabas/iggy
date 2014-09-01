@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_217",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=217",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=217",
     categories: ["Arena Champion", "ID_FMP_PARAGON_PATH_217"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1058"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_292",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 371",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=292",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=292",
     categories: ["Bloodknight", "ID_FMP_PARAGON_PATH_292"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1307"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_156",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=156",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=156",
     categories: ["Student of Caiphon", "ID_FMP_PARAGON_PATH_156"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_877"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_155",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=155",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=155",
     categories: ["Watcher of the Night", "ID_FMP_PARAGON_PATH_155"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_874"]);

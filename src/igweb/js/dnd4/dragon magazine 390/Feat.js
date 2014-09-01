@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3438",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3438",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3438",
     categories: ["Academy Prodigy", "ID_FMP_FEAT_3438"],
     rules: function(model) {
       model.select('class feature', 2, "Academy Prodigy", {
@@ -28,7 +28,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3450",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3450",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3450",
     categories: ["Ancient Lore of the Dawn War", "ID_FMP_FEAT_3450"],
     rules: function(model) {
       model.statadd("History Misc", 2, "Feat");
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3439",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3439",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3439",
     categories: ["Arcane Repositioning", "ID_FMP_FEAT_3439"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -56,7 +56,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3430",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3430",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3430",
     categories: ["Armored Sorcerer", "ID_FMP_FEAT_3430"],
     rules: function(model) {
       model.statadd("Spell Source Resist", 2);
@@ -69,7 +69,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3417",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3417",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3417",
     categories: ["Balican High Praetor", "ID_FMP_FEAT_3417", "ID_INTERNAL_CATEGORY_GREATER_PACT", "Greater Pact"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_3417 association:key ability", "DMG:Cha");
@@ -82,7 +82,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3416",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3416",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3416",
     categories: ["Balican Praetor", "ID_FMP_FEAT_3416", "ID_INTERNAL_CATEGORY_LESSER_PACT", "Lesser Pact"],
     rules: function(model) {
       model.statadd("Diplomacy Misc", 2, "Feat");
@@ -96,7 +96,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3436",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3436",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3436",
     categories: ["Blade Channeling Mastery", "ID_FMP_FEAT_3436"]
   });
   byID[te.id] = te;
@@ -106,7 +106,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3437",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3437",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3437",
     categories: ["Bloody Channeling", "ID_FMP_FEAT_3437"]
   });
   byID[te.id] = te;
@@ -116,7 +116,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3425",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3425",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3425",
     categories: ["Champion of Raam", "ID_FMP_FEAT_3425", "ID_INTERNAL_CATEGORY_GREATER_PACT", "Greater Pact"]
   });
   byID[te.id] = te;
@@ -126,7 +126,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3431",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3431",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3431",
     categories: ["Champion of the Bloody Circle", "ID_FMP_FEAT_3431"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_STREETWISE"]);
@@ -141,7 +141,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3432",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3432",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3432",
     categories: ["Cosmic Blade Channeling", "ID_FMP_FEAT_3432"]
   });
   byID[te.id] = te;
@@ -151,7 +151,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3418",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3418",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3418",
     categories: ["Draji Aspirant", "ID_FMP_FEAT_3418", "ID_INTERNAL_CATEGORY_LESSER_PACT", "Lesser Pact"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 2, "Feat");
@@ -165,7 +165,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3419",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3419",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3419",
     categories: ["Draji Devotee", "ID_FMP_FEAT_3419", "ID_INTERNAL_CATEGORY_GREATER_PACT", "Greater Pact"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_3419 association:key ability", "DMG:Cha");
@@ -178,7 +178,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3442",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3442",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3442",
     categories: ["Eldritch Blade", "ID_FMP_FEAT_3442"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_7402,longsword:attack", 1);
@@ -191,7 +191,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3445",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3445",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3445",
     categories: ["Elusive Hexer", "ID_FMP_FEAT_3445"]
   });
   byID[te.id] = te;
@@ -201,7 +201,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3424",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3424",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3424",
     categories: ["Favored of Raam", "ID_FMP_FEAT_3424", "ID_INTERNAL_CATEGORY_LESSER_PACT", "Lesser Pact"],
     rules: function(model) {
       model.statadd("Streetwise Misc", 2, "Feat");
@@ -215,7 +215,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3446",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3446",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3446",
     categories: ["Fey Familiar", "ID_FMP_FEAT_3446", "ID_INTERNAL_CATEGORY_FAMILIAR", "Familiar"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -228,7 +228,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3440",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3440",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3440",
     categories: ["Feymind Infusion", "ID_FMP_FEAT_3440"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -243,7 +243,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3441",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3441",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3441",
     categories: ["Feywild Propulsion", "ID_FMP_FEAT_3441"]
   });
   byID[te.id] = te;
@@ -253,7 +253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3443",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3443",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3443",
     categories: ["Gifted Death Dealer", "ID_FMP_FEAT_3443"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_1333:damage", function() { return model.stat("Intelligence modifier"); });
@@ -266,7 +266,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3429",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3429",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3429",
     categories: ["Golden Lion of Urik", "ID_FMP_FEAT_3429", "ID_INTERNAL_CATEGORY_GREATER_PACT", "Greater Pact"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_3429 association:key ability", "DMG:Cha");
@@ -279,7 +279,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3447",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3447",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3447",
     categories: ["Master of Escape", "ID_FMP_FEAT_3447"],
     rules: function(model) {
       model.statadd("Thievery Misc", function() { /* to open locks and use sleight of hand */ return 4; }, "Feat");
@@ -294,7 +294,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3433",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3433",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3433",
     categories: ["Mastery of Knives", "ID_FMP_FEAT_3433"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KUKRI)"]);
@@ -310,7 +310,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3422",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3422",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3422",
     categories: ["Nibenese Bride", "ID_FMP_FEAT_3422", "ID_INTERNAL_CATEGORY_LESSER_PACT", "Lesser Pact"],
     rules: function(model) {
       model.statadd("Bluff Misc", 2, "Feat");
@@ -324,7 +324,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3423",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3423",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3423",
     categories: ["Nibenese Favored Wife", "ID_FMP_FEAT_3423", "ID_INTERNAL_CATEGORY_GREATER_PACT", "Greater Pact"]
   });
   byID[te.id] = te;
@@ -334,7 +334,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3451",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3451",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3451",
     categories: ["Nusemnee's Atonement", "ID_FMP_FEAT_3451"],
     rules: function(model) {
       model.statadd("Saving Throws", function() { /* against charm effects */ return 2; }, "Feat");
@@ -347,7 +347,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3452",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3452",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3452",
     categories: ["Passage of Mael Arn'dreygh", "ID_FMP_FEAT_3452"]
   });
   byID[te.id] = te;
@@ -357,7 +357,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3444",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3444",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3444",
     categories: ["Renewed by Blood", "ID_FMP_FEAT_3444"]
   });
   byID[te.id] = te;
@@ -367,7 +367,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3448",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3448",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3448",
     categories: ["Slave Sympathy", "ID_FMP_FEAT_3448"],
     rules: function(model) {
       model.statadd("Streetwise Misc", function() { /* in any settlement that has a significant population of slaves */ return 4; }, "Feat");
@@ -383,7 +383,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3449",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3449",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3449",
     categories: ["Slave to None", "ID_FMP_FEAT_3449"],
     rules: function(model) {
       model.statadd("Saving Throws", function() { /* against effects that dominate, immobilize, or slow */ return 2; }, "Feat");
@@ -396,7 +396,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3421",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3421",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3421",
     categories: ["Spirit Master of Lalali-Puy", "ID_FMP_FEAT_3421", "ID_INTERNAL_CATEGORY_GREATER_PACT", "Greater Pact"]
   });
   byID[te.id] = te;
@@ -406,7 +406,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3420",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3420",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3420",
     categories: ["Spirit Talker of Lalali-Puy", "ID_FMP_FEAT_3420", "ID_INTERNAL_CATEGORY_LESSER_PACT", "Lesser Pact"],
     rules: function(model) {
       model.statadd("Nature Misc", 2, "Feat");
@@ -420,7 +420,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3434",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3434",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3434",
     categories: ["Storm Blade Channeling", "ID_FMP_FEAT_3434"]
   });
   byID[te.id] = te;
@@ -430,7 +430,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3427",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3427",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3427",
     categories: ["Tyrian Ascendant", "ID_FMP_FEAT_3427", "ID_INTERNAL_CATEGORY_GREATER_PACT", "Greater Pact"],
     rules: function(model) {
       model.statadd("ID_FMP_FEAT_3427 association:key ability", "DMG:Cha");
@@ -443,7 +443,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3426",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3426",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3426",
     categories: ["Tyrian Bureaucrat", "ID_FMP_FEAT_3426", "ID_INTERNAL_CATEGORY_LESSER_PACT", "Lesser Pact"],
     rules: function(model) {
       model.statadd("Streetwise Misc", 2, "Feat");
@@ -457,7 +457,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3435",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3435",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3435",
     categories: ["Wild Blade Channeling", "ID_FMP_FEAT_3435"]
   });
   byID[te.id] = te;
@@ -467,7 +467,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3428",
     source: "Dragon Magazine 390",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3428",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3428",
     categories: ["Yellow Cloak of Urik", "ID_FMP_FEAT_3428", "ID_INTERNAL_CATEGORY_LESSER_PACT", "Lesser Pact"],
     rules: function(model) {
       model.statadd("History Misc", 2, "Feat");

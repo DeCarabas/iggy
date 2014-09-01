@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_187",
     source: "Martial Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=187",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=187",
     categories: ["Raise Beast Companion", "ID_FMP_RITUAL_187"]
   });
   byID[te.id] = te;

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_619",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=619",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=619",
     categories: ["Bralani Wintersoul", "ID_FMP_PARAGON_PATH_619"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2444"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_620",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=620",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=620",
     categories: ["Favored of Mielikki", "ID_FMP_PARAGON_PATH_620"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2449"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_623",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=623",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=623",
     categories: ["Fortune Blessed", "ID_FMP_PARAGON_PATH_623"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2481"]);
@@ -68,7 +68,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_621",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=621",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=621",
     categories: ["Gnome Nightcloak", "ID_FMP_PARAGON_PATH_621"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2475"]);
@@ -86,7 +86,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_622",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=622",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=622",
     categories: ["Phantasm Guard", "ID_FMP_PARAGON_PATH_622"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2478"]);

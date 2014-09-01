@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_159",
     source: "Draconomicon: Chromatic Dragons",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=159",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=159",
     categories: ["Aura Mask", "ID_FMP_RITUAL_159"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_166",
     source: "Draconomicon: Chromatic Dragons",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=166",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=166",
     categories: ["Cauldron's Rebirth", "ID_FMP_RITUAL_166"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_160",
     source: "Draconomicon: Chromatic Dragons",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=160",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=160",
     categories: ["Chamber of Vulnerability", "ID_FMP_RITUAL_160"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_161",
     source: "Draconomicon: Chromatic Dragons",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=161",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=161",
     categories: ["Disorienting Portal", "ID_FMP_RITUAL_161"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_162",
     source: "Draconomicon: Chromatic Dragons",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=162",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=162",
     categories: ["Easy Passage", "ID_FMP_RITUAL_162"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_296",
     source: "Draconomicon: Chromatic Dragons",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=296",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=296",
     categories: ["False Aura", "ID_FMP_RITUAL_296"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_163",
     source: "Draconomicon: Chromatic Dragons",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=163",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=163",
     categories: ["Sentinel Eye", "ID_FMP_RITUAL_163"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_164",
     source: "Draconomicon: Chromatic Dragons",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=164",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=164",
     categories: ["Ward the True Name", "ID_FMP_RITUAL_164"]
   });
   byID[te.id] = te;

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_742",
     source: "Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=742",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=742",
     categories: ["Fey Step Trailblazer", "ID_FMP_FEAT_742"]
   });
   byID[te.id] = te;

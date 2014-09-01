@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_696",
     source: "Dragon Magazine 388",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=696",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=696",
     categories: ["Draconic Incarnation", "ID_FMP_EPIC_DESTINY_696"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2716"]);
@@ -30,7 +30,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_699",
     source: "Dragon Magazine 388",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=699",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=699",
     categories: ["Heir of Siberys", "ID_FMP_EPIC_DESTINY_699"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2729"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_697",
     source: "Dragon Magazine 388",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=697",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=697",
     categories: ["Thief of Legend", "ID_FMP_EPIC_DESTINY_697"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2721"]);
@@ -66,7 +66,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_698",
     source: "Dragon Magazine 388",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=698",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=698",
     categories: ["Unyielding Sentinel", "ID_FMP_EPIC_DESTINY_698"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2725"]);

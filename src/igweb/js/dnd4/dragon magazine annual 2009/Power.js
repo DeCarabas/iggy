@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4239",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4239",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4239",
     categories: ["Arcane Blade", "ID_FMP_POWER_4239", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_155", "Watcher of the Night", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_FMP_CATEGORY_56", "Varies", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4236",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4236",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4236",
     categories: ["Arcane Insight", "ID_FMP_POWER_4236", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_9", "Wizard", "ID_FMP_CATEGORY_31", "Arcane", "ID_INTERNAL_CATEGORY_FREE_ACTION", "Free Action", "2"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4232",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4232",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4232",
     categories: ["Blades from All Angles", "ID_FMP_POWER_4232", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_3", "Fighter", "ID_FMP_FEAT_893", "Practiced Reliability", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "13"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4289",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4289",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4289",
     categories: ["Blaze of Ulban", "ID_FMP_POWER_4289", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "13"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6579",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 371",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6579",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6579",
     categories: ["Blood Drain", "ID_FMP_POWER_6579", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CATEGORY_9", "Healing", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Blood Drain", {
@@ -68,7 +68,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5243",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5243",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5243",
     categories: ["Bloodletting Strike", "ID_FMP_POWER_5243", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_217", "Arena Champion", "ID_FMP_CATEGORY_22", "Reliable", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "20"]
   });
   byID[te.id] = te;
@@ -78,7 +78,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6583",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 371",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6583",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6583",
     categories: ["Bloodseeking Strike", "ID_FMP_POWER_6583", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_292", "Bloodknight", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -88,7 +88,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_7360",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 373",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7360",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=7360",
     categories: ["Bravo's Finish", "ID_FMP_POWER_7360", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CATEGORY_22", "Reliable", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"]
   });
   byID[te.id] = te;
@@ -98,7 +98,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4287",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4287",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4287",
     categories: ["Brood of Hadar", "ID_FMP_POWER_4287", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_12", "Necrotic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "9"]
   });
   byID[te.id] = te;
@@ -108,7 +108,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4299",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4299",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4299",
     categories: ["Caiphon's Abominable Melody", "ID_FMP_POWER_4299", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_16", "psychic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "29"]
   });
   byID[te.id] = te;
@@ -118,7 +118,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4292",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4292",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4292",
     categories: ["Caiphon's Disquieting Liberty", "ID_FMP_POWER_4292", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "16"]
   });
   byID[te.id] = te;
@@ -128,7 +128,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4254",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4254",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4254",
     categories: ["Caiphon's Hungry Mercy", "ID_FMP_POWER_4254", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_156", "Student of Caiphon", "ID_FMP_CATEGORY_31", "Arcane", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "20"]
   });
   byID[te.id] = te;
@@ -138,7 +138,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6962",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6962",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6962",
     categories: ["Chain Trip", "ID_FMP_POWER_6962", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"]
   });
   byID[te.id] = te;
@@ -148,7 +148,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6963",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6963",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6963",
     categories: ["Chain Ward", "ID_FMP_POWER_6963", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_28", "Stance", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"]
   });
   byID[te.id] = te;
@@ -158,7 +158,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4279",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4279",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4279",
     categories: ["Crown of Stars", "ID_FMP_POWER_4279", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "1"]
   });
   byID[te.id] = te;
@@ -168,7 +168,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6585",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 371",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6585",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6585",
     categories: ["Dance of Blood", "ID_FMP_POWER_6585", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_292", "Bloodknight", "ID_FMP_CATEGORY_28", "Stance", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "20"]
   });
   byID[te.id] = te;
@@ -178,7 +178,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4294",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4294",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4294",
     categories: ["Dark Side of the Moon", "ID_FMP_POWER_4294", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_16", "psychic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "19"]
   });
   byID[te.id] = te;
@@ -188,7 +188,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_7358",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 373",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7358",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=7358",
     categories: ["Death's Messenger", "ID_FMP_POWER_7358", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CATEGORY_48", "Rattling", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"]
   });
   byID[te.id] = te;
@@ -198,7 +198,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4293",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4293",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4293",
     categories: ["Delban's Eye", "ID_FMP_POWER_4293", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_1", "cold", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "17"]
   });
   byID[te.id] = te;
@@ -208,7 +208,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6582",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 371",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6582",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6582",
     categories: ["Dominating Gaze", "ID_FMP_POWER_6582", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CATEGORY_6", "Charm", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "ID_INTERNAL_CATEGORY_MISS", "miss"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Dominating Gaze", {
@@ -223,7 +223,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4298",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4298",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4298",
     categories: ["Envoy of Nihal", "ID_FMP_POWER_4298", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_5", "Acid", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_9", "Healing", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "27"]
   });
   byID[te.id] = te;
@@ -233,7 +233,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4291",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4291",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4291",
     categories: ["Far Realm Glimpse", "ID_FMP_POWER_4291", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_16", "psychic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "15"]
   });
   byID[te.id] = te;
@@ -243,7 +243,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4285",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4285",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4285",
     categories: ["Far Realm Phantasm", "ID_FMP_POWER_4285", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_16", "psychic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "7"]
   });
   byID[te.id] = te;
@@ -253,7 +253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4280",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4280",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4280",
     categories: ["Fevered Certainty of Caiphon", "ID_FMP_POWER_4280", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "2"]
   });
   byID[te.id] = te;
@@ -263,7 +263,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4237",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4237",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4237",
     categories: ["Feywild Spell Surge", "ID_FMP_POWER_4237", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_9", "Wizard", "ID_FMP_CATEGORY_31", "Arcane", "ID_INTERNAL_CATEGORY_FREE_ACTION", "Free Action", "10"]
   });
   byID[te.id] = te;
@@ -273,7 +273,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4282",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4282",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4282",
     categories: ["Fury of Gibbeth", "ID_FMP_POWER_4282", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_8", "force", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "5"]
   });
   byID[te.id] = te;
@@ -283,7 +283,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4297",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4297",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4297",
     categories: ["Gibbeth's Embrace", "ID_FMP_POWER_4297", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_8", "force", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "25"]
   });
   byID[te.id] = te;
@@ -293,7 +293,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4241",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4241",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4241",
     categories: ["Glaring Wound", "ID_FMP_POWER_4241", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_155", "Watcher of the Night", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"]
   });
   byID[te.id] = te;
@@ -303,7 +303,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4277",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4277",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4277",
     categories: ["Glow of Ulban", "ID_FMP_POWER_4277", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "1"]
   });
   byID[te.id] = te;
@@ -313,7 +313,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4281",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4281",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4281",
     categories: ["Hands of Ihbar", "ID_FMP_POWER_4281", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_1", "cold", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "3"]
   });
   byID[te.id] = te;
@@ -323,7 +323,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4230",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4230",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4230",
     categories: ["Hesitation Slash", "ID_FMP_POWER_4230", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_3", "Fighter", "ID_FMP_FEAT_893", "Practiced Reliability", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "3"]
   });
   byID[te.id] = te;
@@ -333,7 +333,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5242",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5242",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5242",
     categories: ["Hidden Reserves (Arena Champion)", "ID_FMP_POWER_5242", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_217", "Arena Champion", "ID_FMP_CATEGORY_9", "Healing", "ID_INTERNAL_CATEGORY_NO_ACTION", "No Action", "12"]
   });
   byID[te.id] = te;
@@ -343,7 +343,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6604",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6604",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6604",
     categories: ["Immortal Curse", "ID_FMP_POWER_6604"]
   });
   byID[te.id] = te;
@@ -353,7 +353,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4286",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4286",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4286",
     categories: ["Influence of Acamar", "ID_FMP_POWER_4286", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_12", "Necrotic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "7"]
   });
   byID[te.id] = te;
@@ -363,7 +363,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4234",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4234",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4234",
     categories: ["Maneuvering Assault", "ID_FMP_POWER_4234", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_3", "Fighter", "ID_FMP_FEAT_893", "Practiced Reliability", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "23"]
   });
   byID[te.id] = te;
@@ -373,7 +373,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6584",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 371",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6584",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6584",
     categories: ["Mistblood Form", "ID_FMP_POWER_6584", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_292", "Bloodknight", "ID_FMP_CATEGORY_28", "Stance", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "12"]
   });
   byID[te.id] = te;
@@ -383,7 +383,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4231",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4231",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4231",
     categories: ["Nimble Bladestorm", "ID_FMP_POWER_4231", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_3", "Fighter", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "5"]
   });
   byID[te.id] = te;
@@ -393,7 +393,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4240",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4240",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4240",
     categories: ["No More Secrets", "ID_FMP_POWER_4240", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_155", "Watcher of the Night", "ID_FMP_CATEGORY_36", "martial", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "12"]
   });
   byID[te.id] = te;
@@ -403,7 +403,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4235",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4235",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4235",
     categories: ["Pinpoint Cyclone", "ID_FMP_POWER_4235", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_3", "Fighter", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "25"]
   });
   byID[te.id] = te;
@@ -413,7 +413,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4278",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4278",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4278",
     categories: ["Prophecy of Zhudun", "ID_FMP_POWER_4278", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_16", "psychic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "1"]
   });
   byID[te.id] = te;
@@ -423,7 +423,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4283",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4283",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4283",
     categories: ["Red Leeches of Nihal", "ID_FMP_POWER_4283", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT", "Immediate Interrupt", "6"]
   });
   byID[te.id] = te;
@@ -433,7 +433,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4284",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4284",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4284",
     categories: ["Rending Fear of Khirad", "ID_FMP_POWER_4284", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_6", "Charm", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "6"]
   });
   byID[te.id] = te;
@@ -443,7 +443,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_6605",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 372",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6605",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=6605",
     categories: ["Repel Legions", "ID_FMP_POWER_6605", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_EPIC_DESTINY_300", "Punisher of the Gods", "ID_FMP_CATEGORY_12", "Necrotic", "ID_FMP_CATEGORY_2", "Radiant", "ID_FMP_CATEGORY_39", "Zone", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "26"]
   });
   byID[te.id] = te;
@@ -453,7 +453,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4238",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4238",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4238",
     categories: ["Shunt Between Worlds", "ID_FMP_POWER_4238", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_9", "Wizard", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_16", "psychic", "ID_FMP_CATEGORY_19", "teleportation", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "15"]
   });
   byID[te.id] = te;
@@ -463,7 +463,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4255",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4255",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4255",
     categories: ["Star Flesh", "ID_FMP_POWER_4255", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_EPIC_DESTINY_157", "Radiant One", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_3", "fire", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "26"]
   });
   byID[te.id] = te;
@@ -473,7 +473,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4296",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4296",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4296",
     categories: ["Starless Void", "ID_FMP_POWER_4296", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_1", "cold", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "23"]
   });
   byID[te.id] = te;
@@ -483,7 +483,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4253",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4253",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4253",
     categories: ["Steps on the Purple Stair", "ID_FMP_POWER_4253", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_156", "Student of Caiphon", "ID_FMP_CATEGORY_31", "Arcane", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "12"]
   });
   byID[te.id] = te;
@@ -493,7 +493,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5241",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 368",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5241",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5241",
     categories: ["Taxing Strike", "ID_FMP_POWER_5241", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_217", "Arena Champion", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -503,7 +503,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4288",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4288",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4288",
     categories: ["Troublesome Aid of Caiphon", "ID_FMP_POWER_4288", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT", "Immediate Interrupt", "10"]
   });
   byID[te.id] = te;
@@ -513,7 +513,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4252",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4252",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4252",
     categories: ["Trust in the Guide Star", "ID_FMP_POWER_4252", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_156", "Student of Caiphon", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -523,7 +523,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4295",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4295",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4295",
     categories: ["Ulban's Shining Cloak", "ID_FMP_POWER_4295", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT", "Immediate Interrupt", "22"]
   });
   byID[te.id] = te;
@@ -533,7 +533,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4233",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4233",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4233",
     categories: ["Unerring Blow", "ID_FMP_POWER_4233", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_3", "Fighter", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "15"]
   });
   byID[te.id] = te;
@@ -543,7 +543,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_4290",
     source: "Dragon Magazine Annual 2009,Dragon Magazine 366",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4290",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=4290",
     categories: ["Visage of Zhudun", "ID_FMP_POWER_4290", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_7", "Fear", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_16", "psychic", "ID_FMP_CATEGORY_39", "Zone", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "15"]
   });
   byID[te.id] = te;

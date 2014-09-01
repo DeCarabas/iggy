@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_518",
     source: "Dragon Magazine 380",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=518",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=518",
     categories: ["Enemy of the Abyss", "ID_FMP_PARAGON_PATH_518"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2098"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_519",
     source: "Dragon Magazine 380",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=519",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=519",
     categories: ["Scion of Absence", "ID_FMP_PARAGON_PATH_519"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2101"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_520",
     source: "Dragon Magazine 380",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=520",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=520",
     categories: ["Soul of Erosion", "ID_FMP_PARAGON_PATH_520"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2105"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_522",
     source: "Dragon Magazine 380",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=522",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=522",
     categories: ["Soul Reaper", "ID_FMP_PARAGON_PATH_522"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2112"]);
@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_521",
     source: "Dragon Magazine 380",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=521",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=521",
     categories: ["Tome Adept", "ID_FMP_PARAGON_PATH_521"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2108"]);
@@ -104,7 +104,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_524",
     source: "Dragon Magazine 380",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=524",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=524",
     categories: ["Vistani Execrator", "ID_FMP_PARAGON_PATH_524"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2119"]);

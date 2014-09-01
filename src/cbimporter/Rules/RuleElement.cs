@@ -153,27 +153,27 @@
                     }
                     else if (Type == Identifier.EpicDestiny)
                     {
-                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_EPIC_DESTINY_");
+                        this.url = GetCompendiumUrl(Id, "epicdestiny", "ID_FMP_EPIC_DESTINY_");
                     }
                     else if (Type == Identifier.ParagonPath)
                     {
-                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_PARAGON_PATH_");
+                        this.url = GetCompendiumUrl(Id, "paragonpath", "ID_FMP_PARAGON_PATH_");
                     }
                     else if (Type == Identifier.Ritual)
                     {
-                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_RITUAL_");
+                        this.url = GetCompendiumUrl(Id, "ritual", "ID_FMP_RITUAL_");
                     }
                     else if (Type == Identifier.Feat)
                     {
-                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_FEAT_");
+                        this.url = GetCompendiumUrl(Id, "feat", "ID_FMP_FEAT_");
                     }
                     else if (Type == Identifier.Skill)
                     {
-                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_SKILL_");
+                        this.url = GetCompendiumUrl(Id, "skill", "ID_FMP_SKILL_");
                     }
                     else if (Type == Identifier.Power)
                     {
-                        this.url = GetCompendiumUrl(Id, "item", "ID_FMP_POWER_");
+                        this.url = GetCompendiumUrl(Id, "power", "ID_FMP_POWER_");
                     }
                     else
                     {

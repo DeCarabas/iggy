@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_452",
     source: "Dragon Magazine 376",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=452",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=452",
     categories: ["Free Soul", "ID_FMP_EPIC_DESTINY_452"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1873"]);

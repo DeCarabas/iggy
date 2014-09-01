@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_471",
     source: "Dragon Magazine 379",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=471",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=471",
     categories: ["Perfect Slayer", "ID_FMP_EPIC_DESTINY_471"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1939"]);

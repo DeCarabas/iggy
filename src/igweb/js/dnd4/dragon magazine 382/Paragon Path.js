@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_532",
     source: "Dragon Magazine 382",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=532",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=532",
     categories: ["Darkening Blade", "ID_FMP_PARAGON_PATH_532"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2146"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_539",
     source: "Dragon Magazine 382",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=539",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=539",
     categories: ["Primal Mapper", "ID_FMP_PARAGON_PATH_539"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2167"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_540",
     source: "Dragon Magazine 382",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=540",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=540",
     categories: ["Traveler's Harlequin", "ID_FMP_PARAGON_PATH_540"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2171"]);

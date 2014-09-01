@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_528",
     source: "Dragon Magazine 381",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=528",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=528",
     categories: ["Arbiter of Forgotten Justice", "ID_FMP_PARAGON_PATH_528"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2133"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_526",
     source: "Dragon Magazine 381",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=526",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=526",
     categories: ["Arcane Armorer", "ID_FMP_PARAGON_PATH_526"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2127"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_527",
     source: "Dragon Magazine 381",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=527",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=527",
     categories: ["Spell Commander", "ID_FMP_PARAGON_PATH_527"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2130"]);

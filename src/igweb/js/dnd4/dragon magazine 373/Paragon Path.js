@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_348",
     source: "Dragon Magazine 373",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=348",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=348",
     categories: ["Blightbeast", "ID_FMP_PARAGON_PATH_348"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1502"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_349",
     source: "Dragon Magazine 373",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=349",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=349",
     categories: ["Nightmare Weaver", "ID_FMP_PARAGON_PATH_349"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1505"]);

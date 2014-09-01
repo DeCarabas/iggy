@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_1489",
     source: "Monster Manual",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1489",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=1489",
     categories: ["Goblin Tactics", "ID_FMP_POWER_1489", "ID_FMP_RACIAL_TRAIT_394", "ID_INTERNAL_CATEGORY_AT-WILL_USAGE", "At-Will Usage", "ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION", "Immediate Reaction"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_2478",
     source: "Monster Manual",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2478",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=2478",
     categories: ["Hobgoblin Resilience", "ID_FMP_POWER_2478", "ID_FMP_RACIAL_TRAIT_716", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION", "Immediate Reaction"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_2324",
     source: "Monster Manual",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2324",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=2324",
     categories: ["Predatory Eye", "ID_FMP_POWER_2324", "ID_FMP_RACIAL_TRAIT_694", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_2479",
     source: "Monster Manual",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2479",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=2479",
     categories: ["Shifty", "ID_FMP_POWER_2479", "ID_FMP_RACIAL_TRAIT_416", "ID_INTERNAL_CATEGORY_AT-WILL_USAGE", "At-Will Usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_2474",
     source: "Monster Manual",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2474",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=2474",
     categories: ["Telekinetic Leap", "ID_FMP_POWER_2474", "ID_FMP_RACIAL_TRAIT_711", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MOVE_ACTION", "Move Action"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_2481",
     source: "Monster Manual",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2481",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=2481",
     categories: ["Warrior's Surge", "ID_FMP_POWER_2481", "ID_FMP_RACIAL_TRAIT_718", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CATEGORY_9", "Healing", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"]
   });
   byID[te.id] = te;

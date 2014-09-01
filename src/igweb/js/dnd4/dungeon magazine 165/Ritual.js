@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_271",
     source: "Dungeon Magazine 165",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=271",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=271",
     categories: ["Mindshape Warwing Drake", "ID_FMP_RITUAL_271"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_236",
     source: "Dungeon Magazine 165",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=236",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=236",
     categories: ["Solace Bole", "ID_FMP_RITUAL_236"]
   });
   byID[te.id] = te;

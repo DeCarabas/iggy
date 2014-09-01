@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_283",
     source: "Revenge of the Giants",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=283",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=283",
     categories: ["Argent Portal", "ID_FMP_RITUAL_283"]
   });
   byID[te.id] = te;

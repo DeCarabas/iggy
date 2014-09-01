@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_340",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=340",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=340",
     categories: ["Acolyte Power", "ID_FMP_FEAT_340", "ID_INTERNAL_CATEGORY_MULTICLASS_UTILITY", "Multiclass Utility", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -55,7 +55,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_46",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=46",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=46",
     categories: ["Action Recovery", "ID_FMP_FEAT_46"],
     rules: function(model) {
       model.statadd("Action Point", "Action Recovery:When you spend an action point to take an extra action, you can immediately make a saving throw against each effect on you that a save can end.");
@@ -68,7 +68,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_215",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=215",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=215",
     categories: ["Action Surge", "ID_FMP_FEAT_215"],
     rules: function(model) {
       model.statadd("Action Point", "Action Surge:You gain a +3 bonus to attack rolls you make during any action you gain by spending an action point.");
@@ -81,7 +81,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_341",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=341",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=341",
     categories: ["Adept Power", "ID_FMP_FEAT_341", "ID_INTERNAL_CATEGORY_MULTICLASS_DAILY", "Multiclass Daily", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_50",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=50",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=50",
     categories: ["Agile Athlete", "ID_FMP_FEAT_50"]
   });
   byID[te.id] = te;
@@ -133,7 +133,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_280",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=280",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=280",
     categories: ["Agile Hunter", "ID_FMP_FEAT_280"]
   });
   byID[te.id] = te;
@@ -143,7 +143,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_109",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=109",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=109",
     categories: ["Alertness", "ID_FMP_FEAT_109"],
     rules: function(model) {
       model.statadd("Perception Misc", 1, "Feat");
@@ -156,7 +156,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_277",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=277",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=277",
     categories: ["Arcane Initiate", "ID_FMP_FEAT_277", "ID_INTERNAL_CATEGORY_MULTICLASS_WIZARD", "Multiclass Wizard", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_ARCANA"]);
@@ -176,7 +176,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_110",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=110",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=110",
     categories: ["Arcane Mastery", "ID_FMP_FEAT_110"],
     rules: function(model) {
       model.statadd("Action Point", "Arcane Mastery:Once per encounter, you can spend an action point to regain the use of a daily wizard power you've already used today, instead of taking an extra action");
@@ -189,7 +189,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_310",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=310",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=310",
     categories: ["Arcane Reach", "ID_FMP_FEAT_310"]
   });
   byID[te.id] = te;
@@ -199,7 +199,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_281",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=281",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=281",
     categories: ["Armor of Bahamut", "ID_FMP_FEAT_281", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2161"]);
@@ -212,7 +212,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_111",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=111",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=111",
     categories: ["Armor Proficiency: Chainmail", "ID_FMP_FEAT_111"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)"]);
@@ -225,7 +225,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_ARMOR_PROFICIENCY_(CLOTH)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ARMOR_PROFICIENCY_(CLOTH)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_ARMOR_PROFICIENCY_(CLOTH)",
     categories: ["Armor Proficiency: Cloth", "ID_INTERNAL_FEAT_ARMOR_PROFICIENCY_(CLOTH)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)"]);
@@ -238,7 +238,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_112",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=112",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=112",
     categories: ["Armor Proficiency: Hide", "ID_FMP_FEAT_112"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)"]);
@@ -251,7 +251,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_113",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=113",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=113",
     categories: ["Armor Proficiency: Leather", "ID_FMP_FEAT_113"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)"]);
@@ -264,7 +264,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_114",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=114",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=114",
     categories: ["Armor Proficiency: Plate", "ID_FMP_FEAT_114"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)"]);
@@ -277,7 +277,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_115",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=115",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=115",
     categories: ["Armor Proficiency: Scale", "ID_FMP_FEAT_115"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)"]);
@@ -290,7 +290,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_180",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=180",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=180",
     categories: ["Armor Specialization (Chainmail)", "ID_FMP_FEAT_180"],
     rules: function(model) {
       model.statadd("AC", function() { 
@@ -312,7 +312,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_189",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=189",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=189",
     categories: ["Armor Specialization (Hide)", "ID_FMP_FEAT_189"],
     rules: function(model) {
       model.statadd("AC", function() { 
@@ -334,7 +334,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_181",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=181",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=181",
     categories: ["Armor Specialization (Plate)", "ID_FMP_FEAT_181"],
     rules: function(model) {
       model.statadd("AC", function() { 
@@ -351,7 +351,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_182",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=182",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=182",
     categories: ["Armor Specialization (Scale)", "ID_FMP_FEAT_182"],
     rules: function(model) {
       model.statadd("AC", function() { 
@@ -373,7 +373,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_282",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=282",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=282",
     categories: ["Astral Fire", "ID_FMP_FEAT_282"],
     rules: function(model) {
       model.statadd("fire:damage", 1, "Feat");
@@ -391,7 +391,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_283",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=283",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=283",
     categories: ["Avandra's Rescue", "ID_FMP_FEAT_283", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2162"]);
@@ -404,7 +404,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_184",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=184",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=184",
     categories: ["Axe Mastery", "ID_FMP_FEAT_184"]
   });
   byID[te.id] = te;
@@ -414,7 +414,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1",
     categories: ["Back to the Wall", "ID_FMP_FEAT_1"],
     rules: function(model) {
       model.statadd("Armor Class", function() { /* whenever you are adjacent to a wall */ return 1; });
@@ -429,7 +429,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_185",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=185",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=185",
     categories: ["Backstabber", "ID_FMP_FEAT_185"],
     rules: function(model) {
       model.statadd("Sneak Attack Die", "d8");
@@ -442,7 +442,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_240",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=240",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=240",
     categories: ["Blade Opportunist", "ID_FMP_FEAT_240"],
     rules: function(model) {
       model.statadd("Heavy Blade group:attack", function() { /* with opportunity attacks */ return 2; });
@@ -456,7 +456,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_119",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=119",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=119",
     categories: ["Blind-Fight", "ID_FMP_FEAT_119"]
   });
   byID[te.id] = te;
@@ -466,7 +466,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2",
     categories: ["Blood Thirst", "ID_FMP_FEAT_2"],
     rules: function(model) {
       model.statadd("melee damage rolls", function() { /* against bloodied foes */ return 2; });
@@ -479,7 +479,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_250",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=250",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=250",
     categories: ["Bludgeon Mastery", "ID_FMP_FEAT_250"]
   });
   byID[te.id] = te;
@@ -489,7 +489,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_284",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=284",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=284",
     categories: ["Burning Blizzard", "ID_FMP_FEAT_284"],
     rules: function(model) {
       model.statadd("acid:damage", 1, "Feat");
@@ -507,7 +507,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_15",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=15",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=15",
     categories: ["Combat Anticipation", "ID_FMP_FEAT_15"],
     rules: function(model) {
       model.statadd("AC", function() { /* against ranged, area, and close attacks */ return 1; }, "Feat");
@@ -523,7 +523,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_311",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=311",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=311",
     categories: ["Combat Commander", "ID_FMP_FEAT_311"],
     rules: function(model) {
       model.statadd("Combat Leader", function() { return model.stat("Charisma modifier"); }, "Combat Leader");
@@ -537,7 +537,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_3",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=3",
     categories: ["Combat Reflexes", "ID_FMP_FEAT_3"],
     rules: function(model) {
       model.statadd("Opportunity Attack", 1);
@@ -550,7 +550,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_278",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=278",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=278",
     categories: ["Corellon's Grace", "ID_FMP_FEAT_278", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_1953"]);
@@ -563,7 +563,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_16",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=16",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=16",
     categories: ["Danger Sense", "ID_FMP_FEAT_16"]
   });
   byID[te.id] = te;
@@ -573,7 +573,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_285",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=285",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=285",
     categories: ["Dark Fury", "ID_FMP_FEAT_285"],
     rules: function(model) {
       model.statadd("necrotic:damage", 1, "Feat");
@@ -591,7 +591,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_243",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=243",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=243",
     categories: ["Deadly Axe", "ID_FMP_FEAT_243"]
   });
   byID[te.id] = te;
@@ -601,7 +601,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_4",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=4",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=4",
     categories: ["Defensive Advantage", "ID_FMP_FEAT_4"],
     rules: function(model) {
       model.statadd("AC", function() { /* when you have combat advantage */ return 2; });
@@ -614,7 +614,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_127",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=127",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=127",
     categories: ["Defensive Mobility", "ID_FMP_FEAT_127"],
     rules: function(model) {
       model.statadd("AC", function() { /* against opportunity attacks */ return 2; });
@@ -627,7 +627,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_128",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=128",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=128",
     categories: ["Devastating Critical", "ID_FMP_FEAT_128"]
   });
   byID[te.id] = te;
@@ -637,7 +637,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_312",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=312",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=312",
     categories: ["Distant Shot", "ID_FMP_FEAT_312"]
   });
   byID[te.id] = te;
@@ -647,7 +647,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_286",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=286",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=286",
     categories: ["Distracting Shield", "ID_FMP_FEAT_286"]
   });
   byID[te.id] = te;
@@ -657,7 +657,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_193",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=193",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=193",
     categories: ["Dodge Giants", "ID_FMP_FEAT_193"],
     rules: function(model) {
       model.statadd("AC", function() { /* against the attacks of large or larger foes */ return 1; });
@@ -671,7 +671,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_77",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=77",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=77",
     categories: ["Dragonborn Frenzy", "ID_FMP_FEAT_77"],
     rules: function(model) {
       model.statadd("damage rolls", function() { /* while you are bloodied */ return 2; });
@@ -684,7 +684,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_194",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=194",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=194",
     categories: ["Dragonborn Senses", "ID_FMP_FEAT_194"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_VISION_LOW-LIGHT"]);
@@ -698,7 +698,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_131",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=131",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=131",
     categories: ["Durable", "ID_FMP_FEAT_131"],
     rules: function(model) {
       model.statadd("Healing Surges", 2);
@@ -711,7 +711,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_196",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=196",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=196",
     categories: ["Dwarven Durability", "ID_FMP_FEAT_196"],
     rules: function(model) {
       model.statadd("Healing Surges", 2);
@@ -725,7 +725,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_69",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=69",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=69",
     categories: ["Dwarven Weapon Training", "ID_FMP_FEAT_69"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(AXE)"]);
@@ -741,7 +741,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_64",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=64",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=64",
     categories: ["Eladrin Soldier", "ID_FMP_FEAT_64"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SPEAR)"]);
@@ -756,7 +756,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_217",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=217",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=217",
     categories: ["Elven Precision", "ID_FMP_FEAT_217"]
   });
   byID[te.id] = te;
@@ -766,7 +766,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_313",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=313",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=313",
     categories: ["Empowered Dragon Breath", "ID_FMP_FEAT_313"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -779,7 +779,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_287",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=287",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=287",
     categories: ["Enlarged Dragon Breath", "ID_FMP_FEAT_287"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -792,7 +792,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_327",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=327",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=327",
     categories: ["Epic Resurgence", "ID_FMP_FEAT_327"]
   });
   byID[te.id] = te;
@@ -802,7 +802,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_19",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=19",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=19",
     categories: ["Escape Artist", "ID_FMP_FEAT_19"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 2, "Feat");
@@ -815,7 +815,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_20",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=20",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=20",
     categories: ["Evasion", "ID_FMP_FEAT_20"]
   });
   byID[te.id] = te;
@@ -825,7 +825,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_276",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=276",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=276",
     categories: ["Expanded Spellbook", "ID_FMP_FEAT_276"],
     rules: function(model) {
       model.select('Power', 1, "Expanded Spellbook", {
@@ -858,7 +858,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_139",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=139",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=139",
     categories: ["Far Shot", "ID_FMP_FEAT_139"]
   });
   byID[te.id] = te;
@@ -868,7 +868,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_140",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=140",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=140",
     categories: ["Far Throw", "ID_FMP_FEAT_140"]
   });
   byID[te.id] = te;
@@ -878,7 +878,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_6",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=6",
     categories: ["Fast Runner", "ID_FMP_FEAT_6"],
     rules: function(model) {
       model.statadd("Speed", function() { /* when you charge or run */ return 2; });
@@ -891,7 +891,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_203",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=203",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=203",
     categories: ["Ferocious Rebuke", "ID_FMP_FEAT_203"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -904,7 +904,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_209",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=209",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=209",
     categories: ["Feywild Protection", "ID_FMP_FEAT_209"]
   });
   byID[te.id] = te;
@@ -914,7 +914,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_211",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=211",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=211",
     categories: ["Fiery Rebuke", "ID_FMP_FEAT_211"],
     rules: function(model) {
       model.statadd("ID_FMP_POWER_1628:damage", 5);
@@ -927,7 +927,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_329",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=329",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=329",
     categories: ["Flail Mastery", "ID_FMP_FEAT_329"]
   });
   byID[te.id] = te;
@@ -937,7 +937,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_23",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=23",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=23",
     categories: ["Flanking Maneuver", "ID_FMP_FEAT_23"]
   });
   byID[te.id] = te;
@@ -947,7 +947,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_142",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=142",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=142",
     categories: ["Fleet-Footed", "ID_FMP_FEAT_142"],
     rules: function(model) {
       model.statadd("Speed", 1, "Feat");
@@ -960,7 +960,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_330",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=330",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=330",
     categories: ["Font of Radiance", "ID_FMP_FEAT_330"]
   });
   byID[te.id] = te;
@@ -970,7 +970,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_145",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=145",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=145",
     categories: ["Great Fortitude", "ID_FMP_FEAT_145"],
     rules: function(model) {
       model.statadd("Great Fortitude", 2);
@@ -986,7 +986,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_288",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=288",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=288",
     categories: ["Group Insight", "ID_FMP_FEAT_288"]
   });
   byID[te.id] = te;
@@ -996,7 +996,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_216",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=216",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=216",
     categories: ["Halfling Agility", "ID_FMP_FEAT_216"]
   });
   byID[te.id] = te;
@@ -1006,7 +1006,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_246",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=246",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=246",
     categories: ["Hammer Rhythm", "ID_FMP_FEAT_246"]
   });
   byID[te.id] = te;
@@ -1016,7 +1016,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_289",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=289",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=289",
     categories: ["Harmony of Erathis", "ID_FMP_FEAT_289", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2165"]);
@@ -1029,7 +1029,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_290",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=290",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=290",
     categories: ["Healing Hands", "ID_FMP_FEAT_290"]
   });
   byID[te.id] = te;
@@ -1039,7 +1039,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_249",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=249",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=249",
     categories: ["Heavy Blade Mastery", "ID_FMP_FEAT_249"]
   });
   byID[te.id] = te;
@@ -1049,7 +1049,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_314",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=314",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=314",
     categories: ["Heavy Blade Opportunity", "ID_FMP_FEAT_314"]
   });
   byID[te.id] = te;
@@ -1059,7 +1059,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_44",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=44",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=44",
     categories: ["Hellfire Blood", "ID_FMP_FEAT_44"],
     rules: function(model) {
       model.statadd("fire:attack", 1, "Hellfire Blood");
@@ -1075,7 +1075,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_47",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=47",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=47",
     categories: ["Human Perseverance", "ID_FMP_FEAT_47"],
     rules: function(model) {
       model.statadd("Saving Throws", 1, "Feat");
@@ -1088,7 +1088,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_291",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=291",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=291",
     categories: ["Improved Dark One's Blessing", "ID_FMP_FEAT_291"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1101,7 +1101,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_292",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=292",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=292",
     categories: ["Improved Fate of the Void", "ID_FMP_FEAT_292"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1114,7 +1114,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_272",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=272",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=272",
     categories: ["Improved Initiative", "ID_FMP_FEAT_272"],
     rules: function(model) {
       model.statadd("Initiative Misc", 4, "Feat");
@@ -1127,7 +1127,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_293",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=293",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=293",
     categories: ["Improved Misty Step", "ID_FMP_FEAT_293"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1140,7 +1140,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_147",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=147",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=147",
     categories: ["Improved Second Wind", "ID_FMP_FEAT_147"]
   });
   byID[te.id] = te;
@@ -1150,7 +1150,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_315",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=315",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=315",
     categories: ["Inescapable Force", "ID_FMP_FEAT_315"],
     rules: function(model) {
       model.statadd("force:damage", "+1d10");
@@ -1163,7 +1163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_333",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=333",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=333",
     categories: ["Initiate of the Faith", "ID_FMP_FEAT_333", "ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC", "Multiclass Cleric", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_RELIGION"]);
@@ -1182,7 +1182,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_294",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=294",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=294",
     categories: ["Inspired Recovery", "ID_FMP_FEAT_294"]
   });
   byID[te.id] = te;
@@ -1192,7 +1192,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_295",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=295",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=295",
     categories: ["Ioun's Poise", "ID_FMP_FEAT_295", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2166"]);
@@ -1205,7 +1205,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_148",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=148",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=148",
     categories: ["Iron Will", "ID_FMP_FEAT_148"],
     rules: function(model) {
       model.statadd("Iron Will", 2);
@@ -1221,7 +1221,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_331",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=331",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=331",
     categories: ["Irresistible Flame", "ID_FMP_FEAT_331"]
   });
   byID[te.id] = te;
@@ -1231,7 +1231,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_245",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=245",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=245",
     categories: ["Jack of All Trades", "ID_FMP_FEAT_245"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 2, "Feat");
@@ -1260,7 +1260,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_296",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=296",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=296",
     categories: ["Kord's Favor", "ID_FMP_FEAT_296", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2167"]);
@@ -1273,7 +1273,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_316",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=316",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=316",
     categories: ["Lasting Frost", "ID_FMP_FEAT_316"]
   });
   byID[te.id] = te;
@@ -1283,7 +1283,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_273",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=273",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=273",
     categories: ["Lethal Hunter", "ID_FMP_FEAT_273"],
     rules: function(model) {
       model.statadd("Hunter's Quarry Die", "d8");
@@ -1296,7 +1296,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_251",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=251",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=251",
     categories: ["Light Blade Mastery", "ID_FMP_FEAT_251"]
   });
   byID[te.id] = te;
@@ -1306,7 +1306,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_244",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=244",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=244",
     categories: ["Light Blade Precision", "ID_FMP_FEAT_244"],
     rules: function(model) {
       model.statadd("light blade group:damage", function() { /* against large or larger targets */ return 2; });
@@ -1319,7 +1319,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_60",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=60",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=60",
     categories: ["Light Step", "ID_FMP_FEAT_60"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 1, "Feat");
@@ -1333,7 +1333,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_317",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=317",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=317",
     categories: ["Lightning Arc", "ID_FMP_FEAT_317"]
   });
   byID[te.id] = te;
@@ -1343,7 +1343,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_149",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=149",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=149",
     categories: ["Lightning Reflexes", "ID_FMP_FEAT_149"],
     rules: function(model) {
       model.statadd("Lightning Reflexes", 2);
@@ -1359,7 +1359,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_150",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=150",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=150",
     categories: ["Linguist", "ID_FMP_FEAT_150"],
     rules: function(model) {
       model.select('Language', 3, "Linguist");
@@ -1372,7 +1372,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_LINGUIST_II",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_II",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_LINGUIST_II",
     categories: ["Linguist II", "ID_INTERNAL_FEAT_LINGUIST_II"],
     rules: function(model) {
       model.select('Language', 3, "Linguist II");
@@ -1385,7 +1385,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_LINGUIST_III",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_III",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_LINGUIST_III",
     categories: ["Linguist III", "ID_INTERNAL_FEAT_LINGUIST_III"],
     rules: function(model) {
       model.select('Language', 3, "Linguist III");
@@ -1398,7 +1398,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_LINGUIST_IV",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_IV",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_LINGUIST_IV",
     categories: ["Linguist IV", "ID_INTERNAL_FEAT_LINGUIST_IV"],
     rules: function(model) {
       model.select('Language', 3, "Linguist IV");
@@ -1411,7 +1411,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_LINGUIST_V",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_V",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_LINGUIST_V",
     categories: ["Linguist V", "ID_INTERNAL_FEAT_LINGUIST_V"],
     rules: function(model) {
       model.select('Language', 3, "Linguist V");
@@ -1424,7 +1424,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_LINGUIST_VI",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_VI",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_LINGUIST_VI",
     categories: ["Linguist VI", "ID_INTERNAL_FEAT_LINGUIST_VI"],
     rules: function(model) {
       model.select('Language', 3, "Linguist VI");
@@ -1437,7 +1437,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_27",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=27",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=27",
     categories: ["Long Jumper", "ID_FMP_FEAT_27"],
     rules: function(model) {
       model.statadd("Athletics Misc", 1, "Feat");
@@ -1450,7 +1450,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_7",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=7",
     categories: ["Lost in the Crowd", "ID_FMP_FEAT_7"]
   });
   byID[te.id] = te;
@@ -1460,7 +1460,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_297",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=297",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=297",
     categories: ["Melora's Tide", "ID_FMP_FEAT_297", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2168"]);
@@ -1473,7 +1473,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_29",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=29",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=29",
     categories: ["Mettle", "ID_FMP_FEAT_29"]
   });
   byID[te.id] = te;
@@ -1483,7 +1483,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_298",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=298",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=298",
     categories: ["Moradin's Resolve", "ID_FMP_FEAT_298", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2170"]);
@@ -1496,7 +1496,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_30",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=30",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=30",
     categories: ["Mounted Combat", "ID_FMP_FEAT_30"]
   });
   byID[te.id] = te;
@@ -1506,7 +1506,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_238",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=238",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=238",
     categories: ["Nimble Blade", "ID_FMP_FEAT_238"],
     rules: function(model) {
       model.statadd("Light Blade group:attack", function() { /* when you have combat advantage */ return 1; });
@@ -1519,7 +1519,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_339",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=339",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=339",
     categories: ["Novice Power", "ID_FMP_FEAT_339", "ID_INTERNAL_CATEGORY_MULTICLASS_ENCOUNTER", "Multiclass Encounter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -1561,7 +1561,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_337",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=337",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=337",
     categories: ["Pact Initiate", "ID_FMP_FEAT_337", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLOCK", "Multiclass Warlock", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Pact Initiate", {
@@ -1583,7 +1583,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_299",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=299",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=299",
     categories: ["Pelor's Radiance", "ID_FMP_FEAT_299", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2171"]);
@@ -1596,7 +1596,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_255",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=255",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=255",
     categories: ["Pick Mastery", "ID_FMP_FEAT_255"]
   });
   byID[te.id] = te;
@@ -1606,7 +1606,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_8",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=8",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=8",
     categories: ["Point-Blank Shot", "ID_FMP_FEAT_8"]
   });
   byID[te.id] = te;
@@ -1616,7 +1616,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_258",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=258",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=258",
     categories: ["Polearm Gamble", "ID_FMP_FEAT_258"]
   });
   byID[te.id] = te;
@@ -1626,7 +1626,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_300",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=300",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=300",
     categories: ["Potent Challenge", "ID_FMP_FEAT_300"]
   });
   byID[te.id] = te;
@@ -1636,7 +1636,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_261",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=261",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=261",
     categories: ["Power Attack", "ID_FMP_FEAT_261"]
   });
   byID[te.id] = te;
@@ -1646,7 +1646,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_9",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=9",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=9",
     categories: ["Powerful Charge", "ID_FMP_FEAT_9"],
     rules: function(model) {
       model.statadd("Damage", function() { /* when you charge */ return 2; });
@@ -1660,7 +1660,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_301",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=301",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=301",
     categories: ["Precise Hunter", "ID_FMP_FEAT_301"]
   });
   byID[te.id] = te;
@@ -1670,7 +1670,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_302",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=302",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=302",
     categories: ["Press the Advantage", "ID_FMP_FEAT_302"]
   });
   byID[te.id] = te;
@@ -1680,7 +1680,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_318",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=318",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=318",
     categories: ["Psychic Lock", "ID_FMP_FEAT_318"]
   });
   byID[te.id] = te;
@@ -1690,7 +1690,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_157",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=157",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=157",
     categories: ["Quick Draw", "ID_FMP_FEAT_157"],
     rules: function(model) {
       model.statadd("Initiative Misc", 2, "Feat");
@@ -1703,7 +1703,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_303",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=303",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=303",
     categories: ["Raging Storm", "ID_FMP_FEAT_303"],
     rules: function(model) {
       model.statadd("lightning:damage", 1, "Feat");
@@ -1721,7 +1721,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_304",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=304",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=304",
     categories: ["Raven Queen's Blessing", "ID_FMP_FEAT_304", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2173"]);
@@ -1734,7 +1734,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_319",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=319",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=319",
     categories: ["Resounding Thunder", "ID_FMP_FEAT_319"]
   });
   byID[te.id] = te;
@@ -1744,7 +1744,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_159",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=159",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=159",
     categories: ["Ritual Caster", "ID_FMP_FEAT_159", "ID_FMP_CLASS_FEATURE_683", "Ritual Casting"]
   });
   byID[te.id] = te;
@@ -1754,7 +1754,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_57",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=57",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=57",
     categories: ["Running Shot", "ID_FMP_FEAT_57"]
   });
   byID[te.id] = te;
@@ -1764,7 +1764,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_256",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=256",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=256",
     categories: ["Scimitar Dance", "ID_FMP_FEAT_256"]
   });
   byID[te.id] = te;
@@ -1774,7 +1774,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_320",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=320",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=320",
     categories: ["Second Implement", "ID_FMP_FEAT_320"],
     rules: function(model) {
       model.select('class feature', 1, "Second Implement", {
@@ -1789,7 +1789,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_31",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=31",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=31",
     categories: ["Secret Stride", "ID_FMP_FEAT_31"]
   });
   byID[te.id] = te;
@@ -1799,7 +1799,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_305",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=305",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=305",
     categories: ["Sehanine's Reversal", "ID_FMP_FEAT_305", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_2174"]);
@@ -1812,7 +1812,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_32",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=32",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=32",
     categories: ["Seize the Moment", "ID_FMP_FEAT_32"]
   });
   byID[te.id] = te;
@@ -1822,7 +1822,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_161",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=161",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=161",
     categories: ["Shield Proficiency: Heavy", "ID_FMP_FEAT_161"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)"]);
@@ -1835,7 +1835,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_162",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=162",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=162",
     categories: ["Shield Proficiency: Light", "ID_FMP_FEAT_162"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)"]);
@@ -1848,7 +1848,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_306",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=306",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=306",
     categories: ["Shield Push", "ID_FMP_FEAT_306"]
   });
   byID[te.id] = te;
@@ -1858,7 +1858,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_259",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=259",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=259",
     categories: ["Shield Specialization", "ID_FMP_FEAT_259"],
     rules: function(model) {
       model.statadd("AC", function() { 
@@ -1880,7 +1880,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_165",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=165",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=165",
     categories: ["Skill Focus", "ID_FMP_FEAT_165"]
   });
   byID[te.id] = te;
@@ -1890,7 +1890,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(ACROBATICS)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(ACROBATICS)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(ACROBATICS)",
     categories: ["Skill Focus (Acrobatics)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(ACROBATICS)"],
     rules: function(model) {
       model.statadd("Acrobatics Misc", 3, "Feat");
@@ -1903,7 +1903,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(ARCANA)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(ARCANA)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(ARCANA)",
     categories: ["Skill Focus (Arcana)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(ARCANA)"],
     rules: function(model) {
       model.statadd("Arcana Misc", 3, "Feat");
@@ -1916,7 +1916,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(ATHLETICS)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(ATHLETICS)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(ATHLETICS)",
     categories: ["Skill Focus (Athletics)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(ATHLETICS)"],
     rules: function(model) {
       model.statadd("Athletics Misc", 3, "Feat");
@@ -1929,7 +1929,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(BLUFF)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(BLUFF)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(BLUFF)",
     categories: ["Skill Focus (Bluff)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(BLUFF)"],
     rules: function(model) {
       model.statadd("Bluff Misc", 3, "Feat");
@@ -1942,7 +1942,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(DIPLOMACY)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(DIPLOMACY)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(DIPLOMACY)",
     categories: ["Skill Focus (Diplomacy)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(DIPLOMACY)"],
     rules: function(model) {
       model.statadd("Diplomacy Misc", 3, "Feat");
@@ -1955,7 +1955,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(DUNGEONEERING)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(DUNGEONEERING)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(DUNGEONEERING)",
     categories: ["Skill Focus (Dungeoneering)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(DUNGEONEERING)"],
     rules: function(model) {
       model.statadd("Dungeoneering Misc", 3, "Feat");
@@ -1968,7 +1968,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(ENDURANCE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(ENDURANCE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(ENDURANCE)",
     categories: ["Skill Focus (Endurance)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(ENDURANCE)"],
     rules: function(model) {
       model.statadd("Endurance Misc", 3, "Feat");
@@ -1981,7 +1981,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(HEAL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(HEAL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(HEAL)",
     categories: ["Skill Focus (Heal)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(HEAL)"],
     rules: function(model) {
       model.statadd("Heal Misc", 3, "Feat");
@@ -1994,7 +1994,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(HISTORY)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(HISTORY)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(HISTORY)",
     categories: ["Skill Focus (History)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(HISTORY)"],
     rules: function(model) {
       model.statadd("History Misc", 3, "Feat");
@@ -2007,7 +2007,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(INSIGHT)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(INSIGHT)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(INSIGHT)",
     categories: ["Skill Focus (Insight)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(INSIGHT)"],
     rules: function(model) {
       model.statadd("Insight Misc", 3, "Feat");
@@ -2020,7 +2020,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(INTIMIDATE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(INTIMIDATE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(INTIMIDATE)",
     categories: ["Skill Focus (Intimidate)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(INTIMIDATE)"],
     rules: function(model) {
       model.statadd("Intimidate Misc", 3, "Feat");
@@ -2033,7 +2033,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(NATURE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(NATURE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(NATURE)",
     categories: ["Skill Focus (Nature)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(NATURE)"],
     rules: function(model) {
       model.statadd("Nature Misc", 3, "Feat");
@@ -2046,7 +2046,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(PERCEPTION)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(PERCEPTION)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(PERCEPTION)",
     categories: ["Skill Focus (Perception)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(PERCEPTION)"],
     rules: function(model) {
       model.statadd("Perception Misc", 3, "Feat");
@@ -2059,7 +2059,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(RELIGION)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(RELIGION)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(RELIGION)",
     categories: ["Skill Focus (Religion)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(RELIGION)"],
     rules: function(model) {
       model.statadd("Religion Misc", 3, "Feat");
@@ -2072,7 +2072,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(STEALTH)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(STEALTH)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(STEALTH)",
     categories: ["Skill Focus (Stealth)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(STEALTH)"],
     rules: function(model) {
       model.statadd("Stealth Misc", 3, "Feat");
@@ -2085,7 +2085,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(STREETWISE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(STREETWISE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(STREETWISE)",
     categories: ["Skill Focus (Streetwise)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(STREETWISE)"],
     rules: function(model) {
       model.statadd("Streetwise Misc", 3, "Feat");
@@ -2098,7 +2098,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_FOCUS_(THIEVERY)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_FOCUS_(THIEVERY)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_FOCUS_(THIEVERY)",
     categories: ["Skill Focus (Thievery)", "ID_INTERNAL_FEAT_SKILL_FOCUS_(THIEVERY)"],
     rules: function(model) {
       model.statadd("Thievery Misc", 3, "Feat");
@@ -2111,7 +2111,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_166",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=166",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=166",
     categories: ["Skill Training", "ID_FMP_FEAT_166"]
   });
   byID[te.id] = te;
@@ -2121,7 +2121,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(ACROBATICS)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(ACROBATICS)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(ACROBATICS)",
     categories: ["Skill Training (Acrobatics)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(ACROBATICS)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_ACROBATICS"]);
@@ -2134,7 +2134,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(ARCANA)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(ARCANA)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(ARCANA)",
     categories: ["Skill Training (Arcana)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(ARCANA)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_ARCANA"]);
@@ -2147,7 +2147,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(ATHLETICS)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(ATHLETICS)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(ATHLETICS)",
     categories: ["Skill Training (Athletics)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(ATHLETICS)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_ATHLETICS"]);
@@ -2160,7 +2160,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(BLUFF)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(BLUFF)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(BLUFF)",
     categories: ["Skill Training (Bluff)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(BLUFF)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_BLUFF"]);
@@ -2173,7 +2173,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(DIPLOMACY)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(DIPLOMACY)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(DIPLOMACY)",
     categories: ["Skill Training (Diplomacy)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(DIPLOMACY)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_DIPLOMACY"]);
@@ -2186,7 +2186,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(DUNGEONEERING)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(DUNGEONEERING)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(DUNGEONEERING)",
     categories: ["Skill Training (Dungeoneering)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(DUNGEONEERING)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING"]);
@@ -2199,7 +2199,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(ENDURANCE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(ENDURANCE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(ENDURANCE)",
     categories: ["Skill Training (Endurance)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(ENDURANCE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_ENDURANCE"]);
@@ -2212,7 +2212,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(HEAL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(HEAL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(HEAL)",
     categories: ["Skill Training (Heal)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(HEAL)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_HEAL"]);
@@ -2225,7 +2225,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(HISTORY)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(HISTORY)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(HISTORY)",
     categories: ["Skill Training (History)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(HISTORY)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_HISTORY"]);
@@ -2238,7 +2238,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(INSIGHT)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(INSIGHT)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(INSIGHT)",
     categories: ["Skill Training (Insight)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(INSIGHT)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_INSIGHT"]);
@@ -2251,7 +2251,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(INTIMIDATE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(INTIMIDATE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(INTIMIDATE)",
     categories: ["Skill Training (Intimidate)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(INTIMIDATE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_INTIMIDATE"]);
@@ -2264,7 +2264,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(NATURE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(NATURE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(NATURE)",
     categories: ["Skill Training (Nature)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(NATURE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_NATURE"]);
@@ -2277,7 +2277,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(PERCEPTION)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(PERCEPTION)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(PERCEPTION)",
     categories: ["Skill Training (Perception)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(PERCEPTION)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_PERCEPTION"]);
@@ -2290,7 +2290,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(RELIGION)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(RELIGION)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(RELIGION)",
     categories: ["Skill Training (Religion)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(RELIGION)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_RELIGION"]);
@@ -2303,7 +2303,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(STEALTH)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(STEALTH)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(STEALTH)",
     categories: ["Skill Training (Stealth)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(STEALTH)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_STEALTH"]);
@@ -2316,7 +2316,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(STREETWISE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(STREETWISE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(STREETWISE)",
     categories: ["Skill Training (Streetwise)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(STREETWISE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_STREETWISE"]);
@@ -2329,7 +2329,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SKILL_TRAINING_(THIEVERY)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SKILL_TRAINING_(THIEVERY)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SKILL_TRAINING_(THIEVERY)",
     categories: ["Skill Training (Thievery)", "ID_INTERNAL_FEAT_SKILL_TRAINING_(THIEVERY)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_THIEVERY"]);
@@ -2342,7 +2342,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_321",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=321",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=321",
     categories: ["Sly Hunter", "ID_FMP_FEAT_321"],
     rules: function(model) {
       model.statadd("bow:damage", function() { /* against any target that has no creatures within 3 squares of it */ return 3; });
@@ -2355,7 +2355,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_274",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=274",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=274",
     categories: ["Sneak of Shadows", "ID_FMP_FEAT_274", "ID_INTERNAL_CATEGORY_MULTICLASS_ROGUE", "Multiclass Rogue", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_THIEVERY"]);
@@ -2372,7 +2372,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_335",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=335",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=335",
     categories: ["Soldier of the Faith", "ID_FMP_FEAT_335", "ID_INTERNAL_CATEGORY_MULTICLASS_PALADIN", "Multiclass Paladin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Soldier of the Faith", {
@@ -2392,7 +2392,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_322",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=322",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=322",
     categories: ["Solid Sound", "ID_FMP_FEAT_322"]
   });
   byID[te.id] = te;
@@ -2402,7 +2402,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_253",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=253",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=253",
     categories: ["Spear Mastery", "ID_FMP_FEAT_253"]
   });
   byID[te.id] = te;
@@ -2412,7 +2412,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_242",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=242",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=242",
     categories: ["Spear Push", "ID_FMP_FEAT_242"]
   });
   byID[te.id] = te;
@@ -2422,7 +2422,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_212",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=212",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=212",
     categories: ["Spell Accuracy", "ID_FMP_FEAT_212"]
   });
   byID[te.id] = te;
@@ -2432,7 +2432,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_169",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=169",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=169",
     categories: ["Spell Focus", "ID_FMP_FEAT_169"]
   });
   byID[te.id] = te;
@@ -2442,7 +2442,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_324",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=324",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=324",
     categories: ["Steady Shooter", "ID_FMP_FEAT_324"],
     rules: function(model) {
       model.statadd("Crossbow:damage", function() { /* if you haven't moved since the end of your last turn */ return 3; });
@@ -2455,7 +2455,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_338",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=338",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=338",
     categories: ["Student of Battle", "ID_FMP_FEAT_338", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Student of Battle", {
@@ -2475,7 +2475,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_334",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=334",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=334",
     categories: ["Student of the Sword", "ID_FMP_FEAT_334", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Student of the Sword", {
@@ -2495,7 +2495,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_36",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=36",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=36",
     categories: ["Sure Climber", "ID_FMP_FEAT_36"],
     rules: function(model) {
       model.statadd("Athletics Misc", 1, "Feat");
@@ -2508,7 +2508,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_307",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=307",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=307",
     categories: ["Surprise Knockdown", "ID_FMP_FEAT_307"]
   });
   byID[te.id] = te;
@@ -2518,7 +2518,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_248",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=248",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=248",
     categories: ["Sweeping Flail", "ID_FMP_FEAT_248"],
     rules: function(model) {
       model.statadd("Flail:attack", function() { /* against a foe carrying a shield */ return 2; });
@@ -2531,7 +2531,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_308",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=308",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=308",
     categories: ["Tactical Assault", "ID_FMP_FEAT_308"]
   });
   byID[te.id] = te;
@@ -2541,7 +2541,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_171",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=171",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=171",
     categories: ["Toughness", "ID_FMP_FEAT_171"],
     rules: function(model) {
       model.statadd("Toughness", 5);
@@ -2557,7 +2557,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_79",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=79",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=79",
     categories: ["Triumphant Attack", "ID_FMP_FEAT_79"]
   });
   byID[te.id] = te;
@@ -2567,7 +2567,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_325",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=325",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=325",
     categories: ["Twofold Curse", "ID_FMP_FEAT_325"]
   });
   byID[te.id] = te;
@@ -2577,7 +2577,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_172",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=172",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=172",
     categories: ["Two-Weapon Defense", "ID_FMP_FEAT_172"],
     rules: function(model) {
       model.statadd("AC", function() { /* while wielding a melee weapon in each hand */ return 1; }, "Shield");
@@ -2591,7 +2591,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_173",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=173",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=173",
     categories: ["Two-Weapon Fighting", "ID_FMP_FEAT_173"],
     rules: function(model) {
       model.statadd("two-weapon,weapon:damage", 1);
@@ -2604,7 +2604,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_174",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=174",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=174",
     categories: ["Two-Weapon Flurry", "ID_FMP_FEAT_174"]
   });
   byID[te.id] = te;
@@ -2614,7 +2614,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_326",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=326",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=326",
     categories: ["Uncanny Dodge", "ID_FMP_FEAT_326"]
   });
   byID[te.id] = te;
@@ -2624,7 +2624,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_55",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=55",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=55",
     categories: ["Underfoot", "ID_FMP_FEAT_55"]
   });
   byID[te.id] = te;
@@ -2634,7 +2634,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_176",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=176",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=176",
     categories: ["Unfettered Stride", "ID_FMP_FEAT_176"]
   });
   byID[te.id] = te;
@@ -2644,7 +2644,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_336",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=336",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=336",
     categories: ["Warrior of the Wild", "ID_FMP_FEAT_336", "ID_INTERNAL_CATEGORY_MULTICLASS_RANGER", "Multiclass Ranger", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('Skill Training', 1, "Warrior of the Wild", {
@@ -2665,7 +2665,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_233",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=233",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=233",
     categories: ["Weapon Focus", "ID_FMP_FEAT_233"]
   });
   byID[te.id] = te;
@@ -2675,7 +2675,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(AXE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(AXE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(AXE)",
     categories: ["Weapon Focus (Axe)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(AXE)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Axe)", 1);
@@ -2691,7 +2691,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(BLOWGUN)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(BLOWGUN)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(BLOWGUN)",
     categories: ["Weapon Focus (Blowgun)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(BLOWGUN)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Blowgun)", 1);
@@ -2707,7 +2707,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(BOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(BOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(BOW)",
     categories: ["Weapon Focus (Bow)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(BOW)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Bow)", 1);
@@ -2723,7 +2723,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(CROSSBOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(CROSSBOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(CROSSBOW)",
     categories: ["Weapon Focus (Crossbow)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(CROSSBOW)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Crossbow)", 1);
@@ -2739,7 +2739,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(FLAIL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(FLAIL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(FLAIL)",
     categories: ["Weapon Focus (Flail)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(FLAIL)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Flail)", 1);
@@ -2755,7 +2755,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(GARROTE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(GARROTE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(GARROTE)",
     categories: ["Weapon Focus (Garrote)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(GARROTE)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Garrote)", 1);
@@ -2771,7 +2771,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(HAMMER)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(HAMMER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(HAMMER)",
     categories: ["Weapon Focus (Hammer)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(HAMMER)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Hammer)", 1);
@@ -2787,7 +2787,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(HEAVY_BLADE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(HEAVY_BLADE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(HEAVY_BLADE)",
     categories: ["Weapon Focus (Heavy Blade)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(HEAVY_BLADE)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Heavy Blade)", 1);
@@ -2803,7 +2803,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(LIGHT_BLADE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(LIGHT_BLADE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(LIGHT_BLADE)",
     categories: ["Weapon Focus (Light Blade)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(LIGHT_BLADE)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Light Blade)", 1);
@@ -2819,7 +2819,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(MACE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(MACE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(MACE)",
     categories: ["Weapon Focus (Mace)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(MACE)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Mace)", 1);
@@ -2835,7 +2835,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(PICK)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(PICK)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(PICK)",
     categories: ["Weapon Focus (Pick)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(PICK)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Pick)", 1);
@@ -2851,7 +2851,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(POLEARM)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(POLEARM)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(POLEARM)",
     categories: ["Weapon Focus (Polearm)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(POLEARM)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Polearm)", 1);
@@ -2867,7 +2867,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(SLING)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(SLING)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(SLING)",
     categories: ["Weapon Focus (Sling)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(SLING)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Sling)", 1);
@@ -2883,7 +2883,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(SPEAR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(SPEAR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(SPEAR)",
     categories: ["Weapon Focus (Spear)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(SPEAR)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Spear)", 1);
@@ -2899,7 +2899,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(STAFF)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(STAFF)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(STAFF)",
     categories: ["Weapon Focus (Staff)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(STAFF)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Staff)", 1);
@@ -2915,7 +2915,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_FOCUS_(UNARMED)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_FOCUS_(UNARMED)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_FOCUS_(UNARMED)",
     categories: ["Weapon Focus (Unarmed)", "ID_INTERNAL_FEAT_WEAPON_FOCUS_(UNARMED)"],
     rules: function(model) {
       model.statadd("Weapon Focus (Unarmed)", 1);
@@ -2931,7 +2931,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_178",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=178",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=178",
     categories: ["Weapon Proficiency", "ID_FMP_FEAT_178"]
   });
   byID[te.id] = te;
@@ -2941,7 +2941,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BASTARD_SWORD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(BASTARD_SWORD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(BASTARD_SWORD)",
     categories: ["Weapon Proficiency (Bastard sword)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BASTARD_SWORD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)"]);
@@ -2954,7 +2954,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BATTLEAXE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(BATTLEAXE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(BATTLEAXE)",
     categories: ["Weapon Proficiency (Battleaxe)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BATTLEAXE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)"]);
@@ -2967,7 +2967,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BLOWGUN)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(BLOWGUN)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(BLOWGUN)",
     categories: ["Weapon Proficiency (Blowgun)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BLOWGUN)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BLOWGUN)"]);
@@ -2980,7 +2980,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BOLA)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(BOLA)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(BOLA)",
     categories: ["Weapon Proficiency (Bola)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BOLA)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOLA)"]);
@@ -2993,7 +2993,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BROADSWORD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(BROADSWORD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(BROADSWORD)",
     categories: ["Weapon Proficiency (Broadsword)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(BROADSWORD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)"]);
@@ -3006,7 +3006,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CLUB)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(CLUB)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(CLUB)",
     categories: ["Weapon Proficiency (Club)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CLUB)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLUB)"]);
@@ -3019,7 +3019,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CRAGHAMMER)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(CRAGHAMMER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(CRAGHAMMER)",
     categories: ["Weapon Proficiency (Craghammer)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CRAGHAMMER)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CRAGHAMMER)"]);
@@ -3032,7 +3032,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CROSSBOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(CROSSBOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(CROSSBOW)",
     categories: ["Weapon Proficiency (Crossbow)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CROSSBOW)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CROSSBOW)"]);
@@ -3045,7 +3045,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CUTTING_WHEEL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(CUTTING_WHEEL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(CUTTING_WHEEL)",
     categories: ["Weapon Proficiency (Cutting Wheel)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(CUTTING_WHEEL)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CUTTING_WHEEL)"]);
@@ -3058,7 +3058,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DAGGER)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(DAGGER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(DAGGER)",
     categories: ["Weapon Proficiency (Dagger)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DAGGER)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)"]);
@@ -3071,7 +3071,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DOUBLE_AXE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(DOUBLE_AXE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(DOUBLE_AXE)",
     categories: ["Weapon Proficiency (Double axe)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DOUBLE_AXE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_AXE)"]);
@@ -3084,7 +3084,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)",
     categories: ["Weapon Proficiency (Double flail)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)"]);
@@ -3097,7 +3097,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)",
     categories: ["Weapon Proficiency (Double Scimitar)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)"]);
@@ -3110,7 +3110,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DOUBLE_SWORD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(DOUBLE_SWORD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(DOUBLE_SWORD)",
     categories: ["Weapon Proficiency (Double sword)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DOUBLE_SWORD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SWORD)"]);
@@ -3123,7 +3123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)",
     categories: ["Weapon Proficiency (Drow Long Knife)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)"]);
@@ -3136,7 +3136,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(EXECUTION_AXE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(EXECUTION_AXE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(EXECUTION_AXE)",
     categories: ["Weapon Proficiency (Execution axe)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(EXECUTION_AXE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(EXECUTION_AXE)"]);
@@ -3149,7 +3149,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(FALCHION)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(FALCHION)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(FALCHION)",
     categories: ["Weapon Proficiency (Falchion)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(FALCHION)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)"]);
@@ -3162,7 +3162,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(FLAIL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(FLAIL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(FLAIL)",
     categories: ["Weapon Proficiency (Flail)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(FLAIL)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)"]);
@@ -3175,7 +3175,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(FULLBLADE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(FULLBLADE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(FULLBLADE)",
     categories: ["Weapon Proficiency (Fullblade)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(FULLBLADE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FULLBLADE)"]);
@@ -3188,7 +3188,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GARROTE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(GARROTE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(GARROTE)",
     categories: ["Weapon Proficiency (Garrote)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GARROTE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GARROTE)"]);
@@ -3201,7 +3201,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GLAIVE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(GLAIVE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(GLAIVE)",
     categories: ["Weapon Proficiency (Glaive)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GLAIVE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)"]);
@@ -3214,7 +3214,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATAXE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATAXE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATAXE)",
     categories: ["Weapon Proficiency (Greataxe)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATAXE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATAXE)"]);
@@ -3227,7 +3227,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATBOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATBOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATBOW)",
     categories: ["Weapon Proficiency (Greatbow)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATBOW)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATBOW)"]);
@@ -3240,7 +3240,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATCLUB)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATCLUB)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATCLUB)",
     categories: ["Weapon Proficiency (Greatclub)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATCLUB)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATCLUB)"]);
@@ -3253,7 +3253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATSPEAR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATSPEAR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATSPEAR)",
     categories: ["Weapon Proficiency (Greatspear)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATSPEAR)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSPEAR)"]);
@@ -3266,7 +3266,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATSWORD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATSWORD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(GREATSWORD)",
     categories: ["Weapon Proficiency (Greatsword)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(GREATSWORD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)"]);
@@ -3279,7 +3279,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HALBERD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(HALBERD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(HALBERD)",
     categories: ["Weapon Proficiency (Halberd)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HALBERD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)"]);
@@ -3292,7 +3292,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HAND_CROSSBOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(HAND_CROSSBOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(HAND_CROSSBOW)",
     categories: ["Weapon Proficiency (Hand Crossbow)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HAND_CROSSBOW)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)"]);
@@ -3305,7 +3305,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HANDAXE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(HANDAXE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(HANDAXE)",
     categories: ["Weapon Proficiency (Handaxe)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HANDAXE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)"]);
@@ -3318,7 +3318,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HEAVY_FLAIL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(HEAVY_FLAIL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(HEAVY_FLAIL)",
     categories: ["Weapon Proficiency (Heavy flail)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HEAVY_FLAIL)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)"]);
@@ -3331,7 +3331,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)",
     categories: ["Weapon Proficiency (Heavy war pick)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_WAR_PICK)"]);
@@ -3344,7 +3344,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(JAVELIN)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(JAVELIN)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(JAVELIN)",
     categories: ["Weapon Proficiency (Javelin)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(JAVELIN)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)"]);
@@ -3357,7 +3357,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(KATAR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(KATAR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(KATAR)",
     categories: ["Weapon Proficiency (Katar)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(KATAR)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KATAR)"]);
@@ -3370,7 +3370,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(KHOPESH)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(KHOPESH)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(KHOPESH)",
     categories: ["Weapon Proficiency (Khopesh)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(KHOPESH)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)"]);
@@ -3383,7 +3383,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(KUKRI)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(KUKRI)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(KUKRI)",
     categories: ["Weapon Proficiency (Kukri)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(KUKRI)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KUKRI)"]);
@@ -3396,7 +3396,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)",
     categories: ["Weapon Proficiency (Light war pick)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)"]);
@@ -3409,7 +3409,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LONGBOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(LONGBOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(LONGBOW)",
     categories: ["Weapon Proficiency (Longbow)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LONGBOW)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGBOW)"]);
@@ -3422,7 +3422,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LONGSPEAR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(LONGSPEAR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(LONGSPEAR)",
     categories: ["Weapon Proficiency (Longspear)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LONGSPEAR)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)"]);
@@ -3435,7 +3435,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LONGSWORD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(LONGSWORD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(LONGSWORD)",
     categories: ["Weapon Proficiency (Longsword)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(LONGSWORD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)"]);
@@ -3448,7 +3448,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MACE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(MACE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(MACE)",
     categories: ["Weapon Proficiency (Mace)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MACE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MACE)"]);
@@ -3461,7 +3461,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MAUL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(MAUL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(MAUL)",
     categories: ["Weapon Proficiency (Maul)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MAUL)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MAUL)"]);
@@ -3474,7 +3474,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MORDENKRAD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(MORDENKRAD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(MORDENKRAD)",
     categories: ["Weapon Proficiency (Mordenkrad)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MORDENKRAD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORDENKRAD)"]);
@@ -3487,7 +3487,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MORNINGSTAR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(MORNINGSTAR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(MORNINGSTAR)",
     categories: ["Weapon Proficiency (Morningstar)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(MORNINGSTAR)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MORNINGSTAR)"]);
@@ -3500,7 +3500,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(NET)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(NET)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(NET)",
     categories: ["Weapon Proficiency (Net)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(NET)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NET)"]);
@@ -3513,7 +3513,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(PARRYING_DAGGER)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(PARRYING_DAGGER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(PARRYING_DAGGER)",
     categories: ["Weapon Proficiency (Parrying dagger)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(PARRYING_DAGGER)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(PARRYING_DAGGER)"]);
@@ -3526,7 +3526,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(QUARTERSTAFF)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(QUARTERSTAFF)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(QUARTERSTAFF)",
     categories: ["Weapon Proficiency (Quarterstaff)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(QUARTERSTAFF)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(QUARTERSTAFF)"]);
@@ -3539,7 +3539,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(RAPIER)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(RAPIER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(RAPIER)",
     categories: ["Weapon Proficiency (Rapier)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(RAPIER)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)"]);
@@ -3552,7 +3552,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)",
     categories: ["Weapon Proficiency (Repeating crossbow)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(REPEATING_CROSSBOW)"]);
@@ -3565,7 +3565,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SCIMITAR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SCIMITAR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SCIMITAR)",
     categories: ["Weapon Proficiency (Scimitar)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SCIMITAR)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)"]);
@@ -3578,7 +3578,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SCOURGE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SCOURGE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SCOURGE)",
     categories: ["Weapon Proficiency (Scourge)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SCOURGE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)"]);
@@ -3591,7 +3591,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SCYTHE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SCYTHE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SCYTHE)",
     categories: ["Weapon Proficiency (Scythe)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SCYTHE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)"]);
@@ -3604,7 +3604,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SHORT_SWORD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SHORT_SWORD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SHORT_SWORD)",
     categories: ["Weapon Proficiency (Short sword)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SHORT_SWORD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)"]);
@@ -3617,7 +3617,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SHORTBOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SHORTBOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SHORTBOW)",
     categories: ["Weapon Proficiency (Shortbow)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SHORTBOW)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)"]);
@@ -3630,7 +3630,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SHURIKEN)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SHURIKEN)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SHURIKEN)",
     categories: ["Weapon Proficiency (Shuriken)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SHURIKEN)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHURIKEN)"]);
@@ -3643,7 +3643,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SICKLE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SICKLE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SICKLE)",
     categories: ["Weapon Proficiency (Sickle)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SICKLE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)"]);
@@ -3656,7 +3656,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SLING)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SLING)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SLING)",
     categories: ["Weapon Proficiency (Sling)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SLING)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)"]);
@@ -3669,7 +3669,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SPEAR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SPEAR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SPEAR)",
     categories: ["Weapon Proficiency (Spear)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SPEAR)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)"]);
@@ -3682,7 +3682,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SPIKED_CHAIN)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SPIKED_CHAIN)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SPIKED_CHAIN)",
     categories: ["Weapon Proficiency (Spiked chain)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SPIKED_CHAIN)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_CHAIN)"]);
@@ -3695,7 +3695,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)",
     categories: ["Weapon Proficiency (Spiked gauntlet)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_GAUNTLET)"]);
@@ -3708,7 +3708,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SPIKED_SHIELD)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SPIKED_SHIELD)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SPIKED_SHIELD)",
     categories: ["Weapon Proficiency (Spiked shield)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SPIKED_SHIELD)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_SHIELD)"]);
@@ -3721,7 +3721,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)",
     categories: ["Weapon Proficiency (Superior crossbow)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SUPERIOR_CROSSBOW)"]);
@@ -3734,7 +3734,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)",
     categories: ["Weapon Proficiency (Talenta Boomerang)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)"]);
@@ -3747,7 +3747,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)",
     categories: ["Weapon Proficiency (Talenta Sharrash)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)"]);
@@ -3760,7 +3760,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TALENTA_TANGAT)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(TALENTA_TANGAT)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(TALENTA_TANGAT)",
     categories: ["Weapon Proficiency (Talenta Tangat)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TALENTA_TANGAT)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_TANGAT)"]);
@@ -3773,7 +3773,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(THROWING_HAMMER)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(THROWING_HAMMER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(THROWING_HAMMER)",
     categories: ["Weapon Proficiency (Throwing hammer)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(THROWING_HAMMER)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)"]);
@@ -3786,7 +3786,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TRATNYR)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(TRATNYR)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(TRATNYR)",
     categories: ["Weapon Proficiency (Tratnyr)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TRATNYR)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRATNYR)"]);
@@ -3799,7 +3799,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TRIDENT)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(TRIDENT)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(TRIDENT)",
     categories: ["Weapon Proficiency (Trident)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TRIDENT)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)"]);
@@ -3812,7 +3812,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)",
     categories: ["Weapon Proficiency (Triple-headed flail)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)"]);
@@ -3825,7 +3825,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(URGROSH)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(URGROSH)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(URGROSH)",
     categories: ["Weapon Proficiency (Urgrosh)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(URGROSH)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(URGROSH)"]);
@@ -3838,7 +3838,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(WAR_PICK)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(WAR_PICK)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(WAR_PICK)",
     categories: ["Weapon Proficiency (War Pick)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(WAR_PICK)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)"]);
@@ -3851,7 +3851,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(WARAXE)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(WARAXE)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(WARAXE)",
     categories: ["Weapon Proficiency (Waraxe)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(WARAXE)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARAXE)"]);
@@ -3864,7 +3864,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(WARHAMMER)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(WARHAMMER)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(WARHAMMER)",
     categories: ["Weapon Proficiency (Warhammer)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(WARHAMMER)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)"]);
@@ -3877,7 +3877,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(WHIP)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(WHIP)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(WHIP)",
     categories: ["Weapon Proficiency (Whip)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(WHIP)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)"]);
@@ -3890,7 +3890,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)",
     categories: ["Weapon Proficiency (Xen'drik Boomerang)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)"]);
@@ -3903,7 +3903,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(ZULAAT)",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_WEAPON_PROFICIENCY_(ZULAAT)",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_WEAPON_PROFICIENCY_(ZULAAT)",
     categories: ["Weapon Proficiency (Zulaat)", "ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(ZULAAT)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ZULAAT)"]);
@@ -3916,7 +3916,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_309",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=309",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=309",
     categories: ["Wintertouched", "ID_FMP_FEAT_309"]
   });
   byID[te.id] = te;

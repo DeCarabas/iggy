@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2749",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2749",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2749",
     categories: ["Accursed Challenge", "ID_FMP_FEAT_2749"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2733",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2733",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2733",
     categories: ["Armored Warrenguard", "ID_FMP_FEAT_2733"],
     rules: function(model) {
       model.statadd("Speed", function() { 
@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2750",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2750",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2750",
     categories: ["Avandra's Boon", "ID_FMP_FEAT_2750"]
   });
   byID[te.id] = te;
@@ -56,7 +56,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2751",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2751",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2751",
     categories: ["Avandra's Covenant", "ID_FMP_FEAT_2751"]
   });
   byID[te.id] = te;
@@ -66,7 +66,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2726",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2726",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2726",
     categories: ["Beast Rider", "ID_FMP_FEAT_2726"]
   });
   byID[te.id] = te;
@@ -76,7 +76,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2725",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2725",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2725",
     categories: ["Bestial Mobility", "ID_FMP_FEAT_2725"]
   });
   byID[te.id] = te;
@@ -86,7 +86,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2759",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2759",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2759",
     categories: ["Bloodied Boon", "ID_FMP_FEAT_2759"]
   });
   byID[te.id] = te;
@@ -96,7 +96,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2752",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2752",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2752",
     categories: ["Bountiful Fortune", "ID_FMP_FEAT_2752"]
   });
   byID[te.id] = te;
@@ -106,7 +106,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2760",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2760",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2760",
     categories: ["Brutal Curse", "ID_FMP_FEAT_2760"]
   });
   byID[te.id] = te;
@@ -116,7 +116,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2705",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2705",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2705",
     categories: ["Brutal Reach", "ID_FMP_FEAT_2705"]
   });
   byID[te.id] = te;
@@ -126,7 +126,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2699",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2699",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2699",
     categories: ["Chilling Presence", "ID_FMP_FEAT_2699"]
   });
   byID[te.id] = te;
@@ -136,7 +136,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2753",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2753",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2753",
     categories: ["Confounding Luck", "ID_FMP_FEAT_2753"]
   });
   byID[te.id] = te;
@@ -146,7 +146,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2777",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2777",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2777",
     categories: ["Contagious Curse", "ID_FMP_FEAT_2777"]
   });
   byID[te.id] = te;
@@ -156,7 +156,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2776",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2776",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2776",
     categories: ["Critical Curse", "ID_FMP_FEAT_2776"]
   });
   byID[te.id] = te;
@@ -166,7 +166,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2761",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2761",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2761",
     categories: ["Curse of Displacement", "ID_FMP_FEAT_2761"]
   });
   byID[te.id] = te;
@@ -176,7 +176,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2768",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2768",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2768",
     categories: ["Curse of the Blind Stars", "ID_FMP_FEAT_2768"]
   });
   byID[te.id] = te;
@@ -186,7 +186,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2762",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2762",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2762",
     categories: ["Cursed Shot", "ID_FMP_FEAT_2762"]
   });
   byID[te.id] = te;
@@ -196,7 +196,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2778",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2778",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2778",
     categories: ["Cursed Spells", "ID_FMP_FEAT_2778"],
     rules: function(model) {
       model.statadd("Warlock's Curse", function() { return model.stat("Intelligence modifier"); });
@@ -209,7 +209,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2734",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2734",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2734",
     categories: ["Distracting Challenge", "ID_FMP_FEAT_2734"]
   });
   byID[te.id] = te;
@@ -219,7 +219,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2735",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2735",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2735",
     categories: ["Enshrouding Touch", "ID_FMP_FEAT_2735"]
   });
   byID[te.id] = te;
@@ -229,7 +229,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2763",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2763",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2763",
     categories: ["Exultant Shadow Step", "ID_FMP_FEAT_2763"]
   });
   byID[te.id] = te;
@@ -239,7 +239,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2770",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2770",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2770",
     categories: ["Fey Revel Glamor", "ID_FMP_FEAT_2770"]
   });
   byID[te.id] = te;
@@ -249,7 +249,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2727",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2727",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2727",
     categories: ["Fey Senses", "ID_FMP_FEAT_2727"],
     rules: function(model) {
       model.statadd("Perception Misc", 2, "Feat");
@@ -263,7 +263,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2728",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2728",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2728",
     categories: ["Fey-Minded", "ID_FMP_FEAT_2728"],
     rules: function(model) {
       model.select('Language', 1, "Fey-Minded", {
@@ -278,7 +278,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2719",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2719",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2719",
     categories: ["Forest Walk", "ID_FMP_FEAT_2719"]
   });
   byID[te.id] = te;
@@ -288,7 +288,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2739",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2739",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2739",
     categories: ["Godsworn Alacrity", "ID_FMP_FEAT_2739"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -301,7 +301,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2738",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2738",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2738",
     categories: ["Godsworn Assault", "ID_FMP_FEAT_2738"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -314,7 +314,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2740",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2740",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2740",
     categories: ["Godsworn Avalanche", "ID_FMP_FEAT_2740"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -327,7 +327,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2741",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2741",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2741",
     categories: ["Godsworn Bulwark", "ID_FMP_FEAT_2741"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -340,7 +340,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2742",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2742",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2742",
     categories: ["Godsworn Defender", "ID_FMP_FEAT_2742"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -353,7 +353,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2743",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2743",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2743",
     categories: ["Godsworn Fatalist", "ID_FMP_FEAT_2743"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -366,7 +366,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2745",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2745",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2745",
     categories: ["Godsworn Mentalist", "ID_FMP_FEAT_2745"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -379,7 +379,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2744",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2744",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2744",
     categories: ["Godsworn Mystic", "ID_FMP_FEAT_2744"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -392,7 +392,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2746",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2746",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2746",
     categories: ["Godsworn Radiant", "ID_FMP_FEAT_2746"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -405,7 +405,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2747",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2747",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2747",
     categories: ["Godsworn Sidestep", "ID_FMP_FEAT_2747"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -418,7 +418,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2748",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2748",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2748",
     categories: ["Godsworn Tidedancer", "ID_FMP_FEAT_2748"],
     rules: function(model) {
       model.statadd("Religion Misc", 2, "Feat");
@@ -431,7 +431,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2754",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2754",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2754",
     categories: ["Guileful Shift", "ID_FMP_FEAT_2754"]
   });
   byID[te.id] = te;
@@ -441,7 +441,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2756",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2756",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2756",
     categories: ["Halfling's Strength", "ID_FMP_FEAT_2756"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -454,7 +454,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2772",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2772",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2772",
     categories: ["Hellfire Hex", "ID_FMP_FEAT_2772"],
     rules: function(model) {
       model.statadd("ID_FMP_CLASS_7,daily:damage", "ongoing 5 fire (or increase existing ongoing fire by 5)");
@@ -467,7 +467,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2771",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2771",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2771",
     categories: ["Hell's Chosen", "ID_FMP_FEAT_2771"]
   });
   byID[te.id] = te;
@@ -477,7 +477,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2700",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2700",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2700",
     categories: ["Ice Walk", "ID_FMP_FEAT_2700"]
   });
   byID[te.id] = te;
@@ -487,7 +487,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2779",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2779",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2779",
     categories: ["Inevitable Doom", "ID_FMP_FEAT_2779"]
   });
   byID[te.id] = te;
@@ -497,7 +497,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2764",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2764",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2764",
     categories: ["Killing Curse", "ID_FMP_FEAT_2764"],
     rules: function(model) {
       model.statadd("Warlock's Curse Die", "d8");
@@ -510,7 +510,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2757",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2757",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2757",
     categories: ["Lucky Retribution", "ID_FMP_FEAT_2757"]
   });
   byID[te.id] = te;
@@ -520,7 +520,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2780",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2780",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2780",
     categories: ["Mind-Numbing Curse", "ID_FMP_FEAT_2780"]
   });
   byID[te.id] = te;
@@ -530,7 +530,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2765",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2765",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2765",
     categories: ["Primed Curse", "ID_FMP_FEAT_2765"],
     rules: function(model) {
       model.statadd("Prime Shot Bonus", function() { /* if the target is cursed by you */ return 1; });
@@ -543,7 +543,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2766",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2766",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2766",
     categories: ["Prolonged Curse", "ID_FMP_FEAT_2766"]
   });
   byID[te.id] = te;
@@ -553,7 +553,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2773",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2773",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2773",
     categories: ["Protective Hex", "ID_FMP_FEAT_2773"]
   });
   byID[te.id] = te;
@@ -563,7 +563,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2706",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2706",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2706",
     categories: ["Raging Reach", "ID_FMP_FEAT_2706"],
     rules: function(model) {
       model.statadd("two-hands,reach,ID_FMP_POWER_4807:damage", function() { /* against targets that are 2 squares away from you */ return model.stat("Constitution modifier"); });
@@ -576,7 +576,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2707",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2707",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2707",
     categories: ["Ruthless Rampage", "ID_FMP_FEAT_2707"]
   });
   byID[te.id] = te;
@@ -586,7 +586,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2717",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2717",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2717",
     categories: ["Shadow of the Wild", "ID_FMP_FEAT_2717"]
   });
   byID[te.id] = te;
@@ -596,7 +596,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2774",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2774",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2774",
     categories: ["Sibling to the Stars", "ID_FMP_FEAT_2774"]
   });
   byID[te.id] = te;
@@ -606,7 +606,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2701",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2701",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2701",
     categories: ["Swirling Snow", "ID_FMP_FEAT_2701"]
   });
   byID[te.id] = te;
@@ -616,7 +616,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2775",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2775",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2775",
     categories: ["Veil of Waking Dreams", "ID_FMP_FEAT_2775"]
   });
   byID[te.id] = te;
@@ -626,7 +626,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2758",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2758",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2758",
     categories: ["Vengeance's Reward", "ID_FMP_FEAT_2758"]
   });
   byID[te.id] = te;
@@ -636,7 +636,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2767",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2767",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2767",
     categories: ["Warlock's Sight", "ID_FMP_FEAT_2767"]
   });
   byID[te.id] = te;
@@ -646,7 +646,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2718",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2718",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2718",
     categories: ["Wilderness Wariness", "ID_FMP_FEAT_2718"],
     rules: function(model) {
       model.statadd("Perception Misc", 2, "Feat");
@@ -659,7 +659,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2702",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2702",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2702",
     categories: ["Winterkin Heritage", "ID_FMP_FEAT_2702", "ID_INTERNAL_INTERNAL_ELADRIN_BLOODLINE", "Eladrin Bloodline"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_11559"]);
@@ -677,7 +677,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2704",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2704",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2704",
     categories: ["Winter's Heart", "ID_FMP_FEAT_2704"]
   });
   byID[te.id] = te;
@@ -687,7 +687,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_2703",
     source: "Dragon Magazine 384",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2703",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=2703",
     categories: ["Winter's Reach", "ID_FMP_FEAT_2703"]
   });
   byID[te.id] = te;

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_335",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=335",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=335",
     categories: ["Arcane Sword", "ID_FMP_EPIC_DESTINY_335"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1453"]);
@@ -29,7 +29,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_336",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=336",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=336",
     categories: ["Archlich", "ID_FMP_EPIC_DESTINY_336"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1456"]);
@@ -48,7 +48,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_337",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=337",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=337",
     categories: ["Archspell", "ID_FMP_EPIC_DESTINY_337"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1460"]);
@@ -64,7 +64,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_338",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=338",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=338",
     categories: ["Feyliege", "ID_FMP_EPIC_DESTINY_338"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1463"]);
@@ -80,7 +80,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_339",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=339",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=339",
     categories: ["Immanence", "ID_FMP_EPIC_DESTINY_339"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1467"]);
@@ -96,7 +96,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_340",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=340",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=340",
     categories: ["Lord of Fate", "ID_FMP_EPIC_DESTINY_340"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1470"]);
@@ -112,7 +112,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_341",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=341",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=341",
     categories: ["Magister", "ID_FMP_EPIC_DESTINY_341"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1473"]);
@@ -129,7 +129,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_342",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=342",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=342",
     categories: ["Parable", "ID_FMP_EPIC_DESTINY_342"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1477"]);
@@ -145,7 +145,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_343",
     source: "Arcane Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=343",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=343",
     categories: ["Sage of Ages", "ID_FMP_EPIC_DESTINY_343"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1480"]);

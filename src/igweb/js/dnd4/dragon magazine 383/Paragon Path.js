@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_599",
     source: "Dragon Magazine 383",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=599",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=599",
     categories: ["Astral Ascendant", "ID_FMP_PARAGON_PATH_599"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2375"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_589",
     source: "Dragon Magazine 383",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=589",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=589",
     categories: ["Breach Warden", "ID_FMP_PARAGON_PATH_589"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2337"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_597",
     source: "Dragon Magazine 383",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=597",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=597",
     categories: ["Broken Mirror", "ID_FMP_PARAGON_PATH_597"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2368"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_573",
     source: "Dragon Magazine 383",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=573",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=573",
     categories: ["Fireforged Champion", "ID_FMP_PARAGON_PATH_573"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2288"]);
@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_598",
     source: "Dragon Magazine 383",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=598",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=598",
     categories: ["Umbral Cabalist", "ID_FMP_PARAGON_PATH_598"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2372"]);

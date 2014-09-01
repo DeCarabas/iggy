@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_327",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=327",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=327",
     categories: ["Aura of True Vision", "ID_FMP_RITUAL_327"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_328",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=328",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=328",
     categories: ["Corpselike Visage", "ID_FMP_RITUAL_328"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_329",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=329",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=329",
     categories: ["Donning Trollflesh", "ID_FMP_RITUAL_329"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_330",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=330",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=330",
     categories: ["Dragonward", "ID_FMP_RITUAL_330"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_331",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=331",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=331",
     categories: ["Evard's Extensible Rope", "ID_FMP_RITUAL_331"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_332",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=332",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=332",
     categories: ["Follow the Voice", "ID_FMP_RITUAL_332"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_333",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=333",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=333",
     categories: ["Memory of a Thousand Deaths", "ID_FMP_RITUAL_333"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_334",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=334",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=334",
     categories: ["Memory of the Dragon", "ID_FMP_RITUAL_334"]
   });
   byID[te.id] = te;
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_335",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=335",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=335",
     categories: ["Quench the Flame", "ID_FMP_RITUAL_335"]
   });
   byID[te.id] = te;
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_336",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=336",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=336",
     categories: ["Self-Holding Bag", "ID_FMP_RITUAL_336"]
   });
   byID[te.id] = te;
@@ -113,7 +113,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_337",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=337",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=337",
     categories: ["Snowstorm Summons", "ID_FMP_RITUAL_337"]
   });
   byID[te.id] = te;
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_338",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=338",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=338",
     categories: ["Wavestrider Enchantment", "ID_FMP_RITUAL_338"]
   });
   byID[te.id] = te;
@@ -133,7 +133,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_339",
     source: "Dragon Magazine 385",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=339",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=339",
     categories: ["Windmaster's Mantle", "ID_FMP_RITUAL_339"]
   });
   byID[te.id] = te;

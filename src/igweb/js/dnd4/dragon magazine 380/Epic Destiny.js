@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_523",
     source: "Dragon Magazine 380",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=523",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=523",
     categories: ["Raven Knight", "ID_FMP_EPIC_DESTINY_523"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2116"]);

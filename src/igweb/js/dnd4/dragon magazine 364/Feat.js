@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_449",
     source: "Dragon Magazine 364",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=449",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=449",
     categories: ["Against All Odds", "ID_FMP_FEAT_449"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* if three or more enemies were adjacent to you at the start of your turn */ return 1; });

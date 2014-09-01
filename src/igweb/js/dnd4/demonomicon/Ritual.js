@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_340",
     source: "Demonomicon",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=340",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=340",
     categories: ["Summon Demon", "ID_FMP_RITUAL_340"]
   });
   byID[te.id] = te;

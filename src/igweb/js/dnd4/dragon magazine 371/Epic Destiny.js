@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_294",
     source: "Dragon Magazine 371",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=294",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=294",
     categories: ["Prison of the Winds", "ID_FMP_EPIC_DESTINY_294"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1313"]);

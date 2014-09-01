@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_ARMOR_PROFICIENCY",
     source: "Core",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ARMOR_PROFICIENCY",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_ARMOR_PROFICIENCY",
     categories: ["Armor Proficiency", "ID_INTERNAL_FEAT_ARMOR_PROFICIENCY"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_PARAGON_HYBRID_TALENT",
     source: "Core",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_PARAGON_HYBRID_TALENT",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_PARAGON_HYBRID_TALENT",
     categories: ["Paragon Hybrid Talent", "ID_INTERNAL_FEAT_PARAGON_HYBRID_TALENT"],
     rules: function(model) {
       model.select('class feature', 1, "Paragon Hybrid Talent", {
@@ -38,7 +38,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_SHIELD_PROFICIENCY",
     source: "Core",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_SHIELD_PROFICIENCY",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_SHIELD_PROFICIENCY",
     categories: ["Shield Proficiency", "ID_INTERNAL_FEAT_SHIELD_PROFICIENCY"]
   });
   byID[te.id] = te;

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_73",
     source: "Forgotten Realms Campaign Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=73",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=73",
     categories: ["Pact of the Iron Ring", "ID_FMP_RITUAL_73"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_74",
     source: "Forgotten Realms Campaign Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=74",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=74",
     categories: ["Ritual of Twin Burnings", "ID_FMP_RITUAL_74"]
   });
   byID[te.id] = te;

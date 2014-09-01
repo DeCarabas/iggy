@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_237",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=237",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=237",
     categories: ["Acidic Fire", "ID_FMP_RITUAL_237"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_238",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=238",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=238",
     categories: ["Alchemist's Spark", "ID_FMP_RITUAL_238"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_254",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=254",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=254",
     categories: ["Ancestral Whispers", "ID_FMP_RITUAL_254"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_255",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=255",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=255",
     categories: ["Banish Illusions", "ID_FMP_RITUAL_255"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_239",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=239",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=239",
     categories: ["Clear-Path Mist", "ID_FMP_RITUAL_239"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_240",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=240",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=240",
     categories: ["Clockwork Bomb", "ID_FMP_RITUAL_240"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_256",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=256",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=256",
     categories: ["Conceal Dragon mark", "ID_FMP_RITUAL_256"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_257",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=257",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=257",
     categories: ["Eavesdropper's Foil", "ID_FMP_RITUAL_257"]
   });
   byID[te.id] = te;
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_258",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=258",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=258",
     categories: ["Enhance Vessel", "ID_FMP_RITUAL_258"]
   });
   byID[te.id] = te;
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_259",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=259",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=259",
     categories: ["Fantastic Recuperation", "ID_FMP_RITUAL_259"]
   });
   byID[te.id] = te;
@@ -113,7 +113,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_260",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=260",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=260",
     categories: ["Find the Path", "ID_FMP_RITUAL_260"]
   });
   byID[te.id] = te;
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_261",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=261",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=261",
     categories: ["Fluid Funds", "ID_FMP_RITUAL_261"]
   });
   byID[te.id] = te;
@@ -133,7 +133,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_241",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=241",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=241",
     categories: ["Grayflower Perfume", "ID_FMP_RITUAL_241"]
   });
   byID[te.id] = te;
@@ -143,7 +143,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_242",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=242",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=242",
     categories: ["Heartflow", "ID_FMP_RITUAL_242"]
   });
   byID[te.id] = te;
@@ -153,7 +153,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_243",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=243",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=243",
     categories: ["Inferno Oil", "ID_FMP_RITUAL_243"]
   });
   byID[te.id] = te;
@@ -163,7 +163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_262",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=262",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=262",
     categories: ["Inquisitive's Eyes", "ID_FMP_RITUAL_262"]
   });
   byID[te.id] = te;
@@ -173,7 +173,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_244",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=244",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=244",
     categories: ["Keen Oil", "ID_FMP_RITUAL_244"]
   });
   byID[te.id] = te;
@@ -183,7 +183,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_245",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=245",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=245",
     categories: ["Lodret Leaf", "ID_FMP_RITUAL_245"]
   });
   byID[te.id] = te;
@@ -193,7 +193,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_263",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=263",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=263",
     categories: ["Masking Shroud", "ID_FMP_RITUAL_263"]
   });
   byID[te.id] = te;
@@ -203,7 +203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_246",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=246",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=246",
     categories: ["Noxious Grenade", "ID_FMP_RITUAL_246"]
   });
   byID[te.id] = te;
@@ -213,7 +213,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_247",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=247",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=247",
     categories: ["Panther Tears", "ID_FMP_RITUAL_247"]
   });
   byID[te.id] = te;
@@ -223,7 +223,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_248",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=248",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=248",
     categories: ["Resonance Crystal", "ID_FMP_RITUAL_248"]
   });
   byID[te.id] = te;
@@ -233,7 +233,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_264",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=264",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=264",
     categories: ["Scry Trap", "ID_FMP_RITUAL_264"]
   });
   byID[te.id] = te;
@@ -243,7 +243,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_265",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=265",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=265",
     categories: ["Secure Shelter", "ID_FMP_RITUAL_265"]
   });
   byID[te.id] = te;
@@ -253,7 +253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_266",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=266",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=266",
     categories: ["Seeming", "ID_FMP_RITUAL_266"]
   });
   byID[te.id] = te;
@@ -263,7 +263,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_267",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=267",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=267",
     categories: ["Spirit Idol", "ID_FMP_RITUAL_267"]
   });
   byID[te.id] = te;
@@ -273,7 +273,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_249",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=249",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=249",
     categories: ["Spotted Toadstool Venom", "ID_FMP_RITUAL_249"]
   });
   byID[te.id] = te;
@@ -283,7 +283,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_268",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=268",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=268",
     categories: ["Steed Summons", "ID_FMP_RITUAL_268"]
   });
   byID[te.id] = te;
@@ -293,7 +293,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_269",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=269",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=269",
     categories: ["Summon Winds", "ID_FMP_RITUAL_269"]
   });
   byID[te.id] = te;
@@ -303,7 +303,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_250",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=250",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=250",
     categories: ["Suppression Crystal", "ID_FMP_RITUAL_250"]
   });
   byID[te.id] = te;
@@ -313,7 +313,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_251",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=251",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=251",
     categories: ["Tension Wheel", "ID_FMP_RITUAL_251"]
   });
   byID[te.id] = te;
@@ -323,7 +323,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_252",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=252",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=252",
     categories: ["Tethercord", "ID_FMP_RITUAL_252"]
   });
   byID[te.id] = te;
@@ -333,7 +333,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_253",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=253",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=253",
     categories: ["Woundpatch", "ID_FMP_RITUAL_253"]
   });
   byID[te.id] = te;

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_180",
     source: "Open Grave: Secrets of the Undead",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=180",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=180",
     categories: ["Corpse Gate", "ID_FMP_RITUAL_180"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_182",
     source: "Open Grave: Secrets of the Undead",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=182",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=182",
     categories: ["Corpse Light", "ID_FMP_RITUAL_182"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_181",
     source: "Open Grave: Secrets of the Undead",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=181",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=181",
     categories: ["Gravesight", "ID_FMP_RITUAL_181"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_183",
     source: "Open Grave: Secrets of the Undead",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=183",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=183",
     categories: ["Last Sight Vision", "ID_FMP_RITUAL_183"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_184",
     source: "Open Grave: Secrets of the Undead",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=184",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=184",
     categories: ["Skull Watch", "ID_FMP_RITUAL_184"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_185",
     source: "Open Grave: Secrets of the Undead",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=185",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=185",
     categories: ["Undead Servitor", "ID_FMP_RITUAL_185"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_186",
     source: "Open Grave: Secrets of the Undead",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=186",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=186",
     categories: ["Undead Ward", "ID_FMP_RITUAL_186"]
   });
   byID[te.id] = te;

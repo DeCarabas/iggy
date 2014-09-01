@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_755",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=755",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=755",
     categories: ["Alienist", "ID_FMP_PARAGON_PATH_755"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3115"]);
@@ -32,7 +32,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_734",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=734",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=734",
     categories: ["Anarchic Adept", "ID_FMP_PARAGON_PATH_734"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2917"]);
@@ -51,7 +51,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_756",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=756",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=756",
     categories: ["Anathema", "ID_FMP_PARAGON_PATH_756"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3118"]);
@@ -70,7 +70,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_735",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=735",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=735",
     categories: ["Awakened Visionary", "ID_FMP_PARAGON_PATH_735"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2920"]);
@@ -89,7 +89,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_749",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=749",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=749",
     categories: ["Basilisk's Fury Adept", "ID_FMP_PARAGON_PATH_749"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3073"]);
@@ -107,7 +107,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_740",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=740",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=740",
     categories: ["Blackstone Guardian", "ID_FMP_PARAGON_PATH_740"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2937"]);
@@ -126,7 +126,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_736",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=736",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=736",
     categories: ["Catalyst", "ID_FMP_PARAGON_PATH_736"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2923"]);
@@ -145,7 +145,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_757",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=757",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=757",
     categories: ["Firestarter", "ID_FMP_PARAGON_PATH_757"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3121"]);
@@ -166,7 +166,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_750",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=750",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=750",
     categories: ["Four Winds Master", "ID_FMP_PARAGON_PATH_750"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3076"]);
@@ -184,7 +184,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_761",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=761",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=761",
     categories: ["Impure Scion", "ID_FMP_PARAGON_PATH_761"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1818"]);
@@ -203,7 +203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_737",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=737",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=737",
     categories: ["Incandescent Champion", "ID_FMP_PARAGON_PATH_737"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2926"]);
@@ -222,7 +222,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_758",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=758",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=758",
     categories: ["Master Summoner", "ID_FMP_PARAGON_PATH_758"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1818"]);
@@ -241,7 +241,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_738",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=738",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=738",
     categories: ["Phrenic Invader", "ID_FMP_PARAGON_PATH_738"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2929"]);
@@ -261,7 +261,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_760",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=760",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=760",
     categories: ["Psionic Incarnate", "ID_FMP_PARAGON_PATH_760"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1818"]);
@@ -281,7 +281,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_741",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=741",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=741",
     categories: ["Quicksilver Demon", "ID_FMP_PARAGON_PATH_741"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1818"]);
@@ -300,7 +300,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_739",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=739",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=739",
     categories: ["Siphon", "ID_FMP_PARAGON_PATH_739"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1818"]);
@@ -319,7 +319,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_751",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=751",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=751",
     categories: ["Soaring Blade", "ID_FMP_PARAGON_PATH_751"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3079"]);
@@ -338,7 +338,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_742",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=742",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=742",
     categories: ["Storm Disciple", "ID_FMP_PARAGON_PATH_742"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2943"]);
@@ -357,7 +357,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_743",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=743",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=743",
     categories: ["Talaric Ironjack", "ID_FMP_PARAGON_PATH_743"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1818"]);
@@ -376,7 +376,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_759",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=759",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=759",
     categories: ["Thrallherd", "ID_FMP_PARAGON_PATH_759"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3128"]);
@@ -395,7 +395,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_752",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=752",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=752",
     categories: ["Tiger Claw Master", "ID_FMP_PARAGON_PATH_752"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3083"]);
@@ -413,7 +413,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_753",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=753",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=753",
     categories: ["Transcendent Perfection", "ID_FMP_PARAGON_PATH_753"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3086"]);
@@ -431,7 +431,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_744",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=744",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=744",
     categories: ["Unbound Nomad", "ID_FMP_PARAGON_PATH_744"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2949"]);
@@ -450,7 +450,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_754",
     source: "Psionic Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=754",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=754",
     categories: ["Unseen Hand", "ID_FMP_PARAGON_PATH_754"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_3089"]);

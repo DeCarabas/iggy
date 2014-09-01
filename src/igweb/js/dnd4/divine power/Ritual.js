@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_272",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=272",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=272",
     categories: ["Adjure", "ID_FMP_RITUAL_272"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_273",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=273",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=273",
     categories: ["Create Holy Water", "ID_FMP_RITUAL_273"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_274",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=274",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=274",
     categories: ["Ease Spirit", "ID_FMP_RITUAL_274"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_275",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=275",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=275",
     categories: ["Hallowed Temple", "ID_FMP_RITUAL_275"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_276",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=276",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=276",
     categories: ["Iron Vigil", "ID_FMP_RITUAL_276"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_277",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=277",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=277",
     categories: ["Mark of Justice", "ID_FMP_RITUAL_277"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_278",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=278",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=278",
     categories: ["Succor", "ID_FMP_RITUAL_278"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_279",
     source: "Divine Power",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=279",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=279",
     categories: ["Thief's Lament", "ID_FMP_RITUAL_279"]
   });
   byID[te.id] = te;

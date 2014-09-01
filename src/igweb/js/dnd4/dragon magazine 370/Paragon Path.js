@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_240",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=240",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=240",
     categories: ["Oman Giantkiller", "ID_FMP_PARAGON_PATH_240"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1134"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_237",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=237",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=237",
     categories: ["Son of Mercy", "ID_FMP_PARAGON_PATH_237"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1125"]);
@@ -50,7 +50,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_239",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=239",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=239",
     categories: ["Tharos Impostor", "ID_FMP_PARAGON_PATH_239"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1133"]);
@@ -68,7 +68,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_238",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=238",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=238",
     categories: ["Thay Infiltrator", "ID_FMP_PARAGON_PATH_238"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1128"]);

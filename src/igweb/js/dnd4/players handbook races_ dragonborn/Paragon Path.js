@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_534",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=534",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=534",
     categories: ["Honorable Blade", "ID_FMP_PARAGON_PATH_534"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2152"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_525",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=525",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=525",
     categories: ["Ninefold Master", "ID_FMP_PARAGON_PATH_525"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2122"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_533",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=533",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=533",
     categories: ["Platinum Templar", "ID_FMP_PARAGON_PATH_533"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2149"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_535",
     source: "Player's Handbook Races: Dragonborn",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=535",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=535",
     categories: ["Storm Dragon", "ID_FMP_PARAGON_PATH_535"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2155"]);

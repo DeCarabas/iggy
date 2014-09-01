@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5606",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5606",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5606",
     categories: ["Arm of Dissolution", "ID_FMP_POWER_5606", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_219", "Doomguard Marauder", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5644",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5644",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5644",
     categories: ["Boltportal Strike", "ID_FMP_POWER_5644", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_220", "Gatecrasher", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5651",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5651",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5651",
     categories: ["Brilliant Guardians", "ID_FMP_POWER_5651", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_221", "Knight of Celestia", "ID_FMP_CATEGORY_26", "Conjuration", "ID_FMP_CATEGORY_32", "Divine", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "12"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5650",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5650",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5650",
     categories: ["Celestia's Challenge", "ID_FMP_POWER_5650", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_221", "Knight of Celestia", "ID_FMP_CATEGORY_32", "Divine", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5658",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5658",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5658",
     categories: ["Dimensional Cascade", "ID_FMP_POWER_5658", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_223", "Planeshifter", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_19", "teleportation", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5655",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5655",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5655",
     categories: ["Elemental Scourge", "ID_FMP_POWER_5655", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_222", "Malec-Keth Janissary", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_1", "cold", "ID_FMP_CATEGORY_3", "fire", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_11", "Lightning", "ID_FMP_CATEGORY_19", "teleportation", "ID_FMP_CATEGORY_20", "Thunder", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "20"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5604",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5604",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5604",
     categories: ["Entropic Blow", "ID_FMP_POWER_5604", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_219", "Doomguard Marauder", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5602",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5602",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5602",
     categories: ["Ethereal Hunter", "ID_FMP_POWER_5602", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_218", "Blade of Cendriane", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_19", "teleportation", "ID_INTERNAL_CATEGORY_MOVE_ACTION", "Move Action", "12"]
   });
   byID[te.id] = te;
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5654",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5654",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5654",
     categories: ["Ever-Present Escort", "ID_FMP_POWER_5654", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_222", "Malec-Keth Janissary", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_19", "teleportation", "ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT", "Immediate Interrupt", "12"]
   });
   byID[te.id] = te;
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5603",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5603",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5603",
     categories: ["Feywild Tempest", "ID_FMP_POWER_5603", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_218", "Blade of Cendriane", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_19", "teleportation", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "20"]
   });
   byID[te.id] = te;
@@ -113,7 +113,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5601",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5601",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5601",
     categories: ["Forcing the Portal", "ID_FMP_POWER_5601", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_218", "Blade of Cendriane", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_19", "teleportation", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5600",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5600",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5600",
     categories: ["Improved Razor Storm", "ID_FMP_POWER_5600", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Improved Razor Storm", {
@@ -138,7 +138,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5653",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5653",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5653",
     categories: ["Loyal Unto Death", "ID_FMP_POWER_5653", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_222", "Malec-Keth Janissary", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_19", "teleportation", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -148,7 +148,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5652",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5652",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5652",
     categories: ["Purifying Radiance", "ID_FMP_POWER_5652", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_221", "Knight of Celestia", "ID_FMP_CATEGORY_32", "Divine", "ID_FMP_CATEGORY_2", "Radiant", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"]
   });
   byID[te.id] = te;
@@ -158,7 +158,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5657",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5657",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5657",
     categories: ["Quick Portal", "ID_FMP_POWER_5657", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_223", "Planeshifter", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_19", "teleportation", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "12"]
   });
   byID[te.id] = te;
@@ -168,7 +168,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5599",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5599",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5599",
     categories: ["Razor Storm", "ID_FMP_POWER_5599", "ID_FMP_RACIAL_TRAIT_1066", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Razor Storm", {
@@ -183,7 +183,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5662",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5662",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5662",
     categories: ["Rebuke Soul", "ID_FMP_POWER_5662", "ID_FMP_CLASS_FEATURE_324", "Channel Divinity", "ID_FMP_PARAGON_PATH_225", "Soul Guide"]
   });
   byID[te.id] = te;
@@ -193,7 +193,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5656",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5656",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5656",
     categories: ["Sequester", "ID_FMP_POWER_5656", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_223", "Planeshifter", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_19", "teleportation", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -203,7 +203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5660",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5660",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5660",
     categories: ["Shadow Guardians", "ID_FMP_POWER_5660", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_224", "Shadow Captain", "ID_FMP_CATEGORY_26", "Conjuration", "ID_FMP_CATEGORY_12", "Necrotic", "ID_FMP_CATEGORY_38", "Shadow", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "12"]
   });
   byID[te.id] = te;
@@ -213,7 +213,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5661",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5661",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5661",
     categories: ["Shadow Turncoat", "ID_FMP_POWER_5661", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_224", "Shadow Captain", "ID_FMP_CATEGORY_26", "Conjuration", "ID_FMP_CATEGORY_22", "Reliable", "ID_FMP_CATEGORY_38", "Shadow", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "20"]
   });
   byID[te.id] = te;
@@ -223,7 +223,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5665",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5665",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5665",
     categories: ["Shadowbane Circle", "ID_FMP_POWER_5665", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_225", "Soul Guide", "ID_FMP_CATEGORY_32", "Divine", "ID_FMP_CATEGORY_2", "Radiant", "ID_FMP_CATEGORY_39", "Zone", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "12"]
   });
   byID[te.id] = te;
@@ -233,7 +233,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5666",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5666",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5666",
     categories: ["Soul Brand", "ID_FMP_POWER_5666", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_225", "Soul Guide", "ID_FMP_CATEGORY_32", "Divine", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"]
   });
   byID[te.id] = te;
@@ -243,7 +243,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5664",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5664",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5664",
     categories: ["Soul's Enthrallment", "ID_FMP_POWER_5664", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_225", "Soul Guide", "ID_FMP_CATEGORY_32", "Divine", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -253,7 +253,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5605",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5605",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5605",
     categories: ["Strike of Unmaking", "ID_FMP_POWER_5605", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_219", "Doomguard Marauder", "ID_FMP_CATEGORY_36", "martial", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_FREE_ACTION", "Free Action", "12"]
   });
   byID[te.id] = te;
@@ -263,7 +263,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5607",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5607",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5607",
     categories: ["Striker's Gate", "ID_FMP_POWER_5607", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_220", "Gatecrasher", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_19", "teleportation", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;
@@ -273,7 +273,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5608",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5608",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5608",
     categories: ["Trickster's Gate", "ID_FMP_POWER_5608", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_220", "Gatecrasher", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_19", "teleportation", "ID_INTERNAL_CATEGORY_MOVE_ACTION", "Move Action", "12"]
   });
   byID[te.id] = te;
@@ -283,7 +283,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_5659",
     source: "Manual of the Planes",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5659",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=5659",
     categories: ["Underworld Gambit", "ID_FMP_POWER_5659", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_224", "Shadow Captain", "ID_FMP_CATEGORY_12", "Necrotic", "ID_FMP_CATEGORY_38", "Shadow", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"]
   });
   byID[te.id] = te;

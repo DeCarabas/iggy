@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_212",
     source: "Dragon Magazine 367",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=212",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=212",
     categories: ["Curseborn", "ID_FMP_PARAGON_PATH_212"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1045"]);

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_270",
     source: "Dragon Magazine 375",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=270",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=270",
     categories: ["Imprint Anaxim", "ID_FMP_RITUAL_270"]
   });
   byID[te.id] = te;

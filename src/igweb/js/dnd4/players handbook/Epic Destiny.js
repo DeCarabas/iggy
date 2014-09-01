@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_13",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=13",
     categories: ["Archmage", "ID_FMP_EPIC_DESTINY_13"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_284"]);
@@ -29,7 +29,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_58",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=58",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=58",
     categories: ["Deadly Trickster", "ID_FMP_EPIC_DESTINY_58"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_299"]);
@@ -45,7 +45,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_54",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=54",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=54",
     categories: ["Demigod", "ID_FMP_EPIC_DESTINY_54"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_527"]);
@@ -61,7 +61,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_56",
     source: "Player's Handbook",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=56",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=56",
     categories: ["Eternal Seeker", "ID_FMP_EPIC_DESTINY_56"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_536"]);

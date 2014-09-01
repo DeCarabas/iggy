@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_387",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=387",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=387",
     categories: ["Champion of Prophecy", "ID_FMP_EPIC_DESTINY_387"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1644"]);
@@ -30,7 +30,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_388",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=388",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=388",
     categories: ["Dispossesed Champion", "ID_FMP_EPIC_DESTINY_388"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1648"]);
@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_389",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=389",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=389",
     categories: ["Mourning Savior", "ID_FMP_EPIC_DESTINY_389"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1651"]);
@@ -62,7 +62,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_390",
     source: "Eberron Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=390",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=390",
     categories: ["Sublime Flame", "ID_FMP_EPIC_DESTINY_390"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1654"]);

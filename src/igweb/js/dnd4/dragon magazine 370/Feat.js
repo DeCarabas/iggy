@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1071",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1071",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1071",
     categories: ["Delthuntle Sailor", "ID_FMP_FEAT_1071"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_LANGUAGE_6"]);
@@ -28,7 +28,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1073",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1073",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1073",
     categories: ["Earthspur Deepminer", "ID_FMP_FEAT_1073"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_LANGUAGE_18"]);
@@ -44,7 +44,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1075",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1075",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1075",
     categories: ["Moray Militia", "ID_FMP_FEAT_1075"]
   });
   byID[te.id] = te;
@@ -54,7 +54,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1074",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1074",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1074",
     categories: ["New Sarshel Enforcer", "ID_FMP_FEAT_1074"],
     rules: function(model) {
       model.statadd("Initiative Misc", 2, "Feat");
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1076",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1076",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1076",
     categories: ["Snowdown Courier", "ID_FMP_FEAT_1076"],
     rules: function(model) {
       model.statadd("Streetwise Misc", 2, "Feat");
@@ -80,7 +80,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_1072",
     source: "Dragon Magazine 370",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1072",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=1072",
     categories: ["Yuirwood Feyfriend", "ID_FMP_FEAT_1072"],
     rules: function(model) {
       model.statadd("Arcana Misc", 2, "Feat");

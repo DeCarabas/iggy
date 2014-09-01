@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_133",
     source: "Dragon Magazine 364",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=133",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=133",
     categories: ["Pack Master", "ID_FMP_PARAGON_PATH_133"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_797"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_132",
     source: "Dragon Magazine 364",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=132",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=132",
     categories: ["Warforged Lifeseeker", "ID_FMP_PARAGON_PATH_132"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_794"]);

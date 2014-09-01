@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_595",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=595",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=595",
     categories: ["Angharradh's Favor", "ID_FMP_FEAT_595", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3583"]);
@@ -26,7 +26,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_596",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=596",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=596",
     categories: ["Avowed Dragonfoe", "ID_FMP_FEAT_596"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* against dragons */ return 1; });
@@ -40,7 +40,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_597",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=597",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=597",
     categories: ["Berronar's Salve", "ID_FMP_FEAT_597", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3584"]);
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_650",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=650",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=650",
     categories: ["Blade Initiate", "ID_FMP_FEAT_650", "ID_INTERNAL_CATEGORY_MULTICLASS_SWORDMAGE", "Multiclass Swordmage", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_ARCANA"]);
@@ -69,7 +69,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_598",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=598",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=598",
     categories: ["Blessing of Silvanus", "ID_FMP_FEAT_598", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3586"]);
@@ -82,7 +82,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_599",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=599",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=599",
     categories: ["Broken Shackles", "ID_FMP_FEAT_599"],
     rules: function(model) {
       model.statadd("Will Defense", 1, "Feat");
@@ -96,7 +96,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_600",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=600",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=600",
     categories: ["Chauntea's Blessing", "ID_FMP_FEAT_600", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3587"]);
@@ -109,7 +109,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_601",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=601",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=601",
     categories: ["Clutch of Darkness", "ID_FMP_FEAT_601"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_636",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=636",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=636",
     categories: ["Demonweb Spiral", "ID_FMP_FEAT_636"]
   });
   byID[te.id] = te;
@@ -133,7 +133,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_637",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=637",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=637",
     categories: ["Distant Swordbond", "ID_FMP_FEAT_637"]
   });
   byID[te.id] = te;
@@ -143,7 +143,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_638",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=638",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=638",
     categories: ["Double Aegis", "ID_FMP_FEAT_638"]
   });
   byID[te.id] = te;
@@ -153,7 +153,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_648",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=648",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=648",
     categories: ["Double Manifestation", "ID_FMP_FEAT_648"]
   });
   byID[te.id] = te;
@@ -163,7 +163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_602",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=602",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=602",
     categories: ["Elemental Assault", "ID_FMP_FEAT_602"],
     rules: function(model) {
       model.statadd("melee basic:damage", function() { /* if the attack is granted by aegis of assault */ return 3; });
@@ -176,7 +176,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_603",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=603",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=603",
     categories: ["Escalating Assault", "ID_FMP_FEAT_603"]
   });
   byID[te.id] = te;
@@ -186,7 +186,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_604",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=604",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=604",
     categories: ["Extra Manifestation", "ID_FMP_FEAT_604"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Extra Manifestation", {
@@ -201,7 +201,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_II",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_II",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_EXTRA_MANIFESTATION_II",
     categories: ["Extra Manifestation II", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_II"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Extra Manifestation II", {
@@ -216,7 +216,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_III",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_III",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_EXTRA_MANIFESTATION_III",
     categories: ["Extra Manifestation III", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_III"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Extra Manifestation III", {
@@ -231,7 +231,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_IV",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_IV",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_EXTRA_MANIFESTATION_IV",
     categories: ["Extra Manifestation IV", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_IV"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Extra Manifestation IV", {
@@ -246,7 +246,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_V",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_V",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_EXTRA_MANIFESTATION_V",
     categories: ["Extra Manifestation V", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_V"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Extra Manifestation V", {
@@ -261,7 +261,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VI",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_VI",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_EXTRA_MANIFESTATION_VI",
     categories: ["Extra Manifestation VI", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VI"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Extra Manifestation VI", {
@@ -276,7 +276,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VII",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_VII",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_EXTRA_MANIFESTATION_VII",
     categories: ["Extra Manifestation VII", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VII"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Extra Manifestation VII", {
@@ -291,7 +291,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VIII",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_VIII",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=FEAT_EXTRA_MANIFESTATION_VIII",
     categories: ["Extra Manifestation VIII", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VIII"],
     rules: function(model) {
       model.select('Racial Trait', 1, "Extra Manifestation VIII", {
@@ -306,7 +306,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_605",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=605",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=605",
     categories: ["Eyes of Selûne", "ID_FMP_FEAT_605", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3589"]);
@@ -319,7 +319,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_606",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=606",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=606",
     categories: ["Fleetness of Mielikki", "ID_FMP_FEAT_606", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3591"]);
@@ -332,7 +332,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_607",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=607",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=607",
     categories: ["Ghostwise Heritage", "ID_FMP_FEAT_607"]
   });
   byID[te.id] = te;
@@ -342,7 +342,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_608",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=608",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=608",
     categories: ["Glittergold's Gambit", "ID_FMP_FEAT_608", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3593"]);
@@ -355,7 +355,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_609",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=609",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=609",
     categories: ["Gold Dwarf Pride", "ID_FMP_FEAT_609"]
   });
   byID[te.id] = te;
@@ -365,7 +365,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_610",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=610",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=610",
     categories: ["Gond's Craft", "ID_FMP_FEAT_610", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3594"]);
@@ -378,7 +378,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_611",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=611",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=611",
     categories: ["Ilmater's Martyrdom", "ID_FMP_FEAT_611", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3596"]);
@@ -391,7 +391,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_639",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=639",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=639",
     categories: ["Improved Darkspiral Aura", "ID_FMP_FEAT_639"]
   });
   byID[te.id] = te;
@@ -401,7 +401,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_612",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=612",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=612",
     categories: ["Improved Swordbond", "ID_FMP_FEAT_612"]
   });
   byID[te.id] = te;
@@ -411,7 +411,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_613",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=613",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=613",
     categories: ["Intelligent Blademaster", "ID_FMP_FEAT_613"],
     rules: function(model) {
       model.statadd("melee basic,melee weapon:key ability", "int");
@@ -425,7 +425,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_614",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=614",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=614",
     categories: ["Kelemvor's Judgment", "ID_FMP_FEAT_614", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3598"]);
@@ -438,7 +438,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_615",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=615",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=615",
     categories: ["Manifest Resistance", "ID_FMP_FEAT_615"],
     rules: function(model) {
       model.statadd("_stormsoul resist", 5);
@@ -457,7 +457,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_640",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=640",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=640",
     categories: ["Master of Fire and Darkness", "ID_FMP_FEAT_640"]
   });
   byID[te.id] = te;
@@ -467,7 +467,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_641",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=641",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=641",
     categories: ["Merciless Killer", "ID_FMP_FEAT_641"],
     rules: function(model) {
       model.statadd("damage rolls", function() { /* against bloodied foes who are granting combat advantage to you */ return 5; });
@@ -480,7 +480,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_616",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=616",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=616",
     categories: ["Moon Elf Resilience", "ID_FMP_FEAT_616"]
   });
   byID[te.id] = te;
@@ -490,7 +490,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_642",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=642",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=642",
     categories: ["Moongleam Oath", "ID_FMP_FEAT_642"],
     rules: function(model) {
       model.statadd("attack rolls", function() { /* against creatures that have the shadow origin */ return 1; });
@@ -504,7 +504,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_617",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=617",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=617",
     categories: ["Oghma's Recall", "ID_FMP_FEAT_617", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3603"]);
@@ -517,7 +517,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_618",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=618",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=618",
     categories: ["Power of Amaunator", "ID_FMP_FEAT_618", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3608"]);
@@ -530,7 +530,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_619",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=619",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=619",
     categories: ["Retributive Shield", "ID_FMP_FEAT_619"]
   });
   byID[te.id] = te;
@@ -540,7 +540,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_620",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=620",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=620",
     categories: ["Righteous Rage of Tempus", "ID_FMP_FEAT_620", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3609"]);
@@ -553,7 +553,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_621",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=621",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=621",
     categories: ["Ruthless Hunter", "ID_FMP_FEAT_621"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -567,7 +567,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_622",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=622",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=622",
     categories: ["Scion of the Gods", "ID_FMP_FEAT_622"],
     rules: function(model) {
       model.statadd("Fortitude Defense", 1, "Feat");
@@ -581,7 +581,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_623",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=623",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=623",
     categories: ["Sheela Peryroyl's Gift", "ID_FMP_FEAT_623", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3610"]);
@@ -594,7 +594,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_624",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=624",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=624",
     categories: ["Shield of Shadows", "ID_FMP_FEAT_624"],
     rules: function(model) {
       model.statadd("Reflex Defense", function() { /* while within the effect of your cloud of darkness power */ return 2; });
@@ -607,7 +607,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_625",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=625",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=625",
     categories: ["Shield the Fallen", "ID_FMP_FEAT_625"]
   });
   byID[te.id] = te;
@@ -617,7 +617,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_643",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=643",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=643",
     categories: ["Shocking Flame", "ID_FMP_FEAT_643"],
     rules: function(model) {
       model.statadd("Shocking Flame", 2);
@@ -632,7 +632,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_644",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=644",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=644",
     categories: ["Stoneguard", "ID_FMP_FEAT_644"],
     rules: function(model) {
       model.statadd("AC", function() { /* against ranged attacks while manifesting earthsoul */ return 2; });
@@ -645,7 +645,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_645",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=645",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=645",
     categories: ["Stormrider", "ID_FMP_FEAT_645"],
     rules: function(model) {
       model.statadd("Speed", function() { /* when you are manifesting windsoul or watersoul */ return 1; }, "Feat");
@@ -658,7 +658,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_626",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=626",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=626",
     categories: ["Stubborn Survivor", "ID_FMP_FEAT_626"],
     rules: function(model) {
       model.statadd("Saving Throws", function() { /* whenever you have no action points remaining */ return 2; });
@@ -671,7 +671,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_627",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=627",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=627",
     categories: ["Student of Sword Magic", "ID_FMP_FEAT_627"],
     rules: function(model) {
       model.select('Power', 1, "Student of Sword Magic", {
@@ -704,7 +704,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_651",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=651",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=651",
     categories: ["Student of the Plague", "ID_FMP_FEAT_651", "ID_INTERNAL_CATEGORY_MULTICLASS_SPELLSCARRED", "Multiclass Spellscarred", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.select('class feature', 1, "Student of the Plague", {
@@ -720,7 +720,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_628",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=628",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=628",
     categories: ["Sun Elf Grace", "ID_FMP_FEAT_628"]
   });
   byID[te.id] = te;
@@ -730,7 +730,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_629",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=629",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=629",
     categories: ["Sune's Touch", "ID_FMP_FEAT_629", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3611"]);
@@ -743,7 +743,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_630",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=630",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=630",
     categories: ["Torm's Justice", "ID_FMP_FEAT_630", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3612"]);
@@ -756,7 +756,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_649",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=649",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=649",
     categories: ["Total Aegis", "ID_FMP_FEAT_649"]
   });
   byID[te.id] = te;
@@ -766,7 +766,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_631",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=631",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=631",
     categories: ["Tymora's Coin", "ID_FMP_FEAT_631", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3613"]);
@@ -779,7 +779,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_646",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=646",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=646",
     categories: ["Venomous Heritage", "ID_FMP_FEAT_646"],
     rules: function(model) {
       model.statadd("resist:poison", 5, "resist");
@@ -793,7 +793,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_632",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=632",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=632",
     categories: ["Versatile Resistance", "ID_FMP_FEAT_632"],
     rules: function(model) {
       model.statadd("resist:fire", 5, "resist");
@@ -808,7 +808,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_647",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=647",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=647",
     categories: ["War Wizardry", "ID_FMP_FEAT_647"]
   });
   byID[te.id] = te;
@@ -818,7 +818,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_635",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=635",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=635",
     categories: ["Waukeen's Silver Tongue", "ID_FMP_FEAT_635", "ID_INTERNAL_CATEGORY_DIVINITY", "Divinity"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_3614"]);
@@ -831,7 +831,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_633",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=633",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=633",
     categories: ["Wild Elf Luck", "ID_FMP_FEAT_633"]
   });
   byID[te.id] = te;
@@ -841,7 +841,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Feat",
     id: "ID_FMP_FEAT_634",
     source: "Forgotten Realms Player's Guide",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=634",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/feat.aspx?id=634",
     categories: ["Wood Elf Agility", "ID_FMP_FEAT_634"]
   });
   byID[te.id] = te;

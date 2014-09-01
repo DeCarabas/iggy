@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Epic Destiny",
     id: "ID_FMP_EPIC_DESTINY_464",
     source: "Dragon Magazine 378",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=464",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/epicdestiny.aspx?id=464",
     categories: ["Bahamut's Vessel", "ID_FMP_EPIC_DESTINY_464"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1914"]);

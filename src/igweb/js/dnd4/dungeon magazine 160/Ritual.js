@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_179",
     source: "Dungeon Magazine 160",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=179",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=179",
     categories: ["Seal Portal", "ID_FMP_RITUAL_179"]
   });
   byID[te.id] = te;

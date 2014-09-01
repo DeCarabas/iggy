@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_INTERNAL_PARAGON_PATH_PARAGON_HYBRID",
     source: "Core",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=PATH_PARAGON_HYBRID",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=PATH_PARAGON_HYBRID",
     categories: ["Paragon Hybrid", "ID_INTERNAL_PARAGON_PATH_PARAGON_HYBRID"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_FEAT_PARAGON_HYBRID_TALENT"]);

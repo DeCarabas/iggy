@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_9272",
     source: "Adventurer's Vault 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=9272",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=9272",
     categories: ["Ally's Opportunity", "ID_FMP_POWER_9272", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_INTERNAL_CATEGORY_FREE_ACTION", "Free Action"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_9276",
     source: "Adventurer's Vault 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=9276",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=9276",
     categories: ["Blood of the Akarot", "ID_FMP_POWER_9276", "ID_INTERNAL_CATEGORY_AT-WILL_USAGE", "At-Will Usage", "ID_FMP_CATEGORY_9", "Healing", "ID_INTERNAL_CATEGORY_FREE_ACTION", "Free Action"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_9273",
     source: "Adventurer's Vault 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=9273",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=9273",
     categories: ["Hand of Salzacas", "ID_FMP_POWER_9273", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_INTERNAL_CATEGORY_FREE_ACTION", "Free Action"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_9274",
     source: "Adventurer's Vault 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=9274",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=9274",
     categories: ["Strength of Ayrkashna", "ID_FMP_POWER_9274", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CATEGORY_9", "Healing", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_9275",
     source: "Adventurer's Vault 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=9275",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=9275",
     categories: ["Tinkerer's Disjunction", "ID_FMP_POWER_9275", "ID_INTERNAL_CATEGORY_AT-WILL_USAGE", "At-Will Usage", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Power",
     id: "ID_FMP_POWER_9277",
     source: "Adventurer's Vault 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=9277",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/power.aspx?id=9277",
     categories: ["Voice of the Akarot", "ID_FMP_POWER_9277", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CATEGORY_6", "Charm", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"]
   });
   byID[te.id] = te;

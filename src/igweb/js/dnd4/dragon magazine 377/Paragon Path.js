@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_460",
     source: "Dragon Magazine 377",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=460",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=460",
     categories: ["Familiar Bloodsmith", "ID_FMP_PARAGON_PATH_460"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1903"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_459",
     source: "Dragon Magazine 377",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=459",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=459",
     categories: ["Vengeful Crusader", "ID_FMP_PARAGON_PATH_459"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1898"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_458",
     source: "Dragon Magazine 377",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=458",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=458",
     categories: ["Watcher of Vengeance", "ID_FMP_PARAGON_PATH_458"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1895"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_457",
     source: "Dragon Magazine 377",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=457",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=457",
     categories: ["Zealous Demagogue", "ID_FMP_PARAGON_PATH_457"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1892"]);

@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_305",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=305",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=305",
     categories: ["Decipher Script", "ID_FMP_RITUAL_305"]
   });
   byID[te.id] = te;
@@ -23,7 +23,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_306",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=306",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=306",
     categories: ["Embalm", "ID_FMP_RITUAL_306"]
   });
   byID[te.id] = te;
@@ -33,7 +33,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_307",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=307",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=307",
     categories: ["Feign Death", "ID_FMP_RITUAL_307"]
   });
   byID[te.id] = te;
@@ -43,7 +43,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_308",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=308",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=308",
     categories: ["Forge Armor", "ID_FMP_RITUAL_308"]
   });
   byID[te.id] = te;
@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_309",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=309",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=309",
     categories: ["Forge Weapon", "ID_FMP_RITUAL_309"]
   });
   byID[te.id] = te;
@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_310",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=310",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=310",
     categories: ["Fortify Beast", "ID_FMP_RITUAL_310"]
   });
   byID[te.id] = te;
@@ -73,7 +73,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_311",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=311",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=311",
     categories: ["Handle Steed", "ID_FMP_RITUAL_311"]
   });
   byID[te.id] = te;
@@ -83,7 +83,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_312",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=312",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=312",
     categories: ["Hidden Pocket", "ID_FMP_RITUAL_312"]
   });
   byID[te.id] = te;
@@ -93,7 +93,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_313",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=313",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=313",
     categories: ["Long-Distance Runner", "ID_FMP_RITUAL_313"]
   });
   byID[te.id] = te;
@@ -103,7 +103,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_314",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=314",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=314",
     categories: ["Master Artisan", "ID_FMP_RITUAL_314"]
   });
   byID[te.id] = te;
@@ -113,7 +113,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_315",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=315",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=315",
     categories: ["Peerless Exploration", "ID_FMP_RITUAL_315"]
   });
   byID[te.id] = te;
@@ -123,7 +123,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_316",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=316",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=316",
     categories: ["Reliable Balance", "ID_FMP_RITUAL_316"]
   });
   byID[te.id] = te;
@@ -133,7 +133,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_317",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=317",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=317",
     categories: ["Survivor's Assurance", "ID_FMP_RITUAL_317"]
   });
   byID[te.id] = te;
@@ -143,7 +143,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_318",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=318",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=318",
     categories: ["Survivor's Preparation", "ID_FMP_RITUAL_318"]
   });
   byID[te.id] = te;
@@ -153,7 +153,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_319",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=319",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=319",
     categories: ["Temporary Fix", "ID_FMP_RITUAL_319"]
   });
   byID[te.id] = te;
@@ -163,7 +163,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_320",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=320",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=320",
     categories: ["Thorough Search", "ID_FMP_RITUAL_320"]
   });
   byID[te.id] = te;
@@ -173,7 +173,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_321",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=321",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=321",
     categories: ["Tracker's Eye", "ID_FMP_RITUAL_321"]
   });
   byID[te.id] = te;
@@ -183,7 +183,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_322",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=322",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=322",
     categories: ["Travel Sense", "ID_FMP_RITUAL_322"]
   });
   byID[te.id] = te;
@@ -193,7 +193,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_323",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=323",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=323",
     categories: ["Uncanny Strength", "ID_FMP_RITUAL_323"]
   });
   byID[te.id] = te;
@@ -203,7 +203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_324",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=324",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=324",
     categories: ["Use Scroll", "ID_FMP_RITUAL_324"]
   });
   byID[te.id] = te;
@@ -213,7 +213,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_325",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=325",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=325",
     categories: ["Warded Campsite", "ID_FMP_RITUAL_325"]
   });
   byID[te.id] = te;
@@ -223,7 +223,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_326",
     source: "Martial Power 2",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=326",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=326",
     categories: ["Word on the Street", "ID_FMP_RITUAL_326"]
   });
   byID[te.id] = te;

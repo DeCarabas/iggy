@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_517",
     source: "Dragon Magazine 376",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=517",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=517",
     categories: ["Avenging Haunt", "ID_FMP_PARAGON_PATH_517"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1869"]);
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_453",
     source: "Dragon Magazine 376",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=453",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=453",
     categories: ["Blessed Psalmist", "ID_FMP_PARAGON_PATH_453"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1881"]);
@@ -49,7 +49,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_454",
     source: "Dragon Magazine 376",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=454",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=454",
     categories: ["Daring Blade", "ID_FMP_PARAGON_PATH_454"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1884"]);
@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_455",
     source: "Dragon Magazine 376",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=455",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=455",
     categories: ["Mythic Skald", "ID_FMP_PARAGON_PATH_455"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1886"]);
@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Paragon Path",
     id: "ID_FMP_PARAGON_PATH_456",
     source: "Dragon Magazine 376",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=456",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/paragonpath.aspx?id=456",
     categories: ["Resourceful Magician", "ID_FMP_PARAGON_PATH_456"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1889"]);

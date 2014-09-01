@@ -13,7 +13,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Ritual",
     id: "ID_FMP_RITUAL_304",
     source: "Dragon Magazine 382",
-    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=304",
+    compendiumUrl: "http://www.wizards.com/dndinsider/compendium/ritual.aspx?id=304",
     categories: ["Familiar Mount", "ID_FMP_RITUAL_304"]
   });
   byID[te.id] = te;
