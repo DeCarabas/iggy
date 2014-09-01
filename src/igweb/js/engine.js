@@ -133,6 +133,23 @@ define(['./log'],function(log) {
       alias = alias.toLowerCase();
       this._stats[alias] = this._stats[stat] || (this._stats[stat] = new Stat());
     },
+    dumpChoices: function() {
+      log.group("Choices");
+      Object.keys(this._choices).forEach(function(choiceType) {
+        log.group(choiceType);
+        var choices = this._choices[choiceType];
+        Object.keys(choices).forEach(function(choiceId) {
+          var choice = choices[choiceId];
+          var selection = choice.choice
+            ? "[" + choice.choice.type + "]:[" + choice.choice.name + "]"
+            : "<null>";
+
+          log.log("["+choice.type+"] ("+choice.name+"): " + selection);
+        }.bind(this));
+        log.groupEnd(choiceType);
+      }.bind(this));
+      log.groupEnd("Choices");
+    },
     getChoices: function(type) {
       var tcs = this._choices[type];
       if (!tcs) { return []; }

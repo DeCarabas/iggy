@@ -25,7 +25,7 @@ define(
         },
 
         dumpChoices: function dumpChoices() {
-          
+          model.dumpChoices();
         }
     };
 });
