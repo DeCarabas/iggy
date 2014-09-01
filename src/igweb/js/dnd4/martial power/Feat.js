@@ -126,7 +126,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=911",
     categories: ["Battle Awareness", "ID_FMP_FEAT_911", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Battle Awareness", {
         filter: function(model, element) { return element.hasCategory("Fighter Class"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_FIGHTER"]);
@@ -1175,7 +1175,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=915",
     categories: ["Inspiring Leader", "ID_FMP_FEAT_915", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Inspiring Leader", {
         filter: function(model, element) { return element.hasCategory("Warlord Class"); }
       });
       model.statadd("ALLY.Action Point", "Inspiring Leader:Once per encounter, when an ally who can see you spends an action point to take an extra action, that ally also gains temporary hit points equal to 1 + onehalf your level");
@@ -1207,7 +1207,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=886",
     categories: ["Invigorating Exploit", "ID_FMP_FEAT_886"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Invigorating Exploit", {
         filter: function(model, element) { return (element.hasCategory("martial") && element.hasCategory("encounter")); }
       });
     }
@@ -1508,7 +1508,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=893",
     categories: ["Practiced Reliability", "ID_FMP_FEAT_893"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Practiced Reliability", {
         filter: function(model, element) { return element.hasCategory("Practiced Reliability"); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1648,7 +1648,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=897",
     categories: ["Rattling Exploit", "ID_FMP_FEAT_897"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Rattling Exploit", {
         filter: function(model, element) { return (element.hasCategory("martial") && element.hasCategory("encounter")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1849,7 +1849,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=917",
     categories: ["Sly Dodge", "ID_FMP_FEAT_917", "ID_INTERNAL_CATEGORY_MULTICLASS_ROGUE", "Multiclass Rogue", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Sly Dodge", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_SKILL_3") || element.hasCategory("ID_FMP_SKILL_14")); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_ROGUE"]);
@@ -2019,7 +2019,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=918",
     categories: ["Tactical Leader", "ID_FMP_FEAT_918", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Tactical Leader", {
         filter: function(model, element) { return element.hasCategory("Warlord Class"); }
       });
       model.statadd("ALLY.Action Point", "Tactical Leader:Once per encounter, when an ally you can see spends an action point to make an attack, that ally gains a +1 bonus to the attack roll");
@@ -2117,7 +2117,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=919",
     categories: ["Two-Blade Warrior", "ID_FMP_FEAT_919", "ID_INTERNAL_CATEGORY_MULTICLASS_RANGER", "Multiclass Ranger", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Two-Blade Warrior", {
         filter: function(model, element) { return element.hasCategory("Ranger Class"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_AMBIDEXTROUS"]);
@@ -2210,34 +2210,34 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=909",
     categories: ["Whirlwind Sneak Attack", "ID_FMP_FEAT_909"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Whirlwind Sneak Attack", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") && element.hasCategory("encounter")); }
       });
     }

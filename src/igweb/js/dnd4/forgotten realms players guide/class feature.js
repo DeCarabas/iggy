@@ -60,7 +60,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Arcane Fundamentals", "ID_FMP_CLASS_FEATURE_845", "11"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Arcane Fundamentals", {
         filter: function(model, element) { return element.hasCategory("Arcane Fundamentals"); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -594,11 +594,11 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Plague Mastery", "ID_FMP_CLASS_FEATURE_559", "11"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Plague Mastery", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_PSEUDO_CLASS_216") && element.hasCategory("7") && element.hasCategory("encounter")); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_3559"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Plague Mastery", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_PSEUDO_CLASS_216") && element.hasCategory("19") && element.hasCategory("daily")); }
       });
     }
@@ -827,7 +827,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Swordmage Aegis", "ID_FMP_CLASS_FEATURE_518", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Swordmage Aegis", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_518"); }
       });
     }

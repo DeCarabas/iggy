@@ -16,14 +16,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Ardent", "ID_FMP_HYBRID_CLASS_588"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_ARDENT"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_588");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Ardent", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_588 Defense"); }
       });
     }
@@ -38,14 +38,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Artificer", "ID_FMP_HYBRID_CLASS_536"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_ARTIFICER"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_536");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Artificer", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_536 Defense"); }
       });
     }
@@ -60,14 +60,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Avenger", "ID_FMP_HYBRID_CLASS_439"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_AVENGER"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_439");
       model.statadd("_LEVEL-ONE-HPS", 7);
       model.statadd("_PER-LEVEL-HPS", 3);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Avenger", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_439 Defense"); }
       });
     }
@@ -82,7 +82,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Barbarian", "ID_FMP_HYBRID_CLASS_440"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_BARBARIAN"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_440");
@@ -102,17 +102,17 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Bard", "ID_FMP_HYBRID_CLASS_441"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_BARD"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_441");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Bard", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_441 Defense"); }
       });
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Hybrid Bard", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_441"); }
       });
     }
@@ -127,7 +127,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Battlemind", "ID_FMP_HYBRID_CLASS_590"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_BATTLEMIND"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_590");
@@ -147,7 +147,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Cleric", "ID_FMP_HYBRID_CLASS_352"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_CLERIC"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_352");
@@ -167,14 +167,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Druid", "ID_FMP_HYBRID_CLASS_442"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_DRUID"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_442");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Druid", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_442 Defense"); }
       });
     }
@@ -189,7 +189,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Fighter", "ID_FMP_HYBRID_CLASS_353"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_FIGHTER"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_353");
@@ -209,14 +209,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Invoker", "ID_FMP_HYBRID_CLASS_443"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_INVOKER"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_443");
       model.statadd("_LEVEL-ONE-HPS", 5);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Invoker", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_443 Defense"); }
       });
     }
@@ -231,14 +231,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Monk", "ID_FMP_HYBRID_CLASS_609"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_MONK"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_609");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Monk", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_609 Defense"); }
       });
       model.statadd("_WeaponsAsImplements", 1);
@@ -254,14 +254,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Paladin", "ID_FMP_HYBRID_CLASS_354"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_PALADIN"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_354");
       model.statadd("_LEVEL-ONE-HPS", 7);
       model.statadd("_PER-LEVEL-HPS", 3);
       model.statadd("Healing Surges", 5);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Paladin", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_354 Defense"); }
       });
     }
@@ -276,7 +276,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Psion", "ID_FMP_HYBRID_CLASS_610"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_PSION"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_610");
@@ -296,17 +296,17 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Ranger", "ID_FMP_HYBRID_CLASS_355"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_RANGER"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_355");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Ranger", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_355 Defense"); }
       });
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Hybrid Ranger", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_355"); }
       });
     }
@@ -321,7 +321,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Rogue", "ID_FMP_HYBRID_CLASS_356"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_ROGUE"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_356");
@@ -329,7 +329,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
       model.statadd("Reflex Defense Class Bonus", 1);
-      model.select('Skill Training', 2, {
+      model.select('Skill Training', 2, "Hybrid Rogue", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_356"); }
       });
     }
@@ -344,7 +344,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Runepriest", "ID_FMP_HYBRID_CLASS_611"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_RUNEPRIEST"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_611");
@@ -364,14 +364,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Seeker", "ID_FMP_HYBRID_CLASS_612"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_SEEKER"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_612");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Seeker", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_612 Defense"); }
       });
     }
@@ -386,14 +386,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Shaman", "ID_FMP_HYBRID_CLASS_444"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_SHAMAN"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_444");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Shaman", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_444 Defense"); }
       });
     }
@@ -408,7 +408,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Sorcerer", "ID_FMP_HYBRID_CLASS_445"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_SORCERER"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_445");
@@ -428,7 +428,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Swordmage", "ID_FMP_HYBRID_CLASS_357"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_SWORDMAGE"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_357");
@@ -448,14 +448,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Warden", "ID_FMP_HYBRID_CLASS_446"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_WARDEN"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_446");
       model.statadd("_LEVEL-ONE-HPS", 8);
       model.statadd("_PER-LEVEL-HPS", 3);
       model.statadd("Healing Surges", 4);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Warden", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_446 Defense"); }
       });
     }
@@ -470,14 +470,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Warlock", "ID_FMP_HYBRID_CLASS_358"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_WARLOCK"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_358");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Warlock", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_358 Defense"); }
       });
     }
@@ -492,14 +492,14 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Warlord", "ID_FMP_HYBRID_CLASS_359"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_WARLORD"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_359");
       model.statadd("_LEVEL-ONE-HPS", 6);
       model.statadd("_PER-LEVEL-HPS", 2);
       model.statadd("Healing Surges", 3);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Warlord", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_HYBRID_CLASS_359 Defense"); }
       });
     }
@@ -514,7 +514,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Hybrid Wizard", "ID_FMP_HYBRID_CLASS_360"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_WIZARD"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power At-Will 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_HYBRID_CLASS_360");

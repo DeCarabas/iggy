@@ -186,7 +186,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Psionic Power",
     categories: ["Armor of Adaptable Resistance +1", "ID_FMP_MAGIC_ITEM_9570"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Armor of Adaptable Resistance +1", {
         filter: function(model, element) { return element.hasCategory("Armor of Adaptable Resistance +1"); }
       });
       model.statadd("Armor Class", 1, "Enhancement");
@@ -202,7 +202,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Psionic Power",
     categories: ["Armor of Adaptable Resistance +2", "ID_FMP_MAGIC_ITEM_9571"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Armor of Adaptable Resistance +2", {
         filter: function(model, element) { return element.hasCategory("Armor of Adaptable Resistance +2"); }
       });
       model.statadd("Armor Class", 2, "Enhancement");
@@ -218,7 +218,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Psionic Power",
     categories: ["Armor of Adaptable Resistance +3", "ID_FMP_MAGIC_ITEM_9572"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Armor of Adaptable Resistance +3", {
         filter: function(model, element) { return element.hasCategory("Armor of Adaptable Resistance +3"); }
       });
       model.statadd("Armor Class", 3, "Enhancement");
@@ -234,7 +234,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Psionic Power",
     categories: ["Armor of Adaptable Resistance +4", "ID_FMP_MAGIC_ITEM_9573"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Armor of Adaptable Resistance +4", {
         filter: function(model, element) { return element.hasCategory("Armor of Adaptable Resistance +4"); }
       });
       model.statadd("Armor Class", 4, "Enhancement");
@@ -250,7 +250,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Psionic Power",
     categories: ["Armor of Adaptable Resistance +5", "ID_FMP_MAGIC_ITEM_9574"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Armor of Adaptable Resistance +5", {
         filter: function(model, element) { return element.hasCategory("Armor of Adaptable Resistance +5"); }
       });
       model.statadd("Armor Class", 5, "Enhancement");
@@ -266,7 +266,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Psionic Power",
     categories: ["Armor of Adaptable Resistance +6", "ID_FMP_MAGIC_ITEM_9575"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Armor of Adaptable Resistance +6", {
         filter: function(model, element) { return element.hasCategory("Armor of Adaptable Resistance +6"); }
       });
       model.statadd("Armor Class", 6, "Enhancement");

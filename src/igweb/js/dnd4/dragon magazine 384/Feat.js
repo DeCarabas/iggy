@@ -266,7 +266,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2728",
     categories: ["Fey-Minded", "ID_FMP_FEAT_2728"],
     rules: function(model) {
-      model.select('Language', 1, {
+      model.select('Language', 1, "Fey-Minded", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_LANGUAGE_4") || element.hasCategory("ID_FMP_LANGUAGE_19")) || element.hasCategory("ID_FMP_LANGUAGE_20")); }
       });
     }

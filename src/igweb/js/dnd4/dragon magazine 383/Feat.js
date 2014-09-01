@@ -447,7 +447,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Skill Swap", "ID_FMP_FEAT_2580"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.DropRule
-      model.select('Power', 1, {
+      model.select('Power', 1, "Skill Swap", {
         filter: function(model, element) { return (true /* NYI: Filter: $$LEVEL */ && element.hasCategory("Skill Power")); }
       });
     }

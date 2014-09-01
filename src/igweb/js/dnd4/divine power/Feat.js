@@ -511,7 +511,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1627",
     categories: ["Divine Channeler", "ID_FMP_FEAT_1627", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Divine Channeler", {
         filter: function(model, element) { return (true /* NYI: Filter: $$NOT_CLASS */ && element.hasCategory("ID_FMP_CLASS_FEATURE_324")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -528,7 +528,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_DIVINE_CHANNELER_(AVENGER)",
     categories: ["Divine Channeler (Avenger)", "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(AVENGER)", "ID_INTERNAL_CATEGORY_MULTICLASS_AVENGER", "Multiclass Avenger", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Divine Channeler (Avenger)", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_129") && element.hasCategory("ID_FMP_CLASS_FEATURE_324")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -547,7 +547,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_DIVINE_CHANNELER_(CLERIC)",
     categories: ["Divine Channeler (Cleric)", "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(CLERIC)", "ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC", "Multiclass Cleric", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Divine Channeler (Cleric)", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_2") && element.hasCategory("ID_FMP_CLASS_FEATURE_324")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -566,7 +566,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_DIVINE_CHANNELER_(INVOKER)",
     categories: ["Divine Channeler (Invoker)", "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(INVOKER)", "ID_INTERNAL_CATEGORY_MULTICLASS_INVOKER", "Multiclass Invoker", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Divine Channeler (Invoker)", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_127") && element.hasCategory("ID_FMP_CLASS_FEATURE_324")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -585,7 +585,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_DIVINE_CHANNELER_(PALADIN)",
     categories: ["Divine Channeler (Paladin)", "ID_INTERNAL_FEAT_DIVINE_CHANNELER_(PALADIN)", "ID_INTERNAL_CATEGORY_MULTICLASS_PALADIN", "Multiclass Paladin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Divine Channeler (Paladin)", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_4") && element.hasCategory("ID_FMP_CLASS_FEATURE_324")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -696,7 +696,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1629",
     categories: ["Divine Secretkeeper", "ID_FMP_FEAT_1629", "ID_INTERNAL_CATEGORY_MULTICLASS_INVOKER", "Multiclass Invoker", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Divine Secretkeeper", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_SKILL_2") || element.hasCategory("ID_FMP_SKILL_11")) || element.hasCategory("ID_FMP_SKILL_18")); }
       });
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_683"]);
@@ -1048,7 +1048,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1630",
     categories: ["Hero of Faith", "ID_FMP_FEAT_1630", "ID_INTERNAL_CATEGORY_MULTICLASS_AVENGER", "Multiclass Avenger", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Hero of Faith", {
         filter: function(model, element) { return element.hasCategory("Avenger Class"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_3069"]);
@@ -2094,7 +2094,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1552",
     categories: ["Religious Dabbler", "ID_FMP_FEAT_1552"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Religious Dabbler", {
         filter: function(model, element) { return (true /* NYI: Filter: $$NOT_CLASS */ && element.hasCategory("at-will") && element.hasCategory("1") && element.hasCategory("ID_FMP_CATEGORY_32")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -2212,7 +2212,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1631",
     categories: ["Soldier of Virtue", "ID_FMP_FEAT_1631", "ID_INTERNAL_CATEGORY_MULTICLASS_PALADIN", "Multiclass Paladin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Soldier of Virtue", {
         filter: function(model, element) { return element.hasCategory("Paladin Class"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_7240"]);
@@ -2426,7 +2426,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1557",
     categories: ["Versatile Channeler", "ID_FMP_FEAT_1557"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Versatile Channeler", {
         filter: function(model, element) { return (true /* NYI: Filter: $$NOT_CLASS */ && element.hasCategory("ID_FMP_CLASS_FEATURE_324")); }
       });
     }

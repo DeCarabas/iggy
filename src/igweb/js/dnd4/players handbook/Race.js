@@ -38,7 +38,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "4' 3\"-4' 9\"");
       model.statadd("Average Weight", "160-220 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Dwarf", {
         filter: function(model, element) { return (element.hasCategory("Strength") || element.hasCategory("Wisdom")); }
       });
     }
@@ -58,7 +58,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5' 5\"-6'1\"");
       model.statadd("Average Weight", "130-180 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Eladrin", {
         filter: function(model, element) { return (element.hasCategory("Charisma") || element.hasCategory("Dexterity")); }
       });
     }
@@ -78,7 +78,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5' 4\"-6'0\"");
       model.statadd("Average Weight", "130-170 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Elf", {
         filter: function(model, element) { return (element.hasCategory("Intelligence") || element.hasCategory("Wisdom")); }
       });
     }
@@ -98,7 +98,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5'5\"-6'2\"");
       model.statadd("Average Weight", "130-190 lb.");
       model.statadd("Size", "Medium");
-      model.select('Language', 1, {
+      model.select('Language', 1, "Half-Elf", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }
@@ -118,10 +118,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "3' 10\"-4' 2\"");
       model.statadd("Average Weight", "75-85 lb.");
       model.statadd("Size", "Small");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Halfling", {
         filter: function(model, element) { return (element.hasCategory("Charisma") || element.hasCategory("Constitution")); }
       });
-      model.select('Language', 1, {
+      model.select('Language', 1, "Halfling", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }
@@ -141,8 +141,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5' 6\"-6'2\"");
       model.statadd("Average Weight", "135-220 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1);
-      model.select('Language', 1, {
+      model.select('Race Ability Bonus', 1, "Human");
+      model.select('Language', 1, "Human", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }
@@ -162,7 +162,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5' 6\"-6' 2\"");
       model.statadd("Average Weight", "140-230 lb.");
       model.statadd("Size", "Medium");
-      model.select('Language', 1, {
+      model.select('Language', 1, "Tiefling", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }

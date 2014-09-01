@@ -51,7 +51,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook,Player's Handbook 3",
     categories: ["Arcane Implement Mastery", "ID_FMP_CLASS_FEATURE_444", "ID_FMP_HYBRID_CLASS_360", "Hybrid Wizard", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Arcane Implement Mastery", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_444"); }
       });
     }
@@ -107,7 +107,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Archspell", "ID_FMP_CLASS_FEATURE_286", "30"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Archspell", {
         filter: function(model, element) { return (element.hasCategory("Daily Usage") && element.hasCategory("Arcane")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -171,7 +171,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Astral Vibrance", "ID_FMP_CLASS_FEATURE_441", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Astral Vibrance", {
         filter: function(model, element) { return element.hasCategory("Astral Vibrance"); }
       });
     }
@@ -420,7 +420,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Channel Divinity", "ID_FMP_CLASS_FEATURE_324", "1"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_1589"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Channel Divinity", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_146") || element.hasCategory("ID_FMP_POWER_7885")); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_1746"]);
@@ -439,7 +439,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Chosen Prey", "ID_FMP_CLASS_FEATURE_503", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Chosen Prey", {
         filter: function(model, element) { return element.hasCategory("Chosen Prey"); }
       });
     }
@@ -512,7 +512,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Commanding Presence", "ID_FMP_CLASS_FEATURE_316", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Commanding Presence", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_316"); }
       });
     }
@@ -526,7 +526,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Corellon's Implement", "ID_FMP_CLASS_FEATURE_462", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Corellon's Implement", {
         filter: function(model, element) { return element.hasCategory("Corellon's Implement"); }
       });
     }
@@ -651,7 +651,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook,Divine Power",
     categories: ["Divine Spark", "ID_FMP_CLASS_FEATURE_527", "21"],
     rules: function(model) {
-      model.select('class feature', 2, {
+      model.select('class feature', 2, "Divine Spark", {
         filter: function(model, element) { return element.hasCategory("Divine Spark"); }
       });
     }
@@ -770,7 +770,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Eldritch Blast", "ID_FMP_CLASS_FEATURE_606", "1"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Eldritch Blast", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_1333") || element.hasCategory("ID_FMP_POWER_7402")); }
       });
     }
@@ -802,7 +802,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Eldritch Pact", "ID_FMP_CLASS_FEATURE_777", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Eldritch Pact", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_777"); }
       });
     }
@@ -886,7 +886,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Fighter Talents", "ID_FMP_CLASS_FEATURE_1064", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Fighter Talents", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1064"); }
       });
     }
@@ -900,7 +900,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Fighting Style", "ID_FMP_CLASS_FEATURE_321", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Fighting Style", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_321"); }
       });
     }
@@ -1112,7 +1112,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook,Player's Handbook 3",
     categories: ["Infernal Pact", "ID_FMP_CLASS_FEATURE_773", "ID_FMP_CLASS_FEATURE_777", "Eldritch Pact", "1"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Infernal Pact", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_1458") || element.hasCategory("ID_FMP_POWER_12307")); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_2095"]);
@@ -1211,7 +1211,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Kensei Focus", "ID_FMP_CLASS_FEATURE_452", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Kensei Focus", {
         filter: function(model, element) { return element.hasCategory("Kensei Focus"); }
       });
     }
@@ -2100,7 +2100,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Lay on Hands", "ID_FMP_CLASS_FEATURE_434", "1"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Lay on Hands", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_POWER_1566") || element.hasCategory("ID_FMP_POWER_8097")) || element.hasCategory("ID_FMP_POWER_7240")); }
       });
     }
@@ -2326,7 +2326,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook,Player's Handbook 2,Player's Handbook 3",
     categories: ["Ritual Casting", "ID_FMP_CLASS_FEATURE_683", "1"],
     rules: function(model) {
-      model.select('Feat', 1, {
+      model.select('Feat', 1, "Ritual Casting", {
         filter: function(model, element) { return element.hasCategory("Ritual Casting"); }
       });
     }
@@ -2340,7 +2340,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Rogue Tactics", "ID_FMP_CLASS_FEATURE_547", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Rogue Tactics", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_547"); }
       });
     }
@@ -2379,7 +2379,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Seeker's Lore", "ID_FMP_CLASS_FEATURE_693", "26"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Seeker's Lore", {
         filter: function(model, element) { return (element.hasCategory("utility") && element.hasCategory("22")); }
       });
     }
@@ -2393,7 +2393,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Seeking Destiny", "ID_FMP_CLASS_FEATURE_536", "30"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Seeking Destiny", {
         filter: function(model, element) { return element.hasCategory("24"); }
       });
     }
@@ -2504,40 +2504,40 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("FREEBEE:ID_FMP_GEAR_33", 1);
       model.statadd("Free Rituals", "* As a wizard, you are entitled to three 1st-level rituals to begin your career. At 5th, 11th, 15th, 21st, and 25th level you gain two more free rituals of that level or lower.");
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("5")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("9")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("15")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("19")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("25")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("29")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("2")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("6")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("10")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("16")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellbook", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("22")); }
       });
     }
@@ -2880,7 +2880,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Weapon Training", "ID_FMP_CLASS_FEATURE_440", "11"],
     rules: function(model) {
-      model.select('Proficiency', 1, {
+      model.select('Proficiency', 1, "Weapon Training", {
         filter: function(model, element) { return element.hasCategory("Heavy Blade"); }
       });
     }

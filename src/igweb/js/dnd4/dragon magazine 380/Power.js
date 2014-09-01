@@ -116,7 +116,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=10106",
     categories: ["Call of Letherna", "ID_FMP_POWER_10106", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_522", "Soul Reaper", "ID_FMP_CATEGORY_1", "cold", "ID_FMP_CATEGORY_32", "Divine", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_12", "Necrotic", "ID_FMP_CATEGORY_39", "Zone", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Call of Letherna", {
         filter: function(model, element) { return element.hasCategory("Call of Letherna"); }
       });
     }
@@ -291,7 +291,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=10107",
     categories: ["Fated Outcome", "ID_FMP_POWER_10107", "ID_INTERNAL_CATEGORY_UTILITY", "utility", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_522", "Soul Reaper", "ID_FMP_CATEGORY_32", "Divine", "ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT", "Immediate Interrupt", "12"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Fated Outcome", {
         filter: function(model, element) { return (element.hasCategory("Fated Outcome") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -376,7 +376,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=10103",
     categories: ["Grave Smite", "ID_FMP_POWER_10103", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CLASS_4", "Paladin", "ID_FMP_CATEGORY_32", "Divine", "ID_FMP_CATEGORY_12", "Necrotic", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "23"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Grave Smite", {
         filter: function(model, element) { return (element.hasCategory("Grave Smite") && element.hasCategory("Ability Choice")); }
       });
     }

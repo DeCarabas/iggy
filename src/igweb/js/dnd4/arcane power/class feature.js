@@ -977,7 +977,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Guardian's Resistance", "ID_FMP_CLASS_FEATURE_1377", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Guardian's Resistance", {
         filter: function(model, element) { return element.hasCategory("Dragon Soul Resist Choice"); }
       });
     }
@@ -1189,7 +1189,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Magister's Knack", "ID_FMP_CLASS_FEATURE_1473", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Magister's Knack", {
         filter: function(model, element) { return element.hasCategory("Magister's Knack"); }
       });
     }
@@ -1390,7 +1390,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Phase Focus", "ID_FMP_CLASS_FEATURE_1374", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Phase Focus", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1374"); }
       });
     }
@@ -1569,7 +1569,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Signature Spell", "ID_FMP_CLASS_FEATURE_1460", "21"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Signature Spell", {
         filter: function(model, element) { return (element.hasCategory("daily") && element.hasCategory("Arcane")); }
       });
       model.statadd("[Signature Spell]:attack", 2);
@@ -1746,7 +1746,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Spellsword Perfection", "ID_FMP_CLASS_FEATURE_1453", "30"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spellsword Perfection", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_53") && element.hasCategory("encounter")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1916,7 +1916,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of Readiness", "ID_FMP_CLASS_FEATURE_1511", "ID_FMP_CLASS_FEATURE_444", "Arcane Implement Mastery", "1"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Tome of Readiness", {
         filter: function(model, element) { return (true /* NYI: Filter: $$LEVEL */ && element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("encounter")); }
       });
     }

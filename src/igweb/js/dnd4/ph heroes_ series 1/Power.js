@@ -66,7 +66,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7402",
     categories: ["Eldritch Strike", "ID_FMP_POWER_7402", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_AT-WILL", "at-will", "ID_INTERNAL_CATEGORY_AT-WILL_USAGE", "At-Will Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Eldritch Strike", {
         filter: function(model, element) { return (element.hasCategory("Eldritch Strike") && element.hasCategory("Ability Choice")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

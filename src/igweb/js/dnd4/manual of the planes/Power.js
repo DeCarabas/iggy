@@ -126,7 +126,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5600",
     categories: ["Improved Razor Storm", "ID_FMP_POWER_5600", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Improved Razor Storm", {
         filter: function(model, element) { return (element.hasCategory("Improved Razor Storm") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -171,7 +171,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5599",
     categories: ["Razor Storm", "ID_FMP_POWER_5599", "ID_FMP_RACIAL_TRAIT_1066", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Razor Storm", {
         filter: function(model, element) { return (element.hasCategory("Razor Storm") && element.hasCategory("Ability Choice")); }
       });
     }

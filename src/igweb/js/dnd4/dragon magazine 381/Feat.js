@@ -566,7 +566,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2082",
     categories: ["Patron's Guidance", "ID_FMP_FEAT_2082"],
     rules: function(model) {
-      model.select('class feature', 2, {
+      model.select('class feature', 2, "Patron's Guidance", {
         filter: function(model, element) { return element.hasCategory("Patron's Guidance"); }
       });
     }

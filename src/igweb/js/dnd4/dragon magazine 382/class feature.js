@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Master of Many Paths", "ID_FMP_CLASS_FEATURE_2172", "11"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_UNLIMITED_MULTICLASS"]);
-      model.select('Feat', 1, {
+      model.select('Feat', 1, "Master of Many Paths", {
         filter: function(model, element) { return element.hasCategory("Class-Specific Multiclass"); }
       });
     }
@@ -111,7 +111,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 382",
     categories: ["Traveler's Unpredictable Power", "ID_FMP_CLASS_FEATURE_2174", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Traveler's Unpredictable Power", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2174"); }
       });
     }
@@ -1469,7 +1469,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 382",
     categories: ["Traveler's Unpredictable Power (Daily)", "ID_INTERNAL_CLASS_FEATURE_TRAVELER'S_UNPREDICTABLE_POWER_(DAILY)", "Traveler's Unpredictable Power"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Traveler's Unpredictable Power (Daily)", {
         filter: function(model, element) { return ((element.hasCategory(model['class'].id) || true /* NYI: Filter: $$MULTICLASS */) && element.hasCategory("daily") && element.hasCategory("19")); }
       });
     }
@@ -3919,7 +3919,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 382",
     categories: ["Traveler's Unpredictable Power (Paragon Path)", "ID_INTERNAL_CLASS_FEATURE_TRAVELER'S_UNPREDICTABLE_POWER_(PARAGON_PATH)", "Traveler's Unpredictable Power"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Traveler's Unpredictable Power (Paragon Path)", {
         filter: function(model, element) { return element.hasCategory("Traveler's Unpredictable Power (Paragon Path)"); }
       });
     }

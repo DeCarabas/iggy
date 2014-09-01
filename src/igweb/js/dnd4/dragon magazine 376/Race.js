@@ -21,7 +21,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5' 5”-6' 2”");
       model.statadd("Average Weight", "100-200 lb.");
       model.statadd("Size", "Medium");
-      model.select('Language', 1, {
+      model.select('Language', 1, "Revenant", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }

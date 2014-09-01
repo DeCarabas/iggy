@@ -187,7 +187,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3390",
     categories: ["Blood's Passion", "ID_FMP_FEAT_3390", "ID_INTERNAL_CATEGORY_MULTICLASS_ARDENT", "Multiclass Ardent", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Blood's Passion", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_POWER_10272") || element.hasCategory("ID_FMP_POWER_11060")) || element.hasCategory("ID_FMP_POWER_12931")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -422,7 +422,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3398",
     categories: ["Diverse Focus", "ID_FMP_FEAT_3398", "ID_INTERNAL_INTERNAL_ELAN_BLOODLINE", "Elan Bloodline"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Diverse Focus", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_FEAT_3398"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BLOODLINE"]);
@@ -643,7 +643,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3391",
     categories: ["Focused Talent", "ID_FMP_FEAT_3391", "ID_INTERNAL_CATEGORY_MULTICLASS_PSION", "Multiclass Psion", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Focused Talent", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_FEAT_3391"); }
       });
     }
@@ -1122,10 +1122,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3392",
     categories: ["Monastic Adept", "ID_FMP_FEAT_3392", "ID_INTERNAL_CATEGORY_MULTICLASS_MONK", "Multiclass Monk", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Monastic Adept", {
         filter: function(model, element) { return element.hasCategory("Monk Class"); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Monastic Adept", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("attack") && element.hasCategory("ID_FMP_CLASS_362") && element.hasCategory("1")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1304,7 +1304,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3312",
     categories: ["Psionic Skill", "ID_FMP_FEAT_3312", "ID_INTERNAL_CATEGORY_AUGMENT", "Augment"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Psionic Skill", {
         filter: function(model, element) { return element.hasCategory("Psionic Skill"); }
       });
     }
@@ -1805,7 +1805,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3394",
     categories: ["Wild Savant", "ID_FMP_FEAT_3394", "ID_INTERNAL_CATEGORY_MULTICLASS_BATTLEMIND", "Multiclass Battlemind", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Wild Savant", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_POWER_13024") || element.hasCategory("ID_FMP_POWER_11155")) || element.hasCategory("ID_FMP_POWER_12418")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

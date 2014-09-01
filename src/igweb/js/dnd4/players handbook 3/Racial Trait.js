@@ -111,7 +111,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Hardy Form", "ID_FMP_RACIAL_TRAIT_1538"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Hardy Form", {
         filter: function(model, element) { return element.hasCategory("Hardy Form"); }
       });
     }

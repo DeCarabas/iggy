@@ -161,7 +161,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED"]);
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_RANGED"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_54"]);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Fighter", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_FEATURE_401") || element.hasCategory("ID_FMP_CLASS_FEATURE_2183")); }
       });
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1064"]);
@@ -298,7 +298,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_RANGED"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_321"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_602"]);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ranger", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_FEATURE_603") || element.hasCategory("ID_FMP_CLASS_FEATURE_2209")); }
       });
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_RANGER_IMPLEMENTS"]);
@@ -333,7 +333,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_368"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_547"]);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Rogue", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_FEATURE_391") || element.hasCategory("ID_FMP_CLASS_FEATURE_2238")); }
       });
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_322"]);
@@ -427,11 +427,11 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE"]);
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_MILITARY_MELEE"]);
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED"]);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Warlord", {
         optional: true,
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2286"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Warlord", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_CLASS_FEATURE_443") || element.hasCategory("ID_FMP_CLASS_FEATURE_2287")) || element.hasCategory("ID_FMP_CLASS_FEATURE_2285")); }
       });
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_316"]);

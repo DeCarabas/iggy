@@ -21,7 +21,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "6'0\"-6'5\"");
       model.statadd("Average Weight", "160-190 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Githzerai", {
         filter: function(model, element) { return (element.hasCategory("Dexterity") || element.hasCategory("Intelligence")); }
       });
     }
@@ -41,10 +41,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "7'1\"-7'5\"");
       model.statadd("Average Weight", "320-350 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Minotaur", {
         filter: function(model, element) { return (element.hasCategory("Constitution") || element.hasCategory("Wisdom")); }
       });
-      model.select('Language', 1, {
+      model.select('Language', 1, "Minotaur", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }
@@ -64,13 +64,13 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5' 9\"-6' 2\"");
       model.statadd("Average Weight", "180-230 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Shardmind", {
         filter: function(model, element) { return (element.hasCategory("Charisma") || element.hasCategory("Wisdom")); }
       });
-      model.select('Language', 1, {
+      model.select('Language', 1, "Shardmind", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Shardmind", {
         filter: function(model, element) { return element.hasCategory("Skill Bonus"); }
       });
     }
@@ -90,7 +90,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5'6\"-5'9\"");
       model.statadd("Average Weight", "140-170 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Wilden", {
         filter: function(model, element) { return (element.hasCategory("Constitution") || element.hasCategory("Dexterity")); }
       });
     }

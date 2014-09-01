@@ -17,7 +17,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Acolyte of Divine Secrets", "ID_FMP_FEAT_667", "ID_INTERNAL_CATEGORY_MULTICLASS_INVOKER", "Multiclass Invoker", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_RELIGION"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Acolyte of Divine Secrets", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_127") && element.hasCategory("1") && element.hasCategory("at-will")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -144,7 +144,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=665",
     categories: ["Bardic Dilettante", "ID_FMP_FEAT_665", "ID_INTERNAL_CATEGORY_MULTICLASS_BARD", "Multiclass Bard", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Bardic Dilettante", {
         filter: function(model, element) { return element.hasCategory("Bard Class"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_2339"]);
@@ -193,7 +193,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=664",
     categories: ["Berserker's Fury", "ID_FMP_FEAT_664", "ID_INTERNAL_CATEGORY_MULTICLASS_BARBARIAN", "Multiclass Barbarian", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Berserker's Fury", {
         filter: function(model, element) { return element.hasCategory("Barbarian Class"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_BARBARIAN"]);
@@ -311,7 +311,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=671",
     categories: ["Defender of the Wild", "ID_FMP_FEAT_671", "ID_INTERNAL_CATEGORY_MULTICLASS_WARDEN", "Multiclass Warden", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Defender of the Wild", {
         filter: function(model, element) { return element.hasCategory("Warden Class"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_WARDEN"]);
@@ -1115,7 +1115,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_NATURE"]);
       model.grant(model.elements.id["ID_FMP_POWER_5032"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Initiate of the Old Faith", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_126") && element.hasCategory("1") && element.hasCategory("at-will") && element.hasCategory("beast form")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1508,7 +1508,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=512",
     categories: ["Reserve Maneuver", "ID_FMP_FEAT_512"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Reserve Maneuver", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && true /* NYI: Filter: $$LEVEL */ && element.hasCategory("encounter")); }
       });
     }
@@ -1675,7 +1675,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_NATURE"]);
       model.grant(model.elements.id["ID_FMP_POWER_6515"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Spirit Talker", {
         filter: function(model, element) { return element.hasCategory("Spirit Talker"); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

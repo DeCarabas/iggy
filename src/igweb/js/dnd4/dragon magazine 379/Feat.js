@@ -67,7 +67,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Battle Cleric Armaments", "ID_FMP_FEAT_1960"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)"]);
-      model.select('Proficiency', 1, {
+      model.select('Proficiency', 1, "Battle Cleric Armaments", {
         filter: function(model, element) { return element.hasCategory("Military"); }
       });
     }

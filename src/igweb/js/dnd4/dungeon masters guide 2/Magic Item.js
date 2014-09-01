@@ -233,7 +233,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dungeon Master's Guide 2",
     categories: ["Corellon's Boon of Arcane Might (level 13)", "ID_FMP_MAGIC_ITEM_8003"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Corellon's Boon of Arcane Might (level 13)", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("Arcane")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -248,7 +248,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dungeon Master's Guide 2",
     categories: ["Corellon's Boon of Arcane Might (level 18)", "ID_FMP_MAGIC_ITEM_8004"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Corellon's Boon of Arcane Might (level 18)", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("Arcane")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -263,7 +263,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dungeon Master's Guide 2",
     categories: ["Corellon's Boon of Arcane Might (level 23)", "ID_FMP_MAGIC_ITEM_8005"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Corellon's Boon of Arcane Might (level 23)", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("Arcane")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -278,7 +278,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dungeon Master's Guide 2",
     categories: ["Corellon's Boon of Arcane Might (level 28)", "ID_FMP_MAGIC_ITEM_8006"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Corellon's Boon of Arcane Might (level 28)", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("Arcane")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -293,7 +293,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dungeon Master's Guide 2",
     categories: ["Corellon's Boon of Arcane Might (level 3)", "ID_FMP_MAGIC_ITEM_8001"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Corellon's Boon of Arcane Might (level 3)", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("Arcane")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -308,7 +308,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dungeon Master's Guide 2",
     categories: ["Corellon's Boon of Arcane Might (level 8)", "ID_FMP_MAGIC_ITEM_8002"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Corellon's Boon of Arcane Might (level 8)", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("Arcane")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

@@ -209,7 +209,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13415",
     categories: ["Appalling Transformation", "ID_FMP_POWER_13415", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_761", "Impure Scion", "ID_FMP_CATEGORY_15", "Polymorph", "ID_FMP_CATEGORY_35", "Psionic", "ID_FMP_CATEGORY_16", "psychic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Appalling Transformation", {
         filter: function(model, element) { return element.hasCategory("Appalling Transformation"); }
       });
     }
@@ -4810,7 +4810,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=13414",
     categories: ["Otherworldly Pulse", "ID_FMP_POWER_13414", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_761", "Impure Scion", "ID_FMP_CATEGORY_61", "Augmentable", "ID_FMP_CATEGORY_35", "Psionic", "ID_FMP_CATEGORY_16", "psychic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Otherworldly Pulse", {
         filter: function(model, element) { return element.hasCategory("Otherworldly Pulse"); }
       });
     }

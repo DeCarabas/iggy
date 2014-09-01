@@ -17,20 +17,20 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Assassin", "ID_FMP_CLASS_466"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_ASSASSIN"]);
-      model.select('Power', 2, {
+      model.select('Power', 2, "Assassin", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_466");
       model.statadd("_LEVEL-ONE-HPS", 10);
       model.statadd("_PER-LEVEL-HPS", 4);
       model.statadd("Healing Surges", 6);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Assassin", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Fortitude Defense Class Bonus", 1);
       model.statadd("Will Defense Class Bonus", 1);
-      model.select('Skill Training', 4, {
+      model.select('Skill Training', 4, "Assassin", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_466"); }
       });
       model.statadd("_WeaponsAsImplements", 1);

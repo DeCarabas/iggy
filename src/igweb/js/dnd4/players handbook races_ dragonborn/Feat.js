@@ -16,7 +16,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=387",
     categories: ["Adaptable Breath", "ID_FMP_FEAT_387"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Adaptable Breath", {
         filter: function(model, element) { return (element.hasCategory("Dragon Breath") && element.hasCategory("Element Choice")); }
       });
     }
@@ -31,7 +31,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ADAPTABLE_BREATH_II",
     categories: ["Adaptable Breath II", "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_II"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Adaptable Breath II", {
         filter: function(model, element) { return (element.hasCategory("Dragon Breath") && element.hasCategory("Element Choice")); }
       });
     }
@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ADAPTABLE_BREATH_III",
     categories: ["Adaptable Breath III", "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_III"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Adaptable Breath III", {
         filter: function(model, element) { return (element.hasCategory("Dragon Breath") && element.hasCategory("Element Choice")); }
       });
     }
@@ -61,7 +61,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ADAPTABLE_BREATH_IV",
     categories: ["Adaptable Breath IV", "ID_INTERNAL_FEAT_ADAPTABLE_BREATH_IV"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Adaptable Breath IV", {
         filter: function(model, element) { return (element.hasCategory("Dragon Breath") && element.hasCategory("Element Choice")); }
       });
     }
@@ -378,7 +378,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2206",
     categories: ["Powerful Breath", "ID_FMP_FEAT_2206"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Powerful Breath", {
         filter: function(model, element) { return (element.hasCategory("Powerful Breath") && element.hasCategory("Ability Choice")); }
       });
     }

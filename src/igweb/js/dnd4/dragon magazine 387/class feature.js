@@ -78,7 +78,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 387",
     categories: ["Guardian Mindfulness", "ID_FMP_CLASS_FEATURE_2692", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Guardian Mindfulness", {
         filter: function(model, element) { return element.hasCategory("Guardian Mindfulness"); }
       });
       model.statadd("Speed", 1);
@@ -145,7 +145,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 387",
     categories: ["Psychic Network", "ID_FMP_CLASS_FEATURE_2689", "11"],
     rules: function(model) {
-      model.select('Skill Training', 2, {
+      model.select('Skill Training', 2, "Psychic Network", {
         filter: function(model, element) { return ((((element.hasCategory("ID_FMP_SKILL_2") || element.hasCategory("ID_FMP_SKILL_7")) || element.hasCategory("ID_FMP_SKILL_11")) || element.hasCategory("ID_FMP_SKILL_16")) || element.hasCategory("ID_FMP_SKILL_18")); }
       });
     }

@@ -228,7 +228,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 366",
     categories: ["Explorer/Guide Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_EXPLORER/GUIDE_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Explorer/Guide Benefit");
       // unsupported rule: cbimporter.Rules.ModifyRule
       model.statadd("Nature Misc", 2);
     }
@@ -297,7 +297,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 366",
     categories: ["Gritty Sergeant Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_GRITTY_SERGEANT_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Proficiency', 1, {
+      model.select('Proficiency', 1, "Gritty Sergeant Benefit", {
         filter: function(model, element) { return (element.hasCategory("Simple") || element.hasCategory("Military")); }
       });
       model.statadd("Initiative Misc", 1);
@@ -373,7 +373,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 366",
     categories: ["Merchant Prince Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_MERCHANT_PRINCE_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Merchant Prince Benefit");
       // unsupported rule: cbimporter.Rules.ModifyRule
       model.statadd("Insight Misc", 2);
     }
@@ -430,7 +430,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 366",
     categories: ["Noble Bred for War Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_NOBLE_BRED_FOR_WAR_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Proficiency', 1, {
+      model.select('Proficiency', 1, "Noble Bred for War Benefit", {
         filter: function(model, element) { return (element.hasCategory("Simple") || element.hasCategory("Military")); }
       });
       model.statadd("Diplomacy Misc", 1);
@@ -445,7 +445,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 366",
     categories: ["Noble Scion Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_NOBLE_SCION_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Background Choice', 1, {
+      model.select('Background Choice', 1, "Noble Scion Benefit", {
         filter: function(model, element) { return element.hasCategory("Noble Scion"); }
       });
     }
@@ -662,7 +662,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 366",
     categories: ["Traveling Missionary Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_TRAVELING_MISSIONARY_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Traveling Missionary Benefit");
       // unsupported rule: cbimporter.Rules.ModifyRule
       model.statadd("Religion Misc", 2);
     }

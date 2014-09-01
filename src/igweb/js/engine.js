@@ -84,10 +84,11 @@ define(['./log'],function(log) {
     }
   };
 
-  var Choice = function(model, type, number, options) {
+  var Choice = function(model, type, number, name, options) {
     var that = this;
     Object.keys(options || {}).forEach(function (key) { that[key] = options[key]; });
     this.type = type;
+    this.name = name;
     this.number = number;
     this.model = model;
     this.id = Choice._uniqueId || (Choice._uniqueId = 1);
@@ -214,12 +215,12 @@ define(['./log'],function(log) {
         log.groupEnd(tag);
       }
     },
-    select: function(type, number, options) {
-      var nc = new Choice(this, type, number, options);
+    select: function(type, number, name, options) {
+      var nc = new Choice(this, type, number, name, options);
       var ec = this._choices[type] || (this._choices[type] = {});
       ec[nc.id] = nc;
 
-      log.log("Selecting ("+type+","+number+") as " + nc.id);
+      log.log("Selecting (["+type+"],"+number+") as " + nc.id);
 
       if (this._trackingInfo) { 
         this._trackingInfo.undo.push(function () { 
@@ -240,8 +241,9 @@ define(['./log'],function(log) {
 
       var undo;
       if (typeof value === "string") {
+        var previous = s.textValue;
         s.textValue = value;
-        undo = function () { delete s.textValue; };
+        undo = function () { s.textValue = previous; };
       } else {
         var mod = s.addModifier(value, kind);
         undo = function () { s.removeModifier(mod); };

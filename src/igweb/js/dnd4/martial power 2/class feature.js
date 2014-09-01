@@ -24,7 +24,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power 2",
     categories: ["Advanced Dabbler", "ID_FMP_CLASS_FEATURE_2250", "16"],
     rules: function(model) {
-      model.select('Skill Training', 3);
+      model.select('Skill Training', 3, "Advanced Dabbler");
     }
   });
   byID[te.id] = te;
@@ -1161,7 +1161,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power 2",
     categories: ["Sharpshooter Talent", "ID_FMP_CLASS_FEATURE_2238", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Sharpshooter Talent", {
         filter: function(model, element) { return (element.hasCategory("ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(CROSSBOW)") || element.hasCategory("ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(SLING)")); }
       });
       model.grant(model.elements.id["ID_FMP_FEAT_139"]);
@@ -1298,7 +1298,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power 2",
     categories: ["Sword of Kings", "ID_FMP_CLASS_FEATURE_1044", "30"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Sword of Kings", {
         filter: function(model, element) { return (element.hasCategory("Encounter usage") && element.hasCategory("Weapon")); }
       });
     }
@@ -1469,7 +1469,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power 2",
     categories: ["Warlord's Chains", "ID_FMP_CLASS_FEATURE_2303", "11"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Warlord's Chains", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_POWER_4541") || element.hasCategory("ID_FMP_POWER_10889")) || element.hasCategory("ID_FMP_POWER_620")); }
       });
     }

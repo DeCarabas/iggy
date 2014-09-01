@@ -15,10 +15,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Core",
     categories: ["DetailsRules", "ID_INTERNAL_LEVEL1RULES_DETAILSRULES"],
     rules: function(model) {
-      model.select('Gender', 1, {
+      model.select('Gender', 1, "DetailsRules", {
         optional: true
       });
-      model.select('alignment', 1, {
+      model.select('alignment', 1, "DetailsRules", {
         optional: true
       });
     }
@@ -32,11 +32,11 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Core",
     categories: ["Expansion1", "ID_INTERNAL_LEVEL1RULES_EXPANSION1"],
     rules: function(model) {
-      model.select('Background', 1, {
+      model.select('Background', 1, "Expansion1", {
         optional: true
       });
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT"]);
-      model.select('Background', 5, {
+      model.select('Background', 5, "Expansion1", {
         optional: true
       });
     }
@@ -50,7 +50,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Core",
     categories: ["Expansion2", "ID_INTERNAL_LEVEL1RULES_EXPANSION2"],
     rules: function(model) {
-      model.select('Theme', 1, {
+      model.select('Theme', 1, "Expansion2", {
         optional: true
       });
     }

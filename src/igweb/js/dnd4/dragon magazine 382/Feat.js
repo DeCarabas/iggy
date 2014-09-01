@@ -16,7 +16,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2241",
     categories: ["Acolyte of the Veil", "ID_FMP_FEAT_2241", "ID_INTERNAL_CATEGORY_MULTICLASS_ASSASSIN", "Multiclass Assassin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Acolyte of the Veil", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_SKILL_1") || element.hasCategory("ID_FMP_SKILL_20")); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_9401"]);
@@ -100,7 +100,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2269",
     categories: ["Awaken God Fragment", "ID_FMP_FEAT_2269"],
     rules: function(model) {
-      model.select('God Fragment', 1);
+      model.select('God Fragment', 1, "Awaken God Fragment");
     }
   });
   byID[te.id] = te;

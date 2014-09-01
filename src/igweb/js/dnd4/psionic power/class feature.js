@@ -756,7 +756,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Becoming the One", "ID_FMP_CLASS_FEATURE_3141", "21"],
     rules: function(model) {
       model.statadd("Charisma", 2);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Becoming the One", {
         filter: function(model, element) { return element.hasCategory("Becoming the One"); }
       });
     }
@@ -1992,7 +1992,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Diplomacy Misc", 2);
       model.statadd("Insight Misc", 2);
       model.statadd("Intimidate Misc", 2);
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Riddle of Conversation", {
         filter: function(model, element) { return (((element.hasCategory("ID_FMP_SKILL_3") || element.hasCategory("ID_FMP_SKILL_6")) || element.hasCategory("ID_FMP_SKILL_13")) || element.hasCategory("ID_FMP_SKILL_14")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

@@ -10,15 +10,23 @@
     {
         readonly ItemFilter filter;
         RuleIndex index;
+        readonly string name;
         readonly int number;
         readonly bool optional;
         readonly Identifier type;
 
-        SelectRule(Identifier type, int number, bool optional, ItemFilter filter, RuleElement element)
+        SelectRule(
+            Identifier type, 
+            int number, 
+            string name, 
+            bool optional, 
+            ItemFilter filter, 
+            RuleElement element)
             : base(element)
         {
             this.filter = filter;
             this.type = type;
+            this.name = name;
             this.number = number;
             this.optional = optional;
         }
@@ -46,8 +54,6 @@
         public static SelectRule New(RuleElement ruleElement, XElement element)
         {
             // Attributes:
-            //    name
-            //    Level
             //    requires
             //    spellbook
             //    existing
@@ -61,15 +67,32 @@
             attribute = element.Attribute(XNames.Number);
             if (attribute != null) { number = Int32.Parse(attribute.Value); }
 
-            ItemFilter filter = null;
-            attribute = element.Attribute(XNames.Category);
-            if (attribute != null) { filter = ParseCategory(attribute.Value); }
+            string name = null;
+            attribute = element.Attribute(XNames.Name);
+            if (attribute != null) { name = attribute.Value; }
 
             bool optional = false;
             attribute = element.Attribute(XNames.Optional);
             if (attribute != null) { optional = true; }
 
-            return new SelectRule(type, number, optional, filter, ruleElement);
+            ItemFilter filter = null;
+            attribute = element.Attribute(XNames.Category);
+            if (attribute != null) { filter = ParseCategory(attribute.Value); }
+           
+            // Make the name pretty for grouping and tracking purposes.
+            if (String.IsNullOrEmpty(name))
+            {
+                if (ruleElement.Type == Identifier.Level)
+                {
+                    name = "Level " + ruleElement.Name.ToString(); // "Level 1"
+                }
+                else
+                {
+                    name = ruleElement.Name.ToString(); // "Heir of Siberys (level 26)"
+                }
+            }
+
+            return new SelectRule(type, number, name, optional, filter, ruleElement);
         }
 
         static ItemFilter ParseCategory(string category)
@@ -148,10 +171,12 @@
 
         public override void WriteJS(IndentedTextWriter writer)
         {
-            writer.Write("model.select('{0}', {1}", this.type, this.number);
-            if (this.optional || this.filter != null) 
+            writer.Write("model.select('{0}', {1}, \"{2}\"", this.type, this.number, this.name);
+
+            if (this.optional || this.filter != null)
             {
                 writer.Write(", ");
+
                 using (ObjectWriter ow = new ObjectWriter(writer))
                 {
                     if (this.optional) { ow.Write("optional", this.optional); }
@@ -163,6 +188,7 @@
                     }
                 }
             }
+
             writer.WriteLine(");");
         }
 

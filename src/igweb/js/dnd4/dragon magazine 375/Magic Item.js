@@ -27,7 +27,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 375",
     categories: ["Wailing Tome +1", "ID_FMP_MAGIC_ITEM_5040"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Wailing Tome +1", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && (element.hasCategory("psychic") || element.hasCategory("teleportation")) && element.hasCategory("5")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -42,7 +42,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 375",
     categories: ["Wailing Tome +2", "ID_FMP_MAGIC_ITEM_5041"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Wailing Tome +2", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && (element.hasCategory("psychic") || element.hasCategory("teleportation")) && element.hasCategory("10")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -57,7 +57,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 375",
     categories: ["Wailing Tome +3", "ID_FMP_MAGIC_ITEM_5042"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Wailing Tome +3", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && (element.hasCategory("psychic") || element.hasCategory("teleportation")) && element.hasCategory("15")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -72,7 +72,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 375",
     categories: ["Wailing Tome +4", "ID_FMP_MAGIC_ITEM_5043"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Wailing Tome +4", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && (element.hasCategory("psychic") || element.hasCategory("teleportation")) && element.hasCategory("20")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -87,7 +87,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 375",
     categories: ["Wailing Tome +5", "ID_FMP_MAGIC_ITEM_5044"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Wailing Tome +5", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && (element.hasCategory("psychic") || element.hasCategory("teleportation")) && element.hasCategory("25")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -102,7 +102,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 375",
     categories: ["Wailing Tome +6", "ID_FMP_MAGIC_ITEM_5045"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Wailing Tome +6", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && (element.hasCategory("psychic") || element.hasCategory("teleportation")) && element.hasCategory("30")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

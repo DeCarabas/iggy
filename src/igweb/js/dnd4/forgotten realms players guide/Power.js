@@ -516,7 +516,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1831",
     categories: ["Darkfire", "ID_FMP_POWER_1831", "ID_FMP_RACIAL_TRAIT_565", "Lolthtouched", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Darkfire", {
         filter: function(model, element) { return (element.hasCategory("Darkfire") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -701,7 +701,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1767",
     categories: ["Earthshock", "ID_FMP_POWER_1767", "ID_FMP_RACIAL_TRAIT_521", "earthsoul", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Earthshock", {
         filter: function(model, element) { return (element.hasCategory("Earthshock") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -886,7 +886,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1766",
     categories: ["Firepulse", "ID_FMP_POWER_1766", "ID_FMP_RACIAL_TRAIT_520", "firesoul", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CATEGORY_3", "fire", "ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION", "Immediate Reaction"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Firepulse", {
         filter: function(model, element) { return (element.hasCategory("Firepulse") && element.hasCategory("Ability Choice")); }
       });
     }

@@ -26,7 +26,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_PARAGON_HYBRID_TALENT",
     categories: ["Paragon Hybrid Talent", "ID_INTERNAL_FEAT_PARAGON_HYBRID_TALENT"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Paragon Hybrid Talent", {
         filter: function(model, element) { return true /* NYI: Filter: $$HYBRID */; }
       });
     }

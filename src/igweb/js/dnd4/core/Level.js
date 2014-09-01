@@ -80,16 +80,16 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION3"]);
       model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION4"]);
       model.grant(model.elements.id["ID_INTERNAL_LEVEL1RULES_EXPANSION5"]);
-      model.select('Race', 1);
-      model.select('Class', 1);
-      model.select('Feat', 1);
-      model.select('Power', 1, {
+      model.select('Race', 1, "Level 1");
+      model.select('Class', 1, "Level 1");
+      model.select('Feat', 1, "Level 1");
+      model.select('Power', 1, "Power Encounter 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power Daily 1", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("1")); }
       });
-      model.select('Deity', 1, {
+      model.select('Deity', 1, "Level 1", {
         optional: true
       });
       model.statadd("XP Needed", 1000);
@@ -107,8 +107,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Power', 1, {
+      model.select('Feat', 1, "Level 10");
+      model.select('Power', 1, "Power Utility 10", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("10")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -133,8 +133,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Wisdom", 1);
       model.statadd("Charisma", 1);
       model.grant(model.elements.id["ID_INTERNAL_TIER_PARAGON"]);
-      model.select('Feat', 1);
-      model.select('Paragon Path', 1, {
+      model.select('Feat', 1, "Level 11");
+      model.select('Paragon Path', 1, "Level 11", {
         optional: true
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -153,7 +153,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
+      model.select('Feat', 1, "Level 12");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 7000);
     }
@@ -186,8 +186,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Ability Increase (Level 14)', 2);
+      model.select('Feat', 1, "Level 14");
+      model.select('Ability Increase (Level 14)', 2, "Level 14");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 10000);
     }
@@ -220,8 +220,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Power', 1, {
+      model.select('Feat', 1, "Level 16");
+      model.select('Power', 1, "Power Utility 16", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("16")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -256,8 +256,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Ability Increase (Level 18)', 2);
+      model.select('Feat', 1, "Level 18");
+      model.select('Ability Increase (Level 18)', 2, "Level 18");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 20000);
     }
@@ -290,8 +290,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Power', 1, {
+      model.select('Feat', 1, "Level 2");
+      model.select('Power', 1, "Power Utility 2", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("2")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -310,7 +310,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
+      model.select('Feat', 1, "Level 20");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 32000);
     }
@@ -333,8 +333,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Wisdom", 1);
       model.statadd("Charisma", 1);
       model.grant(model.elements.id["ID_INTERNAL_TIER_EPIC"]);
-      model.select('Feat', 1);
-      model.select('Epic Destiny', 1, {
+      model.select('Feat', 1, "Level 21");
+      model.select('Epic Destiny', 1, "Level 21", {
         optional: true
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -353,8 +353,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Power', 1, {
+      model.select('Feat', 1, "Level 22");
+      model.select('Power', 1, "Power Utility 22", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("22")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -389,8 +389,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Ability Increase (Level 24)', 2);
+      model.select('Feat', 1, "Level 24");
+      model.select('Ability Increase (Level 24)', 2, "Level 24");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 65000);
     }
@@ -423,7 +423,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
+      model.select('Feat', 1, "Level 26");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 100000);
     }
@@ -456,8 +456,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Ability Increase (Level 28)', 2);
+      model.select('Feat', 1, "Level 28");
+      model.select('Ability Increase (Level 28)', 2, "Level 28");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 150000);
     }
@@ -489,7 +489,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power Encounter 3", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("3")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -508,7 +508,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
+      model.select('Feat', 1, "Level 30");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 0);
     }
@@ -525,8 +525,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Ability Increase (Level 4)', 2);
+      model.select('Feat', 1, "Level 4");
+      model.select('Ability Increase (Level 4)', 2, "Level 4");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 1750);
     }
@@ -542,7 +542,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power Daily 5", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("5")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -561,8 +561,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Power', 1, {
+      model.select('Feat', 1, "Level 6");
+      model.select('Power', 1, "Power Utility 6", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("6")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -580,7 +580,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power Encounter 7", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("7")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -599,8 +599,8 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
       model.statadd("HALF-LEVEL", 1);
-      model.select('Feat', 1);
-      model.select('Ability Increase (Level 8)', 2);
+      model.select('Feat', 1, "Level 8");
+      model.select('Ability Increase (Level 8)', 2, "Level 8");
       // unsupported rule: cbimporter.Rules.ReplaceRule
       model.statadd("XP Needed", 3500);
     }
@@ -616,7 +616,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("Hit Points", function() { return model.stat("_PER-LEVEL-HPS"); });
       model.statadd("Level", 1);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Power Daily 9", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("9")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule

@@ -512,7 +512,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5476",
     categories: ["Bedazzling Orb", "ID_FMP_POWER_5476", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_245", "Fey Beguiler", "ID_FMP_CATEGORY_10", "illusion", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_2", "Radiant", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Bedazzling Orb", {
         filter: function(model, element) { return (element.hasCategory("Bedazzling Orb") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -537,7 +537,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5477",
     categories: ["Beguiling Bolt", "ID_FMP_POWER_5477", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_245", "Fey Beguiler", "ID_FMP_CATEGORY_25", "implement", "ID_FMP_CATEGORY_16", "psychic", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Beguiling Bolt", {
         filter: function(model, element) { return (element.hasCategory("Beguiling Bolt") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -918,7 +918,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5495",
     categories: ["Bolts of Bedevilment", "ID_FMP_POWER_5495", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_252", "Turathi Highborn", "ID_FMP_CATEGORY_6", "Charm", "ID_FMP_CATEGORY_3", "fire", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Bolts of Bedevilment", {
         filter: function(model, element) { return (element.hasCategory("Bolts of Bedevilment") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -1003,7 +1003,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5498",
     categories: ["Bonds of Life", "ID_FMP_POWER_5498", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_253", "Twilight Guardian", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Bonds of Life", {
         filter: function(model, element) { return (element.hasCategory("Bonds of Life") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -1498,7 +1498,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5486",
     categories: ["Circle the Prey", "ID_FMP_POWER_5486", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_248", "Moonstalker", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Circle the Prey", {
         filter: function(model, element) { return (element.hasCategory("Circle the Prey") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -2476,7 +2476,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5491",
     categories: ["Ensorcelled Mind", "ID_FMP_POWER_5491", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_250", "Shiere Knight", "ID_FMP_CATEGORY_6", "Charm", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ensorcelled Mind", {
         filter: function(model, element) { return (element.hasCategory("Ensorcelled Mind") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -3793,7 +3793,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5483",
     categories: ["Halfling's Taunt", "ID_FMP_POWER_5483", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_247", "Halfling Scoundrel", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Halfling's Taunt", {
         filter: function(model, element) { return (element.hasCategory("Halfling's Taunt") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -4078,7 +4078,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5490",
     categories: ["Imperious Presence", "ID_FMP_POWER_5490", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_250", "Shiere Knight", "ID_FMP_CATEGORY_7", "Fear", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Imperious Presence", {
         filter: function(model, element) { return (element.hasCategory("Imperious Presence") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -4673,7 +4673,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5473",
     categories: ["Murderous Rage", "ID_FMP_POWER_5473", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_244", "Bloodfury Savage", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Murderous Rage", {
         filter: function(model, element) { return (element.hasCategory("Murderous Rage") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -4728,7 +4728,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5500",
     categories: ["Nature's Rage", "ID_FMP_POWER_5500", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_253", "Twilight Guardian", "ID_FMP_CATEGORY_39", "Zone", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Nature's Rage", {
         filter: function(model, element) { return (element.hasCategory("Nature's Rage") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -6205,7 +6205,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5481",
     categories: ["Sly Offensive", "ID_FMP_POWER_5481", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_247", "Halfling Scoundrel", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Sly Offensive", {
         filter: function(model, element) { return (element.hasCategory("Sly Offensive") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -7416,7 +7416,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5497",
     categories: ["Thrall of Turath", "ID_FMP_POWER_5497", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_252", "Turathi Highborn", "ID_FMP_CATEGORY_6", "Charm", "ID_FMP_CATEGORY_3", "fire", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Thrall of Turath", {
         filter: function(model, element) { return (element.hasCategory("Thrall of Turath") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -7854,7 +7854,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=5471",
     categories: ["Unbound Assault", "ID_FMP_POWER_5471", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_244", "Bloodfury Savage", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Unbound Assault", {
         filter: function(model, element) { return (element.hasCategory("Unbound Assault") && element.hasCategory("Ability Choice")); }
       });
     }

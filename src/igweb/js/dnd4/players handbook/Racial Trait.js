@@ -40,7 +40,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Bonus At-Will Power", "ID_FMP_RACIAL_TRAIT_356", "ID_FMP_RACIAL_TRAIT_2966", "Human Power Selection"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Human Bonus At-Will", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
     }
@@ -54,7 +54,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Bonus Feat", "ID_FMP_RACIAL_TRAIT_29"],
     rules: function(model) {
-      model.select('Feat', 1);
+      model.select('Feat', 1, "Bonus Feat");
     }
   });
   byID[te.id] = te;
@@ -66,7 +66,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Bonus Skill", "ID_FMP_RACIAL_TRAIT_34"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Bonus Skill", {
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
     }
@@ -92,7 +92,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Dilettante", "ID_FMP_RACIAL_TRAIT_643"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Dilettante", {
         filter: function(model, element) { return (true /* NYI: Filter: $$NOT_CLASS */ && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -217,7 +217,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Dragonborn Racial Power", "ID_FMP_RACIAL_TRAIT_3162"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Dragonborn Racial Power", {
         filter: function(model, element) { return element.hasCategory("Dragonborn Racial Power"); }
       });
     }
@@ -269,7 +269,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook",
     categories: ["Eladrin Education", "ID_FMP_RACIAL_TRAIT_17"],
     rules: function(model) {
-      model.select('Skill Training', 1);
+      model.select('Skill Training', 1, "Eladrin Education");
     }
   });
   byID[te.id] = te;

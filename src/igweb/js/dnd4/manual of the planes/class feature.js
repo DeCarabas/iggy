@@ -94,7 +94,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Manual of the Planes",
     categories: ["Devshirme Training", "ID_FMP_CLASS_FEATURE_1079", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Devshirme Training", {
         filter: function(model, element) { return element.hasCategory("Devshirme Training"); }
       });
     }
@@ -117,7 +117,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Manual of the Planes",
     categories: ["Gain an additional two languages", "ID_INTERNAL_CLASS_FEATURE_GAIN_AN_ADDITIONAL_TWO_LANGUAGES", "Devshirme Training"],
     rules: function(model) {
-      model.select('Language', 2);
+      model.select('Language', 2, "Gain an additional two languages");
     }
   });
   byID[te.id] = te;
@@ -129,7 +129,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Manual of the Planes",
     categories: ["Gain Training in a skill", "ID_INTERNAL_CLASS_FEATURE_GAIN_TRAINING_IN_A_SKILL", "Devshirme Training"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Gain Training in a skill", {
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
     }

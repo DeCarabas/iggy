@@ -387,7 +387,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Healing Infusion", "ID_FMP_CLASS_FEATURE_862", "1"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_4128"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Healing Infusion", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_7635") || element.hasCategory("ID_FMP_POWER_10187")); }
       });
     }
@@ -581,10 +581,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Eberron Player's Guide",
     categories: ["Prophetic Blessing", "ID_FMP_CLASS_FEATURE_1644", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Prophetic Blessing", {
         filter: function(model, element) { return element.hasCategory("Prophetic Blessing Physical"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Prophetic Blessing", {
         filter: function(model, element) { return element.hasCategory("Prophetic Blessing Mental"); }
       });
     }

@@ -570,6 +570,7 @@ textArea {
 {
   font-weight: bold;
   background-color: lightGreen;
+  cursor: pointer;
 }
 
 .choiceGroup div.available:hover

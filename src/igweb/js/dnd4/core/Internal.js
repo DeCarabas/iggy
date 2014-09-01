@@ -87,7 +87,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Power Points", 2);
       model.statadd("Power Points", 2);
       model.statadd("Power Points", 2);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Level 3 Augment At-Will", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("3")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule
@@ -106,7 +106,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Core",
     categories: ["Background Benefit", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT"],
     rules: function(model) {
-      model.select('Background Choice', 1, {
+      model.select('Background Choice', 1, "Background Benefit", {
         optional: true,
         filter: function(model, element) { return element.hasCategory("Background Benefit"); }
       });
@@ -631,15 +631,15 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Psionic Augmentation (Hybrid)", "ID_INTERNAL_INTERNAL_PSIONIC_AUGMENTATION_(HYBRID)"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_NO_ENCOUNTER_POWERS"]);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Psionic Augmentation (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2340"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_HYBRID_POWER_POINTS"]);
       // unsupported rule: cbimporter.Rules.ReplaceRule
-      model.select('Power', 1, {
+      model.select('Power', 1, "Hybrid Encounter 3", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("3")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Hybrid At-Will/Encounter 7", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && (element.hasCategory("encounter") || element.hasCategory("Augmentable At-Will")) && element.hasCategory("7")); }
       });
       // unsupported rule: cbimporter.Rules.ReplaceRule

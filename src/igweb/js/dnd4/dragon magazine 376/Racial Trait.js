@@ -28,7 +28,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 376",
     categories: ["Past life", "ID_FMP_RACIAL_TRAIT_1867"],
     rules: function(model) {
-      model.select('CountsAsRace', 1, {
+      model.select('CountsAsRace', 1, "Past life", {
         filter: function(model, element) { return !element.hasCategory("ID_INTERNAL_COUNTSASRACE_REVENANT"); }
       });
     }

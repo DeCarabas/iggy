@@ -318,7 +318,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2543",
     categories: ["Bravura Leader", "ID_FMP_FEAT_2543", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Bravura Leader", {
         filter: function(model, element) { return element.hasCategory("Warlord Class"); }
       });
       model.statadd("ALLY.Action Point", "Bravura Leader:When an ally you can see spends an action point to attack, that ally can choose to gain a +4 bonus to the attack's damage roll; if the ally chooses to use the bonus, he or she grants combat advantage to the target of the attack until the end of his or her next turn");
@@ -366,7 +366,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2544",
     categories: ["Brawling Warrior", "ID_FMP_FEAT_2544", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Brawling Warrior", {
         filter: function(model, element) { return element.hasCategory("Fighter Class"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_FIGHTER"]);
@@ -497,7 +497,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2545",
     categories: ["Cyclone Warrior", "ID_FMP_FEAT_2545", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Cyclone Warrior", {
         filter: function(model, element) { return element.hasCategory("Fighter Class"); }
       });
       model.statadd("Cyclone Warrior", 1);
@@ -1110,7 +1110,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2528",
     categories: ["Heartening Exploit", "ID_FMP_FEAT_2528"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Heartening Exploit", {
         filter: function(model, element) { return (element.hasCategory("encounter") && element.hasCategory("ID_FMP_CLASS_8")); }
       });
     }
@@ -1277,7 +1277,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2546",
     categories: ["Insightful Leader", "ID_FMP_FEAT_2546", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Insightful Leader", {
         filter: function(model, element) { return element.hasCategory("Warlord Class"); }
       });
       model.statadd("Action Point", "Insightful Leader:You gain training in one skill from the warlord's class skills list. When an ally you can see spends an action point to take an extra action, that ally gains a +1 bonus to all defenses until the end of his or her next turn.");
@@ -1604,7 +1604,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2441",
     categories: ["Martial Adaptation", "ID_FMP_FEAT_2441"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Martial Adaptation", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && true /* NYI: Filter: $$LEVEL */ && element.hasCategory("martial") && element.hasCategory("daily")); }
       });
     }
@@ -1632,7 +1632,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2443",
     categories: ["Martial Flexibility", "ID_FMP_FEAT_2443"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Martial Flexibility", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && true /* NYI: Filter: $$LEVEL */ && element.hasCategory("martial") && element.hasCategory("utility")); }
       });
     }
@@ -1657,7 +1657,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2445",
     categories: ["Martial Readiness", "ID_FMP_FEAT_2445"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Martial Readiness", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && true /* NYI: Filter: $$LEVEL */ && element.hasCategory("martial") && element.hasCategory("at-will")); }
       });
     }
@@ -1672,7 +1672,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2446",
     categories: ["Martial Versatility", "ID_FMP_FEAT_2446"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Martial Versatility", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && true /* NYI: Filter: $$LEVEL */ && element.hasCategory("martial") && element.hasCategory("encounter")); }
       });
     }
@@ -2344,7 +2344,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2547",
     categories: ["Resourceful Leader", "ID_FMP_FEAT_2547", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Resourceful Leader", {
         filter: function(model, element) { return element.hasCategory("Warlord Class"); }
       });
       model.statadd("ALLY.Action Point", "Resourceful Leader:You gain training in one skill from the warlord's class skills list. When an ally you can see spends an action point to make an attack, the ally gains a +3 bonus to damage rolls on a hit or gains 3 temporary hit points on a miss. This bonus increases to +5 at 11th level and +7 at 21st level. These temporary hit points increase to 5 at 11th level and 7 at 21st level.");
@@ -2506,7 +2506,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2548",
     categories: ["Skirmishing Leader", "ID_FMP_FEAT_2548", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Skirmishing Leader", {
         filter: function(model, element) { return element.hasCategory("Warlord Class"); }
       });
       model.statadd("ALLY.Action Point", "Skirmishing Leader:When an ally you can see spends an action point to take an extra action, that ally can shift 1 square as a free action before or after the extra action");
@@ -2758,7 +2758,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2541",
     categories: ["Versatile Rogue", "ID_FMP_FEAT_2541"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Rogue", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_547"); }
       });
     }
@@ -2817,7 +2817,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2550",
     categories: ["Wrathful Warrior", "ID_FMP_FEAT_2550", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Wrathful Warrior", {
         filter: function(model, element) { return element.hasCategory("Fighter Class"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_FIGHTER"]);

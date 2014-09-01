@@ -243,7 +243,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Primal Power",
     categories: ["Epic Vitality", "ID_FMP_CLASS_FEATURE_2066", "24"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Epic Vitality", {
         filter: function(model, element) { return element.hasCategory("Epic Vitality"); }
       });
     }
@@ -396,7 +396,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Primal Power",
     categories: ["Foretold Destiny", "ID_FMP_CLASS_FEATURE_2058", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Foretold Destiny", {
         filter: function(model, element) { return element.hasCategory("Foretold Destiny"); }
       });
       model.statadd("Saving Throws", function() { /* while you are not bloodied */ return 2; });
@@ -521,7 +521,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Primal Power",
     categories: ["Fury's Strength", "ID_FMP_CLASS_FEATURE_2052", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Fury's Strength", {
         filter: function(model, element) { return element.hasCategory("Fury's Strength"); }
       });
     }
@@ -571,7 +571,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Primal Power",
     categories: ["Great Summoning", "ID_FMP_CLASS_FEATURE_1990", "20"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Great Summoning", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_126") && element.hasCategory("summoning") && element.hasCategory("19")); }
       });
     }
@@ -849,10 +849,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Primal Power,Dragon Magazine 385",
     categories: ["Past Spirit", "ID_FMP_CLASS_FEATURE_2064", "21"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Past Spirit", {
         filter: function(model, element) { return element.hasCategory("Past Spirit"); }
       });
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Past Spirit", {
         filter: function(model, element) { return element.hasCategory("Past Spirit"); }
       });
     }

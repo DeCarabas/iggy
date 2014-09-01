@@ -56,7 +56,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7364",
     categories: ["Choking Grab", "ID_FMP_POWER_7364", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Choking Grab", {
         filter: function(model, element) { return (element.hasCategory("Choking Grab") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -181,7 +181,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7366",
     categories: ["Strangler's Hold", "ID_FMP_POWER_7366", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CATEGORY_22", "Reliable", "ID_FMP_CATEGORY_24", "Weapon", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Strangler's Hold", {
         filter: function(model, element) { return (element.hasCategory("Strangler's Hold") && element.hasCategory("Ability Choice")); }
       });
     }

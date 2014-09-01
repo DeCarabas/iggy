@@ -81,7 +81,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 367",
     categories: ["Harper's Study", "ID_FMP_CLASS_FEATURE_1038", "21"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Harper's Study", {
         filter: function(model, element) { return ((element.hasCategory(model['class'].id) || true /* NYI: Filter: $$MULTICLASS */) && element.hasCategory("encounter") && element.hasCategory("13")); }
       });
     }

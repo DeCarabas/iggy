@@ -20143,7 +20143,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Crushing Force +2", "ID_FMP_MAGIC_ITEM_6556"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Crushing Force +2", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("force") && element.hasCategory("9")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20158,7 +20158,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Crushing Force +3", "ID_FMP_MAGIC_ITEM_6557"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Crushing Force +3", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("force") && element.hasCategory("14")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20173,7 +20173,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Crushing Force +4", "ID_FMP_MAGIC_ITEM_6558"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Crushing Force +4", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("force") && element.hasCategory("19")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20188,7 +20188,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Crushing Force +5", "ID_FMP_MAGIC_ITEM_6559"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Crushing Force +5", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("force") && element.hasCategory("24")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20203,7 +20203,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Crushing Force +6", "ID_FMP_MAGIC_ITEM_6560"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Crushing Force +6", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("force") && element.hasCategory("29")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20254,7 +20254,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Striking Lightning +1", "ID_FMP_MAGIC_ITEM_6565"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Striking Lightning +1", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("Lightning") && element.hasCategory("4")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20269,7 +20269,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Striking Lightning +2", "ID_FMP_MAGIC_ITEM_6566"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Striking Lightning +2", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("Lightning") && element.hasCategory("9")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20284,7 +20284,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Striking Lightning +3", "ID_FMP_MAGIC_ITEM_6567"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Striking Lightning +3", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("Lightning") && element.hasCategory("14")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20299,7 +20299,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Striking Lightning +4", "ID_FMP_MAGIC_ITEM_6568"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Striking Lightning +4", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("Lightning") && element.hasCategory("19")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20314,7 +20314,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Striking Lightning +5", "ID_FMP_MAGIC_ITEM_6569"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Striking Lightning +5", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("Lightning") && element.hasCategory("24")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -20329,7 +20329,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Adventurer's Vault 2",
     categories: ["Tome of Striking Lightning +6", "ID_FMP_MAGIC_ITEM_6570"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of Striking Lightning +6", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("Lightning") && element.hasCategory("29")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

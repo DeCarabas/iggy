@@ -21,7 +21,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5'7\"-6'0\"");
       model.statadd("Average Weight", "120-160 lb.");
       model.statadd("Size", "Medium");
-      model.select('Race Ability Bonus', 1, {
+      model.select('Race Ability Bonus', 1, "Changeling", {
         filter: function(model, element) { return (element.hasCategory("Dexterity") || element.hasCategory("Intelligence")); }
       });
     }
@@ -41,7 +41,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5'8\"-6'3\"");
       model.statadd("Average Weight", "130-220 lb.");
       model.statadd("Size", "Medium");
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Kalashtar", {
         filter: function(model, element) { return element.hasCategory("Skill Bonus"); }
       });
     }

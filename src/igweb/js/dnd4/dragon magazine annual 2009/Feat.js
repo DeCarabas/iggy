@@ -855,7 +855,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=747",
     categories: ["Twofold Pact", "ID_FMP_FEAT_747"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Twofold Pact", {
         filter: function(model, element) { return element.hasCategory("Eldritch Pact"); }
       });
     }

@@ -208,7 +208,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 376",
     categories: ["Heaven's Favor", "ID_FMP_CLASS_FEATURE_1881", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Heaven's Favor", {
         filter: function(model, element) { return (true /* NYI: Filter: $$MULTICLASS */ && element.hasCategory("ID_FMP_CLASS_FEATURE_1881")); }
       });
     }

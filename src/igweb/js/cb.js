@@ -22,6 +22,10 @@ define(
             sheetui.setupUI(model);
 
             // sheetui.wizardNext();
+        },
+
+        dumpChoices: function dumpChoices() {
+          
         }
     };
 });

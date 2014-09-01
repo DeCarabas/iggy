@@ -15,7 +15,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 388",
     categories: ["Ancient Arcanist", "ID_FMP_CLASS_FEATURE_2720", "30"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Ancient Arcanist", {
         filter: function(model, element) { return (element.hasCategory("daily") && element.hasCategory("Arcane") && element.hasCategory("25")); }
       });
     }
@@ -29,10 +29,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 388",
     categories: ["Ancient Resurgence", "ID_FMP_CLASS_FEATURE_2716", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ancient Resurgence", {
         filter: function(model, element) { return (element.hasCategory("Ancient Resurgence (Intelligence)") || element.hasCategory("Ancient Resurgence (Charisma)")); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ancient Resurgence", {
         filter: function(model, element) { return (((element.hasCategory("Ancient Resurgence (Strength)") || element.hasCategory("Ancient Resurgence (Dexterity)")) || element.hasCategory("Ancient Resurgence (Constitution)")) || element.hasCategory("Ancient Resurgence (Wisdom)")); }
       });
       model.grant(model.elements.id["ID_FMP_LANGUAGE_2"]);
@@ -119,7 +119,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 388",
     categories: ["Blessing of Siberys", "ID_FMP_CLASS_FEATURE_2729", "21"],
     rules: function(model) {
-      model.select('class feature', 2, {
+      model.select('class feature', 2, "Blessing of Siberys", {
         filter: function(model, element) { return element.hasCategory("Blessing of Siberys"); }
       });
     }
@@ -352,7 +352,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 388",
     categories: ["Stalwart Guardian", "ID_FMP_CLASS_FEATURE_2725", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Stalwart Guardian", {
         filter: function(model, element) { return element.hasCategory("Stalwart Guardian"); }
       });
       model.statadd("Constitution", 2);
@@ -463,7 +463,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 388",
     categories: ["Uncanny Prowess", "ID_FMP_CLASS_FEATURE_2721", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Uncanny Prowess", {
         filter: function(model, element) { return element.hasCategory("Uncanny Prowess"); }
       });
       model.statadd("Dexterity", 2);

@@ -64,7 +64,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Baldur's Gate Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_BALDUR'S_GATE_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Baldur's Gate Benefit");
       // unsupported rule: cbimporter.Rules.ModifyRule
       model.statadd("Streetwise Misc", 2);
     }
@@ -145,7 +145,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Dragon Coast Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_DRAGON_COAST_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Dragon Coast Benefit");
     }
   });
   byID[te.id] = te;
@@ -198,7 +198,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Gray Vale Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_GRAY_VALE_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Gray Vale Benefit");
       // unsupported rule: cbimporter.Rules.ModifyRule
       model.statadd("Nature Misc", 2);
     }
@@ -251,7 +251,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Luruar Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_LURUAR_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Luruar Benefit");
     }
   });
   byID[te.id] = te;
@@ -380,7 +380,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Waterdeep Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_WATERDEEP_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Waterdeep Benefit");
       // unsupported rule: cbimporter.Rules.ModifyRule
       model.statadd("Diplomacy Misc", 2);
     }

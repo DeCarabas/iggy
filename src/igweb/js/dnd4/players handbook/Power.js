@@ -2166,10 +2166,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1448",
     categories: ["Dragon Breath", "ID_FMP_POWER_1448", "ID_FMP_RACIAL_TRAIT_6", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CATEGORY_5", "Acid", "ID_FMP_CATEGORY_1", "cold", "ID_FMP_CATEGORY_3", "fire", "ID_FMP_CATEGORY_11", "Lightning", "ID_FMP_CATEGORY_14", "Poison", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Dragon Breath", {
         filter: function(model, element) { return (element.hasCategory("Dragon Breath") && element.hasCategory("Ability Choice")); }
       });
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Dragon Breath", {
         filter: function(model, element) { return (element.hasCategory("Dragon Breath") && element.hasCategory("Element Choice")); }
       });
     }
@@ -2244,7 +2244,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1333",
     categories: ["Eldritch Blast", "ID_FMP_POWER_1333", "ID_FMP_CLASS_FEATURE_606", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_AT-WILL", "at-will", "ID_INTERNAL_CATEGORY_AT-WILL_USAGE", "At-Will Usage", "ID_FMP_CLASS_7", "Warlock", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Eldritch Blast", {
         filter: function(model, element) { return (element.hasCategory("Eldritch Blast") && element.hasCategory("Ability Choice")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

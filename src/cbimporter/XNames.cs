@@ -15,6 +15,7 @@
         public static readonly XName Grant = XName.Get("grant");
         public static readonly XName HalfPoint = XName.Get("half-point");
         public static readonly XName InternalID = XName.Get("internal-id");
+        public static readonly XName Level = XName.Get("Level");
         public static readonly XName Modify = XName.Get("modify");
         public static readonly XName Name = XName.Get("name");
         public static readonly XName Number = XName.Get("number");

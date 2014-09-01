@@ -21,7 +21,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "6'1\"-6'6\"");
       model.statadd("Average Weight", "175-280 lb.");
       model.statadd("Size", "Medium");
-      model.select('Language', 2, {
+      model.select('Language', 2, "Deva", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }
@@ -58,7 +58,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "7'2\"-7'8\"");
       model.statadd("Average Weight", "280-340 lb.");
       model.statadd("Size", "Medium");
-      model.select('Language', 1, {
+      model.select('Language', 1, "Goliath", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_RACE_37"); }
       });
     }
@@ -95,7 +95,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5'7\"-6'0\"");
       model.statadd("Average Weight", "130-180 lb.");
       model.statadd("Size", "Medium");
-      model.select('Language', 1, {
+      model.select('Language', 1, "Longtooth Shifter", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }
@@ -115,7 +115,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5'7\"-6'0\"");
       model.statadd("Average Weight", "130-180 lb.");
       model.statadd("Size", "Medium");
-      model.select('Language', 1, {
+      model.select('Language', 1, "Razorclaw Shifter", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }

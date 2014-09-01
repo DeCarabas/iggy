@@ -241,10 +241,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 376",
     categories: ["Windrise Ports Benefit", "ID_INTERNAL_BACKGROUND_CHOICE_WINDRISE_PORTS_BENEFIT", "ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT", "Background Benefit"],
     rules: function(model) {
-      model.select('Background Choice', 1, {
+      model.select('Background Choice', 1, "Windrise Ports Benefit", {
         filter: function(model, element) { return element.hasCategory("Windrise Ports"); }
       });
-      model.select('Language', 1);
+      model.select('Language', 1, "Windrise Ports Benefit");
     }
   });
   byID[te.id] = te;

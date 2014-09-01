@@ -53,7 +53,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Fragment of Erathis", "ID_FMP_GOD_FRAGMENT_3"],
     rules: function(model) {
       model.statadd("Diplomacy Misc", 2, "Feat");
-      model.select('Language', 1);
+      model.select('Language', 1, "Fragment of Erathis");
     }
   });
   byID[te.id] = te;

@@ -48,7 +48,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power",
     categories: ["Archetype's Edge", "ID_FMP_CLASS_FEATURE_1015", "21"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Archetype's Edge", {
         filter: function(model, element) { return (element.hasCategory("encounter") && element.hasCategory("17") && element.hasCategory("martial")); }
       });
     }
@@ -188,7 +188,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power",
     categories: ["Beast Mastery", "ID_FMP_CLASS_FEATURE_1030", "ID_FMP_CLASS_FEATURE_321", "Fighting Style", "1"],
     rules: function(model) {
-      model.select('Companion', 1);
+      model.select('Companion', 1, "Beast Mastery");
       model.statadd("Companion.Strength", 1);
       model.statadd("Companion.Constitution", 1);
       model.statadd("Companion.Dexterity", 1);
@@ -201,12 +201,12 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Companion.Intelligence", 1);
       model.statadd("Companion.Wisdom", 1);
       model.statadd("Companion.Charisma", 1);
-      model.select('Companion Ability Increase (Level 4)', 2);
-      model.select('Companion Ability Increase (Level 8)', 2);
-      model.select('Companion Ability Increase (Level 14)', 2);
-      model.select('Companion Ability Increase (Level 18)', 2);
-      model.select('Companion Ability Increase (Level 24)', 2);
-      model.select('Companion Ability Increase (Level 28)', 2);
+      model.select('Companion Ability Increase (Level 4)', 2, "Beast Mastery");
+      model.select('Companion Ability Increase (Level 8)', 2, "Beast Mastery");
+      model.select('Companion Ability Increase (Level 14)', 2, "Beast Mastery");
+      model.select('Companion Ability Increase (Level 18)', 2, "Beast Mastery");
+      model.select('Companion Ability Increase (Level 24)', 2, "Beast Mastery");
+      model.select('Companion Ability Increase (Level 28)', 2, "Beast Mastery");
       model.statadd("FREEBEE:ID_FMP_RITUAL_187", 1);
     }
   });
@@ -656,7 +656,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power",
     categories: ["Extra Manifestation", "ID_FMP_CLASS_FEATURE_975", "11"],
     rules: function(model) {
-      model.select('Feat', 1);
+      model.select('Feat', 1, "Extra Manifestation");
     }
   });
   byID[te.id] = te;
@@ -1222,7 +1222,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power",
     categories: ["Perfect Warrior", "ID_FMP_CLASS_FEATURE_1018", "30"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Perfect Warrior", {
         filter: function(model, element) { return (element.hasCategory("martial") && (element.hasCategory("utility") || element.hasCategory("encounter"))); }
       });
     }
@@ -1257,7 +1257,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power",
     categories: ["Pliable Command", "ID_FMP_CLASS_FEATURE_988", "16"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Pliable Command", {
         filter: function(model, element) { return element.hasCategory("Commanding Presence"); }
       });
     }
@@ -2040,7 +2040,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Martial Power",
     categories: ["Warrior's Ascent", "ID_FMP_CLASS_FEATURE_1017", "26"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Warrior's Ascent", {
         filter: function(model, element) { return (element.hasCategory("utility") && element.hasCategory("22") && element.hasCategory("martial")); }
       });
     }

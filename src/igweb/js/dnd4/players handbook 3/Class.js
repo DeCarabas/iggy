@@ -17,23 +17,23 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Ardent", "ID_FMP_CLASS_529"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_ARDENT"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "First Augmented At-Will", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Second Augmented At-Will", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_529");
       model.statadd("_LEVEL-ONE-HPS", 12);
       model.statadd("_PER-LEVEL-HPS", 5);
       model.statadd("Healing Surges", 7);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Ardent", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Fortitude Defense Class Bonus", 1);
       model.statadd("Will Defense Class Bonus", 1);
-      model.select('Skill Training', 4, {
+      model.select('Skill Training', 4, "Ardent", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_529"); }
       });
     }
@@ -49,22 +49,22 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Battlemind", "ID_FMP_CLASS_124"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_BATTLEMIND"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "First Augmented At-Will", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Second Augmented At-Will", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_124");
       model.statadd("_LEVEL-ONE-HPS", 15);
       model.statadd("_PER-LEVEL-HPS", 6);
       model.statadd("Healing Surges", 9);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Battlemind", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Will Defense Class Bonus", 2);
-      model.select('Skill Training', 3, {
+      model.select('Skill Training', 3, "Battlemind", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_124"); }
       });
     }
@@ -80,21 +80,21 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Monk", "ID_FMP_CLASS_362"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_MONK"]);
-      model.select('Power', 2, {
+      model.select('Power', 2, "Monk", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_362");
       model.statadd("_LEVEL-ONE-HPS", 12);
       model.statadd("_PER-LEVEL-HPS", 5);
       model.statadd("Healing Surges", 7);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Monk", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Fortitude Defense Class Bonus", 1);
       model.statadd("Reflex Defense Class Bonus", 1);
       model.statadd("Will Defense Class Bonus", 1);
-      model.select('Skill Training', 4, {
+      model.select('Skill Training', 4, "Monk", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_362"); }
       });
       model.statadd("_WeaponsAsImplements", 1);
@@ -111,22 +111,22 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Psion", "ID_FMP_CLASS_437"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_PSION"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "First Augmented At-Will", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Second Augmented At-Will", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_437");
       model.statadd("_LEVEL-ONE-HPS", 12);
       model.statadd("_PER-LEVEL-HPS", 4);
       model.statadd("Healing Surges", 6);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Psion", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Will Defense Class Bonus", 2);
-      model.select('Skill Training', 4, {
+      model.select('Skill Training', 4, "Psion", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_437"); }
       });
     }
@@ -142,19 +142,19 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Runepriest", "ID_FMP_CLASS_602"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_RUNEPRIEST"]);
-      model.select('Power', 2, {
+      model.select('Power', 2, "Runepriest", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_602");
       model.statadd("_LEVEL-ONE-HPS", 12);
       model.statadd("_PER-LEVEL-HPS", 5);
       model.statadd("Healing Surges", 7);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Runepriest", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Will Defense Class Bonus", 2);
-      model.select('Skill Training', 3, {
+      model.select('Skill Training', 3, "Runepriest", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_602"); }
       });
     }
@@ -170,20 +170,20 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Seeker", "ID_FMP_CLASS_472"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_SEEKER"]);
-      model.select('Power', 2, {
+      model.select('Power', 2, "Seeker", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_472");
       model.statadd("_LEVEL-ONE-HPS", 12);
       model.statadd("_PER-LEVEL-HPS", 5);
       model.statadd("Healing Surges", 7);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Seeker", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Reflex Defense Class Bonus", 1);
       model.statadd("Will Defense Class Bonus", 1);
-      model.select('Skill Training', 3, {
+      model.select('Skill Training', 3, "Seeker", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_472"); }
       });
     }

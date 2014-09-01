@@ -27,7 +27,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Ambitious Effort", "ID_FMP_CLASS_FEATURE_1149", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ambitious Effort", {
         filter: function(model, element) { return element.hasCategory("Ambitious Effort"); }
       });
     }
@@ -41,11 +41,11 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Ambitious Effort Existing Power", "ID_INTERNAL_CLASS_FEATURE_AMBITIOUS_EFFORT_EXISTING_POWER", "Ambitious Effort"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Ambitious Effort Existing Power", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("7")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.select('Power', 1, {
+      model.select('Power', 1, "Ambitious Effort Existing Power", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("13")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -60,10 +60,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Ambitious Effort New Power", "ID_INTERNAL_CLASS_FEATURE_AMBITIOUS_EFFORT_NEW_POWER", "Ambitious Effort"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Ambitious Effort New Power", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("7")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Ambitious Effort New Power", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("13")); }
       });
     }
@@ -148,7 +148,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Avenger's Censure", "ID_FMP_CLASS_FEATURE_1192", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Avenger's Censure", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1192"); }
       });
     }
@@ -214,7 +214,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Bardic Training", "ID_FMP_CLASS_FEATURE_847", "1"],
     rules: function(model) {
-      model.select('Feat', 1, {
+      model.select('Feat', 1, "Bardic Training", {
         filter: function(model, element) { return element.hasCategory("Ritual Casting"); }
       });
       model.statadd("FREEBEE:ID_FMP_GEAR_31", 1);
@@ -230,7 +230,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2,Player's Handbook 3",
     categories: ["Bardic Virtue", "ID_FMP_CLASS_FEATURE_700", "ID_FMP_HYBRID_CLASS_441", "Hybrid Bard", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Bardic Virtue", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_700"); }
       });
     }
@@ -610,7 +610,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Clever Versatililty", "ID_FMP_CLASS_FEATURE_1165", "12"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Clever Versatililty", {
         filter: function(model, element) { return (element.hasCategory("utility") && element.hasCategory("10") && (element.hasCategory("ID_FMP_CLASS_6") || element.hasCategory("ID_FMP_CLASS_9"))); }
       });
     }
@@ -633,7 +633,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Companion Spirit", "ID_FMP_CLASS_FEATURE_855", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Companion Spirit", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_855"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_6515"]);
@@ -767,7 +767,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Divine Covenant", "ID_FMP_CLASS_FEATURE_1156", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Divine Covenant", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1156"); }
       });
     }
@@ -906,7 +906,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2,Player's Handbook 3",
     categories: ["Dragon Soul", "ID_FMP_CLASS_FEATURE_1559", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Dragon Soul", {
         filter: function(model, element) { return element.hasCategory("Dragon Soul Resist Choice"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_DRAGON_MAGIC"]);
@@ -1200,7 +1200,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2,Player's Handbook 3",
     categories: ["Feral Might", "ID_FMP_CLASS_FEATURE_1051", "ID_FMP_HYBRID_CLASS_440", "Hybrid Barbarian", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Feral Might", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1051"); }
       });
     }
@@ -1400,7 +1400,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Guardian Might", "ID_FMP_CLASS_FEATURE_1281", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Guardian Might", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1281"); }
       });
     }
@@ -1702,11 +1702,11 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Lorekeeper's Revelation", "ID_FMP_CLASS_FEATURE_1303", "30"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Lorekeeper's Revelation", {
         filter: function(model, element) { return (element.hasCategory("utility") && element.hasCategory("Daily Usage")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.select('Power', 1, {
+      model.select('Power', 1, "Lorekeeper's Revelation", {
         filter: function(model, element) { return (element.hasCategory("utility") && element.hasCategory("Daily Usage")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1910,7 +1910,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2,Player's Handbook 3",
     categories: ["Primal Aspect", "ID_FMP_CLASS_FEATURE_784", "ID_FMP_HYBRID_CLASS_442", "Hybrid Druid", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Primal Aspect", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_784"); }
       });
     }
@@ -2074,7 +2074,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Second Dragon Magic", "ID_INTERNAL_CLASS_FEATURE_SECOND_DRAGON_MAGIC"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Second Dragon Magic", {
         filter: function(model, element) { return element.hasCategory("Dragon Soul Resist Choice"); }
       });
     }
@@ -2118,7 +2118,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Skill Learning", "ID_FMP_CLASS_FEATURE_1163", "11"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Skill Learning", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_6") || element.hasCategory("ID_FMP_CLASS_9")); }
       });
     }
@@ -2229,7 +2229,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Spell Source", "ID_FMP_CLASS_FEATURE_850", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Spell Source", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_850"); }
       });
     }

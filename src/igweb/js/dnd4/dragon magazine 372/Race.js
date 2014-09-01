@@ -21,7 +21,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.statadd("Average Height", "5'7\"-6'0\"");
       model.statadd("Average Weight", "110-170 lb.");
       model.statadd("Size", "Medium");
-      model.select('Language', 1, {
+      model.select('Language', 1, "Shadar-kai", {
         filter: function(model, element) { return element.hasCategory("Starting"); }
       });
     }

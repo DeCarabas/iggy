@@ -17,19 +17,19 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Swordmage", "ID_FMP_CLASS_53"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_SWORDMAGE"]);
-      model.select('Power', 2, {
+      model.select('Power', 2, "Swordmage", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_53");
       model.statadd("_LEVEL-ONE-HPS", 15);
       model.statadd("_PER-LEVEL-HPS", 6);
       model.statadd("Healing Surges", 8);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Swordmage", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Will Defense Class Bonus", 2);
-      model.select('Skill Training', 3, {
+      model.select('Skill Training', 3, "Swordmage", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_53"); }
       });
     }

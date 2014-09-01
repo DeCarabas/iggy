@@ -19,7 +19,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1483"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1484"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_1485"]);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Abiding Reaper", {
         filter: function(model, element) { return element.hasCategory("Abiding Reaper"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_6965"]);

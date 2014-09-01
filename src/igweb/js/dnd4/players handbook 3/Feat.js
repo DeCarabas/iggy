@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2633",
     categories: ["Aspect of the Cultivator", "ID_FMP_FEAT_2633"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Aspect of the Cultivator", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_RACIAL_TRAIT_1539"); }
       });
       // unsupported rule: cbimporter.Rules.DropRule
@@ -451,7 +451,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2628",
     categories: ["Demanding Talent", "ID_FMP_FEAT_2628", "ID_INTERNAL_CATEGORY_MULTICLASS_BATTLEMIND", "Multiclass Battlemind", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Demanding Talent", {
         filter: function(model, element) { return element.hasCategory("Battlemind Class"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_10438"]);
@@ -525,10 +525,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2731",
     categories: ["Disciplined Talent", "ID_FMP_FEAT_2731", "ID_INTERNAL_CATEGORY_MULTICLASS_PSION", "Multiclass Psion", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Disciplined Talent", {
         filter: function(model, element) { return element.hasCategory("Psion Class"); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Disciplined Talent", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_437") && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -649,7 +649,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2693",
     categories: ["Fervent Talent", "ID_FMP_FEAT_2693", "ID_INTERNAL_CATEGORY_MULTICLASS_ARDENT", "Multiclass Ardent", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Fervent Talent", {
         filter: function(model, element) { return element.hasCategory("Ardent Class"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_10273"]);
@@ -826,7 +826,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1366",
     categories: ["Hybrid Talent", "ID_FMP_FEAT_1366"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Hybrid Talent", {
         filter: function(model, element) { return true /* NYI: Filter: $$HYBRID */; }
       });
     }
@@ -1069,10 +1069,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2694",
     categories: ["Monastic Disciple", "ID_FMP_FEAT_2694", "ID_INTERNAL_CATEGORY_MULTICLASS_MONK", "Multiclass Monk", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Monastic Disciple", {
         filter: function(model, element) { return element.hasCategory("Monk Class"); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Monastic Disciple", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_7448") || element.hasCategory("ID_FMP_POWER_11207")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1242,7 +1242,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_NATURE"]);
       model.grant(model.elements.id["ID_FMP_POWER_9501"]);
       // unsupported rule: cbimporter.Rules.ModifyRule
-      model.select('Power', 1, {
+      model.select('Power', 1, "Primal Sharpshooter", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_472") && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1754,7 +1754,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2618",
     categories: ["Skill Power", "ID_FMP_FEAT_2618"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Skill Power", {
         filter: function(model, element) { return (true /* NYI: Filter: $$LEVEL */ && element.hasCategory("Skill Power")); }
       });
     }
@@ -2400,10 +2400,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2785",
     categories: ["Versatile Expertise", "ID_FMP_FEAT_2785"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Weapon Group"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Implement"); }
       });
     }
@@ -2418,10 +2418,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_VERSATILE_EXPERTISE_II",
     categories: ["Versatile Expertise II", "ID_INTERNAL_FEAT_VERSATILE_EXPERTISE_II"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise II", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Weapon Group"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise II", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Implement"); }
       });
     }
@@ -2436,10 +2436,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_VERSATILE_EXPERTISE_III",
     categories: ["Versatile Expertise III", "ID_INTERNAL_FEAT_VERSATILE_EXPERTISE_III"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise III", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Weapon Group"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise III", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Implement"); }
       });
     }
@@ -2454,10 +2454,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_VERSATILE_EXPERTISE_IV",
     categories: ["Versatile Expertise IV", "ID_INTERNAL_FEAT_VERSATILE_EXPERTISE_IV"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise IV", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Weapon Group"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise IV", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Implement"); }
       });
     }
@@ -2472,10 +2472,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_VERSATILE_EXPERTISE_V",
     categories: ["Versatile Expertise V", "ID_INTERNAL_FEAT_VERSATILE_EXPERTISE_V"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise V", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Weapon Group"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise V", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Implement"); }
       });
     }
@@ -2490,10 +2490,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_VERSATILE_EXPERTISE_VI",
     categories: ["Versatile Expertise VI", "ID_INTERNAL_FEAT_VERSATILE_EXPERTISE_VI"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise VI", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Weapon Group"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Versatile Expertise VI", {
         filter: function(model, element) { return element.hasCategory("Versatile Expertise Implement"); }
       });
     }

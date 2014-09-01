@@ -102,10 +102,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 386",
     categories: ["Combat Illusionist", "ID_FMP_CLASS_FEATURE_2628", "11"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Combat Illusionist", {
         filter: function(model, element) { return (element.hasCategory("Arcane") && element.hasCategory("illusion") && element.hasCategory("encounter") && element.hasCategory("7")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Combat Illusionist", {
         filter: function(model, element) { return (element.hasCategory("Arcane") && element.hasCategory("illusion") && element.hasCategory("encounter") && element.hasCategory("13")); }
       });
     }

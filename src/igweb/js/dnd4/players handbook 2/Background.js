@@ -15,7 +15,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 2",
     categories: ["Birth - Among Another Race", "ID_FMP_BACKGROUND_88"],
     rules: function(model) {
-      model.select('Background Choice', 1, {
+      model.select('Background Choice', 1, "Birth - Among Another Race", {
         filter: function(model, element) { return element.hasCategory("Birth - Among Another Race"); }
       });
     }

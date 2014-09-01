@@ -17,13 +17,13 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Paragon Hybrid", "ID_INTERNAL_PARAGON_PATH_PARAGON_HYBRID"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_FEAT_PARAGON_HYBRID_TALENT"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Hybrid", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("7")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Hybrid", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("utility") && element.hasCategory("10")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Hybrid", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("daily") && element.hasCategory("19")); }
       });
     }

@@ -252,7 +252,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1653",
     categories: ["Genasi Soul", "ID_FMP_FEAT_1653"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Genasi Soul", {
         filter: function(model, element) { return ((((element.hasCategory("ID_FMP_POWER_1766") || element.hasCategory("ID_FMP_POWER_1767")) || element.hasCategory("ID_FMP_POWER_1769")) || element.hasCategory("ID_FMP_POWER_1770")) || element.hasCategory("ID_FMP_POWER_1828")); }
       });
     }
@@ -436,7 +436,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1701",
     categories: ["Ramekho Troubleshooter", "ID_FMP_FEAT_1701"],
     rules: function(model) {
-      model.select('Language', 1);
+      model.select('Language', 1, "Ramekho Troubleshooter");
     }
   });
   byID[te.id] = te;
@@ -518,10 +518,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1667",
     categories: ["Remembered Knack", "ID_FMP_FEAT_1667"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Remembered Knack", {
         filter: function(model, element) { return true /* NYI: Filter: $$MULTICLASS */; }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Remembered Knack", {
         filter: function(model, element) { return element.hasCategory("Remembered Knack"); }
       });
     }
@@ -577,7 +577,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1669",
     categories: ["Shifter Soul", "ID_FMP_FEAT_1669"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Shifter Soul", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_2483") || element.hasCategory("ID_FMP_POWER_2484")); }
       });
     }

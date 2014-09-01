@@ -17,20 +17,20 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Artificer", "ID_FMP_CLASS_125"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_ARTIFICER"]);
-      model.select('Power', 2, {
+      model.select('Power', 2, "Artificer", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
       model.statadd("_CLASSNAME", "ID_FMP_CLASS_125");
       model.statadd("_LEVEL-ONE-HPS", 12);
       model.statadd("_PER-LEVEL-HPS", 5);
       model.statadd("Healing Surges", 6);
-      model.select('Build', 1, {
+      model.select('Build', 1, "Artificer", {
         optional: true,
         filter: function(model, element) { return element.hasCategory(model['class'].id); }
       });
       model.statadd("Fortitude Defense Class Bonus", 1);
       model.statadd("Will Defense Class Bonus", 1);
-      model.select('Skill Training', 4, {
+      model.select('Skill Training', 4, "Artificer", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_125"); }
       });
     }

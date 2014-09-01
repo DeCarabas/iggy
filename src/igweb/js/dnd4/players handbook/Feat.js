@@ -160,7 +160,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Arcane Initiate", "ID_FMP_FEAT_277", "ID_INTERNAL_CATEGORY_MULTICLASS_WIZARD", "Multiclass Wizard", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_SKILL_TRAINING_ARCANA"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Arcane Initiate", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("1") && element.hasCategory("ID_FMP_CLASS_9")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -828,25 +828,25 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=276",
     categories: ["Expanded Spellbook", "ID_FMP_FEAT_276"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Expanded Spellbook", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Expanded Spellbook", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("5")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Expanded Spellbook", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("9")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Expanded Spellbook", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("15")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Expanded Spellbook", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("19")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Expanded Spellbook", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("25")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Expanded Spellbook", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("29")); }
       });
     }
@@ -1362,7 +1362,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=150",
     categories: ["Linguist", "ID_FMP_FEAT_150"],
     rules: function(model) {
-      model.select('Language', 3);
+      model.select('Language', 3, "Linguist");
     }
   });
   byID[te.id] = te;
@@ -1375,7 +1375,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_II",
     categories: ["Linguist II", "ID_INTERNAL_FEAT_LINGUIST_II"],
     rules: function(model) {
-      model.select('Language', 3);
+      model.select('Language', 3, "Linguist II");
     }
   });
   byID[te.id] = te;
@@ -1388,7 +1388,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_III",
     categories: ["Linguist III", "ID_INTERNAL_FEAT_LINGUIST_III"],
     rules: function(model) {
-      model.select('Language', 3);
+      model.select('Language', 3, "Linguist III");
     }
   });
   byID[te.id] = te;
@@ -1401,7 +1401,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_IV",
     categories: ["Linguist IV", "ID_INTERNAL_FEAT_LINGUIST_IV"],
     rules: function(model) {
-      model.select('Language', 3);
+      model.select('Language', 3, "Linguist IV");
     }
   });
   byID[te.id] = te;
@@ -1414,7 +1414,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_V",
     categories: ["Linguist V", "ID_INTERNAL_FEAT_LINGUIST_V"],
     rules: function(model) {
-      model.select('Language', 3);
+      model.select('Language', 3, "Linguist V");
     }
   });
   byID[te.id] = te;
@@ -1427,7 +1427,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_LINGUIST_VI",
     categories: ["Linguist VI", "ID_INTERNAL_FEAT_LINGUIST_VI"],
     rules: function(model) {
-      model.select('Language', 3);
+      model.select('Language', 3, "Linguist VI");
     }
   });
   byID[te.id] = te;
@@ -1564,10 +1564,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=337",
     categories: ["Pact Initiate", "ID_FMP_FEAT_337", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLOCK", "Multiclass Warlock", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Pact Initiate", {
         filter: function(model, element) { return element.hasCategory("Warlock Class"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Pact Initiate", {
         filter: function(model, element) { return element.hasCategory("Pact Initiate"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)"]);
@@ -1777,7 +1777,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=320",
     categories: ["Second Implement", "ID_FMP_FEAT_320"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Second Implement", {
         filter: function(model, element) { return element.hasCategory("Arcane Implement Mastery"); }
       });
     }
@@ -2375,7 +2375,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=335",
     categories: ["Soldier of the Faith", "ID_FMP_FEAT_335", "ID_INTERNAL_CATEGORY_MULTICLASS_PALADIN", "Multiclass Paladin", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Soldier of the Faith", {
         filter: function(model, element) { return element.hasCategory("Paladin Class"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_805"]);
@@ -2458,7 +2458,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=338",
     categories: ["Student of Battle", "ID_FMP_FEAT_338", "ID_INTERNAL_CATEGORY_MULTICLASS_WARLORD", "Multiclass Warlord", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Student of Battle", {
         filter: function(model, element) { return element.hasCategory("Warlord Class"); }
       });
       model.grant(model.elements.id["ID_FMP_POWER_1590"]);
@@ -2478,10 +2478,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=334",
     categories: ["Student of the Sword", "ID_FMP_FEAT_334", "ID_INTERNAL_CATEGORY_MULTICLASS_FIGHTER", "Multiclass Fighter", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Student of the Sword", {
         filter: function(model, element) { return element.hasCategory("Fighter Class"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Student of the Sword", {
         filter: function(model, element) { return element.hasCategory("Student of the Sword"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASCLASS_FIGHTER"]);
@@ -2647,7 +2647,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=336",
     categories: ["Warrior of the Wild", "ID_FMP_FEAT_336", "ID_INTERNAL_CATEGORY_MULTICLASS_RANGER", "Multiclass Ranger", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Warrior of the Wild", {
         filter: function(model, element) { return element.hasCategory("Ranger Class"); }
       });
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_602"]);

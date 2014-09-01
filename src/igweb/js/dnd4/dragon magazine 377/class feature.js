@@ -59,7 +59,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 377",
     categories: ["Second Familiar", "ID_FMP_CLASS_FEATURE_1903", "16"],
     rules: function(model) {
-      model.select('Familiar', 1);
+      model.select('Familiar', 1, "Second Familiar");
     }
   });
   byID[te.id] = te;

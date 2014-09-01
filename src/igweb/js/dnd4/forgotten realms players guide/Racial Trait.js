@@ -85,7 +85,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Forgotten Realms Player's Guide",
     categories: ["Elemental Manifestation", "ID_FMP_RACIAL_TRAIT_803"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Elemental Manifestation", {
         filter: function(model, element) { return element.hasCategory("Elemental Manifestation"); }
       });
     }

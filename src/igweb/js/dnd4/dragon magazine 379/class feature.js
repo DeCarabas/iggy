@@ -99,7 +99,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 379",
     categories: ["Guild Training", "ID_FMP_CLASS_FEATURE_1921", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Guild Training", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1921"); }
       });
     }

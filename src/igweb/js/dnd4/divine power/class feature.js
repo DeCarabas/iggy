@@ -127,7 +127,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Divine Power",
     categories: ["Anointed Regalia", "ID_FMP_CLASS_FEATURE_1682", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Anointed Regalia", {
         filter: function(model, element) { return element.hasCategory("Anointed Regalia"); }
       });
     }
@@ -1183,7 +1183,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Power in Conflict", "ID_FMP_CLASS_FEATURE_1805", "21"],
     rules: function(model) {
       model.statadd("Strength", 2);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Power in Conflict", {
         filter: function(model, element) { return element.hasCategory("Power in Conflict"); }
       });
     }
@@ -1586,7 +1586,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Divine Power",
     categories: ["Student of the Gods", "ID_FMP_CLASS_FEATURE_1731", "11"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Student of the Gods", {
         filter: function(model, element) { return (true /* NYI: Filter: $$NOT_CLASS */ && element.hasCategory("at-will") && element.hasCategory("1") && element.hasCategory("ID_FMP_CATEGORY_32")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

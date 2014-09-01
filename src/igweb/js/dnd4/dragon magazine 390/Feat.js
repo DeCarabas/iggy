@@ -16,7 +16,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=3438",
     categories: ["Academy Prodigy", "ID_FMP_FEAT_3438"],
     rules: function(model) {
-      model.select('class feature', 2, {
+      model.select('class feature', 2, "Academy Prodigy", {
         filter: function(model, element) { return element.hasCategory("Academy Prodigy"); }
       });
     }

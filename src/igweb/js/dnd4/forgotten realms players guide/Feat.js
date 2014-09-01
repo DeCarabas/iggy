@@ -189,7 +189,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=604",
     categories: ["Extra Manifestation", "ID_FMP_FEAT_604"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Extra Manifestation", {
         filter: function(model, element) { return ((((((((element.hasCategory("earthsoul") || element.hasCategory("firesoul")) || element.hasCategory("stormsoul")) || element.hasCategory("watersoul")) || element.hasCategory("windsoul")) || element.hasCategory("causticsoul")) || element.hasCategory("cindersoul")) || element.hasCategory("plaguesoul")) || element.hasCategory("voidsoul")); }
       });
     }
@@ -204,7 +204,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_II",
     categories: ["Extra Manifestation II", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_II"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Extra Manifestation II", {
         filter: function(model, element) { return ((((((((element.hasCategory("earthsoul") || element.hasCategory("firesoul")) || element.hasCategory("stormsoul")) || element.hasCategory("watersoul")) || element.hasCategory("windsoul")) || element.hasCategory("causticsoul")) || element.hasCategory("cindersoul")) || element.hasCategory("plaguesoul")) || element.hasCategory("voidsoul")); }
       });
     }
@@ -219,7 +219,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_III",
     categories: ["Extra Manifestation III", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_III"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Extra Manifestation III", {
         filter: function(model, element) { return ((((((((element.hasCategory("earthsoul") || element.hasCategory("firesoul")) || element.hasCategory("stormsoul")) || element.hasCategory("watersoul")) || element.hasCategory("windsoul")) || element.hasCategory("causticsoul")) || element.hasCategory("cindersoul")) || element.hasCategory("plaguesoul")) || element.hasCategory("voidsoul")); }
       });
     }
@@ -234,7 +234,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_IV",
     categories: ["Extra Manifestation IV", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_IV"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Extra Manifestation IV", {
         filter: function(model, element) { return ((((((((element.hasCategory("earthsoul") || element.hasCategory("firesoul")) || element.hasCategory("stormsoul")) || element.hasCategory("watersoul")) || element.hasCategory("windsoul")) || element.hasCategory("causticsoul")) || element.hasCategory("cindersoul")) || element.hasCategory("plaguesoul")) || element.hasCategory("voidsoul")); }
       });
     }
@@ -249,7 +249,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_V",
     categories: ["Extra Manifestation V", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_V"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Extra Manifestation V", {
         filter: function(model, element) { return ((((((((element.hasCategory("earthsoul") || element.hasCategory("firesoul")) || element.hasCategory("stormsoul")) || element.hasCategory("watersoul")) || element.hasCategory("windsoul")) || element.hasCategory("causticsoul")) || element.hasCategory("cindersoul")) || element.hasCategory("plaguesoul")) || element.hasCategory("voidsoul")); }
       });
     }
@@ -264,7 +264,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_VI",
     categories: ["Extra Manifestation VI", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VI"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Extra Manifestation VI", {
         filter: function(model, element) { return ((((((((element.hasCategory("earthsoul") || element.hasCategory("firesoul")) || element.hasCategory("stormsoul")) || element.hasCategory("watersoul")) || element.hasCategory("windsoul")) || element.hasCategory("causticsoul")) || element.hasCategory("cindersoul")) || element.hasCategory("plaguesoul")) || element.hasCategory("voidsoul")); }
       });
     }
@@ -279,7 +279,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_VII",
     categories: ["Extra Manifestation VII", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VII"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Extra Manifestation VII", {
         filter: function(model, element) { return ((((((((element.hasCategory("earthsoul") || element.hasCategory("firesoul")) || element.hasCategory("stormsoul")) || element.hasCategory("watersoul")) || element.hasCategory("windsoul")) || element.hasCategory("causticsoul")) || element.hasCategory("cindersoul")) || element.hasCategory("plaguesoul")) || element.hasCategory("voidsoul")); }
       });
     }
@@ -294,7 +294,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_EXTRA_MANIFESTATION_VIII",
     categories: ["Extra Manifestation VIII", "ID_INTERNAL_FEAT_EXTRA_MANIFESTATION_VIII"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Extra Manifestation VIII", {
         filter: function(model, element) { return ((((((((element.hasCategory("earthsoul") || element.hasCategory("firesoul")) || element.hasCategory("stormsoul")) || element.hasCategory("watersoul")) || element.hasCategory("windsoul")) || element.hasCategory("causticsoul")) || element.hasCategory("cindersoul")) || element.hasCategory("plaguesoul")) || element.hasCategory("voidsoul")); }
       });
     }
@@ -674,25 +674,25 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=627",
     categories: ["Student of Sword Magic", "ID_FMP_FEAT_627"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Student of Sword Magic", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_53") && element.hasCategory("daily") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Student of Sword Magic", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_53") && element.hasCategory("daily") && element.hasCategory("5")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Student of Sword Magic", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_53") && element.hasCategory("daily") && element.hasCategory("9")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Student of Sword Magic", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_53") && element.hasCategory("daily") && element.hasCategory("15")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Student of Sword Magic", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_53") && element.hasCategory("daily") && element.hasCategory("19")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Student of Sword Magic", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_53") && element.hasCategory("daily") && element.hasCategory("25")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Student of Sword Magic", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_53") && element.hasCategory("daily") && element.hasCategory("29")); }
       });
     }
@@ -707,7 +707,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=651",
     categories: ["Student of the Plague", "ID_FMP_FEAT_651", "ID_INTERNAL_CATEGORY_MULTICLASS_SPELLSCARRED", "Multiclass Spellscarred", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Student of the Plague", {
         filter: function(model, element) { return element.hasCategory("Spellscarred"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_MULTICLASS_MULTICLASS"]);

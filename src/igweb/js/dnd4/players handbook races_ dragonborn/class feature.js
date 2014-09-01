@@ -77,7 +77,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook Races: Dragonborn",
     categories: ["Draconic Resistance", "ID_FMP_CLASS_FEATURE_2125", "16"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Draconic Resistance", {
         filter: function(model, element) { return element.hasCategory("Draconic Resistance"); }
       });
     }

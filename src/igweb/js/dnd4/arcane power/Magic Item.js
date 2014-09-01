@@ -15,7 +15,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Book of Undeniable Fire +1", "ID_FMP_MAGIC_ITEM_4885"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Book of Undeniable Fire +1", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("5")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -30,7 +30,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Book of Undeniable Fire +2", "ID_FMP_MAGIC_ITEM_4886"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Book of Undeniable Fire +2", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("10")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -45,7 +45,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Book of Undeniable Fire +3", "ID_FMP_MAGIC_ITEM_4887"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Book of Undeniable Fire +3", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("15")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -60,7 +60,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Book of Undeniable Fire +4", "ID_FMP_MAGIC_ITEM_4888"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Book of Undeniable Fire +4", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("20")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -75,7 +75,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Book of Undeniable Fire +5", "ID_FMP_MAGIC_ITEM_4889"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Book of Undeniable Fire +5", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("25")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -90,7 +90,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Book of Undeniable Fire +6", "ID_FMP_MAGIC_ITEM_4890"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Book of Undeniable Fire +6", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("30")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -161,7 +161,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("conjuration:damage", function() { /* on opportunity attacks */ return 1; });
       model.statadd("summoning:damage", function() { /* on opportunity attacks */ return 1; });
-      model.select('Power', 2, {
+      model.select('Power', 2, "Summoner's Tome +1", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("summoning") && element.hasCategory("5")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -178,7 +178,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("conjuration:damage", function() { /* on opportunity attacks */ return 2; });
       model.statadd("summoning:damage", function() { /* on opportunity attacks */ return 2; });
-      model.select('Power', 2, {
+      model.select('Power', 2, "Summoner's Tome +2", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("summoning") && element.hasCategory("10")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -195,7 +195,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("conjuration:damage", function() { /* on opportunity attacks */ return 3; });
       model.statadd("summoning:damage", function() { /* on opportunity attacks */ return 3; });
-      model.select('Power', 2, {
+      model.select('Power', 2, "Summoner's Tome +3", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("summoning") && element.hasCategory("15")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -212,7 +212,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("conjuration:damage", function() { /* on opportunity attacks */ return 4; });
       model.statadd("summoning:damage", function() { /* on opportunity attacks */ return 4; });
-      model.select('Power', 2, {
+      model.select('Power', 2, "Summoner's Tome +4", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("summoning") && element.hasCategory("20")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -229,7 +229,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("conjuration:damage", function() { /* on opportunity attacks */ return 5; });
       model.statadd("summoning:damage", function() { /* on opportunity attacks */ return 5; });
-      model.select('Power', 2, {
+      model.select('Power', 2, "Summoner's Tome +5", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("summoning") && element.hasCategory("25")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -246,7 +246,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     rules: function(model) {
       model.statadd("conjuration:damage", function() { /* on opportunity attacks */ return 6; });
       model.statadd("summoning:damage", function() { /* on opportunity attacks */ return 6; });
-      model.select('Power', 2, {
+      model.select('Power', 2, "Summoner's Tome +6", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("summoning") && element.hasCategory("30")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -378,7 +378,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the North Wind +1", "ID_FMP_MAGIC_ITEM_4916"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the North Wind +1", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("cold") && element.hasCategory("3")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -393,7 +393,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the North Wind +2", "ID_FMP_MAGIC_ITEM_4917"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the North Wind +2", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("cold") && element.hasCategory("8")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -408,7 +408,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the North Wind +3", "ID_FMP_MAGIC_ITEM_4918"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the North Wind +3", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("cold") && element.hasCategory("13")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -423,7 +423,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the North Wind +4", "ID_FMP_MAGIC_ITEM_4919"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the North Wind +4", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("cold") && element.hasCategory("18")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -438,7 +438,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the North Wind +5", "ID_FMP_MAGIC_ITEM_4920"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the North Wind +5", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("cold") && element.hasCategory("23")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -453,7 +453,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the North Wind +6", "ID_FMP_MAGIC_ITEM_4921"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the North Wind +6", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("cold") && element.hasCategory("28")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -468,7 +468,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the Replenishing Flame +1", "ID_FMP_MAGIC_ITEM_4922"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the Replenishing Flame +1", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("2")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -483,7 +483,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the Replenishing Flame +2", "ID_FMP_MAGIC_ITEM_4923"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the Replenishing Flame +2", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("7")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -498,7 +498,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the Replenishing Flame +3", "ID_FMP_MAGIC_ITEM_4924"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the Replenishing Flame +3", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("12")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -513,7 +513,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the Replenishing Flame +4", "ID_FMP_MAGIC_ITEM_4925"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the Replenishing Flame +4", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("17")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -528,7 +528,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the Replenishing Flame +5", "ID_FMP_MAGIC_ITEM_4926"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the Replenishing Flame +5", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("22")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -543,7 +543,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Arcane Power",
     categories: ["Tome of the Replenishing Flame +6", "ID_FMP_MAGIC_ITEM_4927"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Tome of the Replenishing Flame +6", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("fire") && element.hasCategory("27")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

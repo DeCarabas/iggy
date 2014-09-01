@@ -46,7 +46,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7420",
     categories: ["Familiar Surge", "ID_FMP_POWER_7420", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_ENCOUNTER", "encounter", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_PARAGON_PATH_350", "Familiar Keeper", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "11"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Familiar Surge", {
         filter: function(model, element) { return (element.hasCategory("Familiar Surge") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -61,7 +61,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=7422",
     categories: ["Familiar's Command", "ID_FMP_POWER_7422", "ID_INTERNAL_CATEGORY_ATTACK", "attack", "ID_INTERNAL_CATEGORY_DAILY", "daily", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_PARAGON_PATH_350", "Familiar Keeper", "ID_FMP_CATEGORY_31", "Arcane", "ID_FMP_CATEGORY_6", "Charm", "ID_FMP_CATEGORY_25", "implement", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action", "ID_INTERNAL_CATEGORY_MISS", "miss", "20"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Familiar's Command", {
         filter: function(model, element) { return (element.hasCategory("Familiar's Command") && element.hasCategory("Ability Choice")); }
       });
     }

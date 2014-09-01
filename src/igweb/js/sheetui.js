@@ -7,7 +7,8 @@ define(['jquery', './binding', './log'],function($, binding, log) {
   var topOfPage = $("#sheetHeader").height(); // For magical alignment.
 
   var chooseUI;
-  var selectedUI;
+  var uiStack = [];
+  var visibleUI;
 
   function getTitleString(title) {
     title = title.toLowerCase();
@@ -53,13 +54,23 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     };
   };
 
-  function getAdapterForMultipleChoices(choices) {
+  function getAdapterForMultipleChoices(type, choices) {
     return {
       applySelection: function(selection) { },
-      getDetailUrl: function(context) { },
+      getDetailUrl: function(context) {
+        var url = null;
+        if (context) {
+          url = context.choice
+            ? context.choice.compendiumUrl
+            : null;
+        }
+
+        return url || 'about/'+type+'.html';
+      },
       getGroups: function() {
         var groups = choices.reduce(function (map, choice) {
-            var list = map[choice.type] || (map[choice.type] = []);
+            var groupName = choice.name || choice.type;
+            var list = map[groupName] || (map[groupName] = []);
             list.push(choice);
             return map;
         }, {});
@@ -68,12 +79,23 @@ define(['jquery', './binding', './log'],function($, binding, log) {
           return {
             title: type,
             items: groups[type].map(function(choice) {
-              return {
-                text: choice.choice 
-                  ? choice.choice.name 
-                  : "Choose " + getTitleString(choice.type) + "...",
-                context: choice
-              };
+              var item;
+              if (choice.choice) {
+                item = {
+                  text: choice.choice.name
+                };
+              } else {
+                item = {
+                  text: "Choose " + getTitleString(choice.type) + "...",
+                  extraClass: "available",
+                  click: function multiChoiceItemClick() {
+                    chooseUI.show(choice.type, getAdapterForChoice(choice));
+                  }
+                };
+              }
+
+              item.context = choice;
+              return item;
             })
           };
         });
@@ -87,9 +109,10 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     this._rootElement = $(element);
 
     this._chooseTitle = this._rootElement.find(".chooseTitle");
-    this._whatButton = this._rootElement.find(".whatButton");
     this._listTarget = this._rootElement.find(".elementList");
     this._detailTarget = this._rootElement.find(".elementDetail");
+    this._whatButton = this._rootElement.find(".whatButton");
+    this._whatButton.click(function() { this.updateDetailTarget(null); }.bind(this));
 
     this._rootElement.find(".okButton").click(function() {
       this.applySelection();
@@ -108,31 +131,40 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       this.hide();
     },
     hide: function () {
-      if (this.visible) {
+      // Must do this before calling restoreFunc so we don't get bogus entries in the stack.
+      visibleUI = null; 
+      var restoreFunc = uiStack.pop();
+      if (restoreFunc) {
+        restoreFunc();
+      } else {
         this._rootElement.hide();
         this.visible = false;
-        selectedUI = null;
       }
     },
+    push: function() {
+      // Stack-capture the current adapter and title.
+      var adapter = this._adapter;
+      var title = this._title;
+      uiStack.push(function() { this.show(title, adapter); }.bind(this));
+    },
     show: function (title, adapter) {
-      if (!this.visible) {
-        if (selectedUI && selectedUI.hide) { selectedUI.hide(); }
+      if (visibleUI) { visibleUI.push(); }
 
-        this.updateTitle(title);
-        this._whatButton.click(function() { this.updateDetailTarget(null); }.bind(this));
+      this._adapter = adapter;
+      this._title = title;
 
-        this._rootElement.show();
-        this._rootElement.offset({ top: topOfPage, left: 0 });
-        selectedUI = this;
+      this.updateTitle();
 
-        this.visible = true;
+      this._rootElement.show();
+      this._rootElement.offset({ top: topOfPage, left: 0 });
+      visibleUI = this;
 
-        this._adapter = adapter;
-        this._selected = adapter.getInitialSelection();
+      this.visible = true;
 
-        this.update();
-        binding.updateFields(this._model);
-      }
+      this._selected = adapter.getInitialSelection();
+
+      this.update();
+      binding.updateFields(this._model);
     },
     update: function () {
       var that = this;
@@ -147,14 +179,17 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         group.items.forEach(function (item, i) {
           var row = $("<div class='choiceRow'></div>");
           row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
+          if (item.extraClass) { row.addClass(item.extraClass); }
           row.text(item.text);
 
           row.click(function () {
             that.updateDetailTarget(that._adapter.getDetailUrl(item.context));
             that._selected = item.context;
-
+            
             that._listTarget.find(".selectedRow").removeClass('selectedRow');
             row.addClass('selectedRow');
+            
+            if (item.click) { item.click(); }
           });
 
           if (that._selected === item.context) {
@@ -173,8 +208,8 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       log.log("Choice: Setting detail URL to '" + url + "'");
       this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');
     },
-    updateTitle: function updateTitle(title) {
-      var atitle = getTitleString(title);
+    updateTitle: function updateTitle() {
+      var atitle = getTitleString(this._title);
 
       this._chooseTitle.html("<h1>Choose " + atitle + "</h1>");
       this._whatButton.html("<a><i>What's " + atitle + "?</i></a>");
@@ -185,27 +220,25 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     chooseUI = new ChoiceUI(model, $("#chooseControl"));
     $("[data-boundChoice]:visible").each(function () {
       var elem = $(this);
-      var types = elem.attr("data-boundChoice").split(',');
+      var type = elem.attr("data-boundChoice");
 
       elem.click(function() { 
-        var choices = [];
-        types.forEach(function(type) { 
-          choices.push.apply(choices, model.getChoices(type)); 
-        });
-
-        var adapter;
-        var title;
-        if (choices.length == 1) {
-          title = choices[0].type;
-          adapter = getAdapterForChoice(choices[0]);
-        } else {
-          title = "uhhh...";
-          adapter = getAdapterForMultipleChoices(choices);
-        }
-
-        chooseUI.show(title, adapter); 
+        var choices = model.getChoices(type);
+        chooseUI.show(choices[0].type, getAdapterForChoice(choices[0])); 
       });
     });
+
+    $("[data-boundChoiceMulti]:visible").each(function () {
+      var elem = $(this);
+      var type = elem.attr("data-boundChoiceMulti");
+
+      elem.click(function() { 
+        var choices = model.getChoices(type);
+        chooseUI.show(type, getAdapterForMultipleChoices(type, choices)); 
+      });
+    });
+
+
     binding.bindFields(model);
     binding.updateFields(model);
   }

@@ -396,23 +396,23 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Paragon Multiclassing", "ID_INTERNAL_PARAGON_PATH_PARAGON_MULTICLASSING"],
     rules: function(model) {
       // unsupported rule: cbimporter.Rules.ReplaceRule
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Multiclassing", {
         filter: function(model, element) { return (true /* NYI: Filter: $$MULTICLASS */ && element.hasCategory("encounter") && element.hasCategory("7")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Multiclassing", {
         filter: function(model, element) { return (true /* NYI: Filter: $$MULTICLASS */ && element.hasCategory("utility") && element.hasCategory("10")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Multiclassing", {
         filter: function(model, element) { return (true /* NYI: Filter: $$MULTICLASS */ && element.hasCategory("daily") && element.hasCategory("19")); }
       });
       model.statadd("Power Points", 2);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Multiclassing", {
         filter: function(model, element) { return (true /* NYI: Filter: $$MULTICLASS */ && element.hasCategory("at-will") && element.hasCategory("7")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Multiclassing", {
         filter: function(model, element) { return (true /* NYI: Filter: $$MULTICLASS */ && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paragon Multiclassing", {
         filter: function(model, element) { return (true /* NYI: Filter: $$MULTICLASS */ && element.hasCategory("encounter") && element.hasCategory("7")); }
       });
       model.grant(model.elements.id["ID_INTERNAL_INTERNAL_SECONDNOTFIRSTPSIONIC"]);

@@ -96,7 +96,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Ardent Mantle", "ID_FMP_CLASS_FEATURE_2136", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ardent Mantle", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2136"); }
       });
     }
@@ -110,7 +110,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Ardent Mantle (Hybrid)", "ID_FMP_CLASS_FEATURE_2341", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ardent Mantle (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2341"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_ARDENT_MANTLE"]);
@@ -585,7 +585,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Channel Divinity - Radiant Fist", "ID_FMP_CLASS_FEATURE_1904", "11"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_324"]);
-      model.select('Feat', 1, {
+      model.select('Feat', 1, "Channel Divinity - Radiant Fist", {
         filter: function(model, element) { return element.hasCategory("Divinity"); }
       });
     }
@@ -599,7 +599,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Channel Divinity (Hybrid Avenger)", "ID_FMP_CLASS_FEATURE_1822", "ID_FMP_HYBRID_CLASS_439", "Hybrid Avenger", "1"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Channel Divinity (Hybrid Avenger)", {
         filter: function(model, element) { return (element.hasCategory("Abjure Undead") || element.hasCategory("Divine Guidance")); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY"]);
@@ -614,7 +614,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Channel Divinity (Hybrid Cleric)", "ID_FMP_CLASS_FEATURE_1826", "ID_FMP_HYBRID_CLASS_352", "Hybrid Cleric", "1"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Channel Divinity (Hybrid Cleric)", {
         filter: function(model, element) { return ((element.hasCategory("Divine Fortune") || element.hasCategory("Turn Undead")) || element.hasCategory("Healer's Mercy")); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY"]);
@@ -644,7 +644,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Channel Divinity (Hybrid Paladin)", "ID_FMP_CLASS_FEATURE_1833", "ID_FMP_HYBRID_CLASS_354", "Hybrid Paladin", "1"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Channel Divinity (Hybrid Paladin)", {
         filter: function(model, element) { return (element.hasCategory("Divine Mettle") || element.hasCategory("Divine Strength")); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY"]);
@@ -725,7 +725,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Combat Specialty", "ID_FMP_CLASS_FEATURE_2162", "ID_FMP_HYBRID_CLASS_353", "Hybrid Fighter", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Combat Specialty", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2162"); }
       });
     }
@@ -753,7 +753,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Commanding Presence (Hybrid)", "ID_FMP_CLASS_FEATURE_1846", "ID_FMP_HYBRID_CLASS_359", "Hybrid Warlord", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Commanding Presence (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1846"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_COMMANDING_PRESENCE"]);
@@ -769,7 +769,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Companion Spirit (Hybrid)", "ID_FMP_CLASS_FEATURE_1837", "1"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_6515"]);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Companion Spirit (Hybrid)", {
         filter: function(model, element) { return (((element.hasCategory("Protector Spirit (Hybrid)") || element.hasCategory("Stalker Spirit (Hybrid)")) || element.hasCategory("Watcher Spirit (Hybrid)")) || element.hasCategory("World Speaker Spirit (Hybrid)")); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_COMPANION_SPIRIT"]);
@@ -805,7 +805,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Covenant Manifestation", "ID_FMP_CLASS_FEATURE_1512", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Covenant Manifestation", {
         filter: function(model, element) { return element.hasCategory("Covenant Manifestation"); }
       });
     }
@@ -944,7 +944,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Discipline Focus", "ID_FMP_CLASS_FEATURE_1810", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Discipline Focus", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1810"); }
       });
     }
@@ -958,7 +958,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Discipline Focus (Hybrid)", "ID_FMP_CLASS_FEATURE_2415", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Discipline Focus (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2415"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_DISCIPLINE_FOCUS"]);
@@ -1033,7 +1033,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Eldritch Pact (Hybrid)", "ID_FMP_CLASS_FEATURE_1844", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Eldritch Pact (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("Hybrid Pact"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_ELDRITCH_PACT"]);
@@ -1160,7 +1160,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Fighter Combat Talent", "ID_FMP_CLASS_FEATURE_1830", "ID_FMP_HYBRID_CLASS_353", "Hybrid Fighter", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Fighter Combat Talent", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1830"); }
       });
     }
@@ -1330,7 +1330,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Hybrid Encounter Power", "ID_INTERNAL_CLASS_FEATURE_HYBRID_ENCOUNTER_POWER", "ID_FMP_CLASS_FEATURE_2340", "Psionic Augmentation (Hybrid)"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Hybrid Encounter Power", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("1")); }
       });
     }
@@ -1751,7 +1751,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Monastic Perfection", "ID_FMP_CLASS_FEATURE_2422", "21"],
     rules: function(model) {
-      model.select('Power', 2, {
+      model.select('Power', 2, "Monastic Perfection", {
         filter: function(model, element) { return (true /* NYI: Filter: $$LEVEL */ && element.hasCategory("ID_FMP_CLASS_362") && element.hasCategory("encounter")); }
       });
     }
@@ -1765,7 +1765,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Monastic Tradition", "ID_FMP_CLASS_FEATURE_1543", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Monastic Tradition", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1543"); }
       });
     }
@@ -1779,7 +1779,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Monastic Tradition (Hybrid)", "ID_FMP_CLASS_FEATURE_2413", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Monastic Tradition (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2413"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_MONASTIC_TRADITION"]);
@@ -2024,7 +2024,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Psionic Defense (Hybrid)", "ID_FMP_CLASS_FEATURE_2411", "1"],
     rules: function(model) {
       model.grant(model.elements.id["ID_FMP_POWER_10438"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Psionic Defense (Hybrid)", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_10439") || element.hasCategory("ID_FMP_POWER_10440")); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_PSIONIC_DEFENSE"]);
@@ -2039,7 +2039,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Psionic Study", "ID_FMP_CLASS_FEATURE_2175", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Psionic Study", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2175"); }
       });
     }
@@ -2053,7 +2053,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Psionic Study (Hybrid)", "ID_FMP_CLASS_FEATURE_2526", "ID_FMP_HYBRID_CLASS_590", "Hybrid Battlemind", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Psionic Study (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2526"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_PSIONIC_STUDY"]);
@@ -2114,7 +2114,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Ranger Combat Talent", "ID_FMP_CLASS_FEATURE_2426", "ID_FMP_HYBRID_CLASS_355", "Hybrid Ranger", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ranger Combat Talent", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2426"); }
       });
     }
@@ -2128,7 +2128,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Ranger Fighting Style", "ID_FMP_CLASS_FEATURE_1836", "ID_FMP_HYBRID_CLASS_355", "Hybrid Ranger", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Ranger Fighting Style", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1836"); }
       });
     }
@@ -2202,7 +2202,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Rogue Combat Talent", "ID_FMP_CLASS_FEATURE_2469", "ID_FMP_HYBRID_CLASS_356", "Hybrid Rogue", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Rogue Combat Talent", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2469"); }
       });
     }
@@ -2216,7 +2216,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Rogue Tactics (Hybrid)", "ID_FMP_CLASS_FEATURE_2471", "ID_FMP_HYBRID_CLASS_356", "Hybrid Rogue", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Rogue Tactics (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2471"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_ROGUE_TACTICS"]);
@@ -2351,7 +2351,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Runic Artistry", "ID_FMP_CLASS_FEATURE_2388", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Runic Artistry", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2388"); }
       });
     }
@@ -2397,7 +2397,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Seeker's Bond", "ID_FMP_CLASS_FEATURE_1944", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Seeker's Bond", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_1944"); }
       });
     }
@@ -2411,7 +2411,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Seeker's Bond (Hybrid)", "ID_FMP_CLASS_FEATURE_2420", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Seeker's Bond (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2420"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_SEEKER'S_BOND"]);
@@ -2426,7 +2426,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Sharpshooter Talent (Hybrid)", "ID_FMP_CLASS_FEATURE_2540", "ID_FMP_CLASS_FEATURE_2469", "Rogue Combat Talent", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Sharpshooter Talent (Hybrid)", {
         filter: function(model, element) { return (element.hasCategory("ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(CROSSBOW)") || element.hasCategory("ID_INTERNAL_CLASS_FEATURE_SHARPSHOOTER_TALENT_(SLING)")); }
       });
       model.grant(model.elements.id["ID_FMP_FEAT_139"]);
@@ -2483,7 +2483,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Sorcerous Power", "ID_FMP_CLASS_FEATURE_1840", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Sorcerous Power", {
         filter: function(model, element) { return element.hasCategory("Sorcerous Power"); }
       });
       model.statadd("Sorcerous Power", 2);
@@ -2530,7 +2530,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Soul of the Sorcerer", "ID_FMP_CLASS_FEATURE_1841", "ID_FMP_HYBRID_CLASS_445", "Hybrid Sorcerer", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Soul of the Sorcerer", {
         filter: function(model, element) { return (((element.hasCategory("Dragon Soul Class Feature") || element.hasCategory("Soul of the Cosmic Cycle Class Feature")) || element.hasCategory("Storm Soul Class Feature")) || element.hasCategory("Wild Soul Class Feature")); }
       });
     }
@@ -2742,7 +2742,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Swordmage Aegis (Hybrid)", "ID_FMP_CLASS_FEATURE_1532", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Swordmage Aegis (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("Swordmage Aegis"); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -3469,7 +3469,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Player's Handbook 3",
     categories: ["Warlord Leadership", "ID_FMP_CLASS_FEATURE_2427", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Warlord Leadership", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2427"); }
       });
     }

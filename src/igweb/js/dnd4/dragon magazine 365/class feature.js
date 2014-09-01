@@ -63,7 +63,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 365",
     categories: ["Luck Blade", "ID_FMP_CLASS_FEATURE_868", "11"],
     rules: function(model) {
-      model.select('Proficiency', 1, {
+      model.select('Proficiency', 1, "Luck Blade", {
         filter: function(model, element) { return element.hasCategory("Heavy Blade"); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule

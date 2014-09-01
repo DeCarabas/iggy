@@ -56,7 +56,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6579",
     categories: ["Blood Drain", "ID_FMP_POWER_6579", "ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE", "Encounter usage", "ID_FMP_CATEGORY_9", "Healing", "ID_INTERNAL_CATEGORY_STANDARD_ACTION", "standard action"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Blood Drain", {
         filter: function(model, element) { return (element.hasCategory("Blood Drain") && element.hasCategory("Ability Choice")); }
       });
     }
@@ -211,7 +211,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=6582",
     categories: ["Dominating Gaze", "ID_FMP_POWER_6582", "ID_INTERNAL_CATEGORY_DAILY_USAGE", "Daily Usage", "ID_FMP_CATEGORY_6", "Charm", "ID_INTERNAL_CATEGORY_MINOR_ACTION", "Minor Action", "ID_INTERNAL_CATEGORY_MISS", "miss"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Dominating Gaze", {
         filter: function(model, element) { return (element.hasCategory("Dominating Gaze") && element.hasCategory("Ability Choice")); }
       });
     }

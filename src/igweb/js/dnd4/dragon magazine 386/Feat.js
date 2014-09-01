@@ -29,10 +29,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2900",
     categories: ["Becomer", "ID_FMP_FEAT_2900"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Becomer", {
         filter: function(model, element) { return element.hasCategory("Skill Bonus"); }
       });
-      model.select('Language', 1);
+      model.select('Language', 1, "Becomer");
     }
   });
   byID[te.id] = te;

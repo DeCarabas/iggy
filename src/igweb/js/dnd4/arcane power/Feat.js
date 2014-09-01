@@ -26,10 +26,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1169",
     categories: ["Arcane Admixture", "ID_FMP_FEAT_1169"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Arcane Admixture", {
         filter: function(model, element) { return element.hasCategory("Arcane"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Arcane Admixture", {
         filter: function(model, element) { return element.hasCategory("Arcane Admixture"); }
       });
     }
@@ -44,10 +44,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ARCANE_ADMIXTURE_II",
     categories: ["Arcane Admixture II", "ID_INTERNAL_FEAT_ARCANE_ADMIXTURE_II"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Arcane Admixture II", {
         filter: function(model, element) { return element.hasCategory("Arcane"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Arcane Admixture II", {
         filter: function(model, element) { return element.hasCategory("Arcane Admixture II"); }
       });
     }
@@ -62,10 +62,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ARCANE_ADMIXTURE_III",
     categories: ["Arcane Admixture III", "ID_INTERNAL_FEAT_ARCANE_ADMIXTURE_III"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Arcane Admixture III", {
         filter: function(model, element) { return element.hasCategory("Arcane"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Arcane Admixture III", {
         filter: function(model, element) { return element.hasCategory("Arcane Admixture III"); }
       });
     }
@@ -80,10 +80,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=FEAT_ARCANE_ADMIXTURE_IV",
     categories: ["Arcane Admixture IV", "ID_INTERNAL_FEAT_ARCANE_ADMIXTURE_IV"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Arcane Admixture IV", {
         filter: function(model, element) { return element.hasCategory("Arcane"); }
       });
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Arcane Admixture IV", {
         filter: function(model, element) { return element.hasCategory("Arcane Admixture IV"); }
       });
     }
@@ -98,7 +98,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1217",
     categories: ["Arcane Aegis", "ID_FMP_FEAT_1217", "ID_INTERNAL_CATEGORY_MULTICLASS_SWORDMAGE", "Multiclass Swordmage", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Arcane Aegis", {
         filter: function(model, element) { return element.hasCategory("Swordmage Aegis"); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -114,7 +114,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=738",
     categories: ["Arcane Familiar", "ID_FMP_FEAT_738", "ID_INTERNAL_CATEGORY_FAMILIAR", "Familiar"],
     rules: function(model) {
-      model.select('Familiar', 1);
+      model.select('Familiar', 1, "Arcane Familiar");
     }
   });
   byID[te.id] = te;
@@ -147,7 +147,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1115",
     categories: ["Arcane Implement Proficiency", "ID_FMP_FEAT_1115"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Arcane Implement Proficiency", {
         filter: function(model, element) { return element.hasCategory("Arcane Implement Proficiency"); }
       });
     }
@@ -708,7 +708,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1220",
     categories: ["Heart of the Blade", "ID_FMP_FEAT_1220", "ID_INTERNAL_CATEGORY_MULTICLASS_SWORDMAGE", "Multiclass Swordmage", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Heart of the Blade", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_SKILL_27") || element.hasCategory("ID_FMP_SKILL_8")); }
       });
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_630"]);
@@ -877,7 +877,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1222",
     categories: ["Learned Spellcaster", "ID_FMP_FEAT_1222", "ID_INTERNAL_CATEGORY_MULTICLASS_WIZARD", "Multiclass Wizard", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('Skill Training', 1, {
+      model.select('Skill Training', 1, "Learned Spellcaster", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_SKILL_2") || element.hasCategory("ID_FMP_SKILL_16")) || element.hasCategory("ID_FMP_SKILL_18")); }
       });
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_683"]);
@@ -946,7 +946,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1202",
     categories: ["Multiclass Mastery", "ID_FMP_FEAT_1202"],
     rules: function(model) {
-      model.select('Feat', 2, {
+      model.select('Feat', 2, "Multiclass Mastery", {
         filter: function(model, element) { return element.hasCategory("ID_INTERNAL_CATEGORY_MULTICLASS"); }
       });
     }
@@ -1034,7 +1034,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1205",
     categories: ["Quickened Spellcasting", "ID_FMP_FEAT_1205"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Quickened Spellcasting", {
         filter: function(model, element) { return (element.hasCategory("Arcane") && element.hasCategory("at-will") && element.hasCategory("standard action")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1073,40 +1073,40 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1154",
     categories: ["Remembered Wizardry", "ID_FMP_FEAT_1154"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("1")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("5")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("9")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("15")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("19")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("25")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("29")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("utility") && element.hasCategory("2")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("utility") && element.hasCategory("6")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("utility") && element.hasCategory("10")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("utility") && element.hasCategory("16")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Remembered Wizardry", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("utility") && element.hasCategory("22")); }
       });
     }
@@ -1279,7 +1279,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1224",
     categories: ["Soul of Sorcery", "ID_FMP_FEAT_1224", "ID_INTERNAL_CATEGORY_MULTICLASS_SORCERER", "Multiclass Sorcerer", "ID_INTERNAL_CATEGORY_MULTICLASS", "Multiclass", "ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS", "Class-Specific Multiclass"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Soul of Sorcery", {
         filter: function(model, element) { return element.hasCategory("Soul of Sorcery"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_SORCERER_IMPLEMENTS"]);
@@ -1396,7 +1396,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1210",
     categories: ["Trusted Spellcasting", "ID_FMP_FEAT_1210"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Trusted Spellcasting", {
         filter: function(model, element) { return (!element.hasCategory("miss") && element.hasCategory("Arcane") && element.hasCategory("encounter")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
@@ -1452,7 +1452,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1213",
     categories: ["Vestige Mastery", "ID_FMP_FEAT_1213"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Vestige Mastery", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_7") && element.hasCategory("daily") && element.hasCategory("Vestige Pact")); }
       });
     }

@@ -37,7 +37,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2730"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2731"]);
       model.grant(model.elements.id["ID_FMP_CLASS_FEATURE_2732"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Heir of Siberys", {
         filter: function(model, element) { return (((((((((((element.hasCategory("ID_FMP_POWER_12587") || element.hasCategory("ID_FMP_POWER_12588")) || element.hasCategory("ID_FMP_POWER_12589")) || element.hasCategory("ID_FMP_POWER_12590")) || element.hasCategory("ID_FMP_POWER_12591")) || element.hasCategory("ID_FMP_POWER_12592")) || element.hasCategory("ID_FMP_POWER_12593")) || element.hasCategory("ID_FMP_POWER_12594")) || element.hasCategory("ID_FMP_POWER_12595")) || element.hasCategory("ID_FMP_POWER_12596")) || element.hasCategory("ID_FMP_POWER_12597")) || element.hasCategory("ID_FMP_POWER_12598")); }
       });
     }

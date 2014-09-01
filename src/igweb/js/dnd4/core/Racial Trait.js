@@ -122,7 +122,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_RACIAL_TRAIT_2966",
     categories: ["Human Power Selection", "ID_FMP_RACIAL_TRAIT_2966"],
     rules: function(model) {
-      model.select('Racial Trait', 1, {
+      model.select('Racial Trait', 1, "Human Power Selection", {
         filter: function(model, element) { return element.hasCategory("Human Power Selection"); }
       });
     }

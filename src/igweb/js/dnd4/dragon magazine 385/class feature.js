@@ -195,10 +195,10 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 385",
     categories: ["Astral Knowledge", "ID_FMP_CLASS_FEATURE_2567", "11"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Astral Knowledge", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("7")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Astral Knowledge", {
         filter: function(model, element) { return (element.hasCategory(model['class'].id) && element.hasCategory("encounter") && element.hasCategory("13")); }
       });
     }
@@ -269,7 +269,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 385",
     categories: ["Broad Dilettante", "ID_FMP_CLASS_FEATURE_2606", "16"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Broad Dilettante", {
         filter: function(model, element) { return (true /* NYI: Filter: $$NOT_CLASS */ && element.hasCategory("at-will") && element.hasCategory("1")); }
       });
     }
@@ -293,7 +293,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Certain Destiny", "ID_FMP_CLASS_FEATURE_2577", "21"],
     rules: function(model) {
       model.statadd("Wisdom", 2);
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Certain Destiny", {
         filter: function(model, element) { return element.hasCategory("Certain Destiny"); }
       });
     }
@@ -512,7 +512,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 385",
     categories: ["Guild Training (Hybrid)", "ID_FMP_CLASS_FEATURE_2573", "ID_FMP_HYBRID_CLASS_641", "Hybrid Assassin", "1"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Guild Training (Hybrid)", {
         filter: function(model, element) { return element.hasCategory("ID_FMP_CLASS_FEATURE_2573"); }
       });
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASFEATURE_GUILD_TRAINING"]);
@@ -584,7 +584,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 385",
     categories: ["Knowledge of Ancient Lives", "ID_FMP_CLASS_FEATURE_2584", "24"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Knowledge of Ancient Lives", {
         filter: function(model, element) { return element.hasCategory("Knowledge of Ancient Lives"); }
       });
     }
@@ -1184,7 +1184,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 385",
     categories: ["Well-Rounded", "ID_FMP_CLASS_FEATURE_2605", "11"],
     rules: function(model) {
-      model.select('Skill Training', 2);
+      model.select('Skill Training', 2, "Well-Rounded");
     }
   });
   byID[te.id] = te;

@@ -36,7 +36,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 378",
     categories: ["Blessed Awakening", "ID_FMP_CLASS_FEATURE_1914", "21"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Blessed Awakening", {
         filter: function(model, element) { return element.hasCategory("Blessed Awakening"); }
       });
       model.statadd("Action Point", "Blessed Awakening:Increase any one of Strength, Wisdom, or Charisma by 2 points. Whenever you spend an action point, you regain hit points as if you spent a healing surge and gain a +2 bonus to all defenses until the start of your next turn.");

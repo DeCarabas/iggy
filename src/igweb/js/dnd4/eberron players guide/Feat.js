@@ -56,19 +56,19 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1371",
     categories: ["Aerenal Arcanist", "ID_FMP_FEAT_1371"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Aerenal Arcanist", {
         filter: function(model, element) { return (element.hasCategory("Arcane") && element.hasCategory("utility") && element.hasCategory("2")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Aerenal Arcanist", {
         filter: function(model, element) { return (element.hasCategory("Arcane") && element.hasCategory("utility") && element.hasCategory("6")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Aerenal Arcanist", {
         filter: function(model, element) { return (element.hasCategory("Arcane") && element.hasCategory("utility") && element.hasCategory("10")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Aerenal Arcanist", {
         filter: function(model, element) { return (element.hasCategory("Arcane") && element.hasCategory("utility") && element.hasCategory("16")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Aerenal Arcanist", {
         filter: function(model, element) { return (element.hasCategory("Arcane") && element.hasCategory("utility") && element.hasCategory("22")); }
       });
     }
@@ -409,7 +409,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=1394",
     categories: ["Mark of Scribing", "ID_FMP_FEAT_1394", "ID_INTERNAL_CATEGORY_DRAGONMARK", "Dragonmark"],
     rules: function(model) {
-      model.select('Language', 4);
+      model.select('Language', 4, "Mark of Scribing");
       model.statadd("Diplomacy Misc", 2);
     }
   });

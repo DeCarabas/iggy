@@ -261,22 +261,22 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     source: "Dragon Magazine 380",
     categories: ["Paper Secrets", "ID_FMP_CLASS_FEATURE_2108", "11"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paper Secrets", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("15")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paper Secrets", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("19")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paper Secrets", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("25")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paper Secrets", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("daily") && element.hasCategory("29")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paper Secrets", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("utility") && element.hasCategory("16")); }
       });
-      model.select('Power', 1, {
+      model.select('Power', 1, "Paper Secrets", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_CLASS_9") && element.hasCategory("utility") && element.hasCategory("22")); }
       });
     }

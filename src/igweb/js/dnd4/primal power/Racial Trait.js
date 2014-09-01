@@ -80,7 +80,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Past Spirit (Dragonborn)", "ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(DRAGONBORN)", "ID_FMP_CLASS_FEATURE_2064", "Past Spirit"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASRACE_DRAGONBORN"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Past Spirit (Dragonborn)", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_1448") || element.hasCategory("ID_FMP_POWER_12577")); }
       });
     }
@@ -95,7 +95,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Past Spirit (Drow)", "ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(DROW)", "ID_FMP_CLASS_FEATURE_2064", "Past Spirit"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASRACE_DROW"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Past Spirit (Drow)", {
         filter: function(model, element) { return (element.hasCategory("ID_FMP_POWER_1831") || element.hasCategory("ID_FMP_POWER_2473")); }
       });
     }
@@ -162,7 +162,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Past Spirit (Genasi)", "ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(GENASI)", "ID_FMP_CLASS_FEATURE_2064", "Past Spirit"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASRACE_GENASI"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Past Spirit (Genasi)", {
         filter: function(model, element) { return ((((((((element.hasCategory("ID_FMP_POWER_1766") || element.hasCategory("ID_FMP_POWER_1767")) || element.hasCategory("ID_FMP_POWER_1769")) || element.hasCategory("ID_FMP_POWER_1770")) || element.hasCategory("ID_FMP_POWER_1828")) || element.hasCategory("ID_FMP_POWER_10043")) || element.hasCategory("ID_FMP_POWER_10044")) || element.hasCategory("ID_FMP_POWER_10045")) || element.hasCategory("ID_FMP_POWER_10046")); }
       });
     }
@@ -471,7 +471,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     categories: ["Past Spirit (Wilden)", "ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(WILDEN)", "ID_FMP_CLASS_FEATURE_2064", "Past Spirit"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_COUNTSASRACE_WILDEN"]);
-      model.select('Power', 1, {
+      model.select('Power', 1, "Past Spirit (Wilden)", {
         filter: function(model, element) { return ((element.hasCategory("ID_FMP_POWER_7441") || element.hasCategory("ID_FMP_POWER_7442")) || element.hasCategory("ID_FMP_POWER_7443")); }
       });
     }

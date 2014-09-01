@@ -41,7 +41,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2865",
     categories: ["Alchemical Blood", "ID_FMP_FEAT_2865"],
     rules: function(model) {
-      model.select('class feature', 1, {
+      model.select('class feature', 1, "Alchemical Blood", {
         filter: function(model, element) { return element.hasCategory("Alchemical Blood"); }
       });
       model.statadd("Alchemical Blood", 1);
@@ -1018,7 +1018,7 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/item.aspx?id=2859",
     categories: ["Unexpected Flourish", "ID_FMP_FEAT_2859"],
     rules: function(model) {
-      model.select('Power', 1, {
+      model.select('Power', 1, "Unexpected Flourish", {
         filter: function(model, element) { return (element.hasCategory("at-will") && element.hasCategory("Arcane") && element.hasCategory("1")); }
       });
       // unsupported rule: cbimporter.Rules.ModifyRule
