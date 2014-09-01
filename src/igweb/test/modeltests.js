@@ -193,7 +193,7 @@ module("Model Tests: Choice Tests", {
     e = T2["A"] = new engine.RulesElement({
       name: "foo",
       rules: function(model) {
-          model.select('T3', 1);
+          model.select('T3', 1, 't3');
         }
     });
     byID[e.id] = e;
@@ -217,8 +217,8 @@ test('Basic choices', function() {
 
   var element = new engine.RulesElement({
     rules: function(model) {
-      model.select("T1", 1);
-      model.select("T1", 1, {
+      model.select("T1", 1, 'T1');
+      model.select("T1", 1, 'T1', {
         filter: function(model, element) { return element.hasCategory('c'); }
       });
     }
@@ -252,7 +252,7 @@ test('Removing a choice ungrants the selection', function() {
 
   var element = new engine.RulesElement({
     rules: function(model) {
-      model.select("T1", 1);
+      model.select("T1", 1, 't1');
     }
   });
 
@@ -278,7 +278,7 @@ test('Transitive grant/ungrant with choices', function() {
 
   var element = new engine.RulesElement({
     rules: function(model) {
-      model.select("T2", 1);
+      model.select("T2", 1, 't2');
     }
   });
 

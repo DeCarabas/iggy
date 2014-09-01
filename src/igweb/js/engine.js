@@ -139,9 +139,9 @@ define(['./log'],function(log) {
         var choices = this._choices[choiceType];
         Object.keys(choices).forEach(function(choiceId) {
           var choice = choices[choiceId];
-          var selection = choice.choice
+          var selection = (choice.choice
             ? "[" + choice.choice.type + "]:[" + choice.choice.name + "]"
-            : "<null>";
+            : "<null>");
 
           log.log("["+choice.type+"] ("+choice.name+") : " + selection);
         }.bind(this));
@@ -159,7 +159,7 @@ define(['./log'],function(log) {
       return cs;
     },
     getGrantsByType: function(type) {
-      if (!this.elements.id) return null;
+      if (!this.elements.id) { return null; }
 
       var result = [];
       var grants = Object.keys(this._granted);
@@ -232,20 +232,21 @@ define(['./log'],function(log) {
       }
     },
     select: function(type, number, name, options) {
-      for(var i = 0; i < number; i++) {
-        var nc = new Choice(this, type, name, options);
-        var ec = this._choices[type] || (this._choices[type] = {});
-        ec[nc.id] = nc;
+      for(var i = 0; i < number; i++) { this._select(type, name, options); }
+    },
+    _select: function(type, name, options) {
+      var nc = new Choice(this, type, name, options);
+      var ec = this._choices[type] || (this._choices[type] = {});
+      ec[nc.id] = nc;
 
-        log.log("Selecting (["+type+"]) as " + nc.id);
+      log.log("Selecting (["+type+"]) as " + nc.id);
 
-        if (this._trackingInfo) { 
-          this._trackingInfo.undo.push(function () { 
-            log.log("Undoing selection " + nc.id +" ("+type+","+number+")");
-            nc.choice = null;
-            delete ec[nc.id];
-          });
-        }
+      if (this._trackingInfo) { 
+        this._trackingInfo.undo.push(function () { 
+          log.log("Undoing selection " + nc.id +" ("+type+")");
+          nc.choice = null;
+          delete ec[nc.id];
+        });
       }
     },
     stat: function (statName) {

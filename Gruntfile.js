@@ -23,7 +23,11 @@ module.exports = function(grunt) {
 
     jshint: {
       options: {
+        browser: true,
+        curly: true,
+        devel: true,
         jquery: true,
+        laxbreak: true,
         sub: true
       },
       libs: [

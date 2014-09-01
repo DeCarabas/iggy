@@ -79,7 +79,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         return choice.choice;
       }
     };
-  };
+  }
 
   function getAdapterForMultipleChoices(type, choices) {
     return {
@@ -128,7 +128,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       },
       getInitialSelection: function() { }
     };
-  };
+  }
 
   function ChoiceUI(model, element) {
     this._model = model;
