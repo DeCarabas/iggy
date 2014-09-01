@@ -26,6 +26,34 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     return article + " " + title;
   }
 
+  function sortItems(items) {
+    function compareString(a,b) {
+      if (a > b) {
+        return 1;
+      } else if (a < b) {
+        return -1;
+      } else {
+        return 0;
+      }
+    }
+
+    items.sort(function(a,b) {
+      if (a.extraClass) {
+        if (b.extraClass) {
+          return compareString(a.extraClass, b.extraClass);
+        } else {
+          return 1;
+        }
+      } else if (b.extraClass) {
+        return -1;
+      } else {
+        return compareString(a.text, b.text);
+      }
+    });
+
+    return items;
+  }
+
   function getAdapterForChoice(choice) {
     return {
       applySelection: function(selection) {
@@ -39,14 +67,13 @@ define(['jquery', './binding', './log'],function($, binding, log) {
         return url || 'about/'+choice.type+'.html';
       },
       getGroups: function() {
-        return [{
-          title: null,
-          items: (choice)
-            ? choice.getValidElements().map(function(re) {
+        var items = choice
+          ? choice.getValidElements().map(function(re) {
               return { text: re.name, context: re };
             })
-          : []
-        }];
+          : [];
+        
+        return [{ title: null, items: sortItems(items) }];
       },
       getInitialSelection: function() {
         return choice.choice;
@@ -75,29 +102,28 @@ define(['jquery', './binding', './log'],function($, binding, log) {
             return map;
         }, {});
 
-        return Object.keys(groups).map(function (type) {
-          return {
-            title: type,
-            items: groups[type].map(function(choice) {
-              var item;
-              if (choice.choice) {
-                item = {
-                  text: choice.choice.name
-                };
-              } else {
-                item = {
-                  text: "Choose " + getTitleString(choice.type) + "...",
-                  extraClass: "available",
-                  click: function multiChoiceItemClick() {
-                    chooseUI.show(choice.type, getAdapterForChoice(choice));
-                  }
-                };
-              }
+        return Object.keys(groups).map(function (name) {
+          var items = groups[name].map(function(choice) {
+            var item;
+            if (choice.choice) {
+              item = {
+                text: choice.choice.name
+              };
+            } else {
+              item = {
+                text: "Choose " + getTitleString(choice.type) + "...",
+                extraClass: "available",
+                click: function multiChoiceItemClick() {
+                  chooseUI.show(choice.type, getAdapterForChoice(choice));
+                }
+              };
+            }
 
-              item.context = choice;
-              return item;
-            })
-          };
+            item.context = choice;
+            return item;
+          });
+
+          return { title: name, items: sortItems(items) };
         });
       },
       getInitialSelection: function() { }
