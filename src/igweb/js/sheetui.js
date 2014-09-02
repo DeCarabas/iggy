@@ -84,7 +84,6 @@ define(['jquery', './binding', './log'],function($, binding, log) {
 
   function getAdapterForMultipleChoices(type, choices) {
     return {
-      applySelection: function(/*selection*/) { },
       getDetailUrl: function(context) {
         var url = null;
         if (context) {
@@ -141,10 +140,12 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     this._whatButton = this._rootElement.find(".whatButton");
     this._whatButton.click(function() { this.updateDetailTarget(null); }.bind(this));
 
-    this._rootElement.find(".okButton").click(function() {
+    this._okButton = this._rootElement.find(".okButton");
+    this._okButton.click(function() {
       this.applySelection();
     }.bind(this));
-    this._rootElement.find(".cancelButton").click(function() {
+    this._cancelButton = this._rootElement.find(".cancelButton");
+    this._cancelButton.click(function() {
       this.hide();
     }.bind(this));
 
@@ -181,6 +182,12 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       this._title = title;
 
       this.updateTitle();
+
+      if (this._adapter.applySelection) {
+        this._okButton.removeClass("hidden");
+      } else {
+        this._okButton.addClass("hidden");
+      }
 
       this._rootElement.show();
       this._rootElement.offset({ top: topOfPage, left: 0 });
