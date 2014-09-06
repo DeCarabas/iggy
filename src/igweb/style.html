@@ -36,7 +36,15 @@
  
 <body>
 
-  <h1>Core Sheet</h1>
+  <h1>Stylesheet for Iggy</h1>
+
+  <ul>
+    <li><a href="#TOC_CoreSheet">Core Sheet</a></li>
+    <li><a href="#TOC_ChoiceUI">Choice UI</a></li>
+    <li><a href="#TOC_AbilityScores">Ability Scores</a></li>
+  </ul>
+  
+  <h1 id="TOC_CoreSheet">Core Sheet</h1>
 
   <p>The main page of the character builder looks like this. (TODO: Probably should cut this down to particular style
   choices, but they all have to work together, so this might be the best presentation...)</p>
@@ -611,7 +619,7 @@
   <div>&nbsp;</div>
   <hr/>
 
-  <h1>Choice UI</h1>
+  <h1 id="TOC_ChoiceUI">Choice UI</h1>
 
   <h2>An option with a choice</h2>
 
@@ -636,9 +644,9 @@
   
   <p>The HTML that comes up to pick something looks like this:</p>
 
-  <div id="chooseControl" class="chooseUI" style="display: block">
+  <div id="chooseControl" class="popupUI" style="display: block">
     <div class="container_16">
-      <div class="chooseUIWrapper">
+      <div class="popupUIWrapper">
         <div class="grid_13">
           <h1>Choose a class</h1>
         </div>          
@@ -702,9 +710,9 @@
 
   <p>When the choice has more than one option, it looks like this:</p>
   
-  <div id="metaChooseControl" class="chooseUI" style="display: block">
+  <div id="metaChooseControl" class="popupUI" style="display: block">
     <div class="container_16">
-      <div class="chooseUIWrapper">
+      <div class="popupUIWrapper">
         <div class="grid_13">
           <h1>Feats</h1>
         </div>          
@@ -755,6 +763,238 @@
     </div>
   </div>
 
+  <h1 id="TOC_AbilityScores">Ability Scores</h1>
+
+  <p>Ability score editing has its own UI.</p>
+
+  <div class="popupUI" style="display:block">
+    <div class="container_16">
+      <div class="popupUIWrapper">
+        <div class="grid_16">
+          <h1>Ability Scores</h1>
+        </div>
+        <hr />
+
+        <div class="ablBlock">
+          <div class="grid_1"><div class="ablHead">Base</div></div>        
+          <div class="grid_2"><div class="ablHead">Racial Ability</div></div>        
+          <div class="grid_3"><div class="ablHead">Ability Score</div></div>
+          <div class="grid_1"><div class="ablHead">Mod</div></div>
+          <div class="grid_2"><div class="ablHead">+ 1/2 Level</div></div>
+          <div class="clear"></div>
+
+          <div class="ablScoreRow">
+            <div class="grid_1">
+              <div class="ablScoreValue">
+                <input value="18" />
+              </div>
+            </div>
+            <div class="grid_2">
+              <div class="ablRacialBonus">
+                <div class="ablRacialBonusValue">
+                  <input value="+2" readonly="true" />
+                </div>
+                <div class="customCheck ablRacialBonusCheck">
+	              <input type="checkbox" value="None" id="ablRacialBonusStr" name="ablRacialBonusStr" />
+	              <label for="ablRacialBonusStr"></label>
+                </div>
+              </div>
+            </div>
+            <div class="grid_3">
+              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">STR</span></div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifier" value="+5" />
+              </div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+
+          <div class="ablScoreRow">
+            <div class="grid_1">
+              <div class="ablScoreValue">
+                <input value="18" />
+              </div>
+            </div>
+            <div class="grid_2">
+              <div class="ablRacialBonus">
+                <div class="ablRacialBonusValue">
+                  <input value="+2" readonly="true" />
+                </div>
+                <div class="customCheck ablRacialBonusCheck">
+	              <input type="checkbox" value="None" id="ablRacialBonusCon" name="ablRacialBonusCon" />
+	              <label for="ablRacialBonusCon"></label>
+                </div>
+              </div>
+            </div>
+            <div class="grid_3">
+              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">CON</span></div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifier" value="+5" />
+              </div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <div class="ablScoreRow">
+            <div class="grid_1">
+              <div class="ablScoreValue">
+                <input value="18" />
+              </div>
+            </div>
+            <div class="grid_2">
+              <div class="ablRacialBonus">
+                <div class="ablRacialBonusValue">
+                  <input value="+2" readonly="true" />
+                </div>
+                <div class="customCheck ablRacialBonusCheck">
+	              <input type="checkbox" value="None" id="ablRacialBonusDex" name="ablRacialBonusDex" />
+	              <label for="ablRacialBonusDex"></label>
+                </div>
+              </div>
+            </div>
+            <div class="grid_3">
+              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">DEX</span></div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifier" value="+5" />
+              </div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+
+
+          <div class="ablScoreRow">
+            <div class="grid_1">
+              <div class="ablScoreValue">
+                <input value="18" />
+              </div>
+            </div>
+            <div class="grid_2">
+              <div class="ablRacialBonus">
+                <div class="ablRacialBonusValue">
+                  <input value="+2" readonly="true" />
+                </div>
+                <div class="customCheck ablRacialBonusCheck">
+	              <input type="checkbox" value="None" id="ablRacialBonusInt" name="ablRacialBonusInt" />
+	              <label for="ablRacialBonusInt"></label>
+                </div>
+              </div>
+            </div>
+            <div class="grid_3">
+              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">INT</span></div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifier" value="+5" />
+              </div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+
+
+          <div class="ablScoreRow">
+            <div class="grid_1">
+              <div class="ablScoreValue">
+                <input value="18" />
+              </div>
+            </div>
+            <div class="grid_2">
+              <div class="ablRacialBonus">
+                <div class="ablRacialBonusValue">
+                  <input value="+2" readonly="true" />
+                </div>
+                <div class="customCheck ablRacialBonusCheck">
+	              <input type="checkbox" value="None" id="ablRacialBonusWis" name="ablRacialBonusWis" />
+	              <label for="ablRacialBonusWis"></label>
+                </div>
+              </div>
+            </div>
+            <div class="grid_3">
+              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">WIS</span></div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true"class="ablModifier" value="+5" />
+              </div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+
+
+          <div class="ablScoreRow">
+            <div class="grid_1">
+              <div class="ablScoreValue">
+                <input value="18" />
+              </div>
+            </div>
+            <div class="grid_2">
+              <div class="ablRacialBonus">
+                <div class="ablRacialBonusValue">
+                  <input readonly="true" value="+2" />
+                </div>
+                <div class="customCheck ablRacialBonusCheck">
+	              <input type="checkbox" value="None" id="ablRacialBonusCha" name="ablRacialBonusCha" />
+	              <label for="ablRacialBonusCha"></label>
+                </div>
+              </div>
+            </div>
+            <div class="grid_3">
+              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">CHA</span></div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifier" value="+5" />
+              </div>
+            </div>
+            <div class="grid_1">
+              <div class="ablScoreMod">
+                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+        </div>
+
+        
+        <hr />
+      </div>
+    </div>    
+  </div>
   
 </body>
 </html>
