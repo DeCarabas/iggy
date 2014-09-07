@@ -775,220 +775,230 @@
         </div>
         <hr />
 
-        <div class="ablBlock">
-          <div class="grid_1"><div class="ablHead">Base</div></div>        
-          <div class="grid_2"><div class="ablHead">Racial Ability</div></div>        
-          <div class="grid_3"><div class="ablHead">Ability Score</div></div>
-          <div class="grid_1"><div class="ablHead">Mod</div></div>
-          <div class="grid_2"><div class="ablHead">+ 1/2 Level</div></div>
-          <div class="clear"></div>
+        <div class="grid_10">
+          <div class="ablBlock">
+            <table>
+              <tr>
+                <th class="ablHead">Base</th>
+                <th class="ablHead">Racial Ability</th>
+                <th class="ablHead">Ability Score</th>
+                <th class="ablHead">Mod</th>
+                <th class="ablHead">+ 1/2 Level</th>
+              </tr>
 
-          <div class="ablScoreRow">
-            <div class="grid_1">
-              <div class="ablScoreValue">
-                <input value="18" />
-              </div>
-            </div>
-            <div class="grid_2">
-              <div class="ablRacialBonus">
-                <div class="ablRacialBonusValue">
-                  <input value="+2" readonly="true" />
-                </div>
-                <div class="customCheck ablRacialBonusCheck">
-	              <input type="checkbox" value="None" id="ablRacialBonusStr" name="ablRacialBonusStr" />
-	              <label for="ablRacialBonusStr"></label>
-                </div>
-              </div>
-            </div>
-            <div class="grid_3">
-              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">STR</span></div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifier" value="+5" />
-              </div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
-              </div>
-            </div>
-            <div class="clear"></div>
+              <!-- Strength -->
+              <tr class="ablRow">
+                <td>
+                  <div class="ablScoreValue">
+                    <input value="18" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablRacialBonus">
+                    <div class="customCheck ablRacialBonusCheck">
+	                  <input type="checkbox" value="None" id="ablRacialBonusStr" name="ablRacialBonusStr" />
+	                  <label for="ablRacialBonusStr"></label>
+                    </div>
+                    <div class="ablRacialBonusValue">
+                      <input value="+2" readonly="true" />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreTotal">
+                    <div class="ablScoreTotalValue">= <input readonly="true" value="20" /></div><div class="ablScoreName">Strength&nbsp;(STR)</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifier" value="+5" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Constitution -->
+              <tr class="ablRow">
+                <td>
+                  <div class="ablScoreValue">
+                    <input value="18" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablRacialBonus">
+                    <div class="customCheck ablRacialBonusCheck">
+	                  <input type="checkbox" value="None" id="ablRacialBonusCon" name="ablRacialBonusCon" />
+	                  <label for="ablRacialBonusCon"></label>
+                    </div>
+                    <div class="ablRacialBonusValue">
+                      <input value="+2" readonly="true" />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreTotal">
+                    <div class="ablScoreTotalValue">= <input readonly="true" value="20" /></div><div class="ablScoreName">Constitution&nbsp;(CON)</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifier" value="+5" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Dexterity -->
+              <tr class="ablRow">
+                <td>
+                  <div class="ablScoreValue">
+                    <input value="18" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablRacialBonus">
+                    <div class="customCheck ablRacialBonusCheck">
+	                  <input type="checkbox" value="None" id="ablRacialBonusDex" name="ablRacialBonusDex" />
+	                  <label for="ablRacialBonusDex"></label>
+                    </div>
+                    <div class="ablRacialBonusValue">
+                      <input value="+2" readonly="true" />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreTotal">
+                    <div class="ablScoreTotalValue">= <input readonly="true" value="20" /></div><div class="ablScoreName">Dexterity&nbsp;(DEX)</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifier" value="+5" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+                  </div>
+                </td>
+              </tr>
+              
+              <!-- Intelligence -->
+              <tr class="ablRow">
+                <td>
+                  <div class="ablScoreValue">
+                    <input value="18" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablRacialBonus">
+                    <div class="customCheck ablRacialBonusCheck">
+	                  <input type="checkbox" value="None" id="ablRacialBonusInt" name="ablRacialBonusInt" />
+	                  <label for="ablRacialBonusInt"></label>
+                    </div>
+                    <div class="ablRacialBonusValue">
+                      <input value="+2" readonly="true" />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreTotal">
+                    <div class="ablScoreTotalValue">= <input readonly="true" value="20" /></div><div class="ablScoreName">Intelligence&nbsp;(INT)</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifier" value="+5" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+                  </div>
+                </td>
+              </tr>
+              
+              <!-- Wisdom -->
+              <tr class="ablRow">
+                <td>
+                  <div class="ablScoreValue">
+                    <input value="18" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablRacialBonus">
+                    <div class="customCheck ablRacialBonusCheck">
+	                  <input type="checkbox" value="None" id="ablRacialBonusWis" name="ablRacialBonusWis" />
+	                  <label for="ablRacialBonusWis"></label>
+                    </div>
+                    <div class="ablRacialBonusValue">
+                      <input value="+2" readonly="true" />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreTotal">
+                    <div class="ablScoreTotalValue">= <input readonly="true" value="20" /></div><div class="ablScoreName">Wisdom&nbsp;(WIS)</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifier" value="+5" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- Charisma -->
+              <tr class="ablRow">
+                <td>
+                  <div class="ablScoreValue">
+                    <input value="18" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablRacialBonus">
+                    <div class="customCheck ablRacialBonusCheck">
+	                  <input type="checkbox" value="None" id="ablRacialBonusCha" name="ablRacialBonusCha" readonly="true" />
+	                  <label for="ablRacialBonusCha"></label>
+                    </div>
+                    <div class="ablRacialBonusValue">
+                      <input value="+2" readonly="true" />
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreTotal">
+                    <div class="ablScoreTotalValue">= <input readonly="true" value="20" /></div><div class="ablScoreName">Charisma&nbsp;(CHA)</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifier" value="+5" />
+                  </div>
+                </td>
+                <td>
+                  <div class="ablScoreMod">
+                    <input readonly="true" class="ablModifierHalfLvl" value="+6" />
+                  </div>
+                </td>
+              </tr>
+              
+            </table>
           </div>
-          
-
-          <div class="ablScoreRow">
-            <div class="grid_1">
-              <div class="ablScoreValue">
-                <input value="18" />
-              </div>
-            </div>
-            <div class="grid_2">
-              <div class="ablRacialBonus">
-                <div class="ablRacialBonusValue">
-                  <input value="+2" readonly="true" />
-                </div>
-                <div class="customCheck ablRacialBonusCheck">
-	              <input type="checkbox" value="None" id="ablRacialBonusCon" name="ablRacialBonusCon" />
-	              <label for="ablRacialBonusCon"></label>
-                </div>
-              </div>
-            </div>
-            <div class="grid_3">
-              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">CON</span></div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifier" value="+5" />
-              </div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
-              </div>
-            </div>
-            <div class="clear"></div>
-          </div>
-
-          <div class="ablScoreRow">
-            <div class="grid_1">
-              <div class="ablScoreValue">
-                <input value="18" />
-              </div>
-            </div>
-            <div class="grid_2">
-              <div class="ablRacialBonus">
-                <div class="ablRacialBonusValue">
-                  <input value="+2" readonly="true" />
-                </div>
-                <div class="customCheck ablRacialBonusCheck">
-	              <input type="checkbox" value="None" id="ablRacialBonusDex" name="ablRacialBonusDex" />
-	              <label for="ablRacialBonusDex"></label>
-                </div>
-              </div>
-            </div>
-            <div class="grid_3">
-              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">DEX</span></div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifier" value="+5" />
-              </div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
-              </div>
-            </div>
-            <div class="clear"></div>
-          </div>
-
-
-
-          <div class="ablScoreRow">
-            <div class="grid_1">
-              <div class="ablScoreValue">
-                <input value="18" />
-              </div>
-            </div>
-            <div class="grid_2">
-              <div class="ablRacialBonus">
-                <div class="ablRacialBonusValue">
-                  <input value="+2" readonly="true" />
-                </div>
-                <div class="customCheck ablRacialBonusCheck">
-	              <input type="checkbox" value="None" id="ablRacialBonusInt" name="ablRacialBonusInt" />
-	              <label for="ablRacialBonusInt"></label>
-                </div>
-              </div>
-            </div>
-            <div class="grid_3">
-              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">INT</span></div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifier" value="+5" />
-              </div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
-              </div>
-            </div>
-            <div class="clear"></div>
-          </div>
-
-
-
-          <div class="ablScoreRow">
-            <div class="grid_1">
-              <div class="ablScoreValue">
-                <input value="18" />
-              </div>
-            </div>
-            <div class="grid_2">
-              <div class="ablRacialBonus">
-                <div class="ablRacialBonusValue">
-                  <input value="+2" readonly="true" />
-                </div>
-                <div class="customCheck ablRacialBonusCheck">
-	              <input type="checkbox" value="None" id="ablRacialBonusWis" name="ablRacialBonusWis" />
-	              <label for="ablRacialBonusWis"></label>
-                </div>
-              </div>
-            </div>
-            <div class="grid_3">
-              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">WIS</span></div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true"class="ablModifier" value="+5" />
-              </div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
-              </div>
-            </div>
-            <div class="clear"></div>
-          </div>
-
-
-
-          <div class="ablScoreRow">
-            <div class="grid_1">
-              <div class="ablScoreValue">
-                <input value="18" />
-              </div>
-            </div>
-            <div class="grid_2">
-              <div class="ablRacialBonus">
-                <div class="ablRacialBonusValue">
-                  <input readonly="true" value="+2" />
-                </div>
-                <div class="customCheck ablRacialBonusCheck">
-	              <input type="checkbox" value="None" id="ablRacialBonusCha" name="ablRacialBonusCha" />
-	              <label for="ablRacialBonusCha"></label>
-                </div>
-              </div>
-            </div>
-            <div class="grid_3">
-              <div class="ablScoreTotal">= <input readonly="true" value="20" /><span class="ablScoreName">CHA</span></div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifier" value="+5" />
-              </div>
-            </div>
-            <div class="grid_1">
-              <div class="ablScoreMod">
-                <input readonly="true" class="ablModifierHalfLvl" value="+6" />
-              </div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          
-        </div>
+        </div> <!-- grid for ability scores -->
 
         
         <hr />
