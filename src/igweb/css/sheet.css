@@ -787,3 +787,20 @@ textArea {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.pointValue
+{
+  font-size: 18px;
+}
+
+.pointValue input
+{
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.maxPoints
+{
+  border: 1px solid #DDD;
+}
