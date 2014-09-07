@@ -552,6 +552,34 @@ textArea {
 	opacity: 1;
 }
 
+.uiButton
+{    
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #444;
+    cursor: default;
+    background-color: White;
+}
+
+.uiButton:hover
+{
+    background-color: #CCC;
+}
+
+.uiButtonDark
+{    
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #444;
+    cursor: default;
+    background-color: #DDD;
+}
+
+.uiButtonDark:hover
+{
+    background-color: White;
+}
+
 /****************************************************************
  * Selection UI
  ****************************************************************/
@@ -605,20 +633,6 @@ textArea {
     background-color: #BBB;
 }
 
-.uiButton
-{    
-    text-align: center;
-    font-size: 16px;
-    border: 1px solid #444;
-    cursor: default;
-    background-color: White;
-}
-
-.uiButton:hover
-{
-    background-color: #CCC;
-}
-
 .choiceGroup
 {
   border-top:     1px solid black;
@@ -658,7 +672,7 @@ textArea {
 {
   border: 1px solid #444;
   margin: -1px;
-  padding-left: 20px;
+  padding: 10px;
   background-color: White;
   overflow: hidden;
 }
@@ -788,6 +802,11 @@ textArea {
   margin-right: 5px;
 }
 
+.ablArrayButton
+{
+  margin-bottom: 10px;
+}
+
 .pointValue
 {
   font-size: 18px;
@@ -803,4 +822,9 @@ textArea {
 .maxPoints
 {
   border: 1px solid #DDD;
+}
+
+.explication
+{
+  padding: 5px;
 }
