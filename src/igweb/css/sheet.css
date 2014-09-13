@@ -472,7 +472,7 @@ textArea {
 .popupUIWrapper hr
 {
     border: 1px solid #DDD;
-    margin: 2px;
+    margin: 16px;
 }
 
 .popupUI h1
@@ -485,7 +485,7 @@ textArea {
     font-size: 14px;
 }
 
-.ablBlock input[type=checkbox] {
+.popupUI input[type=checkbox] {
 	visibility: hidden;
 }
 
@@ -675,6 +675,7 @@ textArea {
   padding: 10px;
   background-color: White;
   overflow: hidden;
+  height: 420px; /* DIRTY HACK, FIX. */
 }
 
 .ablBlock * 
@@ -827,4 +828,9 @@ textArea {
 .explication
 {
   padding: 5px;
+}
+
+.abilityWrapper .choicePanel
+{
+  /* height: 400px; */
 }
