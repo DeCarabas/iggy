@@ -8,6 +8,8 @@ define(['jquery', './binding', './log'],function($, binding, log) {
   var topOfPage = $("#sheetHeader").height(); // For magical alignment.
 
   var chooseUI;
+  var abilityUI;
+
   var uiStack = [];
   var visibleUI;
 
@@ -272,6 +274,11 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       });
     });
 
+    abilityUI = new ChoiceUI(model, $("#abilityControl"));
+    $("#sheetAbilityScores").click(function() {
+      var hack = model.getChoices('Class');
+      abilityUI.show("Ability Scores", getAdapterForChoice(hack[0]));
+    });
 
     binding.bindFields(model);
     binding.updateFields(model);

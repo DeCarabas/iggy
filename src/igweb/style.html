@@ -155,51 +155,53 @@
             <h4 class="conditionalHeader">Conditional Modifiers</h4>
             <input name="initiativeConditionalModifiers" />
           </div>
-          <h3>Ability Scores</h3>
-          <table class="statTable abilityScoreTable">
-            <tr><th>Score</th><th class="abilName">Ability</th><th>Abil Mod</th><th>Mod + 1/2 Lvl</th></tr>
-            <tr class="abilityScore">
+          <div id="sheetAbilityScores">
+            <h3>Ability Scores</h3>
+            <table class="statTable abilityScoreTable">
+              <tr><th>Score</th><th class="abilName">Ability</th><th>Abil Mod</th><th>Mod + 1/2 Lvl</th></tr>
+              <tr class="abilityScore">
                 <td><input data-boundStat="Strength" readonly="true" /></td>
                 <td class="statName abilName">STR</td>
                 <td><input data-boundStat="Strength modifier" readonly="true" /></td>
                 <td><input data-special="strHalfLevel" readonly="true" /></td>
-            </tr>
-            <tr class="abilMid"><th></th></tr>
-            <tr class="abilityScore">
+              </tr>
+              <tr class="abilMid"><th></th></tr>
+              <tr class="abilityScore">
                 <td><input data-boundStat="Constitution" readonly="true" /></td>
                 <td class="statName abilName">CON</td>
                 <td><input data-boundStat="Constitution modifier" /></td>
                 <td><input data-special="conHalfLevel" /></td>
-            </tr>
-            <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
-            <tr class="abilityScore">
+              </tr>
+              <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
+              <tr class="abilityScore">
                 <td><input data-boundStat="Dexterity" /></td>
                 <td class="statName abilName">DEX</td>
                 <td><input data-boundStat="Dexterity modifier" /></td>
                 <td><input data-special="dexHalfLevel" /></td>
-            </tr>
-            <tr class="abilMid"><th></th></tr>
-            <tr class="abilityScore">
+              </tr>
+              <tr class="abilMid"><th></th></tr>
+              <tr class="abilityScore">
                 <td><input data-boundStat="Intelligence" /></td>
                 <td class="statName abilName">INT</td>
                 <td><input data-boundStat="Intelligence modifier" /></td>
                 <td><input data-special="intHalfLevel" /></td>
-            </tr>
-            <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
-            <tr class="abilityScore">
+              </tr>
+              <tr class="abilSpacer"><th></th><th></th><th></th><th></th></tr>
+              <tr class="abilityScore">
                 <td><input data-boundStat="Wisdom" /></td>
                 <td class="statName abilName">WIS</td>
                 <td><input data-boundStat="Wisdom modifier" /></td>
                 <td><input data-special="wisHalfLevel" /></td>
-            </tr>
-            <tr class="abilMid"><th></th></tr>
-            <tr class="abilityScore">
+              </tr>
+              <tr class="abilMid"><th></th></tr>
+              <tr class="abilityScore">
                 <td><input data-boundStat="Charisma" /></td>
                 <td class="statName abilName">CHA</td>
                 <td><input data-boundStat="Charisma modifier" /></td>
                 <td><input data-special="chaHalfLevel" /></td>
-            </tr>
-          </table>
+              </tr>
+            </table>
+          </div>
           <h3>Hit Points</h3>
           <table class="hitPoints">
             <tr><th>MAX HP</th><th></th><th colspan="2"><b>HEALING SURGES</b></th></tr>
