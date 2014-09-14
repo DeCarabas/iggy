@@ -16,7 +16,8 @@ require.config({
     '*': { 'jquery': 'libs/jquery-private' },
     // ...except libs/jquery-private, who gets the real one.
     'libs/jquery-private': { 'jquery': 'jquery' }
-  }
+  },
+  waitSeconds: 30
 });
 
 require(['./cb'], function(cb) {
