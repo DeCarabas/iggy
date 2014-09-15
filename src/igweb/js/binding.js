@@ -41,6 +41,13 @@ define(['jquery'], function($) {
     }
   };
 
+  function filterInt(value) {
+    if(/^(\-|\+)?([0-9]+|Infinity)$/.test(value)) {
+      return Number(value);
+    }
+    return NaN;
+  }
+
   function bindFields(model) {
     // TODO: Stats aren't bound; need to validate integers and report
     // errors and the like. If only HTML5 <input type="number"
@@ -51,6 +58,17 @@ define(['jquery'], function($) {
       elem.change(function () {
         model.override(elem.attr("data-boundStat"), elem.val());
         updateFields(model);
+      });
+    });
+
+    $("[data-boundStatBase]").each(function () {
+      var elem = $(this);
+      elem.change(function () {
+        var value = filterInt(elem.val());
+        if (!isNaN(value)) {
+          model.override(elem.attr("data-boundStatBase"), value);
+          updateFields(model);
+        }
       });
     });
 
@@ -114,6 +132,15 @@ define(['jquery'], function($) {
     }
   }
 
+  function updateBoundStatBase(element, model) {
+    var elem = $(element);
+
+    var stat = model.rawStatObject(elem.attr("data-boundStatBase"));
+    var value = stat ? stat.baseValue : 0;
+
+    elem.val(value);
+  }
+
   function updateFields(model) {
     $("[data-boundChoice]:visible").each(function() {
       updateBoundChoice(this, model);
@@ -123,6 +150,9 @@ define(['jquery'], function($) {
     });
     $("[data-boundStat]:visible").each(function () {
       updateBoundStat(this, model);
+    });
+    $("[data-boundStatBase]:visible").each(function () {
+      updateBoundStatBase(this, model);
     });
 
     $("[data-special]:visible").each(function () {
