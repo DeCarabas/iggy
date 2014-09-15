@@ -666,20 +666,15 @@
 
               <!-- Strength -->
               <tr class="ablRow">
-                <td>
-                  <div class="ablScoreValue">
-                    <input />
-                  </div>
-                </td>
+                <td><div class="ablScoreValue"><input data-boundStatBase="Strength" /></div></td>
                 <td>
                   <div class="ablRacialBonus">
                     <div class="customCheck ablRacialBonusCheck">
-	                  <input type="checkbox" value="None" id="ablRacialBonusStr" name="ablRacialBonusStr" />
+	                  <input type="checkbox" data-boundChoiceCheck="Race Ability Bonus:Strength" value="None"
+                             id="ablRacialBonusStr" name="ablRacialBonusStr" />
 	                  <label for="ablRacialBonusStr"></label>
                     </div>
-                    <div class="ablRacialBonusValue">
-                      <input value="+2" readonly="true" />
-                    </div>
+                    <div class="ablRacialBonusValue"><input data-showValueIf="ablRacialBonusStr" value="+2" readonly="true" /></div>
                   </div>
                 </td>
                 <td>
@@ -694,7 +689,7 @@
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifierHalfLvl" data-boundStat="strHalfLevel" />
+                    <input readonly="true" class="ablModifierHalfLvl" data-special="strHalfLevel" />
                   </div>
                 </td>
               </tr>
@@ -702,34 +697,31 @@
               <!-- Constitution -->
               <tr class="ablRow">
                 <td>
-                  <div class="ablScoreValue">
-                    <input  />
-                  </div>
+                  <div class="ablScoreValue"><input data-boundStatBase="Constitution" /></div>
                 </td>
                 <td>
                   <div class="ablRacialBonus">
                     <div class="customCheck ablRacialBonusCheck">
-	                  <input type="checkbox" value="None" id="ablRacialBonusCon" name="ablRacialBonusCon" />
+	                  <input type="checkbox" data-boundChoiceCheck="Race Ability Bonus:Constitution" value="None"
+                             id="ablRacialBonusCon" name="ablRacialBonusCon" />
 	                  <label for="ablRacialBonusCon"></label>
                     </div>
-                    <div class="ablRacialBonusValue">
-                      <input  readonly="true" />
-                    </div>
+                    <div class="ablRacialBonusValue"><input data-showValueIf="ablRacialBonusCon" value="+2" readonly="true" /></div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreTotal">
-                    <div class="ablScoreTotalValue">= <input readonly="true"  /></div><div class="ablScoreName">Constitution&nbsp;(CON)</div>
+                    <div class="ablScoreTotalValue">= <input readonly="true" data-boundStat="Constitution" /></div><div class="ablScoreName">Constitution&nbsp;(CON)</div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifier"  />
+                    <input readonly="true" class="ablModifier" data-boundStat="Constitution modifier" />
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifierHalfLvl"  />
+                    <input readonly="true" class="ablModifierHalfLvl" data-special="conHalfLevel"  />
                   </div>
                 </td>
               </tr>
@@ -737,34 +729,31 @@
               <!-- Dexterity -->
               <tr class="ablRow">
                 <td>
-                  <div class="ablScoreValue">
-                    <input  />
-                  </div>
+                  <div class="ablScoreValue"><input data-boundStatBase="Dexterity" /></div>
                 </td>
                 <td>
                   <div class="ablRacialBonus">
                     <div class="customCheck ablRacialBonusCheck">
-	                  <input type="checkbox" value="None" id="ablRacialBonusDex" name="ablRacialBonusDex" />
+	                  <input type="checkbox" data-boundChoiceCheck="Race Ability Bonus:Dexterity" value="None"
+                             id="ablRacialBonusDex" name="ablRacialBonusDex" />
 	                  <label for="ablRacialBonusDex"></label>
                     </div>
-                    <div class="ablRacialBonusValue">
-                      <input  readonly="true" />
-                    </div>
+                    <div class="ablRacialBonusValue"><input data-showValueIf="ablRacialBonusDex" value="+2" readonly="true" /></div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreTotal">
-                    <div class="ablScoreTotalValue">= <input readonly="true"  /></div><div class="ablScoreName">Dexterity&nbsp;(DEX)</div>
+                    <div class="ablScoreTotalValue">= <input readonly="true" data-boundStat="Dexterity" /></div><div class="ablScoreName">Dexterity&nbsp;(DEX)</div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifier"  />
+                    <input readonly="true" class="ablModifier" data-boundStat="Dexterity modifier" />
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifierHalfLvl"  />
+                    <input readonly="true" class="ablModifierHalfLvl" data-special="dexHalfLevel" />
                   </div>
                 </td>
               </tr>
@@ -772,34 +761,31 @@
               <!-- Intelligence -->
               <tr class="ablRow">
                 <td>
-                  <div class="ablScoreValue">
-                    <input  />
-                  </div>
+                  <div class="ablScoreValue"><input data-boundStatBase="Intelligence" /></div>
                 </td>
                 <td>
                   <div class="ablRacialBonus">
                     <div class="customCheck ablRacialBonusCheck">
-	                  <input type="checkbox" value="None" id="ablRacialBonusInt" name="ablRacialBonusInt" />
+	                  <input type="checkbox" data-boundChoiceCheck="Race Ability Bonus:Dexterity" value="None"
+                             id="ablRacialBonusInt" name="ablRacialBonusInt" />
 	                  <label for="ablRacialBonusInt"></label>
                     </div>
-                    <div class="ablRacialBonusValue">
-                      <input  readonly="true" />
-                    </div>
+                    <div class="ablRacialBonusValue"><input data-showValueIf="ablRacialBonusInt" value="+2" readonly="true" /></div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreTotal">
-                    <div class="ablScoreTotalValue">= <input readonly="true"  /></div><div class="ablScoreName">Intelligence&nbsp;(INT)</div>
+                    <div class="ablScoreTotalValue">= <input readonly="true" data-boundStat="Intelligence" /></div><div class="ablScoreName">Intelligence&nbsp;(INT)</div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifier"  />
+                    <input readonly="true" class="ablModifier" data-boundStat="Intelligence modifier"  />
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifierHalfLvl"  />
+                    <input readonly="true" class="ablModifierHalfLvl" data-special="intHalfLevel"  />
                   </div>
                 </td>
               </tr>
@@ -807,34 +793,31 @@
               <!-- Wisdom -->
               <tr class="ablRow">
                 <td>
-                  <div class="ablScoreValue">
-                    <input  />
-                  </div>
+                  <div class="ablScoreValue"><input data-boundStatBase="Wisdom" /></div>
                 </td>
                 <td>
                   <div class="ablRacialBonus">
                     <div class="customCheck ablRacialBonusCheck">
-	                  <input type="checkbox" value="None" id="ablRacialBonusWis" name="ablRacialBonusWis" />
+	                  <input type="checkbox" data-boundChoiceCheck="Race Ability Bonus:Wisdom" value="None"
+                             id="ablRacialBonusWis" name="ablRacialBonusWis" />
 	                  <label for="ablRacialBonusWis"></label>
                     </div>
-                    <div class="ablRacialBonusValue">
-                      <input  readonly="true" />
-                    </div>
+                    <div class="ablRacialBonusValue"><input data-showValueIf="ablRacialBonusWis" value="+2" readonly="true" /></div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreTotal">
-                    <div class="ablScoreTotalValue">= <input readonly="true"  /></div><div class="ablScoreName">Wisdom&nbsp;(WIS)</div>
+                    <div class="ablScoreTotalValue">= <input readonly="true" data-boundStat="Wisdom" /></div><div class="ablScoreName">Wisdom&nbsp;(WIS)</div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifier"  />
+                    <input readonly="true" class="ablModifier" data-boundStat="Wisdom modifier" />
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifierHalfLvl"  />
+                    <input readonly="true" class="ablModifierHalfLvl" data-special="wisHalfLevel" />
                   </div>
                 </td>
               </tr>
@@ -842,34 +825,31 @@
               <!-- Charisma -->
               <tr class="ablRow">
                 <td>
-                  <div class="ablScoreValue">
-                    <input  />
-                  </div>
+                  <div class="ablScoreValue"><input data-boundStatBase="Charisma" /></div>
                 </td>
                 <td>
                   <div class="ablRacialBonus">
                     <div class="customCheck ablRacialBonusCheck">
-	                  <input type="checkbox" value="None" id="ablRacialBonusCha" name="ablRacialBonusCha" readonly="true" />
+	                  <input type="checkbox" data-boundChoiceCheck="Race Ability Bonus:Charisma" value="None"
+                             id="ablRacialBonusCha" name="ablRacialBonusCha" readonly="true" />
 	                  <label for="ablRacialBonusCha"></label>
                     </div>
-                    <div class="ablRacialBonusValue">
-                      <input  readonly="true" />
-                    </div>
+                    <div class="ablRacialBonusValue"><input data-showValueIf="ablRacialBonusCha" value="+2" readonly="true" /></div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreTotal">
-                    <div class="ablScoreTotalValue">= <input readonly="true"  /></div><div class="ablScoreName">Charisma&nbsp;(CHA)</div>
+                    <div class="ablScoreTotalValue">= <input readonly="true" data-boundStat="Charisma" /></div><div class="ablScoreName">Charisma&nbsp;(CHA)</div>
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifier"  />
+                    <input readonly="true" class="ablModifier" data-boundStat="Charisma modifier" />
                   </div>
                 </td>
                 <td>
                   <div class="ablScoreMod">
-                    <input readonly="true" class="ablModifierHalfLvl"  />
+                    <input readonly="true" class="ablModifierHalfLvl" data-special="chaHalfLevel" />
                   </div>
                 </td>
               </tr>
