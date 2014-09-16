@@ -58,7 +58,7 @@ define(['../js/binding', '../js/engine', 'jquery'], function(binding, engine, $)
   test('data-boundChoiceCheck', function () {
     $('#qunit-fixture').html(
       '<div id="test-x" data-boundChoiceCheck="TB:RY">'+
-	    '<input type="checkbox" value="None" id="cb1" name="cb1" readonly="true" />'+
+	    '<input type="checkbox" value="None" id="cb1" name="cb1" disabled="true" />'+
 	    '<label for="cb1"></label>'+
       '</div>');
 
@@ -81,7 +81,7 @@ define(['../js/binding', '../js/engine', 'jquery'], function(binding, engine, $)
       types: { 'TA' : TA, 'TB' : TB },
       id: {
         'ID-RX': TA.RX,
-        'ID-RY': TA.RY,
+        'ID-RY': TB.RY,
         'ID-RZ': TB.RZ
       }
     };
@@ -89,34 +89,66 @@ define(['../js/binding', '../js/engine', 'jquery'], function(binding, engine, $)
 
     binding.bindFields(model);
     binding.updateFields(model);
-    equal($("#test-x:visible").length, 0, "Element should be hidden with no choices");
+    equal($("#test-x").css("visibility"), "hidden", "Element should be hidden with no choices");
 
     model.grant(TA.RX);
     binding.updateFields(model);
-    equal($("#test-x:visible").length, 1, "Element should now be visible, we have a choice");
+    equal($("#test-x").css("visibility"), "visible", "Element should now be visible, we have a choice");
     equal($("#test-x").find("input").is(":checked"), false, "Element should not be checked");
     equal(model.getChoices('TB')[0].choice, null, "Should have selected nothing");
 
     $("#test-x").find("input").prop('checked', true).change();
     binding.updateFields(model);
 
-    equal($("#test-x:visible").length, 1, "Element should still be visible, we have a choice");
+    equal($("#test-x").css("visibility"), "visible", "Element should still be visible, we have a choice");
     equal($("#test-x").find("input").is(":checked"), true, "Element should now be checked");
     equal(model.getChoices('TB')[0].choice, TB.RY, "Should have selected TB.RY as a side-effect");
 
     $("#test-x").find("input").prop('checked', false).change();
     binding.updateFields(model);
 
-    equal($("#test-x:visible").length, 1, "Element should still be visible, we have a choice");
+    equal($("#test-x").css("visibility"), "visible", "Element should still be visible, we have a choice");
     equal($("#test-x").find("input").is(":checked"), false, "Element should not be checked anymore");
     equal(model.getChoices('TB')[0].choice, null, "Should have un-selected TB.RY as a side-effect");
 
     model.getChoices('TB')[0].choice = TB.RY;
     binding.updateFields(model);
 
-    equal($("#test-x:visible").length, 1, "Element should still be visible, we have a choice");
+    equal($("#test-x").css("visibility"), "visible", "Element should still be visible, we have a choice");
     equal($("#test-x").find("input").is(":checked"), true, "Element should be checked again, after choice");
     equal(model.getChoices('TB')[0].choice, TB.RY, "Should have re-selected TB.RY, of course");
+  });
+
+  test('data-boundChoiceCheck with direct grant', function () {
+    $('#qunit-fixture').html(
+      '<div id="test-x" data-boundChoiceCheck="TB:RY">'+
+	    '<input type="checkbox" value="None" id="cb1" name="cb1" disabled="true" />'+
+	    '<label for="cb1"></label>'+
+      '</div>');
+
+    var TB = {
+      RY: new engine.RulesElement({ id: 'ID-RY', type: 'TB' }),
+    };
+
+    var elements = {
+      types: { 'TB' : TB },
+      id: { 'ID-RY': TB.RY }
+    };
+    var model = new engine.Model(elements);
+
+    binding.bindFields(model);
+    binding.updateFields(model);
+    equal($("#test-x").css("visibility"), "hidden", "Element should be hidden with no choices");
+
+    model.grant(TB.RY);
+    binding.updateFields(model);
+    equal($("#test-x").css("visibility"), "visible", "Element should now be visible, we have a choice");
+    equal($("#test-x").find("input").is(":checked"), true, "Element should be checked");
+    equal($("#test-x").find("input").prop("disabled"), true, "Element should be read-only");
+
+    model.remove(TB.RY);
+    binding.updateFields(model);
+    equal($("#test-x").css("visibility"), "hidden", "Element should not be visible anymore, rule is gone");
   });
 
 });

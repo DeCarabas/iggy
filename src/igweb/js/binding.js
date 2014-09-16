@@ -135,6 +135,7 @@ define(['jquery'], function($) {
 
   function updateBoundChoiceCheck(element, model) {
     var elem = $(element);
+    var input = elem.find("input");
 
     var parts = elem.attr("data-boundChoiceCheck").split(':');
     var typename = parts[0];
@@ -143,26 +144,39 @@ define(['jquery'], function($) {
     var targetRuleElement = model.elements.types[typename][itemname];
     if (!targetRuleElement) { throw new Error('Could not find item ' + itemname); }
 
+    var check = false;
+    var readonly = true;
+    var visible = false;
+
     var choices = model.getChoices(typename);
     if (choices.length > 0) {
-      elem.show();
+      // If there's a choice, then show the checkbox.
+      //
+      visible = true;
 
       // If any of them have this option selected, then this is checked.
-      var check = false;
-      for(var i = 0; i < choices.length && !check; i++) {
-        var choice = choices[i];
-        if (choice.choice === targetRuleElement) {
-          check = true;
-        }
+      //
+      check = choices.some(function (c) { return c.choice === targetRuleElement; });
+      if (check) { 
+        readonly = false; 
+      } else {
+        // Otherwise, if there are no more choices to be made, then the
+        // check-box should be read-only, because you couldn't possibly pick
+        // this one anyway.
+        //
+        readonly = choices.every(function (c) { return c.choice !== null; });
       }
-      
-      var input = elem.find("input");
-      if (check !== input.is(":checked")) {
-        input.prop("checked", check);
-      }
-    } else {
-      elem.hide();
+    } else if (model.isGranted(targetRuleElement)) {
+      // If the target element is granted somehow anyway, then this check
+      // should reflect that, but read-only.
+      //
+      visible = true;
+      check = true;
     }
+
+    elem.css("visibility", visible ? "visible" : "hidden");
+    input.prop('checked', check);
+    input.prop('disabled', readonly);
   }
 
   function updateBoundGrant(element, model) {

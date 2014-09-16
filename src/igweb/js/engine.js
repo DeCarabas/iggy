@@ -200,6 +200,9 @@ define(['./log'],function(log) {
         });
       }
     },
+    isGranted: function (element) {
+      return !!this._granted[element.id];
+    },
     matchesCategory: function(item, catOne, catTwo) {
       return item && 
         item.matchesCategory(catOne) && 
