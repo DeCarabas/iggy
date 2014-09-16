@@ -562,6 +562,12 @@ textArea {
   opacity: 1;
 }
 
+.customCheck input[type=checkbox][disabled]:checked + label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
 .uiButton
 {
   text-align: center;
