@@ -119,6 +119,48 @@ define(['../js/binding', '../js/engine', 'jquery'], function(binding, engine, $)
     equal(model.getChoices('TB')[0].choice, TB.RY, "Should have re-selected TB.RY, of course");
   });
 
+  test('data-boundChoiceCheck filter', function () {
+    $('#qunit-fixture').html(
+      '<div id="test-x" data-boundChoiceCheck="TB:RY">'+
+	    '<input type="checkbox" value="None" id="cb1" name="cb1" disabled="true" />'+
+	    '<label for="cb1"></label>'+
+      '</div>');
+
+    // Note that when we grant this, the choice doesn't matter because no
+    // element can match it, including our test element.
+    //
+    var TA = {
+      RX: new engine.RulesElement({
+        id: 'ID-RX',
+        type: 'TA',
+        rules: function(model) {
+          model.select('TB', 1, 'From TA', {
+            filter: function(model, element) { return false; }
+          });
+        }
+      })
+    };
+
+    var TB = {
+      RY: new engine.RulesElement({ id: 'ID-RY', type: 'TB' }),
+    };
+
+    var elements = {
+      types: { 'TA' : TA, 'TB' : TB },
+      id: { 'ID-RX': TA.RX, 'ID-RY': TB.RY }
+    };
+    var model = new engine.Model(elements);
+
+    binding.bindFields(model);
+    binding.updateFields(model);
+    equal($("#test-x").css("visibility"), "hidden", "Element should be hidden with no choices");
+
+    model.grant(TA.RX);
+    binding.updateFields(model);
+    equal($("#test-x").css("visibility"), "hidden", "Element should not be visible, choice filters this element");
+  });
+
+
   test('data-boundChoiceCheck with direct grant', function () {
     $('#qunit-fixture').html(
       '<div id="test-x" data-boundChoiceCheck="TB:RY">'+

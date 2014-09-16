@@ -149,8 +149,9 @@ define(['jquery'], function($) {
     var visible = false;
 
     var choices = model.getChoices(typename);
-    if (choices.length > 0) {
-      // If there's a choice, then show the checkbox.
+    if (choices.some(function(c) { return !c.filter || c.filter(model, targetRuleElement); })) {
+      // If there's at least one choice and the rule element is suitable for
+      // that choice, then show the checkbox.
       //
       visible = true;
 
