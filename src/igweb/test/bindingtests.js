@@ -55,5 +55,69 @@ define(['../js/binding', '../js/engine', 'jquery'], function(binding, engine, $)
     equal($("#test-y").val(), "21", "After grant, y value");
   });
 
+  test('data-boundChoiceCheck', function () {
+    $('#qunit-fixture').html(
+      '<div id="test-x" data-boundChoiceCheck="TB:RY">'+
+	    '<input type="checkbox" value="None" id="cb1" name="cb1" readonly="true" />'+
+	    '<label for="cb1"></label>'+
+      '</div>');
+
+    var TA = {
+      RX: new engine.RulesElement({
+        id: 'ID-RX',
+        type: 'TA',
+        rules: function(model) {
+          model.select('TB', 1, 'From TA');
+        }
+      })
+    };
+
+    var TB = {
+      RY: new engine.RulesElement({ id: 'ID-RY', type: 'TB' }),
+      RZ: new engine.RulesElement({ id: 'ID-RZ', type: 'TB' }),
+    };
+
+    var elements = {
+      types: { 'TA' : TA, 'TB' : TB },
+      id: {
+        'ID-RX': TA.RX,
+        'ID-RY': TA.RY,
+        'ID-RZ': TB.RZ
+      }
+    };
+    var model = new engine.Model(elements);
+
+    binding.bindFields(model);
+    binding.updateFields(model);
+    equal($("#test-x:visible").length, 0, "Element should be hidden with no choices");
+
+    model.grant(TA.RX);
+    binding.updateFields(model);
+    equal($("#test-x:visible").length, 1, "Element should now be visible, we have a choice");
+    equal($("#test-x").find("input").is(":checked"), false, "Element should not be checked");
+    equal(model.getChoices('TB')[0].choice, null, "Should have selected nothing");
+
+    $("#test-x").find("input").prop('checked', true).change();
+    binding.updateFields(model);
+
+    equal($("#test-x:visible").length, 1, "Element should still be visible, we have a choice");
+    equal($("#test-x").find("input").is(":checked"), true, "Element should now be checked");
+    equal(model.getChoices('TB')[0].choice, TB.RY, "Should have selected TB.RY as a side-effect");
+
+    $("#test-x").find("input").prop('checked', false).change();
+    binding.updateFields(model);
+
+    equal($("#test-x:visible").length, 1, "Element should still be visible, we have a choice");
+    equal($("#test-x").find("input").is(":checked"), false, "Element should not be checked anymore");
+    equal(model.getChoices('TB')[0].choice, null, "Should have un-selected TB.RY as a side-effect");
+
+    model.getChoices('TB')[0].choice = TB.RY;
+    binding.updateFields(model);
+
+    equal($("#test-x:visible").length, 1, "Element should still be visible, we have a choice");
+    equal($("#test-x").find("input").is(":checked"), true, "Element should be checked again, after choice");
+    equal(model.getChoices('TB')[0].choice, TB.RY, "Should have re-selected TB.RY, of course");
+  });
+
 });
 

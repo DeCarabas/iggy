@@ -72,6 +72,41 @@ define(['jquery'], function($) {
       });
     });
 
+    $("[data-boundChoiceCheck]").each(function () {
+      var elem = $(this);
+
+      var parts = elem.attr("data-boundChoiceCheck").split(":");
+      var typeName = parts[0];
+      var itemName = parts[1];
+
+      var targetElement = model.elements.types[typeName][itemName];
+
+      var input = elem.find("input");
+      input.change(function() {
+        var choices = model.getChoices(typeName);
+        if (input.is(":checked")) {
+          for(var i = 0; i < choices.length; i++) {
+            if (choices[i].choice === targetElement) { return; }
+          }
+          for(var j = 0; j < choices.length; j++) {
+            if (choices[j].choice === null) { 
+              choices[j].choice = targetElement; 
+              updateFields(model);
+              return;
+            }
+          }
+        } else {
+          for(var k = 0; k < choices.length; k++) {
+            if (choices[k].choice === targetElement) { 
+              choices[k].choice = null;
+              updateFields(model);
+              return;
+            }
+          }
+        }
+      });
+    });
+
     $("[data-boundStat],[data-special],[data-boundGrant]").each(function () {
       this.readOnly = true;
     });
@@ -95,6 +130,38 @@ define(['jquery'], function($) {
       elem.click(onClick);
     } else {
       elem.removeClass("choiceAvailable");
+    }
+  }
+
+  function updateBoundChoiceCheck(element, model) {
+    var elem = $(element);
+
+    var parts = elem.attr("data-boundChoiceCheck").split(':');
+    var typename = parts[0];
+    var itemname = parts[1];
+
+    var targetRuleElement = model.elements.types[typename][itemname];
+    if (!targetRuleElement) { throw new Error('Could not find item ' + itemname); }
+
+    var choices = model.getChoices(typename);
+    if (choices.length > 0) {
+      elem.show();
+
+      // If any of them have this option selected, then this is checked.
+      var check = false;
+      for(var i = 0; i < choices.length && !check; i++) {
+        var choice = choices[i];
+        if (choice.choice === targetRuleElement) {
+          check = true;
+        }
+      }
+      
+      var input = elem.find("input");
+      if (check !== input.is(":checked")) {
+        input.prop("checked", check);
+      }
+    } else {
+      elem.hide();
     }
   }
 
@@ -147,6 +214,9 @@ define(['jquery'], function($) {
     });
     $("[data-boundChoiceMulti]:visible").each(function() {
       updateBoundChoice(this, model);
+    });
+    $("[data-boundChoiceCheck]").each(function() {
+      updateBoundChoiceCheck(this, model);
     });
     $("[data-boundStat]:visible").each(function () {
       updateBoundStat(this, model);
