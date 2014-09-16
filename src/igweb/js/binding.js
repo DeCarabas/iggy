@@ -222,6 +222,18 @@ define(['jquery'], function($) {
     elem.val(value);
   }
 
+  function updateShowValueIf(element, model) {
+    var elem = $(element);
+    
+    var parts = elem.attr("data-showValueIf").split(":");
+    var typeName = parts[0];
+    var itemName = parts[1];
+
+    var targetElement = model.elements.types[typeName][itemName];
+
+    elem.css('visibility', (model.isGranted(targetElement)) ? 'visible' : 'hidden');
+  }
+
   function updateFields(model) {
     $("[data-boundChoice]:visible").each(function() {
       updateBoundChoice(this, model);
@@ -238,20 +250,20 @@ define(['jquery'], function($) {
     $("[data-boundStatBase]:visible").each(function () {
       updateBoundStatBase(this, model);
     });
-
     $("[data-special]:visible").each(function () {
       var elem = $(this);
       elem.val(special[elem.attr("data-special")](model));
     });
-
     $("[data-boundText]:visible").each(function () {
       var elem = $(this);
       elem.val(model.stat(elem.attr("data-boundText")) || "");
     });
-
     $("[data-boundGrant]:visible").each(function () {
       updateBoundGrant(this, model);
     });
+    $("[data-showValueIf]").each(function () {
+      updateShowValueIf(this, model);
+    });    
   }
 
   return {

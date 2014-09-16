@@ -151,5 +151,31 @@ define(['../js/binding', '../js/engine', 'jquery'], function(binding, engine, $)
     equal($("#test-x").css("visibility"), "hidden", "Element should not be visible anymore, rule is gone");
   });
 
+  test('data-showValueIf', function () {
+    $('#qunit-fixture').html('<div id="test-x" data-showValueIf="TB:RY"></div>');
+
+    var TB = {
+      RY: new engine.RulesElement({ id: 'ID-RY', type: 'TB' }),
+    };
+
+    var elements = {
+      types: { 'TB' : TB },
+      id: { 'ID-RY': TB.RY }
+    };
+    var model = new engine.Model(elements);
+
+    binding.bindFields(model);
+    binding.updateFields(model);
+    equal($("#test-x").css("visibility"), "hidden", "Element should be hidden without the grant");
+
+    model.grant(TB.RY);
+    binding.updateFields(model);
+    equal($("#test-x").css("visibility"), "visible", "Element should now be visible with the grant");
+
+    model.remove(TB.RY);
+    binding.updateFields(model);
+    equal($("#test-x").css("visibility"), "hidden", "Element should not be visible anymore, grant is gone");
+  });
+
 });
 
