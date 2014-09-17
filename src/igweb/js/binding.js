@@ -130,6 +130,7 @@ define(['jquery'], function($) {
 
     $("[data-boundStat],[data-special],[data-boundGrant]").each(function () {
       this.readOnly = true;
+      this.disabled = true;
     });
   }
 

@@ -56,6 +56,18 @@ input
   border-width: 0px; /* No border by default */
 }
 
+input[disabled]
+{
+  background-color: white;
+  color: black;
+}
+
+textarea[disabled]
+{
+  background-color: white;
+  color: black;
+}
+
 .page h4
 {
   font-size: 9px;
