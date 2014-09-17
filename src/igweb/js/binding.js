@@ -5,7 +5,28 @@ define(['jquery'], function($) {
 
   var showZero = true; // For debugging.
 
+  function pointValueOfScore(model, statName) {
+    var rawStat = model.rawStatObject(statName);
+    if (!rawStat) { return 0; }
+
+    var score = rawStat.baseValue;
+    var value = 0;
+    while (score > 17) { value += 4; score -= 1; }
+    while (score > 16) { value += 3; score -= 1; }
+    while (score > 13) { value += 2; score -= 1; }
+    while (score > 8)  { value += 1; score -= 1; }
+    return value;
+  }
+
   var special = {
+    abilityScorePointValue: function (model) {
+        return pointValueOfScore(model, "Strength") + 
+          pointValueOfScore(model, "Dexterity") +
+          pointValueOfScore(model, "Constitution") +
+          pointValueOfScore(model, "Intelligence") +
+          pointValueOfScore(model, "Wisdom") +
+          pointValueOfScore(model, "Charisma");
+    },
     strHalfLevel: function (model) {
       return model.stat("Strength modifier") + model.stat("HALF-LEVEL");
     },
