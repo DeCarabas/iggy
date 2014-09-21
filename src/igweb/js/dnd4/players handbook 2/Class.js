@@ -14,6 +14,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_129",
     source: "Player's Handbook 2",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=129",
+    specifics: {
+        'Key Abilities': "Wisdom, Dexterity, Intelligence"
+      },
     categories: ["Avenger", "ID_FMP_CLASS_129"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_AVENGER"]);
@@ -44,6 +47,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_148",
     source: "Player's Handbook 2",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=148",
+    specifics: {
+        'Key Abilities': "Strength, Constitution, Charisma"
+      },
     categories: ["Barbarian", "ID_FMP_CLASS_148"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_BARBARIAN"]);
@@ -72,6 +78,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_104",
     source: "Player's Handbook 2",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=104",
+    specifics: {
+        'Key Abilities': "Charisma, Intelligence, Constitution"
+      },
     categories: ["Bard", "ID_FMP_CLASS_104"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_BARD"]);
@@ -101,6 +110,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_126",
     source: "Player's Handbook 2",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=126",
+    specifics: {
+        'Key Abilities': "Wisdom, Dexterity, Constitution"
+      },
     categories: ["Druid", "ID_FMP_CLASS_126"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_DRUID"]);
@@ -136,6 +148,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_127",
     source: "Player's Handbook 2",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=127",
+    specifics: {
+        'Key Abilities': "Wisdom, Constitution, Intelligence"
+      },
     categories: ["Invoker", "ID_FMP_CLASS_127"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_INVOKER"]);
@@ -166,6 +181,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_147",
     source: "Player's Handbook 2",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=147",
+    specifics: {
+        'Key Abilities': "Wisdom, Constitution, Intelligence"
+      },
     categories: ["Shaman", "ID_FMP_CLASS_147"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_SHAMAN"]);
@@ -195,6 +213,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_128",
     source: "Player's Handbook 2",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=128",
+    specifics: {
+        'Key Abilities': "Charisma, Dexterity, Strength"
+      },
     categories: ["Sorcerer", "ID_FMP_CLASS_128"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_SORCERER"]);
@@ -223,6 +244,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_134",
     source: "Player's Handbook 2",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=134",
+    specifics: {
+        'Key Abilities': "Strength, Constitution, Wisdom"
+      },
     categories: ["Warden", "ID_FMP_CLASS_134"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_WARDEN"]);

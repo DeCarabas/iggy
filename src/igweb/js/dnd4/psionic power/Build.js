@@ -13,6 +13,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_118",
     source: "Psionic Power",
+    specifics: {
+        'Key Abilities': "Con, Dex, Wis, Cha"
+      },
     categories: ["Harrier Battlemind", "ID_FMP_BUILD_118", "ID_FMP_CLASS_124", "Battlemind"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_HARRIER_BATTLEMIND"]);
@@ -25,6 +28,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_117",
     source: "Psionic Power",
+    specifics: {
+        'Key Abilities': "Cha, Dex, Con"
+      },
     categories: ["Impetuous Ardent", "ID_FMP_BUILD_117", "ID_FMP_CLASS_529", "Ardent"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_IMPETUOUS_ARDENT"]);
@@ -37,6 +43,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_119",
     source: "Psionic Power",
+    specifics: {
+        'Key Abilities': "Dex, Con, Wis"
+      },
     categories: ["Iron Soul Monk", "ID_FMP_BUILD_119", "ID_FMP_CLASS_362", "Monk"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_IRON_SOUL_MONK"]);
@@ -49,6 +58,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_120",
     source: "Psionic Power",
+    specifics: {
+        'Key Abilities': "Int, Cha, Con"
+      },
     categories: ["Shaper Psion", "ID_FMP_BUILD_120", "ID_FMP_CLASS_437", "Psion"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_SHAPER_PSION"]);

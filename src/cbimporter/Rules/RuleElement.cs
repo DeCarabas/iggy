@@ -10,6 +10,15 @@
 
     public class RuleElement
     {
+        /// <summary>
+        /// The set of 'Specifics' elements that we are translating. We ignore specifics that we don't need; there are
+        /// a *lot* of them, and it's not clear what we actually want.
+        /// </summary>
+        static readonly HashSet<string> SpecificFilter = new HashSet<string>(StringComparer.Ordinal)
+        {
+            "Key Abilities"
+        };
+
         readonly Identifier[] category;
         readonly HashSet<Identifier> boundCategories = new HashSet<Identifier>();
         readonly string description;
@@ -54,11 +63,19 @@
                         {
                             category[i] = Identifier.Get(split[i]);
                         }
-                        
+
                     }
                     else if (subElement.Name == XNames.Specific)
                     {
-                        this.specifics[subElement.Attribute(XNames.Name).Value] = subElement.Value;
+                        string name = subElement.Attribute(XNames.Name).Value;
+                        if (SpecificFilter.Contains(name))
+                        {
+                            string value = subElement.Value;
+                            if (!String.IsNullOrWhiteSpace(value))
+                            {
+                                this.specifics[subElement.Attribute(XNames.Name).Value] = value.Trim();
+                            }
+                        }
                     }
                     else if (subElement.Name == XNames.Flavor)
                     {
@@ -133,7 +150,7 @@
         }
 
         public HashSet<Identifier> Categories { get { return this.boundCategories; } }
-        public string CompendiumUrl 
+        public string CompendiumUrl
         {
             get
             {
@@ -247,6 +264,20 @@
 
                 string url = CompendiumUrl;
                 if (url != null) { writer.Write("compendiumUrl", url); }
+
+                if (Specifics.Count > 0)
+                {
+                    writer.WritePrefix("specifics", "");
+                    textWriter.Indent++;
+                    using(ObjectWriter specificWriter = new ObjectWriter(textWriter))
+                    {
+                        foreach(KeyValuePair<string, string> specific in Specifics)
+                        {
+                            specificWriter.Write(specific.Key, specific.Value);
+                        }
+                    }
+                    textWriter.Indent--;
+                }
 
                 if (Categories.Count > 0)
                 {

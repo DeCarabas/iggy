@@ -14,6 +14,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_529",
     source: "Player's Handbook 3",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=529",
+    specifics: {
+        'Key Abilities': "Charisma, Constitution, Wisdom"
+      },
     categories: ["Ardent", "ID_FMP_CLASS_529"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_ARDENT"]);
@@ -46,6 +49,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_124",
     source: "Player's Handbook 3",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=124",
+    specifics: {
+        'Key Abilities': "Constitution, Wisdom, Charisma"
+      },
     categories: ["Battlemind", "ID_FMP_CLASS_124"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_BATTLEMIND"]);
@@ -77,6 +83,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_362",
     source: "Player's Handbook 3",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=362",
+    specifics: {
+        'Key Abilities': "Dexterity, Strength, Wisdom"
+      },
     categories: ["Monk", "ID_FMP_CLASS_362"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_MONK"]);
@@ -108,6 +117,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_437",
     source: "Player's Handbook 3",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=437",
+    specifics: {
+        'Key Abilities': "Intelligence, Charisma, Wisdom"
+      },
     categories: ["Psion", "ID_FMP_CLASS_437"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_PSION"]);
@@ -139,6 +151,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_602",
     source: "Player's Handbook 3",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=602",
+    specifics: {
+        'Key Abilities': "Strength, Constitution, Wisdom"
+      },
     categories: ["Runepriest", "ID_FMP_CLASS_602"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_RUNEPRIEST"]);
@@ -167,6 +182,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_472",
     source: "Player's Handbook 3",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=472",
+    specifics: {
+        'Key Abilities': "Wisdom, Strength, Dexterity"
+      },
     categories: ["Seeker", "ID_FMP_CLASS_472"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_SEEKER"]);

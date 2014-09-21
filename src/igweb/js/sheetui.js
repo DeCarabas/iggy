@@ -17,9 +17,9 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     title = title.toLowerCase();
     var article = 'a';
 
-    if ((title[0] === 'a') || 
-        (title[0] === 'e') || 
-        (title[0] === 'i') || 
+    if ((title[0] === 'a') ||
+        (title[0] === 'e') ||
+        (title[0] === 'i') ||
         (title[0] === 'o') ||
         (title[0] === 'u'))
     {
@@ -62,11 +62,11 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       applySelection: function(selection) {
         choice.choice = selection;
       },
-      getDetailUrl: function(context) {        
+      getDetailUrl: function(context) {
         var url = context
           ? context.compendiumUrl
           : null;
-        
+
         return url || 'about/'+choice.type+'.html';
       },
       getGroups: function() {
@@ -75,7 +75,7 @@ define(['jquery', './binding', './log'],function($, binding, log) {
               return { text: re.name, context: re };
             })
           : [];
-        
+
         return [{ title: null, items: sortItems(items) }];
       },
       getInitialSelection: function() {
@@ -158,11 +158,11 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     applySelection: function applySelection() { // OVERRIDE?
       this._adapter.applySelection(this._selected);
       binding.updateFields(this._model);
-      this.hide();
+      this.hide();      
     },
     hide: function () {
       // Must do this before calling restoreFunc so we don't get bogus entries in the stack.
-      visibleUI = null; 
+      visibleUI = null;
       var restoreFunc = uiStack.pop();
       if (restoreFunc) {
         restoreFunc();
@@ -221,10 +221,10 @@ define(['jquery', './binding', './log'],function($, binding, log) {
           row.click(function () {
             that.updateDetailTarget(that._adapter.getDetailUrl(item.context));
             that._selected = item.context;
-            
+
             that._listTarget.find(".selectedRow").removeClass('selectedRow');
             row.addClass('selectedRow');
-            
+
             if (item.click) { item.click(); }
           });
 
@@ -234,10 +234,10 @@ define(['jquery', './binding', './log'],function($, binding, log) {
 
           targetDiv.append(row);
         });
-        
+
         that._listTarget.append(targetDiv);
       });
-      
+
       that.updateDetailTarget(that._adapter.getDetailUrl(that._selected));
     },
     updateDetailTarget: function updateDetailTarget(url) {
@@ -258,9 +258,9 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       var elem = $(this);
       var type = elem.attr("data-boundChoice");
 
-      elem.click(function() { 
+      elem.click(function() {
         var choices = model.getChoices(type);
-        chooseUI.show(choices[0].type, getAdapterForChoice(choices[0])); 
+        chooseUI.show(choices[0].type, getAdapterForChoice(choices[0]));
       });
     });
 
@@ -268,9 +268,9 @@ define(['jquery', './binding', './log'],function($, binding, log) {
       var elem = $(this);
       var type = elem.attr("data-boundChoiceMulti");
 
-      elem.click(function() { 
+      elem.click(function() {
         var choices = model.getChoices(type);
-        chooseUI.show(type, getAdapterForMultipleChoices(type, choices)); 
+        chooseUI.show(type, getAdapterForMultipleChoices(type, choices));
       });
     });
 
@@ -288,4 +288,3 @@ define(['jquery', './binding', './log'],function($, binding, log) {
     setupUI: setupUI
   };
 });
-

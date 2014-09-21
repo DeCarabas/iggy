@@ -13,6 +13,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_74",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Dex, Wis, Str"
+      },
     categories: ["Centered Breath Monk", "ID_FMP_BUILD_74", "ID_FMP_CLASS_362", "Monk"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_CENTERED_BREATH_MONK"]);
@@ -25,6 +28,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_109",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Str, Wis"
+      },
     categories: ["Defiant Runepriest", "ID_FMP_BUILD_109", "ID_FMP_CLASS_602", "Runepriest"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_DEFIANT_RUNEPRIEST"]);
@@ -37,6 +43,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_97",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Cha, Wis, Con"
+      },
     categories: ["Enlightened Ardent", "ID_FMP_BUILD_97", "ID_FMP_CLASS_529", "Ardent"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_ENLIGHTENED_ARDENT"]);
@@ -49,6 +58,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_98",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Cha, Con, Wis, Dex"
+      },
     categories: ["Euphoric Ardent", "ID_FMP_BUILD_98", "ID_FMP_CLASS_529", "Ardent"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_EUPHORIC_ARDENT"]);
@@ -61,6 +73,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_111",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Wis, Str"
+      },
     categories: ["Protecting Seeker", "ID_FMP_BUILD_111", "ID_FMP_CLASS_472", "Seeker"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_PROTECTING_SEEKER"]);
@@ -73,6 +88,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_99",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Con, Cha, Wis"
+      },
     categories: ["Quick Battlemind", "ID_FMP_BUILD_99", "ID_FMP_CLASS_124", "Battlemind"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_QUICK_BATTLEMIND"]);
@@ -85,6 +103,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_106",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Con, Wis, Cha"
+      },
     categories: ["Resilient Battlemind", "ID_FMP_BUILD_106", "ID_FMP_CLASS_124", "Battlemind"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_RESILIENT_BATTLEMIND"]);
@@ -97,6 +118,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_107",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Dex, Str, Wis"
+      },
     categories: ["Stone Fist Monk", "ID_FMP_BUILD_107", "ID_FMP_CLASS_362", "Monk"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_STONE_FIST_MONK"]);
@@ -109,6 +133,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_108",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Int, Wis"
+      },
     categories: ["Telekinetic Psion", "ID_FMP_BUILD_108", "ID_FMP_CLASS_437", "Psion"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_TELEKINETIC_PSION"]);
@@ -133,6 +160,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_86",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Wisdom, Dexterity"
+      },
     categories: ["Vengeful Seeker", "ID_FMP_BUILD_86", "ID_FMP_CLASS_472", "Seeker"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_VENGEFUL_SEEKER"]);
@@ -145,6 +175,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_110",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Str, Con"
+      },
     categories: ["Wrathful Runepriest", "ID_FMP_BUILD_110", "ID_FMP_CLASS_602", "Runepriest"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_WRATHFUL_RUNEPRIEST"]);

@@ -13,6 +13,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_96",
     source: "Dragon Magazine 381",
+    specifics: {
+        'Key Abilities': "Int, Wis"
+      },
     categories: ["Warrior Forge Artificer", "ID_FMP_BUILD_96", "ID_FMP_CLASS_125", "Artificer"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_WARRIOR_FORGE_ARTIFICER"]);

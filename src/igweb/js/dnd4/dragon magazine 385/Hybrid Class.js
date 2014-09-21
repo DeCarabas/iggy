@@ -13,6 +13,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_641",
     source: "Dragon Magazine 385",
+    specifics: {
+        'Key Abilities': "Dexterity, Charisma, Constitution"
+      },
     categories: ["Hybrid Assassin", "ID_FMP_HYBRID_CLASS_641"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_ASSASSIN"]);

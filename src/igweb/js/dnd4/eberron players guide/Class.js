@@ -14,6 +14,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_125",
     source: "Eberron Player's Guide",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=125",
+    specifics: {
+        'Key Abilities': "Intelligence, Constitution, Wisdom"
+      },
     categories: ["Artificer", "ID_FMP_CLASS_125"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_ARTIFICER"]);

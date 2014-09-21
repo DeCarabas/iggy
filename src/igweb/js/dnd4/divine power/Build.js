@@ -49,6 +49,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_82",
     source: "Divine Power",
+    specifics: {
+        'Key Abilities': "Wisdom, Charisma, Strength"
+      },
     categories: ["Shielding Cleric", "ID_FMP_BUILD_82", "ID_FMP_CLASS_2", "Cleric"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_SHIELDING_CLERIC"]);

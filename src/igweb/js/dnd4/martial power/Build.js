@@ -13,6 +13,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_57",
     source: "Martial Power",
+    specifics: {
+        'Key Abilities': "Dex, Cha, Str"
+      },
     categories: ["Aerialist Rogue", "ID_FMP_BUILD_57", "ID_FMP_CLASS_6", "Rogue"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_AERIALIST_ROGUE"]);
@@ -25,6 +28,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_54",
     source: "Martial Power",
+    specifics: {
+        'Key Abilities': "Str, Con, Wis"
+      },
     categories: ["Battlerager Fighter", "ID_FMP_BUILD_54", "ID_FMP_CLASS_3", "Fighter"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_BATTLERAGER_FIGHTER"]);
@@ -37,6 +43,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_56",
     source: "Martial Power",
+    specifics: {
+        'Key Abilities': "Str, Dex, Wis"
+      },
     categories: ["Beastmaster Ranger", "ID_FMP_BUILD_56", "ID_FMP_CLASS_5", "Ranger"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_BEASTMASTER_RANGER"]);
@@ -49,6 +58,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_32",
     source: "Martial Power",
+    specifics: {
+        'Key Abilities': "Str, Cha, Con"
+      },
     categories: ["Bravura Warlord", "ID_FMP_BUILD_32", "ID_FMP_CLASS_8", "Warlord"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_BRAVURA_WARLORD"]);
@@ -61,6 +73,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_58",
     source: "Martial Power",
+    specifics: {
+        'Key Abilities': "Dex, Str, Cha"
+      },
     categories: ["Cutthroat Rogue", "ID_FMP_BUILD_58", "ID_FMP_CLASS_6", "Rogue"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_CUTTHROAT_ROGUE"]);
@@ -73,6 +88,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_30",
     source: "Martial Power",
+    specifics: {
+        'Key Abilities': "Str, Int, Cha"
+      },
     categories: ["Resourceful Warlord", "ID_FMP_BUILD_30", "ID_FMP_CLASS_8", "Warlord"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_RESOURCEFUL_WARLORD"]);
@@ -85,6 +103,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_55",
     source: "Martial Power",
+    specifics: {
+        'Key Abilities': "Str, Dex, Wis"
+      },
     categories: ["Tempest Fighter", "ID_FMP_BUILD_55", "ID_FMP_CLASS_3", "Fighter"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_TEMPEST_FIGHTER"]);

@@ -14,6 +14,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_466",
     source: "Dragon Magazine 379",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=466",
+    specifics: {
+        'Key Abilities': "Dexterity, Charisma, Constitution"
+      },
     categories: ["Assassin", "ID_FMP_CLASS_466"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_ASSASSIN"]);

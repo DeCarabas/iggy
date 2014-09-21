@@ -14,6 +14,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_2",
     source: "Player's Handbook",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=2",
+    specifics: {
+        'Key Abilities': "Wisdom, Strength, Charisma"
+      },
     categories: ["Cleric", "ID_FMP_CLASS_2"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_CLERIC"]);
@@ -42,6 +45,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_3",
     source: "Player's Handbook",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=3",
+    specifics: {
+        'Key Abilities': "Strength, Dexterity, Wisdom, Constitution"
+      },
     categories: ["Fighter", "ID_FMP_CLASS_3"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_FIGHTER"]);
@@ -70,6 +76,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_4",
     source: "Player's Handbook",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=4",
+    specifics: {
+        'Key Abilities': "Strength, Charisma, Wisdom"
+      },
     categories: ["Paladin", "ID_FMP_CLASS_4"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_PALADIN"]);
@@ -100,6 +109,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_5",
     source: "Player's Handbook",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=5",
+    specifics: {
+        'Key Abilities': "Strength, Dexterity, Wisdom"
+      },
     categories: ["Ranger", "ID_FMP_CLASS_5"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_RANGER"]);
@@ -132,6 +144,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_6",
     source: "Player's Handbook",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=6",
+    specifics: {
+        'Key Abilities': "Dexterity, Strength, Charisma"
+      },
     categories: ["Rogue", "ID_FMP_CLASS_6"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_ROGUE"]);
@@ -160,6 +175,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_7",
     source: "Player's Handbook",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=7",
+    specifics: {
+        'Key Abilities': "Charisma, Constitution, Intelligence"
+      },
     categories: ["Warlock", "ID_FMP_CLASS_7"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_WARLOCK"]);
@@ -186,6 +204,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_8",
     source: "Player's Handbook",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=8",
+    specifics: {
+        'Key Abilities': "Strength, Intelligence, Charisma"
+      },
     categories: ["Warlord", "ID_FMP_CLASS_8"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_WARLORD"]);
@@ -215,6 +236,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_9",
     source: "Player's Handbook",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=9",
+    specifics: {
+        'Key Abilities': "Intelligence, Wisdom, Dexterity"
+      },
     categories: ["Wizard", "ID_FMP_CLASS_9"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_WIZARD"]);

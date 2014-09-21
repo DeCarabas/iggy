@@ -61,6 +61,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_43",
     source: "Arcane Power",
+    specifics: {
+        'Key Abilities': "Charisma, Dexterity, Strength"
+      },
     categories: ["Storm Sorcerer", "ID_FMP_BUILD_43", "ID_FMP_CLASS_128", "Sorcerer"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_STORM_SORCERER"]);
@@ -73,6 +76,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Build",
     id: "ID_FMP_BUILD_71",
     source: "Arcane Power",
+    specifics: {
+        'Key Abilities': "Int, Con, Wis"
+      },
     categories: ["Summoner Wizard", "ID_FMP_BUILD_71", "ID_FMP_CLASS_9", "Wizard"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_BUILD_SUGGESTIONS_SUMMONER_WIZARD"]);

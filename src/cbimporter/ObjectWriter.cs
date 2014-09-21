@@ -76,6 +76,7 @@
                 writer.WriteLine(",");
             }
 
+            if (key.Contains(" ")) { key = "'" + key + "'"; }
             writer.Write("{0}: {1}", key, value);
         }
     }

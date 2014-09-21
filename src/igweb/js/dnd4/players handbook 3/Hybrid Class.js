@@ -13,6 +13,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_588",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Charisma, Constitution, Wisdom"
+      },
     categories: ["Hybrid Ardent", "ID_FMP_HYBRID_CLASS_588"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_ARDENT"]);
@@ -35,6 +38,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_536",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Intelligence, Constitution, Wisdom"
+      },
     categories: ["Hybrid Artificer", "ID_FMP_HYBRID_CLASS_536"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_ARTIFICER"]);
@@ -57,6 +63,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_439",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Wisdom, Dexterity, Intelligence"
+      },
     categories: ["Hybrid Avenger", "ID_FMP_HYBRID_CLASS_439"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_AVENGER"]);
@@ -79,6 +88,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_440",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Strength, Constitution, Charisma"
+      },
     categories: ["Hybrid Barbarian", "ID_FMP_HYBRID_CLASS_440"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_BARBARIAN"]);
@@ -99,6 +111,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_441",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Charisma, Intelligence, Constitution"
+      },
     categories: ["Hybrid Bard", "ID_FMP_HYBRID_CLASS_441"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_BARD"]);
@@ -124,6 +139,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_590",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Constitution, Wisdom, Charisma"
+      },
     categories: ["Hybrid Battlemind", "ID_FMP_HYBRID_CLASS_590"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_BATTLEMIND"]);
@@ -144,6 +162,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_352",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Wisdom, Strength, Charisma"
+      },
     categories: ["Hybrid Cleric", "ID_FMP_HYBRID_CLASS_352"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_CLERIC"]);
@@ -164,6 +185,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_442",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Wisdom, Dexterity, Constitution"
+      },
     categories: ["Hybrid Druid", "ID_FMP_HYBRID_CLASS_442"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_DRUID"]);
@@ -186,6 +210,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_353",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Strength, Dexterity, Wisdom, Constitution"
+      },
     categories: ["Hybrid Fighter", "ID_FMP_HYBRID_CLASS_353"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_FIGHTER"]);
@@ -206,6 +233,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_443",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Wisdom, Constitution, Intelligence"
+      },
     categories: ["Hybrid Invoker", "ID_FMP_HYBRID_CLASS_443"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_INVOKER"]);
@@ -228,6 +258,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_609",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Dexterity, Strength, Wisdom"
+      },
     categories: ["Hybrid Monk", "ID_FMP_HYBRID_CLASS_609"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_MONK"]);
@@ -251,6 +284,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_354",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Strength, Charisma, Wisdom"
+      },
     categories: ["Hybrid Paladin", "ID_FMP_HYBRID_CLASS_354"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_PALADIN"]);
@@ -273,6 +309,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_610",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Intelligence, Charisma, Wisdom"
+      },
     categories: ["Hybrid Psion", "ID_FMP_HYBRID_CLASS_610"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_PSION"]);
@@ -293,6 +332,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_355",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Strength, Dexterity, Wisdom"
+      },
     categories: ["Hybrid Ranger", "ID_FMP_HYBRID_CLASS_355"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_RANGER"]);
@@ -318,6 +360,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_356",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Dexterity, Strength, Charisma"
+      },
     categories: ["Hybrid Rogue", "ID_FMP_HYBRID_CLASS_356"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_ROGUE"]);
@@ -341,6 +386,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_611",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Strength, Constitution, Wisdom"
+      },
     categories: ["Hybrid Runepriest", "ID_FMP_HYBRID_CLASS_611"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_RUNEPRIEST"]);
@@ -361,6 +409,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_612",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Wisdom, Strength, Dexterity"
+      },
     categories: ["Hybrid Seeker", "ID_FMP_HYBRID_CLASS_612"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_SEEKER"]);
@@ -383,6 +434,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_444",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Wisdom, Constitution, Intelligence"
+      },
     categories: ["Hybrid Shaman", "ID_FMP_HYBRID_CLASS_444"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_SHAMAN"]);
@@ -405,6 +459,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_445",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Charisma, Dexterity, Strength"
+      },
     categories: ["Hybrid Sorcerer", "ID_FMP_HYBRID_CLASS_445"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_SORCERER"]);
@@ -425,6 +482,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_357",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Intelligence, Strength, Constitution"
+      },
     categories: ["Hybrid Swordmage", "ID_FMP_HYBRID_CLASS_357"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_SWORDMAGE"]);
@@ -445,6 +505,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_446",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Strength, Constitution, Wisdom"
+      },
     categories: ["Hybrid Warden", "ID_FMP_HYBRID_CLASS_446"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_WARDEN"]);
@@ -467,6 +530,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_358",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Charisma, Constitution, Intelligence"
+      },
     categories: ["Hybrid Warlock", "ID_FMP_HYBRID_CLASS_358"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_WARLOCK"]);
@@ -489,6 +555,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_359",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Strength, Intelligence, Charisma"
+      },
     categories: ["Hybrid Warlord", "ID_FMP_HYBRID_CLASS_359"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_WARLORD"]);
@@ -511,6 +580,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     type: "Hybrid Class",
     id: "ID_FMP_HYBRID_CLASS_360",
     source: "Player's Handbook 3",
+    specifics: {
+        'Key Abilities': "Intelligence, Wisdom, Dexterity"
+      },
     categories: ["Hybrid Wizard", "ID_FMP_HYBRID_CLASS_360"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_HYBRID_WIZARD"]);

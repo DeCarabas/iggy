@@ -14,6 +14,9 @@ define(['engine', 'dnd4model'], function(engine, dnd4model) {
     id: "ID_FMP_CLASS_53",
     source: "Forgotten Realms Player's Guide",
     compendiumUrl: "http://www.wizards.com/dndinsider/compendium/class.aspx?id=53",
+    specifics: {
+        'Key Abilities': "Intelligence, Strength, Constitution"
+      },
     categories: ["Swordmage", "ID_FMP_CLASS_53"],
     rules: function(model) {
       model.grant(model.elements.id["ID_INTERNAL_GRANTS_SWORDMAGE"]);
