@@ -276,8 +276,20 @@ define(['jquery', './binding', './log'],function($, binding, log) {
 
     abilityUI = new ChoiceUI(model, $("#abilityControl"));
     $("#sheetAbilityScores").click(function() {
-      var hack = model.getChoices('Class');
-      abilityUI.show("Ability Scores", getAdapterForChoice(hack[0]));
+      var types = [
+        'Ability Increase',
+        'Ability Increase (Level 4)',
+        'Ability Increase (Level 8)',
+        'Ability Increase (Level 14)',
+        'Ability Increase (Level 18)',
+        'Ability Increase (Level 24)',
+        'Ability Increase (Level 28)'
+      ];
+
+      var choices = types.reduce(function(choices, type) { 
+        return choices.concat(model.getChoices(type)); 
+      }, []);
+      abilityUI.show("Ability Scores", getAdapterForMultipleChoices('Ability Increase', choices));
     });
 
     binding.bindFields(model);

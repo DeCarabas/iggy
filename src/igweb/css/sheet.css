@@ -702,7 +702,6 @@ textArea {
   margin: -1px;
   padding: 10px;
   background-color: White;
-  overflow: hidden;
   height: 420px; /* DIRTY HACK, FIX. */
 }
 
