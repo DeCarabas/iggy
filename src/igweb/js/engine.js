@@ -209,6 +209,8 @@ define(['./log'],function(log) {
         (!catTwo || item.matchesCategory(catTwo));
     },
     override: function(stat, value) {
+      if (!stat) { return; }
+
       stat = stat.toLowerCase();
       var s = this._stats[stat] || (this._stats[stat] = new Stat());
       if (typeof value === "string") {
