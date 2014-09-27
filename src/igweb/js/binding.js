@@ -174,7 +174,10 @@ define(['jquery'], function($) {
     var visible = false;
 
     var choices = model.getChoices(typename);
-    if (choices.some(function(c) { return !c.filter || c.filter(model, targetRuleElement); })) {
+    var hasSuitableChoice = choices.some(function(c) { 
+      return !c.filter || c.filter(model, targetRuleElement); 
+    });
+    if (hasSuitableChoice) {
       // If there's at least one choice and the rule element is suitable for
       // that choice, then show the checkbox.
       //
