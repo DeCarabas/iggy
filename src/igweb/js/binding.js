@@ -136,7 +136,10 @@ define(['jquery'], function($) {
 
   function updateBoundChoice(element, model, onClick) {
     var elem = $(element);
-    var choiceName = elem.attr("data-boundChoice") || elem.attr("data-boundChoiceMulti") || "";
+    var choiceName = elem.attr("data-boundChoice") || 
+                     elem.attr("data-boundChoiceMulti") || 
+                     elem.attr("data-boundChoiceSpecial") || 
+                     "";
       
     var hasChoice = false;
     var names = choiceName.split(',');
@@ -262,6 +265,9 @@ define(['jquery'], function($) {
       updateBoundChoice(this, model);
     });
     $("[data-boundChoiceMulti]:visible").each(function() {
+      updateBoundChoice(this, model);
+    });
+    $("[data-boundChoiceSpecial]:visible").each(function() {
       updateBoundChoice(this, model);
     });
     $("[data-boundChoiceCheck]").each(function() {
