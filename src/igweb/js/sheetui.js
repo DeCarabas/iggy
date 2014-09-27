@@ -2,7 +2,7 @@
 // Character builder UI
 //
 /*global define*/
-define(['jquery', './binding', './log'],function($, binding, log) {
+define(['jquery', './binding', './log', './engine'],function($, binding, log, engine) {
   "use strict";
 
   var topOfPage = $("#sheetHeader").height(); // For magical alignment.
@@ -253,6 +253,26 @@ define(['jquery', './binding', './log'],function($, binding, log) {
   };
 
   function setupUI(model) {
+
+    // Add any special UI rules elements.
+    var elements = model.elements;
+    var uiSpecial = elements.types["#uiSpecial"] || (elements.types["#uiSpecial"] = {});    
+    var re = uiSpecial["InitialAbilityScores"] = new engine.RulesElement({
+      id: '#initialAbilityScores',
+      name: 'InitialAbilityScores',
+      type: '#uiSpecial',
+      rules: function(model) {
+        model.select("#initialAbilities", 1, "Initial Ability Scores", {});
+      }});
+    model.elements.id[re.id] = re;
+
+    // Grant the special UI rules.
+    Object.keys(uiSpecial).forEach(function(name) {
+      var e = uiSpecial[name];
+      model.grant(e);
+    });
+
+    // Set up UI bindings
     chooseUI = new ChoiceUI(model, $("#chooseControl"));
     $("[data-boundChoice]:visible").each(function () {
       var elem = $(this);
@@ -276,6 +296,8 @@ define(['jquery', './binding', './log'],function($, binding, log) {
 
     abilityUI = new ChoiceUI(model, $("#abilityControl"));
     $("#sheetAbilityScores").click(function() {
+      model.remove(model.elements.id["#initialAbilityScores"]);
+
       var types = [
         'Ability Increase',
         'Ability Increase (Level 4)',
