@@ -132,129 +132,155 @@ define(['jquery', './binding', './log', './engine'],function($, binding, log, en
     };
   }
 
-  function ChoiceUI(model, element) {
-    this._model = model;
-    this._rootElement = $(element);
+  function createChoiceUI(model) {
+    return {
+      _model: model,
+      visible: true,
 
-    this._chooseTitle = this._rootElement.find(".chooseTitle");
-    this._listTarget = this._rootElement.find(".elementList");
-    this._detailTarget = this._rootElement.find(".elementDetail");
-    this._whatButton = this._rootElement.find(".whatButton");
-    this._whatButton.click(function() { this.updateDetailTarget(null); }.bind(this));
+      applySelection: function applySelection() { // OVERRIDE?
+        this._adapter.applySelection(this._selected);
+        binding.updateFields(this._model);
+        this.hide();      
+      },
+      bindElements: function bindElements(element) {
+        this._rootElement = $(element);
 
-    this._okButton = this._rootElement.find(".okButton");
-    this._okButton.click(function() {
-      this.applySelection();
-    }.bind(this));
-    this._cancelButton = this._rootElement.find(".cancelButton");
-    this._cancelButton.click(function() {
-      this.hide();
-    }.bind(this));
+        this._chooseTitle = this._rootElement.find(".chooseTitle");
+        this._listTarget = this._rootElement.find(".elementList");
+        this._detailTarget = this._rootElement.find(".elementDetail");
 
-    this._rootElement.hide();
-    this.visible = false;
-  }
-  ChoiceUI.prototype = {
-    applySelection: function applySelection() { // OVERRIDE?
-      this._adapter.applySelection(this._selected);
-      binding.updateFields(this._model);
-      this.hide();      
-    },
-    hide: function () {
-      // Must do this before calling restoreFunc so we don't get bogus entries in the stack.
-      visibleUI = null;
-      var restoreFunc = uiStack.pop();
-      if (restoreFunc) {
-        restoreFunc();
-      } else {
-        this._rootElement.hide();
-        this.visible = false;
-      }
-    },
-    push: function() {
-      // Stack-capture the current adapter and title.
-      var adapter = this._adapter;
-      var title = this._title;
-      uiStack.push(function() { this.show(title, adapter); }.bind(this));
-    },
-    show: function (title, adapter) {
-      if (visibleUI) { visibleUI.push(); }
+        this._whatButton = this._rootElement.find(".whatButton");
+        this._whatButton.click(function onWhatButtonClick() { 
+          this.updateDetailTarget(null); 
+        }.bind(this));
 
-      this._adapter = adapter;
-      this._title = title;
+        this._okButton = this._rootElement.find(".okButton");
+        this._okButton.click(function onOkButtonClick() {
+          this.applySelection();
+        }.bind(this));
 
-      this.updateTitle();
-
-      if (this._adapter.applySelection) {
-        this._okButton.removeClass("hidden");
-      } else {
-        this._okButton.addClass("hidden");
-      }
-
-      this._rootElement.show();
-      this._rootElement.offset({ top: topOfPage, left: 0 });
-      visibleUI = this;
-
-      this.visible = true;
-
-      this._selected = adapter.getInitialSelection();
-
-      this.update();
-      binding.updateFields(this._model);
-    },
-    update: function () {
-      var that = this;
-
-      this._listTarget.empty();
-      this._adapter.getGroups().forEach(function (group) {
-        var targetDiv = $("<div class='choiceGroup'></div>");
-        if (group.title) {
-          var header = $("<h2>"+group.title+"</h2>");
-          targetDiv.append(header);
+        this._cancelButton = this._rootElement.find(".cancelButton");
+        this._cancelButton.click(function onCancelButtonClick() {
+          this.hide();
+        }.bind(this));        
+      },
+      hide: function hide() {
+        // Must do this before calling restoreFunc so we don't get bogus entries in the stack.
+        visibleUI = null;
+        var restoreFunc = uiStack.pop();
+        if (restoreFunc) {
+          restoreFunc();
+        } else {
+          this._rootElement.hide();
+          this.visible = false;
         }
-        group.items.forEach(function (item, i) {
-          var row = $("<div class='choiceRow'></div>");
-          row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
-          if (item.extraClass) { row.addClass(item.extraClass); }
-          row.text(item.text);
-
-          row.click(function () {
-            that.updateDetailTarget(that._adapter.getDetailUrl(item.context));
-            that._selected = item.context;
-
-            that._listTarget.find(".selectedRow").removeClass('selectedRow');
-            row.addClass('selectedRow');
-
-            if (item.click) { item.click(); }
-          });
-
-          if (that._selected === item.context) {
-            row.addClass('selectedRow');
+      },
+      push: function() {
+        // Stack-capture the current adapter and title.
+        var adapter = this._adapter;
+        var title = this._title;
+        uiStack.push(function() { this.show(title, adapter); }.bind(this));
+      },
+      show: function (title, adapter) {
+        if (visibleUI) { visibleUI.push(); }
+        
+        this._adapter = adapter;
+        this._title = title;
+        
+        this.updateTitle();
+        
+        if (this._adapter.applySelection) {
+          this._okButton.removeClass("hidden");
+        } else {
+          this._okButton.addClass("hidden");
+        }
+        
+        this._rootElement.show();
+        this._rootElement.offset({ top: topOfPage, left: 0 });
+        visibleUI = this;
+        
+        this.visible = true;
+        
+        this._selected = adapter.getInitialSelection();
+        
+        this.update();
+        binding.updateFields(this._model);
+      },
+      update: function () {
+        var that = this;
+        
+        this._listTarget.empty();
+        this._adapter.getGroups().forEach(function (group) {
+          var targetDiv = $("<div class='choiceGroup'></div>");
+          if (group.title) {
+            var header = $("<h2>"+group.title+"</h2>");
+            targetDiv.append(header);
           }
-
-          targetDiv.append(row);
+          group.items.forEach(function (item, i) {
+            var row = $("<div class='choiceRow'></div>");
+            row.addClass((i % 2 === 0) ? "evenRow" : "oddRow");
+            if (item.extraClass) { row.addClass(item.extraClass); }
+            row.text(item.text);
+            
+            row.click(function () {
+              that.updateDetailTarget(that._adapter.getDetailUrl(item.context));
+              that._selected = item.context;
+              
+              that._listTarget.find(".selectedRow").removeClass('selectedRow');
+              row.addClass('selectedRow');
+              
+              if (item.click) { item.click(); }
+            });
+            
+            if (that._selected === item.context) {
+              row.addClass('selectedRow');
+            }
+            
+            targetDiv.append(row);
+          });
+          
+          that._listTarget.append(targetDiv);
         });
+        
+        that.updateDetailTarget(that._adapter.getDetailUrl(that._selected));
+      },
+      updateDetailTarget: function updateDetailTarget(url) {
+        log.log("Choice: Setting detail URL to '" + url + "'");
+        this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');
+      },
+      updateTitle: function updateTitle() {
+        var atitle = getTitleString(this._title);
+        
+        this._chooseTitle.html("<h1>Choose " + atitle + "</h1>");
+        this._whatButton.html("<a><i>What's " + atitle + "?</i></a>");
+      }
+    };
+  }
 
-        that._listTarget.append(targetDiv);
-      });
+  function createAbilityUI(model) {
+    var ui = createChoiceUI(model);
 
-      that.updateDetailTarget(that._adapter.getDetailUrl(that._selected));
-    },
-    updateDetailTarget: function updateDetailTarget(url) {
-      log.log("Choice: Setting detail URL to '" + url + "'");
-      this._detailTarget.html('<iframe src="'+url+'" width="100%" height="100%" />');
-    },
-    updateTitle: function updateTitle() {
-      var atitle = getTitleString(this._title);
+    ui._oldUpdate = ui.update;
+    ui.update = function abilityUpdate() {
+      var groups = this._adapter.getGroups();
+      if (groups.length === 0) {
+        // If there are no choices to be made, then we show the little bit of
+        // text about ability scores because we assume that you're pretty
+        // early in your character's career. Otherwise, we let the select
+        // lists take over.
+        //
+        this._listTarget.html('<iframe src="about/abilityscore.html" width="100%" height="100%" />');
+      } else {
+        this._oldUpdate();
+      }
+    };
 
-      this._chooseTitle.html("<h1>Choose " + atitle + "</h1>");
-      this._whatButton.html("<a><i>What's " + atitle + "?</i></a>");
-    }
-  };
+    return ui;
+  }
 
   function setupUI(model) {
-
     // Add any special UI rules elements.
+    //
     var elements = model.elements;
     var uiSpecial = elements.types["#uiSpecial"] || (elements.types["#uiSpecial"] = {});    
     var re = uiSpecial["InitialAbilityScores"] = new engine.RulesElement({
@@ -267,14 +293,19 @@ define(['jquery', './binding', './log', './engine'],function($, binding, log, en
     model.elements.id[re.id] = re;
 
     // Grant the special UI rules.
+    //
     Object.keys(uiSpecial).forEach(function(name) {
       var e = uiSpecial[name];
       model.grant(e);
     });
 
-    // Set up UI bindings
-    chooseUI = new ChoiceUI(model, $("#chooseControl"));
-    $("[data-boundChoice]:visible").each(function () {
+    // Set up the Choice UI bindings
+    //
+    chooseUI = createChoiceUI(model);
+    chooseUI.bindElements($("#chooseControl"));
+    chooseUI.hide();
+
+    $("[data-boundChoice]").each(function () {
       var elem = $(this);
       var type = elem.attr("data-boundChoice");
 
@@ -284,7 +315,7 @@ define(['jquery', './binding', './log', './engine'],function($, binding, log, en
       });
     });
 
-    $("[data-boundChoiceMulti]:visible").each(function () {
+    $("[data-boundChoiceMulti]").each(function () {
       var elem = $(this);
       var type = elem.attr("data-boundChoiceMulti");
 
@@ -294,7 +325,11 @@ define(['jquery', './binding', './log', './engine'],function($, binding, log, en
       });
     });
 
-    abilityUI = new ChoiceUI(model, $("#abilityControl"));
+    // Set up the Ability UI binding
+    //
+    abilityUI = createAbilityUI(model);
+    abilityUI.bindElements($("#abilityControl"));
+    abilityUI.hide();
     $("#sheetAbilityScores").click(function() {
       model.remove(model.elements.id["#initialAbilityScores"]);
 

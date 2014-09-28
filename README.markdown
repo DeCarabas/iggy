@@ -56,7 +56,6 @@ Converter
 
 Sheet
 -----
-- UI for ability scores
 - UI for power selection
 - Serialize model as JSON
 - Save/Load character

@@ -5,10 +5,46 @@
     <link rel="stylesheet" href="../css/text.css" />    
     <link rel="stylesheet" href="../css/sheet.css" />    
   </head>
-  <body>
-    <h2>Choose an Ability Score to Improve</h2>
+  <body>    
+    <h2>Choosing Ability Scores</h2>
 
-    <p>At 4th, 8th, 14th, 18th, 24th, and 28th levels you get to choose two ability scores to improve. Each ability
-    score goes up by one point.</p>
+    <p>You can choose your ability scores in one of the following ways:</p>
+
+    <ul>
+      <li>
+        <p>Choose from one of the following sets of scores, putting the high
+        score in your most important attribute and working down:</p>
+        <ul class='scoreArrays'>
+          <li>18,14,11,10,10,8</li>
+          <li>16,16,12,11,11,8</li>
+          <li>16,14,14,11,10,10</li>
+          <li>16,14,13,12,11,10</li>
+        </ul>
+      </li>
+      <li>
+        <p>Buy your scores with a point buy. Unless your DM says otherwise,
+        you must spend exactly 32 points. The cost of each score is shown on
+        the table below:</p>
+        <table class='pointBuyTable'>
+          <tr class='header'> <th>Score</th><th>Cost</th><th>Score</th><th>Cost</th></tr>
+          <tr class='oddRow'> <td>9</td>    <td>1</td>   <td>14</td>   <td>7</td>   </tr>
+          <tr class='evenRow'><td>10</td>   <td>2</td>   <td>15</td>   <td>9</td>   </tr>
+          <tr class='oddRow'> <td>11</td>   <td>3</td>   <td>16</td>   <td>11</td>  </tr>
+          <tr class='evenRow'><td>12</td>   <td>4</td>   <td>17</td>   <td>14</td>  </tr>
+          <tr class='oddRow'> <td>13</td>   <td>5</td>   <td>18</td>   <td>18</td>  </tr>
+        </table>
+        <p>A score of 8 or lower costs no points. You cannot buy a score
+        higher than an 18.</p>
+      </li>
+      <li>
+        <p>Roll 4d6 for each score and take the highest three values. Assign
+        the scores as you see fit. Note that this may not actually generate a
+        playable character; if you're going to use this method be sure to
+        clear it with your DM.</p>
+      </li>
+    </ul>
+        
+    <p>At 4th, 8th, 14th, 18th, 24th, and 28th levels you get to choose two
+    ability scores to improve. Each ability score goes up by one point.</p>
   </body>  
 </html>

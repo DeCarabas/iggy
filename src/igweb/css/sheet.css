@@ -68,6 +68,22 @@ textarea[disabled]
   color: black;
 }
 
+ul
+{
+  padding-left: 10px;
+}
+
+li
+{
+  margin-left: 10px;
+}
+
+ul.scoreArrays li
+{
+  font-weight: bold;
+  list-style: none;
+}
+
 .page h4
 {
   font-size: 9px;
@@ -401,6 +417,12 @@ tr.abilSpacer
   height: 320px;
   border-width: 1px;
   border-style: solid;
+}
+
+/* About: Ability Scores */
+.pointBuyTable
+{
+  width: 100%;
 }
 
 /****************************************************************
