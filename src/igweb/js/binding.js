@@ -77,7 +77,7 @@ define(['jquery'], function($) {
     $("[data-boundText]").each(function () {
       var elem = $(this);
       elem.change(function () {
-        model.override(elem.attr("data-boundStat"), elem.val());
+        model.override(elem.attr("data-boundText"), elem.val());
         updateFields(model);
       });
     });
