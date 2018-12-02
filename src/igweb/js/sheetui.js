@@ -5,8 +5,6 @@
 define(['jquery', './binding', './log', './engine'],function($, binding, log, engine) {
   "use strict";
 
-  var topOfPage = $("#sheetHeader").height(); // For magical alignment.
-
   var chooseUI;
   var abilityUI;
 
@@ -196,7 +194,6 @@ define(['jquery', './binding', './log', './engine'],function($, binding, log, en
         }
         
         this._rootElement.show();
-        this._rootElement.offset({ top: topOfPage, left: 0 });
         visibleUI = this;
         
         this.visible = true;

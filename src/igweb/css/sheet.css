@@ -504,6 +504,8 @@ textArea {
 {
   display: none;
   z-index: 20;
+  position: absolute;
+  top: 74px;
 }
 
 .popupUIWrapper
